@@ -9,7 +9,6 @@
   "obsidian-excalidraw-plugin",
   "supercharged-links-obsidian",
   "obsidian-autocomplete-plugin",
-  "obsidian-git",
   "search-on-internet",
   "darlal-switcher-plus",
   "calendar",
@@ -26,5 +25,6 @@
   "obsidian-link-converter",
   "oz-image-plugin",
   "better-fn",
-  "cm-typewriter-scroll-obsidian"
+  "cm-typewriter-scroll-obsidian",
+  "obsidian-git"
 ]

@@ -129,26 +129,31 @@ $$
 In the primed coordinate system, we want that the metric is still a small deviation from the Minkowskian values. Thus, we will only consider coordinate transformations with $\omega^\mu\sim h^{\mu\nu}$ small. From
 $$
 \begin{split}
-    \frac{\partial x^{\prime\mu}}{\partial x^\rho}\frac{\partial x^\rho}{\partial x^{\prime\nu}} &= \delta\ind{\mu}{\nu} \\
+\frac{\partial x^{\prime\mu}}{\partial x^\rho}\frac{\partial x^\rho}{\partial x^{\prime\nu}} &= \delta\ind{\mu}{\nu} \\
     
-    \implies\ \left(\delta\ind{\mu}{\rho}+\frac{\partial\omega^\mu}{\partial x^\rho}\right)\frac{\partial x^\rho}{\partial x^{\prime\nu}} &= \delta\ind{\mu}{\nu} \\
-    \implies\ \left(\delta\ind{\alpha}{\mu}-\frac{\partial\omega^\alpha}{\partial x^\mu}\right)\left(\delta\ind{\mu}{\rho}+\frac{\partial\omega^\mu}{\partial x^\rho}\right)\frac{\partial x^\rho}{\partial x^{\prime\nu}} &= \delta\ind{\mu}{\nu}\left(\delta\ind{\alpha}{\mu}-\frac{\partial\omega^\alpha}{\partial x^\mu}\right) \\
-    \left(\delta\ind{\alpha}{\rho}-\frac{\partial\omega^\alpha}{\partial x^\rho}+\frac{\partial\omega^\alpha}{\partial x^\rho}+\mathcal{O}(\omega^2)\right)\frac{\partial x^\rho}{\partial x^{\prime\nu}} &= \delta\ind{\alpha}{\nu}-\frac{\partial\omega^\alpha}{\partial x^\nu} \\
-    \Rightarrow\ \frac{\partial x^\alpha}{\partial x^{\prime\nu}} &\approx \delta\ind{\alpha}{\nu}-\frac{\partial\omega^\alpha}{\partial x^\nu}.
+\implies\ \left(\delta\ind{\mu}{\rho}+\frac{\partial\omega^\mu}{\partial x^\rho}\right)\frac{\partial x^\rho}{\partial x^{\prime\nu}} &= \delta\ind{\mu}{\nu} \\
+    
+\implies\ \left(\delta\ind{\alpha}{\mu}-\frac{\partial\omega^\alpha}{\partial x^\mu}\right)\left(\delta\ind{\mu}{\rho}+\frac{\partial\omega^\mu}{\partial x^\rho}\right)\frac{\partial x^\rho}{\partial x^{\prime\nu}} &= \delta\ind{\mu}{\nu}\left(\delta\ind{\alpha}{\mu}-\frac{\partial\omega^\alpha}{\partial x^\mu}\right) \\
+    
+\left(\delta\ind{\alpha}{\rho}-\frac{\partial\omega^\alpha}{\partial x^\rho}+\frac{\partial\omega^\alpha}{\partial x^\rho}+\mathcal{O}(\omega^2)\right)\frac{\partial x^\rho}{\partial x^{\prime\nu}} &= \delta\ind{\alpha}{\nu}-\frac{\partial\omega^\alpha}{\partial x^\nu} \\
+    
+\Rightarrow\ \frac{\partial x^\alpha}{\partial x^{\prime\nu}} &\approx \delta\ind{\alpha}{\nu}-\frac{\partial\omega^\alpha}{\partial x^\nu}.
 \end{split}
 $$
 Then
 $$
 \begin{split}
-    g\ind{\prime}{\mu\nu}(x^\prime) &= \left(\delta\ind{\alpha}{\nu}-\frac{\partial\omega^\alpha}{\partial x^\nu}\right)\left(\delta\ind{\beta}{\mu}-\frac{\partial\omega^\beta}{\partial x^\mu}\right)\left(\eta_{\alpha\beta}+h_{\alpha\beta}\right) \\
+    g\ind{}{\mu\nu}(x^\prime) &= \left(\delta\ind{\alpha}{\nu}-\frac{\partial\omega^\alpha}{\partial x^\nu}\right)\left(\delta\ind{\beta}{\mu}-\frac{\partial\omega^\beta}{\partial x^\mu}\right)\left(\eta_{\alpha\beta}+h_{\alpha\beta}\right) \\
     &\approx \eta_{\mu\nu} + h_{\mu\nu} -\frac{\partial\omega_\mu}{\partial x^\nu}-\frac{\partial\omega_\nu}{\partial x^\mu}.
 \end{split}
 $$
 We have already required the harmonic coordinate condition, $g_{\alpha\beta}\Gamma\ind{\mu}{\alpha\beta}=0$, on $h_{\mu\nu}$. A generic coordinate transformation could spoil that. However, if we restrict ourselves to the linear approximation it is still possible to find $x\to x + \varepsilon$ with $\varepsilon^\mu(x)$ such that the harmonic coordinate condition is satisfied in the new frame too. Indeed, we can have
 $$
 \begin{split}
-    g\ind{\prime}{\alpha\beta}\Gamma\ind{\prime\mu}{\alpha\beta} &= 0 \\
-    \Rightarrow\ \frac{\partial h\ind{\prime\mu}{\nu}}{\partial x^\mu} &= \frac{1}{2}\frac{\partial h\ind{\prime\mu}{\mu}}{\partial x^\nu} \\
+    (g\ind{}{\alpha\beta})'\Gamma\ind{\prime\mu}{\alpha\beta} &= 0 \\
+    \Rightarrow\ \frac{\partial (h\ind{\mu}{\nu})'}{\partial x^\mu} &= \frac{1}{2}\frac{\partial (h\ind{\mu}{\mu})'}{\partial x^\nu} \\
+
+    
     \Rightarrow\ \frac{\partial}{\partial x^\mu}\left(h\ind{\mu}{\nu}-\frac{\partial\omega^\mu}{\partial x^\nu}-\frac{\partial\omega_\nu}{\partial x_\mu}\right) &\equiv \frac{1}{2}\frac{\partial}{\partial x^\nu}\left(h\ind{\mu}{\mu}-\frac{\partial\omega^\mu}{\partial x^\mu}-\frac{\partial\omega_\mu}{\partial x_\mu}\right) \\
     -\Box\omega_\nu(x)-\frac{\partial^2\omega^\mu(x)}{\partial x^\mu\partial x^\nu} &= -\frac{1}{2}\frac{\partial^2\omega^\mu(x)}{\partial x^\mu\partial x^\nu}-\frac{1}{2}\frac{\partial^2\omega^\mu(x)}{\partial x^\mu\partial x^\nu} \\
     \Rightarrow\ \Box\omega_\nu(x)&=0.
