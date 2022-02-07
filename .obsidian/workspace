@@ -23,7 +23,7 @@
           "type": "markdown",
           "state": {
             "file": "symmetries in GR.md",
-            "mode": "source",
+            "mode": "preview",
             "source": true
           }
         },
@@ -132,7 +132,7 @@
     "direction": "horizontal",
     "width": 276.5
   },
-  "active": "37afdef98af2d6b1",
+  "active": "c35ec74c1229a22e",
   "lastOpenFiles": [
     "symmetries in GR.md",
     "GR.md",
