@@ -26,5 +26,6 @@
   "oz-image-plugin",
   "better-fn",
   "cm-typewriter-scroll-obsidian",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-vault-statistics-plugin"
 ]

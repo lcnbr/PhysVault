@@ -55,15 +55,23 @@ Let us define the wave vector
 $$
     \vec{k}(\omega) \equiv\omega\hat{x}.
 $$
-Then $\omega r $
+Then $\omega r=\vec{k}\cdot \vec{x}$ and
 $$
-\begin{split}
-    h_{\mu\nu}&\approx\int_0^\infty\dd{\omega}e^{-\im(\omega t-\vec{k}\cdot\x)}\int\dd[3]{x'}S_{\mu\nu}(\x^{\,\prime},\omega)e^{-\im\x^{\,\prime}\cdot\vec{k}}\frac{4G}{r}+c.c. \\
-    \Rightarrow\ h_{\mu\nu}&\approx\int_0^\infty\dd{\omega}e^{-\im(\omega t-\vec{k}\cdot\x)}\varepsilon_{\mu\nu}(\omega,\vec{k}) + c.c.,
-\end{split}
+h_{\mu\nu}\approx\int_0^\infty\dd{\omega}e^{-\im(\omega t-\vec{k}\cdot\x)}\int\dd[3]{x'}S_{\mu\nu}(\x^{\,\prime},\omega)e^{-\im\x^{\,\prime}\cdot\vec{k}}\frac{4G}{r}+c.c. 
+$$
+    
+$$
+\Rightarrow\ h_{\mu\nu}\approx\int_0^\infty\dd{\omega}e^{-\im(\omega t-\vec{k}\cdot\x)}\varepsilon_{\mu\nu}(\omega,\vec{k}) + c.c.,
+$$
 
+^sphericalSol
+
+this looks just like a superposition of plane waves,
 $$
-with the polarization tensor
+\varepsilon_{\mu v}(\omega,\vec{x} ) \exp \left(i k_{\mu} x^{\mu}\right)+\text { c.c. }
+$$
+
+with $k^0=\omega$ and the polarization tensor
 $$
     \varepsilon_{\mu\nu}(\omega,\x)\equiv \frac{4G}{r}S_{\mu\nu}(\omega,\vec{k}),
 $$
@@ -71,7 +79,11 @@ and
 $$
     S_{\mu\nu}(\omega,\vec{k})=\int\dd[3]{x'}e^{-\im\vec{k}\cdot\x}S_{\mu\nu}(\omega,\x^{\,\prime}).
 $$
-We have found that at large distances the metric takes the form of superposition of (spherical, $\hat{k}=\hat{x}$) plane waves with a polarization tensor given by the above. We can now compute the energy-momentum tensor carried by the wave. We have carried out this computation assuming a monochromatic wave. However, in \eqref{eq:metric waves} we find a superposition of frequencies. The calculation of the energy-momentum tensor will then have additional "interference" terms of the form
+We have found that at large distances the metric takes the form of superposition of (spherical, $\hat{k}=\hat{x}$) plane waves with a polarization tensor given by the above. 
+
+# Energy
+
+We can now compute the energy-momentum tensor carried by the wave. We have already carried out this computation assuming a monochromatic wave in [[energy and momentum of plane gravitional waves]]. However, in [[#^sphericalSol]] we find a superposition of frequencies. The calculation of the energy-momentum tensor will then have additional "interference" terms of the form ( see [[energy and momentum of plane gravitional waves#^8c7014]])
 $$
 \begin{split}
     \frac{\partial h_{\alpha\beta}}{\partial h^\gamma}\frac{\partial h_{\mu\nu}}{\partial x^\rho} \to  \iint_0^\infty\dd{\omega}\dd{\omega}^\prime\,k_\gamma k\ind{\prime}{\rho}&\left[\varepsilon_{\alpha\beta}(k)e^{-\im(\omega t-\vec{k}\cdot\x)}-\varepsilon\ind{\ast}{\alpha\beta}(k)e^{+\im(\omega t-\vec{k}\cdot\x)}\right]\times \\
@@ -89,18 +101,19 @@ $$
     \int_{-\infty}^{+\infty}\dd{t}e^{\pm\im(\omega-\omega\prime)t}&=2\pi\delta(\omega-\omega^\prime),
 \end{split}
 $$
-which eliminates all contributions from $\omega\neq\omega^\prime$. Therefore, our result for the time averaged energy momentum tensor can be used here without worrying about interference of different frequencies
+which eliminates all contributions from $\omega\neq\omega^\prime$. Therefore, our result for the [[energy and momentum of plane gravitional waves#^timeAvgT|time averaged energy momentum tensor]]  can be used here without worrying about interference of different frequencies
 $$
     \int_{-\infty}^{+\infty}\dd{t}t^{\mu\nu} = \int_0^\infty\dd{\omega}\frac{k^\mu k^\nu}{16\pi G}\left(\varepsilon^{\ast\alpha\beta}\varepsilon_{\alpha\beta}-\frac{1}{2}\left|\varepsilon\ind{\alpha}{\alpha}\right|^2\right).
 $$
-We can now calculate the radiated energy
+---
+![[Pasted image 20220207145246.png#leftwrap|200]]We can now calculate the radiated energy (see [[energy and momentum of plane gravitional waves#^dadd12]])
 $$
-    E = \int\dd{t}\frac{\diff E}{\diff t} = -\int\dd{S}n_it^{0i} = \int\dd{\omega}r^2(\hat{x}^it^{0i}).
+    E = \int\dd{t}\dv{ E}{t} = -\int\dd{S}n_it^{0i} = \int\dd{\omega}r^2(\hat{x}^it^{0i}).
 $$
 Written in differential form
 $$
 \begin{split}
-    \frac{\diff E}{\dd{\omega}} &= r^2(\hat{x}^it^{0i})=\cdots \\ 
+    \dv{ E}{\omega} &= r^2(\hat{x}^it^{0i})=\cdots \\ 
     &= 2G\int_0^\infty\dd{\omega}\omega^2\left[T^{\ast\mu\nu}(\vec{k},\omega)T_{\mu\nu}(\vec{k},\omega)-\frac{1}{2}\left|T\ind{\mu}{\mu}(\vec{k},\omega)\right|^2\right],
 \end{split}
 $$
@@ -113,15 +126,15 @@ $$
     T_{\mu\nu}(\x,t) = \int_0^\infty\dd{\omega}\left[e^{-\im\omega t}T_{\mu\nu}(\x,\omega)+e^{+\im\omega t}T\ind{\ast}{\mu\nu}(\x,\omega)\right].
 $$
 
-\underline{Application}
+# Application
 
-Consider $n$ particles moving with velocities $\v_n$ and carrying four-momenta $P^\mu_n\equiv(E_n,E_n\v_n)$ at times $t<0$ before they collide at $t=0$. After the collision the particles will have momenta $\Bar{P}^\mu_n\equiv(\Bar{E}_n,\Bar{E}_n\Bar{\v}_n)$. Due to momentum conservation we have
+![[Pasted image 20220207150324.png#leftwrap|250]]Consider $n$ particles moving with velocities $\v_n$ and carrying four-momenta $P^\mu_n\equiv(E_n,E_n\v_n)$ at times $t<0$ before they collide at $t=0$. After the collision the particles will have momenta $\bar{P}^\mu_n\equiv(\bar{E}_n,\bar{E}_n\bar{\v}_n)$. Due to momentum conservation we have
 $$
-    \sum_n(P_n-\Bar{P}_n)=0.
+    \sum_n(P_n-\bar{P}_n)=0.
 $$
 The energy-momentum tensor is
 $$
-    T^{\mu\nu}(\x,t) = \sum_n\frac{P^\mu_nP^\nu_n}{E_n}\delta^{(3)}(\x-\v_nt)\Theta(-t) + \sum_n\frac{\Bar{P}^\mu_n\bar{P}^\nu_n}{\Bar{E}_n}\delta^{(3)}(\x-\bar{\v}_nt)\Theta(t).
+    T^{\mu\nu}(\x,t) = \sum_n\frac{P^\mu_nP^\nu_n}{E_n}\delta^{(3)}(\x-\v_nt)\Theta(-t) + \sum_n\frac{\bar{P}^\mu_n\bar{P}^\nu_n}{\bar{E}_n}\delta^{(3)}(\x-\bar{\v}_nt)\Theta(t).
 $$
 We can now employ the following representation of the $\Theta$-function
 $$
@@ -129,14 +142,32 @@ $$
 $$
 and the $\delta$-function
 $$
-    \delta^{(3)}(\x)=\int\frac{\diff^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}.
+    \delta^{(3)}(\x)=\int\ dv{^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}.
 $$
 Then
+$$
 \begin{align}
-    T^{\mu\nu}(\x,t) &= \int\frac{\dd{\omega}\diff^3k}{(2\pi)^4\im}\left[\sum_n\frac{P^\mu_nP^\nu_n}{E_n}e^{+\im\vec{k}\cdot(\x-\v_nt)}\frac{e^{+\im\omega(-t)}}{\omega-\im\varepsilon}-\sum_n\frac{\bar{P}^\mu_n\bar{P}^\nu_n}{\bar{E}_n}e^{+\im\vec{k}\cdot(\x-\bar{\v}_nt)}\frac{e^{-\im\omega t}}{\omega+\im\varepsilon}\right] \notag \\
-    &= \int\frac{\dd{\omega}\diff^3k}{(2\pi)^4\im}\left[\sum_n\frac{P^\mu_nP^\nu_n}{E_n}\frac{e^{-\im[(\omega+\vec{k}\cdot\v_n)t-\vec{k}\cdot\x]}}{\omega-\im\varepsilon}-\sum_n\frac{\bar{P}^\mu_n\bar{P}^\nu_n}{\bar{E}_n}\frac{e^{-\im[(\omega+\bar{\v}_n\cdot\vec{k})t-\vec{k}\cdot\x]}}{\omega+\im\varepsilon}\right] \\
-    &= \int\frac{\diff^3k}{(2\pi)^4}e^{+\im\vec{k}\cdot\x}\int_{-\infty}^{+\infty}\frac{\dd{\omega}}{\im}\left[\sum_n\frac{P^\mu_nP^\nu_n}{E_n}\frac{1}{\omega-\vec{k}\cdot\v_n-\im\varepsilon}-\sum_n\frac{\bar{P}^\mu_n\bar{P}^\nu_n}{\bar{E}_n}\frac{1}{\omega-\vec{k}\cdot\bar{\v}_n+\im\varepsilon}\right]e^{-\im\omega t}.\notag
+T^{\mu\nu}(\x,t) &= 
+\int\frac{\dd{\omega}\dd[3]{k}}{(2\pi)^4\im}
+\left[
+    \sum_n\frac{P^\mu_nP^\nu_n}{E_n}e^{+\im\vec{k}\cdot(\x-\v_nt)}\frac{e^{+\im\omega(-t)}}{\omega-\im\varepsilon}
+    -\sum_n\frac{\bar{P}^\mu_n\bar{P}^\nu_n}{\bar{E}_n}e^{+\im\vec{k}\cdot(\x-\bar{\v}_nt)}\frac{e^{-\im\omega t}}{\omega+\im\varepsilon}
+\right] \\
+    
+&= \int\frac{\dd{\omega}\dd[3]{k}}{(2\pi)^4\im}
+\left[
+    \sum_n\frac{P^\mu_nP^\nu_n}{E_n}\frac{e^{-\im[(\omega+\vec{k}\cdot\v_n)t-\vec{k}\cdot\x]}}{\omega-\im\varepsilon}
+    -\sum_n\frac{\bar{P}^\mu_n\bar{P}^\nu_n}{\bar{E}_n}\frac{e^{-\im[(\omega+\bar{\v}_n\cdot\vec{k})t-\vec{k}\cdot\x]}}{\omega+\im\varepsilon}
+\right] \\
+
+&= \int\frac{\dd[3]{k}}{(2\pi)^4}e^{+\im\vec{k}\cdot\x}
+\int_{-\infty}^{+\infty}\frac{\dd{\omega}}{\im}
+\left[
+    \sum_n\frac{P^\mu_nP^\nu_n}{E_n}\frac{1}{\omega-\vec{k}\cdot\v_n-\im\varepsilon}-
+    \sum_n\frac{\bar{P}^\mu_n\bar{P}^\nu_n}{\bar{E}_n}\frac{1}{\omega-\vec{k}\cdot\bar{\v}_n+\im\varepsilon}
+\right]e^{-\im\omega t}
 \end{align}
+$$
 We have that
 $$
     T^{\mu\nu}(\vec{k},\omega) = \frac{1}{2\pi\im}\sum_n\frac{P^\mu_nP^\nu_n}{E_n(\omega-\vec{k}\cdot\v_n-\im\varepsilon)}-\frac{1}{2\pi\im}\sum_n\frac{\bar{P}^\mu_n\bar{P}^\nu_n}{\bar{E}_n(\omega-\vec{k}\cdot\bar{\v}_n+\im\varepsilon)}.
@@ -144,8 +175,8 @@ $$
 Then, indeed,
 $$
 \begin{split}
-    T^{\mu\nu}(\x,t) &= \int\frac{\diff^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}\int_{-\infty}^{+\infty}\dd{\omega}e^{\im\omega t}T^{\mu\nu}(\vec{k},\omega) \\
-    &= \int\frac{\diff^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}\int_{0}^{+\infty}\dd{\omega}\left[e^{\im\omega t}T^{\mu\nu}(\vec{k},\omega)+e^{-\im\omega t}T^{\mu\nu}(\vec{k},-\omega)\right] \\
+    T^{\mu\nu}(\x,t) &= \int\ dv{^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}\int_{-\infty}^{+\infty}\dd{\omega}e^{\im\omega t}T^{\mu\nu}(\vec{k},\omega) \\
+    &= \int\ dv{^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}\int_{0}^{+\infty}\dd{\omega}\left[e^{\im\omega t}T^{\mu\nu}(\vec{k},\omega)+e^{-\im\omega t}T^{\mu\nu}(\vec{k},-\omega)\right] \\
     &= \int_0^\infty\dd{\omega}\left[e^{+\im\omega t}\int\dd[3]{k}T^{\mu\nu}(\vec{k},\omega)e^{+\im\vec{k}\cdot\x} + e^{-\im\omega t}\int\dd[3]{k}T^{\mu\nu}(-\vec{k},-\omega)e^{-\im\vec{k}\cdot\x}\right] \\
     &= \int_0^\infty\dd{\omega}\left[e^{\im\omega t}T^{\mu\nu}(\x,\omega)+c.c.\right].
 \end{split}
@@ -187,13 +218,13 @@ $$
 $$
 So, the total energy flux per solid angle is
 $$
-    \frac{\diff E}{\dd{\omega}} = \int\dd{\omega}\frac{G\omega^2}{2\pi^2}\sum_{N,M}\eta_N\eta_M\frac{(P_N\cdot P_M)^2-\frac{1}{2}m_N^2m_M^2}{(P_N\cdot k)(P_M\cdot k)}.
-\label{eq:energy per solid angle}
+    \ dv{ E}{\dd{\omega}} = \int\dd{\omega}\frac{G\omega^2}{2\pi^2}\sum_{N,M}\eta_N\eta_M\frac{(P_N\cdot P_M)^2-\frac{1}{2}m_N^2m_M^2}{(P_N\cdot k)(P_M\cdot k)}.
+
 $$
 
 \underline{Observations}:
 
-     - 1)] If $\bar{P}_n = P_n$ then $T_{\mu\nu}(\vec{k},\omega) =0$ and there is no radiation $\frac{\diff E}{\dd{\omega}}=0$.
+     - 1)] If $\bar{P}_n = P_n$ then $T_{\mu\nu}(\vec{k},\omega) =0$ and there is no radiation $\ dv{ E}{\dd{\omega}}=0$.
     To produce gravitational radiation a particle needs to change momentum (be accelerated). This is also the case in electromagnetism, where radiation is produced by accelerated charges.
      - 2)] For massless particles $v_n=1$ and $P_N\cdot k=E_n\omega(1-\cos\theta)$. For $\theta=0$ this vanishes and seems to create a singularity in our expression for the energy. But this turns out to be a fake singularity. 
     
@@ -233,8 +264,8 @@ $$
      - 3)] In \eqref{eq:energy per solid angle}, by substituting $\vec{k}=\hat{x}\omega$, we find
 $$
     \begin{split}
-        \frac{\diff E}{\dd{\omega}} &= \int_0^\infty\dd{\omega}\frac{G}{2\pi^2}\sum_{N,M}\eta_N\eta_M\frac{(P_NP_M)^2-\frac{1}{2}m_N^2m_M^2}{E_NE_M(1-\v_N\cdot\x)(1-\v_M\cdot\x)}\\
-        \Rightarrow \frac{\diff E}{\dd{\omega}} &\propto \int_0^\infty\dd{\omega},
+        \ dv{ E}{\dd{\omega}} &= \int_0^\infty\dd{\omega}\frac{G}{2\pi^2}\sum_{N,M}\eta_N\eta_M\frac{(P_NP_M)^2-\frac{1}{2}m_N^2m_M^2}{E_NE_M(1-\v_N\cdot\x)(1-\v_M\cdot\x)}\\
+        \Rightarrow \ dv{ E}{\dd{\omega}} &\propto \int_0^\infty\dd{\omega},
     \end{split}
     $$
-    which is divergent. This divergence is removed if we assume that the collision does not happen instantaneously at $t=0$, but a finite interval $\Delta t$ is required for the transitioning from the initial to the final state. The behaviour of the integral is $\frac{\diff E}{\dd{\omega}}\propto\int_0^{1/\Delta t}\dd{\omega}$.
+    which is divergent. This divergence is removed if we assume that the collision does not happen instantaneously at $t=0$, but a finite interval $\Delta t$ is required for the transitioning from the initial to the final state. The behaviour of the integral is $\ dv{ E}{\dd{\omega}}\propto\int_0^{1/\Delta t}\dd{\omega}$.

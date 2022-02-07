@@ -14,7 +14,7 @@ $$\require{physics}
 \renewcommand{\v}{\vec{v}}
 \newcommand{\e}{\hat{e}}
 \newcommand{\D}{\mathrm{D}}
-\newcommand{\im}{\mathrm{i}}
+\newcommand{\im}{\iunit}
 \renewcommand{\L}{\mathcal{L}}
 $$
 

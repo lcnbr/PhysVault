@@ -58,6 +58,9 @@ $$
     &= -k_\gamma k_\rho\left[\varepsilon_{\alpha\beta}\varepsilon_{\mu\nu}e^{+2\im k\cdot x}+\varepsilon\ind{\ast}{\alpha\beta}\varepsilon\ind{\ast}{\mu\nu}e^{-2\im k\cdot x}-\varepsilon_{\alpha\beta}\varepsilon\ind{\ast}{\mu\nu}-\varepsilon\ind{\ast}{\alpha\beta}\varepsilon_{\mu\nu}\right].
 \end{split}
 $$
+
+^8c7014
+
 We can now average the energy and momentum over the period of the wave. The averaging will require integrals of the form
 $$
     \int_0^T\dd{t}e^{\pm4\pi\im t/T}=0.
@@ -70,10 +73,14 @@ Taking the average then yields
 $$
     \left\langle R\ind{(2)}{\mu\nu}\right\rangle = \cdots = \frac{k_\mu k_\nu}{2}\left(\varepsilon^{\ast\lambda\rho}\varepsilon_{\lambda\rho}-\frac{1}{2}\left|\varepsilon\ind{\lambda}{\lambda}\right|\right).
 $$
+
 Then
 $$
     8\pi G\left\langle t_{\mu\nu}\right\rangle\approx \langle R\ind{(2)}{\mu\nu}\rangle - \frac{\eta^{\mu\nu}}{2}\langle\underbracket{R^{(1)}}_{=0}\rangle=\frac{k_\mu k_\nu}{2}\left(\varepsilon^{\ast\lambda\rho}\varepsilon_{\lambda\rho}-\frac{1}{2}\left|\varepsilon\ind{\lambda}{\lambda}\right|\right).
 $$
+
+^timeAvgT
+
 Notice that $\left\langle t_{\mu\nu}\right\rangle$ is a gauge invariant. Under
 $$
     \varepsilon_{\mu\nu}\to\varepsilon\ind{\prime}{\mu\nu} = \varepsilon_{\mu\nu}+k_\mu\varepsilon_\nu+k_\nu\varepsilon_\mu,
@@ -94,13 +101,22 @@ $$
     \varepsilon^{\ast\mu\nu}\varepsilon_{\mu\nu}-\frac{1}{2}\left|\varepsilon\ind{\lambda}{\lambda}\right|\to\varepsilon^{\ast\mu\nu}\varepsilon_{\mu\nu}-\frac{1}{2}\left|\varepsilon\ind{\lambda}{\lambda}\right|,
 $$
 invariant. If we take $k^\mu=k(1,0,0,1)$ and choose the gauge so that $\varepsilon_{11},\varepsilon_{12}\neq0$ and all other $\varepsilon_{\mu\nu}=0$, we have
+
 $$
     \left\langle t_{\mu\nu}\right\rangle = \frac{k_\mu k_\nu}{8\pi G}\left[\left|\varepsilon_{11}\right|^2+\left|\varepsilon_{12}\right|^2\right] = \frac{k_\mu k_\nu}{16\pi G}\left[\left|e_+\right|^2+\left|e_-\right|^2\right],
 $$
+
+^timeAverageTsimple
+
 with
+
 $$
     e_\pm = \varepsilon_{11}\mp\im\varepsilon_{12}.
 $$
+
+^ePM
+
+
 Exercise: Compare with the corresponding expression for an electromagnetic wave.
 
 The continuity equation gives
@@ -115,6 +131,9 @@ $$
     \Rightarrow\ \frac{\partial E}{\partial t} &= -\int_{S(V)}\dd{S} \hat{n}_it^{0i},
 \end{split}
 $$
+
+^dadd12
+
 the energy flux.
 
 We will soon see that sources (mass distributions) in limited regions of space give rise to spherical gravitational waves. Considering a volume $V$ with surface $S(V)$ far away from the source, the above integral gives us the total power of radiation
