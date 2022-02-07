@@ -25,10 +25,8 @@ $$
 G^{\mu \nu} \equiv R^{(1) \mu \nu}-g^{\mu \nu} \frac{R^{(1)}}{2}=G^{(1) \mu \nu}+\Delta G^{\mu \nu}
 $$
 
-We have from [[Einstein's field equations#Newtonian limit]]:
-$$
-R_{\mu \nu}^{(1)}=\frac{\eta^{\alpha \beta}}{2}\left[\frac{\partial^{2} h_{\alpha \beta}}{\partial x^{\mu} \partial x^{\nu}}+\frac{\partial^{2} h_{\mu \nu}}{\partial x^{\alpha} \partial x^{\beta}}-\frac{\partial^{2} h_{\mu \alpha}}{\partial x^{\beta} \partial x^{\nu}}-\frac{\partial^{2} h_{\nu \alpha}}{\partial x^{\mu} \partial x^{\beta}}\right]
-$$
+We have from [[Ricci tensor#weak field approximation]]:
+![[Ricci tensor#^weeakApprox]]
 which we represent as
 ![[Pasted image 20220206160122.png#center|400]]
 also the  linear [[Ricci scalar]]:
@@ -47,14 +45,19 @@ $$
 A^{\mu \nu \rho}=\frac{1}{2}\left\{\eta^{\nu \beta} \eta^{\mu \rho} \frac{\partial h^{\alpha}{ }_{\alpha}}{\partial x^{\beta}}+\frac{\partial h^{\mu \nu}}{\partial x^{\beta}} \eta^{\rho \beta}+\eta^{\mu \nu} \frac{\partial h^{\rho \alpha}}{\partial x^{\alpha}}\right\} .
 $$
 Thus
+
 $$
 G^{(1) \mu \nu} \equiv R^{(1) \mu \nu}-\frac{\eta^{\mu \nu}}{2} R^{(1)}=\frac{\partial}{\partial x^{\rho}}\left(A^{\mu \nu \rho}-A^{\mu \rho \nu}\right) .
 $$
+
+^LinG
+
 Differentiating with $\frac{\partial}{\partial x^{\nu}}$, we have
 $$
 \frac{\partial G^{(1) \mu \nu}}{\partial x^{\nu}} \equiv \frac{\partial}{\partial x^{\nu}}\left(R^{(1) \mu \nu}-\frac{\eta^{\mu \nu} R^{(1)}}{2}\right)=\underbrace{\frac{\partial^{2}}{\partial x^{\nu} \partial x^{\rho}}}_{\text {sym. }} \underbrace{\left(A^{\mu \nu \rho}-A^{\mu \rho \nu}\right)}_{\text {antisym. }}=0 .
 $$
 Let us now return to Einstein's equations and rewrite them as follows (still setting $\Lambda=0$ )
+
 $$
 \begin{align}
 G^{\mu \nu} & \equiv R^{\mu \nu}-\frac{g^{\mu \nu}}{2} R=-8 \pi G T^{\mu \nu} \\
@@ -62,24 +65,35 @@ G^{\mu \nu} & \equiv R^{\mu \nu}-\frac{g^{\mu \nu}}{2} R=-8 \pi G T^{\mu \nu} \\
 
 \end{align}
 $$
+Thus we have our rewritten [[Einstein's field equations#^EinsteinfieldEq|Einstein's equations]]:
 
-$$\iff G^{(1) \mu \nu} =-8 \pi G t^{\mu \nu},$$
+$$ G^{(1) \mu \nu} =-8 \pi G t^{\mu \nu}$$
 
 ^newEinstein
 
-with
+with [[#^LinG]] and
 $$
-t^{\mu \nu}=T^{\mu \nu}+\frac{1}{8 \pi G}\left(G^{\mu \nu}-G^{(1) \mu \nu}\right)=T^{\mu \nu}+\frac{1}{8 \pi G} \Delta G^{\mu \nu} .
+t^{\mu \nu}=T^{\mu \nu}+\frac{1}{8 \pi G}\left(G^{\mu \nu}-G^{(1) \mu \nu}\right)=T^{\mu \nu}+\frac{1}{8 \pi G} \Delta G^{\mu \nu} 
 $$
+
+^newT
 
 Differentiating the rewritten Einstein's equations [[#^newEinstein]] we obtain
 $$
 \begin{aligned}
 \frac{\partial}{\partial x^{\nu}} G^{(1) \mu \nu} &=-8 \pi G \frac{\partial}{\partial x^{\nu}} t^{\mu \nu} \\
 0 &=-8 \pi G \frac{\partial}{\partial x^{\nu}} t^{\mu \nu} \\
-\frac{\partial}{\partial x^{\nu}} t^{\mu \nu} &=0
 \end{aligned}
 $$
+
+Thus
+
+$$
+\frac{\partial}{\partial x^{\nu}} t^{\mu \nu} =0
+$$
+
+^tCons
+
 showing that $t^{\mu \nu}$ is conserved. It is composed of the energy-momentum tensor of matter and electromagnetic and other forces (other than gravity) and the term $\Delta G^{\mu \nu}=G^{\mu \nu}-G^{(1) \mu \nu}$ in which the part of $G^{\mu \nu}$ which is linear in $h_{\mu \nu}$ is removed. Therefore $\Delta G$ is quadratic in $h_{\mu \nu}$. In a particle physics interpretation, such nonlinear terms correspond to "self-interaction" of particles, which in this case are the gravitons.
 
 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "solutions of the linearized field equations.md",
+            "file": "GR.md",
             "mode": "source",
             "source": true
           }
@@ -22,8 +22,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "solutions of the linearized field equations.md",
-            "mode": "preview",
+            "file": "GR.md",
+            "mode": "source",
             "source": true
           }
         },
@@ -85,9 +85,9 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "solutions of the linearized field equations.md",
+                "file": "GR.md",
                 "collapseAll": true,
-                "extraContext": true,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "solutions of the linearized field equations.md",
+                "file": "GR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "solutions of the linearized field equations.md"
+                "file": "GR.md"
               }
             }
           }
@@ -132,17 +132,17 @@
     "direction": "horizontal",
     "width": 388.5
   },
-  "active": "c35ec74c1229a22e",
+  "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "GR.md",
+    "Tensors and tensor densities in General Relativity.md",
+    "Writing the laws of physics consistently in General Relativity.md",
+    "transformation of the affine connection.md",
+    "covariant derivative.md",
+    "generation of gravitional waves.md",
+    "energy and momentum of plane gravitional waves.md",
+    "analogy with the electromagnetic field.md",
     "solutions of the linearized field equations.md",
-    "LaTeX.md",
-    "gravitational waves.md",
-    "electrodynamics in GR.md",
-    "coordinate conditions.md",
-    "Ricci tensor.md",
-    "determining the metric.md",
-    "energy, momentum and angular momentum with gravity.md",
-    "Einstein's field equations.md",
-    "GR.md"
+    "gravitational waves.md"
   ]
 }

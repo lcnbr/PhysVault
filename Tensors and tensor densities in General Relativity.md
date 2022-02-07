@@ -1,3 +1,10 @@
+---
+alias:
+- general covariance
+- general invariance
+- invariant
+tag: GR physics
+---
 ![[Untitled 5.svg#leftwrap|300]]With the principle of equivalence, we have been able to deduce simple laws for the motion of a particle inside a gravitational field from the laws of special relativity in the absence of gravity. We could apply the same technique in order to derive more complicated laws of physics. For example, we attempt to obtain similarly the laws that govern the motion of a particle in both a gravitational and an electromagnetic field from Maxwell's theory, valid only in the absence of gravity.
 
 However, there is an easier recipe to derive laws of physics which are consistent with the principle of equivalence. This is the method of general covariance. 

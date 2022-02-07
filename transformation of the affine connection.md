@@ -1,3 +1,7 @@
+---
+alias:
+tag: GR physics
+---
 The [[affine connection]] is given by
 
 ![[principle of equivalence#^affineConnection|PoE]]

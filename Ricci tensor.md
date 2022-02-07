@@ -44,7 +44,11 @@ $$
 
 
 $$
-\implies R_{\mu \nu}  = \frac{\eta^{\alpha\rho}}{2}\left[ \frac{\partial^2 h_{\rho\alpha}}{\partial x^\mu\partial x^\nu} + \frac{\partial^2 h_{\mu\nu}}{\partial x^\rho\partial x^\alpha} - \frac{\partial^2 h_{\mu\alpha}}{\partial x^\rho\partial x^\nu} - \frac{\partial^2 h_{\nu\rho}}{\partial x^\mu\partial x^\alpha} \right] + \mathcal{O}(h^2).
+\implies R_{\mu \nu}  = \frac{\eta^{\alpha\rho}}{2}\left[ \frac{\partial^2 h_{\rho\alpha}}{\partial x^\mu\partial x^\nu} + \frac{\partial^2 h_{\mu\nu}}{\partial x^\rho\partial x^\alpha} - \frac{\partial^2 h_{\mu\alpha}}{\partial x^\rho\partial x^\nu} - \frac{\partial^2 h_{\nu\rho}}{\partial x^\mu\partial x^\alpha} \right] + \mathcal{O}(h^2)=R^{(1)}{}_{\mu \nu}+ \mathcal{O}(h^2)
 $$
 
 ^weeakApprox
+
+We represent the linear part $R^{(1)}{}_{\mu \nu}$ as:
+
+![[Pasted image 20220206160122.png#center|400]]

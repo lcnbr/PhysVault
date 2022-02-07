@@ -79,13 +79,20 @@ $$
 The general solution consists of the solution of [[#^hsolInhom]] and the solution of the homogeneous equation (compare to [[#^linEq]])
 
 $$
-\begin{split}
-    \Box h_{\mu\nu} &= 0 \\
-    \partial_\mu h\ind{\mu}{\nu} &= \frac{1}{2}\partial_\nu h\ind{\mu}{\mu}.
-\end{split}
+
+    R^{(1)}{}_{\mu \nu}=0\iff\Box h_{\mu\nu} = 0 
+
 $$
 
 ^hSolHom
+
+$$
+    \partial_\mu h\ind{\mu}{\nu} = \frac{1}{2}\partial_\nu h\ind{\mu}{\mu}.
+
+$$
+
+^HarmCond
+
 
 The above can be solved as plane waves. The metric $h_{\mu\nu}$ ought to be real-valued, thus we seek real solutions of the form
 
@@ -142,12 +149,16 @@ $$
 $$
 Then
 $$
-\begin{split}
-    g\ind{}{\mu\nu}(x^\prime) &= \left(\delta\ind{\alpha}{\nu}-\frac{\partial\omega^\alpha}{\partial x^\nu}\right)\left(\delta\ind{\beta}{\mu}-\frac{\partial\omega^\beta}{\partial x^\mu}\right)\left(\eta_{\alpha\beta}+h_{\alpha\beta}\right) \\
-    &\approx \eta_{\mu\nu} + h_{\mu\nu} -\frac{\partial\omega_\mu}{\partial x^\nu}-\frac{\partial\omega_\nu}{\partial x^\mu}.
-\end{split}
+g\ind{}{\mu\nu}(x^\prime) = \left(\delta\ind{\alpha}{\nu}-\frac{\partial\omega^\alpha}{\partial x^\nu}\right)\left(\delta\ind{\beta}{\mu}-\frac{\partial\omega^\beta}{\partial x^\mu}\right)\left(\eta_{\alpha\beta}+h_{\alpha\beta}\right) 
 $$
-We have already required the harmonic coordinate condition, $g_{\alpha\beta}\Gamma\ind{\mu}{\alpha\beta}=0$, on $h_{\mu\nu}$. A generic coordinate transformation could spoil that. However, if we restrict ourselves to the linear approximation it is still possible to find $x\to x + \varepsilon$ with $\varepsilon^\mu(x)$ such that the harmonic coordinate condition is satisfied in the new frame too. Indeed, we can have
+    
+$$
+\approx \eta_{\mu\nu} + \underbracket{h_{\mu\nu} -\frac{\partial\omega_\mu}{\partial x^\nu}-\frac{\partial\omega_\nu}{\partial x^\mu}.}_{=(h_{\mu \nu})'}
+$$
+
+^metricChange
+
+We have already required the [[coordinate conditions|harmonic coordinate condition]], $g_{\alpha\beta}\Gamma\ind{\mu}{\alpha\beta}=0$, on $h_{\mu\nu}$. A generic coordinate transformation could spoil that. However, if we restrict ourselves to the linear approximation it is still possible to find $x\to x + \varepsilon$ with $\varepsilon^\mu(x)$ such that the [[#^HarmCond|harmonic coordinate condition]] is satisfied in the new frame too. Indeed, we can have
 $$
 \begin{split}
     (g\ind{}{\alpha\beta})'\Gamma\ind{\prime\mu}{\alpha\beta} &= 0 \\
@@ -163,21 +174,21 @@ Thus, the harmonic coordinate condition does not fix the coordinate system compl
 $$
     \omega_\mu(x) = -\im \varepsilon_\mu e^{-\im k\cdot x}+\im\varepsilon_\mu^\ast e^{+\im k\cdot x}.
 $$
-Then $h_{\mu\nu}=\varepsilon_{\mu\nu}e^{\im k\cdot x}+\varepsilon\ind{\ast}{\mu\nu} e^{-\im k\cdot x}$ becomes
+Then [[#^ansatz]] becomes (using [[#^metricChange]])
 $$
     h\ind{\prime}{\mu\nu} = \varepsilon\ind{\prime}{\mu\nu}e^{\im k\cdot x}+\varepsilon\ind{\prime\ast}{\mu\nu} e^{-\im k\cdot x}
 $$
 with
+
 $$
     \varepsilon\ind{\prime}{\mu\nu} = \varepsilon_{\mu\nu} + k_\mu\varepsilon_\nu + k_\nu\varepsilon_\mu.
 $$
-Both $h_{\mu\nu}$ and $h\ind{\prime}{\mu\nu}$ are physically equivalent. However, the corresponding coordinate transformation induces four arbitrary parameters via the vectors $\varepsilon_\mu$. It should then happen that these four arbitrary parameters \underline{affect only} combinations of the polarization tensor components which do not affect physical quantities. As a conclusion, \underline{only two out of six} components of $\varepsilon_{\mu\nu}$ are physical.
 
-To illustrate this, let us choose the direction of the wave to be in the positive $\hat{z}$-axis, $k^\mu = k(1,0,0,1)$. Then
-$$
-    k_\mu\varepsilon\ind{\mu}{\nu} = \frac{1}{2}k_\nu\varepsilon\ind{\mu}{\mu},
-$$
-or, equivalently, 
+^ChangedPolTen
+
+Both $h_{\mu\nu}$ and $(h\ind{}{\mu\nu})'$ are physically equivalent. However, the corresponding coordinate transformation induces four arbitrary parameters via the vectors $\varepsilon_\mu$. It should then happen that these four arbitrary parameters *affect only* combinations of the polarization tensor components which do not affect physical quantities. As a conclusion, *only two out of six* components of $\varepsilon_{\mu\nu}$ are physical.
+
+To illustrate this, let us choose the direction of the wave to be in the positive $\hat{z}$-axis, $k^\mu = k(1,0,0,1)$. Then [[#^polteq]] or, equivalently, 
 $$
     k^\mu\varepsilon_{\mu\nu} = \frac{1}{2}\varepsilon_{\mu\rho}\eta^{\rho\mu}\eta_{\nu\alpha} k^\alpha.
 $$
@@ -190,7 +201,7 @@ $$
     \varepsilon_{22} &= -\varepsilon_{11},
 \end{split}
 $$
-which indeed reduces the number of independent components of $\varepsilon_{\mu\nu}$ to six. Let us now perform the change of coordinates describes above giving $h_{\mu\nu}\to h\ind{\prime}{\mu\nu}$, where both satisfy the harmonic coordinate condition. We observe the changes, explicitly, to the polarization tensor $\varepsilon_{\mu\nu}\to\varepsilon\ind{\prime}{\mu\nu}=\varepsilon_{\mu\nu}+k_\mu\varepsilon_\nu+k_\nu\varepsilon_\mu$. The components
+which indeed reduces the number of independent components of $\varepsilon_{\mu\nu}$ to six. Let us now perform the change of coordinates describes above giving $h_{\mu\nu}\to (h\ind{}{\mu\nu})'$, where both satisfy the harmonic coordinate condition. We observe the [[#^ChangedPolTen|changes, explicitly, to the polarization tensor]]. The components
 $$
 \begin{split}
     \varepsilon_{11}\to\varepsilon\ind{\prime}{11}&=\varepsilon_{11} \\
@@ -210,22 +221,21 @@ We can tune
 $$
     \varepsilon_1=\frac{\varepsilon_{13}}{k},\ \varepsilon_2=\frac{\varepsilon_{23}}{k},\ \varepsilon_3=\frac{\varepsilon_{33}}{2k},\ \varepsilon_0=-\frac{\varepsilon_{00}}{2k}.
 $$
-In these coordinates the wave has only two degrees of freedom
-$$
-    \varepsilon\ind{\prime}{11}=\varepsilon_{11},\ \&\ \varepsilon\ind{\prime}{12}=\varepsilon_{12},
-$$
-while all other independent components of the polarization tensor are in this way made to vanish.
 
+In these coordinates the wave has only two degrees of freedom$$
+    \varepsilon\ind{\prime}{11}=\varepsilon_{11},\ \qqtext{and}\ \varepsilon\ind{\prime}{12}=\varepsilon_{12},$$ while all other independent components of the polarization tensor are in this way made to vanish. ^c8b0d6
+
+## Rotated propagation
 Let us now perform a rotation by an angle $\theta$ about the $z$-axis ($\vec{k}=k\hat{z}$ wave direction). Then, the polarization tensor will change as
 $$
-    \varepsilon_{\mu\nu}\to\varepsilon\ind{\prime}{\mu\nu}=R\invind{\mu}{\rho}R\invind{\nu}{\sigma}\varepsilon_{\rho\sigma}.
+    \varepsilon_{\mu\nu}\to\varepsilon\ind{\prime}{\mu\nu}=R\invind{\mu}{\rho}(\theta)R\invind{\nu}{\sigma}(\theta)\varepsilon_{\rho\sigma}.
 $$
 with
 $$
 \begin{split}
-    R\invind{1}{1}&=\cos\theta\qquad R\invind{1}{2}=\sin\theta \\
-    R\invind{2}{1}&=-\sin\theta\quad\, R\invind{2}{2}=\cos\theta \\
-    R\invind{3}{3}&=R\invind{0}{0}=1\quad\text{and all other }R\invind{\mu}{\nu}=0.
+    R\invind{1}{1}(\theta)&=\cos\theta\qquad R\invind{1}{2}(\theta)=\sin\theta \\
+    R\invind{2}{1}(\theta)&=-\sin\theta\quad\, R\invind{2}{2}(\theta)=\cos\theta \\
+    R\invind{3}{3}(\theta)&=R\invind{0}{0}(\theta)=1\quad\text{and all other }R\invind{\mu}{\nu}(\theta)=0.
 \end{split}
 $$
 Defining
@@ -238,9 +248,16 @@ $$
 we have that
 $$
 \begin{split}
-    e\ind{\prime}{\pm} &= e^{\pm2\im\theta}e_\pm \quad\ \, \rightarrow\text{"helicity $\pm2$\grqq} \\
-    f\ind{\prime}{\pm} &= e^{\pm\im\theta}f_\pm \qquad\rightarrow\text{"helicity $\pm1$\grqq} \\
-    \varepsilon\ind{\prime}{33} &= \varepsilon_{33},\ \varepsilon\ind{\prime}{00}=\varepsilon_{00}\quad\rightarrow\text{"scalar\grqq}.
+    e\ind{\prime}{\pm} &= e^{\pm2\im\theta}e_\pm \quad\ \, \rightarrow\text{"helicity $\pm2$"} \\
+    f\ind{\prime}{\pm} &= e^{\pm\im\theta}f_\pm \qquad\rightarrow\text{"helicity $\pm1$"} \\
+    \varepsilon\ind{\prime}{33} &= \varepsilon_{33},\ \varepsilon\ind{\prime}{00}=\varepsilon_{00}\quad\rightarrow\text{"scalar"}.
 \end{split}
 $$
- 
+In general, any plane wave $\psi$, which is transformed by a rotation of any angle $\theta$ about the direction of propagation into
+$$
+\psi^{\prime}=e^{i h \theta} \psi
+$$
+is said to have helicity $h$. We thus have shown that a gravitational plane wave can be decomposed into parts $e_{\pm}$with helicity $\pm 2$, parts $f_{\pm}$with helicity $\pm 1$, and parts $e_{00}$ and $e_{33}$ with helicity zero. However, we have also seen that the parts with helicity $0$ and $\pm 1$ can be made to [[#^c8b0d6|vanish]] by a suitable choice of coordinates, so the physically significant components are just those with helicity $\pm 2$.
+Let us compare and make an [[analogy with the electromagnetic field]]. We see that  the electromagnetic wave can be decomposed into parts with helicity $\pm 1$ and $0$ . However, the physically significant helicities are $\pm 1$, not $0$ , just as for gravitational waves they are $\pm 2$, not $\pm 1$ or $0 .$ **This is what we mean when we say, speaking classically, that electromagnetism and gravitation are carried by waves of spin 1 and spin 2, respectively.**
+
+The physical significance of the [[#^ansatz|plane-wave solution]] is brought forward by calculating the [[energy and momentum of plane gravitional waves|energy and momentum it carries]] . 

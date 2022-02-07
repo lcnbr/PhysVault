@@ -32,7 +32,7 @@ $$
 $$
 With these two relations the expression for the linearized Ricci tensor simplifies to
 $$
-    R_{\mu\nu} = \frac{1}{2}\eta^{\alpha\beta}\frac{\partial^2h_{\mu\nu}}{\partial x^\alpha\partial x^\beta} = \frac{1}{2}\Box_{SR} h_{\mu\nu}.
+    R^{(1)}{}_{\mu\nu} = \frac{1}{2}\eta^{\alpha\beta}\frac{\partial^2h_{\mu\nu}}{\partial x^\alpha\partial x^\beta} = \frac{1}{2}\Box_{SR} h_{\mu\nu}.
 $$
 For a system of harmonic coordinates, Einstein's linearized equations become
 

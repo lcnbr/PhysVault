@@ -20,3 +20,18 @@ $$
 \end{aligned}
 $$
 So, while we could potentially contract the Riemann tensor with a Levi-Civita symbol to form a scalar, this contraction yields zero.
+
+
+# Weak field approximation
+
+Using [[Ricci tensor#weak field approximation]] we obtain the  linear [[Ricci scalar]] $R^{(1)}=\eta^{\mu \nu}R^{(1)}{}_{\mu \nu}$:
+
+$$
+\implies R^{(1)}  = \eta^{\mu \nu}\eta^{\alpha\rho}\left[ \frac{\partial^2 h_{\rho\alpha}}{\partial x^\mu\partial x^\nu}   - \frac{\partial^2 h_{\nu\rho}}{\partial x^\mu\partial x^\alpha} \right] 
+$$
+
+^LinScal
+
+Or graphically:
+
+![[Pasted image 20220206160225.png#center|400]]
