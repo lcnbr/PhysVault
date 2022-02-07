@@ -15,7 +15,7 @@ An isometry $f:(X, g) \rightarrow\left(X^{\prime}, g^{\prime}\right)$ between Ri
 # Global isometries
 Global isometries are the $\underline{\text { isomorphisms }}$ of metric spaces or Riemannian manifolds. An isometry is $\boldsymbol{g l o b a l}$ if it is a bijection whose inverse is also an isometry. Between metric spaces, isometries are necessarily injections and bijective isometries necessarily have isometries as inverses, so global isometries between metric spaces are also called surjective isometries; this does not work for Riemannian manifolds (where the inverse of an isometry need not be a morphism of manifolds), nor does it work for pseudometric spaces (where an isometry need not be injective).
 # Infinitesimal isometries
-see Killing vector field
+see [[symmetries in GR|Killing vector]] field
 # Isometries on normed vector spaces
 In practice, isometries $E \rightarrow F$ between normed vector spaces tend to be affine maps. The following theorem gives a precise meaning to this.
 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "symmetries in GR.md",
+            "file": "homogeneity and isotropy.md",
             "mode": "source",
             "source": true
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "symmetries in GR.md",
+            "file": "homogeneity and isotropy.md",
             "mode": "preview",
             "source": true
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "symmetries in GR.md",
+                "file": "homogeneity and isotropy.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "symmetries in GR.md",
+                "file": "homogeneity and isotropy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "symmetries in GR.md"
+                "file": "homogeneity and isotropy.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "c35ec74c1229a22e",
   "lastOpenFiles": [
+    "homogeneity and isotropy.md",
     "symmetries in GR.md",
+    "general coordinate transformation.md",
     "GR.md",
     "Action principle for gravity.md",
     "gravitational Lagrangian density.md",
     "matter field Lagrangian with gravity.md",
     "Einstein's field equations.md",
     "determining the metric.md",
-    "generation of gravitional waves.md",
-    "energy and momentum of plane gravitional waves.md",
-    "solutions of the linearized field equations.md"
+    "generation of gravitional waves.md"
   ]
 }
