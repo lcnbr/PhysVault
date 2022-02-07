@@ -27,6 +27,8 @@ R_{\mu \rho}=\frac{\partial \Gamma^{\beta}{ }_{\mu \beta}}{\partial x^{\rho}}
 +\Gamma^{\alpha}{ }_{\mu \beta} \Gamma^{\beta}{ }_{\alpha \rho},
 $$
 
+^4133de
+
 
 # weak field approximation
 

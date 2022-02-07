@@ -43,11 +43,11 @@
     2. Analogy with the electromagnetic field
     3. Energy and momentum of plane waves
     4. Generation of gravitational waves
-9. Action principle for gravity 
+9. [[Action principle for gravity]] 
     1. The gravitational part
     2. adding a matter field
     3. Adding the electromagnetic field
-10. Symmetries
+10. [[symmetries in GR]]
     1. Homogeneity and Isotropy
     2. Curvature of maximally symmetric spaces
     3. Construction of maximally symmetric spaces

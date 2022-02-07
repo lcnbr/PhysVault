@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "generation of gravitional waves.md",
+            "file": "symmetries in GR.md",
             "mode": "source",
             "source": true
           }
@@ -22,8 +22,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "generation of gravitional waves.md",
-            "mode": "preview",
+            "file": "symmetries in GR.md",
+            "mode": "source",
             "source": true
           }
         },
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "generation of gravitional waves.md",
+                "file": "symmetries in GR.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "generation of gravitional waves.md",
+                "file": "symmetries in GR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "generation of gravitional waves.md"
+                "file": "symmetries in GR.md"
               }
             }
           }
@@ -132,17 +132,17 @@
     "direction": "horizontal",
     "width": 276.5
   },
-  "active": "c35ec74c1229a22e",
+  "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "generation of gravitional waves.md",
-    "energy and momentum of plane gravitional waves.md",
-    "solutions of the linearized field equations.md",
-    "gravitational waves.md",
+    "symmetries in GR.md",
+    "GR.md",
+    "Action principle for gravity.md",
+    "gravitational Lagrangian density.md",
+    "matter field Lagrangian with gravity.md",
     "Einstein's field equations.md",
     "determining the metric.md",
-    "Bianchi identities.md",
-    "Newtonian limit.md",
-    "Minkowski metric.md",
-    "energy-momentum tensor in GR.md"
+    "generation of gravitional waves.md",
+    "energy and momentum of plane gravitional waves.md",
+    "solutions of the linearized field equations.md"
   ]
 }

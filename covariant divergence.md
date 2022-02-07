@@ -8,6 +8,8 @@ $$
 V^\mu{}_{; \mu}=\frac{\partial V^{\mu}}{\partial x^{\mu}}+\Gamma^\mu{}_{\mu \rho} V^{\rho} .
 $$
 
+^b06510
+
 Using [[affine connection#^DetContraction|determinant form]] of the [[affine connection#Contraction]], thedivergence becomes:
 
 $$
@@ -17,6 +19,9 @@ V^\mu{}_{; \mu} &=\frac{\partial V^{\mu}}{\partial x^{\mu}}+\Gamma^\mu{}_{\mu \r
 \Rightarrow V^\mu{}_{; \mu} &=\frac{1}{\sqrt{g}} \frac{\partial}{\partial x^{\mu}}\left(\sqrt{g} V^{\mu}\right)
 \end{aligned}
 $$
+
+^d26365
+
 We now can deduce a covariant form of Gauss's Theorem. If $V^{\mu}$ vanishes at infinity, we have
 $$
 \begin{aligned}
