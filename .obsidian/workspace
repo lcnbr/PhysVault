@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Bianchi identities.md",
+            "file": "generation of gravitional waves.md",
             "mode": "source",
             "source": true
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Bianchi identities.md",
+            "file": "generation of gravitional waves.md",
             "mode": "preview",
             "source": true
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bianchi identities.md",
+                "file": "generation of gravitional waves.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bianchi identities.md",
+                "file": "generation of gravitional waves.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bianchi identities.md"
+                "file": "generation of gravitional waves.md"
               }
             }
           }
@@ -132,17 +132,17 @@
     "direction": "horizontal",
     "width": 276.5
   },
-  "active": "37afdef98af2d6b1",
+  "active": "c35ec74c1229a22e",
   "lastOpenFiles": [
-    "Bianchi identities.md",
+    "generation of gravitional waves.md",
+    "energy and momentum of plane gravitional waves.md",
+    "solutions of the linearized field equations.md",
+    "gravitational waves.md",
     "Einstein's field equations.md",
     "determining the metric.md",
+    "Bianchi identities.md",
     "Newtonian limit.md",
-    "gravitational waves.md",
-    "solutions of the linearized field equations.md",
     "Minkowski metric.md",
-    "energy-momentum tensor in GR.md",
-    "generation of gravitional waves.md",
-    "LaTeX.md"
+    "energy-momentum tensor in GR.md"
   ]
 }

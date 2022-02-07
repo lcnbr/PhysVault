@@ -142,7 +142,7 @@ $$
 $$
 and the $\delta$-function
 $$
-    \delta^{(3)}(\x)=\int\ dv{^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}.
+    \delta^{(3)}(\x)=\int\dv{^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}.
 $$
 Then
 $$
@@ -175,8 +175,8 @@ $$
 Then, indeed,
 $$
 \begin{split}
-    T^{\mu\nu}(\x,t) &= \int\ dv{^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}\int_{-\infty}^{+\infty}\dd{\omega}e^{\im\omega t}T^{\mu\nu}(\vec{k},\omega) \\
-    &= \int\ dv{^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}\int_{0}^{+\infty}\dd{\omega}\left[e^{\im\omega t}T^{\mu\nu}(\vec{k},\omega)+e^{-\im\omega t}T^{\mu\nu}(\vec{k},-\omega)\right] \\
+    T^{\mu\nu}(\x,t) &= \int\dv{^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}\int_{-\infty}^{+\infty}\dd{\omega}e^{\im\omega t}T^{\mu\nu}(\vec{k},\omega) \\
+    &= \int\dv{^3k}{(2\pi)^3}e^{+\im\vec{k}\cdot\x}\int_{0}^{+\infty}\dd{\omega}\left[e^{\im\omega t}T^{\mu\nu}(\vec{k},\omega)+e^{-\im\omega t}T^{\mu\nu}(\vec{k},-\omega)\right] \\
     &= \int_0^\infty\dd{\omega}\left[e^{+\im\omega t}\int\dd[3]{k}T^{\mu\nu}(\vec{k},\omega)e^{+\im\vec{k}\cdot\x} + e^{-\im\omega t}\int\dd[3]{k}T^{\mu\nu}(-\vec{k},-\omega)e^{-\im\vec{k}\cdot\x}\right] \\
     &= \int_0^\infty\dd{\omega}\left[e^{\im\omega t}T^{\mu\nu}(\x,\omega)+c.c.\right].
 \end{split}
@@ -218,13 +218,13 @@ $$
 $$
 So, the total energy flux per solid angle is
 $$
-    \ dv{ E}{\dd{\omega}} = \int\dd{\omega}\frac{G\omega^2}{2\pi^2}\sum_{N,M}\eta_N\eta_M\frac{(P_N\cdot P_M)^2-\frac{1}{2}m_N^2m_M^2}{(P_N\cdot k)(P_M\cdot k)}.
+    \dv{ E}{\dd{\omega}} = \int\dd{\omega}\frac{G\omega^2}{2\pi^2}\sum_{N,M}\eta_N\eta_M\frac{(P_N\cdot P_M)^2-\frac{1}{2}m_N^2m_M^2}{(P_N\cdot k)(P_M\cdot k)}.
 
 $$
 
 \underline{Observations}:
 
-     - 1)] If $\bar{P}_n = P_n$ then $T_{\mu\nu}(\vec{k},\omega) =0$ and there is no radiation $\ dv{ E}{\dd{\omega}}=0$.
+     - 1)] If $\bar{P}_n = P_n$ then $T_{\mu\nu}(\vec{k},\omega) =0$ and there is no radiation $\dv{ E}{\dd{\omega}}=0$.
     To produce gravitational radiation a particle needs to change momentum (be accelerated). This is also the case in electromagnetism, where radiation is produced by accelerated charges.
      - 2)] For massless particles $v_n=1$ and $P_N\cdot k=E_n\omega(1-\cos\theta)$. For $\theta=0$ this vanishes and seems to create a singularity in our expression for the energy. But this turns out to be a fake singularity. 
     
@@ -264,8 +264,8 @@ $$
      - 3)] In \eqref{eq:energy per solid angle}, by substituting $\vec{k}=\hat{x}\omega$, we find
 $$
     \begin{split}
-        \ dv{ E}{\dd{\omega}} &= \int_0^\infty\dd{\omega}\frac{G}{2\pi^2}\sum_{N,M}\eta_N\eta_M\frac{(P_NP_M)^2-\frac{1}{2}m_N^2m_M^2}{E_NE_M(1-\v_N\cdot\x)(1-\v_M\cdot\x)}\\
-        \Rightarrow \ dv{ E}{\dd{\omega}} &\propto \int_0^\infty\dd{\omega},
+        \dv{ E}{\dd{\omega}} &= \int_0^\infty\dd{\omega}\frac{G}{2\pi^2}\sum_{N,M}\eta_N\eta_M\frac{(P_NP_M)^2-\frac{1}{2}m_N^2m_M^2}{E_NE_M(1-\v_N\cdot\x)(1-\v_M\cdot\x)}\\
+        \Rightarrow \dv{ E}{\dd{\omega}} &\propto \int_0^\infty\dd{\omega},
     \end{split}
     $$
-    which is divergent. This divergence is removed if we assume that the collision does not happen instantaneously at $t=0$, but a finite interval $\Delta t$ is required for the transitioning from the initial to the final state. The behaviour of the integral is $\ dv{ E}{\dd{\omega}}\propto\int_0^{1/\Delta t}\dd{\omega}$.
+    which is divergent. This divergence is removed if we assume that the collision does not happen instantaneously at $t=0$, but a finite interval $\Delta t$ is required for the transitioning from the initial to the final state. The behaviour of the integral is $\dv{ E}{\dd{\omega}}\propto\int_0^{1/\Delta t}\dd{\omega}$.
