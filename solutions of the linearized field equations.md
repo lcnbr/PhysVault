@@ -34,12 +34,15 @@ $$
 $$
 Performing the $x^{\prime0}$ integration in [[#^hsolInhom]], we have
 $$
-\begin{split}
-    h_{\mu\nu}(x) &= 8G\int\dd[3]{x^\prime}\,S_{\mu\nu}(\x^{\,\prime},t)\dd{t^\prime}\frac{\delta(t\prime-(t-|x-\x^{\,\prime}|))}{2|x-\x^{\,\prime}|} \\
-    h_{\mu\nu}(\x,t) &= 4G\int\dd[3]{x}\,\frac{S_{\mu\nu}(\x^{\,\prime},t-|\x-\x^{\,\prime}|)}{|\x-\x^{\,\prime}|}.
-\end{split}
-
+h_{\mu\nu}(x) = 8G\int\dd[3]{x^\prime}\,S_{\mu\nu}(\x^{\,\prime},t)\dd{t^\prime}\frac{\delta(t\prime-(t-|x-\x^{\,\prime}|))}{2|x-\x^{\,\prime}|} 
 $$
+    
+$$
+h_{\mu\nu}(\x,t) = 4G\int\dd[3]{x}\,\frac{S_{\mu\nu}(\x^{\,\prime},t-|\x-\x^{\,\prime}|)}{|\x-\x^{\,\prime}|}.
+$$
+
+^solInhomt
+
 The retarded solution above satisfies the [[coordinate conditions|harmonic coordinate condition]] of [[#^linEq]]. Indeed, we have
 $$
     T\ind{\mu\nu}{;\mu}=0\ \Rightarrow\ \frac{\partial T^{\mu\nu}}{\partial x^\mu}+\underbracket{\Gamma\,\Gamma\,}_{\mathclap{\mathrm{non-linear}}}=0\ \Rightarrow\ \frac{\partial T^{\mu\nu}}{\partial x^\mu}=0,
