@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "solutions of the linearized field equations.md",
+            "file": "Bianchi identities.md",
             "mode": "source",
             "source": true
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "solutions of the linearized field equations.md",
+            "file": "Bianchi identities.md",
             "mode": "preview",
             "source": true
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "solutions of the linearized field equations.md",
+                "file": "Bianchi identities.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "solutions of the linearized field equations.md",
+                "file": "Bianchi identities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "solutions of the linearized field equations.md"
+                "file": "Bianchi identities.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "solutions of the linearized field equations.md",
-    "generation of gravitional waves.md",
-    "LaTeX.md",
-    "energy and momentum of plane gravitional waves.md",
+    "Bianchi identities.md",
+    "Einstein's field equations.md",
     "determining the metric.md",
-    "Tensors and tensor densities in General Relativity.md",
-    "GR.md",
-    "Writing the laws of physics consistently in General Relativity.md",
-    "transformation of the affine connection.md",
-    "covariant derivative.md"
+    "Newtonian limit.md",
+    "gravitational waves.md",
+    "solutions of the linearized field equations.md",
+    "Minkowski metric.md",
+    "energy-momentum tensor in GR.md",
+    "generation of gravitional waves.md",
+    "LaTeX.md"
   ]
 }

@@ -23,7 +23,7 @@ $$
 R^{\mu \nu}-\frac{1}{2} g^{\mu \nu} R
 $$
 
-has a [[Riemann curvature tensor#Bianchi identities|vanishing covariant divergence]]. So, the most general rank- 2 tensor we can write is
+has a [[Bianchi identities|vanishing covariant divergence]]. So, the most general rank- 2 tensor we can write is
 $$
 G^{\mu \nu}=R^{\mu \nu}-\frac{1}{2} g^{\mu \nu} R+\Lambda g^{\mu \nu},
 $$
