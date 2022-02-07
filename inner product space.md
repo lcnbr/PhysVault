@@ -1,0 +1,1 @@
+a vector space endowed with an [[inner product]]

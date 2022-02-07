@@ -1,0 +1,117 @@
+{
+  "main": {
+    "id": "e5c61c9ae0192a12",
+    "type": "split",
+    "children": [
+      {
+        "id": "6247f3201706bedc",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Lorentz transformation.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0bbf313908ea8244",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "7e75d653ec1f98bc",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "557c600b7c04c8f5",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "7deba5b29c414460",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "3b8e8fc55229bd69",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "5b4768a08fdd6f0c",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Lorentz transformation.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "6e7e8585c1851bd6",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Lorentz transformation.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "0e0fd7f7f4b3fa53",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Lorentz transformation.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "6247f3201706bedc",
+  "lastOpenFiles": [
+    "Lorentz transformation.md",
+    "contravariantly.md",
+    "vector fields in GR.md",
+    "Tensors and tensor densities in General Relativity.md",
+    "GR.md",
+    "special relativity.md",
+    "vectors and tensors in SR.md",
+    "contravariant vectors in SR.md",
+    "covariant vectors in SR.md",
+    "general coordinate transformation.md"
+  ]
+}

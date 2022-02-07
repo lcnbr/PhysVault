@@ -1,0 +1,44 @@
+span[src$="#inline"] img {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+ }
+
+span[src$="#center"] img {
+margin: 5px;
+    display: block !important;
+margin-left: auto !important;
+margin-right: auto !important;
+
+
+ }
+
+span[src$="#centerShadow"] img {
+margin: 5px;
+    display: block !important;
+margin-left: auto !important;
+margin-right: auto !important;
+-moz-box-shadow: 10px 10px 5px #888;
+-webkit-box-shadow: 10px 10px 5px #888;
+box-shadow: 5px 5px 10px #888;
+
+ }
+
+
+span[src$="#leftwrap"] img {
+ 
+    margin: 4px;
+    float: left;
+vertical-align: sub;
+
+ }
+
+span[src$="#rightwrap"] img {
+ 
+    margin: 4px;
+    float: right;
+vertical-align: sub;
+
+ }
+
+

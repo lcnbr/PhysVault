@@ -1,0 +1,117 @@
+{
+  "main": {
+    "id": "e5c61c9ae0192a12",
+    "type": "split",
+    "children": [
+      {
+        "id": "f074e1c4f015331d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Conformal Correlators.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3d7adefe97b3daaf",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "2e9424469b1bf050",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "e386a14783be0469",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "fd3e22c7278cb014",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "667dbf96ad9fbccf",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "8ff2845107341f13",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Conformal Correlators.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "7b115c005bec2d3e",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Conformal Correlators.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "7fae3f1565e3ff58",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Conformal Correlators.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 1
+  },
+  "active": "f074e1c4f015331d",
+  "lastOpenFiles": [
+    "Conformal Correlators.md",
+    "7 CFT/conformal field theory.md",
+    "conformal transformations.md",
+    "Nambu-Goto action.md",
+    "3 Classical Bosonic String/Polyakov action.md",
+    "Wick rotation.md",
+    "4 String Quantisation/closed string spectrum.md",
+    "2 Point particle actions/2.1 non-rel to rel/relativistic particle.md",
+    "1 Intro and Motivation/1.1 Point to string/String theory framework.md",
+    "1 Intro and Motivation/1.1 Point to string/1.1 From point particles to strings and beyond - why study strings.md"
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "main": {
+    "id": "e5c61c9ae0192a12",
+    "type": "split",
+    "children": [
+      {
+        "id": "c35ec74c1229a22e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "solutions of the linearized field equations.md",
+            "mode": "source",
+            "source": true
+          }
+        },
+        "group": "d8d939d48d0ca6ee"
+      },
+      {
+        "id": "37afdef98af2d6b1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "solutions of the linearized field equations.md",
+            "mode": "preview",
+            "source": true
+          }
+        },
+        "group": "d8d939d48d0ca6ee"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c235ccd3f46d4d6a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ebf07bd3186e9504",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e957c70f081ebde8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "54057a12463c8292",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "weak field approximation",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "87f65332409687cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "48df4d4fdd3a9e22",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "485d8e4d656ea84c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "solutions of the linearized field equations.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c45059935a21e8de",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "0b005568ae86a8a3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "solutions of the linearized field equations.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3ca35c2c0d97d255",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "solutions of the linearized field equations.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 388.5
+  },
+  "active": "c35ec74c1229a22e",
+  "lastOpenFiles": [
+    "solutions of the linearized field equations.md",
+    "LaTeX.md",
+    "gravitational waves.md",
+    "electrodynamics in GR.md",
+    "coordinate conditions.md",
+    "Ricci tensor.md",
+    "determining the metric.md",
+    "energy, momentum and angular momentum with gravity.md",
+    "Einstein's field equations.md",
+    "GR.md"
+  ]
+}

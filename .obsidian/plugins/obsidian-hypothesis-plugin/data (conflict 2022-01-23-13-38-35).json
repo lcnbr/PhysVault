@@ -1,0 +1,55 @@
+{
+  "token": "6879-FaSnGGVwPFrqS4Ja0VXo5v2okNujjZ1h6a9t33rHbxI",
+  "user": "acct:l_ul_u@hypothes.is",
+  "highlightsFolder": "/",
+  "isConnected": true,
+  "template": "{% if is_new_article %}# {{title}}\n\n## Metadata\n{% if author %}- Author: [{{author}}]({{authorUrl}}){% endif %}\n- Title: {{title}}\n{% if url %}- Reference: {{url}}{% endif %}\n- Category: #article{% endif %}\n\n{% if is_new_article -%}## Highlights{%- endif %}\n{% for highlight in highlights -%}- {{highlight.text}} — [Updated on {{highlight.updated}}]({{highlight.incontext}}) {% if 'Private' != highlight.group %} — Group: #{{highlight.group| replace(\" \", \"-\")}}{%- endif %}\n{% if highlight.tags | length %}   - Tags: {% for tag in highlight.tags -%} #{{tag | replace(\" \", \"-\")+\" \"}}{%- endfor %}{%- endif %}\n{% if highlight.annotation %}   - Annotation: {{highlight.annotation}}{%- endif -%}{%- endfor -%}",
+  "syncOnBoot": true,
+  "dateTimeFormat": "YYYY-MM-DD HH:mm:ss",
+  "history": {
+    "totalArticles": 4,
+    "totalHighlights": 31
+  },
+  "syncedFiles": [
+    {
+      "filename": "Hypothesis.md",
+      "uri": "https%3A%2F%2Fhypothes.is%2Fwelcome%2F5153483335fb54cd"
+    },
+    {
+      "filename": "Euler-Lagrange%20equations%20for%20particle%20and%20field%20theories.pdf.md",
+      "uri": "https%3A%2F%2Fphysicspages.com%2Fpdf%2FField%2520theory%2FEuler-Lagrange%2520equations%2520for%2520particle%2520and%2520field%2520theories.pdf"
+    },
+    {
+      "filename": "Is the Lagrangian density a functional or a function.md",
+      "uri": "https%3A%2F%2Fphysics.stackexchange.com%2Fquestions%2F313084%2Fis-the-lagrangian-density-a-functional-or-a-function"
+    },
+    {
+      "filename": "Markdown - Wikipedia, the free encyclopedia.md",
+      "uri": "https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMarkdown"
+    }
+  ],
+  "groups": [
+    {
+      "id": "__world__",
+      "name": "Public",
+      "public": true,
+      "type": "open",
+      "selected": true
+    },
+    {
+      "id": "drRYXjYx",
+      "name": "LULUETH",
+      "public": false,
+      "type": "private",
+      "selected": true
+    },
+    {
+      "id": "4MiBE5nr",
+      "name": "STRING",
+      "public": false,
+      "type": "private",
+      "selected": true
+    }
+  ],
+  "lastSyncDate": "2022-01-22T10:24:39.909Z"
+}

@@ -1,0 +1,13 @@
+Higher Loops. How about renormalisation at higher loops? The worry is that now each loop integral can be divergent on its own and create non-local divergences in connection with the other loops, e.g.
+![[Pasted image 20220127082944.png]]
+In particular we can distinguish three different situations:
+- Disconnected loops: This is the easiest case, since the individual loops have a lower perturbative order. Even though the combined divergence is non-local, the corresponding counterterms at lower orders are sufficient to remove the divergence completely. This follows from finiteness of the effective action at lower orders.
+- Nested loops: A divergent loop resides within another loop. The outer loop integral may appear convergent at first sight. However, when the inner loop is performed, the outer loop also becomes divergent.
+- Overlapping loops: Two divergent loops share some propagators, but they are not nested. Since the two integrals cannot be disentangled, it is not immediately clear whether their divergences influence each other and whether they produce a nonlocal combined divergence.
+
+All of the above loop integrals produce non-local divergences. Quite amazingly, none of these are severe: At higher loops the counterterms from lower orders now also appear inside loops:
+![[Pasted image 20220127082959.png]]
+For the same reasons as before, these cancel the divergences due to the individual loops. When all lower-order counterterms have been taken into account there is only a simple divergence left to be removed. Despite the fact that all subdivergences of the higher-loop graph are heavily non-local, the residual divergence turns out to be perfectly local. It can be cancelled by a new counterterm.
+Are these cancellations an outright miracle?
+- An intuitive argument (with potential flaws) is that (UV)-divergences are local in position space. They arise from singular configurations in the integration domain where loops are contracted to a point. ${ }^{13}$ Such a divergence can be compensated by a local counterterm at this point which has precisely the same non-local structure as the divergent part of the loop graph. The argument works for nested and overlapping loops as well because divergences still originate from contracted loops only.
+-  A formal argument for full consistency of QFT renormalisation by local counterterms was found by Bogoliubov, Parasiuk, Hepp and Zimmermann (BPHZ). This is too lengthy to present here. It is based on removing the divergences order-by-order as described above.

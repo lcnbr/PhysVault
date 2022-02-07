@@ -1,0 +1,3 @@
+[Quantized point particle works amazingly well for three out of four (known) forces in our universe: electromagnetism, strong force and weak force.](zotero://open-pdf/library/items/E2TKJSGY?page=7&annotation=2WD26VHI)^stdmodel
+
+In the [[standard model]] there are a [finite number of possible interactions and – correspondingly – a finite number of coupling constants.](zotero://open-pdf/library/items/E2TKJSGY?page=7&annotation=XSYBJGMH)^int

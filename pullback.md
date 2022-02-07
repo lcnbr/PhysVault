@@ -1,0 +1,7 @@
+> Suppose that φ : M → N is a smooth map between smooth manifolds M and N. Then there is an associated linear map from the space of [[one-forms in GR|one form]] on N (the linear space of sections of the cotangent bundle) to the space of 1-forms on M. This linear map is known as the pullback (by φ), and is frequently denoted by φ∗.  More generally, any covariant tensor field – in particular any differential form – on N may be pulled back to M using φ.
+>
+> When the map φ is a diffeomorphism, then the pullback, together with the pushforward, can be used to transform any tensor field from N to M or vice versa. In particular, if φ is a diffeomorphism between open subsets of Rn and Rn, viewed as a change of coordinates (perhaps between different charts on a manifold M), then the pullback and pushforward describe the transformation properties of covariant and contravariant tensors used in more traditional (coordinate dependent) approaches to the subject.
+>
+> The idea behind the pullback is essentially the notion of precomposition of one function with another. However, by combining this idea in several different contexts, quite elaborate pullback operations can be constructed. This article begins with the simplest operations, then uses them to construct more sophisticated ones. Roughly speaking, the pullback mechanism (using precomposition) turns several constructions in differential geometry into contravariant functors.
+>
+> [Wikipedia](https://en.wikipedia.org/wiki/Pullback%20(differential%20geometry))

@@ -1,0 +1,1 @@
+For a matrix, the triple of numbers  $(n_{0}, n_{+}, n_{-})$, where $n_{0}$ is the number of $0$ eigenvalues and $n_{\pm}$is the number of positive and negative eigenvalues respectively. 

@@ -1,0 +1,12 @@
+---
+alias:
+- time ordered
+- time order
+---
+Given a sequence of operators $A_{1}\left(t_{1}\right), A_{2}\left(t_{2}\right), \ldots, A_{n}\left(t_{n}\right)$ labeled by the times, I define the time-ordered product $T\left(A_{1}\left(t_{1}\right) A_{2}\left(t_{2}\right) \ldots A_{n}\left(t_{n}\right)\right)$ of the string of operators as
+$$
+T\left(A_{1}\left(t_{1}\right) A_{2}\left(t_{2}\right) \ldots A_{n}\left(t_{n}\right)\right)=A_{j_{1}}\left(t_{j_{1}}\right) A_{j_{2}}\left(t_{j_{2}}\right) \ldots A_{j_{n}}\left(t_{j_{n}}\right) \quad \text { where } t_{j_{1}}>t_{j_{2}}>t_{j_{3}} \cdots>t_{j_{n}}
+$$
+the same string of operators rearranged, such that the operator with the latest time is on the far left, then the next latest time, then the next, and so on. The convention, thank God, has a simple mnemonic, "later on the left", easy to remember. If two or more times are equal, then the time ordered product is in fact ambiguous. There are cases where we have to worry about that ambiguity, if the two operators do not commute at equal times. In the exponential for $U_{I}$, however, we will apply the time ordering to factors of $H_{I}$, and since $H_{I}$ commutes with itself at equal times, there is no problem. You have seen this time ordering before, for two operators. I defined it in the first homework assignment (Problems $1.2$ and $1.3, \mathrm{p} .49$ ). That earlier definition agrees with this one for the case when there are only two operators.
+
+The time-ordering symbol shares many features with the normal-ordering symbol. For example, the order in which you write the operators down inside the brackets is completely irrelevant, since the actual order in which we are to multiply them is determined by their times, not by the order in which they are written. As with the normal-order product, I must warn you the time-ordering prescription is not, "Compute the ordinary product and then do some mysterious operation to it, called time ordering". It is a new way of interpreting those symbols as they are written. I say this to keep you from getting into contradictions. Suppose you have two free fields, $\phi\left(t_{1}\right)$ and $\phi\left(t_{2}\right)$. The time-ordered product of the commutator of these two is zero, but the commutator is a number, and how can the time-ordered product of a number be zero? That's false reasoning. Time ordering a product means: "Rearrange the terms and then evaluate the product."

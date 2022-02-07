@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "e5c61c9ae0192a12",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1e7f8e69d7c3c5a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Strings.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c24dd714edbd48d9",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "3cdbbe12ce841903",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "bdb0772fb2af0da7",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "fef19f13e6e38574",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "40684634a48d779f",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "6e3ad8f71fc91f5a",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Strings.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "e1e7f8e69d7c3c5a",
+  "lastOpenFiles": [
+    "Strings.md",
+    "Hamiltonian Density.md",
+    "Conjugate momenta.md",
+    "Worldline action for a relativistic point particle.md",
+    "Zotero/broedela-2 Point Particle actions.md",
+    "Polynomial (einbein) Action.md",
+    "relativistic particle.md",
+    "degrees of freedom.md",
+    "Lagrangian.md",
+    "equations of motion.md"
+  ]
+}

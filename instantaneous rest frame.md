@@ -1,0 +1,1 @@
+Frame one can [[Lorentz transformation|boost]] to to set $\dd{x}^i=0$ thus the [[infinitesimal proper time interval in SR]] $\dd{\tau}=\dd{x}^0=\dd{t}$

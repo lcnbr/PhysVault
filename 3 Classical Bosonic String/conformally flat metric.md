@@ -1,0 +1,1 @@
+$$g_{\alpha \beta}(\xi)=f(\xi) \eta_{\alpha \beta}$$

@@ -1,0 +1,14 @@
+{
+  "legacyEditor": false,
+  "livePreview": false,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "showFrontmatter": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "spellcheck": true,
+  "useTab": false,
+  "readableLineLength": false,
+  "showUnsupportedFiles": true,
+  "strictLineBreaks": false
+}

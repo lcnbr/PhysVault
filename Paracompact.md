@@ -1,0 +1,2 @@
+# Paracompact 
+Every open cover $\left\{U_{\alpha} \mid \alpha \in A\right\}$ has a locally finite refinement, that is $\forall x \in E, \exists$ open nhood $U$ of $x$ s.t. $U\cap V \neq \varnothing$ for finitely many elements $V$ of the refinement.

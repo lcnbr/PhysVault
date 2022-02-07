@@ -1,0 +1,1 @@
+Particle with a negative mass squared

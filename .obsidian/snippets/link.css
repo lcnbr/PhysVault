@@ -1,0 +1,20 @@
+.internal-link {
+  background-image: none;
+  padding-right: 0px;
+  color: grey;
+  text-decoration: none;
+}
+.internal-link:hover{
+  text-decoration: underline;
+}
+
+.internal-link:link { text-decoration: none; }
+
+
+.internal-link:visited { text-decoration: none; }
+
+
+.internal-link:hover { text-decoration: none; }
+
+
+.internal-link:active { text-decoration: none; }

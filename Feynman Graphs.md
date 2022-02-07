@@ -1,0 +1,2 @@
+* [These graphs are 'pointlike' in nature, which implies a whole complicated formalism of regularization.](zotero://open-pdf/library/items/E2TKJSGY?page=7&annotation=5MQRIQNQ)[more complicated Feynman graphs are, the less likely the process they describe](zotero://open-pdf/library/items/E2TKJSGY?page=7&annotation=NVLJMWDV)^regpoint
+* [are labelled by the number of loops (e.g. closed paths)](zotero://open-pdf/library/items/E2TKJSGY?page=7&annotation=VXWADGWD)^lab

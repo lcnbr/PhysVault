@@ -1,0 +1,1 @@
+Repeated indices are summed

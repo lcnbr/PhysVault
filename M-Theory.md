@@ -1,0 +1,5 @@
+# M-Theory
+
+The concept of M-theory was suggested by Edward Witten in 1995 and initiated what is nowadays known as the "second superstring revolution". While Witten chose the letter "M" in M-theory for either "membrane", "magic" or "mysterious", everyone picks his or her own interpretation. M-theory is supposed to not be a string theory, but rather a nonperturbative theory of fundamental objects, whose low-energy limit is eleven-dimensional supergravity. The type I, type II and heterotic string theories can be thought of as different perturbative expansions at several points of the moduli space of M-theory.
+
+A complete description of the dynamics of M-theory is not known. The best one can currently do is to formulate the low-energy dynamics of the theory in terms of elevendimensional supergravity interacting with two-dimensional and five-dimensional membranes. M-theory and its dynamics are still a field of active research.

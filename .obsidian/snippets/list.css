@@ -1,0 +1,14 @@
+/* hierarchical ordering:  */
+ol {
+	counter-reset: item
+}
+ol li {
+  display: block
+}
+ol li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item
+}
+section > ol li::before {
+	position: relative;
+}

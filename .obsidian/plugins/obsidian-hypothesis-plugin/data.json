@@ -1,0 +1,39 @@
+{
+  "token": "6879-FaSnGGVwPFrqS4Ja0VXo5v2okNujjZ1h6a9t33rHbxI",
+  "user": "acct:l_ul_u@hypothes.is",
+  "highlightsFolder": "/",
+  "isConnected": true,
+  "template": "---\ntag: hypothesis highlights\n---\n\n\n{% if is_new_article %}# {{title}}\n\n\n## Metadata\n{% if author %}- Author: [{{author}}]({{authorUrl}}){% endif %}\n- Title: {{title}}\n{% if url %}- Reference: {{url}}{% endif %}\n- Category: #article{% endif %}\n\n{% if is_new_article -%}## Highlights{%- endif %}\n{% for highlight in highlights -%}- {{highlight.text}} — [Updated on {{highlight.updated}}]({{highlight.incontext}}) {% if 'Private' != highlight.group %} — Group: #{{highlight.group| replace(\" \", \"-\")}}{%- endif %}\n{% if highlight.tags | length %}   - Tags: {% for tag in highlight.tags -%} #{{tag | replace(\" \", \"-\")+\" \"}}{%- endfor %}{%- endif %}\n{% if highlight.annotation %}   - Annotation: {{highlight.annotation}}{%- endif -%}{%- endfor -%}",
+  "syncOnBoot": true,
+  "autoSyncInterval": 0,
+  "dateTimeFormat": "YYYY-MM-DD HH:mm:ss",
+  "history": {
+    "totalArticles": 0,
+    "totalHighlights": 41
+  },
+  "syncedFiles": [],
+  "groups": [
+    {
+      "id": "__world__",
+      "name": "Public",
+      "public": true,
+      "type": "open",
+      "selected": true
+    },
+    {
+      "id": "drRYXjYx",
+      "name": "LULUETH",
+      "public": false,
+      "type": "private",
+      "selected": true
+    },
+    {
+      "id": "4MiBE5nr",
+      "name": "STRING",
+      "public": false,
+      "type": "private",
+      "selected": true
+    }
+  ],
+  "lastSyncDate": "2022-02-07T10:21:56.466Z"
+}
