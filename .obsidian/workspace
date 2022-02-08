@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/GR/densities.md",
+            "file": "PhysNotes/GR/transformation of the affine connection.md",
             "mode": "preview",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/GR/densities.md",
+                "file": "PhysNotes/GR/transformation of the affine connection.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/GR/densities.md",
+                "file": "PhysNotes/GR/transformation of the affine connection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/GR/densities.md"
+                "file": "PhysNotes/GR/transformation of the affine connection.md"
               }
             }
           }
@@ -118,15 +118,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/GR/densities.md",
+    "PhysNotes/GR/transformation of the affine connection.md",
+    "PhysNotes/GR/GR.md",
     "PhysNotes/GR/Tensors and tensor densities in General Relativity.md",
+    "PhysNotes/GR/determining the metric.md",
+    "PhysNotes/GR/densities.md",
     "PhysNotes/GR/tensor fields in GR.md",
     "PhysNotes/GR/vector fields in GR.md",
     "PhysNotes/GR/scalar fields in GR.md",
-    "PhysNotes/GR/GR.md",
     "PhysNotes/GR/Action principle for gravity.md",
-    "PhysNotes/GR/gravitational Lagrangian density.md",
-    "PhysNotes/LaTeX.md",
-    "PhysNotes/String/Strings.md"
+    "PhysNotes/GR/gravitational Lagrangian density.md"
   ]
 }

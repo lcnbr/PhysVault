@@ -94,4 +94,4 @@ Since we are only considering proper [[Lorentz transformation|Lorentz transforma
 $$
 \varepsilon^{\prime \alpha \beta \gamma \delta}=\Lambda_{\mu}^{\alpha} \Lambda_{\nu}^{\beta} \Lambda_{\rho}^{\gamma} \Lambda_{\sigma}^{\delta} \varepsilon^{\mu \nu \rho \sigma}=\varepsilon^{\alpha \beta \gamma \delta} .
 $$
-Notice that for [[general coordinate transformation|general coordinate transformations]] that will be needed in General Relativity $\operatorname{det} \Lambda$ cis not necessarily 1 and the Levi-Civita symbol is no longer a tensor. (rather a "tensor density".)
+Notice that for [[general coordinate transformation|general coordinate transformations]] that will be needed in General Relativity $\operatorname{det} \Lambda$ cis not necessarily 1 and the Levi-Civita symbol is no longer a tensor. (rather a "[[densities|tensor density]]".)

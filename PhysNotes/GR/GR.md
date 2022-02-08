@@ -4,7 +4,7 @@
     2. Dynamics in [[special relativity]].
     3. [[relativistic energy and momentum]]
     4. Vectors and tensors in [[special relativity]]
-    5. Currents and densities
+    5. Currents and [[densities]]
     6. Energy-momentum tensor
     7.  Spin
 3. The [[principle of equivalence]]
@@ -13,7 +13,7 @@
     3. [[Geodesics and the motion of a particle in a gravitational field]]
 4. [[Tensors and tensor densities in General Relativity]]
     1. Scalars, Vectors, Tensors
-    2. Tensor densities
+    2. [[densities|Tensor densities]]
     3. [[transformation of the affine connection]]
     4. [[covariant derivative]]
         1. Covariant curl

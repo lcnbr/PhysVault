@@ -73,4 +73,4 @@ $$
 &=\Lambda^{\mu}{}_{\nu} J^{\nu}
 \end{aligned}
 $$
-Where we used [[delta function#Composition with a function]]. Note that for [[general coordinate transformation|general coordinate transformations]] the determinant of the Jacobian is not one and current densities transform differently than vectors.
+Where we used [[delta function#Composition with a function]]. Note that for [[general coordinate transformation|general coordinate transformations]] the determinant of the Jacobian is not one and current [[densities]] transform differently than vectors.

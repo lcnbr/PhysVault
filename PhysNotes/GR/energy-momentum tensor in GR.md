@@ -18,7 +18,7 @@ where the sum ranges over all particles and the $\delta$-function defines their 
 $$
 T^{\mu \nu}(\vec{x}, t)=\sum_{n} P_{n}^{\mu} \frac{\mathrm{d} x_{n}^{\nu}}{\mathrm{d} t} \delta^{(3)}\left(\vec{x}-\vec{x}_{n}(t)\right)=\sum_{n} m_{n} \int \mathrm{d} \tau \frac{\mathrm{d} x_{n}^{\mu}}{\mathrm{d} \tau} \frac{\mathrm{d} x_{n}^{\nu}}{\mathrm{d} \tau} \delta\left(x-x_{n}(\tau)\right) .
 $$
-In [[energy-momentum tensor in SR|special relativity]] , the right-hand side of the above equation is manifestly a [[tensor fields in GR|tensor]] since $\frac{\mathrm{d} x_{n}^{\mu}}{\mathrm{d} \tau}$ is a vector and the $\delta$-function is a scalar. In General Relativity the $\delta$-function is not a scalar but a scalar density. Consider a scalar field $\phi(x)$. This can be written as
+In [[energy-momentum tensor in SR|special relativity]] , the right-hand side of the above equation is manifestly a [[tensor fields in GR|tensor]] since $\frac{\mathrm{d} x_{n}^{\mu}}{\mathrm{d} \tau}$ is a vector and the $\delta$-function is a scalar. In General Relativity the $\delta$-function is not a scalar but a [[densities|scalar density]]. Consider a scalar field $\phi(x)$. This can be written as
 $$
 \begin{aligned}
 \phi(x) &=\int \mathrm{d}^{4} y \delta(x-y) \phi(y) \\
