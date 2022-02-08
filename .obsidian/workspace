@@ -4,30 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c35ec74c1229a22e",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "densities.md",
-            "mode": "source",
-            "source": true
-          }
-        },
-        "group": "d8d939d48d0ca6ee"
-      },
-      {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "densities.md",
+            "file": "PhysNotes/GR/densities.md",
             "mode": "preview",
             "source": true
           }
-        },
-        "group": "d8d939d48d0ca6ee"
+        }
       }
     ],
     "direction": "vertical"
@@ -54,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "covariance",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,13 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 240
   },
   "right": {
     "id": "87f65332409687cb",
@@ -85,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "densities.md",
+                "file": "PhysNotes/GR/densities.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "densities.md",
+                "file": "PhysNotes/GR/densities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "densities.md"
+                "file": "PhysNotes/GR/densities.md"
               }
             }
           }
@@ -134,15 +118,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "densities.md",
-    "Tensors and tensor densities in General Relativity.md",
-    "general coordinate transformation.md",
-    "tensor fields in GR.md",
-    "vector fields in GR.md",
-    "cotangent space.md",
-    "contravariance and covariance.md",
-    "GR.md",
-    "principle of equivalence.md",
-    "Geodesics and the motion of a particle in a gravitational field.md"
+    "PhysNotes/GR/densities.md",
+    "PhysNotes/GR/Tensors and tensor densities in General Relativity.md",
+    "PhysNotes/GR/tensor fields in GR.md",
+    "PhysNotes/GR/vector fields in GR.md",
+    "PhysNotes/GR/scalar fields in GR.md",
+    "PhysNotes/GR/GR.md",
+    "PhysNotes/GR/Action principle for gravity.md",
+    "PhysNotes/GR/gravitational Lagrangian density.md",
+    "PhysNotes/LaTeX.md",
+    "PhysNotes/String/Strings.md"
   ]
 }

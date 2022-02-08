@@ -11,5 +11,9 @@
   "readableLineLength": true,
   "showUnsupportedFiles": true,
   "strictLineBreaks": false,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "PhysNotes",
+  "attachmentFolderPath": "Attachements",
+  "fileSortOrder": "byCreatedTime"
 }
