@@ -27,7 +27,7 @@
 6. [[laws of general relatitivity|Einstein's field equations]]
     1. [[Riemann Curvature Tensor]]
         1. Parallel transport and the Riemann Tensor
-        2. Algebraic properties of the Riemann Tensor
+        2. [[Algebraic properties of the Riemann Tensor]]
         3. The Ricci tensor and Ricci scalar
         4. The Bianchi identities
     2. The energy-momentum tensor

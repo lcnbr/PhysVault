@@ -31,7 +31,11 @@ $$
 or, more explicitly,
 
 $$
-R_{\mu \nu \rho \sigma}=\frac{1}{2}\left[\frac{\partial^{2} g_{\mu \rho}}{\partial x^{\nu} \partial x^{\sigma}}+\frac{\partial^{2} g_{\nu \sigma}}{\partial x^{\mu} \partial x^{\rho}}-\frac{\partial^{2} g_{\nu \rho}}{\partial x^{\mu} \partial x^{\rho}}-\frac{\partial^{2} g_{\mu \sigma}}{\partial x^{\nu} \partial x^{\rho}}\right]+g_{\alpha \beta} \Gamma^\alpha{}_{\mu \sigma} \Gamma^\beta{}_{\nu \rho}-g_{\alpha \beta} \Gamma^\alpha{}_{\mu \rho} \Gamma^\beta{}_{\nu \sigma}
+R_{\mu \nu \rho \sigma}=\frac{1}{2}\left[
+\frac{\partial^{2} g_{\mu \rho}}{\partial x^{\nu} \partial x^{\sigma}}
++\frac{\partial^{2} g_{\nu \sigma}}{\partial x^{\mu} \partial x^{\rho}}
+-\frac{\partial^{2} g_{\nu \rho}}{\partial x^{\mu} \partial x^{\sigma}}
+-\frac{\partial^{2} g_{\mu \sigma}}{\partial x^{\nu} \partial x^{\rho}}\right]+g_{\alpha \beta} \Gamma^\alpha{}_{\mu \sigma} \Gamma^\beta{}_{\nu \rho}-g_{\alpha \beta} \Gamma^\alpha{}_{\mu \rho} \Gamma^\beta{}_{\nu \sigma}
 $$
 
 ^RiemannTensorDown
