@@ -47,7 +47,7 @@ $$
 ^lorenzGaugeTrans
 
 # Harmonic coordinate conditions
-Let us now return to General Relativity and Einstein's equations. Also for them we need to "fix the gauge" in order to render the solutions of Einstein's equations unique.
+Let us now return to General Relativity and [[Einstein's field equations|Einstein's equations]]. Also for them we need to "fix the gauge" in order to render the solutions of [[Einstein's field equations|Einstein's equations]] unique.
 One possible way to do this is by imposing the so called harmonic coordinate conditions, which demand a vanishing contraction of the  [[affine connection#From metric tensor metric|affine connection]]
 
 $$

@@ -3,7 +3,7 @@ alias:
 tag: GR physics
 ---
 
-Einstein's equations
+[[Einstein's field equations|Einstein's equations]]
 ![[Einstein's field equations#^EinsteinfieldEq|Einstein's equations]]
 or, equivalently,
 ![[Einstein's field equations#^EinsteinEqWithoutR|Einstein's equation]]
@@ -109,7 +109,7 @@ $$
 
 ^metricTerms
 
-All other terms vanish. The metric should satisfy Einstein's field equations which take the form
+All other terms vanish. The metric should satisfy [[Einstein's field equations]] which take the form
 $$
 R_{\mu \nu}=0 .
 $$
@@ -163,7 +163,7 @@ $$
 $$
 -r A(r)\left(R_{t t} A(r)+R_{r r} B(r)\right)=\dv{(A(r) B(r))}{r}
 $$
-Since the left-hand side of the above vanishes due to Einstein's equations $\left(R_{r r}=R_{t t}=0\right)$, we obtain that
+Since the left-hand side of the above vanishes due to [[Einstein's field equations|Einstein's equations]] $\left(R_{r r}=R_{t t}=0\right)$, we obtain that
 $$
 A(r)=\frac{\kappa}{B(r)}, \quad \kappa=\text { constant. }
 $$

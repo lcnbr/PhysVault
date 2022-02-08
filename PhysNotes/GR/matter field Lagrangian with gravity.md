@@ -30,7 +30,7 @@ The variation under $g_{\mu\nu}\to g_{\mu\nu}+\delta g_{\mu\nu}$ is
 $$
     \delta S = \frac{1}{2}\int\dd[4]{x}\sqrt{g}\delta g_{\mu\nu}\left[-2const.\left(R^{\mu\nu}-\frac{g^{\mu\nu}}{2}R+\Lambda g^{\mu\nu}\right)+T^{\mu\nu}\right] =0.
 $$
-This gives indeed Einstein's equations, if we normalize $const. = -\frac{1}{16\pi G}$. Then the action takes the form
+This gives indeed [[Einstein's field equations|Einstein's equations]], if we normalize $const. = -\frac{1}{16\pi G}$. Then the action takes the form
 
 $$
     S = \int\dd[4]{x}\sqrt{g}\left(-\frac{1}{16\pi G}(R-2\Lambda)+\L_M\right),

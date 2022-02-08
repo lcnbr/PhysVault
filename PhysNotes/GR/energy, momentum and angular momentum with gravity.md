@@ -20,7 +20,7 @@ We will do that for gravitational systems which are confined within some finite 
 $$
 g_{\mu \nu}=\eta_{\mu \nu}+h_{\mu \nu}
 $$
-where $h_{\mu \nu} \rightarrow 0$ as $r \rightarrow \infty$, but it can be large at finite distances. Let us now separate the part of the left-hand side of Einstein's equations which is linear in $h_{\mu \nu}$. Namely ($\Lambda=0$)
+where $h_{\mu \nu} \rightarrow 0$ as $r \rightarrow \infty$, but it can be large at finite distances. Let us now separate the part of the left-hand side of [[Einstein's field equations|Einstein's equations]] which is linear in $h_{\mu \nu}$. Namely ($\Lambda=0$)
 $$
 G^{\mu \nu} \equiv R^{(1) \mu \nu}-g^{\mu \nu} \frac{R^{(1)}}{2}=G^{(1) \mu \nu}+\Delta G^{\mu \nu}
 $$
@@ -56,7 +56,7 @@ Differentiating with $\frac{\partial}{\partial x^{\nu}}$, we have
 $$
 \frac{\partial G^{(1) \mu \nu}}{\partial x^{\nu}} \equiv \frac{\partial}{\partial x^{\nu}}\left(R^{(1) \mu \nu}-\frac{\eta^{\mu \nu} R^{(1)}}{2}\right)=\underbrace{\frac{\partial^{2}}{\partial x^{\nu} \partial x^{\rho}}}_{\text {sym. }} \underbrace{\left(A^{\mu \nu \rho}-A^{\mu \rho \nu}\right)}_{\text {antisym. }}=0 .
 $$
-Let us now return to Einstein's equations and rewrite them as follows (still setting $\Lambda=0$ )
+Let us now return to [[Einstein's field equations|Einstein's equations]] and rewrite them as follows (still setting $\Lambda=0$ )
 
 $$
 \begin{align}
@@ -78,7 +78,7 @@ $$
 
 ^newT
 
-Differentiating the rewritten Einstein's equations [[#^newEinstein]] we obtain
+Differentiating the rewritten [[Einstein's field equations|Einstein's equations]] [[#^newEinstein]] we obtain
 $$
 \begin{aligned}
 \frac{\partial}{\partial x^{\nu}} G^{(1) \mu \nu} &=-8 \pi G \frac{\partial}{\partial x^{\nu}} t^{\mu \nu} \\
