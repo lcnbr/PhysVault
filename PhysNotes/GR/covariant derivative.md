@@ -72,7 +72,7 @@ $$
 ## Leibniz rule
 The covariant derivative of a direct product of [[tensor fields in GR|tensors]] obeys the Leibniz rule. For instance,
 $$
-\left(A^\mu{}_{\nu} B^{\lambda}\right)_{; \rho}=A^\mu{}_{\nu ; \lambda} B^{\lambda}+A^\mu{}_{\nu} B^\lambda{}_{; \rho}
+\left(A^\mu{}_{\nu} B^{\lambda}\right)_{; \rho}=A^\mu{}_{\nu ; \rho} B^{\lambda}+A^\mu{}_{\nu} B^\lambda{}_{; \rho}
 $$
 
 ## Contraction

@@ -6,11 +6,11 @@ tag: GR physics
 ---
 
 # D'Alambert operator in General Relativity
-Consider a scalar $\phi(x)$. Its covariant derivative is
+Consider a scalar $\phi(x)$. Its [[covariant derivative]] is
 $$
 \phi_{; \mu}=\frac{\partial \phi}{\partial x^{\mu}} .
 $$
-Taking one more covariant derivative we have
+Taking one more [[covariant derivative]] we have
 $$
 \phi_{; \mu ; \nu}=\frac{\partial^{2} \phi}{\partial x^{\mu} \partial x^{\nu}}-\Gamma^{\alpha}{ }_{\mu \nu} \frac{\partial \phi}{\partial x^{\alpha}} .
 $$
