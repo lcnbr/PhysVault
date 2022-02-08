@@ -3,7 +3,7 @@ alias:
 tag: GR physics
 ---
 
-For a system with an energy-momentum tensor $T_{\mu\nu}$ the metric
+For a system with an [[energy-momentum tensor in GR|energy-momentum tensor]] $T_{\mu\nu}$ the metric
 $$
     g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu},
 $$
@@ -83,7 +83,7 @@ We have found that at large distances the metric takes the form of superposition
 
 # Energy
 
-We can now compute the energy-momentum tensor carried by the wave. We have already carried out this computation assuming a monochromatic wave in [[energy and momentum of plane gravitional waves]]. However, in [[#^sphericalSol]] we find a superposition of frequencies. The calculation of the energy-momentum tensor will then have additional "interference" terms of the form ( see [[energy and momentum of plane gravitional waves#^8c7014]])
+We can now compute the [[energy-momentum tensor in GR|energy-momentum tensor]] carried by the wave. We have already carried out this computation assuming a monochromatic wave in [[energy and momentum of plane gravitional waves]]. However, in [[#^sphericalSol]] we find a superposition of frequencies. The calculation of the [[energy-momentum tensor in GR|energy-momentum tensor]] will then have additional "interference" terms of the form ( see [[energy and momentum of plane gravitional waves#^8c7014]])
 $$
 \begin{split}
     \frac{\partial h_{\alpha\beta}}{\partial h^\gamma}\frac{\partial h_{\mu\nu}}{\partial x^\rho} \to  \iint_0^\infty\dd{\omega}\dd{\omega}^\prime\,k_\gamma k\ind{\prime}{\rho}&\left[\varepsilon_{\alpha\beta}(k)e^{-\im(\omega t-\vec{k}\cdot\x)}-\varepsilon\ind{\ast}{\alpha\beta}(k)e^{+\im(\omega t-\vec{k}\cdot\x)}\right]\times \\
@@ -132,7 +132,7 @@ $$
 $$
     \sum_n(P_n-\bar{P}_n)=0.
 $$
-The energy-momentum tensor is
+The [[energy-momentum tensor in GR|energy-momentum tensor]] is
 $$
     T^{\mu\nu}(\x,t) = \sum_n\frac{P^\mu_nP^\nu_n}{E_n}\delta^{(3)}(\x-\v_nt)\Theta(-t) + \sum_n\frac{\bar{P}^\mu_n\bar{P}^\nu_n}{\bar{E}_n}\delta^{(3)}(\x-\bar{\v}_nt)\Theta(t).
 $$

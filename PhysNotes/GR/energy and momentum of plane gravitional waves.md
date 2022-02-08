@@ -13,7 +13,7 @@ where $R\ind{(1)}{\mu\nu}$ is the [[Ricci tensor#weak field approximation|linear
 We showed in [[energy, momentum and angular momentum with gravity]] that:
 ![[energy, momentum and angular momentum with gravity#^tCons]]
 
-and we have thus associated $t^{\mu\nu}$ to the energy-momentum tensor of matter and gravitation. For plane waves $T_{\mu\nu}=0$ (empty space) and we can therefore write
+and we have thus associated $t^{\mu\nu}$ to the [[energy-momentum tensor in GR|energy-momentum tensor]] of matter and gravitation. For plane waves $T_{\mu\nu}=0$ (empty space) and we can therefore write
 $$
     -8\pi Gt_{\mu\nu} = -R_{\mu\nu}+\frac{g_{\mu\nu}}{2}R+R\ind{(1)}{\mu\nu}-\frac{\eta_{\mu\nu}}{2}R^{(1)}.
 $$

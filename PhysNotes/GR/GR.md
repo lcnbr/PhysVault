@@ -5,7 +5,7 @@
     3. [[relativistic energy and momentum]]
     4. Vectors and tensors in [[special relativity]]
     5. Currents and [[densities]]
-    6. Energy-momentum tensor
+    6. [[energy-momentum tensor in GR|Energy-momentum tensor]]
     7.  Spin
 3. The [[principle of equivalence]]
     1. [[Newtonian limit]]
@@ -29,8 +29,8 @@
         1. Parallel transport and the Riemann Tensor
         2. [[Algebraic properties of the Riemann Tensor]]
         3. The [[Ricci tensor]] and Ricci scalar
-        4. The Bianchi identities
-    2. The energy-momentum tensor
+        4. The [[Bianchi identities]]
+    2. The [[energy-momentum tensor in GR|energy-momentum tensor]]
     3. [[Einstein's field equations]]
         1. Coordinate conditions
         2. Energy, momentum and angular momentum

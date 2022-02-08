@@ -4,7 +4,7 @@ alias:
 tag: GR physics
 ---
 
-In [[special relativity]] we could define the [[energy-momentum tensor in SR|energy/momentum]] of isolated systems from the conservation equation of the energy-momentum tensor $\partial_{\mu} T^{\mu \nu}=0$. In General Relativity the [[energy-momentum tensor in GR|energy-momentum tensor]] in the right-hand side of [[Einstein's field equations|Einstein's equations]]
+In [[special relativity]] we could define the [[energy-momentum tensor in SR|energy/momentum]] of isolated systems from the conservation equation of the [[energy-momentum tensor in GR|energy-momentum tensor]] $\partial_{\mu} T^{\mu \nu}=0$. In General Relativity the [[energy-momentum tensor in GR|energy-momentum tensor]] in the right-hand side of [[Einstein's field equations|Einstein's equations]]
 
 ![[Einstein's field equations#^EinsteinfieldEq|Einstein's equation]]
 
@@ -12,7 +12,7 @@ is not conserved in the traditional way. Instead we have (see [[energy-momentum 
 $$
 T^{\mu \nu}{}_{; \mu}=0
 $$
-in which the [[covariant derivative]] includes the effects of gravitation in a concealed way. We want to define an energy-momentum tensor which includes explicitly gravitation, let us call it $t_{\mu \nu}$, that is traditionally conserved
+in which the [[covariant derivative]] includes the effects of gravitation in a concealed way. We want to define an [[energy-momentum tensor in GR|energy-momentum tensor]] which includes explicitly gravitation, let us call it $t_{\mu \nu}$, that is traditionally conserved
 $$
 \partial_{\mu} t^{\mu \nu}=0
 $$
@@ -94,7 +94,7 @@ $$
 
 ^tCons
 
-showing that $t^{\mu \nu}$ is conserved. It is composed of the energy-momentum tensor of matter and electromagnetic and other forces (other than gravity) and the term $\Delta G^{\mu \nu}=G^{\mu \nu}-G^{(1) \mu \nu}$ in which the part of $G^{\mu \nu}$ which is linear in $h_{\mu \nu}$ is removed. Therefore $\Delta G$ is quadratic in $h_{\mu \nu}$. In a particle physics interpretation, such nonlinear terms correspond to "self-interaction" of particles, which in this case are the gravitons.
+showing that $t^{\mu \nu}$ is conserved. It is composed of the [[energy-momentum tensor in GR|energy-momentum tensor]] of matter and electromagnetic and other forces (other than gravity) and the term $\Delta G^{\mu \nu}=G^{\mu \nu}-G^{(1) \mu \nu}$ in which the part of $G^{\mu \nu}$ which is linear in $h_{\mu \nu}$ is removed. Therefore $\Delta G$ is quadratic in $h_{\mu \nu}$. In a particle physics interpretation, such nonlinear terms correspond to "self-interaction" of particles, which in this case are the gravitons.
 
 
 # [[Newtonian limit]]

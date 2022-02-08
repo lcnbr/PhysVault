@@ -4,7 +4,7 @@ tag: GR physics
 ---
 
 
-We focus first on the gravitational term $\L_G$, ignoring (or setting to zero) the energy-momentum tensor. To maintain coordinate transformation invariance, $\L_G$ must be a scalar
+We focus first on the gravitational term $\L_G$, ignoring (or setting to zero) the [[energy-momentum tensor in GR|energy-momentum tensor]]. To maintain coordinate transformation invariance, $\L_G$ must be a scalar
 $$
     \L_G\xrightarrow{x\to x^\prime}\L_G^\prime = \L_G.
 $$

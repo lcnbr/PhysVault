@@ -17,7 +17,7 @@ where the [[Lagrangian Density]] will be decomposed into a gravitation and a "ma
 $$
     \L = \L_G+\L_M.
 $$
-In the above, $\L_M$ will be responsible for generating the energy-momentum tensor term in Einstein`s equations.
+In the above, $\L_M$ will be responsible for generating the [[energy-momentum tensor in GR|energy-momentum tensor]] term in Einstein`s equations.
 
 The action of gravitation should be built of the principle of being [[Tensors and tensor densities in General Relativity|general invariance|invariant]] under [[general coordinate transformation|general coordinate transformations]]
 $$

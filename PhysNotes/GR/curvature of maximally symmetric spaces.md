@@ -68,7 +68,7 @@ $$
     \Rightarrow\ R_{\mu\nu\rho\sigma} &= \frac{g_{\mu\rho}g_{\nu\sigma}-g_{\mu\sigma}g_{\nu\rho}}{D(D-1)}R.
 \end{split}
 $$
-From the Bianchi identity
+From the [[Bianchi identities|Bianchi identity]]
 $$
 \begin{split}
     \left(R^{\mu\nu}-\frac{g^{\mu\nu}}{2}R\right)_{;\mu} &=0 \\

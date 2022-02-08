@@ -6,7 +6,7 @@ tag: GR physics
 
 ---
 
-We now have all the ingredients to build the relativistic generalization of Newton's law [[determining the metric#^poissonEq|poisson equation]]: $\nabla^{2} \phi=4 \pi G \rho$. As $\nabla^{2} \phi$ is contained inside the [[Riemann curvature tensor|Riemann tensor]] and $\rho=T^{00}$ inside the energy-momentum tensor we can write an Ansatz of the form
+We now have all the ingredients to build the relativistic generalization of Newton's law [[determining the metric#^poissonEq|poisson equation]]: $\nabla^{2} \phi=4 \pi G \rho$. As $\nabla^{2} \phi$ is contained inside the [[Riemann curvature tensor|Riemann tensor]] and $\rho=T^{00}$ inside the [[energy-momentum tensor in GR|energy-momentum tensor]] we can write an Ansatz of the form
 $$
 G^{\mu \nu}=c_{0} T^{\mu \nu},
 $$
