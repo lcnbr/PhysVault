@@ -114,7 +114,7 @@ $$
 
 ^PotMax
 
-Where $\square^2$ or $\partial^2$ is the d'Alembertian:
+Where $\square^2$ or $\partial^2$ is the [[D'Alambert operator in GR|d'Alembertian]]:
 
 $$
 \partial^2=\square^{2}=\eta^{\alpha \beta} \frac{\partial}{\partial x^{\beta}} \frac{\partial}{\partial x^{\alpha}}=\nabla^{2}-\frac{\partial^{2}}{\partial t^{2}}

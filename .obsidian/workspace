@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/GR/D'Alambert operator in GR.md",
+            "file": "PhysNotes/GR/energy, momentum and angular momentum with gravity.md",
             "mode": "preview",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/GR/D'Alambert operator in GR.md",
+                "file": "PhysNotes/GR/energy, momentum and angular momentum with gravity.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/GR/D'Alambert operator in GR.md",
+                "file": "PhysNotes/GR/energy, momentum and angular momentum with gravity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/GR/D'Alambert operator in GR.md"
+                "file": "PhysNotes/GR/energy, momentum and angular momentum with gravity.md"
               }
             }
           }
@@ -118,15 +118,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/GR/D'Alambert operator in GR.md",
-    "PhysNotes/GR/coordinate conditions.md",
-    "PhysNotes/GR/Einstein's field equations.md",
-    "PhysNotes/GR/determining the metric.md",
     "PhysNotes/GR/energy, momentum and angular momentum with gravity.md",
+    "PhysNotes/GR/determining the metric.md",
+    "PhysNotes/GR/coordinate conditions.md",
+    "PhysNotes/GR/solutions of the linearized field equations.md",
+    "PhysNotes/GR/D'Alambert operator in GR.md",
+    "PhysNotes/GR/Einstein's field equations.md",
     "PhysNotes/GR/energy-momentum tensor in GR.md",
     "PhysNotes/GR/GR.md",
     "PhysNotes/GR/Bianchi identities.md",
-    "PhysNotes/GR/Riemann curvature tensor.md",
-    "PhysNotes/GR/Ricci scalar.md"
+    "PhysNotes/GR/Riemann curvature tensor.md"
   ]
 }

@@ -32,7 +32,7 @@
         4. The [[Bianchi identities]]
     2. The [[energy-momentum tensor in GR|energy-momentum tensor]]
     3. [[Einstein's field equations]]
-        1. Coordinate conditions
+        1. [[Coordinate conditions]]
         2. Energy, momentum and angular momentum
 7. The Schwarzschild solution of Einstein's field equations
     1. Trajectories
