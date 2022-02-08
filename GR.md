@@ -2,7 +2,7 @@
 2. [[special relativity]]
     1. Time dilation and Doppler effect
     2. Dynamics in [[special relativity]].
-    3. Relativistic energy and momentum
+    3. [[Relativistic energy and momentum]]
     4. Vectors and tensors in [[special relativity]]
     5. Currents and densities
     6. Energy-momentum tensor
