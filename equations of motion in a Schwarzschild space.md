@@ -15,7 +15,7 @@ where the coordinates read
 $$
 x^{\mu}=\{t, r, \theta, \varphi\}
 $$
-anthe parameter $p$ is the variable that we use in order to parameterize the trajectory $x^{\mu}(p)$ of the particle. For a start, we can let the evolution variable unspecified. Once we solve the equations of motion in terms of the arbitrary parameter $p$, we will relate the parameter $p$ to proper time via
+anthe parameter $p$ is the variable that we use in order to parameterize the trajectory $x^{\mu}(p)$ of the particle. For a start, we can let the evolution variable unspecified. Once we solve the equations of motion in terms of the arbitrary parameter $p$, we will relate the parameter $p$ to [[infinitesimal proper time interval in SR|proper time]] via
 
 $$
 \begin{aligned}
@@ -26,7 +26,7 @@ $$
 
 ^proptime
 
-This procedure will show that for a massive particle, $p$ can be chosen to be proportional to proper time $\tau$. However, for light particles proper time intervals $\dd \tau$ vanish and a different variable needs to be chosen.
+This procedure will show that for a massive particle, $p$ can be chosen to be proportional to [[infinitesimal proper time interval in SR|proper time]] $\tau$. However, for light particles [[infinitesimal proper time interval in SR|proper time]] intervals $\dd \tau$ vanish and a different variable needs to be chosen.
 The [[#^eom| equations of motion]] have the explicit form using the [[Schwarzschild solution to Einstein's field equation#^AffineconnectionComp]]
 
 $$
@@ -102,7 +102,7 @@ $$
 
 ^constE
 
-We can now relate the parameter $p$ to proper time more explicitly. Substituting $\theta=\frac{\pi}{2}$ and the results for $\dot  {\varphi} , \dot{r}, \dot{t}$ from [[#^constf]], [[#^constJ]] and [[#^constE]] into [[#^proptime]], we obtain
+We can now relate the parameter $p$ to [[infinitesimal proper time interval in SR|proper time]] more explicitly. Substituting $\theta=\frac{\pi}{2}$ and the results for $\dot  {\varphi} , \dot{r}, \dot{t}$ from [[#^constf]], [[#^constJ]] and [[#^constE]] into [[#^proptime]], we obtain
 $$
 \left(\dv{ \tau}{p}\right)^{2}=E f^{2} .
 $$

@@ -3,7 +3,7 @@ alias:
 tag: GR physics
 ---
 
-Let us consider the [[covariant derivative]] of a Killing vector, $\xi_{\mu;\nu}$, which,[[Riemann curvature tensor#^9f35dc| as every second rank tensor, satisfies]]
+Let us consider the [[covariant derivative]] of a [[symmetries in GR|Killing vector]], $\xi_{\mu;\nu}$, which,[[Riemann curvature tensor#^9f35dc| as every second rank tensor, satisfies]]
 
 $$
     \left(\xi_{\mu;\nu}\right)_{;\rho;\sigma}-\left(\xi_{\mu;\nu}\right)_{;\sigma;\rho} = -R\ind{\lambda}{\mu\rho\sigma}\xi_{\lambda;\nu}-R\ind{\lambda}{\nu\rho\sigma}\xi_{\mu;\lambda}.
@@ -32,11 +32,11 @@ with
  $$
      {Q\ind{\lambda}{\mu\nu\rho\sigma}}^\alpha \equiv +R\ind{\lambda}{\nu\rho\sigma}\delta\ind{\alpha}{\mu} + R\ind{\lambda}{\rho\nu\mu}\delta\ind{\alpha}{\sigma} - R\ind{\lambda}{\sigma\mu\nu}\delta\ind{\alpha}{\rho} - R\ind{\lambda}{\mu\rho\sigma}\delta\ind{\alpha}{\nu}.
 $$
-[[#^2DerKill]] holds for every Killing vector at any point $x$ of our space. At any point $x$, there exist Killing vectors with $\xi_\lambda(x)=0$ and $\xi_{\lambda;\mu}(x)=-\xi_{\mu;\lambda}(x)$ ([[homogeneity and isotropy#^IsoKilling|isotropy]]). For them only the right-hand side of [[#^2DerKill]]  survives. As $\xi_{\lambda;\mu}(x)$ is arbitrary and antisymmetric, the antisymmetric part of the coefficient should vanish
+[[#^2DerKill]] holds for every [[symmetries in GR|Killing vector]] at any point $x$ of our space. At any point $x$, there exist [[symmetries in GR|Killing vectors]] with $\xi_\lambda(x)=0$ and $\xi_{\lambda;\mu}(x)=-\xi_{\mu;\lambda}(x)$ ([[homogeneity and isotropy#^IsoKilling|isotropy]]). For them only the right-hand side of [[#^2DerKill]]  survives. As $\xi_{\lambda;\mu}(x)$ is arbitrary and antisymmetric, the antisymmetric part of the coefficient should vanish
 $$
     {Q\ind{\lambda}{\sigma\mu\nu}}^\alpha = {Q\ind{\alpha}{\sigma\mu\nu}}^\lambda.
 $$
-Also, at every point $x$, we can find Killing vectors with $\xi_\lambda(x)$ arbitrary and $\xi_{\lambda;\mu}(x)=0$ ([[homogeneity and isotropy#^HomoKilling|homogeneity]]). Due to them, we must also have that 
+Also, at every point $x$, we can find [[symmetries in GR|Killing vectors]] with $\xi_\lambda(x)$ arbitrary and $\xi_{\lambda;\mu}(x)=0$ ([[homogeneity and isotropy#^HomoKilling|homogeneity]]). Due to them, we must also have that 
 $$
 \begin{split}
     R\ind{\lambda}{\sigma\mu\nu;\rho}-R\ind{\lambda}{\rho\mu\nu;\sigma} &=0 \\

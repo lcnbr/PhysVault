@@ -8,7 +8,7 @@ $$
 \mathrm{d} \xi^{\prime 0}=\mathrm{d} \tau
 $$
 because the clock is at rest as viewed in an [[instantaneous rest frame]].
-However, the proper time interval is the same for all inertial observers and thus
+However, the [[infinitesimal proper time interval in SR|proper time]] interval is the same for all inertial observers and thus
 $$
 \mathrm{d} \tau=\mathrm{d} \xi^{\prime 0}=\sqrt{\eta_{\mu \nu} \mathrm{d} \xi^{\mu} \mathrm{d} \xi^{\nu}} .
 $$

@@ -35,7 +35,7 @@ $$
 ^symCond
 
 
-which have $\frac{D(D+1)}{2}$ generators. The resulting space inherits the same rotation symmetries and will thus have the maximum number of Killing vectors in $D$ dimensions. The metric in the $D$-dimensional space is easily computed. We find
+which have $\frac{D(D+1)}{2}$ generators. The resulting space inherits the same rotation symmetries and will thus have the maximum number of [[symmetries in GR|Killing vectors]] in $D$ dimensions. The metric in the $D$-dimensional space is easily computed. We find
 $$
     \dd{z}^2 = \frac{\kappa^2\left(c_{\mu\nu}x^\mu\dd{x}^\nu\right)^2}{\left(1-\kappa c_{\alpha\beta}x^\alpha x^\beta\right)},
 $$
@@ -65,9 +65,9 @@ $$
 $$
 Thus $\kappa$ is the curvature constant.
 
-# Killing vectors
+# [[symmetries in GR|Killing vectors]]
 
-We will now identify independent Killing vectors generating the isometries of our maximally symmetric space. We have two subsets of the [[#^symmetries|symmetry transformation]] is
+We will now identify independent [[symmetries in GR|Killing vectors]] generating the isometries of our maximally symmetric space. We have two subsets of the [[#^symmetries|symmetry transformation]] is
 
 ## Rotations
  $$
@@ -96,11 +96,11 @@ $$
 $$
 We can indeed check that [[#^infTrans]] is equivalent to the condition
 ![[symmetries in GR#^killingVec]]
-of Killing vectors.
+of [[symmetries in GR|Killing vectors]].
 
 ## Translations
 
-We have infinitesimal translations with Killing vectors
+We have infinitesimal translations with [[symmetries in GR|Killing vectors]]
 $$
     \xi^\mu_{(a)} = a^\mu(1-\kappa c_{\mu\nu}x^\mu x^\nu)^{1/2}.
 $$

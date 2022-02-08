@@ -3,7 +3,7 @@ alias: spin
 tag: GR physics
 ---
 
-In Special Relativity the spin of a free particle for an inertial observer is preserved (c.f. [[spin and angular momentum in SR|spin]])
+In [[Special Relativity]] the spin of a free particle for an inertial observer is preserved (c.f. [[spin and angular momentum in SR|spin]])
 
 $$
 \frac{\mathrm{d} S_{\mu}}{\mathrm{d} \tau}=0 .

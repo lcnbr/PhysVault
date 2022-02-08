@@ -146,7 +146,7 @@ We can define:
 
 ![[Pasted image 20220205161318.png#leftwrap|300]]Often we are interested in the properties of particles that are moving along a trajectoy in spacetime, which will then only be defined along this curve. Therefore, we want a covariant derivative for tensors defined only on a curve, as opposed to everywhere in space.
 For example, consider a quantity $\Pi^{\mu \nu \rho}(x(\tau))$ which is defined on a trajectory $x(\tau)$ through spacetime. How would we compute its derivative?
-In classical mechanics we worked with $\vec{x}(t), \frac{\vec{x}(t+\delta t)-\vec{x}(t)}{\delta t}$, or in Special Relativity with $\vec{x}(\tau), t(\tau)$. An appropriate derivative for a vector $V^{\mu}\left(x^{\alpha}(\tau)\right)$ living on the trajectory was then
+In classical mechanics we worked with $\vec{x}(t), \frac{\vec{x}(t+\delta t)-\vec{x}(t)}{\delta t}$, or in [[Special Relativity]] with $\vec{x}(\tau), t(\tau)$. An appropriate derivative for a vector $V^{\mu}\left(x^{\alpha}(\tau)\right)$ living on the trajectory was then
 $$
 \frac{\mathrm{d} V^{\mu}(\tau)}{\mathrm{d} \tau}
 $$

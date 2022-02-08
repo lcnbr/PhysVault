@@ -34,7 +34,7 @@
     3. [[Einstein's field equations]]
         1. Coordinate conditions
         2. Energy, momentum and angular momentum
-7. The Schwarzschild solution of Einstein's field equationr
+7. The Schwarzschild solution of Einstein's field equations
     1. Trajectories
     2. Light deflection
     3. Bound orbits
@@ -52,4 +52,4 @@
     2. Curvature of maximally symmetric spaces
     3. Construction of maximally symmetric spaces
     4. Tensorrs in maximally symmetric spaces
-    5. spaces with maximally symmetric subspaces
+    5. [[spaces with maximally symmetric subspaces]]

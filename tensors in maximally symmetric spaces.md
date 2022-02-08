@@ -28,11 +28,11 @@ Specializing to a scalar $S(x)$, the above gives
 $$
     \xi^\alpha(x)\frac{\partial}{\partial x^\alpha}S(x) =0.
 $$
-In a maximally symmetric space there are Killing vectors which are arbitrary at any point $x$. Then we get
+In a maximally symmetric space there are [[symmetries in GR|Killing vectors]] which are arbitrary at any point $x$. Then we get
 $$
     \frac{\partial}{\partial x^\alpha}S(x) =0\ \Rightarrow\ S(x) = constant.
 $$
-In a maximally symmetric space , we can also choose Killing vectors which vanish at any given point $X$, $\xi^\alpha(X)=0$, but their covariant derivatives do not and form an antisymmetric tensor
+In a maximally symmetric space , we can also choose [[symmetries in GR|Killing vectors]] which vanish at any given point $X$, $\xi^\alpha(X)=0$, but their covariant derivatives do not and form an antisymmetric tensor
 $$
     \xi_{\mu;\rho}(X)=-\xi_{\rho;\mu}(X).
 $$

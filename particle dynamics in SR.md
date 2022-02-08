@@ -94,4 +94,4 @@ Thus
 $$
 \frac{\mathrm{d}}{\mathrm{d} \tau}\left(\eta_{\mu \nu} \frac{\mathrm{d} x^{\mu}}{\mathrm{d} \tau} \frac{\mathrm{d} x^{\nu}}{\mathrm{d} \tau}\right)=0,
 $$
-and $\eta_{\mu \nu} \frac{\mathrm{d} x^{\mu}}{\mathrm{d} \tau} \frac{\mathrm{d} x^{\nu}}{\mathrm{d} \tau}$ is independent of proper time.
+and $\eta_{\mu \nu} \frac{\mathrm{d} x^{\mu}}{\mathrm{d} \tau} \frac{\mathrm{d} x^{\nu}}{\mathrm{d} \tau}$ is independent of [[infinitesimal proper time interval in SR|proper time]].

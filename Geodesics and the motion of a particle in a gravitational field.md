@@ -6,7 +6,7 @@ We have derived the equations of motion of a particle in the gravitational field
 with ![[principle of equivalence#^prorTimeGeneric]]
 and ![[affine connection#^affineconnectionFromMetric]]
 
-We will now show that the equations of motion describe a "geodesic" in spacetime. Namely, the trajectory minimizes the proper time interval for the transition among any two points.
+We will now show that the equations of motion describe a "geodesic" in spacetime. Namely, the trajectory minimizes the [[infinitesimal proper time interval in SR|proper time]] interval for the transition among any two points.
 $$
 \begin{aligned}
 \delta \int_{\tau_{A}}^{\tau_{B}} \dd{\tau} 
@@ -63,7 +63,7 @@ $$
 ^propTimeDiffEq
 
 
-To satisfy [[#^propTimeDiffEq]] we need only to make sure that it is satisfied at an initial proper time $\tau_{0}$ by choosing appropriate boundary conditions. Then it will keep being satisfied for arbitrary proper times due to [[principle of equivalence#^eomGeneric]]. Indeed, we have that
+To satisfy [[#^propTimeDiffEq]] we need only to make sure that it is satisfied at an initial [[infinitesimal proper time interval in SR|proper time]] $\tau_{0}$ by choosing appropriate boundary conditions. Then it will keep being satisfied for arbitrary proper times due to [[principle of equivalence#^eomGeneric]]. Indeed, we have that
 
 $$
 \begin{aligned}

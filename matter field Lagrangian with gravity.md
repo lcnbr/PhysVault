@@ -64,7 +64,7 @@ $$
     \Leftrightarrow\ g^{\mu\nu}\phi_{;\mu;\nu}+m^2\phi &=0.
 \end{split}
 $$
-For $g_{\mu\nu} = \eta_{\mu\nu}$ and $\Gamma\ind{\mu}{\nu\rho}=0$ we do obtain the correct equations of motion for a scalar field in special relativity
+For $g_{\mu\nu} = \eta_{\mu\nu}$ and $\Gamma\ind{\mu}{\nu\rho}=0$ we do obtain the correct equations of motion for a scalar field in [[special relativity]]
 $$
     \eta^{\mu\nu}\partial_\mu\partial_\nu\phi+m^2\phi = 0\ \Leftrightarrow\ (\Box+m^2)\phi =0.
 $$

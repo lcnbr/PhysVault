@@ -19,7 +19,7 @@ We will solve Einsteins equations away from the massive object, where the energy
 $$
 R_{\mu \nu}=0 .
 $$
-Proper time intervals will be given in terms of the metric as
+[[infinitesimal proper time interval in SR|Proper time]] intervals will be given in terms of the metric as
 
 ![[principle of equivalence#^prorTimeGeneric|PoE]]
 
@@ -31,7 +31,7 @@ and thus
 $$
 g_{\mu \nu}(x)=g_{\mu \nu}(\vec{x}) .
 $$
-Due to isotropy, the proper time interval should be rotationally invariant. Its space-like part can then be made of three-dimensional scalar products
+Due to isotropy, the [[infinitesimal proper time interval in SR|proper time]] interval should be rotationally invariant. Its space-like part can then be made of three-dimensional scalar products
 $$
 \mathrm{d} \vec{x}^{2}, \vec{x}^{2} \equiv r^{2}, \vec{x} \cdot \mathrm{d} \vec{x} .
 $$

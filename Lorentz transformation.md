@@ -98,7 +98,7 @@ $$
 
 ^velocity
 
-where $\vec{v}$ is the velocity of the particle. The proper time intervals in the two frames are the same (c.f. [[infinitesimal proper time interval in SR#^BoostInvariance|defining property]] of [[infinitesimal proper time interval in SR#with Minkowski metric|proper time]])
+where $\vec{v}$ is the velocity of the particle. The [[infinitesimal proper time interval in SR|proper time]] intervals in the two frames are the same (c.f. [[infinitesimal proper time interval in SR#^BoostInvariance|defining property]] of [[infinitesimal proper time interval in SR#with Minkowski metric|proper time]])
 $$
 
 \begin{aligned}

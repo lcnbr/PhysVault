@@ -64,6 +64,9 @@ g_{\mu\sigma}\frac{\partial\xi^\sigma}{\partial x^\nu}
 \end{split}
 $$
 Where we used [[affine connection#From metric tensor metric]]
+
+# Killing Vectors
+
 This leads to the condition
 
 $$
@@ -157,5 +160,6 @@ $$
 
 Due to the  antisymmetry $\xi_{\nu;\rho}=-\xi_{\rho;\nu}$ the number of independent $\beta\ind{\nu\rho}{\mu}(x)$ functions in $D$ dimensions is $\frac{D(D-1)}{2}$. In addition we require $D$ independent functions for $\alpha\ind{\rho}{\mu}$. In total the functional form of $\xi_\mu(x)$ depends on $\frac{D(D-1)}{2}+D = \frac{D(D+1)}{2}$ function coefficients. Therefore, in $D=4$ dimensions one can have at most $\frac{D(D+1)}{2}=10$ linearly independent Killing vectors.
 
+---
 What conditions on the space restricts these d.o.f.s? Lets look at [[homogeneity and isotropy]], and then conversely what does [[curvature of maximally symmetric spaces|space look like when it is maximally symmetric]]? It turns out its metric is then uniquely dependent on a curvature constant : $\kappa$. Given the uniqueness of a maximally symmetric space of a certain curvature $\kappa$,we can [[construction of maximally symmetric space| construct its metric in any way we can (guess it)]]. We can also look at what happens if we impose the isometry condition on more than just the metric: [[tensors in maximally symmetric spaces]]. We can loosen our maximal symmetry condition and restrict to specific subspaces: [[spaces with maximally symmetric subspaces]]
 

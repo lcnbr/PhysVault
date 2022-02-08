@@ -6,14 +6,14 @@ tag: GR physics
 
 Often a space is not maximally symmetric, but it has subspaces which are. For example, the space of the universe is thought as (approximately) isotropic and homogeneous at any given time $t$. However, the full space time is not. Consider generically a space of dimensionality $D$ with a maximally symmetric subspace of dimensionality $M$. We parametrize the subspace with  $i=1\cdots m$ variables $u^i$. We also have  $v^\alpha,\,\alpha=1\cdots D-M$ variables, to complete the coverage of the full space.
 
-Maximal symmetry of the $M$-dimensional subspace means that there exist $\frac{M(M+1)}{2}$ Killing vectors which transform 
+Maximal symmetry of the $M$-dimensional subspace means that there exist $\frac{M(M+1)}{2}$ [[symmetries in GR|Killing vectors]] which transform 
 $$
 \begin{split}
     u^i&\to u^{\prime i} = u^i+\xi^i(u,v) \\
     v^\alpha&\to v^{\prime\alpha}=v^\alpha,
 \end{split}
 $$
-which leave the metric of the full space form-invariant. Killing vectors satisfy the condition
+which leave the metric of the full space form-invariant. [[symmetries in GR|Killing vectors]] satisfy the condition
 $$
     \xi_{\mu;\nu}+\xi_{\nu;\mu} =0,
 $$
@@ -70,7 +70,7 @@ It can be proven (see Weinberg) that we can always find a solution of
 $$
     \frac{\partial u^k}{\partial v^{\prime\alpha}}g_{jk}+g_{j\alpha},
 $$
-and thus render the cross terms $g_{i\alpha}$ to vanish. In these coordinates the Killing vector conditions become
+and thus render the cross terms $g_{i\alpha}$ to vanish. In these coordinates the [[symmetries in GR|Killing vector]] conditions become
 - [[#^killingMM]]$\to g_{ik}\frac{\partial\xi^k}{\partial v^\alpha} =0$
 - [[#^killingMD]]$\to \frac{\partial g_{\alpha\beta}}{\partial u^k}\xi^k=0$
 - [[#^killingDD]]$\to g_{ik}\frac{\partial\xi^k}{\partial u^j} + g_{jk}\frac{\partial\xi^k}{\partial u^i} + \frac{\partial g_{ij}}{\partial u^k}\xi^k =0.$
