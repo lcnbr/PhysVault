@@ -142,7 +142,7 @@ which similarly gives
 $$
 P^{i}=\frac{1}{16 \pi G} \int_{S} \mathrm{~d} S n_{j}\left[\frac{\partial h^{i j}}{\partial t}+\frac{\partial h^{i 0}}{\partial x^{j}}-\delta_{i j}\left(\frac{\partial h^{0 k}}{\partial x^{k}}+\frac{\partial h^{k k}}{\partial t}\right)\right]
 $$
-Angular momentum is derived similarly. As $t^{\mu \nu}$ is symmetric, the following tensor is conserved
+Angular momentum is derived similarly. As $t^{\mu \nu}$ is symmetric, the following [[tensor fields in GR|tensor]] is conserved
 $$
 M^{\mu \nu \rho}=t^{\mu \nu} x^{\rho}-t^{\mu \rho} x^{\nu}
 $$
@@ -162,4 +162,4 @@ And the following quantities (identified with angular momentum) are conserved
 $$
 J^{\rho \nu}=\int \mathrm{d}^{3} x M^{0 \rho \nu} .
 $$
-which is equivalent to Einstein's theory. We are thus led back to the remark at the beginning of this chapter, that the major difference between the electromagnetic and gravitational fields is that the source of the electromagnetic potential $A^{\alpha}$ is a conserved current $J^{\alpha}$ that does not involve $A^{\alpha}$ because the electromagnetic field is not itself charged, whereas the source of the gravitational field $h_{\mu \kappa}$ is a conserved "tensor" $\tau^{\mu \kappa}$ that must involve $h_{\mu \kappa}$ because the gravitational field does carry energy and momentum.
+which is equivalent to Einstein's theory. We are thus led back to the remark at the beginning of this chapter, that the major difference between the electromagnetic and gravitational fields is that the source of the electromagnetic potential $A^{\alpha}$ is a conserved current $J^{\alpha}$ that does not involve $A^{\alpha}$ because the electromagnetic field is not itself charged, whereas the source of the gravitational field $h_{\mu \kappa}$ is a conserved "[[tensor fields in GR|tensor]]" $\tau^{\mu \kappa}$ that must involve $h_{\mu \kappa}$ because the gravitational field does carry energy and momentum.

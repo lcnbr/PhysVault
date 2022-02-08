@@ -79,7 +79,7 @@ and
 $$
     S_{\mu\nu}(\omega,\vec{k})=\int\dd[3]{x'}e^{-\im\vec{k}\cdot\x}S_{\mu\nu}(\omega,\x^{\,\prime}).
 $$
-We have found that at large distances the metric takes the form of superposition of (spherical, $\hat{k}=\hat{x}$) plane waves with a polarization tensor given by the above. 
+We have found that at large distances the metric takes the form of superposition of (spherical, $\hat{k}=\hat{x}$) plane waves with a polarization [[tensor fields in GR|tensor]] given by the above. 
 
 # Energy
 

@@ -29,4 +29,4 @@ $$
 \Rightarrow & \int \underbracket{\mathrm{d}^{4} x \sqrt{g}}_{\text {invariant }} \underbracket{V^\mu{}_{; \mu}}_{\text {cov. deriv. }}=0
 \end{aligned}
 $$
-Exercise: How does $V^\mu{}_{; \mu}$ transform under general coordinate transformations? Recall $\sqrt{g}$ is a [[densities|scalar density]] of weight $-1$, and reusing the determinant trick, we show that it is a [[scalar fields in GR|scalar]]!
+Exercise: How does $V^\mu{}_{; \mu}$ transform under [[general coordinate transformation|general coordinate transformations]]? Recall $\sqrt{g}$ is a [[densities|scalar density]] of weight $-1$, and reusing the determinant trick, we show that it is a [[scalar fields in GR|scalar]]!

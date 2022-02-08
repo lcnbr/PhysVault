@@ -41,11 +41,11 @@ $$
 
 
 # Tensor density
-Similarly, we find objects which transform as tensors with extra factors of the Jacobian.
+Similarly, we find objects which transform as [[tensor fields in GR|tensors]] with extra factors of the Jacobian.
 $$
 \Omega^{\mu_{1} \cdots}{}_{\nu_{1} \cdots} \rightarrow (\Omega^{ \mu_{1} \cdots}{}_{\nu_{1} \cdots})'=\frac{\partial x^{\prime \mu_{1}}}{\partial x^{\alpha_{1}}} \cdots \frac{\partial x^{\beta_{1}}}{\partial x^{\prime \nu_{1}}} \cdots\left|\frac{\partial x^{\prime}}{\partial x}\right|^{w} \Omega^{\alpha_{1} \cdots}{}_{\beta_{1} \cdots}
 $$
-The above defines a *tensor density of weight $w$*. Notice that we can turn a tensor density into a normal tensor by multiplying it with an appropriate power of the determinant of the metric. Concretely,
+The above defines a *tensor density of weight $w$*. Notice that we can turn a tensor density into a normal [[tensor fields in GR|tensor]] by multiplying it with an appropriate power of the determinant of the metric. Concretely,
 $$
 \begin{aligned}
 g^{w / 2} \Omega^{\mu_{1} \cdots}{}_{\nu_{1} \cdots} \rightarrow g^{\prime w / 2} &\pqty{\Omega^{ \mu_{1} \cdots}{ }_{\nu_{1} \cdots}}'  \\
@@ -69,4 +69,4 @@ $$
 \varepsilon^{\alpha \beta \gamma \delta} \frac{\partial x^{\prime \mu}}{\partial x^{\alpha}} \frac{\partial x^{\prime \nu}}{\partial x^{\beta}} \frac{\partial x^{\prime \rho}}{\partial x^{\gamma}} \frac{\partial x^{\prime \sigma}}{\partial x^{\delta}}=\left|\frac{\partial x^{\prime}}{\partial x}\right| \varepsilon^{\mu \nu \rho \sigma} .
 $$
 From the above we conclude that the Levi-Civita symbol is a tensor density.
-Exercise: Proof that $\sqrt{g} \varepsilon^{\mu \nu \rho \sigma}$ is a tensor.
+Exercise: Proof that $\sqrt{g} \varepsilon^{\mu \nu \rho \sigma}$ is a [[tensor fields in GR|tensor]].

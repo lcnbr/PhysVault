@@ -6,7 +6,7 @@ tags: SR GR
 ---
 
 We can now extend the formalism of [[currents and densities in SR|current density]] in order to describe the density and flow of energy and momentum. Recall the definition of the [[currents and densities in SR|current density]]
-![[currents and densities in SR#^currentDensity|current density]] and now substitute the charge $q_n$ with the momentum components of the particle:  the [[relativistic energy and momentum|momentum 4-vector]]. This defines a tensor which is called the energy-momentum tensor
+![[currents and densities in SR#^currentDensity|current density]] and now substitute the charge $q_n$ with the momentum components of the particle:  the [[relativistic energy and momentum|momentum 4-vector]]. This defines a [[tensor fields in GR|tensor]] which is called the energy-momentum tensor
 
 $$
 T^{\mu \nu}=\sum_n p_n^{\mu} \dv{ x_n^{\nu}}{ t} \delta^{(3)}\left(\vec{x}-\vec{x}_n(t)\right) .
@@ -14,7 +14,7 @@ $$
 
 ^tensor
 
-Despite its appearance this is a symmetric tensor. Indeed
+Despite its appearance this is a symmetric [[tensor fields in GR|tensor]]. Indeed
 $$
 \begin{aligned}
 T^{\mu \nu} &=\sum_n p_n^{\mu} \dv{ x_n^{\nu}}{ t} \delta^{(3)}\left(\vec{x}-\vec{x}_n(t)\right) \\
@@ -34,7 +34,7 @@ $$
 
 ^integralForm
 
-In this form we see explicitly that this is a $2^{\text {nd }}$ rank tensor. Let us now calculate the divergence of the energy-momentum tensor
+In this form we see explicitly that this is a $2^{\text {nd }}$ rank [[tensor fields in GR|tensor]]. Let us now calculate the divergence of the energy-momentum tensor
 
 $$
 \begin{aligned}

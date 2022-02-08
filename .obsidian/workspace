@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Geodesics and the motion of a particle in a gravitational field.md",
+            "file": "densities.md",
             "mode": "source",
             "source": true
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Geodesics and the motion of a particle in a gravitational field.md",
+            "file": "densities.md",
             "mode": "preview",
             "source": true
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Geodesics and the motion of a particle in a gravitational field.md",
+                "file": "densities.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Geodesics and the motion of a particle in a gravitational field.md",
+                "file": "densities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Geodesics and the motion of a particle in a gravitational field.md"
+                "file": "densities.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "Geodesics and the motion of a particle in a gravitational field.md",
+    "densities.md",
+    "Tensors and tensor densities in General Relativity.md",
+    "general coordinate transformation.md",
+    "tensor fields in GR.md",
+    "vector fields in GR.md",
+    "cotangent space.md",
+    "contravariance and covariance.md",
     "GR.md",
-    "Clocks and light in a gravitational field.md",
-    "Newtonian limit.md",
     "principle of equivalence.md",
-    "affine connection.md",
-    "special relativity.md",
-    "spin and angular momentum in SR.md",
-    "energy-momentum tensor in SR.md",
-    "currents and densities in SR.md"
+    "Geodesics and the motion of a particle in a gravitational field.md"
   ]
 }

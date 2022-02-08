@@ -9,7 +9,7 @@ The [[Action principle for gravity|gravitational action]]
 $$
     S = \int\dd[4]{k}\sqrt{g}\left(-\frac{R}{16\pi G} + matter\right),
 $$
-is invariant under general coordinate transformations $x\to x^\prime=x^\prime(x)$. Often we find coordinate transformations which not only preserve the action, but they also preserve the form of the metric. Such symmetries are called [[isometry|isometries]]. They are defined as the coordinate transformations (see [[general coordinate transformation#A note on notation|note on notation]])
+is invariant under [[general coordinate transformation|general coordinate transformations]] $x\to x^\prime=x^\prime(x)$. Often we find coordinate transformations which not only preserve the action, but they also preserve the form of the metric. Such symmetries are called [[isometry|isometries]]. They are defined as the coordinate transformations (see [[general coordinate transformation#A note on notation|note on notation]])
 $$
     x\to x^\prime=x^\prime(x)\ \mathrm{with}\ g^{\mu\nu}(x^\prime)=\eval{g_{\mu\nu}(x)}_{x=x'}.
 $$

@@ -2,7 +2,7 @@
 alias: 
 tag: GR physics math
 ---
-Note it is not a tensor!
+Note it is not a [[tensor fields in GR|tensor]]!
 
 Following the discussion in [[principle of equivalence|PoE]] we obtained a generalisation of eoms to arbitrary coordinates in an arbitrary gravitational field:
 
