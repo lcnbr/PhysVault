@@ -120,7 +120,7 @@ In what follows, we will construct the Ricci tensor which corresponds to the met
 $$
 g^{t t}=1 / B(r), g^{r r}=-1 / A(r), g^{\theta \theta}=-1 / r^{2}, g^{\varphi \varphi}=-\frac{1}{r^{2} \sin ^{2} \theta} .
 $$
-This constrains the $A(r)$ and $B(r)$ functions up to a constant. The non-vanishing elements of the affine connection,
+This constrains the $A(r)$ and $B(r)$ functions up to a constant. The non-vanishing elements of the [[affine connection]],
 $$
 \Gamma_{\alpha \beta}^{\mu}=\frac{1}{2} g^{\mu \rho}\left[\frac{\partial g_{\alpha \rho}}{\partial x^{\beta}}+\frac{\partial g_{\rho \beta}}{\partial x^{\alpha}}-\frac{\partial g_{\alpha \beta}}{\partial x^{\rho}}\right]
 $$

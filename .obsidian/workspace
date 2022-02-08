@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/GR/covariant derivative.md",
+            "file": "PhysNotes/GR/spin in GR.md",
             "mode": "preview",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/GR/covariant derivative.md",
+                "file": "PhysNotes/GR/spin in GR.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/GR/covariant derivative.md",
+                "file": "PhysNotes/GR/spin in GR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/GR/covariant derivative.md"
+                "file": "PhysNotes/GR/spin in GR.md"
               }
             }
           }
@@ -118,15 +118,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/GR/covariant derivative.md",
-    "PhysNotes/GR/transformation of the affine connection.md",
+    "PhysNotes/GR/spin in GR.md",
+    "PhysNotes/GR/particle dynamics in GR.md",
+    "PhysNotes/GR/Writing the laws of physics consistently in General Relativity.md",
     "PhysNotes/GR/GR.md",
-    "PhysNotes/GR/Tensors and tensor densities in General Relativity.md",
-    "PhysNotes/GR/determining the metric.md",
     "PhysNotes/GR/densities.md",
-    "PhysNotes/GR/tensor fields in GR.md",
-    "PhysNotes/GR/vector fields in GR.md",
-    "PhysNotes/GR/scalar fields in GR.md",
-    "PhysNotes/GR/Action principle for gravity.md"
+    "PhysNotes/GR/covariant divergence.md",
+    "PhysNotes/GR/affine connection.md",
+    "PhysNotes/GR/covariant derivative.md",
+    "PhysNotes/GR/algebraic properties of the Riemann Tensor.md",
+    "PhysNotes/GR/Tensors and tensor densities in General Relativity.md"
   ]
 }

@@ -52,7 +52,7 @@ $$
 
 ^maxSymMetric
 
-**Exercise** Calculate the affine connection.
+**Exercise** Calculate the [[affine connection]].
 $$
     \Gamma\ind{\mu}{\nu\rho} = -\kappa x^\mu g_{\nu\rho}.
 $$

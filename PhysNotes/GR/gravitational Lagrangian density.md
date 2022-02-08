@@ -68,7 +68,7 @@ $$
 $$
 The final variation we require is of the [[Ricci tensor]]. Recall that
 ![[Ricci tensor#^4133de]]
-To compute the variation of the Ricci tensor, we will require the variation of the [[affine connection]]. While the affine connection $\Gamma\ind{\alpha}{\mu\nu}$ is **not** a tensor, it turns out that its variation **is** a tensor. To show this let us look at the [[covariant derivative]] of the variation of the metric
+To compute the variation of the Ricci tensor, we will require the variation of the [[affine connection]]. While the [[affine connection]] $\Gamma\ind{\alpha}{\mu\nu}$ is **not** a tensor, it turns out that its variation **is** a tensor. To show this let us look at the [[covariant derivative]] of the variation of the metric
 $$
     \delta g_{\mu\nu;\rho} = \left(\delta g_{\mu\nu}\right)_{;\rho} = \frac{\partial\delta g_{\mu\nu}}{\partial x^\rho} - \Gamma\ind{\alpha}{\mu\rho}\delta g_{\alpha\nu}-\Gamma\ind{\alpha}{\nu\rho}\delta g_{\alpha\mu}.
 $$
@@ -92,7 +92,7 @@ $$
     \delta\Gamma\ind{\lambda}{\mu\nu} &= \frac{1}{2}g^{\lambda\rho}\left(\delta g_{\mu\rho;\nu} + \delta g_{\nu\rho;\mu} - \delta g_{\mu\nu;\rho}\right).
 \end{split}
 $$
-Therefore, unlike the affine connection $\Gamma\ind{\alpha}{\mu\nu}$ which is **not** a tensor, its variation $\delta\Gamma\ind{\alpha}{\mu\nu}$ **is** a tensor. Now let us take the variation of the [[Ricci tensor#Explicit form]]
+Therefore, unlike the [[affine connection]] $\Gamma\ind{\alpha}{\mu\nu}$ which is **not** a tensor, its variation $\delta\Gamma\ind{\alpha}{\mu\nu}$ **is** a tensor. Now let us take the variation of the [[Ricci tensor#Explicit form]]
 $$
 \begin{split}
     \delta R_{\mu\nu} &= \frac{\partial\delta\Gamma\ind{\alpha}{\mu\alpha}}{\partial x^\nu} - \frac{\partial\delta\Gamma\ind{\alpha}{\mu\nu}}{\partial x^\alpha} + \left(\delta\Gamma\ind{\alpha}{\mu\beta}\right)\Gamma\ind{\beta}{\nu\alpha} + \Gamma\ind{\alpha}{\mu\beta}\delta\Gamma\ind{\beta}{\nu\alpha} - \left(\delta\Gamma\ind{\alpha}{\mu\nu}\right)\Gamma\ind{\beta}{\beta\alpha} - \Gamma\ind{\alpha}{\mu\nu}\delta\Gamma\ind{\beta}{\beta\alpha} \\
