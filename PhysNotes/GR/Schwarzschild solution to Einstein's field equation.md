@@ -115,7 +115,7 @@ R_{\mu \nu}=0 .
 $$
 
 # Computing the [[Ricci tensor]] of the Schwarzschild metric
-In what follows, we will construct the Ricci tensor which corresponds to the metric of [[#^metricTerms]] to do this we need to compute the [[affine connection]]. The [[affine connection]] requires the inverse of the metric. It is also diagonal with elements
+In what follows, we will construct the [[Ricci tensor]] which corresponds to the metric of [[#^metricTerms]] to do this we need to compute the [[affine connection]]. The [[affine connection]] requires the inverse of the metric. It is also diagonal with elements
 
 $$
 g^{t t}=1 / B(r), g^{r r}=-1 / A(r), g^{\theta \theta}=-1 / r^{2}, g^{\varphi \varphi}=-\frac{1}{r^{2} \sin ^{2} \theta} .

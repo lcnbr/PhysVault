@@ -30,7 +30,7 @@ and
 $$
     \eta^{\alpha\beta}\frac{\partial^2h_{\beta\nu}}{\partial x^\mu\partial x^\alpha} \approx \frac{1}{2}\frac{\partial^2h_{\alpha\beta}}{\partial x^\mu\partial x^\nu}.
 $$
-With these two relations the expression for the linearized Ricci tensor simplifies to
+With these two relations the expression for the linearized [[Ricci tensor]] simplifies to
 $$
     R^{(1)}{}_{\mu\nu} = \frac{1}{2}\eta^{\alpha\beta}\frac{\partial^2h_{\mu\nu}}{\partial x^\alpha\partial x^\beta} = \frac{1}{2}\Box_{SR} h_{\mu\nu}.
 $$

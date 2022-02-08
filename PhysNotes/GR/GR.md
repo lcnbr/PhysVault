@@ -28,7 +28,7 @@
     1. [[Riemann Curvature Tensor]]
         1. Parallel transport and the Riemann Tensor
         2. [[Algebraic properties of the Riemann Tensor]]
-        3. The Ricci tensor and Ricci scalar
+        3. The [[Ricci tensor]] and Ricci scalar
         4. The Bianchi identities
     2. The energy-momentum tensor
     3. [[Einstein's field equations]]

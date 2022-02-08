@@ -17,7 +17,7 @@ and we have thus associated $t^{\mu\nu}$ to the energy-momentum tensor of matter
 $$
     -8\pi Gt_{\mu\nu} = -R_{\mu\nu}+\frac{g_{\mu\nu}}{2}R+R\ind{(1)}{\mu\nu}-\frac{\eta_{\mu\nu}}{2}R^{(1)}.
 $$
-We can decompose the Ricci tensor in powers of $h_{\mu\nu}$, where $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$. We write
+We can decompose the [[Ricci tensor]] in powers of $h_{\mu\nu}$, where $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$. We write
 $$
     R_{\mu\nu} = R\ind{(1)}{\mu\nu}+R\ind{(2)}{\mu\nu}+\cdots.
 $$

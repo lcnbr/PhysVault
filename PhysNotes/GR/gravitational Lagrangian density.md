@@ -68,7 +68,7 @@ $$
 $$
 The final variation we require is of the [[Ricci tensor]]. Recall that
 ![[Ricci tensor#^4133de]]
-To compute the variation of the Ricci tensor, we will require the variation of the [[affine connection]]. While the [[affine connection]] $\Gamma\ind{\alpha}{\mu\nu}$ is **not** a tensor, it turns out that its variation **is** a tensor. To show this let us look at the [[covariant derivative]] of the variation of the metric
+To compute the variation of the [[Ricci tensor]], we will require the variation of the [[affine connection]]. While the [[affine connection]] $\Gamma\ind{\alpha}{\mu\nu}$ is **not** a tensor, it turns out that its variation **is** a tensor. To show this let us look at the [[covariant derivative]] of the variation of the metric
 $$
     \delta g_{\mu\nu;\rho} = \left(\delta g_{\mu\nu}\right)_{;\rho} = \frac{\partial\delta g_{\mu\nu}}{\partial x^\rho} - \Gamma\ind{\alpha}{\mu\rho}\delta g_{\alpha\nu}-\Gamma\ind{\alpha}{\nu\rho}\delta g_{\alpha\mu}.
 $$

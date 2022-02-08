@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/GR/Ricci tensor.md",
+            "file": "PhysNotes/GR/Bianchi identities.md",
             "mode": "preview",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/GR/Ricci tensor.md",
+                "file": "PhysNotes/GR/Bianchi identities.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/GR/Ricci tensor.md",
+                "file": "PhysNotes/GR/Bianchi identities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/GR/Ricci tensor.md"
+                "file": "PhysNotes/GR/Bianchi identities.md"
               }
             }
           }
@@ -118,15 +118,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/GR/Ricci tensor.md",
+    "PhysNotes/GR/Bianchi identities.md",
     "PhysNotes/GR/Riemann curvature tensor.md",
+    "PhysNotes/GR/Ricci scalar.md",
+    "PhysNotes/GR/Ricci tensor.md",
     "PhysNotes/GR/algebraic properties of the Riemann Tensor.md",
     "PhysNotes/GR/when space is flat.md",
     "PhysNotes/GR/round trips by parallel transport.md",
     "PhysNotes/GR/parallel transport.md",
     "PhysNotes/GR/uniqueness of the Riemann curvature tensor.md",
-    "PhysNotes/GR/determining the metric.md",
-    "PhysNotes/GR/Einstein's field equations.md",
-    "PhysNotes/GR/laws of general relatitivity.md"
+    "PhysNotes/GR/determining the metric.md"
   ]
 }
