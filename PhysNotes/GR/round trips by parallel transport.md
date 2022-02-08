@@ -7,7 +7,7 @@ tag: GR physics
 ![[Pasted image 20220205191545.png#leftwrap|100]]
 
 Let us now think of a closed trajectory (e.g. a gyroscope moving in orbit around the earth).
-The question we would like to investigate is by how much the spin-vector (or any other [[parallel transport|parallely transported]] vector) will be changed after completing a full orbit, returning back to the same point. To start, we will consider small closed curves. The [[affine connection]] can be expanded as
+The question we would like to investigate is by how much the [[spin in GR|spin]]-vector (or any other [[parallel transport|parallely transported]] vector) will be changed after completing a full orbit, returning back to the same point. To start, we will consider small closed curves. The [[affine connection]] can be expanded as
 $$
 \Gamma^\mu{}_{\nu \rho}(x)=\Gamma^\mu{}_{\nu \rho}(X)+\left(x^{\alpha}-X^{\alpha}\right) \frac{\partial \Gamma^\mu{}_{\nu \rho}}{\partial x^{\alpha}}(X)+\cdots
 $$
