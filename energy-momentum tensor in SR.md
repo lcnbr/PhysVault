@@ -5,7 +5,7 @@ alias:
 tags: SR GR
 ---
 
-We can now extend the formalism of current density in order to describe the density and flow of energy and momentum. Recall the definition of the [[currents and densities in SR|current density]]
+We can now extend the formalism of [[currents and densities in SR|current density]] in order to describe the density and flow of energy and momentum. Recall the definition of the [[currents and densities in SR|current density]]
 ![[currents and densities in SR#^currentDensity|current density]] and now substitute the charge $q_n$ with the momentum components of the particle:  the [[relativistic energy and momentum|momentum 4-vector]]. This defines a tensor which is called the energy-momentum tensor
 
 $$
