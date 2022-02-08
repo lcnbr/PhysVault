@@ -62,6 +62,8 @@ $$
 T^\lambda{}_{\mu ; \nu ; \kappa}-T^\lambda{}_{\mu ; \kappa ; \nu}=R^\lambda{}_{\sigma \nu \kappa}T^\sigma{}_{\mu}-R^\sigma{}_{\mu \nu \kappa} T^\lambda{}_{\sigma} \text { etc.. }
 $$
 
+^9f35dc
+
 **Thus the [[Riemann curvature tensor|curvature tensor]] measures the amount with which [[covariant derivative]]s don't commute! If it vanishes, then they do commute, which is the mark of flat space, i.e no curvature** 
 
 The curvature tensor is very special. We will prove that it is unique, i.e it is the only tensor which can be constructed from the metric, its first and its second derivatives and it is linear in the second derivative of the metric $\left(\rightarrow\right.$ contains $\left.\nabla^{2} \phi\right)$ ! The [[uniqueness of the Riemann curvature tensor|uniqueness of the Riemann tensor]] will be essential for generalizing the Poisson equation of Newtonian mechanics to the field equations of Einstein. 
