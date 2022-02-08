@@ -34,7 +34,7 @@ For the non-tensorial part to vanish we must have $a_{3}=-a_{1}-a_{2}$. So, the 
 $$
 \begin{aligned}
 \left.T^\alpha{}_{\mu \nu \rho}\right|_{x=X} &=a_{1}\left(\frac{\partial \Gamma^{\mu}{ }_{\nu \rho}}{\partial x^{\sigma}}-\frac{\partial \Gamma^{\mu}{ }_{\nu \sigma}}{\partial x^{\rho}}\right)_{x=X}+a_{2}\left(\frac{\partial \Gamma^{\mu}{ }_{\sigma \rho}}{\partial x^{\nu}}-\frac{\partial \Gamma^{\mu}{ }_{\sigma \nu}}{\partial x^{\rho}}\right)_{x=X} \\
-&=\left.a_{1} R^\mu{}_{\nu \rho \sigma}\right|_{x=X}+\left.a_{2} R^\mu{}_{\sigma \nu \nu}\right|_{x=X} .
+&=\left.a_{1} R^\mu{}_{\nu \rho \sigma}\right|_{x=X}+\left.a_{2} R^\mu{}_{\sigma \rho \nu}\right|_{x=X} .
 \end{aligned}
 $$
 

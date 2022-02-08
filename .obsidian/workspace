@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/GR/Riemann curvature tensor.md",
+            "file": "PhysNotes/GR/round trips by parallel transport.md",
             "mode": "preview",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/GR/Riemann curvature tensor.md",
+                "file": "PhysNotes/GR/round trips by parallel transport.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/GR/Riemann curvature tensor.md",
+                "file": "PhysNotes/GR/round trips by parallel transport.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/GR/Riemann curvature tensor.md"
+                "file": "PhysNotes/GR/round trips by parallel transport.md"
               }
             }
           }
@@ -118,15 +118,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "PhysNotes/GR/round trips by parallel transport.md",
+    "PhysNotes/GR/parallel transport.md",
+    "PhysNotes/GR/when space is flat.md",
     "PhysNotes/GR/Riemann curvature tensor.md",
+    "PhysNotes/GR/uniqueness of the Riemann curvature tensor.md",
     "PhysNotes/GR/determining the metric.md",
     "PhysNotes/GR/Einstein's field equations.md",
     "PhysNotes/GR/laws of general relatitivity.md",
     "PhysNotes/GR/GR.md",
-    "PhysNotes/GR/electrodynamics in GR.md",
-    "PhysNotes/GR/Writing the laws of physics consistently in General Relativity.md",
-    "PhysNotes/GR/particle dynamics in GR.md",
-    "PhysNotes/GR/spin in GR.md",
-    "PhysNotes/GR/densities.md"
+    "PhysNotes/GR/electrodynamics in GR.md"
   ]
 }
