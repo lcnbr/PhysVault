@@ -134,7 +134,7 @@ $$
 A metric space with $\frac{D(D+1)}{2}$ independent [[symmetries in GR#^killingVec|Killing vectors]] is called **maximally symmetric**. We have just shown that a space which is isotropic about every point and thus also homogeneous, is maximally symmetric. We can now show the converse. A maximally symmetric space is necessarily homogeneous and isotropic about any point.
 
 
-*Example:* Consider a flat spacetime for which the Riemann tensor vanishes. We have that a [[symmetries in GR|Killing vector]] satisfies
+*Example:* Consider a flat spacetime for which the [[Riemann curvature tensor|Riemann tensor]] vanishes. We have that a [[symmetries in GR|Killing vector]] satisfies
 $$
 \begin{split}
     \xi_{\mu;\alpha;\beta} & = -\underbracket{R\ind{\rho}{\beta\alpha\mu}}_{=0}\xi_\rho \\

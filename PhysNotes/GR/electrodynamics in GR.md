@@ -85,7 +85,7 @@ $$
 
 ^LeviCivitaForm
 
-$$\implies\frac{\partial}{\partial x^{\mu}} F_{\nu \rho}+\frac{\partial}{\partial x^{\nu}} F_{\rho \mu}+\frac{\partial}{\partial x^{\rho}} F_{\mu \nu}=0
+$$\implies\frac{\partial}{\partial x^{\alpha}} F_{\beta \gamma}+\frac{\partial}{\partial x^{\beta}} F_{\gamma \alpha}+\frac{\partial}{\partial x^{\gamma}} F_{\alpha \beta}=0
 $$
 
 ^Fdown

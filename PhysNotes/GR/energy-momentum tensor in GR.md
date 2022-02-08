@@ -8,7 +8,7 @@ We are looking for a relativistic generalization of Poisson's equation
 $$
 \nabla^{2} \phi(x)=4 \pi G \rho(x),
 $$
-of Newtonian mechanics. We made progress in realizing that the only [[tensor fields in GR|tensor]] which contains the second derivative of the metric (which is the General Relativity analogue of the potential) is the Riemann tensor. We now turn our attention to the right-hand side of the above equation, where we encounter the mass density
+of Newtonian mechanics. We made progress in realizing that the only [[tensor fields in GR|tensor]] which contains the second derivative of the metric (which is the General Relativity analogue of the potential) is the [[Riemann curvature tensor|Riemann tensor]]. We now turn our attention to the right-hand side of the above equation, where we encounter the mass density
 $$
 \rho(\vec{x}, t)=\sum_{n} m_{n} \delta^{(3)}\left(\vec{x}-\vec{x}_{n}(t)\right),
 $$

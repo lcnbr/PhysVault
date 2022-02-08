@@ -10,7 +10,7 @@ $$
 
 ^cd7107
 
-The Ricci tensor is the only second rank tensor that can be formed, due to the antisymmetry of the Riemann tensor. Indeed,
+The Ricci tensor is the only second rank tensor that can be formed, due to the antisymmetry of the [[Riemann curvature tensor|Riemann tensor]]. Indeed,
 $$
 \underbrace{g^{\alpha \beta}}_{\text {symm. }} \underbrace{R_{\alpha \beta \gamma \delta}}_{\text {antisymm. }}=0, \text { etc.. }
 $$

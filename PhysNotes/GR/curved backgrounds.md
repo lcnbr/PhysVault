@@ -28,7 +28,7 @@ $$
 \frac{\mu \partial}{\partial \mu} G_{\mu \nu}(x, \mu)=\beta_{\mu \nu}(x)=\kappa^{2} R_{\mu \nu}, \quad R_{\mu \nu}=R^{\rho}{ }_{\mu \rho \nu},
 $$
 
-where $R^{\rho}{ }_{\mu \rho \nu}$ is the Riemann tensor describing the local curvature of the [[embedding space|target space]] manifold. The Riemann tensor can be calculated from the (local) spacetime metric.
+where $R^{\rho}{ }_{\mu \rho \nu}$ is the [[Riemann curvature tensor|Riemann tensor]] describing the local curvature of the [[embedding space|target space]] manifold. The [[Riemann curvature tensor|Riemann tensor]] can be calculated from the (local) spacetime metric.
 
 # Anomaly. 
 We find that the stress-energy tensor has acquired a trace after renormalisation which is proportional to the above beta function: this is called conformal anomaly (or an anomaly of [[Weyl invariance|Weyl symmetry]]):

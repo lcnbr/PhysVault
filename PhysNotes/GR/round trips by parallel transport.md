@@ -57,5 +57,5 @@ $$
 $$
 
 We conclude that if $R_{\mu \nu \rho}^{\alpha}=0 \Rightarrow \Delta S_{\mu}=0$, there is no change in the vector.
-![[Pasted image 20220205193809.png#leftwrap|150]]We have worked with small closed curves. If the Riemann tensor vanishes in a big region, we can split it up into smaller cells. As in the proof of Stokes theorem, the common contributions from neighbouring cells will cancel out, leaving only contributions from the external boundary. Thus, the vector will be unchanged in any full orbit over any closed loop.
+![[Pasted image 20220205193809.png#leftwrap|150]]We have worked with small closed curves. If the [[Riemann curvature tensor|Riemann tensor]] vanishes in a big region, we can split it up into smaller cells. As in the proof of Stokes theorem, the common contributions from neighbouring cells will cancel out, leaving only contributions from the external boundary. Thus, the vector will be unchanged in any full orbit over any closed loop.
 ![[Pasted image 20220205194247.png#leftwrap|150]]Consider now the transition from a point $x\left(\tau_{0}\right)$ to $x\left(\tau_{1}\right)$ via two different paths, if the [[Riemann curvature tensor|Riemann tensor]] vanishes, then the change of the vector will be independent of the path $\Delta S_{A}=\Delta S_{B}$ (green and blue arrow would coincide)

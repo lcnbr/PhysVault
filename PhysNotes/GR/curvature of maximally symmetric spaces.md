@@ -44,7 +44,7 @@ $$
     {Q\ind{\lambda}{\mu\nu\rho\sigma}}^\sigma &= {Q\ind{\sigma}{\mu\nu\rho\sigma}}^\lambda.
 \end{split}
 $$
-Performing the contractions and exploiting the  [[algebraic properties of the Riemann Tensor#Antisymmetry|antisymmetry properties]] of the Riemann tensor, we arrive at
+Performing the contractions and exploiting the  [[algebraic properties of the Riemann Tensor#Antisymmetry|antisymmetry properties]] of the [[Riemann curvature tensor|Riemann tensor]], we arrive at
 
 $$
     (D-1)R_{\lambda\rho\sigma\nu}=R_{\rho\nu}g_{\lambda\sigma}-R_{\sigma\rho}g_{\lambda\nu}.
@@ -80,7 +80,7 @@ For $D\neq2$ it follows that $\frac{\partial R}{\partial x^\alpha}=0$ and thus
 $$
     R=constant\equiv -D(D-1)\kappa.
 $$
-$\kappa$ is known as the curvature constant. In terms of it, the Riemann tensor is 
+$\kappa$ is known as the curvature constant. In terms of it, the [[Riemann curvature tensor|Riemann tensor]] is 
 $$
     R_{\alpha\beta\gamma\delta} = +\kappa\left(g_{\alpha\delta}g_{\beta\gamma}-g_{\alpha\gamma}g_{\beta\delta}\right),
 $$

@@ -23,9 +23,9 @@
     1. Particle mechanics
         1. Acceleration
         2. Spin
-    2. Electrodynamics
+    2. [[electrodynamics in GR|Electrodynamics]]
 6. [[laws of general relatitivity|Einstein's field equations]]
-    1. Riemann Curvature Tensor
+    1. [[Riemann Curvature Tensor]]
         1. Parallel transport and the Riemann Tensor
         2. Algebraic properties of the Riemann Tensor
         3. The Ricci tensor and Ricci scalar

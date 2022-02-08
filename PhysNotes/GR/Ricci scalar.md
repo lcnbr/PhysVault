@@ -10,7 +10,7 @@ $$
 
 ^09f107
 
-No other scalar possibilities exist due to the antisymmetry and cyclicity of the Riemann tensor. Notice also that
+No other scalar possibilities exist due to the antisymmetry and cyclicity of the [[Riemann curvature tensor|Riemann tensor]]. Notice also that
 $$
 \begin{aligned}
 0 &=\varepsilon^{\mu \nu \rho \sigma} \overbrace{\left(R_{\mu \nu \rho \sigma}+R_{\mu \rho \sigma \nu}+R_{\mu \sigma \nu \rho}\right)}^{=0} \\
@@ -19,7 +19,7 @@ $$
 \rightarrow 0 &=\varepsilon^{\mu \nu \rho \sigma} R_{\mu \nu \rho \sigma} .
 \end{aligned}
 $$
-So, while we could potentially contract the Riemann tensor with a Levi-Civita symbol to form a scalar, this contraction yields zero.
+So, while we could potentially contract the [[Riemann curvature tensor|Riemann tensor]] with a Levi-Civita symbol to form a scalar, this contraction yields zero.
 
 
 # Weak field approximation

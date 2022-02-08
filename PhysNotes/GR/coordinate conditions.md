@@ -15,7 +15,7 @@ $$
 $$
 This means that the Einstein equation suffice to determine only $6$ out of $10$ components of $g_{\mu \nu}(x)$. 
 
-## Gauge freedom in electrodynamics
+## Gauge freedom in [[electrodynamics in GR|electrodynamics]]
 This is an analogous situation to [[electrodynamics in GR|Maxwell's equations]] (in [[special relativity]]). [[electrodynamics in GR#^PotMax|They]] read
 
 $$
@@ -30,7 +30,7 @@ We can write this as a pseudo [[Bianchi identities|Bianchi identity]]
 $$
 \frac{\partial}{\partial x^{\mu}}\left[\partial^{2} g^{\mu \nu}-\partial^{\mu} \partial^{\nu}\right] A_{\nu}=\left(\partial^{2} \partial^{\nu}-\partial^{2} \partial^{\nu}\right) A_{\nu}=0 .
 $$
-In electrodynamics we remove this ambiguity in the solutions by "fixing the gauge" with an additional gauge-fixing condition. For example, if we find a solution $A_{\text {sol }}^{\nu}(x)$, we can always construct an $A_{\text {sol }}^{\prime\nu}(x)$ solution which satisfies the **Lorenz gauge condition**
+In [[electrodynamics in GR|electrodynamics]] we remove this ambiguity in the solutions by "fixing the gauge" with an additional gauge-fixing condition. For example, if we find a solution $A_{\text {sol }}^{\nu}(x)$, we can always construct an $A_{\text {sol }}^{\prime\nu}(x)$ solution which satisfies the **Lorenz gauge condition**
 
 $$
 \partial_{\nu} A_{\mathrm{sol}}^{\prime \nu}=0,

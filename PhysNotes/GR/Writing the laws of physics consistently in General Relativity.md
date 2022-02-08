@@ -2,7 +2,7 @@
 alias:
 tag: GR physics
 ---
-In the previous chapter we studied the mathematical properties of tensors in General Relativity. Tensors will allow us to generalize physics laws of [[special relativity]] to include Gravity, by casting the corresponding equations in a covariant form for [[general coordinate transformation|general coordinate transformations]]. We will show how this can be achieved in electrodynamics and particle mechanics.
+In the previous chapter we studied the mathematical properties of tensors in General Relativity. Tensors will allow us to generalize physics laws of [[special relativity]] to include Gravity, by casting the corresponding equations in a covariant form for [[general coordinate transformation|general coordinate transformations]]. We will show how this can be achieved in [[electrodynamics in GR|electrodynamics]] and particle mechanics.
 
 
 We follow the program laid bare in [[covariant derivative#Importance]] and first apply to particle mechanics. We can consider its [[particle dynamics in GR|equations of motion]], and the effect of gravity on an attached [[spin in GR|spin]] vector. We then apply it to [[electrodynamics in GR|electrodynamics]].

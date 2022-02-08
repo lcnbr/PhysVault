@@ -140,7 +140,7 @@ We will soon see that sources (mass distributions) in limited regions of space g
 $$
     P_{\mathrm{rad}} = -\int_{S(V)}\dd{S}\hat{n}_it^{0i}.
 $$
-Note that in Electrodynamics $t^{00}$ corresponds to the energy density of an electromagnetic wave while $t^{0i}$ is the Poynting vector. 
+Note that in [[electrodynamics in GR|Electrodynamics]] $t^{00}$ corresponds to the energy density of an electromagnetic wave while $t^{0i}$ is the Poynting vector. 
 For a spherical volume $\dd{S}=r^2\dd{\Omega}$
 $$
 \begin{split}

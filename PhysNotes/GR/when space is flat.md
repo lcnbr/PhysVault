@@ -4,7 +4,7 @@ tag: GR physics
 ---
 # When is space flat?
 
-In Minkowski spacetime, $g_{\mu \nu}(x)=\eta_{\mu \nu}$ and $\Gamma^\mu{}_{\nu \rho}=0$ everywhere, we have that the Riemann curvature tensor is zero. The opposite is also valid. One can show that
+In Minkowski spacetime, $g_{\mu \nu}(x)=\eta_{\mu \nu}$ and $\Gamma^\mu{}_{\nu \rho}=0$ everywhere, we have that the [[Riemann curvature tensor]] is zero. The opposite is also valid. One can show that
 (i) if $R_{\mu \nu \rho}^{\alpha}=0$ and
 (ii) the metric $g_{\mu \nu}(x)$ at a point $X$ has three negative and one positive eigenvalues (as $\eta_{\mu \nu}$ ), then the metric is the Minkowski metric everywhere, $g_{\mu \nu}(x)=\eta_{\mu \nu} \forall x$.
 

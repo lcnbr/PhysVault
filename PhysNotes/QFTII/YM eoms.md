@@ -3,7 +3,7 @@ alias:
 tags:
 - qftII
 ---
- Let us briefly summarise the equation of motion for non-abelian gauge theory. They directly reflect the equations of motion for electrodynamics, but due to the non-abelian nature of the gauge group, the partial derivatives need to be replaced by covariant derivatives.
+ Let us briefly summarise the equation of motion for non-abelian gauge theory. They directly reflect the equations of motion for [[electrodynamics in GR|electrodynamics]], but due to the non-abelian nature of the gauge group, the partial derivatives need to be replaced by covariant derivatives.
 
 The homogeneous Maxwell equation, also known as a Bianchi identity, derives from the [[Lie bracket|Jacobi identity]] of three covariant derivatives. For Yang-Mills theory it can be written as
 $$

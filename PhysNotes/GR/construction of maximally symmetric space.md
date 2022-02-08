@@ -56,7 +56,7 @@ $$
 $$
     \Gamma\ind{\mu}{\nu\rho} = -\kappa x^\mu g_{\nu\rho}.
 $$
-Then, we can easily compute the Riemann tensor
+Then, we can easily compute the [[Riemann curvature tensor|Riemann tensor]]
 $$
 \begin{split}
     R\ind{\mu}{\nu\rho\sigma} &= \frac{\partial\Gamma\ind{\mu}{\nu\rho}}{\partial x^\sigma} + \Gamma\ind{\alpha}{\nu\rho}\Gamma\ind{\mu}{\alpha\sigma} - \frac{\partial\Gamma\ind{\mu}{\nu\sigma}}{\partial x^\rho} - \Gamma\ind{\alpha}{\nu\sigma}\Gamma\ind{\mu}{\alpha\rho} \\
