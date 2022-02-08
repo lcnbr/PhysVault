@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "spin and angular momentum in SR.md",
+            "file": "principle of equivalence.md",
             "mode": "source",
             "source": true
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "spin and angular momentum in SR.md",
+            "file": "principle of equivalence.md",
             "mode": "preview",
             "source": true
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "spin and angular momentum in SR.md",
+                "file": "principle of equivalence.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "spin and angular momentum in SR.md",
+                "file": "principle of equivalence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "spin and angular momentum in SR.md"
+                "file": "principle of equivalence.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "principle of equivalence.md",
+    "GR.md",
+    "special relativity.md",
     "spin and angular momentum in SR.md",
     "energy-momentum tensor in SR.md",
     "currents and densities in SR.md",
-    "special relativity.md",
     "vectors and tensors in SR.md",
     "tensor in SR.md",
     "relativistic energy and momentum.md",
-    "particle dynamics in SR.md",
-    "particle dynamics in GR.md",
-    "Particle Dynamics.md"
+    "particle dynamics in SR.md"
   ]
 }

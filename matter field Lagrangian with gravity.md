@@ -9,7 +9,7 @@ $$
     &= \frac{1}{2}\int\dd[4]{x}\sqrt{g}\left[\left(\partial^\mu\phi\right)\left(\partial^\nu\phi\right)g_{\mu\nu}-m^2\phi\right].
 \end{split}
 $$
-Notice the appearances of the metric, showing the equivalence principle. Under $g_{\mu\nu}\to g_{\mu\nu}+\delta g_{\mu\nu}$ the variation of the action is
+Notice the appearances of the metric, showing the [[principle of equivalence|equivalence principle]]. Under $g_{\mu\nu}\to g_{\mu\nu}+\delta g_{\mu\nu}$ the variation of the action is
 $$
 \begin{split}
     \delta S_M &= \int\dd[4]{x}\,\left[(\delta\sqrt{g})\L_M + \frac{1}{2}(\partial^\mu\phi)(\partial^\nu\phi)\sqrt{g}\delta g_{\mu\nu}\right] \\

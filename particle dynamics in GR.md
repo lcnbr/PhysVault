@@ -31,6 +31,6 @@ $$
 ^genericEOM
 
 which is what we had [[principle of equivalence#^eomGeneric|found]] by a more direct use of the [[principle of equivalence]].
-It is easy to verify that the above equation $\left(\frac{\mathrm{DV}^{\mu}}{\mathrm{D} \tau}=0\right)$ satisfies the principle of equivalence. Indeed if we perform a coordinate transformation which brings us into a locally inertial frame in which gravity is cancelled at any point, it collapses back into [[#^inertialEOM]] $\left(g_{\mu \nu} \rightarrow \eta_{\mu \nu}, \Gamma^{\mu}{ }_{\rho \sigma} \rightarrow 0\right)$. The existence of such transformations is guaranteed by the covariance of [[#^genericEOM]] under general coordinate transformations.
+It is easy to verify that the above equation $\left(\frac{\mathrm{DV}^{\mu}}{\mathrm{D} \tau}=0\right)$ satisfies the [[principle of equivalence]]. Indeed if we perform a coordinate transformation which brings us into a [[principle of equivalence|locally inertial frame]] in which gravity is cancelled at any point, it collapses back into [[#^inertialEOM]] $\left(g_{\mu \nu} \rightarrow \eta_{\mu \nu}, \Gamma^{\mu}{ }_{\rho \sigma} \rightarrow 0\right)$. The existence of such transformations is guaranteed by the covariance of [[#^genericEOM]] under general coordinate transformations.
 
 What happens to an attached vector? Consider [[spin in GR]]

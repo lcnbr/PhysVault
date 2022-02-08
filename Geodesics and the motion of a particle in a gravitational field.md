@@ -48,7 +48,7 @@ The bracket above vanishes, leading to
 $$
 \delta \int_{\tau_{A}}^{\tau_{B}} \dd{\tau}=0
 $$
-Alternatively, instead of using the equivalence principle, we could have used the variational principle in order to derive our equations of motion.
+Alternatively, instead of using the [[principle of equivalence|equivalence principle]], we could have used the variational principle in order to derive our equations of motion.
 
 Let us now make a remark about how we can set the boundary conditions for solving the equations of motion of a particle moving inside the gravitational field with a known metric $g_{\mu \nu}$. The system of differential equations that we must solve is
 

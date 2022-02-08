@@ -38,7 +38,7 @@ $$
 \end{aligned}
 $$
 
-**So, at the point $\mathrm{X}$ in our locally inertial reference frame, the only object which we can construct to behave as a tensor under our special coordinate transformations is the Riemann tensor (or a superposition of Riemann tensors).** Suppose there exists a second type of tensor $B^{\mu}{ }_{\nu \rho \sigma}$ which also is linear is the second derivative of the metric. At $x=X$ in the coordinates of our locally inertial frame we must have
+**So, at the point $\mathrm{X}$ in our locally inertial reference frame, the only object which we can construct to behave as a tensor under our special coordinate transformations is the Riemann tensor (or a superposition of Riemann tensors).** Suppose there exists a second type of tensor $B^{\mu}{ }_{\nu \rho \sigma}$ which also is linear is the second derivative of the metric. At $x=X$ in the coordinates of our [[principle of equivalence|locally inertial frame]] we must have
 $$
 B^{\mu}{ }_{\nu \rho \sigma}=R^\mu{}_{\nu \rho \sigma} .
 $$
