@@ -99,7 +99,7 @@ showing that $t^{\mu \nu}$ is conserved. It is composed of the energy-momentum t
 
 # [[Newtonian limit]]
 
-At large distances, we assume that $h_{\mu \nu}$ approaches the Newtonian limit. It should then behave as the Newtonian potential, falling off as
+At large distances, we assume that $h_{\mu \nu}$ approaches the [[Newtonian limit]]. It should then behave as the Newtonian potential, falling off as
 $$
 h_{\mu \nu} \stackrel{r \rightarrow \infty}{\longrightarrow} \frac{1}{r} .
 $$

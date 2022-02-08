@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "principle of equivalence.md",
+            "file": "Geodesics and the motion of a particle in a gravitational field.md",
             "mode": "source",
             "source": true
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "principle of equivalence.md",
+            "file": "Geodesics and the motion of a particle in a gravitational field.md",
             "mode": "preview",
             "source": true
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "principle of equivalence.md",
+                "file": "Geodesics and the motion of a particle in a gravitational field.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "principle of equivalence.md",
+                "file": "Geodesics and the motion of a particle in a gravitational field.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "principle of equivalence.md"
+                "file": "Geodesics and the motion of a particle in a gravitational field.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "principle of equivalence.md",
+    "Geodesics and the motion of a particle in a gravitational field.md",
     "GR.md",
+    "Clocks and light in a gravitational field.md",
+    "Newtonian limit.md",
+    "principle of equivalence.md",
+    "affine connection.md",
     "special relativity.md",
     "spin and angular momentum in SR.md",
     "energy-momentum tensor in SR.md",
-    "currents and densities in SR.md",
-    "vectors and tensors in SR.md",
-    "tensor in SR.md",
-    "relativistic energy and momentum.md",
-    "particle dynamics in SR.md"
+    "currents and densities in SR.md"
   ]
 }
