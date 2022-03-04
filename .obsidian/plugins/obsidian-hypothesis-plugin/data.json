@@ -8,10 +8,15 @@
   "autoSyncInterval": 0,
   "dateTimeFormat": "YYYY-MM-DD HH:mm:ss",
   "history": {
-    "totalArticles": 0,
-    "totalHighlights": 41
+    "totalArticles": 1,
+    "totalHighlights": 44
   },
-  "syncedFiles": [],
+  "syncedFiles": [
+    {
+      "filename": "rObsidianMD - PhD workflow Obsidian, Zettelkasten, Zotero, Pandoc, and more.md",
+      "uri": "https%3A%2F%2Fwww.reddit.com%2Fr%2FObsidianMD%2Fcomments%2Fm5ou2h%2Fphd_workflow_obsidian_zettelkasten_zotero_pandoc%2F"
+    }
+  ],
   "groups": [
     {
       "id": "__world__",
@@ -35,5 +40,5 @@
       "selected": true
     }
   ],
-  "lastSyncDate": "2022-02-07T12:26:03.182Z"
+  "lastSyncDate": "2022-03-04T08:10:22.944Z"
 }

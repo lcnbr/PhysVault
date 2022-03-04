@@ -1,0 +1,24 @@
+{
+  "highlighterStyle": "realistic",
+  "highlighterMethods": "css-classes",
+  "highlighters": {
+    "Useful": "#EF9A9AA6",
+    "Judgement": "#FFE0B2A6",
+    "Important": "#FFF9C4A6",
+    "Definition": "#C5E1A5A6",
+    "Condition": "#BBDEFBA6",
+    "Conclusion": "#E1BEE7A6",
+    "Reference": "#ffd6fba6",
+    "Organistation": "#969080A6"
+  },
+  "highlighterOrder": [
+    "Useful",
+    "Judgement",
+    "Important",
+    "Definition",
+    "Condition",
+    "Conclusion",
+    "Reference",
+    "Organistation"
+  ]
+}

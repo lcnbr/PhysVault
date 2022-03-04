@@ -6,14 +6,53 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
+        "dimension": 79.52917093142273,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/GR/solutions of the linearized field equations.md",
+            "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
             "mode": "preview",
             "source": true
           }
-        }
+        },
+        "group": "62ff761cd12ec39d"
+      },
+      {
+        "id": "60eb3cf8bceadfc8",
+        "type": "leaf",
+        "dimension": 20.470829068577277,
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
+            "options": {
+              "collapse-filter": false,
+              "search": "",
+              "localJumps": 2,
+              "localBacklinks": false,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 1.2762055724149277,
+              "close": true
+            }
+          }
+        },
+        "group": "62ff761cd12ec39d"
       }
     ],
     "direction": "vertical"
@@ -43,13 +82,14 @@
                 "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/GR/solutions of the linearized field equations.md",
+                "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/GR/solutions of the linearized field equations.md",
+                "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/GR/solutions of the linearized field equations.md"
+                "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md"
               }
             }
           }
@@ -118,15 +158,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/GR/solutions of the linearized field equations.md",
-    "PhysNotes/GR/gravitational waves.md",
-    "PhysNotes/GR/spaces with maximally symmetric subspaces.md",
+    "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
+    "Zotero/broedela-3 Classical Bosonic String.md",
+    "PhysNotes/GR/tensor fields in GR.md",
     "PhysNotes/GR/determining the metric.md",
-    "PhysNotes/GR/Schwarzschild solution to Einstein's field equation.md",
-    "PhysNotes/GR/equations of motion in a Schwarzschild space.md",
-    "PhysNotes/GR/energy, momentum and angular momentum with gravity.md",
-    "PhysNotes/GR/coordinate conditions.md",
-    "PhysNotes/GR/D'Alambert operator in GR.md",
-    "PhysNotes/GR/Einstein's field equations.md"
+    "PhysNotes/GR/gravitational waves.md",
+    "PhysNotes/GR/Einstein's field equations.md",
+    "PhysNotes/GR/principle of equivalence.md",
+    "PhysNotes/String/Poisson brackets.md",
+    "PhysNotes/LaTeX.md",
+    "PhysNotes/GR/affine connection.md"
   ]
 }

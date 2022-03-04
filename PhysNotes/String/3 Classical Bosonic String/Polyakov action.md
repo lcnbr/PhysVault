@@ -3,7 +3,7 @@ Is a polynomial action with an additional dynamical [[worldsheet]] metric $g_{\a
 
 $$
 S[X,g]=-\frac{1}{2 \pi \kappa^2} \int \mathrm{d} \xi^2 \sqrt{-\operatorname{det} g} \frac{1}{2} g^{\alpha \beta}\left(\partial_{\alpha} X\right) \cdot\left(\partial_{\beta} X\right)
-$$
+$$ 
 
 ^2638f6
 
