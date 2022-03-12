@@ -7,3 +7,9 @@ DOI:
 url: 
 ---
 [ZOT](zotero://select/items/@bernScalarQEDToy2021)
+
+
+determine the pieces of theboth in the eikonal and KM
+![[Pasted image 20220312164001.png]]
+
+![[Pasted image 20220312164040.png]]
