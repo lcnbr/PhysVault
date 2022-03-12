@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
-            "mode": "preview",
+            "file": "Zotero/broedela-zotero.md",
+            "mode": "source",
             "source": true
           }
         },
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
+            "file": "Zotero/broedela-zotero.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "Zotero/broedela-zotero.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "Zotero/broedela-zotero.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md"
+                "file": "Zotero/broedela-zotero.md"
               }
             }
           }
@@ -157,11 +157,11 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/broedela-zotero.md",
+    "Zotero/broedel-zotero.md",
+    "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/broedela.md",
     "Zotero/broedela-2 Point Particle actions.md",
-    "Zotero/broedel-zotero.md",
     "thesis/postMink.md",
     "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
     "Zotero/broedela-3 Classical Bosonic String.md",
