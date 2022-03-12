@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/broedela-zotero.md",
-            "mode": "source",
+            "file": "Zotero/Annotations.md",
+            "mode": "preview",
             "source": true
           }
         },
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "Zotero/broedela-zotero.md",
+            "file": "Zotero/Annotations.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/broedela-zotero.md",
+                "file": "Zotero/Annotations.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/broedela-zotero.md",
+                "file": "Zotero/Annotations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,11 +145,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/broedela-zotero.md"
+                "file": "Zotero/Annotations.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -157,15 +158,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "Zotero/broedela-zotero.md",
-    "Zotero/broedel-zotero.md",
+    "Zotero/Annotations.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/broedela.md",
+    "Zotero/broedela-0 Overview and Practicabilities.md",
+    "Zotero/broedela-3 Classical Bosonic String.md",
+    "Zotero/broedela-zotero.md",
+    "Zotero/broedel-zotero.md",
     "Zotero/broedela-2 Point Particle actions.md",
     "thesis/postMink.md",
-    "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
-    "Zotero/broedela-3 Classical Bosonic String.md",
-    "PhysNotes/GR/tensor fields in GR.md",
-    "PhysNotes/GR/determining the metric.md"
+    "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md"
   ]
 }
