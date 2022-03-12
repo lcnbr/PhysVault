@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
+            "file": "Zotero/@bernScalarQEDToy2021.md",
             "mode": "preview",
             "source": true
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
+            "file": "Zotero/@bernScalarQEDToy2021.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -88,8 +88,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -109,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md"
+                "file": "Zotero/@bernScalarQEDToy2021.md"
               }
             }
           }
@@ -158,6 +157,8 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "Zotero/@bernScalarQEDToy2021.md",
+    "thesis/postMink.md",
     "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
     "Zotero/broedela-3 Classical Bosonic String.md",
     "PhysNotes/GR/tensor fields in GR.md",
@@ -165,8 +166,6 @@
     "PhysNotes/GR/gravitational waves.md",
     "PhysNotes/GR/Einstein's field equations.md",
     "PhysNotes/GR/principle of equivalence.md",
-    "PhysNotes/String/Poisson brackets.md",
-    "PhysNotes/LaTeX.md",
-    "PhysNotes/GR/affine connection.md"
+    "PhysNotes/String/Poisson brackets.md"
   ]
 }
