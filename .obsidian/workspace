@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "Zotero/@bernScalarQEDToy2021.md",
-            "mode": "preview",
+            "mode": "source",
             "source": true
           }
         },
@@ -158,14 +158,14 @@
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
     "Zotero/@bernScalarQEDToy2021.md",
+    "Zotero/broedela-zotero.md",
+    "Zotero/broedela.md",
+    "Zotero/broedela-2 Point Particle actions.md",
+    "Zotero/broedel-zotero.md",
     "thesis/postMink.md",
     "PhysNotes/String/3 Classical Bosonic String/Polyakov action.md",
     "Zotero/broedela-3 Classical Bosonic String.md",
     "PhysNotes/GR/tensor fields in GR.md",
-    "PhysNotes/GR/determining the metric.md",
-    "PhysNotes/GR/gravitational waves.md",
-    "PhysNotes/GR/Einstein's field equations.md",
-    "PhysNotes/GR/principle of equivalence.md",
-    "PhysNotes/String/Poisson brackets.md"
+    "PhysNotes/GR/determining the metric.md"
   ]
 }

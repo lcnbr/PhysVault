@@ -2,7 +2,7 @@
   "citationExportFormat": "biblatex",
   "literatureNoteTitleTemplate": "@{{citekey}}",
   "literatureNoteFolder": "Zotero",
-  "literatureNoteContentTemplate": "---\ntitle: {{title}}\nauthors: {{authorString}}\nyear: {{year}}\n\nDOI: {{DOI}}\nurl: {{URL}}\n---\n[ZOT]({{zoteroSelectURI}})\n",
+  "literatureNoteContentTemplate": "---\n\n* Item Type: [[Manuscript]]\n* Authors: [[Dr J Broedel]]\n* Date Added: [[2022-00-10]]\n* Cite key: broedela\n* Topics: [[String]]\n, #zotero, #literature-notes, #reference\n* PDF Attachments\n\t- [Brodel_Introduction to String Theory.pdf](zotero://open-pdf/library/items/E2TKJSGY)\ntitle: {{title}}\nauthors: {{authorString}}\nyear: {{year}}\n\nDOI: {{DOI}}\nurl: {{URL}}\n---\n[ZOT]({{zoteroSelectURI}})\n",
   "markdownCitationTemplate": "[@{{citekey}}]",
   "alternativeMarkdownCitationTemplate": "@{{citekey}}",
   "citationExportPath": "Zotero\\Exported Items.bib"
