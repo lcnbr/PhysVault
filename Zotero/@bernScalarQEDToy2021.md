@@ -17,25 +17,46 @@ year: 2021
 
 # Summary
 
+**Contents**
+
+##  [1 Introduction](zotero://open-pdf/0_VLMHF4E2/2)
+    
+###  [2 Review of Methods](zotero://open-pdf/0_VLMHF4E2/5)
+    
+###  [2.1 Classical limit of quantum scattering amplitudes–soft and potential region](zotero://open-pdf/0_VLMHF4E2/5)
+        
+###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
+        
+###   [2.3 Soft and potential region expansion, IBP, and differential equations](zotero://open-pdf/0_VLMHF4E2/11)
+        
+###   [2.4 Soft radial action and master integral subtraction of classically divergent terms](zotero://open-pdf/0_VLMHF4E2/12)
+        
+###  [2.5 KMOC framework for classical conservative and radiative observables](zotero://open-pdf/0_VLMHF4E2/15)
+        
+## [3 Conservative dynamics at $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/20)
+    
+### [3.1 Conservative scattering amplitudes](zotero://open-pdf/0_VLMHF4E2/20)
+        
+### [3.2 Eikonal approach to classical conservative scattering](zotero://open-pdf/0_VLMHF4E2/21)
+        
+### [3.3 Conservative eikonal phase, scattering angle, and two-body Hamiltonian](zotero://open-pdf/0_VLMHF4E2/22)
+        
+###  [3.4 Conservative impulse and scattering angle via KMOC](zotero://open-pdf/0_VLMHF4E2/25)
+        
+## [4 Radiative dynamics at $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/26)
+    
+### [4.1 Radiative scattering amplitudes](zotero://open-pdf/0_VLMHF4E2/26)
+        
+### [4.2 Eikonal approach to classical scattering including radiation effects](zotero://open-pdf/0_VLMHF4E2/27)
+        
+### [4.3 Radiative impulse, energy loss, and scattering angle via KMOC](zotero://open-pdf/0_VLMHF4E2/33)
+        
+### [4.4 Radiative radial action](zotero://open-pdf/0_VLMHF4E2/34)
+        
+##  [5 Conclusions](zotero://open-pdf/0_VLMHF4E2/35)
+    
 
 
-## Introduction
-## Review of Methods
-### Classical limit of quantum scattering amplitudes–soft and potential region 
-### Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$
-### Soft and potential region expansion, IBP, and differential equations 
-### Soft radial action and master integral subtraction of classically divergent terms 
-### KMOC framework for classical conservative and radiative observables 
-## Conservative dynamics at $\mathcal{O}(\alpha^3)$
-### Conservative scattering amplitudes 
-### Eikonal approach to classical conservative scattering
-### Conservative eikonal phase, scattering angle, and two-body Hamiltonian
-### Conservative impulse and scattering angle via KMOC 
-## Radiative dynamics at $\mathcal{O}(\alpha^3)$
-### Radiative scattering amplitudes 
-### Eikonal approach to classical scattering including radiation effects 
-### Radiative impulse, energy loss, and scattering angle via KMOC 
-### Radiative radial action
-##  Conclusions
+
  
 

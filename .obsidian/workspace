@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/Annotations.md",
+            "file": "Zotero/@bernScalarQEDToy2021.md",
             "mode": "preview",
             "source": true
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "Zotero/Annotations.md",
+            "file": "Zotero/@bernScalarQEDToy2021.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/Annotations.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/Annotations.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/Annotations.md"
+                "file": "Zotero/@bernScalarQEDToy2021.md"
               }
             }
           }
@@ -158,8 +158,8 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "Zotero/Annotations.md",
     "Zotero/@bernScalarQEDToy2021.md",
+    "Zotero/Annotations.md",
     "Zotero/broedela.md",
     "Zotero/broedela-0 Overview and Practicabilities.md",
     "Zotero/broedela-3 Classical Bosonic String.md",
