@@ -24,8 +24,8 @@ Observable change: $\Delta O = \ev{\mathbb{O}}{\text{out}}- \ev{\mathbb{O}}{\tex
 Explicitly :
 
 $$\begin{align}
-\Delta O & = \int \dd{\Phi_4(p_1,\cdots,p_4)} \phi_1(p_1)\phi_2(p_2)\phi_2^*(p_3)\phi_1^*(p_4)\hat{\delta}^{(D)}(\sum\limits)
-\end{align}$$
+\Delta O & = \int \dd{\Phi_4(p_1,\cdots,p_4)} \phi_1(p_1)\phi_2(p_2)\phi_2^*(p_3)\phi_1^*(p_4)
+\end{align} e^{\iunit \, b \cdot ({p_1-p_4})/{\hbar}}\bra{p_4,p_3} S^\dagger [\mathbb{O},S]\ket{p_1,p_2}$$
 ### [Gravitational impulse](zotero://open-pdf/0_YDV3Q3ED/8)
 ### [Radiated momentum](zotero://open-pdf/0_YDV3Q3ED/9)
         

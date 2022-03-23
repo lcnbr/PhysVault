@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "amplitu",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -63,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -133,14 +134,14 @@
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
     "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
-    "PhysNotes/delta-function.md",
-    "PhysNotes/math/delta function.md",
-    "PhysNotes/LaTeX.md",
-    "Zotero/@bernScalarQEDToy2021.md",
-    "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
-    "Zotero/zotero-843-Annotations.md",
-    "Zotero/zotero-843-zotero.md",
-    "Zotero/Annotations.md",
-    "Zotero/broedela.md"
+    "PhysNotes/QFTII/Path Integral for Transition Amplitude.md",
+    "PhysNotes/QFTII/transition amplitude.md",
+    "PhysNotes/QFTII/Path Integral in Phase Space.md",
+    "PhysNotes/QFTII/Path Integral in Position Space.md",
+    "PhysNotes/QFTII/Equal-Time Commutators.md",
+    "PhysNotes/QFTII/operator insertions.md",
+    "PhysNotes/QFTII/Path Integral for Quantum Mechanics.md",
+    "PhysNotes/QFTII/QFT II.md",
+    "PhysNotes/delta-function.md"
   ]
 }
