@@ -31,17 +31,11 @@ year: 2021
         
 ###   [2.4 Soft radial action and master integral subtraction of classically divergent terms](zotero://open-pdf/0_VLMHF4E2/12)
         
-###  [2.5 KMOC framework for classical conservative and radiative observables](zotero://open-pdf/0_VLMHF4E2/15)$$\mathrm{d}\Phi_{n}(p_{1},\cdots,p_{n})=\prod_{i}\mathrm{d}\Phi_{1}(p_{i})\quad\mathrm{with}\quad\mathrm{d}\Phi_{1}(p_{i})=\mathrm{d}^{D}p_{i}\Theta(\pm p_{i}^{0})\,\delta(p_{i}^{2}-m_{i}^{2})\,.$$
-In state: $\ket{\text{in}}=\int \dd{\Phi_2}(p_1,p_2)\phi_1(p_1)\phi_2(p_2)e^{\iunit \, b \cdot p_1 /\hbar}\ket{p_1,p_2}_\text{in}$.
-Out state:  $\ket{\text{out}}=S \ket{\text{in}}$
-Observable change: $\Delta O = \ev{\mathbb{O}}{\text{out}}- \ev{\mathbb{O}}{\text{in}}=\ev{S^\dagger \mathbb{O} S}{\text{in}}-\ev{\mathbb{O}}{\text{in}}=\ev {S^\dagger [\mathbb{O},S]}{\text{in}}$ .
+###  [2.5 KMOC framework for classical conservative and radiative observables](zotero://open-pdf/0_VLMHF4E2/15)
+
+Follows mainly [[@herrmannRadiativeClassicalGravitational2021]] and [[@kosowerAmplitudesObservablesClassical2019]]
 
 
-Explicitly :
-
-$$\begin{align}
-\Delta O & = \iunit \int \dd{\Phi_4(p_1,\dots,p_4)} \phi_1(p_1)\phi_2(p_2)\phi_2^*(p_3)\phi_1^*(p_4)\hat{\delta}^{(D)}(\sum\limits)
-\end{align}$$
 
 
         
