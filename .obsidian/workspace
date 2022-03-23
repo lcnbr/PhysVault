@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
+            "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
             "mode": "source",
             "source": true
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
+            "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
             "mode": "preview",
             "source": true
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md"
+                "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md"
               }
             }
           }
@@ -133,8 +133,9 @@
     "direction": "horizontal",
     "width": 276.5
   },
-  "active": "37afdef98af2d6b1",
+  "active": "f248f1310dc087fc",
   "lastOpenFiles": [
+    "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "PhysNotes/LaTeX.md",
     "Zotero/zotero-843-Annotations.md",
@@ -143,7 +144,6 @@
     "Zotero/broedela.md",
     "Zotero/broedela-0 Overview and Practicabilities.md",
     "Zotero/broedela-3 Classical Bosonic String.md",
-    "Zotero/broedela-zotero.md",
-    "Zotero/broedel-zotero.md"
+    "Zotero/broedela-zotero.md"
   ]
 }
