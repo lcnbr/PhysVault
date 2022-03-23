@@ -32,6 +32,14 @@ year: 2021
 ###   [2.4 Soft radial action and master integral subtraction of classically divergent terms](zotero://open-pdf/0_VLMHF4E2/12)
         
 ###  [2.5 KMOC framework for classical conservative and radiative observables](zotero://open-pdf/0_VLMHF4E2/15)
+In state: $\ket{\text{in}}=\int \dd{\Phi_2}(p_1,p_2)\phi_1(p_1)\phi_2(p_2)e^{\iunit \, b \cdot p_1 /\hbar}\ket{p_1,p_2}_\text{in}$.
+Out state:  $\ket{\text{out}}=S \ket{\text{in}}$
+Observable change: $\Delta O = \ev{\mathbb{O}}{\text{out}}- \ev{\mathbb{O}}{\text{in}}=\ev{S^\dagger \mathbb{O} S}{\text{in}}-\ev{\mathbb{O}}{\text{in}}=\ev {S^\dagger [\mathbb{O},S]}{\text{in}}$ .
+Explicitly :
+
+$$\begin{align}
+\Delta O & = \iunit \int \dd{\Phi_4(p_1,\dots,p_4)} \phi_1(p_1)\phi_2(p_2)\phi_2^*(p_3)\phi_1^*(p_4)
+\end{align}$$
         
 ## [3 Conservative dynamics at $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/20)
     
