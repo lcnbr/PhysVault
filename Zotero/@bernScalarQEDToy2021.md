@@ -38,7 +38,7 @@ Observable change: $\Delta O = \ev{\mathbb{O}}{\text{out}}- \ev{\mathbb{O}}{\tex
 Explicitly :
 
 $$\begin{align}
-\Delta O & = \iunit \int \dd{\Phi_4(p_1,\dots,p_4)} \phi_1(p_1)\phi_2(p_2)\phi_2^*(p_3)\phi_1^*(p_4)
+\Delta O & = \iunit \int \dd{\Phi_4(p_1,\dots,p_4)} \phi_1(p_1)\phi_2(p_2)\phi_2^*(p_3)\phi_1^*(p_4)\hat{\delta}^{(D)}(\sum\limits)
 \end{align}$$
         
 ## [3 Conservative dynamics at $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/20)
