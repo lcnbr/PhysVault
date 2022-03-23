@@ -124,24 +124,23 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 276.5
   },
-  "active": "fe7671077cca8f22",
+  "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
     "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
+    "PhysNotes/delta-function.md",
+    "PhysNotes/math/delta function.md",
     "PhysNotes/LaTeX.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
     "Zotero/zotero-843-Annotations.md",
     "Zotero/zotero-843-zotero.md",
     "Zotero/Annotations.md",
-    "Zotero/broedela.md",
-    "Zotero/broedela-0 Overview and Practicabilities.md",
-    "Zotero/broedela-3 Classical Bosonic String.md"
+    "Zotero/broedela.md"
   ]
 }

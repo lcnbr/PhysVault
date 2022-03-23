@@ -66,7 +66,7 @@ We can reexpress this combination using the number of
 non-trivial momentum integrals, i.e.\ the number of loops of the graph.
 Consider the number of undetermined momenta within a graph:
 - one free momentum for each internal and external line (integral),
- - one constraint for each vertex (delta function),
+ - one constraint for each vertex ([[delta function]]),
  - one constraint for each external line (fixed by momentum inflow),
  - relax one constraint for the external lines within each connection component (the constraints due to the vertices already imply overall momentum conservation within this component which determines one of the external momenta in terms of the others).
 

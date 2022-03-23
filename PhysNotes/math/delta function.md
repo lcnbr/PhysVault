@@ -1,5 +1,6 @@
 ---
 alias:
+- Dirac delta function
 tags:
 - qftII
 ---
