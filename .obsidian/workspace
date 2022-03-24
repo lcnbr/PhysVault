@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
+            "file": "Zotero/@bernScalarQEDToy2021annotations.md",
             "mode": "source",
             "source": true
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
+            "file": "Zotero/@bernScalarQEDToy2021annotations.md",
             "mode": "preview",
             "source": true
           }
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
+                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
+                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@herrmannRadiativeClassicalGravitational2021.md"
+                "file": "Zotero/@bernScalarQEDToy2021annotations.md"
               }
             }
           }
@@ -133,6 +133,7 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "Zotero/@bernScalarQEDToy2021annotations.md",
     "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
     "PhysNotes/QFTII/Path Integral for Transition Amplitude.md",
     "PhysNotes/QFTII/transition amplitude.md",
@@ -141,7 +142,6 @@
     "PhysNotes/QFTII/Equal-Time Commutators.md",
     "PhysNotes/QFTII/operator insertions.md",
     "PhysNotes/QFTII/Path Integral for Quantum Mechanics.md",
-    "PhysNotes/QFTII/QFT II.md",
-    "PhysNotes/delta-function.md"
+    "PhysNotes/QFTII/QFT II.md"
   ]
 }
