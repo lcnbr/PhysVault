@@ -223,9 +223,9 @@ ansatz of Feynman-like graphs with associated numerators dictated by the power-c
 
 #definition : bubble topologies. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=9&annotation=4JJ9BRA9))
 
-We do not graphically distinguish ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=9&annotation=4HSI4PJY))
+#condition : We do not graphically distinguish ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=9&annotation=4HSI4PJY))
 
-particles of mass m1 and m2 that are always associated to the external momenta p1, p4 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=10&annotation=P54Z4EM5))
+#condition : particles of mass $m_1$ and $m_2$ that are always associated to the external momenta $p_1$, $p_4$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=10&annotation=P54Z4EM5))
 
 and p2, p3, respectively ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=10&annotation=VWD44CEQ))
 
