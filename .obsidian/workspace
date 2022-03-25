@@ -125,13 +125,14 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 276.5
   },
-  "active": "37afdef98af2d6b1",
+  "active": "fe7671077cca8f22",
   "lastOpenFiles": [
     "Zotero/@bernScalarQEDToy2021annotations.md",
     "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
