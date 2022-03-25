@@ -7,8 +7,8 @@ year: 2021
 
 
 # Mentions:
-- [[effective one body formalism]]
-- [[numerical relativity]]
+- [[effective one body formalism]]^[[[@bernScalarQEDToy2021annotations#^7e27bb]]]
+- [[numerical relativity]]^[[[@bernScalarQEDToy2021annotations#^ae2631]]]
 - [[self-force formalism]]
 - [[effective field theory]]
 - [[nonrelativistic general relativity]]
@@ -20,6 +20,8 @@ year: 2021
 **Contents**
 
 ##  [1 Introduction](zotero://open-pdf/0_VLMHF4E2/2)
+
+The landmark detection of gravitational waves \[1, 2\] has opened a remarkable new window into the Universe that promises major new advances into black holes, neutron stars, and perhaps even provides new insights into fundamental physics. ^[![[@bernScalarQEDToy2021annotations#^56f6bf]]]. The aim of the game is to predict gravitational wave signals. The tools used are varied but the most prominent is the [[post-Minkowskian expansion]]. 
     
 ###  [2 Review of Methods](zotero://open-pdf/0_VLMHF4E2/5)
     

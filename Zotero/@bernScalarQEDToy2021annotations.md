@@ -1,15 +1,13 @@
 # Annotations  
 (2022-03-25, 12:23:20 p.m.)
 
-# 1 Introduction 1 2 Review of Methods 4 2.1 Classical limit of quantum scattering amplitudes–soft and potential region . 4 2.2 Generalized Unitarity and scalar QED scattering amplitudes up to O(α3) . 6 2.3 Soft and potential region expansion, IBP, and differential equations . . . . . 10 2.4 Soft radial action and master integral subtraction of classically divergent terms 11 2.5 KMOC framework for classical conservative and radiative observables . . . . 14 3 Conservative dynamics at O(α3) 19 3.1 Conservative scattering amplitudes . . . . . . . . . . . . . . . . . . . . . . . 19 3.2 Eikonal approach to classical conservative scattering . . . . . . . . . . . . . 20 3.3 Conservative eikonal phase, scattering angle, and two-body Hamiltonian . . 21 3.4 Conservative impulse and scattering angle via KMOC . . . . . . . . . . . . 24 4 Radiative dynamics at O(α3) 25 4.1 Radiative scattering amplitudes . . . . . . . . . . . . . . . . . . . . . . . . . 25 4.2 Eikonal approach to classical scattering including radiation effects . . . . . . 26 4.3 Radiative impulse, energy loss, and scattering angle via KMOC . . . . . . . 32 4.4 Radiative radial action . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33 5 Conclusions 34 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=6NDNDCRH))
-
 # 1 Introduction ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=2J8PVH6E))
 
-#important : The landmark detection of gravitational waves \[1, 2\] has opened a remarkable new window into the Universe that promises major new advances into black holes, neutron stars, and perhaps even provides new insights into fundamental physics. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=J42EGNTJ))
+#important : The landmark detection of gravitational waves \[1, 2\] has opened a remarkable new window into the Universe that promises major new advances into black holes, neutron stars, and perhaps even provides new insights into fundamental physics. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=J42EGNTJ)) ^56f6bf
 
-#definition : effective one-body (EOB) formalism \[7\], ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=ZGX37JUA))
+#definition : effective one-body (EOB) formalism \[7\], ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=ZGX37JUA)) ^7e27bb
 
-#definition : numerical relativity \[8–10\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=LTDP8R58))
+#definition : numerical relativity \[8–10\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=LTDP8R58)) ^ae2631
 
 #definition : self-force formalism \[11, 12\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=L27SS5U6))
 
@@ -21,9 +19,9 @@
 
 #definition : post-Minkowskian (PM) expansion \[27–45\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=ACIMMCNH))
 
-#definition : post-Minkowskian approach is a weak-field expansion in Newton’s constant, G, ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=T2KYWQ6F))
+#definition : post-Minkowskian approach is a weak-field expansion in Newton’s constant, G, ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=T2KYWQ6F)) ^e0eddb
 
-#important : maintaining Lorentz invariance and gives results with exact relativistic velocity dependence. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=CZ483ZRN))
+#important : maintaining Lorentz invariance and gives results with exact relativistic velocity dependence. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=CZ483ZRN)) ^3c2880
 
 #important : Calculations of scattering amplitudes have advanced enormously, making this a natural framework for state-of-the-art post-Minkowskian calculations ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=7LNAR29E))
 
@@ -225,7 +223,7 @@ ansatz of Feynman-like graphs with associated numerators dictated by the power-c
 
 #condition : We do not graphically distinguish ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=9&annotation=4HSI4PJY))
 
-#condition : particles of mass $m_1$ and $m_2$ that are always associated to the external momenta $p_1$, $p_4$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=10&annotation=P54Z4EM5))
+#condition : particles of mass $m_1$ and $m_2$ that are always associated to the external momenta $ p_1$, $p_4$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=10&annotation=P54Z4EM5))
 
 and p2, p3, respectively ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=10&annotation=VWD44CEQ))
 
