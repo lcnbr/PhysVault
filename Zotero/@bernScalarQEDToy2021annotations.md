@@ -1,5 +1,5 @@
-# Annotations  
-(2022-03-25, 12:23:20 p.m.)
+Highlights and annotations of [[@bernScalarQEDToy2021]]
+
 
 # 1 Introduction ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=2J8PVH6E))
 
@@ -17,7 +17,7 @@
 
 #definition : nonrelativistic general relativity (NRGR) \[15–26\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=H8KIBGI7))
 
-#definition : post-Minkowskian (PM) expansion \[27–45\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=ACIMMCNH))
+#definition : post-Minkowskian (PM) expansion \[27–45\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=2&annotation=ACIMMCNH)) ^09545f
 
 #definition : post-Minkowskian approach is a weak-field expansion in Newton’s constant, G, ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=T2KYWQ6F)) ^e0eddb
 
@@ -25,9 +25,9 @@
 
 #important : Calculations of scattering amplitudes have advanced enormously, making this a natural framework for state-of-the-art post-Minkowskian calculations ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=7LNAR29E))
 
-#definition : unitarity method \[59–61\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=3AUH7T5F))
+#definition : unitarity method \[59–61\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=3AUH7T5F)) ^708137
 
-#definition : gauge and gravity theories \[62–66\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=4UKYTD5P))
+#definition : gauge and gravity theories \[62–66\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=4UKYTD5P)) ^98e3b2
 
 #definition : integration by parts (IBP) \[68–70 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=QHP3P268))
 
@@ -39,13 +39,13 @@
 
 #definition : EOB framework \[35, 43\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=WIGANRAI))
 
-#important : Scattering amplitudes are the natural realm to describe the hyperbolic motion of classical objects from the asymptotic past to the asymptotic future ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=VUNR9TTY))
+#important : Scattering amplitudes are the natural realm to describe the hyperbolic motion of classical objects from the asymptotic past to the asymptotic future ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=VUNR9TTY)) ^aa210e
 
 #definition : Kosower, Maybee, and O’Connell (KMOC) \[39\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=RWH57IHB))
 
-#definition : allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cuts. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=5S2V7ULV))
+#definition : allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cuts. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=5S2V7ULV)) ^cccd89
 
-#important : The usefulness of the scattering amplitude framework has been demonstrated through the first construction of the conservative two-body Hamiltonian at O(G3) \[41, 42\], as well as new results at O(G4) \[53, 56\]. There have also been a variety of new results for spin \[101116\], tidal effects \[117–126\], and waveforms \[58\]. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=5CS5QJR4))
+#important : The usefulness of the scattering amplitude framework has been demonstrated through the first construction of the conservative two-body Hamiltonian at O(G3) \[41, 42\], as well as new results at O(G4) \[53, 56\]. There have also been a variety of new results for spin \[101116\], tidal effects \[117–126\], and waveforms \[58\]. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=3&annotation=5CS5QJR4)) ^087cd9
 
 #important : direct iteration of the equations of motion ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=B3TGKPTF))
 

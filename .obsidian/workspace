@@ -9,20 +9,20 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/post-Minkowskian expansion.md",
+            "file": "Zotero/@bernScalarQEDToy2021.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "80f7b21b2eb62e64",
+        "id": "f9820fd2dbfb1fce",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "Zotero/@bernScalarQEDToy2021annotations.md",
-            "mode": "preview",
+            "mode": "source",
             "source": false
           }
         }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/post-Minkowskian expansion.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/post-Minkowskian expansion.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/post-Minkowskian expansion.md"
+                "file": "Zotero/@bernScalarQEDToy2021.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/post-Minkowskian expansion.md",
-    "PhysNotes/GR/Tensors and tensor densities in General Relativity.md",
-    "PhysNotes/Lorentz invariant.md",
-    "Zotero/@bernScalarQEDToy2021annotations.md",
     "Zotero/@bernScalarQEDToy2021.md",
-    "Zotero/Annotations.md",
-    "PhysNotes/effective one body formalism.md",
-    "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
-    "PhysNotes/QFTII/Path Integral for Transition Amplitude.md",
-    "PhysNotes/QFTII/transition amplitude.md"
+    "Zotero/@bernScalarQEDToy2021annotations.md",
+    "PhysNotes/KMOC framework.md",
+    "PhysNotes/^^allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cut.md",
+    "PhysNotes/post-Minkowskian expansion.md",
+    "PhysNotes/[@bernScalarQEDToy2021annotations.md",
+    "Zotero/@buonannoSourcesGravitationalWaves2015.md",
+    "PhysNotes/scattering amplitude framework.md",
+    "PhysNotes/unitarity method.md",
+    "PhysNotes/double copy.md"
   ]
 }

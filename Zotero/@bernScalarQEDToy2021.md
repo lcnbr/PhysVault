@@ -5,14 +5,16 @@ year: 2021
 ---
 [Item](zotero://select/items/@bernScalarQEDToy2021)
 
+## Highlights:
+[[@bernScalarQEDToy2021annotations]]
 
 # Mentions:
-- [[effective one body formalism]]^[[[@bernScalarQEDToy2021annotations#^7e27bb]]]
-- [[numerical relativity]]^[[[@bernScalarQEDToy2021annotations#^ae2631]]]
+- [[effective one body formalism]]^[![[@bernScalarQEDToy2021annotations#^7e27bb]]]
+- [[numerical relativity]]^[![[@bernScalarQEDToy2021annotations#^ae2631]]]
 - [[self-force formalism]]
 - [[effective field theory]]
 - [[nonrelativistic general relativity]]
-- [[post-Minkowskian expansion]]
+- [[post-Minkowskian expansion]]^[![[@bernScalarQEDToy2021annotations#^09545f]]]
 - [[Newton]]
 
 # Summary
@@ -21,7 +23,10 @@ year: 2021
 
 ##  [1 Introduction](zotero://open-pdf/0_VLMHF4E2/2)
 
-The landmark detection of gravitational waves \[1, 2\] has opened a remarkable new window into the Universe that promises major new advances into black holes, neutron stars, and perhaps even provides new insights into fundamental physics. ^[![[@bernScalarQEDToy2021annotations#^56f6bf]]]. The aim of the game is to predict gravitational wave signals. The tools used are varied but the most prominent is the [[post-Minkowskian expansion]]. 
+The landmark detection of gravitational waves \[1, 2\] has opened a remarkable new window into the Universe that promises major new advances into black holes, neutron stars, and perhaps even provides new insights into fundamental physics. ^[![[@bernScalarQEDToy2021annotations#^56f6bf]]]. The aim of the game is to predict gravitational wave signals. The tools used are varied but the most prominent is the [[post-Minkowskian expansion]]. On top of being useful in the [[post-Minkowskian expansion|PM expansion]] amplitudes enable the description of the hyperbolic motion of classical objects from the asymptotic past to the asymptotic future ^[![[@bernScalarQEDToy2021annotations#^aa210e]]] as implemented in the [[KMOC framework]]. The usefulness of the scattering amplitude framework has been demonstrated through the first construction of the conservative two-body Hamiltonian at $\mathcal{O}(G^3)$, as well as new results at $\mathcal{O}(G^4)$^[![[@bernScalarQEDToy2021annotations#^087cd9]]] .
+
+### PLAN:
+1. Use 
     
 ###  [2 Review of Methods](zotero://open-pdf/0_VLMHF4E2/5)
     
