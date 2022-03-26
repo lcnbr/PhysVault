@@ -49,15 +49,17 @@ Highlights and annotations of [[@bernScalarQEDToy2021]]
 
 #important : direct iteration of the equations of motion ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=B3TGKPTF))
 
-# Kosower-Maybee-O’Connell formalism to obtain the impulse on two massive charged scalar particles scattering at large impact parameter b from which we extract the scattering angle ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=PP9XEY82))
+Kosower-Maybee-O’Connell formalism to obtain the impulse on two massive charged scalar particles scattering at large impact parameter b from which we extract the scattering angle ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=PP9XEY82))
 
-# extract the eikonal phase from the scattering amplitude which allows us to determine the scattering angle. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=U8VUTEGY))
+^b0394b
 
-# extracting from the scattering amplitude a radial action that determines the scattering angle, including radiative effects. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=YYLHD8WZ))
+extract the eikonal phase from the scattering amplitude which allows us to determine the scattering angle. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=U8VUTEGY)) ^6c0ca1
 
-#important : All three of these approaches for extracting the classical scattering angle match, and agree with the result from the classical approach of Ref. \[90\]. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=QQVFND2Y))
+extracting from the scattering amplitude a radial action that determines the scattering angle, including radiative effects. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=YYLHD8WZ)) ^376f6d
 
-#important : in electromagnetism we encounter a mass singularity in the scattering angle, which does not cancel between potential and radiative contributions, as it does in the corresponding O(G3) calculation in gravity \[127, 128\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=8TAN9VT7))
+#important : All three of these approaches for extracting the classical scattering angle match, and agree with the result from the classical approach of Ref. \[90\]. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=QQVFND2Y)) ^038ace
+
+#important : in electromagnetism we encounter a mass singularity in the scattering angle, which does not cancel between potential and radiative contributions, as it does in the corresponding O(G3) calculation in gravity \[127, 128\] ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=8TAN9VT7)) ^260d9e
 
 #important : interpret this singularity as a breakdown of the classical expansion which requires m2|b|21 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=4&annotation=YZCQ3JQ2))
 

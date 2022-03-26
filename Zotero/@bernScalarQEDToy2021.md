@@ -26,10 +26,21 @@ year: 2021
 The landmark detection of gravitational waves \[1, 2\] has opened a remarkable new window into the Universe that promises major new advances into black holes, neutron stars, and perhaps even provides new insights into fundamental physics. ^[![[@bernScalarQEDToy2021annotations#^56f6bf]]]. The aim of the game is to predict gravitational wave signals. The tools used are varied but the most prominent is the [[post-Minkowskian expansion]]. On top of being useful in the [[post-Minkowskian expansion|PM expansion]] amplitudes enable the description of the hyperbolic motion of classical objects from the asymptotic past to the asymptotic future ^[![[@bernScalarQEDToy2021annotations#^aa210e]]] as implemented in the [[KMOC framework]]. The usefulness of the scattering amplitude framework has been demonstrated through the first construction of the conservative two-body Hamiltonian at $\mathcal{O}(G^3)$, as well as new results at $\mathcal{O}(G^4)$^[![[@bernScalarQEDToy2021annotations#^087cd9]]] .
 
 ### PLAN:
-1. Use 
-    
-###  [2 Review of Methods](zotero://open-pdf/0_VLMHF4E2/5)
-    
+1. Use Kosower-Maybee-O’Connell formalism to obtain the impulse on two massive charged scalar particles scattering at large impact parameter b from which we extract the scattering angle^[![[@bernScalarQEDToy2021annotations#^b0394b]]]
+2. extract the eikonal phase from the scattering amplitude which allows us to determine the scattering angle^[![[@bernScalarQEDToy2021annotations#^6c0ca1]]]
+3. extracting from the scattering amplitude a radial action that determines the scattering angle, including radiative effects. ^[![[@bernScalarQEDToy2021annotations#^376f6d]]]
+
+All three of these approaches for extracting the classical scattering angle match, and agree with the result from the classical approach of Ref. \[90\].^[![[@bernScalarQEDToy2021annotations#^038ace]]]
+
+
+In electromagnetism we encounter a mass singularity in the scattering angle, which does not cancel between potential and radiative contributions, as it does in the corresponding O(G3) calculation in gravity [127, 128]^[![[@bernScalarQEDToy2021annotations#^260d9e]]] we interpret this singularity as a breakdown of the classical expansion which requires $m^2 \abs{b}^2\gg 1$ 
+
+
+##  [2 Review of Methods](zotero://open-pdf/0_VLMHF4E2/5)
+
+#defintion Two loop order: $\mathcal{O}(\alpha^3)$ where $\alpha = \frac{e^2 }{4 \pi}$ is the [[fine structure constant]]
+
+
 ###  [2.1 Classical limit of quantum scattering amplitudes–soft and potential region](zotero://open-pdf/0_VLMHF4E2/5)
         
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
+            "file": "PhysNotes/fine structure constant.md",
             "mode": "source",
             "source": false
           }
@@ -22,7 +22,7 @@
           "type": "markdown",
           "state": {
             "file": "Zotero/@bernScalarQEDToy2021annotations.md",
-            "mode": "source",
+            "mode": "preview",
             "source": false
           }
         }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "PhysNotes/fine structure constant.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "PhysNotes/fine structure constant.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md"
+                "file": "PhysNotes/fine structure constant.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "PhysNotes/fine structure constant.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/@bernScalarQEDToy2021annotations.md",
+    "PhysNotes/LaTeX.md",
     "PhysNotes/KMOC framework.md",
     "PhysNotes/^^allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cut.md",
     "PhysNotes/post-Minkowskian expansion.md",
     "PhysNotes/[@bernScalarQEDToy2021annotations.md",
     "Zotero/@buonannoSourcesGravitationalWaves2015.md",
-    "PhysNotes/scattering amplitude framework.md",
-    "PhysNotes/unitarity method.md",
-    "PhysNotes/double copy.md"
+    "PhysNotes/scattering amplitude framework.md"
   ]
 }
