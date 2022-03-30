@@ -50,7 +50,8 @@ In electromagnetism we encounter a mass singularity in the scattering angle, whi
 
 ###  [2.1 Classical limit of quantum scattering amplitudes–soft and potential region](zotero://open-pdf/0_VLMHF4E2/5)
 
-Relativistic scattering of two point-charges in a [[post-Lorentzian expansion|PL expansion]]^[![[@bernScalarQEDToy2021annotations#^06ee81]]]
+Relativistic scattering of two point-charges in a [[post-Lorentzian expansion|PL expansion]]^[![[@bernScalarQEDToy2021annotations#^06ee81]]]. Suppose that the particles are spinless and structureless (massive [[scalar fields in GR|scalar field]])
+
 
 
     

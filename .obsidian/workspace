@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/post-Lorentzian expansion.md",
+            "file": "Zotero/@bernScalarQEDToy2021.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/post-Lorentzian expansion.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/post-Lorentzian expansion.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/post-Lorentzian expansion.md"
+                "file": "Zotero/@bernScalarQEDToy2021.md"
               }
             }
           }
@@ -129,15 +129,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "Zotero/@bernScalarQEDToy2021.md",
     "PhysNotes/post-Lorentzian expansion.md",
+    "Zotero/@bernScalarQEDToy2021annotations.md",
     "PhysNotes/post-Minkowskian expansion.md",
     "PhysNotes/Untitled.md",
-    "Zotero/@bernScalarQEDToy2021annotations.md",
-    "Zotero/@bernScalarQEDToy2021.md",
     "PhysNotes/LaTeX.md",
     "PhysNotes/KMOC framework.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
