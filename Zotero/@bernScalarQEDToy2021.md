@@ -51,13 +51,14 @@ In electromagnetism we encounter a mass singularity in the scattering angle, whi
 ###  [2.1 Classical limit of quantum scattering amplitudes–soft and potential region](zotero://open-pdf/0_VLMHF4E2/5)
 
 Relativistic scattering of two point-charges in a [[post-Lorentzian expansion|PL expansion]]^[![[@bernScalarQEDToy2021annotations#^06ee81]]]. Suppose that the particles are spinless and structureless (massive [[scalar fields in GR|scalar field]]). 
-We convert scales to momentum space by:
+We convert scales to momentum space by: assuming that the masses are very large and the momentum transfer $\abs{q} \sim \frac{1}{\abs{b}}$ is small: $(-q^2)\ll m_i^2$
 
-We redefine the incoming and outgoing momenta to facilitate the [[soft expansion]]
+We redefine the incoming and outgoing momenta to facilitate the [[soft expansion]] (small $\abs{q}$)
 
 $p_1 = - \pqty{\bar{p}_1-\frac{q}{2}},p_2 = - \pqty{\bar{p}_2+\frac{q}{2}},p_3 =  \pqty{\bar{p}_2-\frac{q}{2}},p_4 =  \pqty{\bar{p}_1+\frac{q}{2}}$
 
-Thus 
+The barred variables are such that, for [[on-shell]] momenta ($p_i^2=m_i^2$), $\bar{p}_i \cdot q=0$. Also introduce soft-masses $\overline{m}_i$
+
 
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
         
