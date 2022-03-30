@@ -57,7 +57,12 @@ We redefine the incoming and outgoing momenta to facilitate the [[soft expansion
 
 $p_1 = - \pqty{\bar{p}_1-\frac{q}{2}},p_2 = - \pqty{\bar{p}_2+\frac{q}{2}},p_3 =  \pqty{\bar{p}_2-\frac{q}{2}},p_4 =  \pqty{\bar{p}_1+\frac{q}{2}}$
 
-The barred variables are such that, for [[on-shell]] momenta ($p_i^2=m_i^2$), $\bar{p}_i \cdot q=0$. Also introduce soft-masses $\overline{m}_i$
+The barred variables are such that, for [[on-shell]] momenta ($p_i^2=m_{I_i}^2$) for $I_i=\left\{\begin{aligned}&1 \text{ for } i\in\Bqty{1,4}\\&2 \text{ for } i \in\Bqty{2,3}\end{aligned}\right.$ , $\bar{p}_i \cdot q=0$. Also introduce soft-masses $\overline{m}_i$:
+![[Pasted image 20220330221749.png]]
+
+$$\begin{align}
+m_i^2=p_i^2 
+\end{align}$$
 
 
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
