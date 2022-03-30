@@ -73,7 +73,7 @@ generalized unitarity framework to determine the amplitude integrands in Subsect
 
 Subsection 2.3, we telegraphically sketch the applicability of modern collider-physics based integration tools to compute precision-level classical observables with the help of integration-by-parts reduction to a minimal set of master integrals and their evaluation by differential equation methods ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=GBV3ZC8D)) ^52f488
 
-Subsection 2.4 introduces a new concept that allows us to define a radial action in the presence of soft-region radiation effects ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=EDKPS5SW))
+Subsection 2.4 introduces a new concept that allows us to define a radial action in the presence of soft-region radiation effects ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=EDKPS5SW)) ^3dabc1
 
 Subsection 2.5, we briefly summarize the Kosower, Maybee, and O’Connell (KMOC) formalism which allows us to extract the classical electromagnetic impulse, the radiated momentum, and the classical scattering angle up to O(α3). ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=92SRT9MK))
 
