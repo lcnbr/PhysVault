@@ -50,11 +50,15 @@ In electromagnetism we encounter a mass singularity in the scattering angle, whi
 
 ###  [2.1 Classical limit of quantum scattering amplitudes–soft and potential region](zotero://open-pdf/0_VLMHF4E2/5)
 
-Relativistic scattering of two point-charges in a [[post-Lorentzian expansion|PL expansion]]^[![[@bernScalarQEDToy2021annotations#^06ee81]]]. Suppose that the particles are spinless and structureless (massive [[scalar fields in GR|scalar field]])
+Relativistic scattering of two point-charges in a [[post-Lorentzian expansion|PL expansion]]^[![[@bernScalarQEDToy2021annotations#^06ee81]]]. Suppose that the particles are spinless and structureless (massive [[scalar fields in GR|scalar field]]). 
+We convert scales to momentum space by:
 
+We redefine the incoming and outgoing momenta to facilitate the [[soft expansion]]
 
+$p_1 = - \pqty{\bar{p}_1-\frac{q}{2}},p_2 = - \pqty{\bar{p}_2+\frac{q}{2}},p_3 =  \pqty{\bar{p}_2-\frac{q}{2}},p_4 =  \pqty{\bar{p}_1+\frac{q}{2}}$
 
-    
+Thus 
+
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
         
 ###   [2.3 Soft and potential region expansion, IBP, and differential equations](zotero://open-pdf/0_VLMHF4E2/11)

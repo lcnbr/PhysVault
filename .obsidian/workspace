@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "Zotero/@bernScalarQEDToy2021.md",
-            "mode": "source",
+            "mode": "preview",
             "source": false
           }
         }
@@ -135,6 +135,7 @@
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
     "Zotero/@bernScalarQEDToy2021.md",
+    "PhysNotes/soft expansion.md",
     "PhysNotes/post-Lorentzian expansion.md",
     "Zotero/@bernScalarQEDToy2021annotations.md",
     "PhysNotes/post-Minkowskian expansion.md",
@@ -142,7 +143,6 @@
     "PhysNotes/LaTeX.md",
     "PhysNotes/KMOC framework.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
-    "PhysNotes/fine structure constant.md",
-    "PhysNotes/^^allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cut.md"
+    "PhysNotes/fine structure constant.md"
   ]
 }
