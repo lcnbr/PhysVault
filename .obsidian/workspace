@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/fine structure constant.md",
+            "file": "Zotero/@bernScalarQEDToy2021.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
           "type": "markdown",
           "state": {
             "file": "Zotero/@bernScalarQEDToy2021annotations.md",
-            "mode": "preview",
+            "mode": "source",
             "source": false
           }
         }
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#important",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -63,13 +63,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 240,
-    "collapsed": true
+    "width": 240
   },
   "right": {
     "id": "87f65332409687cb",
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/fine structure constant.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/fine structure constant.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/fine structure constant.md"
+                "file": "Zotero/@bernScalarQEDToy2021.md"
               }
             }
           }
@@ -136,9 +134,9 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/fine structure constant.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/@bernScalarQEDToy2021annotations.md",
+    "PhysNotes/fine structure constant.md",
     "PhysNotes/LaTeX.md",
     "PhysNotes/KMOC framework.md",
     "PhysNotes/^^allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cut.md",

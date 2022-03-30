@@ -40,6 +40,15 @@ In electromagnetism we encounter a mass singularity in the scattering angle, whi
 
 #defintion Two loop order: $\mathcal{O}(\alpha^3)$ where $\alpha = \frac{e^2 }{4 \pi}$ is the [[fine structure constant]]
 
+# PLAN:
+
+- review the kinematic parametrization tailored towards the classical expansion of quantum scattering amplitudes in Subsection 2.1 ^[![[@bernScalarQEDToy2021annotations#^f4a4b5]]]
+- Outline the generalized unitarity framework to determine the amplitude integrands in Subsection 2.2 ^[![[@bernScalarQEDToy2021annotations#^d615bb]]]
+- Subsection 2.3, we telegraphically sketch the applicability of modern collider-physics based integration tools to compute precision-level classical observables with the help of integration-by-parts reduction to a minimal set of master integrals and their evaluation by differential equation methods ^[![[@bernScalarQEDToy2021annotations#^52f488]]]
+
+Subsection 2.4 introduces a new concept that allows us to define a radial action in the presence of soft-region radiation effects ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=EDKPS5SW))
+
+Subsection 2.5, we briefly summarize the Kosower, Maybee, and O’Connell (KMOC) formalism which allows us to extract the classical electromagnetic impulse, the radiated momentum, and the classical scattering angle up to O(α3).
 
 ###  [2.1 Classical limit of quantum scattering amplitudes–soft and potential region](zotero://open-pdf/0_VLMHF4E2/5)
         

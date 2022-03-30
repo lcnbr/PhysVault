@@ -67,15 +67,15 @@ extracting from the scattering amplitude a radial action that determines the sca
 
 #definition : O(α3) where α = e2/4π ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=WQTB858Z))
 
-# review the kinematic parametrization tailored towards the classical expansion of quantum scattering amplitudes in Subsection 2.1 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=CYC9W7N5))
+review the kinematic parametrization tailored towards the classical expansion of quantum scattering amplitudes in Subsection 2.1 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=CYC9W7N5)) ^f4a4b5
 
-# generalized unitarity framework to determine the amplitude integrands in Subsection 2.2 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=XJ69PEE8))
+generalized unitarity framework to determine the amplitude integrands in Subsection 2.2 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=XJ69PEE8)) ^d615bb
 
-# Subsection 2.3, we telegraphically sketch the applicability of modern collider-physics based integration tools to compute precision-level classical observables with the help of integration-by-parts reduction to a minimal set of master integrals and their evaluation by differential equation methods ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=GBV3ZC8D))
+Subsection 2.3, we telegraphically sketch the applicability of modern collider-physics based integration tools to compute precision-level classical observables with the help of integration-by-parts reduction to a minimal set of master integrals and their evaluation by differential equation methods ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=GBV3ZC8D)) ^52f488
 
-# Subsection 2.4 introduces a new concept that allows us to define a radial action in the presence of soft-region radiation effects ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=EDKPS5SW))
+Subsection 2.4 introduces a new concept that allows us to define a radial action in the presence of soft-region radiation effects ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=EDKPS5SW))
 
-# Subsection 2.5, we briefly summarize the Kosower, Maybee, and O’Connell (KMOC) formalism which allows us to extract the classical electromagnetic impulse, the radiated momentum, and the classical scattering angle up to O(α3). ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=92SRT9MK))
+Subsection 2.5, we briefly summarize the Kosower, Maybee, and O’Connell (KMOC) formalism which allows us to extract the classical electromagnetic impulse, the radiated momentum, and the classical scattering angle up to O(α3). ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=92SRT9MK))
 
 # 2.1 Classical limit of quantum scattering amplitudes–soft and potential region ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=KU2K6E23))
 
