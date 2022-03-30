@@ -1,6 +1,7 @@
 ---
 alias:
 - KMOC
+- Kosower, Maybee, and O’Connell
 tag:
 - QM
 ---

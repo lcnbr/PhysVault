@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
-            "mode": "source",
+            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md"
+                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+    "PhysNotes/KMOC framework.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/@bernScalarQEDToy2021annotations.md",
     "PhysNotes/fine structure constant.md",
     "PhysNotes/LaTeX.md",
-    "PhysNotes/KMOC framework.md",
     "PhysNotes/^^allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cut.md",
     "PhysNotes/post-Minkowskian expansion.md",
     "PhysNotes/[@bernScalarQEDToy2021annotations.md",
-    "Zotero/@buonannoSourcesGravitationalWaves2015.md",
-    "PhysNotes/scattering amplitude framework.md"
+    "Zotero/@buonannoSourcesGravitationalWaves2015.md"
   ]
 }
