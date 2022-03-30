@@ -79,7 +79,7 @@ Subsection 2.5, we briefly summarize the Kosower, Maybee, and O’Connell (KMOC)
 
 # 2.1 Classical limit of quantum scattering amplitudes–soft and potential region ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=KU2K6E23))
 
-#definition : post-Lorentzian” (PL) expansion ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=WY2KUEQ6))
+#definition : post-Lorentzian” (PL) expansion ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=WY2KUEQ6)) ^06ee81
 
 #definition : post-Minkowskian expansion in gravity. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=5&annotation=PRNSYKVN))
 
@@ -93,13 +93,13 @@ Subsection 2.5, we briefly summarize the Kosower, Maybee, and O’Connell (KMOC)
 
 #definition : inter-particle separation b. ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=3WAQS6UA))
 
-#definition : classical PM expansion corresponds to the following hierarchy of scales: λc rS b, ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=TUJLYRMI))
+#definition : classical PM expansion corresponds to the following hierarchy of scales: λc rS b, ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=TUJLYRMI)) ^3427df
 
 #definition : similarly λc rQ b in the PL cas ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=7TBEHCE5))
 
 classical limit posits that the individual particle size is much bigger than the Compton wavelength ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=28VQLZNJ))
 
-#conclusion : regime of large charges: rS/λc 1 ↔ G m2/~ 1, or rQ/λc 1 ↔ e2q2 i /~ 1 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=FLBQTEZA))
+#conclusion : regime of large charges: rS/λc 1 ↔ G m2/~ 1, or rQ/λc 1 ↔ e2q2 i /~ 1 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=FLBQTEZA)) ^684d37
 
 #definition : qi is the electric charge of the classical object in units of e ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=GHIHKNP3))
 

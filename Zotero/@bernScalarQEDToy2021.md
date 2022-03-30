@@ -46,10 +46,14 @@ In electromagnetism we encounter a mass singularity in the scattering angle, whi
 - Outline the generalized unitarity framework to determine the amplitude integrands in Subsection 2.2 ^[![[@bernScalarQEDToy2021annotations#^d615bb]]]
 - Subsection 2.3, we telegraphically sketch the applicability of modern collider-physics based integration tools to compute precision-level classical observables with the help of integration-by-parts reduction to a minimal set of master integrals and their evaluation by differential equation methods ^[![[@bernScalarQEDToy2021annotations#^52f488]]]
 - Subsection 2.4 introduces a new concept that allows us to define a radial action in the presence of soft-region radiation effects ^[![[@bernScalarQEDToy2021annotations#^3dabc1]]]
-- Subsection 2.5, we briefly summarize the Kosower, Maybee, and O’Connell ([[KMOC framework|KMOC]]) formalism which allows us to extract the classical electromagnetic impulse, the radiated momentum, and the classical scattering angle up to $\mathcal{O}(\alpha^3)$.
+- Subsection 2.5, we briefly summarize the ([[KMOC framework|KMOC]]) formalism which allows us to extract the classical electromagnetic impulse, the radiated momentum, and the classical scattering angle up to $\mathcal{O}(\alpha^3)$.
 
 ###  [2.1 Classical limit of quantum scattering amplitudes–soft and potential region](zotero://open-pdf/0_VLMHF4E2/5)
-        
+
+Relativistic scattering of two point-charges in a [[post-Lorentzian expansion|PL expansion]]^[![[@bernScalarQEDToy2021annotations#^06ee81]]]
+
+
+    
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
         
 ###   [2.3 Soft and potential region expansion, IBP, and differential equations](zotero://open-pdf/0_VLMHF4E2/11)

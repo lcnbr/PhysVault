@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
-            "mode": "preview",
+            "file": "PhysNotes/post-Lorentzian expansion.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+                "file": "PhysNotes/post-Lorentzian expansion.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+                "file": "PhysNotes/post-Lorentzian expansion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md"
+                "file": "PhysNotes/post-Lorentzian expansion.md"
               }
             }
           }
@@ -129,20 +129,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
-    "PhysNotes/KMOC framework.md",
-    "Zotero/@bernScalarQEDToy2021.md",
-    "Zotero/@bernScalarQEDToy2021annotations.md",
-    "PhysNotes/fine structure constant.md",
-    "PhysNotes/LaTeX.md",
-    "PhysNotes/^^allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cut.md",
+    "PhysNotes/post-Lorentzian expansion.md",
     "PhysNotes/post-Minkowskian expansion.md",
-    "PhysNotes/[@bernScalarQEDToy2021annotations.md",
-    "Zotero/@buonannoSourcesGravitationalWaves2015.md"
+    "PhysNotes/Untitled.md",
+    "Zotero/@bernScalarQEDToy2021annotations.md",
+    "Zotero/@bernScalarQEDToy2021.md",
+    "PhysNotes/LaTeX.md",
+    "PhysNotes/KMOC framework.md",
+    "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+    "PhysNotes/fine structure constant.md",
+    "PhysNotes/^^allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cut.md"
   ]
 }

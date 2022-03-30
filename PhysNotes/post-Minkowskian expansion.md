@@ -1,6 +1,7 @@
 ---
 alias:
 - PM
+- PM expansion
 - post-Minkowskian
 tag:
 - GR
@@ -11,3 +12,15 @@ The post-Minkowskian approach is a weak-field expansion in Newton’s constant, 
 
 IN the review:
 [[@buonannoSourcesGravitationalWaves2015]]
+
+# Length Scales
+
+- [[compton wavelength]] $\lambda_c=\frac{\hbar}{m}$ where $m$ is the *mass scale*
+- $r_S=Gm$ typical classical particle size (the [[Schwarzschild radius]])
+- $b$ the interparticle separtation
+
+# Classical expansion
+
+Has the following hierarchy of scales: $\lambda_c \ll r_S \ll b$ ^[![[@bernScalarQEDToy2021annotations#^3427df]]] and implies a *regime of large charges* $\frac{r_S}{\lambda_c}\gg 1 \iff \frac{G m^2}{\hbar} \gg 1$^[![[@bernScalarQEDToy2021annotations#^684d37]]]
+
+

@@ -5,6 +5,8 @@ alias:
 tag:
 - QM
 ---
+Kosower, Maybee, and O’Connell framework
+
 
 Original paper:
 [[@kosowerAmplitudesObservablesClassical2019]]
