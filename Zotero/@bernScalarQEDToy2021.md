@@ -64,7 +64,9 @@ $$\begin{align}
 m_{I_i}^2&=p_i^2=\overline{p}_{I_i} ^2 \pm \underbracket{\overline{p}_{I_i}\cdot q}_{0} + q^2=\overline{p}_{I_i}^2+\frac{q^2}{4}\\
 \overline{m}_I^2&\overset{\text{def}}{=}\overline{p}_I^2=m_I^2-\frac{q^2}{4} \implies \overline{m}_I
 \end{align}$$
+  
 
+$\sigma=\cosh\eta=\frac{s-m_{1}^{2}-m_{2}^{2}}{2m_{1}m_{2}}=\frac{p_{1}\cdot p_{2}}{m_{1}m_{2}}\,$
 
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
         
