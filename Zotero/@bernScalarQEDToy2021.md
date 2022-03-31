@@ -57,11 +57,12 @@ We redefine the incoming and outgoing momenta to facilitate the [[soft expansion
 
 $p_1 = - \pqty{\bar{p}_1-\frac{q}{2}},p_2 = - \pqty{\bar{p}_2+\frac{q}{2}},p_3 =  \pqty{\bar{p}_2-\frac{q}{2}},p_4 =  \pqty{\bar{p}_1+\frac{q}{2}}$
 
-The barred variables are such that, for [[on-shell]] momenta ($p_i^2=m_{I_i}^2$) for $I_i=\left\{\begin{aligned}&1 \text{ for } i\in\Bqty{1,4}\\&2 \text{ for } i \in\Bqty{2,3}\end{aligned}\right.$ , $\bar{p}_i \cdot q=0$. Also introduce soft-masses $\overline{m}_i$:
+The barred variables are such that, for [[on-shell]] momenta ($p_i^2=m_{I_i}^2$) for $I_i=\left\{\begin{aligned}&1 \text{ for } i\in\Bqty{1,4}\\&2 \text{ for } i \in\Bqty{2,3}\end{aligned}\right.$ , $\overline{p}_I \cdot q=0$. 
 ![[Pasted image 20220330221749.png]]
-
+Also introduce soft-masses $\overline{m}_I$:
 $$\begin{align}
-m_i^2=p_i^2 
+m_{I_i}^2&=p_i^2=\overline{p}_{I_i} ^2 \pm \underbracket{\overline{p}_{I_i}\cdot q}_{0} + q^2=\overline{p}_{I_i}^2+\frac{q^2}{4}\\
+\overline{m}_I^2&\overset{\text{def}}{=}\overline{p}_I^2=m_I^2-\frac{q^2}{4} \implies \overline{m}_I
 \end{align}$$
 
 
