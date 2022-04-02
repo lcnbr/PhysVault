@@ -3,6 +3,8 @@ alias:
 - normal order
 - normal ordered
 - Normal Order
+tag:
+- qft
 ---
 Let $\left\{\phi^{a_{1}}\left(x_{1}\right), \ldots, \phi^{a_{n}}\left(x_{n}\right)\right\}$ be a set of free scalar fields. There may be a whole bunch of them with different masses and so on. The normal-ordered product of the fields, indicated by colons on either side,
 $$
