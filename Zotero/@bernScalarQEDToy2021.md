@@ -57,16 +57,32 @@ We redefine the incoming and outgoing momenta to facilitate the [[soft expansion
 
 $p_1 = - \pqty{\bar{p}_1-\frac{q}{2}},p_2 = - \pqty{\bar{p}_2+\frac{q}{2}},p_3 =  \pqty{\bar{p}_2-\frac{q}{2}},p_4 =  \pqty{\bar{p}_1+\frac{q}{2}}$
 
-The barred variables are such that, for [[on-shell]] momenta ($p_i^2=m_{I_i}^2$) for $I_i=\left\{\begin{aligned}&1 \text{ for } i\in\Bqty{1,4}\\&2 \text{ for } i \in\Bqty{2,3}\end{aligned}\right.$ , $\overline{p}_I \cdot q=0$. 
+The barred variables are such that, for [[on-shell]] momenta ($p_i^2=m_{I_i}^2$) for $I_i=\left\{\begin{aligned}&1 \text{ for } i\in\Bqty{1,4}\\&2 \text{ for } i \in\Bqty{2,3}\end{aligned}\right.$ , $\overline{p}_I \cdot q=0$, i.e. are orthogonal to the momentum transfer $q$. 
 ![[Pasted image 20220330221749.png]]
-Also introduce soft-masses $\overline{m}_I$:
-$$\begin{align}
-m_{I_i}^2&=p_i^2=\overline{p}_{I_i} ^2 \pm \underbracket{\overline{p}_{I_i}\cdot q}_{0} + q^2=\overline{p}_{I_i}^2+\frac{q^2}{4}\\
-\overline{m}_I^2&\overset{\text{def}}{=}\overline{p}_I^2=m_I^2-\frac{q^2}{4} \implies \overline{m}_I
-\end{align}$$
-  
 
-$\sigma=\cosh\eta=\frac{s-m_{1}^{2}-m_{2}^{2}}{2m_{1}m_{2}}=\frac{p_{1}\cdot p_{2}}{m_{1}m_{2}}\,$
+Also introduce soft-masses $\overline{m}_I$:
+$$
+m_{I_i}^2=p_i^2=\overline{p}_{I_i} ^2 \pm \underbracket{\overline{p}_{I_i}\cdot q}_{0} + q^2=\overline{p}_{I_i}^2+\frac{q^2}{4}$$ 
+
+
+$$ \overline{m}_I^2\overset{\text{def}}{=}\overline{p}_I^2=m_I^2-\frac{q^2}{4} \implies \overline{m}_I=m_I + {\frac{(-q^{2})}{8 \, m_{I}}}  + \mathcal{O}\left(q^{4}\right)$$
+^massExp
+  
+And normalised momenta called *soft velocities* of the two black holes: $u_i^{\mu}=\overline{p}_i^\mu/\abs{\overline{p}_i}$. Such that the dimensionless parameter $y$, or its rationalized version $x$ can be written:
+
+$$
+y =\frac{1+x^{2}}{2 x}\equiv u_{1} \cdot u_{2}={\left.\sigma-(-q^{2}\right)} \frac{\left(m_{1}^{2}+m_{2}^{2}\right) \sigma+2 m_{1} m_{2}}{8 m_{1}^{2} m_{2}^{2}}+\mathcal{O}\left(q^{4}\right)
+$$
+^yEq
+
+Where $\sigma=\cosh\eta=\frac{s-m_{1}^{2}-m_{2}^{2}}{2m_{1}m_{2}}=\frac{p_{1}\cdot p_{2}}{m_{1}m_{2}}\,$ is simply the relativistic factor of particle 1 in the rest-frame of particle 2.  The last equality is obtained by expanding out $p_1 \cdot p_2$ in terms of the barred momenta:
+
+$$p_1 \cdot p_2= -\frac{1}{4} \, q^{2} + \frac{1}{2} \,\cancelto{0}{q \cdot{\overline{p}_1}} - \frac{1}{2} \, \cancelto{0}{q \cdot{\overline{p}_2}} + {\overline{p}_1} \cdot{\overline{p}_2}$$
+
+$$u_1 \cdot u_2=\frac{{\overline{p}_1} {\overline{p}_2}}{{\overline{m}_1} {\overline{m}_2}} = \frac{4 \, p_{1} p_{2} + q^{2}}{4 \, {\overline{m}_1} {\overline{m}_2}}$$
+Then expanding $\overline{m}_I$ out in terms of $q$ ([[#^massExp]]) yields: [[#^yEq]]. 
+
+Importantly the barred variables don't change the regions:  the physical scattering region $s>(m_1 + m_2)^2$, $q^2<0$ remains the same ^[![[@bernScalarQEDToy2021annotations#^35020d]]], for $s=(\overline{p}_1+\overline{p}_2)^2=(p_1+p_2)^2$ the [[Mandelstam invariants|s-channel]]
 
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
         

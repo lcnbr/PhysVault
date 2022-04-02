@@ -1,3 +1,14 @@
+---
+alias:
+- Mandelstam variables
+- s-channel
+- t-channel
+- u-channel
+tag:
+- qft
+- feynmanDiag
+---
+
  $s, t, u$
 
 $$

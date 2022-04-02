@@ -125,7 +125,7 @@ follows from the on-shell conditions p21 = p24 = m21 and p22 = p23 = m22 ([pdf](
 
 #definition : soft-masses’ mi ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=DENA4T7S))
 
-#important : the physical scattering region s>(m1 + m2)2, q2<0 remains the same ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=B28JSBUW))
+#important : the physical scattering region s>(m1 + m2)2, q2<0 remains the same ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=B28JSBUW)) ^35020d
 
 #definition : soft four-velocities of the two black holes uμ i = pμ i /|pi| ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=NUS83WHS))
 
