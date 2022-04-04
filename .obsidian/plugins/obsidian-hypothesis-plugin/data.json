@@ -8,13 +8,17 @@
   "autoSyncInterval": 0,
   "dateTimeFormat": "YYYY-MM-DD HH:mm:ss",
   "history": {
-    "totalArticles": 1,
-    "totalHighlights": 44
+    "totalArticles": 2,
+    "totalHighlights": 45
   },
   "syncedFiles": [
     {
       "filename": "rObsidianMD - PhD workflow Obsidian, Zettelkasten, Zotero, Pandoc, and more.md",
       "uri": "https%3A%2F%2Fwww.reddit.com%2Fr%2FObsidianMD%2Fcomments%2Fm5ou2h%2Fphd_workflow_obsidian_zettelkasten_zotero_pandoc%2F"
+    },
+    {
+      "filename": "What is Wicks theorem and what this is use for.md",
+      "uri": "https%3A%2F%2Fphysics.stackexchange.com%2Fquestions%2F477450%2Fwhat-is-wicks-theorem-and-what-this-is-use-for"
     }
   ],
   "groups": [
@@ -40,5 +44,5 @@
       "selected": true
     }
   ],
-  "lastSyncDate": "2022-04-04T08:13:17.775Z"
+  "lastSyncDate": "2022-04-04T10:50:39.243Z"
 }
