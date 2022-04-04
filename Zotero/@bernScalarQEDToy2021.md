@@ -82,7 +82,18 @@ $$p_1 \cdot p_2= -\frac{1}{4} \, q^{2} + \frac{1}{2} \,\cancelto{0}{q \cdot{\ove
 $$u_1 \cdot u_2=\frac{{\overline{p}_1} {\overline{p}_2}}{{\overline{m}_1} {\overline{m}_2}} = \frac{4 \, p_{1} p_{2} + q^{2}}{4 \, {\overline{m}_1} {\overline{m}_2}}$$
 Then expanding $\overline{m}_I$ out in terms of $q$ ([[#^massExp]]) yields: [[#^yEq]]. 
 
-Importantly the barred variables don't change the regions:  the physical scattering region $s>(m_1 + m_2)^2$, $q^2<0$ remains the same ^[![[@bernScalarQEDToy2021annotations#^35020d]]], for $s=(\overline{p}_1+\overline{p}_2)^2=(p_1+p_2)^2$ the [[Mandelstam invariants|s-channel]]
+Importantly the barred variables don't change the regions:  the physical scattering region $s>(m_1 + m_2)^2$, $q^2<0$ remains the same ^[![[@bernScalarQEDToy2021annotations#^35020d]]], for $s=(\overline{p}_1+\overline{p}_2)^2=(p_1+p_2)^2$ the [[Mandelstam invariants|s-channel]].  The *soft velocities* $u_i$ coincide with the classical four velocities of the massive scalars only up to corrections of $\mathcal{O}(q)$^[![[@bernScalarQEDToy2021annotations#^1f325c]]]
+
+In the classical limit we want to compute in the [[method of regions|region]] associated to the following scale hierarchy: $\abs{l}\sim\abs{q}\ll\abs{\overline{p}_i},m,\sqrt{s}$ where $l$ schematically represents arbitrary combinations of photon momenta of the form ^[![[@bernScalarQEDToy2021annotations#^d2fd0c]]] $l_1,l_2,l_1\pm l_2,\dots$
+
+The massless propagators do not need expansion in q: $\frac{1}{l^2}$,$\frac{1}{(l-q)^2}$, as they already exhibit homogenous $\abs{q}$ scaling.
+
+But the matter propagators have non-trivial $\abs{q}$ expansion:
+
+$$
+\frac{1}{\left(\ell-p_{i}\right)^{2}-m_{i}^{2}}=\frac{1}{\ell^{2}-2 \ell \cdot p_{i}}=\frac{1}{2 u_{i} \cdot \ell} \frac{1}{m_{i}}-\frac{\ell^{2} \mp \ell \cdot q}{\left(2 u_{i} \cdot \ell\right)^{2}} \frac{1}{m_{i}^{2}}+\cdots
+$$
+
 
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
         

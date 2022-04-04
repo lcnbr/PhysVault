@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/method of regions.md",
+            "file": "PhysNotes/eikonal approximation.md",
             "mode": "source",
             "source": false
           }
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@smirnovAppliedAsymptoticExpansions2002annotations.md",
+            "file": "Zotero/@bernScalarQEDToy2021annotations.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/method of regions.md",
+                "file": "PhysNotes/eikonal approximation.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/method of regions.md",
+                "file": "PhysNotes/eikonal approximation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/method of regions.md"
+                "file": "PhysNotes/eikonal approximation.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/method of regions.md",
-    "Zotero/@smirnovAppliedAsymptoticExpansions2002annotations.md",
+    "PhysNotes/eikonal approximation.md",
+    "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/@bernScalarQEDToy2021annotations.md",
+    "Zotero/@smirnovAppliedAsymptoticExpansions2002annotations.md",
+    "PhysNotes/LaTeX.md",
+    "PhysNotes/method of regions.md",
     "Zotero/@smirnovAppliedAsymptoticExpansions2002.md",
     "PhysNotes/String/normal-ordered.md",
-    "Zotero/@bernScalarQEDToy2021.md",
     "PhysNotes/String/Mandelstam invariants.md",
-    "PhysNotes/GR/vector fields in GR.md",
-    "PhysNotes/GR/general coordinate transformation.md",
-    "PhysNotes/^mass.md"
+    "PhysNotes/GR/vector fields in GR.md"
   ]
 }

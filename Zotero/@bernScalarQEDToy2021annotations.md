@@ -135,13 +135,13 @@ physical scattering in the s-channel ([pdf](zotero://open-pdf/library/items/RSKA
 
 #conclusion : y > 1 . ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=CHRINR4W))
 
-#important : the soft velocities ui coincide with the classical four velocities of the massive scalars only up to corrections of O(q). ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=H43JFGHG))
+#important : the soft velocities ui coincide with the classical four velocities of the massive scalars only up to corrections of O(q). ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=H43JFGHG)) ^1f325c
 
 #important : The KMOC setup directly targets physical observables where this difference is immateria ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=Z47LMNQL))
 
 #important : for the eikonal computations, the O(q) corrections do matter and one has to carefully track them ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=IWDQFFCJ))
 
-#definition : \` schematically represents arbitrary combinations of photon momenta of the form (\`1, \`2, \`1 ± \`2, . . .) ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=RX6V2VMM))
+#definition : \` schematically represents arbitrary combinations of photon momenta of the form $l_1,l_2,l_1\pm l_2,\dots$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=RX6V2VMM)) ^d2fd0c
 
 #definition : 1 (\`−q)2 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=PWE7XD9C))
 
