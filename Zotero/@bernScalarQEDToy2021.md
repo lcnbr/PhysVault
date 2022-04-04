@@ -96,7 +96,20 @@ $$
 
 
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
-        
+
+
+It  is crucial to have at our disposal compact expressions for the relevant (classical parts) of the higher-loop scattering amplitudes ^[![[@bernScalarQEDToy2021annotations#^5d56b7]]] and  a chief ingredient in many of these calculations is an efficient way to obtain a scattering amplitude *integrand*, i.e. an expression of the amplitude before loop integration^[![[@bernScalarQEDToy2021annotations#^3d2e7b]]]: [[generalized unitarity]]. 
+
+#### 2.2.1 Tree-level amplitudes in scalar QED ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=HEMNRTM2))
+
+The main building blocks of [[generalized unitarity]] are on-shell tree-level amplitudes^[![[@bernScalarQEDToy2021annotations#^f5b1f0]]]
+
+The setup is the scattering of two massive charged scalars in scalar QED that have charges $eq_{1,2}$ and masses $m_{1,2}$, respectively and interact via the exchange of $U (1)$ gauge bosons, i.e. photons.^[![[@bernScalarQEDToy2021annotations#^f60c7f]]] The Lagrangian for the system is^[![[@bernScalarQEDToy2021annotations#^3269a8]]]
+
+$$\mathcal{L}=-\frac{1}{4} F_{\mu \nu} F^{\mu \nu}+\sum_{i=1}^{2}\left[\left(D_{\mu} \phi_{i}\right)^{\dagger}\left(D^{\mu} \phi_{i}\right)-m_{i}^{2} \phi_{i}^{\dagger} \phi_{i}\right]$$
+Where  the [[YM covariant derivative|covariant derivative]] is that of QED: $D^\mu=\partial^\mu-\iunit\,e\,q_iA^\mu$^[![[@bernScalarQEDToy2021annotations#^covDer]]where $A^\mu(x)$ is the photon field^[![[@bernScalarQEDToy2021annotations#^photonField]]], $q_i$ the electric charge ^[![[@bernScalarQEDToy2021annotations#^elncharge]] ] in multiples of the fundamental charge $e$^[![[@bernScalarQEDToy2021annotations#^fundCharge]]]
+
+
 ###   [2.3 Soft and potential region expansion, IBP, and differential equations](zotero://open-pdf/0_VLMHF4E2/11)
         
 ###   [2.4 Soft radial action and master integral subtraction of classically divergent terms](zotero://open-pdf/0_VLMHF4E2/12)
@@ -106,9 +119,6 @@ $$
 Follows mainly [[@herrmannRadiativeClassicalGravitational2021]] and [[@kosowerAmplitudesObservablesClassical2019]]
 
 
-
-
-        
 ## [3 Conservative dynamics at $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/20)
     
 ### [3.1 Conservative scattering amplitudes](zotero://open-pdf/0_VLMHF4E2/20)

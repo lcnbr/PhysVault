@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/eikonal approximation.md",
+            "file": "Zotero/@bernScalarQEDToy2021.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/eikonal approximation.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/eikonal approximation.md",
+                "file": "Zotero/@bernScalarQEDToy2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/eikonal approximation.md"
+                "file": "Zotero/@bernScalarQEDToy2021.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/eikonal approximation.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/@bernScalarQEDToy2021annotations.md",
+    "PhysNotes/generalized unitarity.md",
+    "PhysNotes/eikonal approximation.md",
     "Zotero/@smirnovAppliedAsymptoticExpansions2002annotations.md",
     "PhysNotes/LaTeX.md",
     "PhysNotes/method of regions.md",
     "Zotero/@smirnovAppliedAsymptoticExpansions2002.md",
     "PhysNotes/String/normal-ordered.md",
-    "PhysNotes/String/Mandelstam invariants.md",
-    "PhysNotes/GR/vector fields in GR.md"
+    "PhysNotes/String/Mandelstam invariants.md"
   ]
 }
