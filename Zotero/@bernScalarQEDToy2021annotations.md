@@ -179,9 +179,9 @@ scattering of two massive charged scalars in scalar QED that have charges eq1,2 
 
 #definition : photon field  $A^\mu(x)$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=XBGVXFWP)) ^photonField
 
-#definition : electric charge qi ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=STLYCKP4)) ^elncharge
+#definition : electric charge $q_i$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=STLYCKP4)) ^elncharge
 
-#definition : fundamental charge2 e ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=H5LKL75U)) ^fundCharge
+#definition : fundamental charge $e$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=H5LKL75U)) ^fundCharge
 
 #definition : three-point coupling between the scalars and a photon ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=VQBBXU5J))
 
