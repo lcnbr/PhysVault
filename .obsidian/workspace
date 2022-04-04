@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/String/normal-ordered.md",
+            "file": "Zotero/@bernScalarQEDToy2021annotations.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/String/normal-ordered.md",
+                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/String/normal-ordered.md",
+                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/String/normal-ordered.md"
+                "file": "Zotero/@bernScalarQEDToy2021annotations.md"
               }
             }
           }
@@ -134,10 +134,10 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "Zotero/@bernScalarQEDToy2021annotations.md",
     "PhysNotes/String/normal-ordered.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "PhysNotes/String/Mandelstam invariants.md",
-    "Zotero/@bernScalarQEDToy2021annotations.md",
     "PhysNotes/GR/vector fields in GR.md",
     "PhysNotes/GR/general coordinate transformation.md",
     "PhysNotes/^mass.md",
