@@ -6,7 +6,7 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
-        "dimension": 50.0669344042838,
+        "dimension": 66.72613737734166,
         "state": {
           "type": "markdown",
           "state": {
@@ -17,17 +17,63 @@
         }
       },
       {
-        "id": "f9820fd2dbfb1fce",
-        "type": "leaf",
-        "dimension": 49.9330655957162,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Zotero/@bernScalarQEDToy2021annotations.md",
-            "mode": "source",
-            "source": false
+        "id": "1ed944a0b41b7d56",
+        "type": "split",
+        "dimension": 33.273862622658335,
+        "children": [
+          {
+            "id": "f9820fd2dbfb1fce",
+            "type": "leaf",
+            "dimension": 65.2390438247012,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PhysNotes/math/delta function.md",
+                "mode": "preview",
+                "source": false
+              }
+            },
+            "group": "35482956071a32f7"
+          },
+          {
+            "id": "d69fa92bdf3bff16",
+            "type": "leaf",
+            "dimension": 34.76095617529881,
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "PhysNotes/math/delta function.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.18462326225858128,
+                  "close": true
+                }
+              }
+            },
+            "group": "35482956071a32f7"
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -54,7 +100,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scalar QED",
+                "query": "path int",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -84,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/QFTII/spinor electrodynamics.md",
+                "file": "PhysNotes/math/delta function.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/QFTII/spinor electrodynamics.md",
+                "file": "PhysNotes/math/delta function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/QFTII/spinor electrodynamics.md"
+                "file": "PhysNotes/math/delta function.md"
               }
             }
           }
@@ -133,17 +179,17 @@
     "width": 276.5,
     "collapsed": true
   },
-  "active": "37afdef98af2d6b1",
+  "active": "f9820fd2dbfb1fce",
   "lastOpenFiles": [
-    "PhysNotes/QFTII/spinor electrodynamics.md",
-    "PhysNotes/QFTII/YM covariant derivative.md",
-    "PhysNotes/QFTII/N QED fields.md",
+    "PhysNotes/math/delta function.md",
+    "PhysNotes/QFTII/gauge fixing for EM.md",
     "PhysNotes/QFTII/path integral for EM.md",
-    "PhysNotes/QFTII/YM gauge fixing.md",
-    "PhysNotes/QFTII/Faddeev-Popov ghosts.md",
-    "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
-    "PhysNotes/QFTII/YM matter Feynman rules.md",
-    "PhysNotes/QFTII/renormalisation and broken gauge symmetry.md",
-    "PhysNotes/QFTII/Higgs Mechanism.md"
+    "PhysNotes/QFTII/sources and generating functionals.md",
+    "PhysNotes/QFTII/Path Integral for Fields.md",
+    "PhysNotes/QFTII/QFT II.md",
+    "PhysNotes/QFTII/Yang-Mills theory.md",
+    "PhysNotes/AnalyticalMech/Action.md",
+    "PhysNotes/QFTII/Path Integral for Quantum Mechanics.md",
+    "PhysNotes/QFTII/motivation.md"
   ]
 }
