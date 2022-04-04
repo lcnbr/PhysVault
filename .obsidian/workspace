@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
-            "mode": "source",
+            "file": "PhysNotes/QFTII/spinor electrodynamics.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "scalar QED",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -63,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -83,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "PhysNotes/QFTII/spinor electrodynamics.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md",
+                "file": "PhysNotes/QFTII/spinor electrodynamics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021.md"
+                "file": "PhysNotes/QFTII/spinor electrodynamics.md"
               }
             }
           }
@@ -134,15 +135,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "Zotero/@bernScalarQEDToy2021.md",
-    "Zotero/@bernScalarQEDToy2021annotations.md",
-    "PhysNotes/generalized unitarity.md",
-    "PhysNotes/eikonal approximation.md",
-    "Zotero/@smirnovAppliedAsymptoticExpansions2002annotations.md",
-    "PhysNotes/LaTeX.md",
-    "PhysNotes/method of regions.md",
-    "Zotero/@smirnovAppliedAsymptoticExpansions2002.md",
-    "PhysNotes/String/normal-ordered.md",
-    "PhysNotes/String/Mandelstam invariants.md"
+    "PhysNotes/QFTII/spinor electrodynamics.md",
+    "PhysNotes/QFTII/YM covariant derivative.md",
+    "PhysNotes/QFTII/N QED fields.md",
+    "PhysNotes/QFTII/path integral for EM.md",
+    "PhysNotes/QFTII/YM gauge fixing.md",
+    "PhysNotes/QFTII/Faddeev-Popov ghosts.md",
+    "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
+    "PhysNotes/QFTII/YM matter Feynman rules.md",
+    "PhysNotes/QFTII/renormalisation and broken gauge symmetry.md",
+    "PhysNotes/QFTII/Higgs Mechanism.md"
   ]
 }
