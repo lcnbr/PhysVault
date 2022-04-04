@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021annotations.md",
+            "file": "PhysNotes/method of regions.md",
             "mode": "source",
             "source": false
           }
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021annotations.md",
+            "file": "Zotero/@smirnovAppliedAsymptoticExpansions2002annotations.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
+                "file": "PhysNotes/method of regions.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
+                "file": "PhysNotes/method of regions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@bernScalarQEDToy2021annotations.md"
+                "file": "PhysNotes/method of regions.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "PhysNotes/method of regions.md",
+    "Zotero/@smirnovAppliedAsymptoticExpansions2002annotations.md",
     "Zotero/@bernScalarQEDToy2021annotations.md",
+    "Zotero/@smirnovAppliedAsymptoticExpansions2002.md",
     "PhysNotes/String/normal-ordered.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "PhysNotes/String/Mandelstam invariants.md",
     "PhysNotes/GR/vector fields in GR.md",
     "PhysNotes/GR/general coordinate transformation.md",
-    "PhysNotes/^mass.md",
-    "PhysNotes/LaTeX.md",
-    "PhysNotes/soft expansion.md",
-    "PhysNotes/post-Lorentzian expansion.md"
+    "PhysNotes/^mass.md"
   ]
 }
