@@ -6,24 +6,11 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
-        "dimension": 33.36306868867083,
+        "dimension": 50.066934404283806,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/QFT/vector lagrangian.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "f5ebb39ff43a9aa9",
-        "type": "leaf",
-        "dimension": 33.36306868867083,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/QFT/vector fields in QFT.md",
+            "file": "thesis/scalar QED.md",
             "mode": "source",
             "source": false
           }
@@ -32,7 +19,7 @@
       {
         "id": "1ed944a0b41b7d56",
         "type": "split",
-        "dimension": 33.273862622658335,
+        "dimension": 49.933065595716194,
         "children": [
           {
             "id": "f9820fd2dbfb1fce",
@@ -142,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/QFT/vector lagrangian.md",
+                "file": "thesis/scalar QED.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/QFT/vector lagrangian.md",
+                "file": "thesis/scalar QED.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/QFT/vector lagrangian.md"
+                "file": "thesis/scalar QED.md"
               }
             }
           }
@@ -192,15 +179,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "thesis/scalar QED.md",
+    "PhysNotes/minimal coupling prescription.md",
     "PhysNotes/QFT/vector lagrangian.md",
-    "PhysNotes/QFT/vector fields in QFT.md",
-    "PhysNotes/Representations of the Lorentz group.md",
+    "PhysNotes/QFTII/gauge symmetry.md",
+    "PhysNotes/QFTII/gauge fixing action for EM.md",
+    "PhysNotes/QFTII/gauge fixing for EM.md",
+    "PhysNotes/QFTII/path integral for EM.md",
+    "PhysNotes/gauge transformation.md",
     "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
-    "Zotero/@colemanQUANTUMFIELDTHEORY2018TOC.md",
-    "PhysNotes/LaTeX.md",
-    "PhysNotes/math/Lorentz group.md",
-    "PhysNotes/math/Representations.md",
-    "Zotero/@bernScalarQEDToy2021.md",
-    "PhysNotes/QFTII/spinor electrodynamics.md"
+    "PhysNotes/[@colemanQUANTUMFIELDTHEORY2018.md"
   ]
 }

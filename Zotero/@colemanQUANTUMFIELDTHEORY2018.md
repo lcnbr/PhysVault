@@ -8,6 +8,11 @@ DOI: 10.1142/9789814635516_0001
 url: 
 
 ---
+
+Conventions: 
+
+(+---)
+
 # [QUANTUM FIELD THEORY: Lectures of Sidney Coleman](zotero://select/items/@colemanQUANTUMFIELDTHEORY2018)
 
 
