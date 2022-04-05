@@ -180,14 +180,14 @@
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
     "thesis/scalar QED.md",
+    "PhysNotes/QFT/vector lagrangian.md",
+    "PhysNotes/QFT/vector fields in QFT.md",
+    "PhysNotes/minimal coupling prescription.md",
+    "Zotero/@bernScalarQEDToy2021.md",
+    "PhysNotes/LaTeX.md",
     "PhysNotes/QFTII/gauge.md",
     "PhysNotes/gauge covariant derivative.md",
-    "PhysNotes/minimal coupling prescription.md",
     "PhysNotes/QFTII/infinitesimal YM gauge transformations.md",
-    "PhysNotes/QFT/vector lagrangian.md",
-    "PhysNotes/QFTII/gauge symmetry.md",
-    "PhysNotes/QFTII/gauge fixing action for EM.md",
-    "PhysNotes/QFTII/gauge fixing for EM.md",
-    "PhysNotes/QFTII/path integral for EM.md"
+    "PhysNotes/QFTII/gauge symmetry.md"
   ]
 }

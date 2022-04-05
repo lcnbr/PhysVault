@@ -3,6 +3,10 @@ alias:
 tag:
 ---
 
+Metric (+---)
+$e=\abs{e}$
+
+
 Using the [[minimal coupling prescription]]^[[[@colemanQUANTUMFIELDTHEORY2018#27 2 The minimal coupling prescription zotero open-pdf 0_4E7XKTS3 625]] with $Q=\text{diag}(q_1,q_2)$]. We want to couple a set of massive scalar fields to electromagnetism. The minimal coupling prescription works provided that our base mass lagrangian admits a conserved current.
 Our base mass lagrangian is: 
 
@@ -31,7 +35,9 @@ $$\mathcal{L}_{ED}+\mathcal{L}_{m}(\phi_i,\partial_\mu \phi_i)\rightarrow \mathc
 is invariant under the above defined gauge transformation, with the [[gauge covariant derivative|covariant derivative]] defined as:
 
 $$D_\mu=\partial_\mu+\iunit \,e\,q_i\,A_\mu$$
+And the final lagrangian is:
 
 
+$$\mathcal{L}=-\frac{1}{4} F_{\mu \nu} F^{\mu \nu}+\sum_{i=1}^{2}\left[\left(D_{\mu} \phi_{i}\right)^{\dagger}\left(D^{\mu} \phi_{i}\right)-m_{i}^{2} \phi_{i}^{\dagger} \phi_{i}\right]$$
 
-
+with $F_{\mu \nu} \equiv \partial_{\mu} A_{\nu}-\partial_{\nu} A_{\mu}$.
