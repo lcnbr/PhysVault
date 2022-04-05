@@ -6,7 +6,6 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
-        "dimension": 70.14652014652015,
         "state": {
           "type": "markdown",
           "state": {
@@ -14,45 +13,7 @@
             "mode": "source",
             "source": false
           }
-        },
-        "group": "a420d4622e516edb"
-      },
-      {
-        "id": "394e63df3d720dac",
-        "type": "leaf",
-        "dimension": 29.853479853479854,
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "thesis/scalar QED.md",
-            "options": {
-              "collapse-filter": true,
-              "search": "",
-              "localJumps": 1,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": false,
-              "showTags": false,
-              "showAttachments": false,
-              "hideUnresolved": false,
-              "collapse-color-groups": true,
-              "colorGroups": [],
-              "collapse-display": true,
-              "showArrow": false,
-              "textFadeMultiplier": 0,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": true,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 10,
-              "linkStrength": 1,
-              "linkDistance": 250,
-              "scale": 1,
-              "close": false
-            }
-          }
-        },
-        "group": "a420d4622e516edb"
+        }
       }
     ],
     "direction": "vertical"

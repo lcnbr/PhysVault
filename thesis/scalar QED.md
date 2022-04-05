@@ -75,7 +75,7 @@ $$\begin{aligned}\mathcal{L}_{\text{eff}}&=\mathcal{L}+\overbracket{\frac{-1}{2 
     
 +
     \sum\limits_{i=1}^2\underbracket{q_i^2\,e^{2}\,g^{\mu \nu}}_{\times 2\iunit\rightarrow \mathrm{4-vertex} } A_{\mu} A_{\nu} \,\phi^{\dagger}_i \phi_i
-    \underbracket{-\iunit\, e\,q_i\, A_{\mu}\left(\phi^{\dagger}_i \partial^{\mu} \phi_i-\left(\partial^{\mu} \phi^{\dagger}_i\right) \phi_i\right)}_{\rightarrow}
+    \underbracket{-\iunit\, e\,q_i\, A_{\mu}\left(\phi^{\dagger}_i \partial^{\mu} \phi_i-\left(\partial^{\mu} \phi^{\dagger}_i\right) \phi_i\right)}_{\times \iunit\rightarrow \mathrm{3-vertex}}
     
 \end{aligned}$$
 
