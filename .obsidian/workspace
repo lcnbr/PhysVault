@@ -121,6 +121,7 @@
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
     "thesis/scalar QED.md",
+    "PhysNotes/math/delta function.md",
     "PhysNotes/QFTII/gauge fixing for EM.md",
     "PhysNotes/QFTII/path integral for EM.md",
     "Zotero/@bernScalarQEDToy2021annotations.md",
@@ -128,7 +129,6 @@
     "PhysNotes/QFT/vector lagrangian.md",
     "PhysNotes/QFT/vector fields in QFT.md",
     "PhysNotes/minimal coupling prescription.md",
-    "Zotero/@bernScalarQEDToy2021.md",
-    "PhysNotes/LaTeX.md"
+    "Zotero/@bernScalarQEDToy2021.md"
   ]
 }
