@@ -5,8 +5,8 @@
   "translucency": false,
   "enabledCssSnippets": [
     "embed",
-    "link",
     "list",
-    "imacent"
+    "imacent",
+    "link"
   ]
 }

@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/QFTII/spinor electrodynamics.md",
-            "mode": "preview",
+            "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhysNotes/math/delta function.md",
+                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
                 "mode": "preview",
                 "source": false
               }
@@ -42,7 +42,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "PhysNotes/math/delta function.md",
+                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -109,8 +109,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -130,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/math/delta function.md",
+                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/math/delta function.md",
+                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/math/delta function.md"
+                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md"
               }
             }
           }
@@ -176,20 +175,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
-  "active": "f9820fd2dbfb1fce",
+  "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/math/delta function.md",
-    "PhysNotes/QFTII/gauge fixing for EM.md",
-    "PhysNotes/QFTII/path integral for EM.md",
-    "PhysNotes/QFTII/sources and generating functionals.md",
-    "PhysNotes/QFTII/Path Integral for Fields.md",
-    "PhysNotes/QFTII/QFT II.md",
-    "PhysNotes/QFTII/Yang-Mills theory.md",
-    "PhysNotes/AnalyticalMech/Action.md",
-    "PhysNotes/QFTII/Path Integral for Quantum Mechanics.md",
-    "PhysNotes/QFTII/motivation.md"
+    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+    "Zotero/@colemanQUANTUMFIELDTHEORY2018TOC.md",
+    "PhysNotes/Representations of the Lorentz group.md",
+    "PhysNotes/math/Lorentz group.md",
+    "PhysNotes/math/Representations.md",
+    "PhysNotes/QFT/vector lagrangian.md",
+    "Zotero/@bernScalarQEDToy2021.md",
+    "PhysNotes/LaTeX.md",
+    "PhysNotes/QFTII/spinor electrodynamics.md",
+    "Zotero/@bernScalarQEDToy2021annotations.md"
   ]
 }

@@ -2,11 +2,12 @@
 ---
 alias:
 - representation
+- representations
 tags:
 - qftII
 ---
 Let us now introduce some basic elements of [[Lie theory]], in particular those which will be relevant to Yang-Mills theory. Fields have particular transformation properties under gauge transformations. Mathematically, their transformation rules are described by representations.
-[\![ a, b ]\!]
+
 # Definition. 
 
 ![[lie group representation]]
