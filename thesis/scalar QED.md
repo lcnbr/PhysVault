@@ -41,3 +41,41 @@ And the final lagrangian is:
 $$\mathcal{L}=-\frac{1}{4} F_{\mu \nu} F^{\mu \nu}+\sum_{i=1}^{2}\left[\left(D_{\mu} \phi_{i}\right)^{\dagger}\left(D^{\mu} \phi_{i}\right)-m_{i}^{2} \phi_{i}^{\dagger} \phi_{i}\right]$$
 
 with $F_{\mu \nu} \equiv \partial_{\mu} A_{\nu}-\partial_{\nu} A_{\mu}$.
+
+Expanding and then integrating by parts:
+
+$$
+\begin{aligned}
+\mathcal{L} &=-\frac{1}{4}\left(\partial_{\mu} A_{\nu}-\partial_{\nu} A_{\mu}\right)\left(\partial^{\mu} A^{\nu}-\partial^{\nu} A^{\mu}\right)
++\sum_{i=1}^{2}\left[
+    \left(\partial_{\mu}-\iunit\, e\,q_i\, A_{\mu} \right)\phi_{i}^{\dagger}
+    \left(\partial_{\mu}+\iunit\, e\,q_i\, A_{\mu}\right)\phi_{i}
+    -m_{i}^{2} \phi_{i}^{\dagger} \phi_{i}
+    \right]
+ \\
+&=\underbrace{
+    \frac{1}{2} A_{\mu}\left[g^{\mu \nu}\partial^{2}-\partial^{\mu} \partial^{\nu}\right] A_{\nu}
+    +\sum\limits_{i=1}^2-\phi_i^{\dagger}\left(\partial^{2}+m_i^{2}\right) \phi_i
+    }_{\mathcal{L}_{0}}
++\underbrace{
+    \sum\limits_{i=1}^2q_i^2\,e^{2} A_{\mu} A^{\mu} \,\phi^{\dagger}_i \phi_i
+    -\iunit\, e\,q_i\, A_{\mu}\left(\phi^{\dagger}_i \partial^{\mu} \phi_i-\left(\partial^{\mu} \phi^{\dagger}_i\right) \phi_i\right)
+    }_{\mathcal{L}^{\prime}}
+\end{aligned}
+$$
+
+Since we have a massless photon, and still have gauge freedom we have to implement [[gauge fixing action for EM|gauge fixing]]:
+
+$$\begin{aligned}\mathcal{L}_{\text{eff}}&=\mathcal{L}+\overbracket{\frac{-1}{2 \xi}(\partial_\mu A^\mu)^2}^{\mathcal{L_\text{GF}}}
+
+ \\
+&=
+    \frac{1}{2} A_{\mu}\underbracket{\bqty{g^{\mu \nu}\partial^{2}-\pqty{1-\frac{1}{\xi}}\partial^{\mu} \partial^{\nu}}}_{\rightarrow \tilde{D}^{\mu \nu}_\xi(k)=\frac{-\iunit}{k^{2}+\iunit \varepsilon}\left[g_{\mu \nu}-(1-\xi) \frac{k_{\mu} k_{\nu}}{k^{2}}\right]} A_{\nu}
+    +\sum\limits_{i=1}^2-\phi_i^{\dagger}\underbracket{\pqty{\partial^{2}+m_i^{2}}}_{\tilde{\Delta}_F(q^2)=\frac{\iunit}{p^{2}-m^{2}+\iunit \varepsilon}} \phi_i
+    
++
+    \sum\limits_{i=1}^2\underbracket{q_i^2\,e^{2}\,g^{\mu \nu}}_{\times 2\iunit\rightarrow \mathrm{4-vertex} } A_{\mu} A_{\nu} \,\phi^{\dagger}_i \phi_i
+    \underbracket{-\iunit\, e\,q_i\, A_{\mu}\left(\phi^{\dagger}_i \partial^{\mu} \phi_i-\left(\partial^{\mu} \phi^{\dagger}_i\right) \phi_i\right)}_{\rightarrow}
+    
+\end{aligned}$$
+
