@@ -6,11 +6,24 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
-        "dimension": 66.72613737734166,
+        "dimension": 33.36306868867083,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+            "file": "PhysNotes/QFT/vector lagrangian.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "f5ebb39ff43a9aa9",
+        "type": "leaf",
+        "dimension": 33.36306868867083,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "PhysNotes/QFT/vector fields in QFT.md",
             "mode": "source",
             "source": false
           }
@@ -100,8 +113,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path int",
-                "matchingCase": true,
+                "query": "repr",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -129,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+                "file": "PhysNotes/QFT/vector lagrangian.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+                "file": "PhysNotes/QFT/vector lagrangian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md"
+                "file": "PhysNotes/QFT/vector lagrangian.md"
               }
             }
           }
@@ -179,15 +192,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "PhysNotes/QFT/vector lagrangian.md",
+    "PhysNotes/QFT/vector fields in QFT.md",
+    "PhysNotes/Representations of the Lorentz group.md",
     "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
     "Zotero/@colemanQUANTUMFIELDTHEORY2018TOC.md",
-    "PhysNotes/Representations of the Lorentz group.md",
+    "PhysNotes/LaTeX.md",
     "PhysNotes/math/Lorentz group.md",
     "PhysNotes/math/Representations.md",
-    "PhysNotes/QFT/vector lagrangian.md",
     "Zotero/@bernScalarQEDToy2021.md",
-    "PhysNotes/LaTeX.md",
-    "PhysNotes/QFTII/spinor electrodynamics.md",
-    "Zotero/@bernScalarQEDToy2021annotations.md"
+    "PhysNotes/QFTII/spinor electrodynamics.md"
   ]
 }
