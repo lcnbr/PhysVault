@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/LSZ reduction.md",
+            "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/LSZ reduction.md",
+                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/LSZ reduction.md",
+                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/LSZ reduction.md"
+                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md"
               }
             }
           }
@@ -120,15 +120,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+    "PhysNotes/wave 4-vector.md",
     "PhysNotes/LSZ reduction.md",
+    "PhysNotes/LaTeX.md",
     "PhysNotes/KMOC framework.md",
     "PhysNotes/out state.md",
     "PhysNotes/QFTII/graph generating functional.md",
     "PhysNotes/QFTII/path integral for EM.md",
     "thesis/scalar QED.md",
-    "PhysNotes/QFTII/Path Integral for Fields.md",
-    "PhysNotes/QFTII/time-ordered correlator.md",
-    "PhysNotes/QFTII/sources and generating functionals.md",
-    "PhysNotes/minimal coupling prescription.md"
+    "PhysNotes/QFTII/Path Integral for Fields.md"
   ]
 }

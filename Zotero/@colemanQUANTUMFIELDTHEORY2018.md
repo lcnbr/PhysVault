@@ -9,12 +9,26 @@ url:
 
 ---
 
-Conventions: 
 
-(+---)
 
 # [QUANTUM FIELD THEORY: Lectures of Sidney Coleman](zotero://select/items/@colemanQUANTUMFIELDTHEORY2018)
 
+Conventions: 
+
+$\eta=\mathop{diag}\qty(+,-,-,-)$
+$\hbar = c =1$
+$a\cdot b=a^\mu b_\mu=\eta_{\mu \nu}a^\mu b^\nu=a_\mu b^\mu=a^0 b_0+a^1 b_1+a^2 b_2+a^3 b_3=a^0 b^0-\mathbf{a \cdot b}$
+$\partial_\mu=\pdv{x^\mu}$
+$\square^{2}=\partial^{2}=\partial^{\mu} \partial_{\mu}=\left(\partial^{0}\right)^{2}-\nabla^{2}$
+$\widetilde{F}(k) \equiv \int \dd[4]{x}  F(x) e^{i k \cdot x}$
+$F(x)=\int \frac{\dd[4]{k}}{(2 \pi)^{4}} \widetilde{F}(k) e^{-i k \cdot x}$
+
+Note that $k$ is the [[wave 4-vector]]
+
+Finally we have the [[theta function]]:
+
+$\theta(x)= \begin{cases}1 & \text { if } x>0 \\ 0 & \text { if } x<0\end{cases}$
+with $\dv{\theta(x)}{x}=\delta(x)$
 
 # [Contents](zotero://open-pdf/0_4E7XKTS3/8)
 # [Foreword](zotero://open-pdf/0_4E7XKTS3/18)
