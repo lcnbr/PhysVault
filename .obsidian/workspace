@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/QFTII/graph generating functional.md",
-            "mode": "preview",
+            "file": "PhysNotes/LSZ reduction.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/QFTII/graph generating functional.md",
+                "file": "PhysNotes/LSZ reduction.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/QFTII/graph generating functional.md",
+                "file": "PhysNotes/LSZ reduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/QFTII/graph generating functional.md"
+                "file": "PhysNotes/LSZ reduction.md"
               }
             }
           }
@@ -120,15 +120,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "PhysNotes/LSZ reduction.md",
+    "PhysNotes/KMOC framework.md",
+    "PhysNotes/out state.md",
     "PhysNotes/QFTII/graph generating functional.md",
     "PhysNotes/QFTII/path integral for EM.md",
     "thesis/scalar QED.md",
     "PhysNotes/QFTII/Path Integral for Fields.md",
     "PhysNotes/QFTII/time-ordered correlator.md",
     "PhysNotes/QFTII/sources and generating functionals.md",
-    "PhysNotes/minimal coupling prescription.md",
-    "PhysNotes/math/delta function.md",
-    "PhysNotes/QFTII/gauge fixing for EM.md",
-    "Zotero/@bernScalarQEDToy2021annotations.md"
+    "PhysNotes/minimal coupling prescription.md"
   ]
 }
