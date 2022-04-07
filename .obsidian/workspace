@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "thesis/scalar QED.md",
-            "mode": "source",
+            "file": "PhysNotes/QFTII/graph generating functional.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "thesis/scalar QED.md",
+                "file": "PhysNotes/QFTII/graph generating functional.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "thesis/scalar QED.md",
+                "file": "PhysNotes/QFTII/graph generating functional.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "thesis/scalar QED.md"
+                "file": "PhysNotes/QFTII/graph generating functional.md"
               }
             }
           }
@@ -120,15 +120,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "PhysNotes/QFTII/graph generating functional.md",
+    "PhysNotes/QFTII/path integral for EM.md",
     "thesis/scalar QED.md",
+    "PhysNotes/QFTII/Path Integral for Fields.md",
+    "PhysNotes/QFTII/time-ordered correlator.md",
+    "PhysNotes/QFTII/sources and generating functionals.md",
+    "PhysNotes/minimal coupling prescription.md",
     "PhysNotes/math/delta function.md",
     "PhysNotes/QFTII/gauge fixing for EM.md",
-    "PhysNotes/QFTII/path integral for EM.md",
-    "Zotero/@bernScalarQEDToy2021annotations.md",
-    "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
-    "PhysNotes/QFT/vector lagrangian.md",
-    "PhysNotes/QFT/vector fields in QFT.md",
-    "PhysNotes/minimal coupling prescription.md",
-    "Zotero/@bernScalarQEDToy2021.md"
+    "Zotero/@bernScalarQEDToy2021annotations.md"
   ]
 }
