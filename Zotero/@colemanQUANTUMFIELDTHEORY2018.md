@@ -30,6 +30,10 @@ Finally we have the [[theta function]]:
 $\theta(x)= \begin{cases}1 & \text { if } x>0 \\ 0 & \text { if } x<0\end{cases}$
 with $\dv{\theta(x)}{x}=\delta(x)$
 
+[[Lorentz invariant measure]]:
+
+$\frac{\dd[3]{\mathbf{k}}}{\pqty{2 \pi }^3\pqty{2 \omega_\mathbf{k}}}$
+
 # [Contents](zotero://open-pdf/0_4E7XKTS3/8)
 # [Foreword](zotero://open-pdf/0_4E7XKTS3/18)
 # [Preface](zotero://open-pdf/0_4E7XKTS3/30)
@@ -39,6 +43,7 @@ with $\dv{\theta(x)}{x}=\delta(x)$
 # [1 Adding special relativity to quantum mechanics](zotero://open-pdf/0_4E7XKTS3/44)
 ## [1.1 Introductory remarks](zotero://open-pdf/0_4E7XKTS3/44)
 ## [1.2 Theory of a single free, spinless particle of mass μ](zotero://open-pdf/0_4E7XKTS3/49)
+
 ## [1.3 Determination of the position operator X](zotero://open-pdf/0_4E7XKTS3/53)
 # [2 The simplest many-particle theory](zotero://open-pdf/0_4E7XKTS3/60)
 ## [2.1 First steps in describing a many-particle state](zotero://open-pdf/0_4E7XKTS3/60)
