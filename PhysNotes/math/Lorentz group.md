@@ -1,5 +1,6 @@
 ---
 alias:
+- Lorentz invariant
 - Lorentz transformations
 - O(1,3)
 - O(3,1)

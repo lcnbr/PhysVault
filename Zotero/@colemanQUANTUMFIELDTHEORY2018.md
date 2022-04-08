@@ -34,6 +34,9 @@ with $\dv{\theta(x)}{x}=\delta(x)$
 
 $\frac{\dd[3]{\mathbf{k}}}{\pqty{2 \pi }^3\pqty{2 \omega_\mathbf{k}}}$
 
+[[Lorentz invariant states]]
+$\ket{p}=\sqrt{(2 \pi)^3}\sqrt{2 \omega_\mathbf{p}}\ket{\mathbf{p}}$
+
 # [Contents](zotero://open-pdf/0_4E7XKTS3/8)
 # [Foreword](zotero://open-pdf/0_4E7XKTS3/18)
 # [Preface](zotero://open-pdf/0_4E7XKTS3/30)
