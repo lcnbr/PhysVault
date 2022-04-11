@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+            "file": "thesis/scalar QED.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+                "file": "thesis/scalar QED.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+                "file": "thesis/scalar QED.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@colemanQUANTUMFIELDTHEORY2018.md"
+                "file": "thesis/scalar QED.md"
               }
             }
           }
@@ -120,6 +120,7 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "thesis/scalar QED.md",
     "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
     "PhysNotes/QFTII/renormalisation.md",
     "PhysNotes/Lorentz invariant states.md",
@@ -128,7 +129,6 @@
     "PhysNotes/LaTeX.md",
     "PhysNotes/LSZ reduction.md",
     "PhysNotes/wave 4-vector.md",
-    "PhysNotes/KMOC framework.md",
-    "PhysNotes/out state.md"
+    "PhysNotes/KMOC framework.md"
   ]
 }
