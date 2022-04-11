@@ -78,7 +78,12 @@ $$\begin{aligned}\mathcal{L}_{\text{eff}}&=\mathcal{L}+\overbracket{\frac{-1}{2 
     \underbracket{-\iunit\, e\,q_i\, A_{\mu}\left(\phi^{\dagger}_i \partial^{\mu} \phi_i-\left(\partial^{\mu} \phi^{\dagger}_i\right) \phi_i\right)}_{\times \iunit\rightarrow \mathrm{3-vertex}}
     
 \end{aligned}$$
-
+Our fields are given by the usual:
+$$
+\begin{aligned}
+\psi(x) &=\int \frac{d^{3} \mathbf{p}}{(2 \pi)^{3 / 2} \sqrt{2 \omega_{\mathbf{p}}}}\left[b_{\mathbf{p}} e^{-i p \cdot x}+c_{\mathbf{p}}^{\dagger} e^{i p \cdot x}\right] \\
+\psi^{*}(x) &=\int \frac{d^{3} \mathbf{p}}{(2 \pi)^{3 / 2} \sqrt{2 \omega_{\mathbf{p}}}}\left[b_{\mathbf{p}}^{\dagger} e^{i p \cdot x}+c_{\mathbf{p}} e^{-i p \cdot x}\right]
+\end{aligned}$$
 The  feynman rules are thus:
 
 ![[feynman rules for SQED]]

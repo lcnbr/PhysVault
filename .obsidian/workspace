@@ -6,6 +6,7 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
+        "dimension": 53.03030303030303,
         "state": {
           "type": "markdown",
           "state": {
@@ -18,6 +19,7 @@
       {
         "id": "395899a1873416c3",
         "type": "leaf",
+        "dimension": 46.96969696969697,
         "state": {
           "type": "markdown",
           "state": {
@@ -81,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/feynman rules for SQED.md",
+                "file": "thesis/scalar QED.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/feynman rules for SQED.md",
+                "file": "thesis/scalar QED.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/feynman rules for SQED.md"
+                "file": "thesis/scalar QED.md"
               }
             }
           }
@@ -130,10 +132,10 @@
     "width": 276.5,
     "collapsed": true
   },
-  "active": "395899a1873416c3",
+  "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/feynman rules for SQED.md",
     "thesis/scalar QED.md",
+    "PhysNotes/feynman rules for SQED.md",
     "PhysNotes/QFTII/Feynman rules for YM.md",
     "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
     "PhysNotes/LaTeX.md",
