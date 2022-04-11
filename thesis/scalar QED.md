@@ -54,7 +54,7 @@ $$
     \right]
  \\
 &=\underbrace{
-    \frac{1}{2} A_{\mu}\left[g^{\mu \nu}\partial^{2}-\partial^{\mu} \partial^{\nu}\right] A_{\nu}
+    \frac{1}{2} A_{\mu}\left[\eta^{\mu \nu}\partial^{2}-\partial^{\mu} \partial^{\nu}\right] A_{\nu}
     +\sum\limits_{i=1}^2-\phi_i^{\dagger}\left(\partial^{2}+m_i^{2}\right) \phi_i
     }_{\mathcal{L}_{0}}
 +\underbrace{
@@ -74,8 +74,11 @@ $$\begin{aligned}\mathcal{L}_{\text{eff}}&=\mathcal{L}+\overbracket{\frac{-1}{2 
     +\sum\limits_{i=1}^2-\phi_i^{\dagger}\underbracket{\pqty{\partial^{2}+m_i^{2}}}_{\tilde{\Delta}_F(q^2)=\frac{\iunit}{p^{2}-m^{2}+\iunit \varepsilon}} \phi_i
     
 +
-    \sum\limits_{i=1}^2\underbracket{q_i^2\,e^{2}\,g^{\mu \nu}}_{\times 2\iunit\rightarrow \mathrm{4-vertex} } A_{\mu} A_{\nu} \,\phi^{\dagger}_i \phi_i
+    \sum\limits_{i=1}^2\underbracket{q_i^2\,e^{2}\,\eta^{\mu \nu}}_{\times 2\iunit\rightarrow \mathrm{4-vertex} } A_{\mu} A_{\nu} \,\phi^{\dagger}_i \phi_i
     \underbracket{-\iunit\, e\,q_i\, A_{\mu}\left(\phi^{\dagger}_i \partial^{\mu} \phi_i-\left(\partial^{\mu} \phi^{\dagger}_i\right) \phi_i\right)}_{\times \iunit\rightarrow \mathrm{3-vertex}}
     
 \end{aligned}$$
 
+The  feynman rules are thus:
+
+![[feynman rules for SQED]]
