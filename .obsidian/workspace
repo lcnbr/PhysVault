@@ -23,8 +23,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021annotations.md",
-            "mode": "source",
+            "file": "Zotero/@bernScalarQEDToy2021.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -33,110 +33,94 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c235ccd3f46d4d6a",
-    "type": "split",
+    "id": "61d14dbc5bfa48d9",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "ebf07bd3186e9504",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e957c70f081ebde8",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "54057a12463c8292",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": true,
-                "explainSearch": false,
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "643ec92bad08868b",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "64451944d2f84169",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 240
+    "currentTab": 0
   },
   "right": {
-    "id": "87f65332409687cb",
-    "type": "split",
+    "id": "f4bdc13327961d7c",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "48df4d4fdd3a9e22",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "485d8e4d656ea84c",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "c45059935a21e8de",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "0b005568ae86a8a3",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Zotero/@bernScalarQEDToy2021annotations.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "3ca35c2c0d97d255",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Zotero/@bernScalarQEDToy2021annotations.md"
-              }
-            }
+        "id": "c519f2b29e44c942",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Zotero/@bernScalarQEDToy2021.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ],
-        "currentTab": 3
+        }
+      },
+      {
+        "id": "309a0ee56cce24e0",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Zotero/@bernScalarQEDToy2021.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "46ccae35dba64873",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Zotero/@bernScalarQEDToy2021.md"
+          }
+        }
+      },
+      {
+        "id": "f8a26916d427032d",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "currentTab": 0
   },
-  "active": "37afdef98af2d6b1",
+  "active": "f9820fd2dbfb1fce",
   "lastOpenFiles": [
+    "Zotero/@bernScalarQEDToy2021.md",
     "Zotero/@bernScalarQEDToy2021annotations.md",
     "PhysNotes/String/normal-ordered.md",
-    "Zotero/@bernScalarQEDToy2021.md",
     "PhysNotes/String/Mandelstam invariants.md",
     "PhysNotes/GR/vector fields in GR.md",
     "PhysNotes/GR/general coordinate transformation.md",
