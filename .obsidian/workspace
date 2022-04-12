@@ -6,25 +6,25 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
-        "dimension": 50.0669344042838,
+        "dimension": 53.03030303030303,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021annotations.md",
+            "file": "thesis/scalar QED.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "f9820fd2dbfb1fce",
+        "id": "395899a1873416c3",
         "type": "leaf",
-        "dimension": 49.9330655957162,
+        "dimension": 46.96969696969697,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
-            "mode": "preview",
+            "file": "PhysNotes/feynman rules for SQED.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -37,25 +37,31 @@
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "643ec92bad08868b",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "64451944d2f84169",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "ebf07bd3186e9504",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e957c70f081ebde8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "54057a12463c8292",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "repr",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
         }
       }
@@ -67,31 +73,55 @@
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "c519f2b29e44c942",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
-          }
-        }
-      },
-      {
-        "id": "309a0ee56cce24e0",
-        "type": "leaf",
-        "state": {
-          "type": "outgoing-link",
-          "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md",
-            "linksCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "48df4d4fdd3a9e22",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "485d8e4d656ea84c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "thesis/scalar QED.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "c45059935a21e8de",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "0b005568ae86a8a3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "thesis/scalar QED.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3ca35c2c0d97d255",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "thesis/scalar QED.md"
+              }
+            }
           }
         }
       },
@@ -118,15 +148,15 @@
   },
   "active": "f9820fd2dbfb1fce",
   "lastOpenFiles": [
-    "Zotero/@bernScalarQEDToy2021.md",
-    "Zotero/@bernScalarQEDToy2021annotations.md",
-    "PhysNotes/String/normal-ordered.md",
-    "PhysNotes/String/Mandelstam invariants.md",
-    "PhysNotes/GR/vector fields in GR.md",
-    "PhysNotes/GR/general coordinate transformation.md",
-    "PhysNotes/^mass.md",
+    "thesis/scalar QED.md",
+    "PhysNotes/feynman rules for SQED.md",
+    "PhysNotes/QFTII/Feynman rules for YM.md",
+    "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
     "PhysNotes/LaTeX.md",
-    "PhysNotes/soft expansion.md",
-    "PhysNotes/post-Lorentzian expansion.md"
+    "PhysNotes/Lorentz invariant measure.md",
+    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+    "PhysNotes/QFTII/renormalisation.md",
+    "PhysNotes/Lorentz invariant states.md",
+    "PhysNotes/math/Lorentz group.md"
   ]
 }

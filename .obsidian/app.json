@@ -8,7 +8,7 @@
   "foldIndent": true,
   "spellcheck": true,
   "useTab": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "showUnsupportedFiles": true,
   "strictLineBreaks": false,
   "showLineNumber": true,

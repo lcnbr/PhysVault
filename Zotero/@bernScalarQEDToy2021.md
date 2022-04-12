@@ -82,10 +82,34 @@ $$p_1 \cdot p_2= -\frac{1}{4} \, q^{2} + \frac{1}{2} \,\cancelto{0}{q \cdot{\ove
 $$u_1 \cdot u_2=\frac{{\overline{p}_1} {\overline{p}_2}}{{\overline{m}_1} {\overline{m}_2}} = \frac{4 \, p_{1} p_{2} + q^{2}}{4 \, {\overline{m}_1} {\overline{m}_2}}$$
 Then expanding $\overline{m}_I$ out in terms of $q$ ([[#^massExp]]) yields: [[#^yEq]]. 
 
-Importantly the barred variables don't change the regions:  the physical scattering region $s>(m_1 + m_2)^2$, $q^2<0$ remains the same ^[![[@bernScalarQEDToy2021annotations#^35020d]]], for $s=(\overline{p}_1+\overline{p}_2)^2=(p_1+p_2)^2$ the [[Mandelstam invariants|s-channel]]
+Importantly the barred variables don't change the regions:  the physical scattering region $s>(m_1 + m_2)^2$, $q^2<0$ remains the same ^[![[@bernScalarQEDToy2021annotations#^35020d]]], for $s=(\overline{p}_1+\overline{p}_2)^2=(p_1+p_2)^2$ the [[Mandelstam invariants|s-channel]].  The *soft velocities* $u_i$ coincide with the classical four velocities of the massive scalars only up to corrections of $\mathcal{O}(q)$^[![[@bernScalarQEDToy2021annotations#^1f325c]]]
+
+In the classical limit we want to compute in the [[method of regions|region]] associated to the following scale hierarchy: $\abs{l}\sim\abs{q}\ll\abs{\overline{p}_i},m,\sqrt{s}$ where $l$ schematically represents arbitrary combinations of photon momenta of the form ^[![[@bernScalarQEDToy2021annotations#^d2fd0c]]] $l_1,l_2,l_1\pm l_2,\dots$
+
+The massless propagators do not need expansion in q: $\frac{1}{l^2}$,$\frac{1}{(l-q)^2}$, as they already exhibit homogenous $\abs{q}$ scaling.
+
+But the matter propagators have non-trivial $\abs{q}$ expansion:
+
+$$
+\frac{1}{\left(\ell-p_{i}\right)^{2}-m_{i}^{2}}=\frac{1}{\ell^{2}-2 \ell \cdot p_{i}}=\frac{1}{2 u_{i} \cdot \ell} \frac{1}{m_{i}}-\frac{\ell^{2} \mp \ell \cdot q}{\left(2 u_{i} \cdot \ell\right)^{2}} \frac{1}{m_{i}^{2}}+\cdots
+$$
+
 
 ###   [2.2 Generalized Unitarity and scalar QED scattering amplitudes up to $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/7)
-        
+
+
+It  is crucial to have at our disposal compact expressions for the relevant (classical parts) of the higher-loop scattering amplitudes ^[![[@bernScalarQEDToy2021annotations#^5d56b7]]] and  a chief ingredient in many of these calculations is an efficient way to obtain a scattering amplitude *integrand*, i.e. an expression of the amplitude before loop integration^[![[@bernScalarQEDToy2021annotations#^3d2e7b]]]: [[generalized unitarity]]. 
+
+#### 2.2.1 Tree-level amplitudes in scalar QED ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=HEMNRTM2))
+
+The main building blocks of [[generalized unitarity]] are on-shell tree-level amplitudes^[![[@bernScalarQEDToy2021annotations#^f5b1f0]]]
+
+The setup is the scattering of two massive charged scalars in scalar QED that have charges $eq_{1,2}$ and masses $m_{1,2}$, respectively and interact via the exchange of $U (1)$ gauge bosons, i.e. photons.^[![[@bernScalarQEDToy2021annotations#^f60c7f]]] The Lagrangian for the system is^[![[@bernScalarQEDToy2021annotations#^3269a8]]]
+
+$$\mathcal{L}=-\frac{1}{4} F_{\mu \nu} F^{\mu \nu}+\sum_{i=1}^{2}\left[\left(D_{\mu} \phi_{i}\right)^{\dagger}\left(D^{\mu} \phi_{i}\right)-m_{i}^{2} \phi_{i}^{\dagger} \phi_{i}\right]$$
+Where  the [[YM covariant derivative|covariant derivative]] is that of QED: $D^\mu=\partial^\mu-\iunit\,e\,q_iA^\mu$^[![[@bernScalarQEDToy2021annotations#^covDer]]where $A^\mu(x)$ is the photon field^[![[@bernScalarQEDToy2021annotations#^photonField]]], $q_i$ the electric charge ^[![[@bernScalarQEDToy2021annotations#^elncharge]] ] in multiples of the fundamental charge $e$^[![[@bernScalarQEDToy2021annotations#^fundCharge]]]
+
+
 ###   [2.3 Soft and potential region expansion, IBP, and differential equations](zotero://open-pdf/0_VLMHF4E2/11)
         
 ###   [2.4 Soft radial action and master integral subtraction of classically divergent terms](zotero://open-pdf/0_VLMHF4E2/12)
@@ -95,9 +119,6 @@ Importantly the barred variables don't change the regions:  the physical scatter
 Follows mainly [[@herrmannRadiativeClassicalGravitational2021]] and [[@kosowerAmplitudesObservablesClassical2019]]
 
 
-
-
-        
 ## [3 Conservative dynamics at $\mathcal{O}(\alpha^3)$](zotero://open-pdf/0_VLMHF4E2/20)
     
 ### [3.1 Conservative scattering amplitudes](zotero://open-pdf/0_VLMHF4E2/20)

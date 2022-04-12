@@ -18,3 +18,24 @@
 
 
 .internal-link:active { text-decoration: none; }
+
+.external-link {
+  background-image: none;
+  padding-right: 0px;
+  text-decoration: none;
+}
+
+.external-link:link { text-decoration: none; }
+
+
+.external-link:visited { text-decoration: none; }
+
+
+.external-link:hover { text-decoration: none; }
+
+
+.external-link:active { text-decoration: none; }
+
+.markdown-source-view.mod-cm6 .cm-underline {
+  text-decoration: none;
+}

@@ -135,13 +135,13 @@ physical scattering in the s-channel ([pdf](zotero://open-pdf/library/items/RSKA
 
 #conclusion : y > 1 . ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=6&annotation=CHRINR4W))
 
-#important : the soft velocities ui coincide with the classical four velocities of the massive scalars only up to corrections of O(q). ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=H43JFGHG))
+#important : the soft velocities ui coincide with the classical four velocities of the massive scalars only up to corrections of O(q). ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=H43JFGHG)) ^1f325c
 
 #important : The KMOC setup directly targets physical observables where this difference is immateria ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=Z47LMNQL))
 
 #important : for the eikonal computations, the O(q) corrections do matter and one has to carefully track them ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=IWDQFFCJ))
 
-#definition : \` schematically represents arbitrary combinations of photon momenta of the form (\`1, \`2, \`1 ± \`2, . . .) ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=RX6V2VMM))
+#definition : \` schematically represents arbitrary combinations of photon momenta of the form $l_1,l_2,l_1\pm l_2,\dots$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=RX6V2VMM)) ^d2fd0c
 
 #definition : 1 (\`−q)2 ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=PWE7XD9C))
 
@@ -159,29 +159,29 @@ physical scattering in the s-channel ([pdf](zotero://open-pdf/library/items/RSKA
 
 #important : KMOC framework ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=E8KCT2RK))
 
-#important : is crucial to have at our disposal compact expressions for the relevant (classical parts) of the higher-loop scattering amplitudes ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=BPKLX76Y))
+#important : is crucial to have at our disposal compact expressions for the relevant (classical parts) of the higher-loop scattering amplitudes ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=BPKLX76Y)) ^5d56b7
 
-#important : chief ingredient in many of these calculations is an efficient way to obtain a scattering amplitude integrand, i.e. an expression of the amplitude before loop integration ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=B5LQJSLI))
+#important : chief ingredient in many of these calculations is an efficient way to obtain a scattering amplitude integrand, i.e. an expression of the amplitude before loop integration ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=B5LQJSLI)) ^3d2e7b
 
-#definition : Generalized unitarity \[59–61\] is based on the factorization of amplitudes into simpler gauge-invariant on-shell building blocks which allows to export the simplicity of tree-amplitudes to loop-calculations ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=R8RDUFIJ))
+#definition : Generalized unitarity \[59–61\] is based on the factorization of amplitudes into simpler gauge-invariant on-shell building blocks which allows to export the simplicity of tree-amplitudes to loop-calculations ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=7&annotation=R8RDUFIJ)) ^c208cb
 
 # 2.2.1 Tree-level amplitudes in scalar QED ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=HEMNRTM2))
 
 #important : main building blocks ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=G8ZZRA43))
 
-#important : on-shell tree-level amplitudes ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=PKAJIWSM))
+#important : on-shell tree-level amplitudes ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=PKAJIWSM)) ^f5b1f0
 
-scattering of two massive charged scalars in scalar QED that have charges eq1,2 and masses m1,2, respectively and interact via the exchange of U (1) gauge bosons, i.e. photons ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=W3B6FHR4))
+scattering of two massive charged scalars in scalar QED that have charges eq1,2 and masses m1,2, respectively and interact via the exchange of U (1) gauge bosons, i.e. photons ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=W3B6FHR4)) ^f60c7f
 
-#definition : The Lagrangian for the system is ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=4B6VIG8W))
+#definition : The Lagrangian for the system is $$\mathcal{L}=-\frac{1}{4} F_{\mu \nu} F^{\mu \nu}+\sum_{i=1}^{2}\left[\left(D_{\mu} \phi_{i}\right)^{\dagger}\left(D^{\mu} \phi_{i}\right)-m_{i}^{2} \phi_{i}^{\dagger} \phi_{i}\right]$$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=4B6VIG8W)) ^3269a8
 
-#definition : covariant derivative Dμ = ∂μ − i e qi Aμ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=2375N95H))
+#definition : covariant derivative $D^\mu=\partial^\mu-\iunit\,e\,q_iA^\mu$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=2375N95H)) ^covDer
 
-#definition : photon field Aμ(x) ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=XBGVXFWP))
+#definition : photon field  $A^\mu(x)$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=XBGVXFWP)) ^photonField
 
-#definition : electric charge qi ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=STLYCKP4))
+#definition : electric charge $q_i$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=STLYCKP4)) ^elncharge
 
-#definition : fundamental charge2 e ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=H5LKL75U))
+#definition : fundamental charge $e$ ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=H5LKL75U)) ^fundCharge
 
 #definition : three-point coupling between the scalars and a photon ([pdf](zotero://open-pdf/library/items/RSKAXN8Q?page=8&annotation=VQBBXU5J))
 

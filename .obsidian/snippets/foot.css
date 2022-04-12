@@ -1,0 +1,23 @@
+
+
+
+/* beginning and end of footnote */
+.cm-inline-footnote-start,
+.cm-inline-footnote-end {
+    opacity: 0.5;
+    font-size: 60%;
+    position: relative;
+    top: -4px;
+    display: inline;
+}
+
+/* styling the footnote footnote */
+
+.cm-inline-footnote {
+    color: #e88500;
+    font-size: 60%;
+    position: relative;
+    top: -4px;
+    display: none;
+}
+

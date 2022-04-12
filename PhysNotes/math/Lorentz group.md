@@ -1,5 +1,6 @@
 ---
 alias:
+- Lorentz invariant
 - Lorentz transformations
 - O(1,3)
 - O(3,1)
@@ -40,3 +41,8 @@ If $\Lambda_{0}^{0} \geq+1$ we obtain time direction preserving maps, called the
 When $\Lambda$ preserves both time direction and spacetime orientation we call it the **proper, orthochronous Lorentz group**, and write $\mathrm{SO}^+(1,3)$. This is the connected component containing the 'unit' $\delta^\mu_\nu$, called the identity component. This is the group of physical transformations. From now on we will have those "proper" physical transformations in mind.
 
 When we supplement this group with translations it becomes the [[Poincaré group]]
+
+---
+# See also
+
+[[Representations of the Lorentz group]]
