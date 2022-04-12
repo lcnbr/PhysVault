@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "thesis/scalar QED.md",
-            "mode": "source",
+            "file": "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -33,8 +33,8 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "61d14dbc5bfa48d9",
-    "type": "mobile-drawer",
+    "id": "c235ccd3f46d4d6a",
+    "type": "split",
     "children": [
       {
         "id": "ebf07bd3186e9504",
@@ -63,14 +63,15 @@
               }
             }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 240
   },
   "right": {
-    "id": "f4bdc13327961d7c",
-    "type": "mobile-drawer",
+    "id": "87f65332409687cb",
+    "type": "split",
     "children": [
       {
         "id": "48df4d4fdd3a9e22",
@@ -82,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "thesis/scalar QED.md",
+                "file": "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "thesis/scalar QED.md",
+                "file": "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,39 +120,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "thesis/scalar QED.md"
+                "file": "PhysNotes/QFTII/YM gauge sector Feynman rules.md"
               }
             }
           }
-        }
-      },
-      {
-        "id": "46ccae35dba64873",
-        "type": "leaf",
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "Zotero/@bernScalarQEDToy2021.md"
-          }
-        }
-      },
-      {
-        "id": "f8a26916d427032d",
-        "type": "leaf",
-        "state": {
-          "type": "calendar",
-          "state": {}
-        }
+        ],
+        "currentTab": 3
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 276.5,
+    "collapsed": true
   },
-  "active": "f9820fd2dbfb1fce",
+  "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
+    "PhysNotes/QFTII/Feynman rules for YM.md",
     "thesis/scalar QED.md",
     "PhysNotes/feynman rules for SQED.md",
-    "PhysNotes/QFTII/Feynman rules for YM.md",
-    "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
     "PhysNotes/LaTeX.md",
     "PhysNotes/Lorentz invariant measure.md",
     "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
