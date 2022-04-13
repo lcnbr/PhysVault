@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
-            "mode": "preview",
+            "file": "PhysNotes/LSZ reduction.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
+                "file": "PhysNotes/LSZ reduction.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
+                "file": "PhysNotes/LSZ reduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/QFTII/YM gauge sector Feynman rules.md"
+                "file": "PhysNotes/LSZ reduction.md"
               }
             }
           }
@@ -134,6 +134,8 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "PhysNotes/LSZ reduction.md",
+    "PhysNotes/KMOC framework.md",
     "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
     "PhysNotes/QFTII/Feynman rules for YM.md",
     "thesis/scalar QED.md",
@@ -141,8 +143,6 @@
     "PhysNotes/LaTeX.md",
     "PhysNotes/Lorentz invariant measure.md",
     "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
-    "PhysNotes/QFTII/renormalisation.md",
-    "PhysNotes/Lorentz invariant states.md",
-    "PhysNotes/math/Lorentz group.md"
+    "PhysNotes/QFTII/renormalisation.md"
   ]
 }
