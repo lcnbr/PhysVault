@@ -12,7 +12,7 @@
           "state": {
             "file": "PhysNotes/LSZ reduction.md",
             "mode": "source",
-            "source": false
+            "source": true
           }
         }
       },
@@ -25,7 +25,7 @@
           "state": {
             "file": "PhysNotes/feynman rules for SQED.md",
             "mode": "source",
-            "source": false
+            "source": true
           }
         }
       }
