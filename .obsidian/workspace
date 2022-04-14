@@ -10,9 +10,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/LSZ reduction.md",
+            "file": "PhysNotes/KMOC framework.md",
             "mode": "source",
-            "source": true
+            "source": false
           }
         }
       },
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/LSZ reduction.md",
+                "file": "PhysNotes/KMOC framework.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/LSZ reduction.md",
+                "file": "PhysNotes/KMOC framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/LSZ reduction.md"
+                "file": "PhysNotes/KMOC framework.md"
               }
             }
           }
@@ -134,8 +134,8 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "PhysNotes/LSZ reduction.md",
     "PhysNotes/KMOC framework.md",
+    "PhysNotes/LSZ reduction.md",
     "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
     "PhysNotes/QFTII/Feynman rules for YM.md",
     "thesis/scalar QED.md",
