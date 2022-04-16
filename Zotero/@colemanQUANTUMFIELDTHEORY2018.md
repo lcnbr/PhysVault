@@ -6,7 +6,10 @@ year: 2018
 
 DOI: 10.1142/9789814635516_0001
 url: 
-
+alias:
+- QUANTUM FIELD THEORY lectures of Sidney Coleman
+- Sidney Coleman's QFT lecture
+- QFT by S.C.
 ---
 
 

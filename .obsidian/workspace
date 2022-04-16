@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240
+    "width": 240,
+    "collapsed": true
   },
   "right": {
     "id": "87f65332409687cb",
@@ -151,14 +152,14 @@
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
     "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+    "PhysNotes/Lorentz invariant measure.md",
+    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
+    "PhysNotes/LaTeX.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
     "PhysNotes/relativistically natural units.md",
     "PhysNotes/AnalyticalMech/Field.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "PhysNotes/Untitled.md",
-    "PhysNotes/math/delta function.md",
-    "PhysNotes/LaTeX.md",
-    "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
-    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md"
+    "PhysNotes/math/delta function.md"
   ]
 }
