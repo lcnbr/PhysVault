@@ -6,25 +6,25 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
-        "dimension": 53.03030303030303,
+        "dimension": 50,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/KMOC framework.md",
+            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
             "mode": "source",
-            "source": false
+            "source": true
           }
         }
       },
       {
-        "id": "395899a1873416c3",
+        "id": "f18e1add9b8cbb8e",
         "type": "leaf",
-        "dimension": 46.96969696969697,
+        "dimension": 50,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/feynman rules for SQED.md",
-            "mode": "source",
+            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/KMOC framework.md",
+                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/KMOC framework.md",
+                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/KMOC framework.md"
+                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md"
               }
             }
           }
@@ -134,15 +134,15 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+    "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
+    "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
+    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
     "PhysNotes/KMOC framework.md",
     "PhysNotes/LSZ reduction.md",
     "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
     "PhysNotes/QFTII/Feynman rules for YM.md",
     "thesis/scalar QED.md",
-    "PhysNotes/feynman rules for SQED.md",
-    "PhysNotes/LaTeX.md",
-    "PhysNotes/Lorentz invariant measure.md",
-    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
-    "PhysNotes/QFTII/renormalisation.md"
+    "PhysNotes/feynman rules for SQED.md"
   ]
 }
