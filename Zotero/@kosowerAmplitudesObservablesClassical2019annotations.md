@@ -12,61 +12,46 @@ to both electrodynamics and gravity. ([pdf](zotero://open-pdf/library/items/XIBR
 
 #important : A straightforward and pragmatic approach to restoring all factors of $\hbar$ in an expression is  dimensional analysis. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=IE238JXF))
 
-#definition : dimensions of mass and length by \[M\] and \[L\], respectively ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=QP4UUIDK))
+#definition : dimensions of mass and length by \[M\] and \[L\], respectively ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=QP4UUIDK))  ^dimension
 
 #definition : single-particle  
-states by ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=ZCJDACRH))
+states by ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=ZCJDACRH)) ^singleParticleState
 
-\[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=L4T5I3AC))  
-([Kosower et al., 2019, p. 3](zotero://select/library/items/LFU9BUYS))
+#definition $\ket{p}=\sqrt{2E_p} \hat{a}^\dagger_p \ket{0}$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=L4T5I3AC))  ^singlePart
 
-|pi is thus \[M\]−1 ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=U95I28R4))
 
-\[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=QEL9NABG))  
-([Kosower et al., 2019, p. 3](zotero://select/library/items/LFU9BUYS))
+$\ket{p}$ is thus $[M]^{-1}$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=U95I28R4))
 
-\[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=65FG6K85))  
-([Kosower et al., 2019, p. 3](zotero://select/library/items/LFU9BUYS))
+ $\hat{\delta}^{(n)}(p) \equiv(2 \pi)^{n} \delta^{(n)}(p)$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=QEL9NABG))  ^delta
 
-#definition : wavenumber ¯p associated with a  
-momentum p: ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=PN2UEMNV))
 
-\[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=47IMTTBV))  
-([Kosower et al., 2019, p. 4](zotero://select/library/items/LFU9BUYS))
+$\mel{p'_1 \cdots p'_m}{T}{p_1 \cdots p_n}=\mathcal{A}(p_1 \cdots p_n\rightarrow p'_1 \cdots p'_m)\hat{\delta}(p_1 +\cdots+ p_n- p'_1- \cdots-p'_m)$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=65FG6K85))  ^amplitude
 
-#condition : consider the scattering  
-of two point-like objects, with momenta p1,2, initially separated by a transverse impact  
-parameter bµ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=JQX62IG4))
 
-#definition : The impact parameter is transverse in the sense that pi · b = 0 for i = 1, 2 ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=X9S5B2MM))
+#definition :  wavenumber $\bar{p}$ associated with a  momentum $p$: ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=PN2UEMNV)) $\bar{p}\equiv \frac{p}{\hbar}$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=47IMTTBV))  ^wavenumber
 
-#definition : (reduced) Compton wavelengths \`(i)  
-c ≡ ~/mi ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=MLMDULYB))
+#condition : consider the scattering of two point-like objects, with momenta $p_{1,2}$, initially separated by a transverse impact  parameter $b_\mu$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=JQX62IG4))
 
-point-particle description will be  
-accurate ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=L8ARP9T2))
+#definition : The impact parameter is transverse in the sense that $p_i \cdot b = 0$ for $i = 1, 2$  ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=X9S5B2MM)) 
 
-\[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=BNUVAJSL))  
-([Kosower et al., 2019, p. 4](zotero://select/library/items/LFU9BUYS))
+^transverseImpact
 
-#definition : the spread of  
-the wavepackets, \`w ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=ACG2EMB4))
 
-The quantum-mechanical expectation values of observables, as we  
-will discuss, are well-approximated by the corresponding classical ones, when the packet  
-spreads are in the ‘Goldilocks’ zone, \`c \`w √−b2. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=C4QDNFG4))
+#definition : (reduced) Compton wavelengths $\ell_c^{(i)}\equiv  \frac{\hbar}{m_i}$  ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=MLMDULYB))
 
-#important : When ~ 6= 1, the dimensions of the momenta and masses in the  
-amplitude are unchanged. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=DZ6DWZYZ))
+point-particle description will be  accurate ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=L8ARP9T2)) $\sqrt{-b^2}\gg \ell^{(1,2)}_c$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=BNUVAJSL))  
+
+#definition : the spread of  the wavepackets,$\ell_w$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=ACG2EMB4))
+
+The quantum-mechanical expectation values of observables, as we  will discuss, are well-approximated by the corresponding classical ones, when the packet  spreads are in the ‘Goldilocks’ zone, $\ell_c\ll\ell_w\ll\sqrt{-b^2}$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=C4QDNFG4))
+
+#important : When $\hbar \neq 1$, the dimensions of the momenta and masses in the  amplitude are unchanged. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=DZ6DWZYZ))
 
 > I would think that the momenta go from \[M\] to \[M\]\[L\]\[T\]^-1, but that is only for c also =1!!
 
-#important : each factor of a coupling is multiplied by  
-an additional factor of 1/√~. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=Y8Z9KTAF))
+#important : each factor of a coupling is multiplied by an additional factor of $\frac{1}{\sqrt{\hbar}}$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=Y8Z9KTAF))
 
-#important : point ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=6&annotation=BR93HKUA))
-
-#important : particles have momenta which are fixed ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=BN5LNAR8))
+#important : point particles have momenta which are fixed ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=BN5LNAR8))
 
 #important : massless particles  
 and momentum transfers between massive particles ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=DAYWZCZX))

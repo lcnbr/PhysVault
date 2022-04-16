@@ -6,7 +6,7 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
-        "dimension": 37.32694355697551,
+        "dimension": 37.362637362637365,
         "state": {
           "type": "markdown",
           "state": {
@@ -20,7 +20,7 @@
       {
         "id": "b3eea65a2b141d1f",
         "type": "leaf",
-        "dimension": 38.33865814696485,
+        "dimension": 36.2026862026862,
         "state": {
           "type": "markdown",
           "state": {
@@ -34,7 +34,7 @@
       {
         "id": "f18e1add9b8cbb8e",
         "type": "leaf",
-        "dimension": 24.334398296059636,
+        "dimension": 26.434676434676437,
         "state": {
           "type": "markdown",
           "state": {
@@ -148,17 +148,17 @@
     "width": 276.5,
     "collapsed": true
   },
-  "active": "b3eea65a2b141d1f",
+  "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
     "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
+    "PhysNotes/relativistically natural units.md",
     "PhysNotes/AnalyticalMech/Field.md",
     "Zotero/@bernScalarQEDToy2021.md",
     "PhysNotes/Untitled.md",
     "PhysNotes/math/delta function.md",
     "PhysNotes/LaTeX.md",
     "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
-    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
-    "PhysNotes/KMOC framework.md"
+    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md"
   ]
 }

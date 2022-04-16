@@ -19,12 +19,12 @@ we must understand  systematically how to extract the classical result using on-
     
 # [Restoring h](zotero://open-pdf/0_XIBRM7N7/5)
 
-#convention Use relativistically natural units i.e. $c=1 \implies [L][T]^{-1}=1 \implies [L]=[T]$ 
+#convention Use [[relativistically natural units]] i.e. $c=1 \implies [L][T]^{-1}=1 \implies [L]=[T]$ 
 
 
 A straightforward and pragmatic approach to restoring all factors of $\hbar$ in an expression is  dimensional analysis.
 
-#definition : Denote dimensions of mass and length by $[M]$ and $[L]$, respectively
+#definition : Denote dimensions of mass and length by $[M]$ and $[L]$, respectively ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^dimension]]]
 #definition : Denote spatial three vectors in bold i.e. $p^i=\boldsymbol{p}$
 
 Using 
@@ -36,10 +36,48 @@ to define the dimensions of $\hat{a}_p$, using that $\delta^{(n)}([x])=[x]$^[[[d
 $$\bqty{\bqty\big{\hat{a}_{p}, \hat{a}_{p^{\prime}}^{\dagger}}}=\bqty{\hat{a}_{p}}^2=\bqty{ \delta^{(3)}\pqty{\boldsymbol{p}-\boldsymbol{p}^{\prime}}}=\bqty{\boldsymbol{p}}^{-3}=[M]^{-3}$$
 Thus $[\hat{a}_p]=[M]^{-\frac{3}{2}}$
 
-#definition 
+#definition Single particle state: $\ket{p}=\sqrt{2E_p} \hat{a}^\dagger_p \ket{0}$ with dimension ^[in [[relativistically natural units]]] $[M]^{\frac{1}{2}}[M]^{-\frac{3}{2}}=[M]^{-1}$ ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^singlePart]]]
+
+#definition $\hat{\delta}^{(n)}(p) \equiv(2 \pi)^{n} \delta^{(n)}(p)$ ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^delta]]]
+
+#definition We define the amplitudes in four dimensions as usual by$\mel{p'_1 \cdots p'_m}{T}{p_1 \cdots p_n}=\mathcal{A}(p_1 \cdots p_n\rightarrow p'_1 \cdots p'_m)\hat{\delta}(p_1 +\cdots+ p_n- p'_1- \cdots-p'_m)$with an in out momentum convention. ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^amplitude]]]
+
+#definition  wavenumber $\bar{p}$ associated with a  momentum $p$: $\bar{p}\equiv \frac{p}{\hbar}$ ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^wavenumber]]]
+
+We consider the scattering  of two point-like objects, with momenta $p_{1,2}$, initially separated by a transverse impact  parameter $b_\mu$^[![[@kosowerAmplitudesObservablesClassical2019annotations#^transverseImpact]]]
+
+#definition (reduced) Compton wavelengths $\ell_c^{(i)}\equiv  \frac{\hbar}{m_i}$  
+
+
+The point-particle description will be  accurate provided that
+$$\sqrt{-b^2}\gg \ell^{(1,2)}_c$$
+
+There is another important length scale:
+#definition: the spread of the wavepackets, $\ell_w$
+
+The quantum-mechanical expectation values of observables, as we  will discuss, are well-approximated by the corresponding classical ones, when the packet spreads are in the ‘Goldilocks’ zone:
+
+$$\ell_c\ll\ell_w\ll\sqrt{-b^2}$$
+
+
+### Restoring $\hbar$
+When $\hbar \neq 1$, the dimensions of the momenta and masses in the amplitude are unchanged.
+
+> I would think that the momenta go from [M] to [M][L][T]^-1, but that is only for c also not equal to 1!!
+
+But the dimensionless couplings in scalar QED and gravity have a factor of $\frac{1}{\sqrt{\hbar}}$ thus the restoring algorithm is: each factor of a coupling is multiplied by   an additional factor of $\frac{1}{\sqrt{\hbar}}$. And importantly as we take $\hbar$ to $0$ we consider that point particles have momenta which are fixed whereas massless particles and momentum transfers between massive particles it is the wavenumber which we should  treat as fixed in the limit.
+
+
+
 # [Impulse and radiated momentum in quantum field theory](zotero://open-pdf/0_XIBRM7N7/7)
+
+We examine scattering events in which two widely separated particles are prepared at $t \rightarrow - \infty$, and then shot at each other with impact parameter $b_\mu$. We will also restrict  our attention to scattering processes in which quanta of fields 1 and 2 are both present in  the final state.
+
+
     
 ## [The incoming state](zotero://open-pdf/0_XIBRM7N7/7)
+
+$$\ket{\psi}_{\text{in}}=\int \hat{\dd[4]{p_1}}$$
         
 ## [The impulse on a particle](zotero://open-pdf/0_XIBRM7N7/9)
         
