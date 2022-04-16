@@ -77,7 +77,7 @@ We examine scattering events in which two widely separated particles are prepare
     
 ## [The incoming state](zotero://open-pdf/0_XIBRM7N7/7)
 
-$$\ket{\psi}_{\text{in}}=\int \hat{\dd[4]{p_1}}$$
+$$\ket{\psi}_{\text{in}}=\int \dd{\Phi_2(p_1,p_2)}$$
         
 ## [The impulse on a particle](zotero://open-pdf/0_XIBRM7N7/9)
         
