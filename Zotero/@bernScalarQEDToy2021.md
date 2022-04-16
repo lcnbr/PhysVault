@@ -38,7 +38,7 @@ In electromagnetism we encounter a mass singularity in the scattering angle, whi
 
 ##  [2 Review of Methods](zotero://open-pdf/0_VLMHF4E2/5)
 
-#defintion Two loop order: $\mathcal{O}(\alpha^3)$ where $\alpha = \frac{e^2 }{4 \pi}$ is the [[fine structure constant]]
+#definition Two loop order: $\mathcal{O}(\alpha^3)$ where $\alpha = \frac{e^2 }{4 \pi}$ is the [[fine structure constant]]
 
 # PLAN:
 

@@ -14,9 +14,29 @@ url:
 **Contents**
 
 # [Introduction](zotero://open-pdf/0_XIBRM7N7/3)
+
+we must understand  systematically how to extract the classical result using on-shell quantum-mechanical scattering amplitudes.  Our formalism applies to both electrodynamics and gravity. And for simplicity we restrict to spinless scattering.
     
 # [Restoring h](zotero://open-pdf/0_XIBRM7N7/5)
-    
+
+#convention Use relativistically natural units i.e. $c=1 \implies [L][T]^{-1}=1 \implies [L]=[T]$ 
+
+
+A straightforward and pragmatic approach to restoring all factors of $\hbar$ in an expression is  dimensional analysis.
+
+#definition : Denote dimensions of mass and length by $[M]$ and $[L]$, respectively
+#definition : Denote spatial three vectors in bold i.e. $p^i=\boldsymbol{p}$
+
+Using 
+$$
+\bqty\big{\hat{a}_{p}, \hat{a}_{p^{\prime}}^{\dagger}}=(2 \pi)^{3} \delta^{(3)}\pqty{\boldsymbol{p}-\boldsymbol{p}^{\prime}},
+$$
+to define the dimensions of $\hat{a}_p$, using that $\delta^{(n)}([x])=[x]$^[[[delta function#In dimensional analysis]]] we have:
+
+$$\bqty{\bqty\big{\hat{a}_{p}, \hat{a}_{p^{\prime}}^{\dagger}}}=\bqty{\hat{a}_{p}}^2=\bqty{ \delta^{(3)}\pqty{\boldsymbol{p}-\boldsymbol{p}^{\prime}}}=\bqty{\boldsymbol{p}}^{-3}=[M]^{-3}$$
+Thus $[\hat{a}_p]=[M]^{-\frac{3}{2}}$
+
+#definition 
 # [Impulse and radiated momentum in quantum field theory](zotero://open-pdf/0_XIBRM7N7/7)
     
 ## [The incoming state](zotero://open-pdf/0_XIBRM7N7/7)

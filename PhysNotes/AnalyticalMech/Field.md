@@ -3,7 +3,7 @@ Aliases: fields, field, Fields
 ---
 # Field
 A *field* is some quantity that has a value for each point in [[spacetime]] (labelled by [[4-vectors]] $q^\mu$), and it is this quantity that can change as we move from place to place or forward in time^[[[zotero-843-Annotations#^85f679]]]
-#defintion
+#definition
 
 # Scalar Field
 I.e temperature or density, consists of a single value $\phi(q^\mu)$ attached to each point in [[spacetime]]^[[[zotero-843-Annotations#^96fc16]]]

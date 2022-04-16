@@ -151,12 +151,13 @@ $$\int_{-\infty}^\infty f(x) \, \delta(g(x)) \, dx = \sum_{i}\frac{f(x_i)}{|g'(x
 The delta distribution in an *n*-dimensional space satisfies the
 following scaling property instead,
 
-$$\delta(\alpha\mathbf{x}) = |\alpha|^{-n}\delta(\mathbf{x}) ~,$$ so
+$$\delta^{(n)}(\alpha\mathbf{x}) = |\alpha|^{-n}\delta(\mathbf{x}) ~,$$ so
 that *δ* is a [homogeneous] distribution of degree −*n*.
 
 Under any [reflection] or [rotation] ρ, the delta function is invariant,
 
-$$\delta(\rho \mathbf{x}) = \delta(\mathbf{x})~.$$
+$$\delta^{(n)}(\rho \mathbf{x}) = \delta^{(n)}
+(\mathbf{x})~.$$
 
 As in the one-variable case, it is possible to define the composition of
 *δ* with a [bi-Lipschitz function]$\mathbb{R}^n\rightarrow \mathbb{R}^n$
@@ -226,3 +227,9 @@ transform.
 By [analytic continuation] of the Fourier transform, the [Laplace
 transform] of the delta function is found to
 be:   $$\int_{0}^{\infty}\delta (t-a)e^{-st} \, dt=e^{-sa}.$$
+
+# In dimensional analysis
+
+Using the [[#Properties in n dimensions]] we have that:
+
+$$\delta^{(n)}([x])=[x]^{-n}$$

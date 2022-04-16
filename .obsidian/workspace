@@ -6,7 +6,7 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
-        "dimension": 50,
+        "dimension": 37.32694355697551,
         "state": {
           "type": "markdown",
           "state": {
@@ -14,17 +14,32 @@
             "mode": "source",
             "source": true
           }
-        }
+        },
+        "group": "e852b8edd50b8b42"
+      },
+      {
+        "id": "b3eea65a2b141d1f",
+        "type": "leaf",
+        "dimension": 38.33865814696485,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+            "mode": "preview",
+            "source": true
+          }
+        },
+        "group": "e852b8edd50b8b42"
       },
       {
         "id": "f18e1add9b8cbb8e",
         "type": "leaf",
-        "dimension": 50,
+        "dimension": 24.334398296059636,
         "state": {
           "type": "markdown",
           "state": {
             "file": "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
-            "mode": "preview",
+            "mode": "source",
             "source": true
           }
         }
@@ -54,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "repr",
+                "query": "tag:#definition",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -63,7 +78,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -132,17 +148,17 @@
     "width": 276.5,
     "collapsed": true
   },
-  "active": "37afdef98af2d6b1",
+  "active": "b3eea65a2b141d1f",
   "lastOpenFiles": [
     "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
+    "PhysNotes/AnalyticalMech/Field.md",
+    "Zotero/@bernScalarQEDToy2021.md",
+    "PhysNotes/Untitled.md",
+    "PhysNotes/math/delta function.md",
+    "PhysNotes/LaTeX.md",
     "Zotero/@herrmannRadiativeClassicalGravitational2021.md",
     "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
-    "PhysNotes/KMOC framework.md",
-    "PhysNotes/LSZ reduction.md",
-    "PhysNotes/QFTII/YM gauge sector Feynman rules.md",
-    "PhysNotes/QFTII/Feynman rules for YM.md",
-    "thesis/scalar QED.md",
-    "PhysNotes/feynman rules for SQED.md"
+    "PhysNotes/KMOC framework.md"
   ]
 }

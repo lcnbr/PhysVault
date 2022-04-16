@@ -6,12 +6,11 @@ systematically how to extract the classical result using on-shell quantum-mechan
 tering amplitudes ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=4&annotation=TL256QAQ))
 
 #important : Our formalism applies  
-to both electrodynamics and gravity. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=4&annotation=YISDXCMK))
+to both electrodynamics and gravity. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=4&annotation=YISDXCMK)) ^1
 
 #important : restrict to spinless scattering ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=4&annotation=URAPTNYI))
 
-#important : A straightforward and pragmatic approach to restoring all factors of ~ in an expression is  
-dimensional analysis.1 ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=IE238JXF))
+#important : A straightforward and pragmatic approach to restoring all factors of $\hbar$ in an expression is  dimensional analysis. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=IE238JXF))
 
 #definition : dimensions of mass and length by \[M\] and \[L\], respectively ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=QP4UUIDK))
 
