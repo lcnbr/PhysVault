@@ -79,7 +79,7 @@ We examine scattering events in which two widely separated particles are prepare
 
 $$\ket{\psi}_{\text{in}}=\int \dd{\Phi_2(p_1,p_2)} \phi_1(p_1) \phi_2(p_2) e^{\iunit b^\mu p_\mu /\hbar}\ket{p_1,p_2}_\text{in}$$
 
-Where we use the multiple [[Lorentz invariant measure]]. Note the explicit phase extracted from the two wavepacket functions 
+Where we use the multiple [[Lorentz invariant measure]]. Note the explicit phase extracted from the two wavepackets functions such that the wavepacket of particle 1 is translated by the impact parameter $b$ relative to particle 2.
 
 
         

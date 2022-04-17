@@ -71,7 +71,7 @@ the final state ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotatio
 \[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=HZT9H9GM))  
 ([Kosower et al., 2019, p. 5](zotero://select/library/items/LFU9BUYS))
 
-#definition : ˆdp absorbs a factor of 2π; more generally ˆdnp is defined by ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=RH372LV7))
+#definition : $\hat{\dd}p$ absorbs a factor of 2π; more generally ˆdnp is defined by $\hat{\dd}^n p=\frac{\dd[n]{p}}{2 \pi}$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=RH372LV7))
 
 \[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=U6M4BDHD))  
 ([Kosower et al., 2019, p. 5](zotero://select/library/items/LFU9BUYS))
