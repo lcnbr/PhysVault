@@ -1,6 +1,11 @@
 # Annotations  
 (2022-04-16, 10:25:14 a.m.)
 
+
+
+# [Introduction](zotero://open-pdf/0_XIBRM7N7/3)
+
+
 #important : we must understand  
 systematically how to extract the classical result using on-shell quantum-mechanical scat-  
 tering amplitudes ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=4&annotation=TL256QAQ))
@@ -9,6 +14,8 @@ tering amplitudes ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=4&annotat
 to both electrodynamics and gravity. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=4&annotation=YISDXCMK)) ^1
 
 #important : restrict to spinless scattering ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=4&annotation=URAPTNYI))
+
+# [Restoring h](zotero://open-pdf/0_XIBRM7N7/5)
 
 #important : A straightforward and pragmatic approach to restoring all factors of $\hbar$ in an expression is  dimensional analysis. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=5&annotation=IE238JXF))
 
@@ -59,6 +66,8 @@ and momentum transfers between massive particles ([pdf](zotero://open-pdf/librar
 #important : wavenumber which we should  
 treat as fixed in the limit. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=ZSSL8AJ2))
 
+# [Impulse and radiated momentum in quantum field theory](zotero://open-pdf/0_XIBRM7N7/7)
+
 #condition : We examine scattering events in which two widely separated particles are prepared at  
 t → −∞, and then shot at each other with impact parameter bµ. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=T3VWF5FR))
 
@@ -66,43 +75,37 @@ t → −∞, and then shot at each other with impact parameter bµ. ([pdf](zote
 our attention to scattering processes in which quanta of fields 1 and 2 are both present in  
 the final state ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=ZRGZY4VG))
 
+## [The incoming state](zotero://open-pdf/0_XIBRM7N7/7)
+
 #condition : initial state ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=S3PHJUIB))
 
 \[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=HZT9H9GM))  
 ([Kosower et al., 2019, p. 5](zotero://select/library/items/LFU9BUYS))
 
-#definition : $\hat{\dd}p$ absorbs a factor of 2π; more generally ˆdnp is defined by $\hat{\dd}^n p=\frac{\dd[n]{p}}{2 \pi}$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=RH372LV7))
+#definition : $\hat{\dd}p$ absorbs a factor of $2 \pi$; more generally $\hat{\dd}^n p$ is defined by $\hat{\dd}^n p=\frac{\dd[n]{p}}{2 \pi}$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=RH372LV7))
 
-\[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=U6M4BDHD))  
-([Kosower et al., 2019, p. 5](zotero://select/library/items/LFU9BUYS))
 
-\[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=ZGTDDU7E))  
-([Kosower et al., 2019, p. 5](zotero://select/library/items/LFU9BUYS))
+
+$\hat{\delta}^{(+)}(p^2-m^2)=2 \pi \,\Theta(p^0)\,\delta(p^2-m^2)$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=7&annotation=ZGTDDU7E))  
+
 
 #definition : on-shell integrals (over  
-Lorentz-invariant phase space), ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=8&annotation=8SCEXK6R))
-
-\[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=8&annotation=ZXGI2A66))  
-([Kosower et al., 2019, p. 6](zotero://select/library/items/LFU9BUYS))
+Lorentz-invariant phase space), $\dd{\Phi(p_i)}=\hat{\dd{}}^{4}p_i \,\hat{\delta}^{(+)}(p_i^2-m_i^2)$([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=8&annotation=8SCEXK6R))
 
 \[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=8&annotation=2ZB9J7D5))  
 ([Kosower et al., 2019, p. 6](zotero://select/library/items/LFU9BUYS))
 
-\[image\] ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=8&annotation=ZRQPAZP4))  
-([Kosower et al., 2019, p. 6](zotero://select/library/items/LFU9BUYS))
+$\ket{\psi}_{\text{in}}=\int \dd{\Phi_2(p_1,p_2)} \phi_1(p_1) \phi_2(p_2) e^{\iunit b_\mu p^\mu_1 /\hbar}\ket{p_1,p_2}_\text{in}$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=8&annotation=ZRQPAZP4))  
 
-#definition : the impulse on a particle during  
-a scattering event: at the classical level, this is simply the total change in the momentum  
-of one of the particles — say particle 1 — during the collision. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=9&annotation=E36J7HNG))
+## [The impulse on a particle](zotero://open-pdf/0_XIBRM7N7/9)
 
-#condition : place detectors at asymptotically large distances pointing  
-at the collision region. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=9&annotation=MG9CIJRQ))
+#definition : the impulse on a particle during  a scattering event: at the classical level, this is simply the total change in the momentum  of one of the particles — say particle 1 — during the collision. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=9&annotation=E36J7HNG))
 
-#definition : Pµ  
-i be the momentum operator  
-for particle i; ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=9&annotation=9WSUGBYF))
+#condition : place detectors at symptotically large distances pointing at the collision region. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=9&annotation=MG9CIJRQ))
 
-#definition : U(∞, −∞) is the time evolution operator from the far past to the far future ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=9&annotation=TRB4DKU4))
+#definition : $\mathbb{P_i^\mu}$ be the momentum operator for particle $i$ ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=9&annotation=9WSUGBYF))
+
+#definition : $U(\infty,-\infty)$ is the time evolution operator from the far past to the far future ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=9&annotation=TRB4DKU4))
 
 #important : we can think of the inserted states as the final state of a scattering process. ([pdf](zotero://open-pdf/library/items/XIBRM7N7?page=9&annotation=IY85BZHV))
 

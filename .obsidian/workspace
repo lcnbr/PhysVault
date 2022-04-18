@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+            "file": "Zotero/@collinsNewApproachLSZ2019.md",
             "mode": "source",
             "source": true
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+            "file": "Zotero/@collinsNewApproachLSZ2019.md",
             "mode": "preview",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#definition",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240,
-    "collapsed": true
+    "width": 240
   },
   "right": {
     "id": "87f65332409687cb",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
+                "file": "Zotero/@collinsNewApproachLSZ2019.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
+                "file": "Zotero/@collinsNewApproachLSZ2019.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md"
+                "file": "Zotero/@collinsNewApproachLSZ2019.md"
               }
             }
           }
@@ -149,17 +148,17 @@
     "width": 276.5,
     "collapsed": true
   },
-  "active": "f18e1add9b8cbb8e",
+  "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
-    "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
+    "Zotero/@collinsNewApproachLSZ2019.md",
+    "PhysNotes/LSZ reduction.md",
+    "PhysNotes/KMOC framework.md",
+    "Zotero/@collinsNewApproachLSZ2019a.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+    "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
     "PhysNotes/Lorentz invariant measure.md",
     "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
     "PhysNotes/LaTeX.md",
-    "PhysNotes/relativistically natural units.md",
-    "PhysNotes/AnalyticalMech/Field.md",
-    "Zotero/@bernScalarQEDToy2021.md",
-    "PhysNotes/Untitled.md",
-    "PhysNotes/math/delta function.md"
+    "PhysNotes/relativistically natural units.md"
   ]
 }

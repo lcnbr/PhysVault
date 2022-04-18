@@ -17,7 +17,7 @@ url:
 
 we must understand  systematically how to extract the classical result using on-shell quantum-mechanical scattering amplitudes.  Our formalism applies to both electrodynamics and gravity. And for simplicity we restrict to spinless scattering.
     
-# [Restoring h](zotero://open-pdf/0_XIBRM7N7/5)
+# [Restoring $\hbar$](zotero://open-pdf/0_XIBRM7N7/5)
 
 #convention Use [[relativistically natural units]] i.e. $c=1 \implies [L][T]^{-1}=1 \implies [L]=[T]$ 
 
@@ -77,13 +77,32 @@ We examine scattering events in which two widely separated particles are prepare
     
 ## [The incoming state](zotero://open-pdf/0_XIBRM7N7/7)
 
-$$\ket{\psi}_{\text{in}}=\int \dd{\Phi_2(p_1,p_2)} \phi_1(p_1) \phi_2(p_2) e^{\iunit b^\mu p_\mu /\hbar}\ket{p_1,p_2}_\text{in}$$
+$$\ket{\psi}_{\text{in}}=\int \dd{\Phi_2(p_1,p_2)} \phi_1(p_1) \phi_2(p_2) e^{\iunit b_\mu p^\mu_1 /\hbar}\ket{p_1,p_2}_\text{in}$$
 
 Where we use the multiple [[Lorentz invariant measure]]. Note the explicit phase extracted from the two wavepackets functions such that the wavepacket of particle 1 is translated by the impact parameter $b$ relative to particle 2.
 
 
         
 ## [The impulse on a particle](zotero://open-pdf/0_XIBRM7N7/9)
+
+#definition : the *impulse* on a particle during  a scattering event: at the classical level, this is simply the total change in the momentum  of one of the particles — say particle 1 — during the collision.
+
+We place detectors at asymptotically large distances pointing  at the collision region.
+
+#definition : $\mathbb{P}_i^\mu$ be the momentum operator for particle $i$ 
+
+We then have the expectation value of particle 1's outgoing momentum is:
+
+$$
+\begin{align}
+\ev{p^\mu_{\text{out},1}}&=\prescript{}{\text{out}}{\ev{\mathbb{P}_1^\mu}{\psi}}_\text{out}\\
+&=\prescript{}{\text{out}}{\ev{\mathbb{P}_1^\mu\, U(\infty,-\infty)}{\psi}}_\text{in}\\
+&=\prescript{}{\text{in}}{\ev{U(\infty,-\infty)^\dagger\,\mathbb{P}_1^\mu \,U(\infty,-\infty)}{\psi}}_\text{in}\\
+\end{align}$$
+
+#definition : $U(\infty,-\infty)$ is the time evolution operator from the far past to the far future also called the S matrix
+
+
         
 ## [Impulse in terms of amplitudes](zotero://open-pdf/0_XIBRM7N7/10)
         
