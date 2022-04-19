@@ -13,4 +13,6 @@ Original paper:
 
 allows us to extract classical observables directly from scattering amplitudes and what are essentially unitarity cuts.^[![[@bernScalarQEDToy2021annotations#^cccd89]]]
 
-We want to scatter a two particle [[LSZ reduction|in state]] into an at least 2 particle [[LSZ reduction|out state]]
+We want to scatter a two particle [[LSZ reduction|in state]] into an at least 2 particle [[LSZ reduction|out state]]. 
+
+Thus the [[LSZ reduction|in state]] is given by the

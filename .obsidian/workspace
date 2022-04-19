@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@collinsNewApproachLSZ2019.md",
+            "file": "PhysNotes/KMOC framework.md",
             "mode": "source",
             "source": true
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@collinsNewApproachLSZ2019.md",
+            "file": "PhysNotes/KMOC framework.md",
             "mode": "preview",
             "source": true
           }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zotero/@collinsNewApproachLSZ2019.md",
+                "file": "PhysNotes/KMOC framework.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zotero/@collinsNewApproachLSZ2019.md",
+                "file": "PhysNotes/KMOC framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zotero/@collinsNewApproachLSZ2019.md"
+                "file": "PhysNotes/KMOC framework.md"
               }
             }
           }
@@ -150,9 +150,9 @@
   },
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
+    "PhysNotes/KMOC framework.md",
     "Zotero/@collinsNewApproachLSZ2019.md",
     "PhysNotes/LSZ reduction.md",
-    "PhysNotes/KMOC framework.md",
     "Zotero/@collinsNewApproachLSZ2019a.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
