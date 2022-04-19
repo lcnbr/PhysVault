@@ -15,4 +15,8 @@ allows us to extract classical observables directly from scattering amplitudes a
 
 We want to scatter a two particle [[LSZ reduction|in state]] into an at least 2 particle [[LSZ reduction|out state]]. 
 
-Thus the [[LSZ reduction|in state]] is given by the
+Thus the [[LSZ reduction|in state]] is given by 
+![[@kosowerAmplitudesObservablesClassical2019#^inState]]
+
+To explain the $e^{\iunit b_\mu p^\mu_1 /\hbar}$ factor consider a one particle in state:
+

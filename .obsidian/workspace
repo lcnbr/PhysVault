@@ -6,7 +6,7 @@
       {
         "id": "37afdef98af2d6b1",
         "type": "leaf",
-        "dimension": 37.362637362637365,
+        "dimension": 38.51306095110515,
         "state": {
           "type": "markdown",
           "state": {
@@ -20,7 +20,7 @@
       {
         "id": "b3eea65a2b141d1f",
         "type": "leaf",
-        "dimension": 36.2026862026862,
+        "dimension": 35.09711989283322,
         "state": {
           "type": "markdown",
           "state": {
@@ -34,11 +34,11 @@
       {
         "id": "f18e1add9b8cbb8e",
         "type": "leaf",
-        "dimension": 26.434676434676433,
+        "dimension": 26.389819156061623,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
+            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
             "mode": "source",
             "source": true
           }
@@ -152,12 +152,12 @@
   "active": "37afdef98af2d6b1",
   "lastOpenFiles": [
     "PhysNotes/LSZ reduction.md",
-    "PhysNotes/Heisenberg picture.md",
     "PhysNotes/KMOC framework.md",
-    "Zotero/@collinsNewApproachLSZ2019.md",
-    "Zotero/@collinsNewApproachLSZ2019a.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
     "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
+    "PhysNotes/Heisenberg picture.md",
+    "Zotero/@collinsNewApproachLSZ2019.md",
+    "Zotero/@collinsNewApproachLSZ2019a.md",
     "PhysNotes/Lorentz invariant measure.md",
     "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
     "PhysNotes/LaTeX.md"

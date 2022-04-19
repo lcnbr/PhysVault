@@ -6,7 +6,8 @@ tag:
 - qft
 ---
 
-Following [[@collinsNewApproachLSZ2019]]. 
+Following [[@collinsNewApproachLSZ2019]] and [this PhysStacExchange answer](https://physics.stackexchange.com/questions/525800/the-use-of-a-dagger-mathbfk-i-int-d3x-eikx-stackrel-leftrightarro)
+
 
 # Notation
 
