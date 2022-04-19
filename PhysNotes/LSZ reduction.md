@@ -13,9 +13,9 @@ Following [[@collinsNewApproachLSZ2019]].
 A free klein gordon field is written:
 
 $$\phi_{\text{free}}(x^\mu)=\int \dd{\Phi(k)}\bqty{a_{\mathbf{k},\text{free}}\,e^{-\iunit k_\mu x^\mu}+a^\dagger_{\mathbf{k},\text{free}}\,e^{\iunit k_\mu x^\mu}}$$
-Where boldface symbols are spacial 3-vectors and we use the notation from [[Lorentz invariant measure#Different forms]]. This field is as usual in the [[Heisenberg picture]]
+Where boldface symbols are spacial 3-vectors and we use the notation from [[Lorentz invariant measure#Different forms]]. This field is as usual in the [[Heisenberg picture]], as it is a solution to the [[Heisenberg EOM]].
 
-The ideal free theory and its fields are envisioned to live in Fock Hilbert spaces $\mathcal{H}_{\text {in }}$ and $\mathcal{H}_{\text {out }}$.
+ The ideal free theory and its fields are envisioned to live in Fock Hilbert spaces $\mathcal{H}_{\text {in }}$ and $\mathcal{H}_{\text {out }}$.
 2. Now we are interested in an interacting field theory with an interacting field $\hat{\varphi}(x)$ that lives in a Hilbert space $\mathcal{H}$.
 3. NB: We emphasize that interactions are not turned off at asymptotic regions: the Lagrangian does not depend explicitly on spacetime!
 4. For an interacting field $\hat{\varphi}(x)$, one can in principle still perform a spatial Fourier expansion at each time $t$, however the spatial Fourier transform can no longer be identified with annihilation and creation operators. Instead, we shall define so-called (time-dependent) asymptotic creation and annihilation operators $\hat{a}^{\dagger}(\mathbf{k}, t)$ and $\hat{a}(\mathbf{k}, t)$ by the Klein-Gordon (KG). inner product of eq. (5.2) [and the Hermitian conjugate eq.]. The definition is extended to an asymptotic creation operator $\hat{a}_{1}^{\dagger}(t) \equiv \hat{a}^{\dagger}\left(f_{1}, t\right)$ for a Gaussian wave packet in eq. (5.6).
