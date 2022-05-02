@@ -8,12 +8,13 @@
   "addAlignBlock_parameter": "align*",
   "addMatrixBlock_toggle": true,
   "addMatrixBlock_parameter": "pmatrix",
+  "addCasesBlock_toggle": true,
   "autoFraction_toggle": true,
-  "autoLargeBracket_toggle": true,
+  "autoLargeBracket_toggle": false,
   "autoSumLimit_toggle": true,
   "autoEncloseSup_toggle": false,
   "autoEncloseSub_toggle": false,
   "encloseSelection_toggle": true,
   "customShorthand_toggle": true,
-  "customShorthand_parameter": "bs:\\boldsymbol{},op:\\operatorname{},hi: \\highlight{},qk:q_k,tk:t_k,dd:\\dd{},ba:\\bar{},iu :\\iunit,ke:\\ket{},br:\\bra{},ip:\\ip{},qi:q_i,ti:t_i,tf:t_f,hb:\\hbar,ha:\\hat{},cO: mathcal{O}, ca:\\mathcal{},rm:\\mathrm{},it:\\int\\limits,dt:\\dot{},ve:\\vec{},sq:\\sqrt{}, bb:\\mathbb{}, bf:\\mathbf{}, te:\\text{}, cd:\\cdot, qu:\\quad, ti:\\times, al:\\alpha, be:\\beta, ga:\\gamma, Ga:\\Gamma, de:\\delta, De:\\Delta, ep:\\epsilon, ze:\\zeta, et:\\eta, th:\\theta, Th:\\Theta, io:\\iota, ka:\\kappa, la:\\lambda, La:\\Lambda, mu:\\mu, nu:\\nu, xi:\\xi, Xi:\\Xi, pi:\\pi, Pi:\\Pi, rh:\\rho, si:\\sigma, Si:\\Sigma, ta:\\tau, up:\\upsilon, Up:\\Upsilon, ph:\\phi, Ph:\\Phi, ch:\\chi, ps:\\psi, Ps:\\Psi, om:\\omega, Om:\\Omega,Rb:\\mathbb{R},Cb:\\mathbb{C}"
+  "customShorthand_parameter": "bi:\\binom{#cursor}{#tab};\nsq:\\sqrt{};\nbb:\\mathbb{};\nbf:\\mathbf{};\nte:\\text{};\ninf:\\infty;\ncd:\\cdot;\nqu:\\quad;\nti:\\times;\nal:\\alpha;\nbe:\\beta;\nga:\\gamma;\nGa:\\Gamma;\nde:\\delta;\nDe:\\Delta;\nep:\\epsilon;\nze:\\zeta;\net:\\eta;\nth:\\theta;\nTh:\\Theta;\nio:\\iota;\nka:\\kappa;\nla:\\lambda;\nLa:\\Lambda;\nmu:\\mu;\nnu:\\nu;\nxi:\\xi;\nXi:\\Xi;\npi:\\pi;\nPi:\\Pi;\nrh:\\rho;\nsi:\\sigma;\nSi:\\Sigma;\nta:\\tau;\nup:\\upsilon;\nUp:\\Upsilon;\nph:\\phi;\nPh:\\Phi;\nch:\\chi;\nps:\\psi;\nPs:\\Psi;\nom:\\omega;\nOm:\\Omega;\nbs:\\boldsymbol{};\nop:\\operatorname{};\nhi: \\highlight{};\nqk:q_k;\ntk:t_k;\ndd:\\dd{};\nba:\\bar{};\niu :\\iunit;\nke:\\ket{};\nbr:\\bra{};\nip:\\ip{};\nqi:q_i;\ntf:t_f;\nhb:\\hbar;\nha:\\hat{};\ncO: mathcal{O};\nca:\\mathcal{};\nrm:\\mathrm{};\nit:\\int\\limits;\ndt:\\dot{};\nve:\\vec{};\nsq:\\sqrt{};\nbb:\\mathbb{};\nbf:\\mathbf{};\nte:\\text{};\ncd:\\cdot;\nqu:\\quad;\ntm:\\times;\nRb:\\mathbb{R};\nCb:\\mathbb{C};\nto:\\to;\ntl:\\tilde{};\nab:\\abs{};\nda:\\dagger;\niu:\\iunit;"
 }

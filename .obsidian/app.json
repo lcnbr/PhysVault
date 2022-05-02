@@ -1,6 +1,6 @@
 {
   "legacyEditor": false,
-  "livePreview": false,
+  "livePreview": true,
   "promptDelete": false,
   "alwaysUpdateLinks": true,
   "showFrontmatter": true,
@@ -8,12 +8,13 @@
   "foldIndent": true,
   "spellcheck": true,
   "useTab": false,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "showUnsupportedFiles": true,
   "strictLineBreaks": false,
   "showLineNumber": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "PhysNotes",
   "attachmentFolderPath": "Attachements",
-  "fileSortOrder": "alphabetical"
+  "fileSortOrder": "alphabetical",
+  "defaultViewMode": "preview"
 }

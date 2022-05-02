@@ -1,0 +1,93 @@
+\newcommand{\typing}[3][\Gamma]{#1 \vdash #2 : #3}
+
+
+\require{physics}
+\require{mathtools}
+
+\newcommand{\ind}[2]{^{#1}_{\phantom{#1}#2}} 	% for nice tensor indices
+\newcommand{\invind}[2]{_{#1}^{\phantom{#1}#2}} 	% covariant before contravariant indices
+
+
+\newcommand{\F}{\vec{F}}
+\newcommand{\x}{\vec{x}}
+\renewcommand{\r}{\vec{r}}
+\newcommand{\p}{\vec{p}}
+\renewcommand{\v}{\vec{v}}
+\newcommand{\e}{\hat{e}}
+\newcommand{\D}{\mathrm{D}}
+\newcommand{\im}{\iunit}
+\renewcommand{\L}{\mathcal{L}}
+
+
+
+\require{color}
+\definecolor{light-yellow}{rgb}{1,0.98,0.77}
+\definecolor{light-green}{rgb}{.77,0.88,0.65}
+\definecolor{light-blue}{rgb}{.75,0.87,0.98}
+\definecolor{light-purple}{rgb}{.88,0.75,0.91}
+\definecolor{light-orange}{rgb}{1,0.88,0.7}
+\definecolor{light-red}{rgb}{.94,0.6,0.6}
+\newcommand{\hy}[1]{%
+  \colorbox{light-yellow}{$\displaystyle#1$}}
+\newcommand{\hg}[1]{%
+  \colorbox{light-green}{$\displaystyle#1$}}
+\newcommand{\hb}[1]{%
+  \colorbox{light-blue}{$\displaystyle#1$}}
+\newcommand{\hp}[1]{%
+  \colorbox{light-purple}{$\displaystyle#1$}}
+\newcommand{\ho}[1]{%
+  \colorbox{light-orange}{$\displaystyle#1$}}
+\newcommand{\hr}[1]{%
+  \colorbox{light-red}{$\displaystyle#1$}}
+
+  \hr{test}
+
+
+
+
+\newcommand{\iunit}{{\mathring{\imath}}}
+
+\NewCommand{\tens}{mo}
+ {
+  #1
+  \IfNoValueTF { #2 } 
+   {
+    \__myridium_tens_up_lookup:
+   }
+   {
+    \__myridium_tens_down_lookup: [ #2 ]
+   }
+ }
+
+\cs_new_protected:Nn \__myridium_tens_down_lookup:
+ {
+  \peek_charcode_ignore_spaces:NTF [
+   {
+    \__myridium_tens_down:w
+   }
+   { \kern2\scriptspace }
+ }
+\cs_new_protected:Npn \__myridium_tens_down:w [ #1 ]
+ {
+  {\mathstrut}
+  \sb{#1}
+  \kern-\scriptspace
+  \__myridium_tens_up_lookup:
+ }
+\cs_new_protected:Nn \__myridium_tens_up_lookup:
+ {
+  \peek_catcode_ignore_spaces:NTF \c_group_begin_token
+   {
+    \__myridium_tens_up:n
+   }
+   { \kern2\scriptspace }
+ }
+\cs_new_protected:Nn \__myridium_tens_up:n
+ {
+  {\mathstrut}
+  \sp{#1}
+  \kern-\scriptspace
+  \__myridium_tens_down_lookup:
+ }
+
+

@@ -7,6 +7,7 @@ contained in: Journal of High Energy Physics
 
 DOI: 10.1007/JHEP02(2019)137
 url: 
+alias: KMOC paper
 
 ---
 # [Amplitudes, observables, and classical scattering](zotero://select/items/@kosowerAmplitudesObservablesClassical2019)

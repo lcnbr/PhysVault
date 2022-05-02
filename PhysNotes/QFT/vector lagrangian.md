@@ -5,7 +5,7 @@ tag:
 - qft
 ---
 # Free real vector field
-Consider a real [[vector fields in QFT|vector field]], since the complex case is a trivial extension. 
+Consider a real [[vector fields in QFT|vector field]], since the complex case is a trivial extension. [[Field]]
 
 The most general quadratic (s.t the [[equations of motion|e.o.m.s]] are that of a free particle) [[Lagrangian Density|lagrangian]] with no more than two derivatives is given by   ^[see ![[@colemanQUANTUMFIELDTHEORY2018#26 1 The free real vector field zotero open-pdf 0_4E7XKTS3 598]]]
 

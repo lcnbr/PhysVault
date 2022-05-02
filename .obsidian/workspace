@@ -4,43 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "37afdef98af2d6b1",
+        "id": "64faaa0334d1dbf5",
         "type": "leaf",
-        "dimension": 38.51306095110516,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/LSZ reduction.md",
+            "file": "PhysNotes/String/Mandelstam invariants.md",
             "mode": "source",
-            "source": true
+            "source": false
           }
-        },
-        "group": "e852b8edd50b8b42"
+        }
       },
       {
-        "id": "b3eea65a2b141d1f",
+        "id": "e416407466f68028",
         "type": "leaf",
-        "dimension": 35.09711989283323,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PhysNotes/LSZ reduction.md",
+            "file": "PhysNotes/KMOC framework.md",
             "mode": "preview",
-            "source": true
+            "source": false
           }
-        },
-        "group": "e852b8edd50b8b42"
+        }
       },
       {
-        "id": "f18e1add9b8cbb8e",
+        "id": "cd2e88d87fa3774e",
         "type": "leaf",
-        "dimension": 26.389819156061627,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+            "file": "PhysNotes/classical limit of wavefuctions in KMOC.md",
             "mode": "source",
-            "source": true
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "fc8db466f7000d4f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "PhysNotes/relativistically natural units.md",
+            "mode": "preview",
+            "source": false
           }
         }
       }
@@ -69,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "wrap",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -100,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/LSZ reduction.md",
+                "file": "PhysNotes/classical limit of wavefuctions in KMOC.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/LSZ reduction.md",
+                "file": "PhysNotes/classical limit of wavefuctions in KMOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,29 +144,47 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/LSZ reduction.md"
+                "file": "PhysNotes/classical limit of wavefuctions in KMOC.md"
               }
+            }
+          },
+          {
+            "id": "95e849085f15841e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d5a542dfa6d16f19",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
-  "active": "37afdef98af2d6b1",
+  "active": "cd2e88d87fa3774e",
   "lastOpenFiles": [
-    "PhysNotes/LSZ reduction.md",
+    "PhysNotes/classical limit of wavefuctions in KMOC.md",
+    "PhysNotes/relativistically natural units.md",
     "PhysNotes/KMOC framework.md",
-    "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
-    "Zotero/@kosowerAmplitudesObservablesClassical2019annotations.md",
-    "PhysNotes/Heisenberg picture.md",
-    "Zotero/@collinsNewApproachLSZ2019.md",
-    "Zotero/@collinsNewApproachLSZ2019a.md",
-    "PhysNotes/Lorentz invariant measure.md",
-    "Zotero/@colemanQUANTUMFIELDTHEORY2018.md",
-    "PhysNotes/LaTeX.md"
+    "PhysNotes/s-channel.md",
+    "PhysNotes/Lorentz invariant.md",
+    "PhysNotes/String/Mandelstam invariants.md",
+    "PhysNotes/Sum of mandelstam invariants.md",
+    "Attachements/s-channel 2022-04-29 14.44.24.excalidraw.md",
+    "PhysNotes/conserved total momentum.md",
+    "PhysNotes/center of momentum frame.md"
   ]
 }

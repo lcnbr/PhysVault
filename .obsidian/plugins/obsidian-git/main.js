@@ -67,92 +67,6 @@ var __async = (__this, __arguments, generator) => {
   });
 };
 
-// node_modules/simple-git/src/lib/errors/git-error.js
-var require_git_error = __commonJS({
-  "node_modules/simple-git/src/lib/errors/git-error.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.GitError = void 0;
-    var GitError = class extends Error {
-      constructor(task, message) {
-        super(message);
-        this.task = task;
-        Object.setPrototypeOf(this, new.target.prototype);
-      }
-    };
-    exports.GitError = GitError;
-  }
-});
-
-// node_modules/simple-git/src/lib/errors/git-response-error.js
-var require_git_response_error = __commonJS({
-  "node_modules/simple-git/src/lib/errors/git-response-error.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.GitResponseError = void 0;
-    var git_error_1 = require_git_error();
-    var GitResponseError = class extends git_error_1.GitError {
-      constructor(git, message) {
-        super(void 0, message || String(git));
-        this.git = git;
-      }
-    };
-    exports.GitResponseError = GitResponseError;
-  }
-});
-
-// node_modules/simple-git/src/lib/errors/git-construct-error.js
-var require_git_construct_error = __commonJS({
-  "node_modules/simple-git/src/lib/errors/git-construct-error.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.GitConstructError = void 0;
-    var git_error_1 = require_git_error();
-    var GitConstructError = class extends git_error_1.GitError {
-      constructor(config, message) {
-        super(void 0, message);
-        this.config = config;
-      }
-    };
-    exports.GitConstructError = GitConstructError;
-  }
-});
-
-// node_modules/simple-git/src/lib/errors/git-plugin-error.js
-var require_git_plugin_error = __commonJS({
-  "node_modules/simple-git/src/lib/errors/git-plugin-error.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.GitPluginError = void 0;
-    var git_error_1 = require_git_error();
-    var GitPluginError = class extends git_error_1.GitError {
-      constructor(task, plugin, message) {
-        super(task, message);
-        this.task = task;
-        this.plugin = plugin;
-        Object.setPrototypeOf(this, new.target.prototype);
-      }
-    };
-    exports.GitPluginError = GitPluginError;
-  }
-});
-
-// node_modules/simple-git/src/lib/errors/task-configuration-error.js
-var require_task_configuration_error = __commonJS({
-  "node_modules/simple-git/src/lib/errors/task-configuration-error.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.TaskConfigurationError = void 0;
-    var git_error_1 = require_git_error();
-    var TaskConfigurationError = class extends git_error_1.GitError {
-      constructor(message) {
-        super(void 0, message);
-      }
-    };
-    exports.TaskConfigurationError = TaskConfigurationError;
-  }
-});
-
 // node_modules/ms/index.js
 var require_ms = __commonJS({
   "node_modules/ms/index.js"(exports, module2) {
@@ -297,16 +211,16 @@ var require_common = __commonJS({
         let enableOverride = null;
         let namespacesCache;
         let enabledCache;
-        function debug(...args) {
-          if (!debug.enabled) {
+        function debug2(...args) {
+          if (!debug2.enabled) {
             return;
           }
-          const self2 = debug;
+          const self3 = debug2;
           const curr = Number(new Date());
           const ms = curr - (prevTime || curr);
-          self2.diff = ms;
-          self2.prev = prevTime;
-          self2.curr = curr;
+          self3.diff = ms;
+          self3.prev = prevTime;
+          self3.curr = curr;
           prevTime = curr;
           args[0] = createDebug.coerce(args[0]);
           if (typeof args[0] !== "string") {
@@ -321,22 +235,22 @@ var require_common = __commonJS({
             const formatter = createDebug.formatters[format];
             if (typeof formatter === "function") {
               const val = args[index];
-              match = formatter.call(self2, val);
+              match = formatter.call(self3, val);
               args.splice(index, 1);
               index--;
             }
             return match;
           });
-          createDebug.formatArgs.call(self2, args);
-          const logFn = self2.log || createDebug.log;
-          logFn.apply(self2, args);
+          createDebug.formatArgs.call(self3, args);
+          const logFn = self3.log || createDebug.log;
+          logFn.apply(self3, args);
         }
-        debug.namespace = namespace;
-        debug.useColors = createDebug.useColors();
-        debug.color = createDebug.selectColor(namespace);
-        debug.extend = extend;
-        debug.destroy = createDebug.destroy;
-        Object.defineProperty(debug, "enabled", {
+        debug2.namespace = namespace;
+        debug2.useColors = createDebug.useColors();
+        debug2.color = createDebug.selectColor(namespace);
+        debug2.extend = extend;
+        debug2.destroy = createDebug.destroy;
+        Object.defineProperty(debug2, "enabled", {
           enumerable: true,
           configurable: false,
           get: () => {
@@ -354,9 +268,9 @@ var require_common = __commonJS({
           }
         });
         if (typeof createDebug.init === "function") {
-          createDebug.init(debug);
+          createDebug.init(debug2);
         }
-        return debug;
+        return debug2;
       }
       function extend(namespace, delimiter) {
         const newDebug = createDebug(this.namespace + (typeof delimiter === "undefined" ? ":" : delimiter) + namespace);
@@ -377,7 +291,7 @@ var require_common = __commonJS({
           }
           namespaces = split[i].replace(/\*/g, ".*?");
           if (namespaces[0] === "-") {
-            createDebug.skips.push(new RegExp("^" + namespaces.substr(1) + "$"));
+            createDebug.skips.push(new RegExp("^" + namespaces.slice(1) + "$"));
           } else {
             createDebug.names.push(new RegExp("^" + namespaces + "$"));
           }
@@ -859,11 +773,11 @@ var require_node = __commonJS({
     function load() {
       return process.env.DEBUG;
     }
-    function init2(debug) {
-      debug.inspectOpts = {};
+    function init2(debug2) {
+      debug2.inspectOpts = {};
       const keys = Object.keys(exports.inspectOpts);
       for (let i = 0; i < keys.length; i++) {
-        debug.inspectOpts[keys[i]] = exports.inspectOpts[keys[i]];
+        debug2.inspectOpts[keys[i]] = exports.inspectOpts[keys[i]];
       }
     }
     module2.exports = require_common()(exports);
@@ -924,10 +838,10 @@ var require_src2 = __commonJS({
         throw e;
       }
     }
-    function exists(path3, type = exports.READABLE) {
+    function exists2(path3, type = exports.READABLE) {
       return check(path3, (type & exports.FILE) > 0, (type & exports.FOLDER) > 0);
     }
-    exports.exists = exists;
+    exports.exists = exists2;
     exports.FILE = 1;
     exports.FOLDER = 2;
     exports.READABLE = exports.FILE + exports.FOLDER;
@@ -938,1006 +852,13 @@ var require_src2 = __commonJS({
 var require_dist = __commonJS({
   "node_modules/@kwsites/file-exists/dist/index.js"(exports) {
     "use strict";
-    function __export2(m) {
+    function __export3(m) {
       for (var p in m)
         if (!exports.hasOwnProperty(p))
           exports[p] = m[p];
     }
     Object.defineProperty(exports, "__esModule", { value: true });
-    __export2(require_src2());
-  }
-});
-
-// node_modules/simple-git/src/lib/utils/util.js
-var require_util = __commonJS({
-  "node_modules/simple-git/src/lib/utils/util.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.delay = exports.pick = exports.bufferToString = exports.prefixedArray = exports.asNumber = exports.asStringArray = exports.asArray = exports.objectToString = exports.remove = exports.including = exports.append = exports.folderExists = exports.forEachLineWithContent = exports.toLinesWithContent = exports.last = exports.first = exports.splitOn = exports.isUserFunction = exports.asFunction = exports.NOOP = exports.NULL = void 0;
-    var file_exists_1 = require_dist();
-    exports.NULL = "\0";
-    var NOOP = () => {
-    };
-    exports.NOOP = NOOP;
-    function asFunction(source) {
-      return typeof source === "function" ? source : exports.NOOP;
-    }
-    exports.asFunction = asFunction;
-    function isUserFunction(source) {
-      return typeof source === "function" && source !== exports.NOOP;
-    }
-    exports.isUserFunction = isUserFunction;
-    function splitOn(input, char) {
-      const index = input.indexOf(char);
-      if (index <= 0) {
-        return [input, ""];
-      }
-      return [
-        input.substr(0, index),
-        input.substr(index + 1)
-      ];
-    }
-    exports.splitOn = splitOn;
-    function first(input, offset = 0) {
-      return isArrayLike(input) && input.length > offset ? input[offset] : void 0;
-    }
-    exports.first = first;
-    function last(input, offset = 0) {
-      if (isArrayLike(input) && input.length > offset) {
-        return input[input.length - 1 - offset];
-      }
-    }
-    exports.last = last;
-    function isArrayLike(input) {
-      return !!(input && typeof input.length === "number");
-    }
-    function toLinesWithContent(input, trimmed = true, separator = "\n") {
-      return input.split(separator).reduce((output, line) => {
-        const lineContent = trimmed ? line.trim() : line;
-        if (lineContent) {
-          output.push(lineContent);
-        }
-        return output;
-      }, []);
-    }
-    exports.toLinesWithContent = toLinesWithContent;
-    function forEachLineWithContent(input, callback) {
-      return toLinesWithContent(input, true).map((line) => callback(line));
-    }
-    exports.forEachLineWithContent = forEachLineWithContent;
-    function folderExists(path3) {
-      return file_exists_1.exists(path3, file_exists_1.FOLDER);
-    }
-    exports.folderExists = folderExists;
-    function append2(target, item) {
-      if (Array.isArray(target)) {
-        if (!target.includes(item)) {
-          target.push(item);
-        }
-      } else {
-        target.add(item);
-      }
-      return item;
-    }
-    exports.append = append2;
-    function including(target, item) {
-      if (Array.isArray(target) && !target.includes(item)) {
-        target.push(item);
-      }
-      return target;
-    }
-    exports.including = including;
-    function remove(target, item) {
-      if (Array.isArray(target)) {
-        const index = target.indexOf(item);
-        if (index >= 0) {
-          target.splice(index, 1);
-        }
-      } else {
-        target.delete(item);
-      }
-      return item;
-    }
-    exports.remove = remove;
-    exports.objectToString = Object.prototype.toString.call.bind(Object.prototype.toString);
-    function asArray(source) {
-      return Array.isArray(source) ? source : [source];
-    }
-    exports.asArray = asArray;
-    function asStringArray(source) {
-      return asArray(source).map(String);
-    }
-    exports.asStringArray = asStringArray;
-    function asNumber(source, onNaN = 0) {
-      if (source == null) {
-        return onNaN;
-      }
-      const num = parseInt(source, 10);
-      return isNaN(num) ? onNaN : num;
-    }
-    exports.asNumber = asNumber;
-    function prefixedArray(input, prefix) {
-      const output = [];
-      for (let i = 0, max = input.length; i < max; i++) {
-        output.push(prefix, input[i]);
-      }
-      return output;
-    }
-    exports.prefixedArray = prefixedArray;
-    function bufferToString(input) {
-      return (Array.isArray(input) ? Buffer.concat(input) : input).toString("utf-8");
-    }
-    exports.bufferToString = bufferToString;
-    function pick(source, properties) {
-      return Object.assign({}, ...properties.map((property) => property in source ? { [property]: source[property] } : {}));
-    }
-    exports.pick = pick;
-    function delay(duration = 0) {
-      return new Promise((done) => setTimeout(done, duration));
-    }
-    exports.delay = delay;
-  }
-});
-
-// node_modules/simple-git/src/lib/utils/argument-filters.js
-var require_argument_filters = __commonJS({
-  "node_modules/simple-git/src/lib/utils/argument-filters.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.filterHasLength = exports.filterFunction = exports.filterPlainObject = exports.filterStringOrStringArray = exports.filterStringArray = exports.filterString = exports.filterPrimitives = exports.filterArray = exports.filterType = void 0;
-    var util_1 = require_util();
-    function filterType(input, filter, def) {
-      if (filter(input)) {
-        return input;
-      }
-      return arguments.length > 2 ? def : void 0;
-    }
-    exports.filterType = filterType;
-    var filterArray = (input) => {
-      return Array.isArray(input);
-    };
-    exports.filterArray = filterArray;
-    function filterPrimitives(input, omit) {
-      return /number|string|boolean/.test(typeof input) && (!omit || !omit.includes(typeof input));
-    }
-    exports.filterPrimitives = filterPrimitives;
-    var filterString = (input) => {
-      return typeof input === "string";
-    };
-    exports.filterString = filterString;
-    var filterStringArray = (input) => {
-      return Array.isArray(input) && input.every(exports.filterString);
-    };
-    exports.filterStringArray = filterStringArray;
-    var filterStringOrStringArray = (input) => {
-      return exports.filterString(input) || Array.isArray(input) && input.every(exports.filterString);
-    };
-    exports.filterStringOrStringArray = filterStringOrStringArray;
-    function filterPlainObject(input) {
-      return !!input && util_1.objectToString(input) === "[object Object]";
-    }
-    exports.filterPlainObject = filterPlainObject;
-    function filterFunction(input) {
-      return typeof input === "function";
-    }
-    exports.filterFunction = filterFunction;
-    var filterHasLength = (input) => {
-      if (input == null || "number|boolean|function".includes(typeof input)) {
-        return false;
-      }
-      return Array.isArray(input) || typeof input === "string" || typeof input.length === "number";
-    };
-    exports.filterHasLength = filterHasLength;
-  }
-});
-
-// node_modules/simple-git/src/lib/utils/exit-codes.js
-var require_exit_codes = __commonJS({
-  "node_modules/simple-git/src/lib/utils/exit-codes.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.ExitCodes = void 0;
-    var ExitCodes;
-    (function(ExitCodes2) {
-      ExitCodes2[ExitCodes2["SUCCESS"] = 0] = "SUCCESS";
-      ExitCodes2[ExitCodes2["ERROR"] = 1] = "ERROR";
-      ExitCodes2[ExitCodes2["UNCLEAN"] = 128] = "UNCLEAN";
-    })(ExitCodes = exports.ExitCodes || (exports.ExitCodes = {}));
-  }
-});
-
-// node_modules/simple-git/src/lib/utils/git-output-streams.js
-var require_git_output_streams = __commonJS({
-  "node_modules/simple-git/src/lib/utils/git-output-streams.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.GitOutputStreams = void 0;
-    var GitOutputStreams = class {
-      constructor(stdOut, stdErr) {
-        this.stdOut = stdOut;
-        this.stdErr = stdErr;
-      }
-      asStrings() {
-        return new GitOutputStreams(this.stdOut.toString("utf8"), this.stdErr.toString("utf8"));
-      }
-    };
-    exports.GitOutputStreams = GitOutputStreams;
-  }
-});
-
-// node_modules/simple-git/src/lib/utils/line-parser.js
-var require_line_parser = __commonJS({
-  "node_modules/simple-git/src/lib/utils/line-parser.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.RemoteLineParser = exports.LineParser = void 0;
-    var LineParser = class {
-      constructor(regExp, useMatches) {
-        this.matches = [];
-        this.parse = (line, target) => {
-          this.resetMatches();
-          if (!this._regExp.every((reg, index) => this.addMatch(reg, index, line(index)))) {
-            return false;
-          }
-          return this.useMatches(target, this.prepareMatches()) !== false;
-        };
-        this._regExp = Array.isArray(regExp) ? regExp : [regExp];
-        if (useMatches) {
-          this.useMatches = useMatches;
-        }
-      }
-      useMatches(target, match) {
-        throw new Error(`LineParser:useMatches not implemented`);
-      }
-      resetMatches() {
-        this.matches.length = 0;
-      }
-      prepareMatches() {
-        return this.matches;
-      }
-      addMatch(reg, index, line) {
-        const matched = line && reg.exec(line);
-        if (matched) {
-          this.pushMatch(index, matched);
-        }
-        return !!matched;
-      }
-      pushMatch(_index, matched) {
-        this.matches.push(...matched.slice(1));
-      }
-    };
-    exports.LineParser = LineParser;
-    var RemoteLineParser = class extends LineParser {
-      addMatch(reg, index, line) {
-        return /^remote:\s/.test(String(line)) && super.addMatch(reg, index, line);
-      }
-      pushMatch(index, matched) {
-        if (index > 0 || matched.length > 1) {
-          super.pushMatch(index, matched);
-        }
-      }
-    };
-    exports.RemoteLineParser = RemoteLineParser;
-  }
-});
-
-// node_modules/simple-git/src/lib/utils/simple-git-options.js
-var require_simple_git_options = __commonJS({
-  "node_modules/simple-git/src/lib/utils/simple-git-options.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.createInstanceConfig = void 0;
-    var defaultOptions = {
-      binary: "git",
-      maxConcurrentProcesses: 5,
-      config: []
-    };
-    function createInstanceConfig(...options) {
-      const baseDir = process.cwd();
-      const config = Object.assign(Object.assign({ baseDir }, defaultOptions), ...options.filter((o) => typeof o === "object" && o));
-      config.baseDir = config.baseDir || baseDir;
-      return config;
-    }
-    exports.createInstanceConfig = createInstanceConfig;
-  }
-});
-
-// node_modules/simple-git/src/lib/utils/task-options.js
-var require_task_options = __commonJS({
-  "node_modules/simple-git/src/lib/utils/task-options.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.trailingFunctionArgument = exports.trailingOptionsArgument = exports.getTrailingOptions = exports.appendTaskOptions = void 0;
-    var argument_filters_1 = require_argument_filters();
-    var util_1 = require_util();
-    function appendTaskOptions(options, commands = []) {
-      if (!argument_filters_1.filterPlainObject(options)) {
-        return commands;
-      }
-      return Object.keys(options).reduce((commands2, key2) => {
-        const value = options[key2];
-        if (argument_filters_1.filterPrimitives(value, ["boolean"])) {
-          commands2.push(key2 + "=" + value);
-        } else {
-          commands2.push(key2);
-        }
-        return commands2;
-      }, commands);
-    }
-    exports.appendTaskOptions = appendTaskOptions;
-    function getTrailingOptions(args, initialPrimitive = 0, objectOnly = false) {
-      const command = [];
-      for (let i = 0, max = initialPrimitive < 0 ? args.length : initialPrimitive; i < max; i++) {
-        if ("string|number".includes(typeof args[i])) {
-          command.push(String(args[i]));
-        }
-      }
-      appendTaskOptions(trailingOptionsArgument(args), command);
-      if (!objectOnly) {
-        command.push(...trailingArrayArgument(args));
-      }
-      return command;
-    }
-    exports.getTrailingOptions = getTrailingOptions;
-    function trailingArrayArgument(args) {
-      const hasTrailingCallback = typeof util_1.last(args) === "function";
-      return argument_filters_1.filterType(util_1.last(args, hasTrailingCallback ? 1 : 0), argument_filters_1.filterArray, []);
-    }
-    function trailingOptionsArgument(args) {
-      const hasTrailingCallback = argument_filters_1.filterFunction(util_1.last(args));
-      return argument_filters_1.filterType(util_1.last(args, hasTrailingCallback ? 1 : 0), argument_filters_1.filterPlainObject);
-    }
-    exports.trailingOptionsArgument = trailingOptionsArgument;
-    function trailingFunctionArgument(args, includeNoop = true) {
-      const callback = util_1.asFunction(util_1.last(args));
-      return includeNoop || util_1.isUserFunction(callback) ? callback : void 0;
-    }
-    exports.trailingFunctionArgument = trailingFunctionArgument;
-  }
-});
-
-// node_modules/simple-git/src/lib/utils/task-parser.js
-var require_task_parser = __commonJS({
-  "node_modules/simple-git/src/lib/utils/task-parser.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseStringResponse = exports.callTaskParser = void 0;
-    var util_1 = require_util();
-    function callTaskParser(parser, streams) {
-      return parser(streams.stdOut, streams.stdErr);
-    }
-    exports.callTaskParser = callTaskParser;
-    function parseStringResponse(result, parsers, ...texts) {
-      texts.forEach((text2) => {
-        for (let lines = util_1.toLinesWithContent(text2), i = 0, max = lines.length; i < max; i++) {
-          const line = (offset = 0) => {
-            if (i + offset >= max) {
-              return;
-            }
-            return lines[i + offset];
-          };
-          parsers.some(({ parse }) => parse(line, result));
-        }
-      });
-      return result;
-    }
-    exports.parseStringResponse = parseStringResponse;
-  }
-});
-
-// node_modules/simple-git/src/lib/utils/index.js
-var require_utils = __commonJS({
-  "node_modules/simple-git/src/lib/utils/index.js"(exports) {
-    "use strict";
-    var __createBinding2 = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
-      if (k2 === void 0)
-        k2 = k;
-      Object.defineProperty(o, k2, { enumerable: true, get: function() {
-        return m[k];
-      } });
-    } : function(o, m, k, k2) {
-      if (k2 === void 0)
-        k2 = k;
-      o[k2] = m[k];
-    });
-    var __exportStar2 = exports && exports.__exportStar || function(m, exports2) {
-      for (var p in m)
-        if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports2, p))
-          __createBinding2(exports2, m, p);
-    };
-    Object.defineProperty(exports, "__esModule", { value: true });
-    __exportStar2(require_argument_filters(), exports);
-    __exportStar2(require_exit_codes(), exports);
-    __exportStar2(require_git_output_streams(), exports);
-    __exportStar2(require_line_parser(), exports);
-    __exportStar2(require_simple_git_options(), exports);
-    __exportStar2(require_task_options(), exports);
-    __exportStar2(require_task_parser(), exports);
-    __exportStar2(require_util(), exports);
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/check-is-repo.js
-var require_check_is_repo = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/check-is-repo.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.checkIsBareRepoTask = exports.checkIsRepoRootTask = exports.checkIsRepoTask = exports.CheckRepoActions = void 0;
-    var utils_1 = require_utils();
-    var CheckRepoActions;
-    (function(CheckRepoActions2) {
-      CheckRepoActions2["BARE"] = "bare";
-      CheckRepoActions2["IN_TREE"] = "tree";
-      CheckRepoActions2["IS_REPO_ROOT"] = "root";
-    })(CheckRepoActions = exports.CheckRepoActions || (exports.CheckRepoActions = {}));
-    var onError = ({ exitCode }, error, done, fail) => {
-      if (exitCode === utils_1.ExitCodes.UNCLEAN && isNotRepoMessage(error)) {
-        return done(Buffer.from("false"));
-      }
-      fail(error);
-    };
-    var parser = (text2) => {
-      return text2.trim() === "true";
-    };
-    function checkIsRepoTask(action) {
-      switch (action) {
-        case CheckRepoActions.BARE:
-          return checkIsBareRepoTask();
-        case CheckRepoActions.IS_REPO_ROOT:
-          return checkIsRepoRootTask();
-      }
-      const commands = ["rev-parse", "--is-inside-work-tree"];
-      return {
-        commands,
-        format: "utf-8",
-        onError,
-        parser
-      };
-    }
-    exports.checkIsRepoTask = checkIsRepoTask;
-    function checkIsRepoRootTask() {
-      const commands = ["rev-parse", "--git-dir"];
-      return {
-        commands,
-        format: "utf-8",
-        onError,
-        parser(path3) {
-          return /^\.(git)?$/.test(path3.trim());
-        }
-      };
-    }
-    exports.checkIsRepoRootTask = checkIsRepoRootTask;
-    function checkIsBareRepoTask() {
-      const commands = ["rev-parse", "--is-bare-repository"];
-      return {
-        commands,
-        format: "utf-8",
-        onError,
-        parser
-      };
-    }
-    exports.checkIsBareRepoTask = checkIsBareRepoTask;
-    function isNotRepoMessage(error) {
-      return /(Not a git repository|Kein Git-Repository)/i.test(String(error));
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/CleanSummary.js
-var require_CleanSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/CleanSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.cleanSummaryParser = exports.CleanResponse = void 0;
-    var utils_1 = require_utils();
-    var CleanResponse = class {
-      constructor(dryRun) {
-        this.dryRun = dryRun;
-        this.paths = [];
-        this.files = [];
-        this.folders = [];
-      }
-    };
-    exports.CleanResponse = CleanResponse;
-    var removalRegexp = /^[a-z]+\s*/i;
-    var dryRunRemovalRegexp = /^[a-z]+\s+[a-z]+\s*/i;
-    var isFolderRegexp = /\/$/;
-    function cleanSummaryParser(dryRun, text2) {
-      const summary = new CleanResponse(dryRun);
-      const regexp = dryRun ? dryRunRemovalRegexp : removalRegexp;
-      utils_1.toLinesWithContent(text2).forEach((line) => {
-        const removed = line.replace(regexp, "");
-        summary.paths.push(removed);
-        (isFolderRegexp.test(removed) ? summary.folders : summary.files).push(removed);
-      });
-      return summary;
-    }
-    exports.cleanSummaryParser = cleanSummaryParser;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/task.js
-var require_task = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/task.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.isEmptyTask = exports.isBufferTask = exports.straightThroughBufferTask = exports.straightThroughStringTask = exports.configurationErrorTask = exports.adhocExecTask = exports.EMPTY_COMMANDS = void 0;
-    var task_configuration_error_1 = require_task_configuration_error();
-    exports.EMPTY_COMMANDS = [];
-    function adhocExecTask(parser) {
-      return {
-        commands: exports.EMPTY_COMMANDS,
-        format: "empty",
-        parser
-      };
-    }
-    exports.adhocExecTask = adhocExecTask;
-    function configurationErrorTask(error) {
-      return {
-        commands: exports.EMPTY_COMMANDS,
-        format: "empty",
-        parser() {
-          throw typeof error === "string" ? new task_configuration_error_1.TaskConfigurationError(error) : error;
-        }
-      };
-    }
-    exports.configurationErrorTask = configurationErrorTask;
-    function straightThroughStringTask(commands, trimmed = false) {
-      return {
-        commands,
-        format: "utf-8",
-        parser(text2) {
-          return trimmed ? String(text2).trim() : text2;
-        }
-      };
-    }
-    exports.straightThroughStringTask = straightThroughStringTask;
-    function straightThroughBufferTask(commands) {
-      return {
-        commands,
-        format: "buffer",
-        parser(buffer) {
-          return buffer;
-        }
-      };
-    }
-    exports.straightThroughBufferTask = straightThroughBufferTask;
-    function isBufferTask(task) {
-      return task.format === "buffer";
-    }
-    exports.isBufferTask = isBufferTask;
-    function isEmptyTask(task) {
-      return task.format === "empty" || !task.commands.length;
-    }
-    exports.isEmptyTask = isEmptyTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/clean.js
-var require_clean = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/clean.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.isCleanOptionsArray = exports.cleanTask = exports.cleanWithOptionsTask = exports.CleanOptions = exports.CONFIG_ERROR_UNKNOWN_OPTION = exports.CONFIG_ERROR_MODE_REQUIRED = exports.CONFIG_ERROR_INTERACTIVE_MODE = void 0;
-    var CleanSummary_1 = require_CleanSummary();
-    var utils_1 = require_utils();
-    var task_1 = require_task();
-    exports.CONFIG_ERROR_INTERACTIVE_MODE = "Git clean interactive mode is not supported";
-    exports.CONFIG_ERROR_MODE_REQUIRED = 'Git clean mode parameter ("n" or "f") is required';
-    exports.CONFIG_ERROR_UNKNOWN_OPTION = "Git clean unknown option found in: ";
-    var CleanOptions;
-    (function(CleanOptions2) {
-      CleanOptions2["DRY_RUN"] = "n";
-      CleanOptions2["FORCE"] = "f";
-      CleanOptions2["IGNORED_INCLUDED"] = "x";
-      CleanOptions2["IGNORED_ONLY"] = "X";
-      CleanOptions2["EXCLUDING"] = "e";
-      CleanOptions2["QUIET"] = "q";
-      CleanOptions2["RECURSIVE"] = "d";
-    })(CleanOptions = exports.CleanOptions || (exports.CleanOptions = {}));
-    var CleanOptionValues = new Set(["i", ...utils_1.asStringArray(Object.values(CleanOptions))]);
-    function cleanWithOptionsTask(mode, customArgs) {
-      const { cleanMode, options, valid } = getCleanOptions(mode);
-      if (!cleanMode) {
-        return task_1.configurationErrorTask(exports.CONFIG_ERROR_MODE_REQUIRED);
-      }
-      if (!valid.options) {
-        return task_1.configurationErrorTask(exports.CONFIG_ERROR_UNKNOWN_OPTION + JSON.stringify(mode));
-      }
-      options.push(...customArgs);
-      if (options.some(isInteractiveMode)) {
-        return task_1.configurationErrorTask(exports.CONFIG_ERROR_INTERACTIVE_MODE);
-      }
-      return cleanTask(cleanMode, options);
-    }
-    exports.cleanWithOptionsTask = cleanWithOptionsTask;
-    function cleanTask(mode, customArgs) {
-      const commands = ["clean", `-${mode}`, ...customArgs];
-      return {
-        commands,
-        format: "utf-8",
-        parser(text2) {
-          return CleanSummary_1.cleanSummaryParser(mode === CleanOptions.DRY_RUN, text2);
-        }
-      };
-    }
-    exports.cleanTask = cleanTask;
-    function isCleanOptionsArray(input) {
-      return Array.isArray(input) && input.every((test) => CleanOptionValues.has(test));
-    }
-    exports.isCleanOptionsArray = isCleanOptionsArray;
-    function getCleanOptions(input) {
-      let cleanMode;
-      let options = [];
-      let valid = { cleanMode: false, options: true };
-      input.replace(/[^a-z]i/g, "").split("").forEach((char) => {
-        if (isCleanMode(char)) {
-          cleanMode = char;
-          valid.cleanMode = true;
-        } else {
-          valid.options = valid.options && isKnownOption(options[options.length] = `-${char}`);
-        }
-      });
-      return {
-        cleanMode,
-        options,
-        valid
-      };
-    }
-    function isCleanMode(cleanMode) {
-      return cleanMode === CleanOptions.FORCE || cleanMode === CleanOptions.DRY_RUN;
-    }
-    function isKnownOption(option) {
-      return /^-[a-z]$/i.test(option) && CleanOptionValues.has(option.charAt(1));
-    }
-    function isInteractiveMode(option) {
-      if (/^-[^\-]/.test(option)) {
-        return option.indexOf("i") > 0;
-      }
-      return option === "--interactive";
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/ConfigList.js
-var require_ConfigList = __commonJS({
-  "node_modules/simple-git/src/lib/responses/ConfigList.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.configGetParser = exports.configListParser = exports.ConfigList = void 0;
-    var utils_1 = require_utils();
-    var ConfigList = class {
-      constructor() {
-        this.files = [];
-        this.values = Object.create(null);
-      }
-      get all() {
-        if (!this._all) {
-          this._all = this.files.reduce((all, file) => {
-            return Object.assign(all, this.values[file]);
-          }, {});
-        }
-        return this._all;
-      }
-      addFile(file) {
-        if (!(file in this.values)) {
-          const latest = utils_1.last(this.files);
-          this.values[file] = latest ? Object.create(this.values[latest]) : {};
-          this.files.push(file);
-        }
-        return this.values[file];
-      }
-      addValue(file, key2, value) {
-        const values = this.addFile(file);
-        if (!values.hasOwnProperty(key2)) {
-          values[key2] = value;
-        } else if (Array.isArray(values[key2])) {
-          values[key2].push(value);
-        } else {
-          values[key2] = [values[key2], value];
-        }
-        this._all = void 0;
-      }
-    };
-    exports.ConfigList = ConfigList;
-    function configListParser(text2) {
-      const config = new ConfigList();
-      for (const item of configParser(text2)) {
-        config.addValue(item.file, String(item.key), item.value);
-      }
-      return config;
-    }
-    exports.configListParser = configListParser;
-    function configGetParser(text2, key2) {
-      let value = null;
-      const values = [];
-      const scopes = new Map();
-      for (const item of configParser(text2, key2)) {
-        if (item.key !== key2) {
-          continue;
-        }
-        values.push(value = item.value);
-        if (!scopes.has(item.file)) {
-          scopes.set(item.file, []);
-        }
-        scopes.get(item.file).push(value);
-      }
-      return {
-        key: key2,
-        paths: Array.from(scopes.keys()),
-        scopes,
-        value,
-        values
-      };
-    }
-    exports.configGetParser = configGetParser;
-    function configFilePath(filePath) {
-      return filePath.replace(/^(file):/, "");
-    }
-    function* configParser(text2, requestedKey = null) {
-      const lines = text2.split("\0");
-      for (let i = 0, max = lines.length - 1; i < max; ) {
-        const file = configFilePath(lines[i++]);
-        let value = lines[i++];
-        let key2 = requestedKey;
-        if (value.includes("\n")) {
-          const line = utils_1.splitOn(value, "\n");
-          key2 = line[0];
-          value = line[1];
-        }
-        yield { file, key: key2, value };
-      }
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/config.js
-var require_config = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/config.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.GitConfigScope = void 0;
-    var ConfigList_1 = require_ConfigList();
-    var utils_1 = require_utils();
-    var GitConfigScope;
-    (function(GitConfigScope2) {
-      GitConfigScope2["system"] = "system";
-      GitConfigScope2["global"] = "global";
-      GitConfigScope2["local"] = "local";
-      GitConfigScope2["worktree"] = "worktree";
-    })(GitConfigScope = exports.GitConfigScope || (exports.GitConfigScope = {}));
-    function asConfigScope(scope, fallback) {
-      if (typeof scope === "string" && GitConfigScope.hasOwnProperty(scope)) {
-        return scope;
-      }
-      return fallback;
-    }
-    function addConfigTask(key2, value, append2, scope) {
-      const commands = ["config", `--${scope}`];
-      if (append2) {
-        commands.push("--add");
-      }
-      commands.push(key2, value);
-      return {
-        commands,
-        format: "utf-8",
-        parser(text2) {
-          return text2;
-        }
-      };
-    }
-    function getConfigTask(key2, scope) {
-      const commands = ["config", "--null", "--show-origin", "--get-all", key2];
-      if (scope) {
-        commands.splice(1, 0, `--${scope}`);
-      }
-      return {
-        commands,
-        format: "utf-8",
-        parser(text2) {
-          return ConfigList_1.configGetParser(text2, key2);
-        }
-      };
-    }
-    function listConfigTask(scope) {
-      const commands = ["config", "--list", "--show-origin", "--null"];
-      if (scope) {
-        commands.push(`--${scope}`);
-      }
-      return {
-        commands,
-        format: "utf-8",
-        parser(text2) {
-          return ConfigList_1.configListParser(text2);
-        }
-      };
-    }
-    function default_1() {
-      return {
-        addConfig(key2, value, ...rest) {
-          return this._runTask(addConfigTask(key2, value, rest[0] === true, asConfigScope(rest[1], GitConfigScope.local)), utils_1.trailingFunctionArgument(arguments));
-        },
-        getConfig(key2, scope) {
-          return this._runTask(getConfigTask(key2, asConfigScope(scope, void 0)), utils_1.trailingFunctionArgument(arguments));
-        },
-        listConfig(...rest) {
-          return this._runTask(listConfigTask(asConfigScope(rest[0], void 0)), utils_1.trailingFunctionArgument(arguments));
-        }
-      };
-    }
-    exports.default = default_1;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/grep.js
-var require_grep = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/grep.js"(exports) {
-    "use strict";
-    var _a;
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.grepQueryBuilder = void 0;
-    var utils_1 = require_utils();
-    var task_1 = require_task();
-    var disallowedOptions = ["-h"];
-    var Query = Symbol("grepQuery");
-    var GrepQuery = class {
-      constructor() {
-        this[_a] = [];
-      }
-      *[(_a = Query, Symbol.iterator)]() {
-        for (const query of this[Query]) {
-          yield query;
-        }
-      }
-      and(...and) {
-        and.length && this[Query].push("--and", "(", ...utils_1.prefixedArray(and, "-e"), ")");
-        return this;
-      }
-      param(...param) {
-        this[Query].push(...utils_1.prefixedArray(param, "-e"));
-        return this;
-      }
-    };
-    function grepQueryBuilder(...params) {
-      return new GrepQuery().param(...params);
-    }
-    exports.grepQueryBuilder = grepQueryBuilder;
-    function parseGrep(grep) {
-      const paths = new Set();
-      const results = {};
-      utils_1.forEachLineWithContent(grep, (input) => {
-        const [path3, line, preview] = input.split(utils_1.NULL);
-        paths.add(path3);
-        (results[path3] = results[path3] || []).push({
-          line: utils_1.asNumber(line),
-          path: path3,
-          preview
-        });
-      });
-      return {
-        paths,
-        results
-      };
-    }
-    function default_1() {
-      return {
-        grep(searchTerm) {
-          const then = utils_1.trailingFunctionArgument(arguments);
-          const options = utils_1.getTrailingOptions(arguments);
-          for (const option of disallowedOptions) {
-            if (options.includes(option)) {
-              return this._runTask(task_1.configurationErrorTask(`git.grep: use of "${option}" is not supported.`), then);
-            }
-          }
-          if (typeof searchTerm === "string") {
-            searchTerm = grepQueryBuilder().param(searchTerm);
-          }
-          const commands = ["grep", "--null", "-n", "--full-name", ...options, ...searchTerm];
-          return this._runTask({
-            commands,
-            format: "utf-8",
-            parser(stdOut) {
-              return parseGrep(stdOut);
-            }
-          }, then);
-        }
-      };
-    }
-    exports.default = default_1;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/reset.js
-var require_reset = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/reset.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.getResetMode = exports.resetTask = exports.ResetMode = void 0;
-    var task_1 = require_task();
-    var ResetMode;
-    (function(ResetMode2) {
-      ResetMode2["MIXED"] = "mixed";
-      ResetMode2["SOFT"] = "soft";
-      ResetMode2["HARD"] = "hard";
-      ResetMode2["MERGE"] = "merge";
-      ResetMode2["KEEP"] = "keep";
-    })(ResetMode = exports.ResetMode || (exports.ResetMode = {}));
-    var ResetModes = Array.from(Object.values(ResetMode));
-    function resetTask(mode, customArgs) {
-      const commands = ["reset"];
-      if (isValidResetMode(mode)) {
-        commands.push(`--${mode}`);
-      }
-      commands.push(...customArgs);
-      return task_1.straightThroughStringTask(commands);
-    }
-    exports.resetTask = resetTask;
-    function getResetMode(mode) {
-      if (isValidResetMode(mode)) {
-        return mode;
-      }
-      switch (typeof mode) {
-        case "string":
-        case "undefined":
-          return ResetMode.SOFT;
-      }
-      return;
-    }
-    exports.getResetMode = getResetMode;
-    function isValidResetMode(mode) {
-      return ResetModes.includes(mode);
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/api.js
-var require_api = __commonJS({
-  "node_modules/simple-git/src/lib/api.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    var git_construct_error_1 = require_git_construct_error();
-    var git_error_1 = require_git_error();
-    var git_plugin_error_1 = require_git_plugin_error();
-    var git_response_error_1 = require_git_response_error();
-    var task_configuration_error_1 = require_task_configuration_error();
-    var check_is_repo_1 = require_check_is_repo();
-    var clean_1 = require_clean();
-    var config_1 = require_config();
-    var grep_1 = require_grep();
-    var reset_1 = require_reset();
-    var api = {
-      CheckRepoActions: check_is_repo_1.CheckRepoActions,
-      CleanOptions: clean_1.CleanOptions,
-      GitConfigScope: config_1.GitConfigScope,
-      GitConstructError: git_construct_error_1.GitConstructError,
-      GitError: git_error_1.GitError,
-      GitPluginError: git_plugin_error_1.GitPluginError,
-      GitResponseError: git_response_error_1.GitResponseError,
-      ResetMode: reset_1.ResetMode,
-      TaskConfigurationError: task_configuration_error_1.TaskConfigurationError,
-      grepQueryBuilder: grep_1.grepQueryBuilder
-    };
-    exports.default = api;
-  }
-});
-
-// node_modules/simple-git/src/lib/plugins/command-config-prefixing-plugin.js
-var require_command_config_prefixing_plugin = __commonJS({
-  "node_modules/simple-git/src/lib/plugins/command-config-prefixing-plugin.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.commandConfigPrefixingPlugin = void 0;
-    var utils_1 = require_utils();
-    function commandConfigPrefixingPlugin(configuration) {
-      const prefix = utils_1.prefixedArray(configuration, "-c");
-      return {
-        type: "spawn.args",
-        action(data) {
-          return [...prefix, ...data];
-        }
-      };
-    }
-    exports.commandConfigPrefixingPlugin = commandConfigPrefixingPlugin;
+    __export3(require_src2());
   }
 });
 
@@ -1947,7 +868,7 @@ var require_dist2 = __commonJS({
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.createDeferred = exports.deferred = void 0;
-    function deferred() {
+    function deferred2() {
       let done;
       let fail;
       let status = "pending";
@@ -1977,3007 +898,9 @@ var require_dist2 = __commonJS({
         }
       };
     }
-    exports.deferred = deferred;
-    exports.createDeferred = deferred;
-    exports.default = deferred;
-  }
-});
-
-// node_modules/simple-git/src/lib/plugins/completion-detection.plugin.js
-var require_completion_detection_plugin = __commonJS({
-  "node_modules/simple-git/src/lib/plugins/completion-detection.plugin.js"(exports) {
-    "use strict";
-    var __awaiter2 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
-      function adopt(value) {
-        return value instanceof P ? value : new P(function(resolve) {
-          resolve(value);
-        });
-      }
-      return new (P || (P = Promise))(function(resolve, reject) {
-        function fulfilled(value) {
-          try {
-            step(generator.next(value));
-          } catch (e) {
-            reject(e);
-          }
-        }
-        function rejected(value) {
-          try {
-            step(generator["throw"](value));
-          } catch (e) {
-            reject(e);
-          }
-        }
-        function step(result) {
-          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
-        }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-      });
-    };
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.completionDetectionPlugin = void 0;
-    var promise_deferred_1 = require_dist2();
-    var utils_1 = require_utils();
-    var never = promise_deferred_1.default().promise;
-    function completionDetectionPlugin({ onClose = true, onExit = 50 } = {}) {
-      function createEvents() {
-        let exitCode = -1;
-        const events = {
-          close: promise_deferred_1.default(),
-          closeTimeout: promise_deferred_1.default(),
-          exit: promise_deferred_1.default(),
-          exitTimeout: promise_deferred_1.default()
-        };
-        const result = Promise.race([
-          onClose === false ? never : events.closeTimeout.promise,
-          onExit === false ? never : events.exitTimeout.promise
-        ]);
-        configureTimeout(onClose, events.close, events.closeTimeout);
-        configureTimeout(onExit, events.exit, events.exitTimeout);
-        return {
-          close(code) {
-            exitCode = code;
-            events.close.done();
-          },
-          exit(code) {
-            exitCode = code;
-            events.exit.done();
-          },
-          get exitCode() {
-            return exitCode;
-          },
-          result
-        };
-      }
-      function configureTimeout(flag, event, timeout) {
-        if (flag === false) {
-          return;
-        }
-        (flag === true ? event.promise : event.promise.then(() => utils_1.delay(flag))).then(timeout.done);
-      }
-      return {
-        type: "spawn.after",
-        action(_data, { spawned, close }) {
-          var _a, _b;
-          return __awaiter2(this, void 0, void 0, function* () {
-            const events = createEvents();
-            let deferClose = true;
-            let quickClose = () => void (deferClose = false);
-            (_a = spawned.stdout) === null || _a === void 0 ? void 0 : _a.on("data", quickClose);
-            (_b = spawned.stderr) === null || _b === void 0 ? void 0 : _b.on("data", quickClose);
-            spawned.on("error", quickClose);
-            spawned.on("close", (code) => events.close(code));
-            spawned.on("exit", (code) => events.exit(code));
-            try {
-              yield events.result;
-              if (deferClose) {
-                yield utils_1.delay(50);
-              }
-              close(events.exitCode);
-            } catch (err) {
-              close(events.exitCode, err);
-            }
-          });
-        }
-      };
-    }
-    exports.completionDetectionPlugin = completionDetectionPlugin;
-  }
-});
-
-// node_modules/simple-git/src/lib/plugins/error-detection.plugin.js
-var require_error_detection_plugin = __commonJS({
-  "node_modules/simple-git/src/lib/plugins/error-detection.plugin.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.errorDetectionPlugin = exports.errorDetectionHandler = void 0;
-    var git_error_1 = require_git_error();
-    function isTaskError(result) {
-      return !!(result.exitCode && result.stdErr.length);
-    }
-    function getErrorMessage(result) {
-      return Buffer.concat([...result.stdOut, ...result.stdErr]);
-    }
-    function errorDetectionHandler(overwrite = false, isError = isTaskError, errorMessage = getErrorMessage) {
-      return (error, result) => {
-        if (!overwrite && error || !isError(result)) {
-          return error;
-        }
-        return errorMessage(result);
-      };
-    }
-    exports.errorDetectionHandler = errorDetectionHandler;
-    function errorDetectionPlugin(config) {
-      return {
-        type: "task.error",
-        action(data, context) {
-          const error = config(data.error, {
-            stdErr: context.stdErr,
-            stdOut: context.stdOut,
-            exitCode: context.exitCode
-          });
-          if (Buffer.isBuffer(error)) {
-            return { error: new git_error_1.GitError(void 0, error.toString("utf-8")) };
-          }
-          return {
-            error
-          };
-        }
-      };
-    }
-    exports.errorDetectionPlugin = errorDetectionPlugin;
-  }
-});
-
-// node_modules/simple-git/src/lib/plugins/plugin-store.js
-var require_plugin_store = __commonJS({
-  "node_modules/simple-git/src/lib/plugins/plugin-store.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.PluginStore = void 0;
-    var utils_1 = require_utils();
-    var PluginStore = class {
-      constructor() {
-        this.plugins = new Set();
-      }
-      add(plugin) {
-        const plugins = [];
-        utils_1.asArray(plugin).forEach((plugin2) => plugin2 && this.plugins.add(utils_1.append(plugins, plugin2)));
-        return () => {
-          plugins.forEach((plugin2) => this.plugins.delete(plugin2));
-        };
-      }
-      exec(type, data, context) {
-        let output = data;
-        const contextual = Object.freeze(Object.create(context));
-        for (const plugin of this.plugins) {
-          if (plugin.type === type) {
-            output = plugin.action(output, contextual);
-          }
-        }
-        return output;
-      }
-    };
-    exports.PluginStore = PluginStore;
-  }
-});
-
-// node_modules/simple-git/src/lib/plugins/progress-monitor-plugin.js
-var require_progress_monitor_plugin = __commonJS({
-  "node_modules/simple-git/src/lib/plugins/progress-monitor-plugin.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.progressMonitorPlugin = void 0;
-    var utils_1 = require_utils();
-    function progressMonitorPlugin(progress) {
-      const progressCommand = "--progress";
-      const progressMethods = ["checkout", "clone", "fetch", "pull", "push"];
-      const onProgress = {
-        type: "spawn.after",
-        action(_data, context) {
-          var _a;
-          if (!context.commands.includes(progressCommand)) {
-            return;
-          }
-          (_a = context.spawned.stderr) === null || _a === void 0 ? void 0 : _a.on("data", (chunk) => {
-            const message = /^([\s\S]+?):\s*(\d+)% \((\d+)\/(\d+)\)/.exec(chunk.toString("utf8"));
-            if (!message) {
-              return;
-            }
-            progress({
-              method: context.method,
-              stage: progressEventStage(message[1]),
-              progress: utils_1.asNumber(message[2]),
-              processed: utils_1.asNumber(message[3]),
-              total: utils_1.asNumber(message[4])
-            });
-          });
-        }
-      };
-      const onArgs = {
-        type: "spawn.args",
-        action(args, context) {
-          if (!progressMethods.includes(context.method)) {
-            return args;
-          }
-          return utils_1.including(args, progressCommand);
-        }
-      };
-      return [onArgs, onProgress];
-    }
-    exports.progressMonitorPlugin = progressMonitorPlugin;
-    function progressEventStage(input) {
-      return String(input.toLowerCase().split(" ", 1)) || "unknown";
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/plugins/simple-git-plugin.js
-var require_simple_git_plugin = __commonJS({
-  "node_modules/simple-git/src/lib/plugins/simple-git-plugin.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-  }
-});
-
-// node_modules/simple-git/src/lib/plugins/spawn-options-plugin.js
-var require_spawn_options_plugin = __commonJS({
-  "node_modules/simple-git/src/lib/plugins/spawn-options-plugin.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.spawnOptionsPlugin = void 0;
-    var utils_1 = require_utils();
-    function spawnOptionsPlugin(spawnOptions) {
-      const options = utils_1.pick(spawnOptions, ["uid", "gid"]);
-      return {
-        type: "spawn.options",
-        action(data) {
-          return Object.assign(Object.assign({}, options), data);
-        }
-      };
-    }
-    exports.spawnOptionsPlugin = spawnOptionsPlugin;
-  }
-});
-
-// node_modules/simple-git/src/lib/plugins/timout-plugin.js
-var require_timout_plugin = __commonJS({
-  "node_modules/simple-git/src/lib/plugins/timout-plugin.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.timeoutPlugin = void 0;
-    var git_plugin_error_1 = require_git_plugin_error();
-    function timeoutPlugin({ block }) {
-      if (block > 0) {
-        return {
-          type: "spawn.after",
-          action(_data, context) {
-            var _a, _b;
-            let timeout;
-            function wait3() {
-              timeout && clearTimeout(timeout);
-              timeout = setTimeout(kill, block);
-            }
-            function stop() {
-              var _a2, _b2;
-              (_a2 = context.spawned.stdout) === null || _a2 === void 0 ? void 0 : _a2.off("data", wait3);
-              (_b2 = context.spawned.stderr) === null || _b2 === void 0 ? void 0 : _b2.off("data", wait3);
-              context.spawned.off("exit", stop);
-              context.spawned.off("close", stop);
-            }
-            function kill() {
-              stop();
-              context.kill(new git_plugin_error_1.GitPluginError(void 0, "timeout", `block timeout reached`));
-            }
-            (_a = context.spawned.stdout) === null || _a === void 0 ? void 0 : _a.on("data", wait3);
-            (_b = context.spawned.stderr) === null || _b === void 0 ? void 0 : _b.on("data", wait3);
-            context.spawned.on("exit", stop);
-            context.spawned.on("close", stop);
-            wait3();
-          }
-        };
-      }
-    }
-    exports.timeoutPlugin = timeoutPlugin;
-  }
-});
-
-// node_modules/simple-git/src/lib/plugins/index.js
-var require_plugins = __commonJS({
-  "node_modules/simple-git/src/lib/plugins/index.js"(exports) {
-    "use strict";
-    var __createBinding2 = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
-      if (k2 === void 0)
-        k2 = k;
-      Object.defineProperty(o, k2, { enumerable: true, get: function() {
-        return m[k];
-      } });
-    } : function(o, m, k, k2) {
-      if (k2 === void 0)
-        k2 = k;
-      o[k2] = m[k];
-    });
-    var __exportStar2 = exports && exports.__exportStar || function(m, exports2) {
-      for (var p in m)
-        if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports2, p))
-          __createBinding2(exports2, m, p);
-    };
-    Object.defineProperty(exports, "__esModule", { value: true });
-    __exportStar2(require_command_config_prefixing_plugin(), exports);
-    __exportStar2(require_completion_detection_plugin(), exports);
-    __exportStar2(require_error_detection_plugin(), exports);
-    __exportStar2(require_plugin_store(), exports);
-    __exportStar2(require_progress_monitor_plugin(), exports);
-    __exportStar2(require_simple_git_plugin(), exports);
-    __exportStar2(require_spawn_options_plugin(), exports);
-    __exportStar2(require_timout_plugin(), exports);
-  }
-});
-
-// node_modules/simple-git/src/lib/git-logger.js
-var require_git_logger = __commonJS({
-  "node_modules/simple-git/src/lib/git-logger.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.GitLogger = exports.createLogger = void 0;
-    var debug_1 = require_src();
-    var utils_1 = require_utils();
-    debug_1.default.formatters.L = (value) => String(utils_1.filterHasLength(value) ? value.length : "-");
-    debug_1.default.formatters.B = (value) => {
-      if (Buffer.isBuffer(value)) {
-        return value.toString("utf8");
-      }
-      return utils_1.objectToString(value);
-    };
-    function createLog() {
-      return debug_1.default("simple-git");
-    }
-    function prefixedLogger(to, prefix, forward) {
-      if (!prefix || !String(prefix).replace(/\s*/, "")) {
-        return !forward ? to : (message, ...args) => {
-          to(message, ...args);
-          forward(message, ...args);
-        };
-      }
-      return (message, ...args) => {
-        to(`%s ${message}`, prefix, ...args);
-        if (forward) {
-          forward(message, ...args);
-        }
-      };
-    }
-    function childLoggerName(name, childDebugger, { namespace: parentNamespace }) {
-      if (typeof name === "string") {
-        return name;
-      }
-      const childNamespace = childDebugger && childDebugger.namespace || "";
-      if (childNamespace.startsWith(parentNamespace)) {
-        return childNamespace.substr(parentNamespace.length + 1);
-      }
-      return childNamespace || parentNamespace;
-    }
-    function createLogger(label, verbose, initialStep, infoDebugger = createLog()) {
-      const labelPrefix = label && `[${label}]` || "";
-      const spawned = [];
-      const debugDebugger = typeof verbose === "string" ? infoDebugger.extend(verbose) : verbose;
-      const key2 = childLoggerName(utils_1.filterType(verbose, utils_1.filterString), debugDebugger, infoDebugger);
-      return step(initialStep);
-      function sibling(name, initial) {
-        return utils_1.append(spawned, createLogger(label, key2.replace(/^[^:]+/, name), initial, infoDebugger));
-      }
-      function step(phase) {
-        const stepPrefix = phase && `[${phase}]` || "";
-        const debug = debugDebugger && prefixedLogger(debugDebugger, stepPrefix) || utils_1.NOOP;
-        const info = prefixedLogger(infoDebugger, `${labelPrefix} ${stepPrefix}`, debug);
-        return Object.assign(debugDebugger ? debug : info, {
-          label,
-          sibling,
-          info,
-          step
-        });
-      }
-    }
-    exports.createLogger = createLogger;
-    var GitLogger = class {
-      constructor(_out = createLog()) {
-        this._out = _out;
-        this.error = prefixedLogger(_out, "[ERROR]");
-        this.warn = prefixedLogger(_out, "[WARN]");
-      }
-      silent(silence = false) {
-        if (silence !== this._out.enabled) {
-          return;
-        }
-        const { namespace } = this._out;
-        const env = (process.env.DEBUG || "").split(",").filter((s) => !!s);
-        const hasOn = env.includes(namespace);
-        const hasOff = env.includes(`-${namespace}`);
-        if (!silence) {
-          if (hasOff) {
-            utils_1.remove(env, `-${namespace}`);
-          } else {
-            env.push(namespace);
-          }
-        } else {
-          if (hasOn) {
-            utils_1.remove(env, namespace);
-          } else {
-            env.push(`-${namespace}`);
-          }
-        }
-        debug_1.default.enable(env.join(","));
-      }
-    };
-    exports.GitLogger = GitLogger;
-  }
-});
-
-// node_modules/simple-git/src/lib/runners/tasks-pending-queue.js
-var require_tasks_pending_queue = __commonJS({
-  "node_modules/simple-git/src/lib/runners/tasks-pending-queue.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.TasksPendingQueue = void 0;
-    var git_error_1 = require_git_error();
-    var git_logger_1 = require_git_logger();
-    var TasksPendingQueue = class {
-      constructor(logLabel = "GitExecutor") {
-        this.logLabel = logLabel;
-        this._queue = new Map();
-      }
-      withProgress(task) {
-        return this._queue.get(task);
-      }
-      createProgress(task) {
-        const name = TasksPendingQueue.getName(task.commands[0]);
-        const logger = git_logger_1.createLogger(this.logLabel, name);
-        return {
-          task,
-          logger,
-          name
-        };
-      }
-      push(task) {
-        const progress = this.createProgress(task);
-        progress.logger("Adding task to the queue, commands = %o", task.commands);
-        this._queue.set(task, progress);
-        return progress;
-      }
-      fatal(err) {
-        for (const [task, { logger }] of Array.from(this._queue.entries())) {
-          if (task === err.task) {
-            logger.info(`Failed %o`, err);
-            logger(`Fatal exception, any as-yet un-started tasks run through this executor will not be attempted`);
-          } else {
-            logger.info(`A fatal exception occurred in a previous task, the queue has been purged: %o`, err.message);
-          }
-          this.complete(task);
-        }
-        if (this._queue.size !== 0) {
-          throw new Error(`Queue size should be zero after fatal: ${this._queue.size}`);
-        }
-      }
-      complete(task) {
-        const progress = this.withProgress(task);
-        if (progress) {
-          this._queue.delete(task);
-        }
-      }
-      attempt(task) {
-        const progress = this.withProgress(task);
-        if (!progress) {
-          throw new git_error_1.GitError(void 0, "TasksPendingQueue: attempt called for an unknown task");
-        }
-        progress.logger("Starting task");
-        return progress;
-      }
-      static getName(name = "empty") {
-        return `task:${name}:${++TasksPendingQueue.counter}`;
-      }
-    };
-    exports.TasksPendingQueue = TasksPendingQueue;
-    TasksPendingQueue.counter = 0;
-  }
-});
-
-// node_modules/simple-git/src/lib/runners/git-executor-chain.js
-var require_git_executor_chain = __commonJS({
-  "node_modules/simple-git/src/lib/runners/git-executor-chain.js"(exports) {
-    "use strict";
-    var __awaiter2 = exports && exports.__awaiter || function(thisArg, _arguments, P, generator) {
-      function adopt(value) {
-        return value instanceof P ? value : new P(function(resolve) {
-          resolve(value);
-        });
-      }
-      return new (P || (P = Promise))(function(resolve, reject) {
-        function fulfilled(value) {
-          try {
-            step(generator.next(value));
-          } catch (e) {
-            reject(e);
-          }
-        }
-        function rejected(value) {
-          try {
-            step(generator["throw"](value));
-          } catch (e) {
-            reject(e);
-          }
-        }
-        function step(result) {
-          result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
-        }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-      });
-    };
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.GitExecutorChain = void 0;
-    var child_process_1 = require("child_process");
-    var git_error_1 = require_git_error();
-    var task_1 = require_task();
-    var utils_1 = require_utils();
-    var tasks_pending_queue_1 = require_tasks_pending_queue();
-    var GitExecutorChain = class {
-      constructor(_executor, _scheduler, _plugins) {
-        this._executor = _executor;
-        this._scheduler = _scheduler;
-        this._plugins = _plugins;
-        this._chain = Promise.resolve();
-        this._queue = new tasks_pending_queue_1.TasksPendingQueue();
-      }
-      get binary() {
-        return this._executor.binary;
-      }
-      get cwd() {
-        return this._cwd || this._executor.cwd;
-      }
-      set cwd(cwd) {
-        this._cwd = cwd;
-      }
-      get env() {
-        return this._executor.env;
-      }
-      get outputHandler() {
-        return this._executor.outputHandler;
-      }
-      chain() {
-        return this;
-      }
-      push(task) {
-        this._queue.push(task);
-        return this._chain = this._chain.then(() => this.attemptTask(task));
-      }
-      attemptTask(task) {
-        return __awaiter2(this, void 0, void 0, function* () {
-          const onScheduleComplete = yield this._scheduler.next();
-          const onQueueComplete = () => this._queue.complete(task);
-          try {
-            const { logger } = this._queue.attempt(task);
-            return yield task_1.isEmptyTask(task) ? this.attemptEmptyTask(task, logger) : this.attemptRemoteTask(task, logger);
-          } catch (e) {
-            throw this.onFatalException(task, e);
-          } finally {
-            onQueueComplete();
-            onScheduleComplete();
-          }
-        });
-      }
-      onFatalException(task, e) {
-        const gitError = e instanceof git_error_1.GitError ? Object.assign(e, { task }) : new git_error_1.GitError(task, e && String(e));
-        this._chain = Promise.resolve();
-        this._queue.fatal(gitError);
-        return gitError;
-      }
-      attemptRemoteTask(task, logger) {
-        return __awaiter2(this, void 0, void 0, function* () {
-          const args = this._plugins.exec("spawn.args", [...task.commands], pluginContext(task, task.commands));
-          const raw = yield this.gitResponse(task, this.binary, args, this.outputHandler, logger.step("SPAWN"));
-          const outputStreams = yield this.handleTaskData(task, args, raw, logger.step("HANDLE"));
-          logger(`passing response to task's parser as a %s`, task.format);
-          if (task_1.isBufferTask(task)) {
-            return utils_1.callTaskParser(task.parser, outputStreams);
-          }
-          return utils_1.callTaskParser(task.parser, outputStreams.asStrings());
-        });
-      }
-      attemptEmptyTask(task, logger) {
-        return __awaiter2(this, void 0, void 0, function* () {
-          logger(`empty task bypassing child process to call to task's parser`);
-          return task.parser(this);
-        });
-      }
-      handleTaskData(task, args, result, logger) {
-        const { exitCode, rejection, stdOut, stdErr } = result;
-        return new Promise((done, fail) => {
-          logger(`Preparing to handle process response exitCode=%d stdOut=`, exitCode);
-          const { error } = this._plugins.exec("task.error", { error: rejection }, Object.assign(Object.assign({}, pluginContext(task, args)), result));
-          if (error && task.onError) {
-            logger.info(`exitCode=%s handling with custom error handler`);
-            return task.onError(result, error, (newStdOut) => {
-              logger.info(`custom error handler treated as success`);
-              logger(`custom error returned a %s`, utils_1.objectToString(newStdOut));
-              done(new utils_1.GitOutputStreams(Array.isArray(newStdOut) ? Buffer.concat(newStdOut) : newStdOut, Buffer.concat(stdErr)));
-            }, fail);
-          }
-          if (error) {
-            logger.info(`handling as error: exitCode=%s stdErr=%s rejection=%o`, exitCode, stdErr.length, rejection);
-            return fail(error);
-          }
-          logger.info(`retrieving task output complete`);
-          done(new utils_1.GitOutputStreams(Buffer.concat(stdOut), Buffer.concat(stdErr)));
-        });
-      }
-      gitResponse(task, command, args, outputHandler, logger) {
-        return __awaiter2(this, void 0, void 0, function* () {
-          const outputLogger = logger.sibling("output");
-          const spawnOptions = this._plugins.exec("spawn.options", {
-            cwd: this.cwd,
-            env: this.env,
-            windowsHide: true
-          }, pluginContext(task, task.commands));
-          return new Promise((done) => {
-            const stdOut = [];
-            const stdErr = [];
-            let rejection;
-            logger.info(`%s %o`, command, args);
-            logger("%O", spawnOptions);
-            const spawned = child_process_1.spawn(command, args, spawnOptions);
-            spawned.stdout.on("data", onDataReceived(stdOut, "stdOut", logger, outputLogger.step("stdOut")));
-            spawned.stderr.on("data", onDataReceived(stdErr, "stdErr", logger, outputLogger.step("stdErr")));
-            spawned.on("error", onErrorReceived(stdErr, logger));
-            if (outputHandler) {
-              logger(`Passing child process stdOut/stdErr to custom outputHandler`);
-              outputHandler(command, spawned.stdout, spawned.stderr, [...args]);
-            }
-            this._plugins.exec("spawn.after", void 0, Object.assign(Object.assign({}, pluginContext(task, args)), {
-              spawned,
-              close(exitCode, reason) {
-                done({
-                  stdOut,
-                  stdErr,
-                  exitCode,
-                  rejection: rejection || reason
-                });
-              },
-              kill(reason) {
-                if (spawned.killed) {
-                  return;
-                }
-                rejection = reason;
-                spawned.kill("SIGINT");
-              }
-            }));
-          });
-        });
-      }
-    };
-    exports.GitExecutorChain = GitExecutorChain;
-    function pluginContext(task, commands) {
-      return {
-        method: utils_1.first(task.commands) || "",
-        commands
-      };
-    }
-    function onErrorReceived(target, logger) {
-      return (err) => {
-        logger(`[ERROR] child process exception %o`, err);
-        target.push(Buffer.from(String(err.stack), "ascii"));
-      };
-    }
-    function onDataReceived(target, name, logger, output) {
-      return (buffer) => {
-        logger(`%s received %L bytes`, name, buffer);
-        output(`%B`, buffer);
-        target.push(buffer);
-      };
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/runners/git-executor.js
-var require_git_executor = __commonJS({
-  "node_modules/simple-git/src/lib/runners/git-executor.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.GitExecutor = void 0;
-    var git_executor_chain_1 = require_git_executor_chain();
-    var GitExecutor = class {
-      constructor(binary = "git", cwd, _scheduler, _plugins) {
-        this.binary = binary;
-        this.cwd = cwd;
-        this._scheduler = _scheduler;
-        this._plugins = _plugins;
-        this._chain = new git_executor_chain_1.GitExecutorChain(this, this._scheduler, this._plugins);
-      }
-      chain() {
-        return new git_executor_chain_1.GitExecutorChain(this, this._scheduler, this._plugins);
-      }
-      push(task) {
-        return this._chain.push(task);
-      }
-    };
-    exports.GitExecutor = GitExecutor;
-  }
-});
-
-// node_modules/simple-git/src/lib/task-callback.js
-var require_task_callback = __commonJS({
-  "node_modules/simple-git/src/lib/task-callback.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.taskCallback = void 0;
-    var git_response_error_1 = require_git_response_error();
-    var utils_1 = require_utils();
-    function taskCallback(task, response, callback = utils_1.NOOP) {
-      const onSuccess = (data) => {
-        callback(null, data);
-      };
-      const onError = (err) => {
-        if ((err === null || err === void 0 ? void 0 : err.task) === task) {
-          callback(err instanceof git_response_error_1.GitResponseError ? addDeprecationNoticeToError(err) : err, void 0);
-        }
-      };
-      response.then(onSuccess, onError);
-    }
-    exports.taskCallback = taskCallback;
-    function addDeprecationNoticeToError(err) {
-      let log = (name) => {
-        console.warn(`simple-git deprecation notice: accessing GitResponseError.${name} should be GitResponseError.git.${name}, this will no longer be available in version 3`);
-        log = utils_1.NOOP;
-      };
-      return Object.create(err, Object.getOwnPropertyNames(err.git).reduce(descriptorReducer, {}));
-      function descriptorReducer(all, name) {
-        if (name in err) {
-          return all;
-        }
-        all[name] = {
-          enumerable: false,
-          configurable: false,
-          get() {
-            log(name);
-            return err.git[name];
-          }
-        };
-        return all;
-      }
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/change-working-directory.js
-var require_change_working_directory = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/change-working-directory.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.changeWorkingDirectoryTask = void 0;
-    var utils_1 = require_utils();
-    var task_1 = require_task();
-    function changeWorkingDirectoryTask(directory, root) {
-      return task_1.adhocExecTask((instance5) => {
-        if (!utils_1.folderExists(directory)) {
-          throw new Error(`Git.cwd: cannot change to non-directory "${directory}"`);
-        }
-        return (root || instance5).cwd = directory;
-      });
-    }
-    exports.changeWorkingDirectoryTask = changeWorkingDirectoryTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/hash-object.js
-var require_hash_object = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/hash-object.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.hashObjectTask = void 0;
-    var task_1 = require_task();
-    function hashObjectTask(filePath, write) {
-      const commands = ["hash-object", filePath];
-      if (write) {
-        commands.push("-w");
-      }
-      return task_1.straightThroughStringTask(commands, true);
-    }
-    exports.hashObjectTask = hashObjectTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/InitSummary.js
-var require_InitSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/InitSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseInit = exports.InitSummary = void 0;
-    var InitSummary = class {
-      constructor(bare, path3, existing, gitDir) {
-        this.bare = bare;
-        this.path = path3;
-        this.existing = existing;
-        this.gitDir = gitDir;
-      }
-    };
-    exports.InitSummary = InitSummary;
-    var initResponseRegex = /^Init.+ repository in (.+)$/;
-    var reInitResponseRegex = /^Rein.+ in (.+)$/;
-    function parseInit(bare, path3, text2) {
-      const response = String(text2).trim();
-      let result;
-      if (result = initResponseRegex.exec(response)) {
-        return new InitSummary(bare, path3, false, result[1]);
-      }
-      if (result = reInitResponseRegex.exec(response)) {
-        return new InitSummary(bare, path3, true, result[1]);
-      }
-      let gitDir = "";
-      const tokens = response.split(" ");
-      while (tokens.length) {
-        const token = tokens.shift();
-        if (token === "in") {
-          gitDir = tokens.join(" ");
-          break;
-        }
-      }
-      return new InitSummary(bare, path3, /^re/i.test(response), gitDir);
-    }
-    exports.parseInit = parseInit;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/init.js
-var require_init = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/init.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.initTask = void 0;
-    var InitSummary_1 = require_InitSummary();
-    var bareCommand = "--bare";
-    function hasBareCommand(command) {
-      return command.includes(bareCommand);
-    }
-    function initTask(bare = false, path3, customArgs) {
-      const commands = ["init", ...customArgs];
-      if (bare && !hasBareCommand(commands)) {
-        commands.splice(1, 0, bareCommand);
-      }
-      return {
-        commands,
-        format: "utf-8",
-        parser(text2) {
-          return InitSummary_1.parseInit(commands.includes("--bare"), path3, text2);
-        }
-      };
-    }
-    exports.initTask = initTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/DiffSummary.js
-var require_DiffSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/DiffSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.DiffSummary = void 0;
-    var DiffSummary = class {
-      constructor() {
-        this.changed = 0;
-        this.deletions = 0;
-        this.insertions = 0;
-        this.files = [];
-      }
-    };
-    exports.DiffSummary = DiffSummary;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-diff-summary.js
-var require_parse_diff_summary = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-diff-summary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseDiffResult = void 0;
-    var DiffSummary_1 = require_DiffSummary();
-    function parseDiffResult(stdOut) {
-      const lines = stdOut.trim().split("\n");
-      const status = new DiffSummary_1.DiffSummary();
-      readSummaryLine(status, lines.pop());
-      for (let i = 0, max = lines.length; i < max; i++) {
-        const line = lines[i];
-        textFileChange(line, status) || binaryFileChange(line, status);
-      }
-      return status;
-    }
-    exports.parseDiffResult = parseDiffResult;
-    function readSummaryLine(status, summary) {
-      (summary || "").trim().split(", ").forEach(function(text2) {
-        const summary2 = /(\d+)\s([a-z]+)/.exec(text2);
-        if (!summary2) {
-          return;
-        }
-        summaryType(status, summary2[2], parseInt(summary2[1], 10));
-      });
-    }
-    function summaryType(status, key2, value) {
-      const match = /([a-z]+?)s?\b/.exec(key2);
-      if (!match || !statusUpdate[match[1]]) {
-        return;
-      }
-      statusUpdate[match[1]](status, value);
-    }
-    var statusUpdate = {
-      file(status, value) {
-        status.changed = value;
-      },
-      deletion(status, value) {
-        status.deletions = value;
-      },
-      insertion(status, value) {
-        status.insertions = value;
-      }
-    };
-    function textFileChange(input, { files }) {
-      const line = input.trim().match(/^(.+)\s+\|\s+(\d+)(\s+[+\-]+)?$/);
-      if (line) {
-        var alterations = (line[3] || "").trim();
-        files.push({
-          file: line[1].trim(),
-          changes: parseInt(line[2], 10),
-          insertions: alterations.replace(/-/g, "").length,
-          deletions: alterations.replace(/\+/g, "").length,
-          binary: false
-        });
-        return true;
-      }
-      return false;
-    }
-    function binaryFileChange(input, { files }) {
-      const line = input.match(/^(.+) \|\s+Bin ([0-9.]+) -> ([0-9.]+) ([a-z]+)$/);
-      if (line) {
-        files.push({
-          file: line[1].trim(),
-          before: +line[2],
-          after: +line[3],
-          binary: true
-        });
-        return true;
-      }
-      return false;
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-list-log-summary.js
-var require_parse_list_log_summary = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-list-log-summary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.createListLogSummaryParser = exports.SPLITTER = exports.COMMIT_BOUNDARY = exports.START_BOUNDARY = void 0;
-    var utils_1 = require_utils();
-    var parse_diff_summary_1 = require_parse_diff_summary();
-    exports.START_BOUNDARY = "\xF2\xF2\xF2\xF2\xF2\xF2 ";
-    exports.COMMIT_BOUNDARY = " \xF2\xF2";
-    exports.SPLITTER = " \xF2 ";
-    var defaultFieldNames = ["hash", "date", "message", "refs", "author_name", "author_email"];
-    function lineBuilder(tokens, fields) {
-      return fields.reduce((line, field, index) => {
-        line[field] = tokens[index] || "";
-        return line;
-      }, Object.create({ diff: null }));
-    }
-    function createListLogSummaryParser(splitter = exports.SPLITTER, fields = defaultFieldNames) {
-      return function(stdOut) {
-        const all = utils_1.toLinesWithContent(stdOut, true, exports.START_BOUNDARY).map(function(item) {
-          const lineDetail = item.trim().split(exports.COMMIT_BOUNDARY);
-          const listLogLine = lineBuilder(lineDetail[0].trim().split(splitter), fields);
-          if (lineDetail.length > 1 && !!lineDetail[1].trim()) {
-            listLogLine.diff = parse_diff_summary_1.parseDiffResult(lineDetail[1]);
-          }
-          return listLogLine;
-        });
-        return {
-          all,
-          latest: all.length && all[0] || null,
-          total: all.length
-        };
-      };
-    }
-    exports.createListLogSummaryParser = createListLogSummaryParser;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/log.js
-var require_log = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/log.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.logTask = exports.parseLogOptions = void 0;
-    var parse_list_log_summary_1 = require_parse_list_log_summary();
-    var utils_1 = require_utils();
-    var task_1 = require_task();
-    var excludeOptions;
-    (function(excludeOptions2) {
-      excludeOptions2[excludeOptions2["--pretty"] = 0] = "--pretty";
-      excludeOptions2[excludeOptions2["max-count"] = 1] = "max-count";
-      excludeOptions2[excludeOptions2["maxCount"] = 2] = "maxCount";
-      excludeOptions2[excludeOptions2["n"] = 3] = "n";
-      excludeOptions2[excludeOptions2["file"] = 4] = "file";
-      excludeOptions2[excludeOptions2["format"] = 5] = "format";
-      excludeOptions2[excludeOptions2["from"] = 6] = "from";
-      excludeOptions2[excludeOptions2["to"] = 7] = "to";
-      excludeOptions2[excludeOptions2["splitter"] = 8] = "splitter";
-      excludeOptions2[excludeOptions2["symmetric"] = 9] = "symmetric";
-      excludeOptions2[excludeOptions2["mailMap"] = 10] = "mailMap";
-      excludeOptions2[excludeOptions2["multiLine"] = 11] = "multiLine";
-      excludeOptions2[excludeOptions2["strictDate"] = 12] = "strictDate";
-    })(excludeOptions || (excludeOptions = {}));
-    function prettyFormat(format, splitter) {
-      const fields = [];
-      const formatStr = [];
-      Object.keys(format).forEach((field) => {
-        fields.push(field);
-        formatStr.push(String(format[field]));
-      });
-      return [
-        fields,
-        formatStr.join(splitter)
-      ];
-    }
-    function userOptions(input) {
-      const output = Object.assign({}, input);
-      Object.keys(input).forEach((key2) => {
-        if (key2 in excludeOptions) {
-          delete output[key2];
-        }
-      });
-      return output;
-    }
-    function parseLogOptions(opt = {}, customArgs = []) {
-      const splitter = opt.splitter || parse_list_log_summary_1.SPLITTER;
-      const format = opt.format || {
-        hash: "%H",
-        date: opt.strictDate === false ? "%ai" : "%aI",
-        message: "%s",
-        refs: "%D",
-        body: opt.multiLine ? "%B" : "%b",
-        author_name: opt.mailMap !== false ? "%aN" : "%an",
-        author_email: opt.mailMap !== false ? "%aE" : "%ae"
-      };
-      const [fields, formatStr] = prettyFormat(format, splitter);
-      const suffix = [];
-      const command = [
-        `--pretty=format:${parse_list_log_summary_1.START_BOUNDARY}${formatStr}${parse_list_log_summary_1.COMMIT_BOUNDARY}`,
-        ...customArgs
-      ];
-      const maxCount = opt.n || opt["max-count"] || opt.maxCount;
-      if (maxCount) {
-        command.push(`--max-count=${maxCount}`);
-      }
-      if (opt.from && opt.to) {
-        const rangeOperator = opt.symmetric !== false ? "..." : "..";
-        suffix.push(`${opt.from}${rangeOperator}${opt.to}`);
-      }
-      if (opt.file) {
-        suffix.push("--follow", opt.file);
-      }
-      utils_1.appendTaskOptions(userOptions(opt), command);
-      return {
-        fields,
-        splitter,
-        commands: [
-          ...command,
-          ...suffix
-        ]
-      };
-    }
-    exports.parseLogOptions = parseLogOptions;
-    function logTask(splitter, fields, customArgs) {
-      return {
-        commands: ["log", ...customArgs],
-        format: "utf-8",
-        parser: parse_list_log_summary_1.createListLogSummaryParser(splitter, fields)
-      };
-    }
-    exports.logTask = logTask;
-    function default_1() {
-      return {
-        log(...rest) {
-          const next = utils_1.trailingFunctionArgument(arguments);
-          const task = rejectDeprecatedSignatures(...rest) || createLogTask(parseLogOptions(utils_1.trailingOptionsArgument(arguments), utils_1.filterType(arguments[0], utils_1.filterArray)));
-          return this._runTask(task, next);
-        }
-      };
-      function createLogTask(options) {
-        return logTask(options.splitter, options.fields, options.commands);
-      }
-      function rejectDeprecatedSignatures(from, to) {
-        return utils_1.filterString(from) && utils_1.filterString(to) && task_1.configurationErrorTask(`git.log(string, string) should be replaced with git.log({ from: string, to: string })`);
-      }
-    }
-    exports.default = default_1;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/MergeSummary.js
-var require_MergeSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/MergeSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.MergeSummaryDetail = exports.MergeSummaryConflict = void 0;
-    var MergeSummaryConflict = class {
-      constructor(reason, file = null, meta) {
-        this.reason = reason;
-        this.file = file;
-        this.meta = meta;
-      }
-      toString() {
-        return `${this.file}:${this.reason}`;
-      }
-    };
-    exports.MergeSummaryConflict = MergeSummaryConflict;
-    var MergeSummaryDetail = class {
-      constructor() {
-        this.conflicts = [];
-        this.merges = [];
-        this.result = "success";
-      }
-      get failed() {
-        return this.conflicts.length > 0;
-      }
-      get reason() {
-        return this.result;
-      }
-      toString() {
-        if (this.conflicts.length) {
-          return `CONFLICTS: ${this.conflicts.join(", ")}`;
-        }
-        return "OK";
-      }
-    };
-    exports.MergeSummaryDetail = MergeSummaryDetail;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/PullSummary.js
-var require_PullSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/PullSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.PullSummary = void 0;
-    var PullSummary = class {
-      constructor() {
-        this.remoteMessages = {
-          all: []
-        };
-        this.created = [];
-        this.deleted = [];
-        this.files = [];
-        this.deletions = {};
-        this.insertions = {};
-        this.summary = {
-          changes: 0,
-          deletions: 0,
-          insertions: 0
-        };
-      }
-    };
-    exports.PullSummary = PullSummary;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-remote-objects.js
-var require_parse_remote_objects = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-remote-objects.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.remoteMessagesObjectParsers = void 0;
-    var utils_1 = require_utils();
-    function objectEnumerationResult(remoteMessages) {
-      return remoteMessages.objects = remoteMessages.objects || {
-        compressing: 0,
-        counting: 0,
-        enumerating: 0,
-        packReused: 0,
-        reused: { count: 0, delta: 0 },
-        total: { count: 0, delta: 0 }
-      };
-    }
-    function asObjectCount(source) {
-      const count = /^\s*(\d+)/.exec(source);
-      const delta = /delta (\d+)/i.exec(source);
-      return {
-        count: utils_1.asNumber(count && count[1] || "0"),
-        delta: utils_1.asNumber(delta && delta[1] || "0")
-      };
-    }
-    exports.remoteMessagesObjectParsers = [
-      new utils_1.RemoteLineParser(/^remote:\s*(enumerating|counting|compressing) objects: (\d+),/i, (result, [action, count]) => {
-        const key2 = action.toLowerCase();
-        const enumeration = objectEnumerationResult(result.remoteMessages);
-        Object.assign(enumeration, { [key2]: utils_1.asNumber(count) });
-      }),
-      new utils_1.RemoteLineParser(/^remote:\s*(enumerating|counting|compressing) objects: \d+% \(\d+\/(\d+)\),/i, (result, [action, count]) => {
-        const key2 = action.toLowerCase();
-        const enumeration = objectEnumerationResult(result.remoteMessages);
-        Object.assign(enumeration, { [key2]: utils_1.asNumber(count) });
-      }),
-      new utils_1.RemoteLineParser(/total ([^,]+), reused ([^,]+), pack-reused (\d+)/i, (result, [total, reused, packReused]) => {
-        const objects = objectEnumerationResult(result.remoteMessages);
-        objects.total = asObjectCount(total);
-        objects.reused = asObjectCount(reused);
-        objects.packReused = utils_1.asNumber(packReused);
-      })
-    ];
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-remote-messages.js
-var require_parse_remote_messages = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-remote-messages.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.RemoteMessageSummary = exports.parseRemoteMessages = void 0;
-    var utils_1 = require_utils();
-    var parse_remote_objects_1 = require_parse_remote_objects();
-    var parsers = [
-      new utils_1.RemoteLineParser(/^remote:\s*(.+)$/, (result, [text2]) => {
-        result.remoteMessages.all.push(text2.trim());
-        return false;
-      }),
-      ...parse_remote_objects_1.remoteMessagesObjectParsers,
-      new utils_1.RemoteLineParser([/create a (?:pull|merge) request/i, /\s(https?:\/\/\S+)$/], (result, [pullRequestUrl]) => {
-        result.remoteMessages.pullRequestUrl = pullRequestUrl;
-      }),
-      new utils_1.RemoteLineParser([/found (\d+) vulnerabilities.+\(([^)]+)\)/i, /\s(https?:\/\/\S+)$/], (result, [count, summary, url]) => {
-        result.remoteMessages.vulnerabilities = {
-          count: utils_1.asNumber(count),
-          summary,
-          url
-        };
-      })
-    ];
-    function parseRemoteMessages(_stdOut, stdErr) {
-      return utils_1.parseStringResponse({ remoteMessages: new RemoteMessageSummary() }, parsers, stdErr);
-    }
-    exports.parseRemoteMessages = parseRemoteMessages;
-    var RemoteMessageSummary = class {
-      constructor() {
-        this.all = [];
-      }
-    };
-    exports.RemoteMessageSummary = RemoteMessageSummary;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-pull.js
-var require_parse_pull = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-pull.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parsePullResult = exports.parsePullDetail = void 0;
-    var PullSummary_1 = require_PullSummary();
-    var utils_1 = require_utils();
-    var parse_remote_messages_1 = require_parse_remote_messages();
-    var FILE_UPDATE_REGEX = /^\s*(.+?)\s+\|\s+\d+\s*(\+*)(-*)/;
-    var SUMMARY_REGEX = /(\d+)\D+((\d+)\D+\(\+\))?(\D+(\d+)\D+\(-\))?/;
-    var ACTION_REGEX = /^(create|delete) mode \d+ (.+)/;
-    var parsers = [
-      new utils_1.LineParser(FILE_UPDATE_REGEX, (result, [file, insertions, deletions]) => {
-        result.files.push(file);
-        if (insertions) {
-          result.insertions[file] = insertions.length;
-        }
-        if (deletions) {
-          result.deletions[file] = deletions.length;
-        }
-      }),
-      new utils_1.LineParser(SUMMARY_REGEX, (result, [changes, , insertions, , deletions]) => {
-        if (insertions !== void 0 || deletions !== void 0) {
-          result.summary.changes = +changes || 0;
-          result.summary.insertions = +insertions || 0;
-          result.summary.deletions = +deletions || 0;
-          return true;
-        }
-        return false;
-      }),
-      new utils_1.LineParser(ACTION_REGEX, (result, [action, file]) => {
-        utils_1.append(result.files, file);
-        utils_1.append(action === "create" ? result.created : result.deleted, file);
-      })
-    ];
-    var parsePullDetail = (stdOut, stdErr) => {
-      return utils_1.parseStringResponse(new PullSummary_1.PullSummary(), parsers, stdOut, stdErr);
-    };
-    exports.parsePullDetail = parsePullDetail;
-    var parsePullResult = (stdOut, stdErr) => {
-      return Object.assign(new PullSummary_1.PullSummary(), exports.parsePullDetail(stdOut, stdErr), parse_remote_messages_1.parseRemoteMessages(stdOut, stdErr));
-    };
-    exports.parsePullResult = parsePullResult;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-merge.js
-var require_parse_merge = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-merge.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseMergeDetail = exports.parseMergeResult = void 0;
-    var MergeSummary_1 = require_MergeSummary();
-    var utils_1 = require_utils();
-    var parse_pull_1 = require_parse_pull();
-    var parsers = [
-      new utils_1.LineParser(/^Auto-merging\s+(.+)$/, (summary, [autoMerge]) => {
-        summary.merges.push(autoMerge);
-      }),
-      new utils_1.LineParser(/^CONFLICT\s+\((.+)\): Merge conflict in (.+)$/, (summary, [reason, file]) => {
-        summary.conflicts.push(new MergeSummary_1.MergeSummaryConflict(reason, file));
-      }),
-      new utils_1.LineParser(/^CONFLICT\s+\((.+\/delete)\): (.+) deleted in (.+) and/, (summary, [reason, file, deleteRef]) => {
-        summary.conflicts.push(new MergeSummary_1.MergeSummaryConflict(reason, file, { deleteRef }));
-      }),
-      new utils_1.LineParser(/^CONFLICT\s+\((.+)\):/, (summary, [reason]) => {
-        summary.conflicts.push(new MergeSummary_1.MergeSummaryConflict(reason, null));
-      }),
-      new utils_1.LineParser(/^Automatic merge failed;\s+(.+)$/, (summary, [result]) => {
-        summary.result = result;
-      })
-    ];
-    var parseMergeResult = (stdOut, stdErr) => {
-      return Object.assign(exports.parseMergeDetail(stdOut, stdErr), parse_pull_1.parsePullResult(stdOut, stdErr));
-    };
-    exports.parseMergeResult = parseMergeResult;
-    var parseMergeDetail = (stdOut) => {
-      return utils_1.parseStringResponse(new MergeSummary_1.MergeSummaryDetail(), parsers, stdOut);
-    };
-    exports.parseMergeDetail = parseMergeDetail;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/merge.js
-var require_merge = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/merge.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.mergeTask = void 0;
-    var git_response_error_1 = require_git_response_error();
-    var parse_merge_1 = require_parse_merge();
-    var task_1 = require_task();
-    function mergeTask(customArgs) {
-      if (!customArgs.length) {
-        return task_1.configurationErrorTask("Git.merge requires at least one option");
-      }
-      return {
-        commands: ["merge", ...customArgs],
-        format: "utf-8",
-        parser(stdOut, stdErr) {
-          const merge = parse_merge_1.parseMergeResult(stdOut, stdErr);
-          if (merge.failed) {
-            throw new git_response_error_1.GitResponseError(merge);
-          }
-          return merge;
-        }
-      };
-    }
-    exports.mergeTask = mergeTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-push.js
-var require_parse_push = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-push.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parsePushDetail = exports.parsePushResult = void 0;
-    var utils_1 = require_utils();
-    var parse_remote_messages_1 = require_parse_remote_messages();
-    function pushResultPushedItem(local, remote, status) {
-      const deleted = status.includes("deleted");
-      const tag = status.includes("tag") || /^refs\/tags/.test(local);
-      const alreadyUpdated = !status.includes("new");
-      return {
-        deleted,
-        tag,
-        branch: !tag,
-        new: !alreadyUpdated,
-        alreadyUpdated,
-        local,
-        remote
-      };
-    }
-    var parsers = [
-      new utils_1.LineParser(/^Pushing to (.+)$/, (result, [repo]) => {
-        result.repo = repo;
-      }),
-      new utils_1.LineParser(/^updating local tracking ref '(.+)'/, (result, [local]) => {
-        result.ref = Object.assign(Object.assign({}, result.ref || {}), { local });
-      }),
-      new utils_1.LineParser(/^[*-=]\s+([^:]+):(\S+)\s+\[(.+)]$/, (result, [local, remote, type]) => {
-        result.pushed.push(pushResultPushedItem(local, remote, type));
-      }),
-      new utils_1.LineParser(/^Branch '([^']+)' set up to track remote branch '([^']+)' from '([^']+)'/, (result, [local, remote, remoteName]) => {
-        result.branch = Object.assign(Object.assign({}, result.branch || {}), {
-          local,
-          remote,
-          remoteName
-        });
-      }),
-      new utils_1.LineParser(/^([^:]+):(\S+)\s+([a-z0-9]+)\.\.([a-z0-9]+)$/, (result, [local, remote, from, to]) => {
-        result.update = {
-          head: {
-            local,
-            remote
-          },
-          hash: {
-            from,
-            to
-          }
-        };
-      })
-    ];
-    var parsePushResult = (stdOut, stdErr) => {
-      const pushDetail = exports.parsePushDetail(stdOut, stdErr);
-      const responseDetail = parse_remote_messages_1.parseRemoteMessages(stdOut, stdErr);
-      return Object.assign(Object.assign({}, pushDetail), responseDetail);
-    };
-    exports.parsePushResult = parsePushResult;
-    var parsePushDetail = (stdOut, stdErr) => {
-      return utils_1.parseStringResponse({ pushed: [] }, parsers, stdOut, stdErr);
-    };
-    exports.parsePushDetail = parsePushDetail;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/push.js
-var require_push = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/push.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.pushTask = exports.pushTagsTask = void 0;
-    var parse_push_1 = require_parse_push();
-    var utils_1 = require_utils();
-    function pushTagsTask(ref = {}, customArgs) {
-      utils_1.append(customArgs, "--tags");
-      return pushTask(ref, customArgs);
-    }
-    exports.pushTagsTask = pushTagsTask;
-    function pushTask(ref = {}, customArgs) {
-      const commands = ["push", ...customArgs];
-      if (ref.branch) {
-        commands.splice(1, 0, ref.branch);
-      }
-      if (ref.remote) {
-        commands.splice(1, 0, ref.remote);
-      }
-      utils_1.remove(commands, "-v");
-      utils_1.append(commands, "--verbose");
-      utils_1.append(commands, "--porcelain");
-      return {
-        commands,
-        format: "utf-8",
-        parser: parse_push_1.parsePushResult
-      };
-    }
-    exports.pushTask = pushTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/FileStatusSummary.js
-var require_FileStatusSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/FileStatusSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.FileStatusSummary = exports.fromPathRegex = void 0;
-    exports.fromPathRegex = /^(.+) -> (.+)$/;
-    var FileStatusSummary = class {
-      constructor(path3, index, working_dir) {
-        this.path = path3;
-        this.index = index;
-        this.working_dir = working_dir;
-        if (index + working_dir === "R") {
-          const detail = exports.fromPathRegex.exec(path3) || [null, path3, path3];
-          this.from = detail[1] || "";
-          this.path = detail[2] || "";
-        }
-      }
-    };
-    exports.FileStatusSummary = FileStatusSummary;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/StatusSummary.js
-var require_StatusSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/StatusSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseStatusSummary = exports.StatusSummary = void 0;
-    var utils_1 = require_utils();
-    var FileStatusSummary_1 = require_FileStatusSummary();
-    var StatusSummary = class {
-      constructor() {
-        this.not_added = [];
-        this.conflicted = [];
-        this.created = [];
-        this.deleted = [];
-        this.modified = [];
-        this.renamed = [];
-        this.files = [];
-        this.staged = [];
-        this.ahead = 0;
-        this.behind = 0;
-        this.current = null;
-        this.tracking = null;
-        this.detached = false;
-      }
-      isClean() {
-        return !this.files.length;
-      }
-    };
-    exports.StatusSummary = StatusSummary;
-    var PorcelainFileStatus;
-    (function(PorcelainFileStatus2) {
-      PorcelainFileStatus2["ADDED"] = "A";
-      PorcelainFileStatus2["DELETED"] = "D";
-      PorcelainFileStatus2["MODIFIED"] = "M";
-      PorcelainFileStatus2["RENAMED"] = "R";
-      PorcelainFileStatus2["COPIED"] = "C";
-      PorcelainFileStatus2["UNMERGED"] = "U";
-      PorcelainFileStatus2["UNTRACKED"] = "?";
-      PorcelainFileStatus2["IGNORED"] = "!";
-      PorcelainFileStatus2["NONE"] = " ";
-    })(PorcelainFileStatus || (PorcelainFileStatus = {}));
-    function renamedFile(line) {
-      const detail = /^(.+) -> (.+)$/.exec(line);
-      if (!detail) {
-        return {
-          from: line,
-          to: line
-        };
-      }
-      return {
-        from: String(detail[1]),
-        to: String(detail[2])
-      };
-    }
-    function parser(indexX, indexY, handler) {
-      return [`${indexX}${indexY}`, handler];
-    }
-    function conflicts(indexX, ...indexY) {
-      return indexY.map((y) => parser(indexX, y, (result, file) => utils_1.append(result.conflicted, file)));
-    }
-    var parsers = new Map([
-      parser(PorcelainFileStatus.NONE, PorcelainFileStatus.ADDED, (result, file) => utils_1.append(result.created, file)),
-      parser(PorcelainFileStatus.NONE, PorcelainFileStatus.DELETED, (result, file) => utils_1.append(result.deleted, file)),
-      parser(PorcelainFileStatus.NONE, PorcelainFileStatus.MODIFIED, (result, file) => utils_1.append(result.modified, file)),
-      parser(PorcelainFileStatus.ADDED, PorcelainFileStatus.NONE, (result, file) => utils_1.append(result.created, file) && utils_1.append(result.staged, file)),
-      parser(PorcelainFileStatus.ADDED, PorcelainFileStatus.MODIFIED, (result, file) => utils_1.append(result.created, file) && utils_1.append(result.staged, file) && utils_1.append(result.modified, file)),
-      parser(PorcelainFileStatus.DELETED, PorcelainFileStatus.NONE, (result, file) => utils_1.append(result.deleted, file) && utils_1.append(result.staged, file)),
-      parser(PorcelainFileStatus.MODIFIED, PorcelainFileStatus.NONE, (result, file) => utils_1.append(result.modified, file) && utils_1.append(result.staged, file)),
-      parser(PorcelainFileStatus.MODIFIED, PorcelainFileStatus.MODIFIED, (result, file) => utils_1.append(result.modified, file) && utils_1.append(result.staged, file)),
-      parser(PorcelainFileStatus.RENAMED, PorcelainFileStatus.NONE, (result, file) => {
-        utils_1.append(result.renamed, renamedFile(file));
-      }),
-      parser(PorcelainFileStatus.RENAMED, PorcelainFileStatus.MODIFIED, (result, file) => {
-        const renamed = renamedFile(file);
-        utils_1.append(result.renamed, renamed);
-        utils_1.append(result.modified, renamed.to);
-      }),
-      parser(PorcelainFileStatus.UNTRACKED, PorcelainFileStatus.UNTRACKED, (result, file) => utils_1.append(result.not_added, file)),
-      ...conflicts(PorcelainFileStatus.ADDED, PorcelainFileStatus.ADDED, PorcelainFileStatus.UNMERGED),
-      ...conflicts(PorcelainFileStatus.DELETED, PorcelainFileStatus.DELETED, PorcelainFileStatus.UNMERGED),
-      ...conflicts(PorcelainFileStatus.UNMERGED, PorcelainFileStatus.ADDED, PorcelainFileStatus.DELETED, PorcelainFileStatus.UNMERGED),
-      ["##", (result, line) => {
-        const aheadReg = /ahead (\d+)/;
-        const behindReg = /behind (\d+)/;
-        const currentReg = /^(.+?(?=(?:\.{3}|\s|$)))/;
-        const trackingReg = /\.{3}(\S*)/;
-        const onEmptyBranchReg = /\son\s([\S]+)$/;
-        let regexResult;
-        regexResult = aheadReg.exec(line);
-        result.ahead = regexResult && +regexResult[1] || 0;
-        regexResult = behindReg.exec(line);
-        result.behind = regexResult && +regexResult[1] || 0;
-        regexResult = currentReg.exec(line);
-        result.current = regexResult && regexResult[1];
-        regexResult = trackingReg.exec(line);
-        result.tracking = regexResult && regexResult[1];
-        regexResult = onEmptyBranchReg.exec(line);
-        result.current = regexResult && regexResult[1] || result.current;
-        result.detached = /\(no branch\)/.test(line);
-      }]
-    ]);
-    var parseStatusSummary = function(text2) {
-      const lines = text2.trim().split("\n");
-      const status = new StatusSummary();
-      for (let i = 0, l = lines.length; i < l; i++) {
-        splitLine(status, lines[i]);
-      }
-      return status;
-    };
-    exports.parseStatusSummary = parseStatusSummary;
-    function splitLine(result, lineStr) {
-      const trimmed = lineStr.trim();
-      switch (" ") {
-        case trimmed.charAt(2):
-          return data(trimmed.charAt(0), trimmed.charAt(1), trimmed.substr(3));
-        case trimmed.charAt(1):
-          return data(PorcelainFileStatus.NONE, trimmed.charAt(0), trimmed.substr(2));
-        default:
-          return;
-      }
-      function data(index, workingDir, path3) {
-        const raw = `${index}${workingDir}`;
-        const handler = parsers.get(raw);
-        if (handler) {
-          handler(result, path3);
-        }
-        if (raw !== "##") {
-          result.files.push(new FileStatusSummary_1.FileStatusSummary(path3, index, workingDir));
-        }
-      }
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/status.js
-var require_status = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/status.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.statusTask = void 0;
-    var StatusSummary_1 = require_StatusSummary();
-    function statusTask(customArgs) {
-      return {
-        format: "utf-8",
-        commands: ["status", "--porcelain", "-b", "-u", ...customArgs],
-        parser(text2) {
-          return StatusSummary_1.parseStatusSummary(text2);
-        }
-      };
-    }
-    exports.statusTask = statusTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/simple-git-api.js
-var require_simple_git_api = __commonJS({
-  "node_modules/simple-git/src/lib/simple-git-api.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.SimpleGitApi = void 0;
-    var task_callback_1 = require_task_callback();
-    var change_working_directory_1 = require_change_working_directory();
-    var config_1 = require_config();
-    var grep_1 = require_grep();
-    var hash_object_1 = require_hash_object();
-    var init_1 = require_init();
-    var log_1 = require_log();
-    var merge_1 = require_merge();
-    var push_1 = require_push();
-    var status_1 = require_status();
-    var task_1 = require_task();
-    var utils_1 = require_utils();
-    var SimpleGitApi = class {
-      constructor(_executor) {
-        this._executor = _executor;
-      }
-      _runTask(task, then) {
-        const chain = this._executor.chain();
-        const promise2 = chain.push(task);
-        if (then) {
-          task_callback_1.taskCallback(task, promise2, then);
-        }
-        return Object.create(this, {
-          then: { value: promise2.then.bind(promise2) },
-          catch: { value: promise2.catch.bind(promise2) },
-          _executor: { value: chain }
-        });
-      }
-      add(files) {
-        return this._runTask(task_1.straightThroughStringTask(["add", ...utils_1.asArray(files)]), utils_1.trailingFunctionArgument(arguments));
-      }
-      cwd(directory) {
-        const next = utils_1.trailingFunctionArgument(arguments);
-        if (typeof directory === "string") {
-          return this._runTask(change_working_directory_1.changeWorkingDirectoryTask(directory, this._executor), next);
-        }
-        if (typeof (directory === null || directory === void 0 ? void 0 : directory.path) === "string") {
-          return this._runTask(change_working_directory_1.changeWorkingDirectoryTask(directory.path, directory.root && this._executor || void 0), next);
-        }
-        return this._runTask(task_1.configurationErrorTask("Git.cwd: workingDirectory must be supplied as a string"), next);
-      }
-      hashObject(path3, write) {
-        return this._runTask(hash_object_1.hashObjectTask(path3, write === true), utils_1.trailingFunctionArgument(arguments));
-      }
-      init(bare) {
-        return this._runTask(init_1.initTask(bare === true, this._executor.cwd, utils_1.getTrailingOptions(arguments)), utils_1.trailingFunctionArgument(arguments));
-      }
-      merge() {
-        return this._runTask(merge_1.mergeTask(utils_1.getTrailingOptions(arguments)), utils_1.trailingFunctionArgument(arguments));
-      }
-      mergeFromTo(remote, branch) {
-        if (!(utils_1.filterString(remote) && utils_1.filterString(branch))) {
-          return this._runTask(task_1.configurationErrorTask(`Git.mergeFromTo requires that the 'remote' and 'branch' arguments are supplied as strings`));
-        }
-        return this._runTask(merge_1.mergeTask([remote, branch, ...utils_1.getTrailingOptions(arguments)]), utils_1.trailingFunctionArgument(arguments, false));
-      }
-      outputHandler(handler) {
-        this._executor.outputHandler = handler;
-        return this;
-      }
-      push() {
-        const task = push_1.pushTask({
-          remote: utils_1.filterType(arguments[0], utils_1.filterString),
-          branch: utils_1.filterType(arguments[1], utils_1.filterString)
-        }, utils_1.getTrailingOptions(arguments));
-        return this._runTask(task, utils_1.trailingFunctionArgument(arguments));
-      }
-      stash() {
-        return this._runTask(task_1.straightThroughStringTask(["stash", ...utils_1.getTrailingOptions(arguments)]), utils_1.trailingFunctionArgument(arguments));
-      }
-      status() {
-        return this._runTask(status_1.statusTask(utils_1.getTrailingOptions(arguments)), utils_1.trailingFunctionArgument(arguments));
-      }
-    };
-    exports.SimpleGitApi = SimpleGitApi;
-    Object.assign(SimpleGitApi.prototype, config_1.default(), grep_1.default(), log_1.default());
-  }
-});
-
-// node_modules/simple-git/src/lib/runners/scheduler.js
-var require_scheduler = __commonJS({
-  "node_modules/simple-git/src/lib/runners/scheduler.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.Scheduler = void 0;
-    var utils_1 = require_utils();
-    var promise_deferred_1 = require_dist2();
-    var git_logger_1 = require_git_logger();
-    var createScheduledTask = (() => {
-      let id = 0;
-      return () => {
-        id++;
-        const { promise: promise2, done } = promise_deferred_1.createDeferred();
-        return {
-          promise: promise2,
-          done,
-          id
-        };
-      };
-    })();
-    var Scheduler = class {
-      constructor(concurrency = 2) {
-        this.concurrency = concurrency;
-        this.logger = git_logger_1.createLogger("", "scheduler");
-        this.pending = [];
-        this.running = [];
-        this.logger(`Constructed, concurrency=%s`, concurrency);
-      }
-      schedule() {
-        if (!this.pending.length || this.running.length >= this.concurrency) {
-          this.logger(`Schedule attempt ignored, pending=%s running=%s concurrency=%s`, this.pending.length, this.running.length, this.concurrency);
-          return;
-        }
-        const task = utils_1.append(this.running, this.pending.shift());
-        this.logger(`Attempting id=%s`, task.id);
-        task.done(() => {
-          this.logger(`Completing id=`, task.id);
-          utils_1.remove(this.running, task);
-          this.schedule();
-        });
-      }
-      next() {
-        const { promise: promise2, id } = utils_1.append(this.pending, createScheduledTask());
-        this.logger(`Scheduling id=%s`, id);
-        this.schedule();
-        return promise2;
-      }
-    };
-    exports.Scheduler = Scheduler;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/apply-patch.js
-var require_apply_patch = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/apply-patch.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.applyPatchTask = void 0;
-    var task_1 = require_task();
-    function applyPatchTask(patches, customArgs) {
-      return task_1.straightThroughStringTask(["apply", ...customArgs, ...patches]);
-    }
-    exports.applyPatchTask = applyPatchTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/BranchDeleteSummary.js
-var require_BranchDeleteSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/BranchDeleteSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.isSingleBranchDeleteFailure = exports.branchDeletionFailure = exports.branchDeletionSuccess = exports.BranchDeletionBatch = void 0;
-    var BranchDeletionBatch = class {
-      constructor() {
-        this.all = [];
-        this.branches = {};
-        this.errors = [];
-      }
-      get success() {
-        return !this.errors.length;
-      }
-    };
-    exports.BranchDeletionBatch = BranchDeletionBatch;
-    function branchDeletionSuccess(branch, hash2) {
-      return {
-        branch,
-        hash: hash2,
-        success: true
-      };
-    }
-    exports.branchDeletionSuccess = branchDeletionSuccess;
-    function branchDeletionFailure(branch) {
-      return {
-        branch,
-        hash: null,
-        success: false
-      };
-    }
-    exports.branchDeletionFailure = branchDeletionFailure;
-    function isSingleBranchDeleteFailure(test) {
-      return test.success;
-    }
-    exports.isSingleBranchDeleteFailure = isSingleBranchDeleteFailure;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-branch-delete.js
-var require_parse_branch_delete = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-branch-delete.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.hasBranchDeletionError = exports.parseBranchDeletions = void 0;
-    var BranchDeleteSummary_1 = require_BranchDeleteSummary();
-    var utils_1 = require_utils();
-    var deleteSuccessRegex = /(\S+)\s+\(\S+\s([^)]+)\)/;
-    var deleteErrorRegex = /^error[^']+'([^']+)'/m;
-    var parsers = [
-      new utils_1.LineParser(deleteSuccessRegex, (result, [branch, hash2]) => {
-        const deletion = BranchDeleteSummary_1.branchDeletionSuccess(branch, hash2);
-        result.all.push(deletion);
-        result.branches[branch] = deletion;
-      }),
-      new utils_1.LineParser(deleteErrorRegex, (result, [branch]) => {
-        const deletion = BranchDeleteSummary_1.branchDeletionFailure(branch);
-        result.errors.push(deletion);
-        result.all.push(deletion);
-        result.branches[branch] = deletion;
-      })
-    ];
-    var parseBranchDeletions = (stdOut, stdErr) => {
-      return utils_1.parseStringResponse(new BranchDeleteSummary_1.BranchDeletionBatch(), parsers, stdOut, stdErr);
-    };
-    exports.parseBranchDeletions = parseBranchDeletions;
-    function hasBranchDeletionError(data, processExitCode) {
-      return processExitCode === utils_1.ExitCodes.ERROR && deleteErrorRegex.test(data);
-    }
-    exports.hasBranchDeletionError = hasBranchDeletionError;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/BranchSummary.js
-var require_BranchSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/BranchSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.BranchSummaryResult = void 0;
-    var BranchSummaryResult = class {
-      constructor() {
-        this.all = [];
-        this.branches = {};
-        this.current = "";
-        this.detached = false;
-      }
-      push(current, detached, name, commit, label) {
-        if (current) {
-          this.detached = detached;
-          this.current = name;
-        }
-        this.all.push(name);
-        this.branches[name] = {
-          current,
-          name,
-          commit,
-          label
-        };
-      }
-    };
-    exports.BranchSummaryResult = BranchSummaryResult;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-branch.js
-var require_parse_branch = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-branch.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseBranchSummary = void 0;
-    var BranchSummary_1 = require_BranchSummary();
-    var utils_1 = require_utils();
-    var parsers = [
-      new utils_1.LineParser(/^(\*\s)?\((?:HEAD )?detached (?:from|at) (\S+)\)\s+([a-z0-9]+)\s(.*)$/, (result, [current, name, commit, label]) => {
-        result.push(!!current, true, name, commit, label);
-      }),
-      new utils_1.LineParser(/^(\*\s)?(\S+)\s+([a-z0-9]+)\s(.*)$/s, (result, [current, name, commit, label]) => {
-        result.push(!!current, false, name, commit, label);
-      })
-    ];
-    function parseBranchSummary(stdOut) {
-      return utils_1.parseStringResponse(new BranchSummary_1.BranchSummaryResult(), parsers, stdOut);
-    }
-    exports.parseBranchSummary = parseBranchSummary;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/branch.js
-var require_branch = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/branch.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.deleteBranchTask = exports.deleteBranchesTask = exports.branchLocalTask = exports.branchTask = exports.containsDeleteBranchCommand = void 0;
-    var git_response_error_1 = require_git_response_error();
-    var parse_branch_delete_1 = require_parse_branch_delete();
-    var parse_branch_1 = require_parse_branch();
-    var utils_1 = require_utils();
-    function containsDeleteBranchCommand(commands) {
-      const deleteCommands = ["-d", "-D", "--delete"];
-      return commands.some((command) => deleteCommands.includes(command));
-    }
-    exports.containsDeleteBranchCommand = containsDeleteBranchCommand;
-    function branchTask(customArgs) {
-      const isDelete = containsDeleteBranchCommand(customArgs);
-      const commands = ["branch", ...customArgs];
-      if (commands.length === 1) {
-        commands.push("-a");
-      }
-      if (!commands.includes("-v")) {
-        commands.splice(1, 0, "-v");
-      }
-      return {
-        format: "utf-8",
-        commands,
-        parser(stdOut, stdErr) {
-          if (isDelete) {
-            return parse_branch_delete_1.parseBranchDeletions(stdOut, stdErr).all[0];
-          }
-          return parse_branch_1.parseBranchSummary(stdOut);
-        }
-      };
-    }
-    exports.branchTask = branchTask;
-    function branchLocalTask() {
-      const parser = parse_branch_1.parseBranchSummary;
-      return {
-        format: "utf-8",
-        commands: ["branch", "-v"],
-        parser
-      };
-    }
-    exports.branchLocalTask = branchLocalTask;
-    function deleteBranchesTask(branches, forceDelete = false) {
-      return {
-        format: "utf-8",
-        commands: ["branch", "-v", forceDelete ? "-D" : "-d", ...branches],
-        parser(stdOut, stdErr) {
-          return parse_branch_delete_1.parseBranchDeletions(stdOut, stdErr);
-        },
-        onError({ exitCode, stdOut }, error, done, fail) {
-          if (!parse_branch_delete_1.hasBranchDeletionError(String(error), exitCode)) {
-            return fail(error);
-          }
-          done(stdOut);
-        }
-      };
-    }
-    exports.deleteBranchesTask = deleteBranchesTask;
-    function deleteBranchTask(branch, forceDelete = false) {
-      const task = {
-        format: "utf-8",
-        commands: ["branch", "-v", forceDelete ? "-D" : "-d", branch],
-        parser(stdOut, stdErr) {
-          return parse_branch_delete_1.parseBranchDeletions(stdOut, stdErr).branches[branch];
-        },
-        onError({ exitCode, stdErr, stdOut }, error, _, fail) {
-          if (!parse_branch_delete_1.hasBranchDeletionError(String(error), exitCode)) {
-            return fail(error);
-          }
-          throw new git_response_error_1.GitResponseError(task.parser(utils_1.bufferToString(stdOut), utils_1.bufferToString(stdErr)), String(error));
-        }
-      };
-      return task;
-    }
-    exports.deleteBranchTask = deleteBranchTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/CheckIgnore.js
-var require_CheckIgnore = __commonJS({
-  "node_modules/simple-git/src/lib/responses/CheckIgnore.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseCheckIgnore = void 0;
-    var parseCheckIgnore = (text2) => {
-      return text2.split(/\n/g).map((line) => line.trim()).filter((file) => !!file);
-    };
-    exports.parseCheckIgnore = parseCheckIgnore;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/check-ignore.js
-var require_check_ignore = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/check-ignore.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.checkIgnoreTask = void 0;
-    var CheckIgnore_1 = require_CheckIgnore();
-    function checkIgnoreTask(paths) {
-      return {
-        commands: ["check-ignore", ...paths],
-        format: "utf-8",
-        parser: CheckIgnore_1.parseCheckIgnore
-      };
-    }
-    exports.checkIgnoreTask = checkIgnoreTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/clone.js
-var require_clone = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/clone.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.cloneMirrorTask = exports.cloneTask = void 0;
-    var task_1 = require_task();
-    var utils_1 = require_utils();
-    function cloneTask(repo, directory, customArgs) {
-      const commands = ["clone", ...customArgs];
-      if (typeof repo === "string") {
-        commands.push(repo);
-      }
-      if (typeof directory === "string") {
-        commands.push(directory);
-      }
-      return task_1.straightThroughStringTask(commands);
-    }
-    exports.cloneTask = cloneTask;
-    function cloneMirrorTask(repo, directory, customArgs) {
-      utils_1.append(customArgs, "--mirror");
-      return cloneTask(repo, directory, customArgs);
-    }
-    exports.cloneMirrorTask = cloneMirrorTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-commit.js
-var require_parse_commit = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-commit.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseCommitResult = void 0;
-    var utils_1 = require_utils();
-    var parsers = [
-      new utils_1.LineParser(/^\[([^\s]+)( \([^)]+\))? ([^\]]+)/, (result, [branch, root, commit]) => {
-        result.branch = branch;
-        result.commit = commit;
-        result.root = !!root;
-      }),
-      new utils_1.LineParser(/\s*Author:\s(.+)/i, (result, [author]) => {
-        const parts = author.split("<");
-        const email = parts.pop();
-        if (!email || !email.includes("@")) {
-          return;
-        }
-        result.author = {
-          email: email.substr(0, email.length - 1),
-          name: parts.join("<").trim()
-        };
-      }),
-      new utils_1.LineParser(/(\d+)[^,]*(?:,\s*(\d+)[^,]*)(?:,\s*(\d+))/g, (result, [changes, insertions, deletions]) => {
-        result.summary.changes = parseInt(changes, 10) || 0;
-        result.summary.insertions = parseInt(insertions, 10) || 0;
-        result.summary.deletions = parseInt(deletions, 10) || 0;
-      }),
-      new utils_1.LineParser(/^(\d+)[^,]*(?:,\s*(\d+)[^(]+\(([+-]))?/, (result, [changes, lines, direction]) => {
-        result.summary.changes = parseInt(changes, 10) || 0;
-        const count = parseInt(lines, 10) || 0;
-        if (direction === "-") {
-          result.summary.deletions = count;
-        } else if (direction === "+") {
-          result.summary.insertions = count;
-        }
-      })
-    ];
-    function parseCommitResult(stdOut) {
-      const result = {
-        author: null,
-        branch: "",
-        commit: "",
-        root: false,
-        summary: {
-          changes: 0,
-          insertions: 0,
-          deletions: 0
-        }
-      };
-      return utils_1.parseStringResponse(result, parsers, stdOut);
-    }
-    exports.parseCommitResult = parseCommitResult;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/commit.js
-var require_commit = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/commit.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.commitTask = void 0;
-    var parse_commit_1 = require_parse_commit();
-    function commitTask(message, files, customArgs) {
-      const commands = ["commit"];
-      message.forEach((m) => commands.push("-m", m));
-      commands.push(...files, ...customArgs);
-      return {
-        commands,
-        format: "utf-8",
-        parser: parse_commit_1.parseCommitResult
-      };
-    }
-    exports.commitTask = commitTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/diff.js
-var require_diff = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/diff.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.diffSummaryTask = void 0;
-    var parse_diff_summary_1 = require_parse_diff_summary();
-    function diffSummaryTask(customArgs) {
-      return {
-        commands: ["diff", "--stat=4096", ...customArgs],
-        format: "utf-8",
-        parser(stdOut) {
-          return parse_diff_summary_1.parseDiffResult(stdOut);
-        }
-      };
-    }
-    exports.diffSummaryTask = diffSummaryTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-fetch.js
-var require_parse_fetch = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-fetch.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseFetchResult = void 0;
-    var utils_1 = require_utils();
-    var parsers = [
-      new utils_1.LineParser(/From (.+)$/, (result, [remote]) => {
-        result.remote = remote;
-      }),
-      new utils_1.LineParser(/\* \[new branch]\s+(\S+)\s*-> (.+)$/, (result, [name, tracking]) => {
-        result.branches.push({
-          name,
-          tracking
-        });
-      }),
-      new utils_1.LineParser(/\* \[new tag]\s+(\S+)\s*-> (.+)$/, (result, [name, tracking]) => {
-        result.tags.push({
-          name,
-          tracking
-        });
-      })
-    ];
-    function parseFetchResult(stdOut, stdErr) {
-      const result = {
-        raw: stdOut,
-        remote: null,
-        branches: [],
-        tags: []
-      };
-      return utils_1.parseStringResponse(result, parsers, stdOut, stdErr);
-    }
-    exports.parseFetchResult = parseFetchResult;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/fetch.js
-var require_fetch = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/fetch.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.fetchTask = void 0;
-    var parse_fetch_1 = require_parse_fetch();
-    function fetchTask(remote, branch, customArgs) {
-      const commands = ["fetch", ...customArgs];
-      if (remote && branch) {
-        commands.push(remote, branch);
-      }
-      return {
-        commands,
-        format: "utf-8",
-        parser: parse_fetch_1.parseFetchResult
-      };
-    }
-    exports.fetchTask = fetchTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/parsers/parse-move.js
-var require_parse_move = __commonJS({
-  "node_modules/simple-git/src/lib/parsers/parse-move.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseMoveResult = void 0;
-    var utils_1 = require_utils();
-    var parsers = [
-      new utils_1.LineParser(/^Renaming (.+) to (.+)$/, (result, [from, to]) => {
-        result.moves.push({ from, to });
-      })
-    ];
-    function parseMoveResult(stdOut) {
-      return utils_1.parseStringResponse({ moves: [] }, parsers, stdOut);
-    }
-    exports.parseMoveResult = parseMoveResult;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/move.js
-var require_move = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/move.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.moveTask = void 0;
-    var parse_move_1 = require_parse_move();
-    var utils_1 = require_utils();
-    function moveTask(from, to) {
-      return {
-        commands: ["mv", "-v", ...utils_1.asArray(from), to],
-        format: "utf-8",
-        parser: parse_move_1.parseMoveResult
-      };
-    }
-    exports.moveTask = moveTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/pull.js
-var require_pull = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/pull.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.pullTask = void 0;
-    var parse_pull_1 = require_parse_pull();
-    function pullTask(remote, branch, customArgs) {
-      const commands = ["pull", ...customArgs];
-      if (remote && branch) {
-        commands.splice(1, 0, remote, branch);
-      }
-      return {
-        commands,
-        format: "utf-8",
-        parser(stdOut, stdErr) {
-          return parse_pull_1.parsePullResult(stdOut, stdErr);
-        }
-      };
-    }
-    exports.pullTask = pullTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/GetRemoteSummary.js
-var require_GetRemoteSummary = __commonJS({
-  "node_modules/simple-git/src/lib/responses/GetRemoteSummary.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseGetRemotesVerbose = exports.parseGetRemotes = void 0;
-    var utils_1 = require_utils();
-    function parseGetRemotes(text2) {
-      const remotes = {};
-      forEach(text2, ([name]) => remotes[name] = { name });
-      return Object.values(remotes);
-    }
-    exports.parseGetRemotes = parseGetRemotes;
-    function parseGetRemotesVerbose(text2) {
-      const remotes = {};
-      forEach(text2, ([name, url, purpose]) => {
-        if (!remotes.hasOwnProperty(name)) {
-          remotes[name] = {
-            name,
-            refs: { fetch: "", push: "" }
-          };
-        }
-        if (purpose && url) {
-          remotes[name].refs[purpose.replace(/[^a-z]/g, "")] = url;
-        }
-      });
-      return Object.values(remotes);
-    }
-    exports.parseGetRemotesVerbose = parseGetRemotesVerbose;
-    function forEach(text2, handler) {
-      utils_1.forEachLineWithContent(text2, (line) => handler(line.split(/\s+/)));
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/remote.js
-var require_remote = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/remote.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.removeRemoteTask = exports.remoteTask = exports.listRemotesTask = exports.getRemotesTask = exports.addRemoteTask = void 0;
-    var GetRemoteSummary_1 = require_GetRemoteSummary();
-    var task_1 = require_task();
-    function addRemoteTask(remoteName, remoteRepo, customArgs = []) {
-      return task_1.straightThroughStringTask(["remote", "add", ...customArgs, remoteName, remoteRepo]);
-    }
-    exports.addRemoteTask = addRemoteTask;
-    function getRemotesTask(verbose) {
-      const commands = ["remote"];
-      if (verbose) {
-        commands.push("-v");
-      }
-      return {
-        commands,
-        format: "utf-8",
-        parser: verbose ? GetRemoteSummary_1.parseGetRemotesVerbose : GetRemoteSummary_1.parseGetRemotes
-      };
-    }
-    exports.getRemotesTask = getRemotesTask;
-    function listRemotesTask(customArgs = []) {
-      const commands = [...customArgs];
-      if (commands[0] !== "ls-remote") {
-        commands.unshift("ls-remote");
-      }
-      return task_1.straightThroughStringTask(commands);
-    }
-    exports.listRemotesTask = listRemotesTask;
-    function remoteTask(customArgs = []) {
-      const commands = [...customArgs];
-      if (commands[0] !== "remote") {
-        commands.unshift("remote");
-      }
-      return task_1.straightThroughStringTask(commands);
-    }
-    exports.remoteTask = remoteTask;
-    function removeRemoteTask(remoteName) {
-      return task_1.straightThroughStringTask(["remote", "remove", remoteName]);
-    }
-    exports.removeRemoteTask = removeRemoteTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/stash-list.js
-var require_stash_list = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/stash-list.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.stashListTask = void 0;
-    var parse_list_log_summary_1 = require_parse_list_log_summary();
-    var log_1 = require_log();
-    function stashListTask(opt = {}, customArgs) {
-      const options = log_1.parseLogOptions(opt);
-      const parser = parse_list_log_summary_1.createListLogSummaryParser(options.splitter, options.fields);
-      return {
-        commands: ["stash", "list", ...options.commands, ...customArgs],
-        format: "utf-8",
-        parser
-      };
-    }
-    exports.stashListTask = stashListTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/sub-module.js
-var require_sub_module = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/sub-module.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.updateSubModuleTask = exports.subModuleTask = exports.initSubModuleTask = exports.addSubModuleTask = void 0;
-    var task_1 = require_task();
-    function addSubModuleTask(repo, path3) {
-      return subModuleTask(["add", repo, path3]);
-    }
-    exports.addSubModuleTask = addSubModuleTask;
-    function initSubModuleTask(customArgs) {
-      return subModuleTask(["init", ...customArgs]);
-    }
-    exports.initSubModuleTask = initSubModuleTask;
-    function subModuleTask(customArgs) {
-      const commands = [...customArgs];
-      if (commands[0] !== "submodule") {
-        commands.unshift("submodule");
-      }
-      return task_1.straightThroughStringTask(commands);
-    }
-    exports.subModuleTask = subModuleTask;
-    function updateSubModuleTask(customArgs) {
-      return subModuleTask(["update", ...customArgs]);
-    }
-    exports.updateSubModuleTask = updateSubModuleTask;
-  }
-});
-
-// node_modules/simple-git/src/lib/responses/TagList.js
-var require_TagList = __commonJS({
-  "node_modules/simple-git/src/lib/responses/TagList.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.parseTagList = exports.TagList = void 0;
-    var TagList = class {
-      constructor(all, latest) {
-        this.all = all;
-        this.latest = latest;
-      }
-    };
-    exports.TagList = TagList;
-    var parseTagList = function(data, customSort = false) {
-      const tags = data.split("\n").map(trimmed).filter(Boolean);
-      if (!customSort) {
-        tags.sort(function(tagA, tagB) {
-          const partsA = tagA.split(".");
-          const partsB = tagB.split(".");
-          if (partsA.length === 1 || partsB.length === 1) {
-            return singleSorted(toNumber(partsA[0]), toNumber(partsB[0]));
-          }
-          for (let i = 0, l = Math.max(partsA.length, partsB.length); i < l; i++) {
-            const diff = sorted(toNumber(partsA[i]), toNumber(partsB[i]));
-            if (diff) {
-              return diff;
-            }
-          }
-          return 0;
-        });
-      }
-      const latest = customSort ? tags[0] : [...tags].reverse().find((tag) => tag.indexOf(".") >= 0);
-      return new TagList(tags, latest);
-    };
-    exports.parseTagList = parseTagList;
-    function singleSorted(a, b) {
-      const aIsNum = isNaN(a);
-      const bIsNum = isNaN(b);
-      if (aIsNum !== bIsNum) {
-        return aIsNum ? 1 : -1;
-      }
-      return aIsNum ? sorted(a, b) : 0;
-    }
-    function sorted(a, b) {
-      return a === b ? 0 : a > b ? 1 : -1;
-    }
-    function trimmed(input) {
-      return input.trim();
-    }
-    function toNumber(input) {
-      if (typeof input === "string") {
-        return parseInt(input.replace(/^\D+/g, ""), 10) || 0;
-      }
-      return 0;
-    }
-  }
-});
-
-// node_modules/simple-git/src/lib/tasks/tag.js
-var require_tag = __commonJS({
-  "node_modules/simple-git/src/lib/tasks/tag.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.addAnnotatedTagTask = exports.addTagTask = exports.tagListTask = void 0;
-    var TagList_1 = require_TagList();
-    function tagListTask(customArgs = []) {
-      const hasCustomSort = customArgs.some((option) => /^--sort=/.test(option));
-      return {
-        format: "utf-8",
-        commands: ["tag", "-l", ...customArgs],
-        parser(text2) {
-          return TagList_1.parseTagList(text2, hasCustomSort);
-        }
-      };
-    }
-    exports.tagListTask = tagListTask;
-    function addTagTask(name) {
-      return {
-        format: "utf-8",
-        commands: ["tag", name],
-        parser() {
-          return { name };
-        }
-      };
-    }
-    exports.addTagTask = addTagTask;
-    function addAnnotatedTagTask(name, tagMessage) {
-      return {
-        format: "utf-8",
-        commands: ["tag", "-a", "-m", tagMessage, name],
-        parser() {
-          return { name };
-        }
-      };
-    }
-    exports.addAnnotatedTagTask = addAnnotatedTagTask;
-  }
-});
-
-// node_modules/simple-git/src/git.js
-var require_git = __commonJS({
-  "node_modules/simple-git/src/git.js"(exports, module2) {
-    var { GitExecutor } = require_git_executor();
-    var { SimpleGitApi } = require_simple_git_api();
-    var { Scheduler } = require_scheduler();
-    var { GitLogger } = require_git_logger();
-    var { configurationErrorTask } = require_task();
-    var {
-      asArray,
-      filterArray,
-      filterPrimitives,
-      filterString,
-      filterStringOrStringArray,
-      filterType,
-      getTrailingOptions,
-      trailingFunctionArgument,
-      trailingOptionsArgument
-    } = require_utils();
-    var { applyPatchTask } = require_apply_patch();
-    var { branchTask, branchLocalTask, deleteBranchesTask, deleteBranchTask } = require_branch();
-    var { checkIgnoreTask } = require_check_ignore();
-    var { checkIsRepoTask } = require_check_is_repo();
-    var { cloneTask, cloneMirrorTask } = require_clone();
-    var { cleanWithOptionsTask, isCleanOptionsArray } = require_clean();
-    var { commitTask } = require_commit();
-    var { diffSummaryTask } = require_diff();
-    var { fetchTask } = require_fetch();
-    var { moveTask } = require_move();
-    var { pullTask } = require_pull();
-    var { pushTagsTask } = require_push();
-    var { addRemoteTask, getRemotesTask, listRemotesTask, remoteTask, removeRemoteTask } = require_remote();
-    var { getResetMode, resetTask } = require_reset();
-    var { stashListTask } = require_stash_list();
-    var { addSubModuleTask, initSubModuleTask, subModuleTask, updateSubModuleTask } = require_sub_module();
-    var { addAnnotatedTagTask, addTagTask, tagListTask } = require_tag();
-    var { straightThroughBufferTask, straightThroughStringTask } = require_task();
-    function Git(options, plugins) {
-      this._executor = new GitExecutor(options.binary, options.baseDir, new Scheduler(options.maxConcurrentProcesses), plugins);
-      this._logger = new GitLogger();
-    }
-    (Git.prototype = Object.create(SimpleGitApi.prototype)).constructor = Git;
-    Git.prototype._logger = null;
-    Git.prototype.customBinary = function(command) {
-      this._executor.binary = command;
-      return this;
-    };
-    Git.prototype.env = function(name, value) {
-      if (arguments.length === 1 && typeof name === "object") {
-        this._executor.env = name;
-      } else {
-        (this._executor.env = this._executor.env || {})[name] = value;
-      }
-      return this;
-    };
-    Git.prototype.stashList = function(options) {
-      return this._runTask(stashListTask(trailingOptionsArgument(arguments) || {}, filterArray(options) && options || []), trailingFunctionArgument(arguments));
-    };
-    function createCloneTask(api, task, repoPath, localPath) {
-      if (typeof repoPath !== "string") {
-        return configurationErrorTask(`git.${api}() requires a string 'repoPath'`);
-      }
-      return task(repoPath, filterType(localPath, filterString), getTrailingOptions(arguments));
-    }
-    Git.prototype.clone = function() {
-      return this._runTask(createCloneTask("clone", cloneTask, ...arguments), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.mirror = function() {
-      return this._runTask(createCloneTask("mirror", cloneMirrorTask, ...arguments), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.mv = function(from, to) {
-      return this._runTask(moveTask(from, to), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.checkoutLatestTag = function(then) {
-      var git = this;
-      return this.pull(function() {
-        git.tags(function(err, tags) {
-          git.checkout(tags.latest, then);
-        });
-      });
-    };
-    Git.prototype.commit = function(message, files, options, then) {
-      const next = trailingFunctionArgument(arguments);
-      const messages = [];
-      if (filterStringOrStringArray(message)) {
-        messages.push(...asArray(message));
-      } else {
-        console.warn("simple-git deprecation notice: git.commit: requires the commit message to be supplied as a string/string[], this will be an error in version 3");
-      }
-      return this._runTask(commitTask(messages, asArray(filterType(files, filterStringOrStringArray, [])), [...filterType(options, filterArray, []), ...getTrailingOptions(arguments, 0, true)]), next);
-    };
-    Git.prototype.pull = function(remote, branch, options, then) {
-      return this._runTask(pullTask(filterType(remote, filterString), filterType(branch, filterString), getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.fetch = function(remote, branch) {
-      return this._runTask(fetchTask(filterType(remote, filterString), filterType(branch, filterString), getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.silent = function(silence) {
-      console.warn("simple-git deprecation notice: git.silent: logging should be configured using the `debug` library / `DEBUG` environment variable, this will be an error in version 3");
-      this._logger.silent(!!silence);
-      return this;
-    };
-    Git.prototype.tags = function(options, then) {
-      return this._runTask(tagListTask(getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.rebase = function() {
-      return this._runTask(straightThroughStringTask(["rebase", ...getTrailingOptions(arguments)]), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.reset = function(mode) {
-      return this._runTask(resetTask(getResetMode(mode), getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.revert = function(commit) {
-      const next = trailingFunctionArgument(arguments);
-      if (typeof commit !== "string") {
-        return this._runTask(configurationErrorTask("Commit must be a string"), next);
-      }
-      return this._runTask(straightThroughStringTask(["revert", ...getTrailingOptions(arguments, 0, true), commit]), next);
-    };
-    Git.prototype.addTag = function(name) {
-      const task = typeof name === "string" ? addTagTask(name) : configurationErrorTask("Git.addTag requires a tag name");
-      return this._runTask(task, trailingFunctionArgument(arguments));
-    };
-    Git.prototype.addAnnotatedTag = function(tagName, tagMessage) {
-      return this._runTask(addAnnotatedTagTask(tagName, tagMessage), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.checkout = function() {
-      const commands = ["checkout", ...getTrailingOptions(arguments, true)];
-      return this._runTask(straightThroughStringTask(commands), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.checkoutBranch = function(branchName, startPoint, then) {
-      return this.checkout(["-b", branchName, startPoint], trailingFunctionArgument(arguments));
-    };
-    Git.prototype.checkoutLocalBranch = function(branchName, then) {
-      return this.checkout(["-b", branchName], trailingFunctionArgument(arguments));
-    };
-    Git.prototype.deleteLocalBranch = function(branchName, forceDelete, then) {
-      return this._runTask(deleteBranchTask(branchName, typeof forceDelete === "boolean" ? forceDelete : false), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.deleteLocalBranches = function(branchNames, forceDelete, then) {
-      return this._runTask(deleteBranchesTask(branchNames, typeof forceDelete === "boolean" ? forceDelete : false), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.branch = function(options, then) {
-      return this._runTask(branchTask(getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.branchLocal = function(then) {
-      return this._runTask(branchLocalTask(), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.raw = function(commands) {
-      const createRestCommands = !Array.isArray(commands);
-      const command = [].slice.call(createRestCommands ? arguments : commands, 0);
-      for (let i = 0; i < command.length && createRestCommands; i++) {
-        if (!filterPrimitives(command[i])) {
-          command.splice(i, command.length - i);
-          break;
-        }
-      }
-      command.push(...getTrailingOptions(arguments, 0, true));
-      var next = trailingFunctionArgument(arguments);
-      if (!command.length) {
-        return this._runTask(configurationErrorTask("Raw: must supply one or more command to execute"), next);
-      }
-      return this._runTask(straightThroughStringTask(command), next);
-    };
-    Git.prototype.submoduleAdd = function(repo, path3, then) {
-      return this._runTask(addSubModuleTask(repo, path3), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.submoduleUpdate = function(args, then) {
-      return this._runTask(updateSubModuleTask(getTrailingOptions(arguments, true)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.submoduleInit = function(args, then) {
-      return this._runTask(initSubModuleTask(getTrailingOptions(arguments, true)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.subModule = function(options, then) {
-      return this._runTask(subModuleTask(getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.listRemote = function() {
-      return this._runTask(listRemotesTask(getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.addRemote = function(remoteName, remoteRepo, then) {
-      return this._runTask(addRemoteTask(remoteName, remoteRepo, getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.removeRemote = function(remoteName, then) {
-      return this._runTask(removeRemoteTask(remoteName), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.getRemotes = function(verbose, then) {
-      return this._runTask(getRemotesTask(verbose === true), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.remote = function(options, then) {
-      return this._runTask(remoteTask(getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.tag = function(options, then) {
-      const command = getTrailingOptions(arguments);
-      if (command[0] !== "tag") {
-        command.unshift("tag");
-      }
-      return this._runTask(straightThroughStringTask(command), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.updateServerInfo = function(then) {
-      return this._runTask(straightThroughStringTask(["update-server-info"]), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.pushTags = function(remote, then) {
-      const task = pushTagsTask({ remote: filterType(remote, filterString) }, getTrailingOptions(arguments));
-      return this._runTask(task, trailingFunctionArgument(arguments));
-    };
-    Git.prototype.rm = function(files) {
-      return this._runTask(straightThroughStringTask(["rm", "-f", ...asArray(files)]), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.rmKeepLocal = function(files) {
-      return this._runTask(straightThroughStringTask(["rm", "--cached", ...asArray(files)]), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.catFile = function(options, then) {
-      return this._catFile("utf-8", arguments);
-    };
-    Git.prototype.binaryCatFile = function() {
-      return this._catFile("buffer", arguments);
-    };
-    Git.prototype._catFile = function(format, args) {
-      var handler = trailingFunctionArgument(args);
-      var command = ["cat-file"];
-      var options = args[0];
-      if (typeof options === "string") {
-        return this._runTask(configurationErrorTask("Git.catFile: options must be supplied as an array of strings"), handler);
-      }
-      if (Array.isArray(options)) {
-        command.push.apply(command, options);
-      }
-      const task = format === "buffer" ? straightThroughBufferTask(command) : straightThroughStringTask(command);
-      return this._runTask(task, handler);
-    };
-    Git.prototype.diff = function(options, then) {
-      const command = ["diff", ...getTrailingOptions(arguments)];
-      if (typeof options === "string") {
-        command.splice(1, 0, options);
-        this._logger.warn("Git#diff: supplying options as a single string is now deprecated, switch to an array of strings");
-      }
-      return this._runTask(straightThroughStringTask(command), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.diffSummary = function() {
-      return this._runTask(diffSummaryTask(getTrailingOptions(arguments, 1)), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.applyPatch = function(patches) {
-      const task = !filterStringOrStringArray(patches) ? configurationErrorTask(`git.applyPatch requires one or more string patches as the first argument`) : applyPatchTask(asArray(patches), getTrailingOptions([].slice.call(arguments, 1)));
-      return this._runTask(task, trailingFunctionArgument(arguments));
-    };
-    Git.prototype.revparse = function() {
-      const commands = ["rev-parse", ...getTrailingOptions(arguments, true)];
-      return this._runTask(straightThroughStringTask(commands, true), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.show = function(options, then) {
-      return this._runTask(straightThroughStringTask(["show", ...getTrailingOptions(arguments, 1)]), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.clean = function(mode, options, then) {
-      const usingCleanOptionsArray = isCleanOptionsArray(mode);
-      const cleanMode = usingCleanOptionsArray && mode.join("") || filterType(mode, filterString) || "";
-      const customArgs = getTrailingOptions([].slice.call(arguments, usingCleanOptionsArray ? 1 : 0));
-      return this._runTask(cleanWithOptionsTask(cleanMode, customArgs), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.exec = function(then) {
-      const task = {
-        commands: [],
-        format: "utf-8",
-        parser() {
-          if (typeof then === "function") {
-            then();
-          }
-        }
-      };
-      return this._runTask(task);
-    };
-    Git.prototype.clearQueue = function() {
-      return this;
-    };
-    Git.prototype.checkIgnore = function(pathnames, then) {
-      return this._runTask(checkIgnoreTask(asArray(filterType(pathnames, filterStringOrStringArray, []))), trailingFunctionArgument(arguments));
-    };
-    Git.prototype.checkIsRepo = function(checkType, then) {
-      return this._runTask(checkIsRepoTask(filterType(checkType, filterString)), trailingFunctionArgument(arguments));
-    };
-    module2.exports = Git;
-  }
-});
-
-// node_modules/simple-git/src/lib/git-factory.js
-var require_git_factory = __commonJS({
-  "node_modules/simple-git/src/lib/git-factory.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.gitInstanceFactory = exports.gitExportFactory = exports.esModuleFactory = void 0;
-    var api_1 = require_api();
-    var plugins_1 = require_plugins();
-    var utils_1 = require_utils();
-    var Git = require_git();
-    function esModuleFactory(defaultExport) {
-      return Object.defineProperties(defaultExport, {
-        __esModule: { value: true },
-        default: { value: defaultExport }
-      });
-    }
-    exports.esModuleFactory = esModuleFactory;
-    function gitExportFactory(factory, extra) {
-      return Object.assign(function(...args) {
-        return factory.apply(null, args);
-      }, api_1.default, extra || {});
-    }
-    exports.gitExportFactory = gitExportFactory;
-    function gitInstanceFactory(baseDir, options) {
-      const plugins = new plugins_1.PluginStore();
-      const config = utils_1.createInstanceConfig(baseDir && (typeof baseDir === "string" ? { baseDir } : baseDir) || {}, options);
-      if (!utils_1.folderExists(config.baseDir)) {
-        throw new api_1.default.GitConstructError(config, `Cannot use simple-git on a directory that does not exist`);
-      }
-      if (Array.isArray(config.config)) {
-        plugins.add(plugins_1.commandConfigPrefixingPlugin(config.config));
-      }
-      plugins.add(plugins_1.completionDetectionPlugin(config.completion));
-      config.progress && plugins.add(plugins_1.progressMonitorPlugin(config.progress));
-      config.timeout && plugins.add(plugins_1.timeoutPlugin(config.timeout));
-      config.spawnOptions && plugins.add(plugins_1.spawnOptionsPlugin(config.spawnOptions));
-      plugins.add(plugins_1.errorDetectionPlugin(plugins_1.errorDetectionHandler(true)));
-      config.errors && plugins.add(plugins_1.errorDetectionPlugin(config.errors));
-      return new Git(config, plugins);
-    }
-    exports.gitInstanceFactory = gitInstanceFactory;
-  }
-});
-
-// node_modules/simple-git/src/lib/runners/promise-wrapped.js
-var require_promise_wrapped = __commonJS({
-  "node_modules/simple-git/src/lib/runners/promise-wrapped.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    exports.gitP = void 0;
-    var git_response_error_1 = require_git_response_error();
-    var git_factory_1 = require_git_factory();
-    var functionNamesBuilderApi = [
-      "customBinary",
-      "env",
-      "outputHandler",
-      "silent"
-    ];
-    var functionNamesPromiseApi = [
-      "add",
-      "addAnnotatedTag",
-      "addConfig",
-      "addRemote",
-      "addTag",
-      "applyPatch",
-      "binaryCatFile",
-      "branch",
-      "branchLocal",
-      "catFile",
-      "checkIgnore",
-      "checkIsRepo",
-      "checkout",
-      "checkoutBranch",
-      "checkoutLatestTag",
-      "checkoutLocalBranch",
-      "clean",
-      "clone",
-      "commit",
-      "cwd",
-      "deleteLocalBranch",
-      "deleteLocalBranches",
-      "diff",
-      "diffSummary",
-      "exec",
-      "fetch",
-      "getRemotes",
-      "init",
-      "listConfig",
-      "listRemote",
-      "log",
-      "merge",
-      "mergeFromTo",
-      "mirror",
-      "mv",
-      "pull",
-      "push",
-      "pushTags",
-      "raw",
-      "rebase",
-      "remote",
-      "removeRemote",
-      "reset",
-      "revert",
-      "revparse",
-      "rm",
-      "rmKeepLocal",
-      "show",
-      "stash",
-      "stashList",
-      "status",
-      "subModule",
-      "submoduleAdd",
-      "submoduleInit",
-      "submoduleUpdate",
-      "tag",
-      "tags",
-      "updateServerInfo"
-    ];
-    function gitP(...args) {
-      let git;
-      let chain = Promise.resolve();
-      try {
-        git = git_factory_1.gitInstanceFactory(...args);
-      } catch (e) {
-        chain = Promise.reject(e);
-      }
-      function builderReturn() {
-        return promiseApi;
-      }
-      function chainReturn() {
-        return chain;
-      }
-      const promiseApi = [...functionNamesBuilderApi, ...functionNamesPromiseApi].reduce((api, name) => {
-        const isAsync = functionNamesPromiseApi.includes(name);
-        const valid = isAsync ? asyncWrapper(name, git) : syncWrapper(name, git, api);
-        const alternative = isAsync ? chainReturn : builderReturn;
-        Object.defineProperty(api, name, {
-          enumerable: false,
-          configurable: false,
-          value: git ? valid : alternative
-        });
-        return api;
-      }, {});
-      return promiseApi;
-      function asyncWrapper(fn, git2) {
-        return function(...args2) {
-          if (typeof args2[args2.length] === "function") {
-            throw new TypeError("Promise interface requires that handlers are not supplied inline, trailing function not allowed in call to " + fn);
-          }
-          return chain.then(function() {
-            return new Promise(function(resolve, reject) {
-              const callback = (err, result) => {
-                if (err) {
-                  return reject(toError(err));
-                }
-                resolve(result);
-              };
-              args2.push(callback);
-              git2[fn].apply(git2, args2);
-            });
-          });
-        };
-      }
-      function syncWrapper(fn, git2, api) {
-        return (...args2) => {
-          git2[fn](...args2);
-          return api;
-        };
-      }
-    }
-    exports.gitP = gitP;
-    function toError(error) {
-      if (error instanceof Error) {
-        return error;
-      }
-      if (typeof error === "string") {
-        return new Error(error);
-      }
-      return new git_response_error_1.GitResponseError(error);
-    }
-  }
-});
-
-// node_modules/simple-git/src/index.js
-var require_src3 = __commonJS({
-  "node_modules/simple-git/src/index.js"(exports, module2) {
-    var { gitP } = require_promise_wrapped();
-    var { esModuleFactory, gitInstanceFactory, gitExportFactory } = require_git_factory();
-    module2.exports = esModuleFactory(gitExportFactory(gitInstanceFactory, { gitP }));
+    exports.deferred = deferred2;
+    exports.createDeferred = deferred2;
+    exports.default = deferred2;
   }
 });
 
@@ -5010,7 +933,7 @@ var require_types = __commonJS({
 });
 
 // node_modules/diff2html/lib/utils.js
-var require_utils2 = __commonJS({
+var require_utils = __commonJS({
   "node_modules/diff2html/lib/utils.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
@@ -5074,7 +997,7 @@ var require_diff_parser = __commonJS({
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.parse = void 0;
     var types_1 = require_types();
-    var utils_1 = require_utils2();
+    var utils_1 = require_utils();
     function getExtension(filename, language) {
       var filenameParts = filename.split(".");
       return filenameParts.length > 1 ? filenameParts[filenameParts.length - 1] : language;
@@ -5088,7 +1011,7 @@ var require_diff_parser = __commonJS({
     function getFilename(line, linePrefix, extraPrefix) {
       var prefixes = extraPrefix !== void 0 ? __spreadArray2(__spreadArray2([], baseDiffFilenamePrefixes, true), [extraPrefix], false) : baseDiffFilenamePrefixes;
       var FilenameRegExp = linePrefix ? new RegExp("^" + (0, utils_1.escapeForRegExp)(linePrefix) + ' "?(.+?)"?$') : new RegExp('^"?(.+?)"?$');
-      var _a = FilenameRegExp.exec(line) || [], _b = _a[1], filename = _b === void 0 ? "" : _b;
+      var _a2 = FilenameRegExp.exec(line) || [], _b = _a2[1], filename = _b === void 0 ? "" : _b;
       var matchingPrefix = prefixes.find(function(p) {
         return filename.indexOf(p) === 0;
       });
@@ -5381,7 +1304,7 @@ var require_base = __commonJS({
           options = {};
         }
         this.options = options;
-        var self2 = this;
+        var self3 = this;
         function done(value) {
           if (callback) {
             setTimeout(function() {
@@ -5424,15 +1347,15 @@ var require_base = __commonJS({
             }
             if (!canAdd || canRemove && addPath.newPos < removePath.newPos) {
               basePath = clonePath(removePath);
-              self2.pushComponent(basePath.components, void 0, true);
+              self3.pushComponent(basePath.components, void 0, true);
             } else {
               basePath = addPath;
               basePath.newPos++;
-              self2.pushComponent(basePath.components, true, void 0);
+              self3.pushComponent(basePath.components, true, void 0);
             }
-            _oldPos = self2.extractCommon(basePath, newString, oldString, diagonalPath);
+            _oldPos = self3.extractCommon(basePath, newString, oldString, diagonalPath);
             if (basePath.newPos + 1 >= newLen && _oldPos + 1 >= oldLen) {
-              return done(buildValues(self2, basePath.components, newString, oldString, self2.useLongestToken));
+              return done(buildValues(self3, basePath.components, newString, oldString, self3.useLongestToken));
             } else {
               bestPath[diagonalPath] = basePath;
             }
@@ -5460,10 +1383,10 @@ var require_base = __commonJS({
         }
       },
       pushComponent: function pushComponent(components, added, removed) {
-        var last = components[components.length - 1];
-        if (last && last.added === added && last.removed === removed) {
+        var last2 = components[components.length - 1];
+        if (last2 && last2.added === added && last2.removed === removed) {
           components[components.length - 1] = {
-            count: last.count + 1,
+            count: last2.count + 1,
             added,
             removed
           };
@@ -6347,7 +2270,7 @@ var require_array2 = __commonJS({
 });
 
 // node_modules/diff/lib/patch/merge.js
-var require_merge2 = __commonJS({
+var require_merge = __commonJS({
   "node_modules/diff/lib/patch/merge.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", {
@@ -6895,7 +2818,7 @@ var require_lib = __commonJS({
     var _array = require_array();
     var _apply = require_apply();
     var _parse = require_parse();
-    var _merge = require_merge2();
+    var _merge = require_merge();
     var _create = require_create();
     var _dmp = require_dmp();
     var _xml = require_xml();
@@ -7055,7 +2978,7 @@ var require_render_utils = __commonJS({
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.diffHighlight = exports.getFileIcon = exports.getHtmlId = exports.filenameDiff = exports.deconstructLine = exports.escapeForHtml = exports.toCSSClass = exports.defaultRenderConfig = exports.CSSLineClass = void 0;
     var jsDiff = __importStar2(require_lib());
-    var utils_1 = require_utils2();
+    var utils_1 = require_utils();
     var rematch = __importStar2(require_rematch());
     var types_1 = require_types();
     exports.CSSLineClass = {
@@ -7188,7 +3111,7 @@ var require_render_utils = __commonJS({
       if (config === void 0) {
         config = {};
       }
-      var _a = __assign2(__assign2({}, exports.defaultRenderConfig), config), matching = _a.matching, maxLineLengthHighlight = _a.maxLineLengthHighlight, matchWordsThreshold = _a.matchWordsThreshold, diffStyle = _a.diffStyle;
+      var _a2 = __assign2(__assign2({}, exports.defaultRenderConfig), config), matching = _a2.matching, maxLineLengthHighlight = _a2.maxLineLengthHighlight, matchWordsThreshold = _a2.matchWordsThreshold, diffStyle = _a2.diffStyle;
       var line1 = deconstructLine(diffLine1, isCombined, false);
       var line2 = deconstructLine(diffLine2, isCombined, false);
       if (line1.content.length > maxLineLengthHighlight || line2.content.length > maxLineLengthHighlight) {
@@ -7415,18 +3338,18 @@ var require_line_by_line_renderer = __commonJS({
             lineClass: "d2h-code-linenumber",
             contentClass: "d2h-code-line"
           });
-          _this.applyLineGroupping(block).forEach(function(_a) {
-            var contextLines = _a[0], oldLines = _a[1], newLines = _a[2];
+          _this.applyLineGroupping(block).forEach(function(_a2) {
+            var contextLines = _a2[0], oldLines = _a2[1], newLines = _a2[2];
             if (oldLines.length && newLines.length && !contextLines.length) {
-              _this.applyRematchMatching(oldLines, newLines, matcher).map(function(_a2) {
-                var oldLines2 = _a2[0], newLines2 = _a2[1];
+              _this.applyRematchMatching(oldLines, newLines, matcher).map(function(_a3) {
+                var oldLines2 = _a3[0], newLines2 = _a3[1];
                 var _b2 = _this.processChangedLines(file.isCombined, oldLines2, newLines2), left2 = _b2.left, right2 = _b2.right;
                 lines += left2;
                 lines += right2;
               });
             } else if (contextLines.length) {
               contextLines.forEach(function(line) {
-                var _a2 = renderUtils.deconstructLine(line.content, file.isCombined), prefix = _a2.prefix, content = _a2.content;
+                var _a3 = renderUtils.deconstructLine(line.content, file.isCombined), prefix = _a3.prefix, content = _a3.content;
                 lines += _this.generateSingleLineHtml({
                   type: renderUtils.CSSLineClass.CONTEXT,
                   prefix,
@@ -7502,7 +3425,7 @@ var require_line_by_line_renderer = __commonJS({
             content: diff.newLine.content,
             type: renderUtils.CSSLineClass.INSERT_CHANGES
           } : __assign2(__assign2({}, renderUtils.deconstructLine(newLine.content, isCombined)), { type: renderUtils.toCSSClass(newLine.type) })), { oldNumber: newLine.oldNumber, newNumber: newLine.newNumber }) : void 0;
-          var _a = this.generateLineHtml(preparedOldLine, preparedNewLine), left = _a.left, right = _a.right;
+          var _a2 = this.generateLineHtml(preparedOldLine, preparedNewLine), left = _a2.left, right = _a2.right;
           fileHtml.left += left;
           fileHtml.right += right;
         }
@@ -7649,18 +3572,18 @@ var require_side_by_side_renderer = __commonJS({
             left: _this.makeHeaderHtml(block.header, file),
             right: _this.makeHeaderHtml("")
           };
-          _this.applyLineGroupping(block).forEach(function(_a) {
-            var contextLines = _a[0], oldLines = _a[1], newLines = _a[2];
+          _this.applyLineGroupping(block).forEach(function(_a2) {
+            var contextLines = _a2[0], oldLines = _a2[1], newLines = _a2[2];
             if (oldLines.length && newLines.length && !contextLines.length) {
-              _this.applyRematchMatching(oldLines, newLines, matcher).map(function(_a2) {
-                var oldLines2 = _a2[0], newLines2 = _a2[1];
+              _this.applyRematchMatching(oldLines, newLines, matcher).map(function(_a3) {
+                var oldLines2 = _a3[0], newLines2 = _a3[1];
                 var _b2 = _this.processChangedLines(file.isCombined, oldLines2, newLines2), left2 = _b2.left, right2 = _b2.right;
                 fileHtml.left += left2;
                 fileHtml.right += right2;
               });
             } else if (contextLines.length) {
               contextLines.forEach(function(line) {
-                var _a2 = renderUtils.deconstructLine(line.content, file.isCombined), prefix = _a2.prefix, content = _a2.content;
+                var _a3 = renderUtils.deconstructLine(line.content, file.isCombined), prefix = _a3.prefix, content = _a3.content;
                 var _b2 = _this.generateLineHtml({
                   type: renderUtils.CSSLineClass.CONTEXT,
                   prefix,
@@ -7752,7 +3675,7 @@ var require_side_by_side_renderer = __commonJS({
             content: diff.newLine.content,
             type: renderUtils.CSSLineClass.INSERT_CHANGES
           } : __assign2(__assign2({}, renderUtils.deconstructLine(newLine.content, isCombined)), { type: renderUtils.toCSSClass(newLine.type) })), { number: newLine.newNumber }) : void 0;
-          var _a = this.generateLineHtml(preparedOldLine, preparedNewLine), left = _a.left, right = _a.right;
+          var _a2 = this.generateLineHtml(preparedOldLine, preparedNewLine), left = _a2.left, right = _a2.right;
           fileHtml.left += left;
           fileHtml.right += right;
         }
@@ -8839,11 +4762,11 @@ var require_hoganjs_utils = __commonJS({
     var Hogan2 = __importStar2(require_hogan());
     var diff2html_templates_1 = require_diff2html_templates();
     var HoganJsUtils = function() {
-      function HoganJsUtils2(_a) {
-        var _b = _a.compiledTemplates, compiledTemplates = _b === void 0 ? {} : _b, _c = _a.rawTemplates, rawTemplates = _c === void 0 ? {} : _c;
-        var compiledRawTemplates = Object.entries(rawTemplates).reduce(function(previousTemplates, _a2) {
+      function HoganJsUtils2(_a2) {
+        var _b = _a2.compiledTemplates, compiledTemplates = _b === void 0 ? {} : _b, _c = _a2.rawTemplates, rawTemplates = _c === void 0 ? {} : _c;
+        var compiledRawTemplates = Object.entries(rawTemplates).reduce(function(previousTemplates, _a3) {
           var _b2;
-          var name = _a2[0], templateString = _a2[1];
+          var name = _a3[0], templateString = _a3[1];
           var compiledTemplate = Hogan2.compile(templateString, { asString: false });
           return __assign2(__assign2({}, previousTemplates), (_b2 = {}, _b2[name] = compiledTemplate, _b2));
         }, {});
@@ -8951,6 +4874,435 @@ var require_diff2html = __commonJS({
   }
 });
 
+// node_modules/tslib/tslib.js
+var require_tslib = __commonJS({
+  "node_modules/tslib/tslib.js"(exports, module2) {
+    var __extends2;
+    var __assign2;
+    var __rest2;
+    var __decorate2;
+    var __param2;
+    var __metadata2;
+    var __awaiter2;
+    var __generator2;
+    var __exportStar2;
+    var __values2;
+    var __read2;
+    var __spread2;
+    var __spreadArrays2;
+    var __spreadArray2;
+    var __await2;
+    var __asyncGenerator2;
+    var __asyncDelegator2;
+    var __asyncValues2;
+    var __makeTemplateObject2;
+    var __importStar2;
+    var __importDefault2;
+    var __classPrivateFieldGet2;
+    var __classPrivateFieldSet2;
+    var __createBinding2;
+    (function(factory) {
+      var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
+      if (typeof define === "function" && define.amd) {
+        define("tslib", ["exports"], function(exports2) {
+          factory(createExporter(root, createExporter(exports2)));
+        });
+      } else if (typeof module2 === "object" && typeof module2.exports === "object") {
+        factory(createExporter(root, createExporter(module2.exports)));
+      } else {
+        factory(createExporter(root));
+      }
+      function createExporter(exports2, previous) {
+        if (exports2 !== root) {
+          if (typeof Object.create === "function") {
+            Object.defineProperty(exports2, "__esModule", { value: true });
+          } else {
+            exports2.__esModule = true;
+          }
+        }
+        return function(id, v) {
+          return exports2[id] = previous ? previous(id, v) : v;
+        };
+      }
+    })(function(exporter) {
+      var extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d, b) {
+        d.__proto__ = b;
+      } || function(d, b) {
+        for (var p in b)
+          if (Object.prototype.hasOwnProperty.call(b, p))
+            d[p] = b[p];
+      };
+      __extends2 = function(d, b) {
+        if (typeof b !== "function" && b !== null)
+          throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+      __assign2 = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+          s = arguments[i];
+          for (var p in s)
+            if (Object.prototype.hasOwnProperty.call(s, p))
+              t[p] = s[p];
+        }
+        return t;
+      };
+      __rest2 = function(s, e) {
+        var t = {};
+        for (var p in s)
+          if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+            t[p] = s[p];
+        if (s != null && typeof Object.getOwnPropertySymbols === "function")
+          for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+              t[p[i]] = s[p[i]];
+          }
+        return t;
+      };
+      __decorate2 = function(decorators, target, key2, desc) {
+        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key2) : desc, d;
+        if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+          r = Reflect.decorate(decorators, target, key2, desc);
+        else
+          for (var i = decorators.length - 1; i >= 0; i--)
+            if (d = decorators[i])
+              r = (c < 3 ? d(r) : c > 3 ? d(target, key2, r) : d(target, key2)) || r;
+        return c > 3 && r && Object.defineProperty(target, key2, r), r;
+      };
+      __param2 = function(paramIndex, decorator) {
+        return function(target, key2) {
+          decorator(target, key2, paramIndex);
+        };
+      };
+      __metadata2 = function(metadataKey, metadataValue) {
+        if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
+          return Reflect.metadata(metadataKey, metadataValue);
+      };
+      __awaiter2 = function(thisArg, _arguments, P, generator) {
+        function adopt(value) {
+          return value instanceof P ? value : new P(function(resolve) {
+            resolve(value);
+          });
+        }
+        return new (P || (P = Promise))(function(resolve, reject) {
+          function fulfilled(value) {
+            try {
+              step(generator.next(value));
+            } catch (e) {
+              reject(e);
+            }
+          }
+          function rejected(value) {
+            try {
+              step(generator["throw"](value));
+            } catch (e) {
+              reject(e);
+            }
+          }
+          function step(result) {
+            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+          }
+          step((generator = generator.apply(thisArg, _arguments || [])).next());
+        });
+      };
+      __generator2 = function(thisArg, body) {
+        var _ = { label: 0, sent: function() {
+          if (t[0] & 1)
+            throw t[1];
+          return t[1];
+        }, trys: [], ops: [] }, f, y, t, g;
+        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+          return this;
+        }), g;
+        function verb(n) {
+          return function(v) {
+            return step([n, v]);
+          };
+        }
+        function step(op) {
+          if (f)
+            throw new TypeError("Generator is already executing.");
+          while (_)
+            try {
+              if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done)
+                return t;
+              if (y = 0, t)
+                op = [op[0] & 2, t.value];
+              switch (op[0]) {
+                case 0:
+                case 1:
+                  t = op;
+                  break;
+                case 4:
+                  _.label++;
+                  return { value: op[1], done: false };
+                case 5:
+                  _.label++;
+                  y = op[1];
+                  op = [0];
+                  continue;
+                case 7:
+                  op = _.ops.pop();
+                  _.trys.pop();
+                  continue;
+                default:
+                  if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                    _ = 0;
+                    continue;
+                  }
+                  if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                    _.label = op[1];
+                    break;
+                  }
+                  if (op[0] === 6 && _.label < t[1]) {
+                    _.label = t[1];
+                    t = op;
+                    break;
+                  }
+                  if (t && _.label < t[2]) {
+                    _.label = t[2];
+                    _.ops.push(op);
+                    break;
+                  }
+                  if (t[2])
+                    _.ops.pop();
+                  _.trys.pop();
+                  continue;
+              }
+              op = body.call(thisArg, _);
+            } catch (e) {
+              op = [6, e];
+              y = 0;
+            } finally {
+              f = t = 0;
+            }
+          if (op[0] & 5)
+            throw op[1];
+          return { value: op[0] ? op[1] : void 0, done: true };
+        }
+      };
+      __exportStar2 = function(m, o) {
+        for (var p in m)
+          if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p))
+            __createBinding2(o, m, p);
+      };
+      __createBinding2 = Object.create ? function(o, m, k, k2) {
+        if (k2 === void 0)
+          k2 = k;
+        Object.defineProperty(o, k2, { enumerable: true, get: function() {
+          return m[k];
+        } });
+      } : function(o, m, k, k2) {
+        if (k2 === void 0)
+          k2 = k;
+        o[k2] = m[k];
+      };
+      __values2 = function(o) {
+        var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+        if (m)
+          return m.call(o);
+        if (o && typeof o.length === "number")
+          return {
+            next: function() {
+              if (o && i >= o.length)
+                o = void 0;
+              return { value: o && o[i++], done: !o };
+            }
+          };
+        throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+      };
+      __read2 = function(o, n) {
+        var m = typeof Symbol === "function" && o[Symbol.iterator];
+        if (!m)
+          return o;
+        var i = m.call(o), r, ar = [], e;
+        try {
+          while ((n === void 0 || n-- > 0) && !(r = i.next()).done)
+            ar.push(r.value);
+        } catch (error) {
+          e = { error };
+        } finally {
+          try {
+            if (r && !r.done && (m = i["return"]))
+              m.call(i);
+          } finally {
+            if (e)
+              throw e.error;
+          }
+        }
+        return ar;
+      };
+      __spread2 = function() {
+        for (var ar = [], i = 0; i < arguments.length; i++)
+          ar = ar.concat(__read2(arguments[i]));
+        return ar;
+      };
+      __spreadArrays2 = function() {
+        for (var s = 0, i = 0, il = arguments.length; i < il; i++)
+          s += arguments[i].length;
+        for (var r = Array(s), k = 0, i = 0; i < il; i++)
+          for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+        return r;
+      };
+      __spreadArray2 = function(to, from, pack) {
+        if (pack || arguments.length === 2)
+          for (var i = 0, l = from.length, ar; i < l; i++) {
+            if (ar || !(i in from)) {
+              if (!ar)
+                ar = Array.prototype.slice.call(from, 0, i);
+              ar[i] = from[i];
+            }
+          }
+        return to.concat(ar || Array.prototype.slice.call(from));
+      };
+      __await2 = function(v) {
+        return this instanceof __await2 ? (this.v = v, this) : new __await2(v);
+      };
+      __asyncGenerator2 = function(thisArg, _arguments, generator) {
+        if (!Symbol.asyncIterator)
+          throw new TypeError("Symbol.asyncIterator is not defined.");
+        var g = generator.apply(thisArg, _arguments || []), i, q = [];
+        return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+          return this;
+        }, i;
+        function verb(n) {
+          if (g[n])
+            i[n] = function(v) {
+              return new Promise(function(a, b) {
+                q.push([n, v, a, b]) > 1 || resume(n, v);
+              });
+            };
+        }
+        function resume(n, v) {
+          try {
+            step(g[n](v));
+          } catch (e) {
+            settle(q[0][3], e);
+          }
+        }
+        function step(r) {
+          r.value instanceof __await2 ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
+        }
+        function fulfill(value) {
+          resume("next", value);
+        }
+        function reject(value) {
+          resume("throw", value);
+        }
+        function settle(f, v) {
+          if (f(v), q.shift(), q.length)
+            resume(q[0][0], q[0][1]);
+        }
+      };
+      __asyncDelegator2 = function(o) {
+        var i, p;
+        return i = {}, verb("next"), verb("throw", function(e) {
+          throw e;
+        }), verb("return"), i[Symbol.iterator] = function() {
+          return this;
+        }, i;
+        function verb(n, f) {
+          i[n] = o[n] ? function(v) {
+            return (p = !p) ? { value: __await2(o[n](v)), done: n === "return" } : f ? f(v) : v;
+          } : f;
+        }
+      };
+      __asyncValues2 = function(o) {
+        if (!Symbol.asyncIterator)
+          throw new TypeError("Symbol.asyncIterator is not defined.");
+        var m = o[Symbol.asyncIterator], i;
+        return m ? m.call(o) : (o = typeof __values2 === "function" ? __values2(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+          return this;
+        }, i);
+        function verb(n) {
+          i[n] = o[n] && function(v) {
+            return new Promise(function(resolve, reject) {
+              v = o[n](v), settle(resolve, reject, v.done, v.value);
+            });
+          };
+        }
+        function settle(resolve, reject, d, v) {
+          Promise.resolve(v).then(function(v2) {
+            resolve({ value: v2, done: d });
+          }, reject);
+        }
+      };
+      __makeTemplateObject2 = function(cooked, raw) {
+        if (Object.defineProperty) {
+          Object.defineProperty(cooked, "raw", { value: raw });
+        } else {
+          cooked.raw = raw;
+        }
+        return cooked;
+      };
+      var __setModuleDefault = Object.create ? function(o, v) {
+        Object.defineProperty(o, "default", { enumerable: true, value: v });
+      } : function(o, v) {
+        o["default"] = v;
+      };
+      __importStar2 = function(mod) {
+        if (mod && mod.__esModule)
+          return mod;
+        var result = {};
+        if (mod != null) {
+          for (var k in mod)
+            if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k))
+              __createBinding2(result, mod, k);
+        }
+        __setModuleDefault(result, mod);
+        return result;
+      };
+      __importDefault2 = function(mod) {
+        return mod && mod.__esModule ? mod : { "default": mod };
+      };
+      __classPrivateFieldGet2 = function(receiver, state, kind, f) {
+        if (kind === "a" && !f)
+          throw new TypeError("Private accessor was defined without a getter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
+          throw new TypeError("Cannot read private member from an object whose class did not declare it");
+        return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+      };
+      __classPrivateFieldSet2 = function(receiver, state, value, kind, f) {
+        if (kind === "m")
+          throw new TypeError("Private method is not writable");
+        if (kind === "a" && !f)
+          throw new TypeError("Private accessor was defined without a setter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
+          throw new TypeError("Cannot write private member to an object whose class did not declare it");
+        return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
+      };
+      exporter("__extends", __extends2);
+      exporter("__assign", __assign2);
+      exporter("__rest", __rest2);
+      exporter("__decorate", __decorate2);
+      exporter("__param", __param2);
+      exporter("__metadata", __metadata2);
+      exporter("__awaiter", __awaiter2);
+      exporter("__generator", __generator2);
+      exporter("__exportStar", __exportStar2);
+      exporter("__createBinding", __createBinding2);
+      exporter("__values", __values2);
+      exporter("__read", __read2);
+      exporter("__spread", __spread2);
+      exporter("__spreadArrays", __spreadArrays2);
+      exporter("__spreadArray", __spreadArray2);
+      exporter("__await", __await2);
+      exporter("__asyncGenerator", __asyncGenerator2);
+      exporter("__asyncDelegator", __asyncDelegator2);
+      exporter("__asyncValues", __asyncValues2);
+      exporter("__makeTemplateObject", __makeTemplateObject2);
+      exporter("__importStar", __importStar2);
+      exporter("__importDefault", __importDefault2);
+      exporter("__classPrivateFieldGet", __classPrivateFieldGet2);
+      exporter("__classPrivateFieldSet", __classPrivateFieldSet2);
+    });
+  }
+});
+
 // node_modules/feather-icons/dist/feather.js
 var require_feather = __commonJS({
   "node_modules/feather-icons/dist/feather.js"(exports, module2) {
@@ -9009,7 +5361,7 @@ var require_feather = __commonJS({
         return __webpack_require__(__webpack_require__.s = 0);
       }({
         "./dist/icons.json": function(module3) {
-          module3.exports = { "activity": '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>', "airplay": '<path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon>', "alert-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line>', "align-center": '<line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line>', "align-justify": '<line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>', "align-left": '<line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line>', "align-right": '<line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line>', "anchor": '<circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>', "aperture": '<circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>', "archive": '<polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line>', "arrow-down-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line>', "arrow-down-left": '<line x1="17" y1="7" x2="7" y2="17"></line><polyline points="17 17 7 17 7 7"></polyline>', "arrow-down-right": '<line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline>', "arrow-down": '<line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline>', "arrow-left-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line>', "arrow-left": '<line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>', "arrow-right-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line>', "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>', "arrow-up-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line>', "arrow-up-left": '<line x1="17" y1="17" x2="7" y2="7"></line><polyline points="7 17 7 7 17 7"></polyline>', "arrow-up-right": '<line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>', "arrow-up": '<line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline>', "at-sign": '<circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>', "award": '<circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>', "bar-chart-2": '<line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>', "bar-chart": '<line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line>', "battery-charging": '<path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline>', "battery": '<rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect><line x1="23" y1="13" x2="23" y2="11"></line>', "bell-off": '<path d="M13.73 21a2 2 0 0 1-3.46 0"></path><path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path><path d="M18 8a6 6 0 0 0-9.33-5"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "bell": '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path>', "bluetooth": '<polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline>', "bold": '<path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path>', "book-open": '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>', "book": '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>', "bookmark": '<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>', "box": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "briefcase": '<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>', "calendar": '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>', "camera-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56"></path>', "camera": '<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle>', "cast": '<path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line>', "check-circle": '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>', "check-square": '<polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>', "check": '<polyline points="20 6 9 17 4 12"></polyline>', "chevron-down": '<polyline points="6 9 12 15 18 9"></polyline>', "chevron-left": '<polyline points="15 18 9 12 15 6"></polyline>', "chevron-right": '<polyline points="9 18 15 12 9 6"></polyline>', "chevron-up": '<polyline points="18 15 12 9 6 15"></polyline>', "chevrons-down": '<polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline>', "chevrons-left": '<polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline>', "chevrons-right": '<polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline>', "chevrons-up": '<polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline>', "chrome": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>', "circle": '<circle cx="12" cy="12" r="10"></circle>', "clipboard": '<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>', "clock": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>', "cloud-drizzle": '<line x1="8" y1="19" x2="8" y2="21"></line><line x1="8" y1="13" x2="8" y2="15"></line><line x1="16" y1="19" x2="16" y2="21"></line><line x1="16" y1="13" x2="16" y2="15"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="12" y1="15" x2="12" y2="17"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-lightning": '<path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"></path><polyline points="13 11 9 17 15 17 11 23"></polyline>', "cloud-off": '<path d="M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "cloud-rain": '<line x1="16" y1="13" x2="16" y2="21"></line><line x1="8" y1="13" x2="8" y2="21"></line><line x1="12" y1="15" x2="12" y2="23"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-snow": '<path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path><line x1="8" y1="16" x2="8.01" y2="16"></line><line x1="8" y1="20" x2="8.01" y2="20"></line><line x1="12" y1="18" x2="12.01" y2="18"></line><line x1="12" y1="22" x2="12.01" y2="22"></line><line x1="16" y1="16" x2="16.01" y2="16"></line><line x1="16" y1="20" x2="16.01" y2="20"></line>', "cloud": '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>', "code": '<polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>', "codepen": '<polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line>', "codesandbox": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "coffee": '<path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>', "columns": '<path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"></path>', "command": '<path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>', "compass": '<circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>', "copy": '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>', "corner-down-left": '<polyline points="9 10 4 15 9 20"></polyline><path d="M20 4v7a4 4 0 0 1-4 4H4"></path>', "corner-down-right": '<polyline points="15 10 20 15 15 20"></polyline><path d="M4 4v7a4 4 0 0 0 4 4h12"></path>', "corner-left-down": '<polyline points="14 15 9 20 4 15"></polyline><path d="M20 4h-7a4 4 0 0 0-4 4v12"></path>', "corner-left-up": '<polyline points="14 9 9 4 4 9"></polyline><path d="M20 20h-7a4 4 0 0 1-4-4V4"></path>', "corner-right-down": '<polyline points="10 15 15 20 20 15"></polyline><path d="M4 4h7a4 4 0 0 1 4 4v12"></path>', "corner-right-up": '<polyline points="10 9 15 4 20 9"></polyline><path d="M4 20h7a4 4 0 0 0 4-4V4"></path>', "corner-up-left": '<polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>', "corner-up-right": '<polyline points="15 14 20 9 15 4"></polyline><path d="M4 20v-7a4 4 0 0 1 4-4h12"></path>', "cpu": '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line>', "credit-card": '<rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line>', "crop": '<path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"></path><path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></path>', "crosshair": '<circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line>', "database": '<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>', "delete": '<path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line>', "disc": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle>', "divide-circle": '<line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line><circle cx="12" cy="12" r="10"></circle>', "divide-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line>', "divide": '<circle cx="12" cy="6" r="2"></circle><line x1="5" y1="12" x2="19" y2="12"></line><circle cx="12" cy="18" r="2"></circle>', "dollar-sign": '<line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>', "download-cloud": '<polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path>', "download": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>', "dribbble": '<circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>', "droplet": '<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>', "edit-2": '<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>', "edit-3": '<path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>', "edit": '<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>', "external-link": '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>', "eye-off": '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "eye": '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>', "facebook": '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>', "fast-forward": '<polygon points="13 19 22 12 13 5 13 19"></polygon><polygon points="2 19 11 12 2 5 2 19"></polygon>', "feather": '<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line>', "figma": '<path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>', "file-minus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line>', "file-plus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line>', "file-text": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>', "file": '<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>', "film": '<rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line>', "filter": '<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>', "flag": '<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line>', "folder-minus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line>', "folder-plus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line>', "folder": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>', "framer": '<path d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7"></path>', "frown": '<circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2-4-2-4 2-4 2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "gift": '<polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>', "git-branch": '<line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path>', "git-commit": '<circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line>', "git-merge": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M6 21V9a9 9 0 0 0 9 9"></path>', "git-pull-request": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line>', "github": '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>', "gitlab": '<path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>', "globe": '<circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>', "grid": '<rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>', "hard-drive": '<line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line>', "hash": '<line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>', "headphones": '<path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>', "heart": '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>', "help-circle": '<circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line>', "hexagon": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>', "home": '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>', "image": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline>', "inbox": '<polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>', "info": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>', "instagram": '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>', "italic": '<line x1="19" y1="4" x2="10" y2="4"></line><line x1="14" y1="20" x2="5" y2="20"></line><line x1="15" y1="4" x2="9" y2="20"></line>', "key": '<path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>', "layers": '<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>', "layout": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line>', "life-buoy": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>', "link-2": '<path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line>', "link": '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>', "linkedin": '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>', "list": '<line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line>', "loader": '<line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>', "lock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>', "log-in": '<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line>', "log-out": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line>', "mail": '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>', "map-pin": '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>', "map": '<polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line>', "maximize-2": '<polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "maximize": '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>', "meh": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="15" x2="16" y2="15"></line><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "menu": '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>', "message-circle": '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>', "message-square": '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>', "mic-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"></path><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "mic": '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "minimize-2": '<polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "minimize": '<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>', "minus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line>', "minus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line>', "minus": '<line x1="5" y1="12" x2="19" y2="12"></line>', "monitor": '<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>', "moon": '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>', "more-horizontal": '<circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>', "more-vertical": '<circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>', "mouse-pointer": '<path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path>', "move": '<polyline points="5 9 2 12 5 15"></polyline><polyline points="9 5 12 2 15 5"></polyline><polyline points="15 19 12 22 9 19"></polyline><polyline points="19 9 22 12 19 15"></polyline><line x1="2" y1="12" x2="22" y2="12"></line><line x1="12" y1="2" x2="12" y2="22"></line>', "music": '<path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle>', "navigation-2": '<polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>', "navigation": '<polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>', "octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>', "package": '<line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "paperclip": '<path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>', "pause-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line>', "pause": '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>', "pen-tool": '<path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle>', "percent": '<line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle>', "phone-call": '<path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-forwarded": '<polyline points="19 1 23 5 19 9"></polyline><line x1="15" y1="5" x2="23" y2="5"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-incoming": '<polyline points="16 2 16 8 22 8"></polyline><line x1="23" y1="1" x2="16" y2="8"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-missed": '<line x1="23" y1="1" x2="17" y2="7"></line><line x1="17" y1="1" x2="23" y2="7"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-off": '<path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91"></path><line x1="23" y1="1" x2="1" y2="23"></line>', "phone-outgoing": '<polyline points="23 7 23 1 17 1"></polyline><line x1="16" y1="8" x2="23" y2="1"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone": '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "pie-chart": '<path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path>', "play-circle": '<circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>', "play": '<polygon points="5 3 19 12 5 21 5 3"></polygon>', "plus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus": '<line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>', "pocket": '<path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path><polyline points="8 10 12 14 16 10"></polyline>', "power": '<path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line>', "printer": '<polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect>', "radio": '<circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>', "refresh-ccw": '<polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>', "refresh-cw": '<polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>', "repeat": '<polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path>', "rewind": '<polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon>', "rotate-ccw": '<polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>', "rotate-cw": '<polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>', "rss": '<path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle>', "save": '<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>', "scissors": '<circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line>', "search": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>', "send": '<line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>', "server": '<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line>', "settings": '<circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>', "share-2": '<circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>', "share": '<path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line>', "shield-off": '<path d="M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18"></path><path d="M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>', "shopping-bag": '<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>', "shopping-cart": '<circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>', "shuffle": '<polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line>', "sidebar": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line>', "skip-back": '<polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line>', "skip-forward": '<polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line>', "slack": '<path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"></path><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"></path><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path>', "slash": '<circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>', "sliders": '<line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line>', "smartphone": '<rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "smile": '<circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "speaker": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line>', "square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>', "star": '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>', "stop-circle": '<circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect>', "sun": '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>', "sunrise": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline>', "sunset": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="9" x2="12" y2="2"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="16 5 12 9 8 5"></polyline>', "tablet": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "tag": '<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>', "target": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>', "terminal": '<polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line>', "thermometer": '<path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>', "thumbs-down": '<path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>', "thumbs-up": '<path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>', "toggle-left": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="8" cy="12" r="3"></circle>', "toggle-right": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="16" cy="12" r="3"></circle>', "tool": '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>', "trash-2": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line>', "trash": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>', "trello": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="9"></rect><rect x="14" y="7" width="3" height="5"></rect>', "trending-down": '<polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline>', "trending-up": '<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline>', "triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>', "truck": '<rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle>', "tv": '<rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline>', "twitch": '<path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"></path>', "twitter": '<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>', "type": '<polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line>', "umbrella": '<path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"></path>', "underline": '<path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"></path><line x1="4" y1="21" x2="20" y2="21"></line>', "unlock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path>', "upload-cloud": '<polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline>', "upload": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line>', "user-check": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline>', "user-minus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line>', "user-plus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line>', "user-x": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line>', "user": '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>', "users": '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>', "video-off": '<path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "video": '<polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>', "voicemail": '<circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line>', "volume-1": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-2": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-x": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>', "volume": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>', "watch": '<circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>', "wifi-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wifi": '<path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wind": '<path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>', "x-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line>', "x": '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>', "youtube": '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>', "zap-off": '<polyline points="12.41 6.75 13 2 10.57 4.92"></polyline><polyline points="18.57 12.91 21 10 15.66 10"></polyline><polyline points="8 8 3 14 12 14 11 22 16 16"></polyline><line x1="1" y1="1" x2="23" y2="23"></line>', "zap": '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>', "zoom-in": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line>', "zoom-out": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line>' };
+          module3.exports = { "activity": '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>', "airplay": '<path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon>', "alert-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>', "alert-triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line>', "align-center": '<line x1="18" y1="10" x2="6" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="18" y1="18" x2="6" y2="18"></line>', "align-justify": '<line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line>', "align-left": '<line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line>', "align-right": '<line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line>', "anchor": '<circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>', "aperture": '<circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>', "archive": '<polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line>', "arrow-down-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line>', "arrow-down-left": '<line x1="17" y1="7" x2="7" y2="17"></line><polyline points="17 17 7 17 7 7"></polyline>', "arrow-down-right": '<line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline>', "arrow-down": '<line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline>', "arrow-left-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line>', "arrow-left": '<line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>', "arrow-right-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line>', "arrow-right": '<line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>', "arrow-up-circle": '<circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line>', "arrow-up-left": '<line x1="17" y1="17" x2="7" y2="7"></line><polyline points="7 17 7 7 17 7"></polyline>', "arrow-up-right": '<line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>', "arrow-up": '<line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline>', "at-sign": '<circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>', "award": '<circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>', "bar-chart-2": '<line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>', "bar-chart": '<line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line>', "battery-charging": '<path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline>', "battery": '<rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect><line x1="23" y1="13" x2="23" y2="11"></line>', "bell-off": '<path d="M13.73 21a2 2 0 0 1-3.46 0"></path><path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path><path d="M18 8a6 6 0 0 0-9.33-5"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "bell": '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path>', "bluetooth": '<polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline>', "bold": '<path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path>', "book-open": '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>', "book": '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>', "bookmark": '<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>', "box": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "briefcase": '<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>', "calendar": '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>', "camera-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56"></path>', "camera": '<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle>', "cast": '<path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path><line x1="2" y1="20" x2="2.01" y2="20"></line>', "check-circle": '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>', "check-square": '<polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>', "check": '<polyline points="20 6 9 17 4 12"></polyline>', "chevron-down": '<polyline points="6 9 12 15 18 9"></polyline>', "chevron-left": '<polyline points="15 18 9 12 15 6"></polyline>', "chevron-right": '<polyline points="9 18 15 12 9 6"></polyline>', "chevron-up": '<polyline points="18 15 12 9 6 15"></polyline>', "chevrons-down": '<polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline>', "chevrons-left": '<polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline>', "chevrons-right": '<polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline>', "chevrons-up": '<polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline>', "chrome": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>', "circle": '<circle cx="12" cy="12" r="10"></circle>', "clipboard": '<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>', "clock": '<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>', "cloud-drizzle": '<line x1="8" y1="19" x2="8" y2="21"></line><line x1="8" y1="13" x2="8" y2="15"></line><line x1="16" y1="19" x2="16" y2="21"></line><line x1="16" y1="13" x2="16" y2="15"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="12" y1="15" x2="12" y2="17"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-lightning": '<path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"></path><polyline points="13 11 9 17 15 17 11 23"></polyline>', "cloud-off": '<path d="M22.61 16.95A5 5 0 0 0 18 10h-1.26a8 8 0 0 0-7.05-6M5 5a8 8 0 0 0 4 15h9a5 5 0 0 0 1.7-.3"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "cloud-rain": '<line x1="16" y1="13" x2="16" y2="21"></line><line x1="8" y1="13" x2="8" y2="21"></line><line x1="12" y1="15" x2="12" y2="23"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>', "cloud-snow": '<path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path><line x1="8" y1="16" x2="8.01" y2="16"></line><line x1="8" y1="20" x2="8.01" y2="20"></line><line x1="12" y1="18" x2="12.01" y2="18"></line><line x1="12" y1="22" x2="12.01" y2="22"></line><line x1="16" y1="16" x2="16.01" y2="16"></line><line x1="16" y1="20" x2="16.01" y2="20"></line>', "cloud": '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>', "code": '<polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>', "codepen": '<polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line>', "codesandbox": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "coffee": '<path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>', "columns": '<path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"></path>', "command": '<path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>', "compass": '<circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>', "copy": '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>', "corner-down-left": '<polyline points="9 10 4 15 9 20"></polyline><path d="M20 4v7a4 4 0 0 1-4 4H4"></path>', "corner-down-right": '<polyline points="15 10 20 15 15 20"></polyline><path d="M4 4v7a4 4 0 0 0 4 4h12"></path>', "corner-left-down": '<polyline points="14 15 9 20 4 15"></polyline><path d="M20 4h-7a4 4 0 0 0-4 4v12"></path>', "corner-left-up": '<polyline points="14 9 9 4 4 9"></polyline><path d="M20 20h-7a4 4 0 0 1-4-4V4"></path>', "corner-right-down": '<polyline points="10 15 15 20 20 15"></polyline><path d="M4 4h7a4 4 0 0 1 4 4v12"></path>', "corner-right-up": '<polyline points="10 9 15 4 20 9"></polyline><path d="M4 20h7a4 4 0 0 0 4-4V4"></path>', "corner-up-left": '<polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>', "corner-up-right": '<polyline points="15 14 20 9 15 4"></polyline><path d="M4 20v-7a4 4 0 0 1 4-4h12"></path>', "cpu": '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line>', "credit-card": '<rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line>', "crop": '<path d="M6.13 1L6 16a2 2 0 0 0 2 2h15"></path><path d="M1 6.13L16 6a2 2 0 0 1 2 2v15"></path>', "crosshair": '<circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line>', "database": '<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>', "delete": '<path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path><line x1="18" y1="9" x2="12" y2="15"></line><line x1="12" y1="9" x2="18" y2="15"></line>', "disc": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle>', "divide-circle": '<line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line><circle cx="12" cy="12" r="10"></circle>', "divide-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line>', "divide": '<circle cx="12" cy="6" r="2"></circle><line x1="5" y1="12" x2="19" y2="12"></line><circle cx="12" cy="18" r="2"></circle>', "dollar-sign": '<line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>', "download-cloud": '<polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path>', "download": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line>', "dribbble": '<circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>', "droplet": '<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>', "edit-2": '<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>', "edit-3": '<path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>', "edit": '<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>', "external-link": '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>', "eye-off": '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "eye": '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>', "facebook": '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>', "fast-forward": '<polygon points="13 19 22 12 13 5 13 19"></polygon><polygon points="2 19 11 12 2 5 2 19"></polygon>', "feather": '<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line>', "figma": '<path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>', "file-minus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line>', "file-plus": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line>', "file-text": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>', "file": '<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>', "film": '<rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line>', "filter": '<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>', "flag": '<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line>', "folder-minus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line>', "folder-plus": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line>', "folder": '<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>', "framer": '<path d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7"></path>', "frown": '<circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2-4-2-4 2-4 2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "gift": '<polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>', "git-branch": '<line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path>', "git-commit": '<circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line>', "git-merge": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M6 21V9a9 9 0 0 0 9 9"></path>', "git-pull-request": '<circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line>', "github": '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>', "gitlab": '<path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>', "globe": '<circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>', "grid": '<rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>', "hard-drive": '<line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line>', "hash": '<line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>', "headphones": '<path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>', "heart": '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>', "help-circle": '<circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line>', "hexagon": '<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>', "home": '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>', "image": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline>', "inbox": '<polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>', "info": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>', "instagram": '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>', "italic": '<line x1="19" y1="4" x2="10" y2="4"></line><line x1="14" y1="20" x2="5" y2="20"></line><line x1="15" y1="4" x2="9" y2="20"></line>', "key": '<path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>', "layers": '<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>', "layout": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line>', "life-buoy": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>', "link-2": '<path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line>', "link": '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>', "linkedin": '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>', "list": '<line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line>', "loader": '<line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>', "lock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>', "log-in": '<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line>', "log-out": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line>', "mail": '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>', "map-pin": '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>', "map": '<polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line>', "maximize-2": '<polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "maximize": '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>', "meh": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="15" x2="16" y2="15"></line><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "menu": '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>', "message-circle": '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>', "message-square": '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>', "mic-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"></path><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "mic": '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line>', "minimize-2": '<polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line>', "minimize": '<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>', "minus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line>', "minus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line>', "minus": '<line x1="5" y1="12" x2="19" y2="12"></line>', "monitor": '<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>', "moon": '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>', "more-horizontal": '<circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>', "more-vertical": '<circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>', "mouse-pointer": '<path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path>', "move": '<polyline points="5 9 2 12 5 15"></polyline><polyline points="9 5 12 2 15 5"></polyline><polyline points="15 19 12 22 9 19"></polyline><polyline points="19 9 22 12 19 15"></polyline><line x1="2" y1="12" x2="22" y2="12"></line><line x1="12" y1="2" x2="12" y2="22"></line>', "music": '<path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle>', "navigation-2": '<polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>', "navigation": '<polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>', "octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>', "package": '<line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>', "paperclip": '<path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>', "pause-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line>', "pause": '<rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect>', "pen-tool": '<path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle>', "percent": '<line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle>', "phone-call": '<path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-forwarded": '<polyline points="19 1 23 5 19 9"></polyline><line x1="15" y1="5" x2="23" y2="5"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-incoming": '<polyline points="16 2 16 8 22 8"></polyline><line x1="23" y1="1" x2="16" y2="8"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-missed": '<line x1="23" y1="1" x2="17" y2="7"></line><line x1="17" y1="1" x2="23" y2="7"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone-off": '<path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91"></path><line x1="23" y1="1" x2="1" y2="23"></line>', "phone-outgoing": '<polyline points="23 7 23 1 17 1"></polyline><line x1="16" y1="8" x2="23" y2="1"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "phone": '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>', "pie-chart": '<path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path>', "play-circle": '<circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>', "play": '<polygon points="5 3 19 12 5 21 5 3"></polygon>', "plus-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>', "plus": '<line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>', "pocket": '<path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path><polyline points="8 10 12 14 16 10"></polyline>', "power": '<path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line>', "printer": '<polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect>', "radio": '<circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>', "refresh-ccw": '<polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>', "refresh-cw": '<polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>', "repeat": '<polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path>', "rewind": '<polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon>', "rotate-ccw": '<polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>', "rotate-cw": '<polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>', "rss": '<path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle>', "save": '<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline>', "scissors": '<circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line>', "search": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>', "send": '<line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>', "server": '<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line>', "settings": '<circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>', "share-2": '<circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>', "share": '<path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line>', "shield-off": '<path d="M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18"></path><path d="M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>', "shopping-bag": '<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>', "shopping-cart": '<circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>', "shuffle": '<polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line>', "sidebar": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line>', "skip-back": '<polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line>', "skip-forward": '<polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line>', "slack": '<path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"></path><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"></path><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path>', "slash": '<circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>', "sliders": '<line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line>', "smartphone": '<rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "smile": '<circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>', "speaker": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line>', "square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>', "star": '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>', "stop-circle": '<circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect>', "sun": '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>', "sunrise": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline>', "sunset": '<path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="9" x2="12" y2="2"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="16 5 12 9 8 5"></polyline>', "table": '<path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"></path>', "tablet": '<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>', "tag": '<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>', "target": '<circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>', "terminal": '<polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line>', "thermometer": '<path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>', "thumbs-down": '<path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>', "thumbs-up": '<path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>', "toggle-left": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="8" cy="12" r="3"></circle>', "toggle-right": '<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="16" cy="12" r="3"></circle>', "tool": '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>', "trash-2": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line>', "trash": '<polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>', "trello": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="9"></rect><rect x="14" y="7" width="3" height="5"></rect>', "trending-down": '<polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline>', "trending-up": '<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline>', "triangle": '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>', "truck": '<rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle>', "tv": '<rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline>', "twitch": '<path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"></path>', "twitter": '<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>', "type": '<polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line>', "umbrella": '<path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"></path>', "underline": '<path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"></path><line x1="4" y1="21" x2="20" y2="21"></line>', "unlock": '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path>', "upload-cloud": '<polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline>', "upload": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line>', "user-check": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline>', "user-minus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line>', "user-plus": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line>', "user-x": '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="18" y1="8" x2="23" y2="13"></line><line x1="23" y1="8" x2="18" y2="13"></line>', "user": '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>', "users": '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>', "video-off": '<path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"></path><line x1="1" y1="1" x2="23" y2="23"></line>', "video": '<polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>', "voicemail": '<circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line>', "volume-1": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-2": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>', "volume-x": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>', "volume": '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>', "watch": '<circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>', "wifi-off": '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wifi": '<path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>', "wind": '<path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>', "x-circle": '<circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-octagon": '<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>', "x-square": '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line>', "x": '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>', "youtube": '<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>', "zap-off": '<polyline points="12.41 6.75 13 2 10.57 4.92"></polyline><polyline points="18.57 12.91 21 10 15.66 10"></polyline><polyline points="8 8 3 14 12 14 11 22 16 16"></polyline><line x1="1" y1="1" x2="23" y2="23"></line>', "zap": '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>', "zoom-in": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line>', "zoom-out": '<circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line>' };
         },
         "./node_modules/classnames/dedupe.js": function(module3, exports2, __webpack_require__) {
           var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
@@ -9598,7 +5950,7 @@ var require_feather = __commonJS({
           var objectHas = __webpack_require__("./node_modules/core-js/internals/has.js");
           var sharedKey = __webpack_require__("./node_modules/core-js/internals/shared-key.js");
           var hiddenKeys = __webpack_require__("./node_modules/core-js/internals/hidden-keys.js");
-          var WeakMap = global2.WeakMap;
+          var WeakMap2 = global2.WeakMap;
           var set, get, has;
           var enforce = function(it) {
             return has(it) ? get(it) : set(it, {});
@@ -9613,7 +5965,7 @@ var require_feather = __commonJS({
             };
           };
           if (NATIVE_WEAK_MAP) {
-            var store = new WeakMap();
+            var store = new WeakMap2();
             var wmget = store.get;
             var wmhas = store.has;
             var wmset = store.set;
@@ -9725,8 +6077,8 @@ var require_feather = __commonJS({
         "./node_modules/core-js/internals/native-weak-map.js": function(module3, exports2, __webpack_require__) {
           var global2 = __webpack_require__("./node_modules/core-js/internals/global.js");
           var nativeFunctionToString = __webpack_require__("./node_modules/core-js/internals/function-to-string.js");
-          var WeakMap = global2.WeakMap;
-          module3.exports = typeof WeakMap === "function" && /native code/.test(nativeFunctionToString.call(WeakMap));
+          var WeakMap2 = global2.WeakMap;
+          module3.exports = typeof WeakMap2 === "function" && /native code/.test(nativeFunctionToString.call(WeakMap2));
         },
         "./node_modules/core-js/internals/object-create.js": function(module3, exports2, __webpack_require__) {
           var anObject = __webpack_require__("./node_modules/core-js/internals/an-object.js");
@@ -9950,7 +6302,7 @@ var require_feather = __commonJS({
           });
           (module3.exports = function(O, key2, value, options) {
             var unsafe = options ? !!options.unsafe : false;
-            var simple2 = options ? !!options.enumerable : false;
+            var simple = options ? !!options.enumerable : false;
             var noTargetGet = options ? !!options.noTargetGet : false;
             if (typeof value == "function") {
               if (typeof key2 == "string" && !has(value, "name"))
@@ -9958,7 +6310,7 @@ var require_feather = __commonJS({
               enforceInternalState(value).source = TEMPLATE.join(typeof key2 == "string" ? key2 : "");
             }
             if (O === global2) {
-              if (simple2)
+              if (simple)
                 O[key2] = value;
               else
                 setGlobal(key2, value);
@@ -9966,9 +6318,9 @@ var require_feather = __commonJS({
             } else if (!unsafe) {
               delete O[key2];
             } else if (!noTargetGet && O[key2]) {
-              simple2 = true;
+              simple = true;
             }
-            if (simple2)
+            if (simple)
               O[key2] = value;
             else
               hide(O, key2, value);
@@ -10035,11 +6387,11 @@ var require_feather = __commonJS({
             var S = String(requireObjectCoercible(that));
             var position = toInteger(pos);
             var size = S.length;
-            var first, second;
+            var first2, second;
             if (position < 0 || position >= size)
               return CONVERT_TO_STRING ? "" : void 0;
-            first = S.charCodeAt(position);
-            return first < 55296 || first > 56319 || position + 1 === size || (second = S.charCodeAt(position + 1)) < 56320 || second > 57343 ? CONVERT_TO_STRING ? S.charAt(position) : first : CONVERT_TO_STRING ? S.slice(position, position + 2) : (first - 55296 << 10) + (second - 56320) + 65536;
+            first2 = S.charCodeAt(position);
+            return first2 < 55296 || first2 > 56319 || position + 1 === size || (second = S.charCodeAt(position + 1)) < 56320 || second > 57343 ? CONVERT_TO_STRING ? S.charAt(position) : first2 : CONVERT_TO_STRING ? S.slice(position, position + 2) : (first2 - 55296 << 10) + (second - 56320) + 65536;
           };
         },
         "./node_modules/core-js/internals/to-absolute-index.js": function(module3, exports2, __webpack_require__) {
@@ -10338,7 +6690,7 @@ var require_feather = __commonJS({
           exports2.default = replace;
         },
         "./src/tags.json": function(module3) {
-          module3.exports = { "activity": ["pulse", "health", "action", "motion"], "airplay": ["stream", "cast", "mirroring"], "alert-circle": ["warning", "alert", "danger"], "alert-octagon": ["warning", "alert", "danger"], "alert-triangle": ["warning", "alert", "danger"], "align-center": ["text alignment", "center"], "align-justify": ["text alignment", "justified"], "align-left": ["text alignment", "left"], "align-right": ["text alignment", "right"], "anchor": [], "archive": ["index", "box"], "at-sign": ["mention", "at", "email", "message"], "award": ["achievement", "badge"], "aperture": ["camera", "photo"], "bar-chart": ["statistics", "diagram", "graph"], "bar-chart-2": ["statistics", "diagram", "graph"], "battery": ["power", "electricity"], "battery-charging": ["power", "electricity"], "bell": ["alarm", "notification", "sound"], "bell-off": ["alarm", "notification", "silent"], "bluetooth": ["wireless"], "book-open": ["read", "library"], "book": ["read", "dictionary", "booklet", "magazine", "library"], "bookmark": ["read", "clip", "marker", "tag"], "box": ["cube"], "briefcase": ["work", "bag", "baggage", "folder"], "calendar": ["date"], "camera": ["photo"], "cast": ["chromecast", "airplay"], "circle": ["off", "zero", "record"], "clipboard": ["copy"], "clock": ["time", "watch", "alarm"], "cloud-drizzle": ["weather", "shower"], "cloud-lightning": ["weather", "bolt"], "cloud-rain": ["weather"], "cloud-snow": ["weather", "blizzard"], "cloud": ["weather"], "codepen": ["logo"], "codesandbox": ["logo"], "code": ["source", "programming"], "coffee": ["drink", "cup", "mug", "tea", "cafe", "hot", "beverage"], "columns": ["layout"], "command": ["keyboard", "cmd", "terminal", "prompt"], "compass": ["navigation", "safari", "travel", "direction"], "copy": ["clone", "duplicate"], "corner-down-left": ["arrow", "return"], "corner-down-right": ["arrow"], "corner-left-down": ["arrow"], "corner-left-up": ["arrow"], "corner-right-down": ["arrow"], "corner-right-up": ["arrow"], "corner-up-left": ["arrow"], "corner-up-right": ["arrow"], "cpu": ["processor", "technology"], "credit-card": ["purchase", "payment", "cc"], "crop": ["photo", "image"], "crosshair": ["aim", "target"], "database": ["storage", "memory"], "delete": ["remove"], "disc": ["album", "cd", "dvd", "music"], "dollar-sign": ["currency", "money", "payment"], "droplet": ["water"], "edit": ["pencil", "change"], "edit-2": ["pencil", "change"], "edit-3": ["pencil", "change"], "eye": ["view", "watch"], "eye-off": ["view", "watch", "hide", "hidden"], "external-link": ["outbound"], "facebook": ["logo", "social"], "fast-forward": ["music"], "figma": ["logo", "design", "tool"], "file-minus": ["delete", "remove", "erase"], "file-plus": ["add", "create", "new"], "file-text": ["data", "txt", "pdf"], "film": ["movie", "video"], "filter": ["funnel", "hopper"], "flag": ["report"], "folder-minus": ["directory"], "folder-plus": ["directory"], "folder": ["directory"], "framer": ["logo", "design", "tool"], "frown": ["emoji", "face", "bad", "sad", "emotion"], "gift": ["present", "box", "birthday", "party"], "git-branch": ["code", "version control"], "git-commit": ["code", "version control"], "git-merge": ["code", "version control"], "git-pull-request": ["code", "version control"], "github": ["logo", "version control"], "gitlab": ["logo", "version control"], "globe": ["world", "browser", "language", "translate"], "hard-drive": ["computer", "server", "memory", "data"], "hash": ["hashtag", "number", "pound"], "headphones": ["music", "audio", "sound"], "heart": ["like", "love", "emotion"], "help-circle": ["question mark"], "hexagon": ["shape", "node.js", "logo"], "home": ["house", "living"], "image": ["picture"], "inbox": ["email"], "instagram": ["logo", "camera"], "key": ["password", "login", "authentication", "secure"], "layers": ["stack"], "layout": ["window", "webpage"], "life-bouy": ["help", "life ring", "support"], "link": ["chain", "url"], "link-2": ["chain", "url"], "linkedin": ["logo", "social media"], "list": ["options"], "lock": ["security", "password", "secure"], "log-in": ["sign in", "arrow", "enter"], "log-out": ["sign out", "arrow", "exit"], "mail": ["email", "message"], "map-pin": ["location", "navigation", "travel", "marker"], "map": ["location", "navigation", "travel"], "maximize": ["fullscreen"], "maximize-2": ["fullscreen", "arrows", "expand"], "meh": ["emoji", "face", "neutral", "emotion"], "menu": ["bars", "navigation", "hamburger"], "message-circle": ["comment", "chat"], "message-square": ["comment", "chat"], "mic-off": ["record", "sound", "mute"], "mic": ["record", "sound", "listen"], "minimize": ["exit fullscreen", "close"], "minimize-2": ["exit fullscreen", "arrows", "close"], "minus": ["subtract"], "monitor": ["tv", "screen", "display"], "moon": ["dark", "night"], "more-horizontal": ["ellipsis"], "more-vertical": ["ellipsis"], "mouse-pointer": ["arrow", "cursor"], "move": ["arrows"], "music": ["note"], "navigation": ["location", "travel"], "navigation-2": ["location", "travel"], "octagon": ["stop"], "package": ["box", "container"], "paperclip": ["attachment"], "pause": ["music", "stop"], "pause-circle": ["music", "audio", "stop"], "pen-tool": ["vector", "drawing"], "percent": ["discount"], "phone-call": ["ring"], "phone-forwarded": ["call"], "phone-incoming": ["call"], "phone-missed": ["call"], "phone-off": ["call", "mute"], "phone-outgoing": ["call"], "phone": ["call"], "play": ["music", "start"], "pie-chart": ["statistics", "diagram"], "play-circle": ["music", "start"], "plus": ["add", "new"], "plus-circle": ["add", "new"], "plus-square": ["add", "new"], "pocket": ["logo", "save"], "power": ["on", "off"], "printer": ["fax", "office", "device"], "radio": ["signal"], "refresh-cw": ["synchronise", "arrows"], "refresh-ccw": ["arrows"], "repeat": ["loop", "arrows"], "rewind": ["music"], "rotate-ccw": ["arrow"], "rotate-cw": ["arrow"], "rss": ["feed", "subscribe"], "save": ["floppy disk"], "scissors": ["cut"], "search": ["find", "magnifier", "magnifying glass"], "send": ["message", "mail", "email", "paper airplane", "paper aeroplane"], "settings": ["cog", "edit", "gear", "preferences"], "share-2": ["network", "connections"], "shield": ["security", "secure"], "shield-off": ["security", "insecure"], "shopping-bag": ["ecommerce", "cart", "purchase", "store"], "shopping-cart": ["ecommerce", "cart", "purchase", "store"], "shuffle": ["music"], "skip-back": ["music"], "skip-forward": ["music"], "slack": ["logo"], "slash": ["ban", "no"], "sliders": ["settings", "controls"], "smartphone": ["cellphone", "device"], "smile": ["emoji", "face", "happy", "good", "emotion"], "speaker": ["audio", "music"], "star": ["bookmark", "favorite", "like"], "stop-circle": ["media", "music"], "sun": ["brightness", "weather", "light"], "sunrise": ["weather", "time", "morning", "day"], "sunset": ["weather", "time", "evening", "night"], "tablet": ["device"], "tag": ["label"], "target": ["logo", "bullseye"], "terminal": ["code", "command line", "prompt"], "thermometer": ["temperature", "celsius", "fahrenheit", "weather"], "thumbs-down": ["dislike", "bad", "emotion"], "thumbs-up": ["like", "good", "emotion"], "toggle-left": ["on", "off", "switch"], "toggle-right": ["on", "off", "switch"], "tool": ["settings", "spanner"], "trash": ["garbage", "delete", "remove", "bin"], "trash-2": ["garbage", "delete", "remove", "bin"], "triangle": ["delta"], "truck": ["delivery", "van", "shipping", "transport", "lorry"], "tv": ["television", "stream"], "twitch": ["logo"], "twitter": ["logo", "social"], "type": ["text"], "umbrella": ["rain", "weather"], "unlock": ["security"], "user-check": ["followed", "subscribed"], "user-minus": ["delete", "remove", "unfollow", "unsubscribe"], "user-plus": ["new", "add", "create", "follow", "subscribe"], "user-x": ["delete", "remove", "unfollow", "unsubscribe", "unavailable"], "user": ["person", "account"], "users": ["group"], "video-off": ["camera", "movie", "film"], "video": ["camera", "movie", "film"], "voicemail": ["phone"], "volume": ["music", "sound", "mute"], "volume-1": ["music", "sound"], "volume-2": ["music", "sound"], "volume-x": ["music", "sound", "mute"], "watch": ["clock", "time"], "wifi-off": ["disabled"], "wifi": ["connection", "signal", "wireless"], "wind": ["weather", "air"], "x-circle": ["cancel", "close", "delete", "remove", "times", "clear"], "x-octagon": ["delete", "stop", "alert", "warning", "times", "clear"], "x-square": ["cancel", "close", "delete", "remove", "times", "clear"], "x": ["cancel", "close", "delete", "remove", "times", "clear"], "youtube": ["logo", "video", "play"], "zap-off": ["flash", "camera", "lightning"], "zap": ["flash", "camera", "lightning"], "zoom-in": ["magnifying glass"], "zoom-out": ["magnifying glass"] };
+          module3.exports = { "activity": ["pulse", "health", "action", "motion"], "airplay": ["stream", "cast", "mirroring"], "alert-circle": ["warning", "alert", "danger"], "alert-octagon": ["warning", "alert", "danger"], "alert-triangle": ["warning", "alert", "danger"], "align-center": ["text alignment", "center"], "align-justify": ["text alignment", "justified"], "align-left": ["text alignment", "left"], "align-right": ["text alignment", "right"], "anchor": [], "archive": ["index", "box"], "at-sign": ["mention", "at", "email", "message"], "award": ["achievement", "badge"], "aperture": ["camera", "photo"], "bar-chart": ["statistics", "diagram", "graph"], "bar-chart-2": ["statistics", "diagram", "graph"], "battery": ["power", "electricity"], "battery-charging": ["power", "electricity"], "bell": ["alarm", "notification", "sound"], "bell-off": ["alarm", "notification", "silent"], "bluetooth": ["wireless"], "book-open": ["read", "library"], "book": ["read", "dictionary", "booklet", "magazine", "library"], "bookmark": ["read", "clip", "marker", "tag"], "box": ["cube"], "briefcase": ["work", "bag", "baggage", "folder"], "calendar": ["date"], "camera": ["photo"], "cast": ["chromecast", "airplay"], "chevron-down": ["expand"], "chevron-up": ["collapse"], "circle": ["off", "zero", "record"], "clipboard": ["copy"], "clock": ["time", "watch", "alarm"], "cloud-drizzle": ["weather", "shower"], "cloud-lightning": ["weather", "bolt"], "cloud-rain": ["weather"], "cloud-snow": ["weather", "blizzard"], "cloud": ["weather"], "codepen": ["logo"], "codesandbox": ["logo"], "code": ["source", "programming"], "coffee": ["drink", "cup", "mug", "tea", "cafe", "hot", "beverage"], "columns": ["layout"], "command": ["keyboard", "cmd", "terminal", "prompt"], "compass": ["navigation", "safari", "travel", "direction"], "copy": ["clone", "duplicate"], "corner-down-left": ["arrow", "return"], "corner-down-right": ["arrow"], "corner-left-down": ["arrow"], "corner-left-up": ["arrow"], "corner-right-down": ["arrow"], "corner-right-up": ["arrow"], "corner-up-left": ["arrow"], "corner-up-right": ["arrow"], "cpu": ["processor", "technology"], "credit-card": ["purchase", "payment", "cc"], "crop": ["photo", "image"], "crosshair": ["aim", "target"], "database": ["storage", "memory"], "delete": ["remove"], "disc": ["album", "cd", "dvd", "music"], "dollar-sign": ["currency", "money", "payment"], "droplet": ["water"], "edit": ["pencil", "change"], "edit-2": ["pencil", "change"], "edit-3": ["pencil", "change"], "eye": ["view", "watch"], "eye-off": ["view", "watch", "hide", "hidden"], "external-link": ["outbound"], "facebook": ["logo", "social"], "fast-forward": ["music"], "figma": ["logo", "design", "tool"], "file-minus": ["delete", "remove", "erase"], "file-plus": ["add", "create", "new"], "file-text": ["data", "txt", "pdf"], "film": ["movie", "video"], "filter": ["funnel", "hopper"], "flag": ["report"], "folder-minus": ["directory"], "folder-plus": ["directory"], "folder": ["directory"], "framer": ["logo", "design", "tool"], "frown": ["emoji", "face", "bad", "sad", "emotion"], "gift": ["present", "box", "birthday", "party"], "git-branch": ["code", "version control"], "git-commit": ["code", "version control"], "git-merge": ["code", "version control"], "git-pull-request": ["code", "version control"], "github": ["logo", "version control"], "gitlab": ["logo", "version control"], "globe": ["world", "browser", "language", "translate"], "hard-drive": ["computer", "server", "memory", "data"], "hash": ["hashtag", "number", "pound"], "headphones": ["music", "audio", "sound"], "heart": ["like", "love", "emotion"], "help-circle": ["question mark"], "hexagon": ["shape", "node.js", "logo"], "home": ["house", "living"], "image": ["picture"], "inbox": ["email"], "instagram": ["logo", "camera"], "key": ["password", "login", "authentication", "secure"], "layers": ["stack"], "layout": ["window", "webpage"], "life-bouy": ["help", "life ring", "support"], "link": ["chain", "url"], "link-2": ["chain", "url"], "linkedin": ["logo", "social media"], "list": ["options"], "lock": ["security", "password", "secure"], "log-in": ["sign in", "arrow", "enter"], "log-out": ["sign out", "arrow", "exit"], "mail": ["email", "message"], "map-pin": ["location", "navigation", "travel", "marker"], "map": ["location", "navigation", "travel"], "maximize": ["fullscreen"], "maximize-2": ["fullscreen", "arrows", "expand"], "meh": ["emoji", "face", "neutral", "emotion"], "menu": ["bars", "navigation", "hamburger"], "message-circle": ["comment", "chat"], "message-square": ["comment", "chat"], "mic-off": ["record", "sound", "mute"], "mic": ["record", "sound", "listen"], "minimize": ["exit fullscreen", "close"], "minimize-2": ["exit fullscreen", "arrows", "close"], "minus": ["subtract"], "monitor": ["tv", "screen", "display"], "moon": ["dark", "night"], "more-horizontal": ["ellipsis"], "more-vertical": ["ellipsis"], "mouse-pointer": ["arrow", "cursor"], "move": ["arrows"], "music": ["note"], "navigation": ["location", "travel"], "navigation-2": ["location", "travel"], "octagon": ["stop"], "package": ["box", "container"], "paperclip": ["attachment"], "pause": ["music", "stop"], "pause-circle": ["music", "audio", "stop"], "pen-tool": ["vector", "drawing"], "percent": ["discount"], "phone-call": ["ring"], "phone-forwarded": ["call"], "phone-incoming": ["call"], "phone-missed": ["call"], "phone-off": ["call", "mute"], "phone-outgoing": ["call"], "phone": ["call"], "play": ["music", "start"], "pie-chart": ["statistics", "diagram"], "play-circle": ["music", "start"], "plus": ["add", "new"], "plus-circle": ["add", "new"], "plus-square": ["add", "new"], "pocket": ["logo", "save"], "power": ["on", "off"], "printer": ["fax", "office", "device"], "radio": ["signal"], "refresh-cw": ["synchronise", "arrows"], "refresh-ccw": ["arrows"], "repeat": ["loop", "arrows"], "rewind": ["music"], "rotate-ccw": ["arrow"], "rotate-cw": ["arrow"], "rss": ["feed", "subscribe"], "save": ["floppy disk"], "scissors": ["cut"], "search": ["find", "magnifier", "magnifying glass"], "send": ["message", "mail", "email", "paper airplane", "paper aeroplane"], "settings": ["cog", "edit", "gear", "preferences"], "share-2": ["network", "connections"], "shield": ["security", "secure"], "shield-off": ["security", "insecure"], "shopping-bag": ["ecommerce", "cart", "purchase", "store"], "shopping-cart": ["ecommerce", "cart", "purchase", "store"], "shuffle": ["music"], "skip-back": ["music"], "skip-forward": ["music"], "slack": ["logo"], "slash": ["ban", "no"], "sliders": ["settings", "controls"], "smartphone": ["cellphone", "device"], "smile": ["emoji", "face", "happy", "good", "emotion"], "speaker": ["audio", "music"], "star": ["bookmark", "favorite", "like"], "stop-circle": ["media", "music"], "sun": ["brightness", "weather", "light"], "sunrise": ["weather", "time", "morning", "day"], "sunset": ["weather", "time", "evening", "night"], "tablet": ["device"], "tag": ["label"], "target": ["logo", "bullseye"], "terminal": ["code", "command line", "prompt"], "thermometer": ["temperature", "celsius", "fahrenheit", "weather"], "thumbs-down": ["dislike", "bad", "emotion"], "thumbs-up": ["like", "good", "emotion"], "toggle-left": ["on", "off", "switch"], "toggle-right": ["on", "off", "switch"], "tool": ["settings", "spanner"], "trash": ["garbage", "delete", "remove", "bin"], "trash-2": ["garbage", "delete", "remove", "bin"], "triangle": ["delta"], "truck": ["delivery", "van", "shipping", "transport", "lorry"], "tv": ["television", "stream"], "twitch": ["logo"], "twitter": ["logo", "social"], "type": ["text"], "umbrella": ["rain", "weather"], "unlock": ["security"], "user-check": ["followed", "subscribed"], "user-minus": ["delete", "remove", "unfollow", "unsubscribe"], "user-plus": ["new", "add", "create", "follow", "subscribe"], "user-x": ["delete", "remove", "unfollow", "unsubscribe", "unavailable"], "user": ["person", "account"], "users": ["group"], "video-off": ["camera", "movie", "film"], "video": ["camera", "movie", "film"], "voicemail": ["phone"], "volume": ["music", "sound", "mute"], "volume-1": ["music", "sound"], "volume-2": ["music", "sound"], "volume-x": ["music", "sound", "mute"], "watch": ["clock", "time"], "wifi-off": ["disabled"], "wifi": ["connection", "signal", "wireless"], "wind": ["weather", "air"], "x-circle": ["cancel", "close", "delete", "remove", "times", "clear"], "x-octagon": ["delete", "stop", "alert", "warning", "times", "clear"], "x-square": ["cancel", "close", "delete", "remove", "times", "clear"], "x": ["cancel", "close", "delete", "remove", "times", "clear"], "youtube": ["logo", "video", "play"], "zap-off": ["flash", "camera", "lightning"], "zap": ["flash", "camera", "lightning"], "zoom-in": ["magnifying glass"], "zoom-out": ["magnifying glass"] };
         },
         "./src/to-svg.js": function(module3, exports2, __webpack_require__) {
           "use strict";
@@ -10368,435 +6720,6 @@ var require_feather = __commonJS({
           module3.exports = __webpack_require__("./src/index.js");
         }
       });
-    });
-  }
-});
-
-// node_modules/tslib/tslib.js
-var require_tslib = __commonJS({
-  "node_modules/tslib/tslib.js"(exports, module2) {
-    var __extends2;
-    var __assign2;
-    var __rest2;
-    var __decorate2;
-    var __param2;
-    var __metadata2;
-    var __awaiter2;
-    var __generator2;
-    var __exportStar2;
-    var __values2;
-    var __read2;
-    var __spread2;
-    var __spreadArrays2;
-    var __spreadArray2;
-    var __await2;
-    var __asyncGenerator2;
-    var __asyncDelegator2;
-    var __asyncValues2;
-    var __makeTemplateObject2;
-    var __importStar2;
-    var __importDefault2;
-    var __classPrivateFieldGet2;
-    var __classPrivateFieldSet2;
-    var __createBinding2;
-    (function(factory) {
-      var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
-      if (typeof define === "function" && define.amd) {
-        define("tslib", ["exports"], function(exports2) {
-          factory(createExporter(root, createExporter(exports2)));
-        });
-      } else if (typeof module2 === "object" && typeof module2.exports === "object") {
-        factory(createExporter(root, createExporter(module2.exports)));
-      } else {
-        factory(createExporter(root));
-      }
-      function createExporter(exports2, previous) {
-        if (exports2 !== root) {
-          if (typeof Object.create === "function") {
-            Object.defineProperty(exports2, "__esModule", { value: true });
-          } else {
-            exports2.__esModule = true;
-          }
-        }
-        return function(id, v) {
-          return exports2[id] = previous ? previous(id, v) : v;
-        };
-      }
-    })(function(exporter) {
-      var extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d, b) {
-        d.__proto__ = b;
-      } || function(d, b) {
-        for (var p in b)
-          if (Object.prototype.hasOwnProperty.call(b, p))
-            d[p] = b[p];
-      };
-      __extends2 = function(d, b) {
-        if (typeof b !== "function" && b !== null)
-          throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() {
-          this.constructor = d;
-        }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-      };
-      __assign2 = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-          s = arguments[i];
-          for (var p in s)
-            if (Object.prototype.hasOwnProperty.call(s, p))
-              t[p] = s[p];
-        }
-        return t;
-      };
-      __rest2 = function(s, e) {
-        var t = {};
-        for (var p in s)
-          if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-            t[p] = s[p];
-        if (s != null && typeof Object.getOwnPropertySymbols === "function")
-          for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t[p[i]] = s[p[i]];
-          }
-        return t;
-      };
-      __decorate2 = function(decorators, target, key2, desc) {
-        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key2) : desc, d;
-        if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
-          r = Reflect.decorate(decorators, target, key2, desc);
-        else
-          for (var i = decorators.length - 1; i >= 0; i--)
-            if (d = decorators[i])
-              r = (c < 3 ? d(r) : c > 3 ? d(target, key2, r) : d(target, key2)) || r;
-        return c > 3 && r && Object.defineProperty(target, key2, r), r;
-      };
-      __param2 = function(paramIndex, decorator) {
-        return function(target, key2) {
-          decorator(target, key2, paramIndex);
-        };
-      };
-      __metadata2 = function(metadataKey, metadataValue) {
-        if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
-          return Reflect.metadata(metadataKey, metadataValue);
-      };
-      __awaiter2 = function(thisArg, _arguments, P, generator) {
-        function adopt(value) {
-          return value instanceof P ? value : new P(function(resolve) {
-            resolve(value);
-          });
-        }
-        return new (P || (P = Promise))(function(resolve, reject) {
-          function fulfilled(value) {
-            try {
-              step(generator.next(value));
-            } catch (e) {
-              reject(e);
-            }
-          }
-          function rejected(value) {
-            try {
-              step(generator["throw"](value));
-            } catch (e) {
-              reject(e);
-            }
-          }
-          function step(result) {
-            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
-          }
-          step((generator = generator.apply(thisArg, _arguments || [])).next());
-        });
-      };
-      __generator2 = function(thisArg, body) {
-        var _ = { label: 0, sent: function() {
-          if (t[0] & 1)
-            throw t[1];
-          return t[1];
-        }, trys: [], ops: [] }, f, y, t, g;
-        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
-          return this;
-        }), g;
-        function verb(n) {
-          return function(v) {
-            return step([n, v]);
-          };
-        }
-        function step(op) {
-          if (f)
-            throw new TypeError("Generator is already executing.");
-          while (_)
-            try {
-              if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done)
-                return t;
-              if (y = 0, t)
-                op = [op[0] & 2, t.value];
-              switch (op[0]) {
-                case 0:
-                case 1:
-                  t = op;
-                  break;
-                case 4:
-                  _.label++;
-                  return { value: op[1], done: false };
-                case 5:
-                  _.label++;
-                  y = op[1];
-                  op = [0];
-                  continue;
-                case 7:
-                  op = _.ops.pop();
-                  _.trys.pop();
-                  continue;
-                default:
-                  if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
-                    _ = 0;
-                    continue;
-                  }
-                  if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
-                    _.label = op[1];
-                    break;
-                  }
-                  if (op[0] === 6 && _.label < t[1]) {
-                    _.label = t[1];
-                    t = op;
-                    break;
-                  }
-                  if (t && _.label < t[2]) {
-                    _.label = t[2];
-                    _.ops.push(op);
-                    break;
-                  }
-                  if (t[2])
-                    _.ops.pop();
-                  _.trys.pop();
-                  continue;
-              }
-              op = body.call(thisArg, _);
-            } catch (e) {
-              op = [6, e];
-              y = 0;
-            } finally {
-              f = t = 0;
-            }
-          if (op[0] & 5)
-            throw op[1];
-          return { value: op[0] ? op[1] : void 0, done: true };
-        }
-      };
-      __exportStar2 = function(m, o) {
-        for (var p in m)
-          if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p))
-            __createBinding2(o, m, p);
-      };
-      __createBinding2 = Object.create ? function(o, m, k, k2) {
-        if (k2 === void 0)
-          k2 = k;
-        Object.defineProperty(o, k2, { enumerable: true, get: function() {
-          return m[k];
-        } });
-      } : function(o, m, k, k2) {
-        if (k2 === void 0)
-          k2 = k;
-        o[k2] = m[k];
-      };
-      __values2 = function(o) {
-        var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-        if (m)
-          return m.call(o);
-        if (o && typeof o.length === "number")
-          return {
-            next: function() {
-              if (o && i >= o.length)
-                o = void 0;
-              return { value: o && o[i++], done: !o };
-            }
-          };
-        throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-      };
-      __read2 = function(o, n) {
-        var m = typeof Symbol === "function" && o[Symbol.iterator];
-        if (!m)
-          return o;
-        var i = m.call(o), r, ar = [], e;
-        try {
-          while ((n === void 0 || n-- > 0) && !(r = i.next()).done)
-            ar.push(r.value);
-        } catch (error) {
-          e = { error };
-        } finally {
-          try {
-            if (r && !r.done && (m = i["return"]))
-              m.call(i);
-          } finally {
-            if (e)
-              throw e.error;
-          }
-        }
-        return ar;
-      };
-      __spread2 = function() {
-        for (var ar = [], i = 0; i < arguments.length; i++)
-          ar = ar.concat(__read2(arguments[i]));
-        return ar;
-      };
-      __spreadArrays2 = function() {
-        for (var s = 0, i = 0, il = arguments.length; i < il; i++)
-          s += arguments[i].length;
-        for (var r = Array(s), k = 0, i = 0; i < il; i++)
-          for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-        return r;
-      };
-      __spreadArray2 = function(to, from, pack) {
-        if (pack || arguments.length === 2)
-          for (var i = 0, l = from.length, ar; i < l; i++) {
-            if (ar || !(i in from)) {
-              if (!ar)
-                ar = Array.prototype.slice.call(from, 0, i);
-              ar[i] = from[i];
-            }
-          }
-        return to.concat(ar || Array.prototype.slice.call(from));
-      };
-      __await2 = function(v) {
-        return this instanceof __await2 ? (this.v = v, this) : new __await2(v);
-      };
-      __asyncGenerator2 = function(thisArg, _arguments, generator) {
-        if (!Symbol.asyncIterator)
-          throw new TypeError("Symbol.asyncIterator is not defined.");
-        var g = generator.apply(thisArg, _arguments || []), i, q = [];
-        return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
-          return this;
-        }, i;
-        function verb(n) {
-          if (g[n])
-            i[n] = function(v) {
-              return new Promise(function(a, b) {
-                q.push([n, v, a, b]) > 1 || resume(n, v);
-              });
-            };
-        }
-        function resume(n, v) {
-          try {
-            step(g[n](v));
-          } catch (e) {
-            settle(q[0][3], e);
-          }
-        }
-        function step(r) {
-          r.value instanceof __await2 ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
-        }
-        function fulfill(value) {
-          resume("next", value);
-        }
-        function reject(value) {
-          resume("throw", value);
-        }
-        function settle(f, v) {
-          if (f(v), q.shift(), q.length)
-            resume(q[0][0], q[0][1]);
-        }
-      };
-      __asyncDelegator2 = function(o) {
-        var i, p;
-        return i = {}, verb("next"), verb("throw", function(e) {
-          throw e;
-        }), verb("return"), i[Symbol.iterator] = function() {
-          return this;
-        }, i;
-        function verb(n, f) {
-          i[n] = o[n] ? function(v) {
-            return (p = !p) ? { value: __await2(o[n](v)), done: n === "return" } : f ? f(v) : v;
-          } : f;
-        }
-      };
-      __asyncValues2 = function(o) {
-        if (!Symbol.asyncIterator)
-          throw new TypeError("Symbol.asyncIterator is not defined.");
-        var m = o[Symbol.asyncIterator], i;
-        return m ? m.call(o) : (o = typeof __values2 === "function" ? __values2(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
-          return this;
-        }, i);
-        function verb(n) {
-          i[n] = o[n] && function(v) {
-            return new Promise(function(resolve, reject) {
-              v = o[n](v), settle(resolve, reject, v.done, v.value);
-            });
-          };
-        }
-        function settle(resolve, reject, d, v) {
-          Promise.resolve(v).then(function(v2) {
-            resolve({ value: v2, done: d });
-          }, reject);
-        }
-      };
-      __makeTemplateObject2 = function(cooked, raw) {
-        if (Object.defineProperty) {
-          Object.defineProperty(cooked, "raw", { value: raw });
-        } else {
-          cooked.raw = raw;
-        }
-        return cooked;
-      };
-      var __setModuleDefault = Object.create ? function(o, v) {
-        Object.defineProperty(o, "default", { enumerable: true, value: v });
-      } : function(o, v) {
-        o["default"] = v;
-      };
-      __importStar2 = function(mod) {
-        if (mod && mod.__esModule)
-          return mod;
-        var result = {};
-        if (mod != null) {
-          for (var k in mod)
-            if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k))
-              __createBinding2(result, mod, k);
-        }
-        __setModuleDefault(result, mod);
-        return result;
-      };
-      __importDefault2 = function(mod) {
-        return mod && mod.__esModule ? mod : { "default": mod };
-      };
-      __classPrivateFieldGet2 = function(receiver, state, kind, f) {
-        if (kind === "a" && !f)
-          throw new TypeError("Private accessor was defined without a getter");
-        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
-          throw new TypeError("Cannot read private member from an object whose class did not declare it");
-        return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-      };
-      __classPrivateFieldSet2 = function(receiver, state, value, kind, f) {
-        if (kind === "m")
-          throw new TypeError("Private method is not writable");
-        if (kind === "a" && !f)
-          throw new TypeError("Private accessor was defined without a setter");
-        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
-          throw new TypeError("Cannot write private member to an object whose class did not declare it");
-        return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
-      };
-      exporter("__extends", __extends2);
-      exporter("__assign", __assign2);
-      exporter("__rest", __rest2);
-      exporter("__decorate", __decorate2);
-      exporter("__param", __param2);
-      exporter("__metadata", __metadata2);
-      exporter("__awaiter", __awaiter2);
-      exporter("__generator", __generator2);
-      exporter("__exportStar", __exportStar2);
-      exporter("__createBinding", __createBinding2);
-      exporter("__values", __values2);
-      exporter("__read", __read2);
-      exporter("__spread", __spread2);
-      exporter("__spreadArrays", __spreadArrays2);
-      exporter("__spreadArray", __spreadArray2);
-      exporter("__await", __await2);
-      exporter("__asyncGenerator", __asyncGenerator2);
-      exporter("__asyncDelegator", __asyncDelegator2);
-      exporter("__asyncValues", __asyncValues2);
-      exporter("__makeTemplateObject", __makeTemplateObject2);
-      exporter("__importStar", __importStar2);
-      exporter("__importDefault", __importDefault2);
-      exporter("__classPrivateFieldGet", __classPrivateFieldGet2);
-      exporter("__classPrivateFieldSet", __classPrivateFieldSet2);
     });
   }
 });
@@ -10839,7 +6762,7 @@ var ObsidianGitSettingsTab = class extends import_obsidian.PluginSettingTab {
     const plugin = this.plugin;
     containerEl.empty();
     containerEl.createEl("h2", { text: "Git Backup settings" });
-    new import_obsidian.Setting(containerEl).setName("Vault backup interval (minutes)").setDesc("Commit and push changes every X minutes. (See below setting for further configuration!) To disable automatic backup, specify negative value or zero (default)").addText((text2) => text2.setValue(String(plugin.settings.autoSaveInterval)).onChange((value) => {
+    new import_obsidian.Setting(containerEl).setName("Vault backup interval (minutes)").setDesc("Commit and push changes every X minutes. Set to 0 (default) to disable. (See below setting for further configuration!)").addText((text2) => text2.setValue(String(plugin.settings.autoSaveInterval)).onChange((value) => {
       if (!isNaN(Number(value))) {
         plugin.settings.autoSaveInterval = Number(value);
         plugin.saveSettings();
@@ -10862,7 +6785,7 @@ var ObsidianGitSettingsTab = class extends import_obsidian.PluginSettingTab {
         plugin.startAutoBackup(plugin.settings.autoSaveInterval);
       }
     }));
-    new import_obsidian.Setting(containerEl).setName("Auto pull interval (minutes)").setDesc("Pull changes every X minutes. To disable automatic pull, specify negative value or zero (default)").addText((text2) => text2.setValue(String(plugin.settings.autoPullInterval)).onChange((value) => {
+    new import_obsidian.Setting(containerEl).setName("Auto pull interval (minutes)").setDesc("Pull changes every X minutes. Set to 0 (default) to disable.").addText((text2) => text2.setValue(String(plugin.settings.autoPullInterval)).onChange((value) => {
       if (!isNaN(Number(value))) {
         plugin.settings.autoPullInterval = Number(value);
         plugin.saveSettings();
@@ -10890,8 +6813,12 @@ var ObsidianGitSettingsTab = class extends import_obsidian.PluginSettingTab {
         plugin.saveSettings();
       }));
     });
-    new import_obsidian.Setting(containerEl).setName("Commit message").setDesc("Specify custom commit message. Available placeholders: {{date}} (see below), {{hostname}} (see below) and {{numFiles}} (number of changed files in the commit)").addText((text2) => text2.setPlaceholder("vault backup").setValue(plugin.settings.commitMessage ? plugin.settings.commitMessage : "").onChange((value) => {
+    new import_obsidian.Setting(containerEl).setName("Commit message on manual backup/commit").setDesc("Available placeholders: {{date}} (see below), {{hostname}} (see below) and {{numFiles}} (number of changed files in the commit)").addText((text2) => text2.setPlaceholder("vault backup: {{date}}").setValue(plugin.settings.commitMessage ? plugin.settings.commitMessage : "").onChange((value) => {
       plugin.settings.commitMessage = value;
+      plugin.saveSettings();
+    }));
+    new import_obsidian.Setting(containerEl).setName("Commit message on auto backup").setDesc("Available placeholders: {{date}} (see below), {{hostname}} (see below) and {{numFiles}} (number of changed files in the commit)").addText((text2) => text2.setPlaceholder("vault backup: {{date}}").setValue(plugin.settings.autoCommitMessage).onChange((value) => {
+      plugin.settings.autoCommitMessage = value;
       plugin.saveSettings();
     }));
     new import_obsidian.Setting(containerEl).setName("{{date}} placeholder format").setDesc('Specify custom date format. E.g. "YYYY-MM-DD HH:mm:ss"').addText((text2) => text2.setPlaceholder(plugin.settings.commitDateFormat).setValue(plugin.settings.commitDateFormat).onChange((value) => __async(this, null, function* () {
@@ -10902,14 +6829,14 @@ var ObsidianGitSettingsTab = class extends import_obsidian.PluginSettingTab {
       localStorage.setItem(plugin.manifest.id + ":hostname", value);
     })));
     new import_obsidian.Setting(containerEl).setName("Preview commit message").addButton((button) => button.setButtonText("Preview").onClick(() => __async(this, null, function* () {
-      let commitMessagePreview = yield plugin.gitManager.formatCommitMessage();
+      let commitMessagePreview = yield plugin.gitManager.formatCommitMessage(plugin.settings.commitMessage);
       new import_obsidian.Notice(`${commitMessagePreview}`);
     })));
     new import_obsidian.Setting(containerEl).setName("List filenames affected by commit in the commit body").addToggle((toggle) => toggle.setValue(plugin.settings.listChangedFilesInMessageBody).onChange((value) => {
       plugin.settings.listChangedFilesInMessageBody = value;
       plugin.saveSettings();
     }));
-    new import_obsidian.Setting(containerEl).setName("Specify custom commit message on auto backup").addToggle((toggle) => toggle.setValue(plugin.settings.customMessageOnAutoBackup).onChange((value) => {
+    new import_obsidian.Setting(containerEl).setName("Specify custom commit message on auto backup").setDesc("You will get a pop up to specify your message").addToggle((toggle) => toggle.setValue(plugin.settings.customMessageOnAutoBackup).onChange((value) => {
       plugin.settings.customMessageOnAutoBackup = value;
       plugin.saveSettings();
     }));
@@ -10936,6 +6863,10 @@ var ObsidianGitSettingsTab = class extends import_obsidian.PluginSettingTab {
       plugin.settings.pullBeforePush = value;
       plugin.saveSettings();
     }));
+    new import_obsidian.Setting(containerEl).setName("Automatically refresh Source Control View on file changes").setDesc("On slower machines this may cause lags. If so, just disable this option").addToggle((toggle) => toggle.setValue(plugin.settings.refreshSourceControl).onChange((value) => {
+      plugin.settings.refreshSourceControl = value;
+      plugin.saveSettings();
+    }));
     new import_obsidian.Setting(containerEl).setName("Update submodules").setDesc('"Create backup" and "pull" takes care of submodules. Missing features: Conflicted files, count of pulled/pushed/committed files. Tracking branch needs to be set for each submodule').addToggle((toggle) => toggle.setValue(plugin.settings.updateSubmodules).onChange((value) => {
       plugin.settings.updateSubmodules = value;
       plugin.saveSettings();
@@ -10955,6 +6886,14 @@ var ObsidianGitSettingsTab = class extends import_obsidian.PluginSettingTab {
         plugin.settings.gitPath = value;
         plugin.saveSettings();
         plugin.gitManager.updateGitPath(value || "git");
+      });
+    });
+    new import_obsidian.Setting(containerEl).setName("Base Path (Git repository path)").setDesc("Sets the relative path from where to execute the git binary. Mostly used to set the path to the git repository.").addText((cb) => {
+      cb.setValue(plugin.settings.basePath);
+      cb.onChange((value) => {
+        plugin.settings.basePath = value;
+        plugin.saveSettings();
+        plugin.gitManager.updateBasePath(value || "");
       });
     });
     const info = containerEl.createDiv();
@@ -11026,37 +6965,37 @@ var StatusBar = class {
         break;
       case PluginState.status:
         this.statusBarEl.ariaLabel = "Checking repository status...";
-        (0, import_obsidian2.setIcon)(this.statusBarEl, "feather-refresh-cw");
+        (0, import_obsidian2.setIcon)(this.statusBarEl, "refresh-cw");
         this.statusBarEl.addClass(this.base + "status");
         break;
       case PluginState.add:
         this.statusBarEl.ariaLabel = "Adding files...";
-        (0, import_obsidian2.setIcon)(this.statusBarEl, "feather-refresh-w");
+        (0, import_obsidian2.setIcon)(this.statusBarEl, "refresh-w");
         this.statusBarEl.addClass(this.base + "add");
         break;
       case PluginState.commit:
         this.statusBarEl.ariaLabel = "Committing changes...";
-        (0, import_obsidian2.setIcon)(this.statusBarEl, "feather-git-commit");
+        (0, import_obsidian2.setIcon)(this.statusBarEl, "git-commit");
         this.statusBarEl.addClass(this.base + "commit");
         break;
       case PluginState.push:
         this.statusBarEl.ariaLabel = "Pushing changes...";
-        (0, import_obsidian2.setIcon)(this.statusBarEl, "feather-upload");
+        (0, import_obsidian2.setIcon)(this.statusBarEl, "upload");
         this.statusBarEl.addClass(this.base + "push");
         break;
       case PluginState.pull:
         this.statusBarEl.ariaLabel = "Pulling changes...";
-        (0, import_obsidian2.setIcon)(this.statusBarEl, "feather-download");
+        (0, import_obsidian2.setIcon)(this.statusBarEl, "download");
         this.statusBarEl.addClass(this.base + "pull");
         break;
       case PluginState.conflicted:
         this.statusBarEl.ariaLabel = "You have conflict files...";
-        (0, import_obsidian2.setIcon)(this.statusBarEl, "feather-alert-circle");
+        (0, import_obsidian2.setIcon)(this.statusBarEl, "alert-circle");
         this.statusBarEl.addClass(this.base + "conflict");
         break;
       default:
         this.statusBarEl.ariaLabel = "Failed on initialization!";
-        (0, import_obsidian2.setIcon)(this.statusBarEl, "feather-alert-triangle");
+        (0, import_obsidian2.setIcon)(this.statusBarEl, "alert-triangle");
         this.statusBarEl.addClass(this.base + "failed-init");
         break;
     }
@@ -11065,11 +7004,15 @@ var StatusBar = class {
     if (timestamp) {
       const moment = window.moment;
       const fromNow = moment(timestamp).fromNow();
-      this.statusBarEl.ariaLabel = `Last Git update: ${fromNow}`;
+      this.statusBarEl.ariaLabel = `${this.plugin.offlineMode ? "Offline: " : ""}Last Git update: ${fromNow}`;
     } else {
-      this.statusBarEl.ariaLabel = "Git is ready";
+      this.statusBarEl.ariaLabel = this.plugin.offlineMode ? "Git is offline" : "Git is ready";
     }
-    (0, import_obsidian2.setIcon)(this.statusBarEl, "feather-check");
+    if (this.plugin.offlineMode) {
+      (0, import_obsidian2.setIcon)(this.statusBarEl, "globe");
+    } else {
+      (0, import_obsidian2.setIcon)(this.statusBarEl, "check");
+    }
     this.statusBarEl.addClass(this.base + "idle");
   }
 };
@@ -11148,6 +7091,7 @@ var CustomMessageModal = class extends import_obsidian4.SuggestModal {
 // src/constants.ts
 var DEFAULT_SETTINGS = {
   commitMessage: "vault backup: {{date}}",
+  autoCommitMessage: void 0,
   commitDateFormat: "YYYY-MM-DD HH:mm:ss",
   autoSaveInterval: 0,
   autoPullInterval: 0,
@@ -11162,17 +7106,19 @@ var DEFAULT_SETTINGS = {
   gitPath: "",
   customMessageOnAutoBackup: false,
   autoBackupAfterFileChange: false,
-  treeStructure: false
+  treeStructure: false,
+  refreshSourceControl: true,
+  basePath: ""
 };
 var GIT_VIEW_CONFIG = {
   type: "git-view",
   name: "Source Control",
-  icon: "feather-git-pull-request"
+  icon: "git-pull-request"
 };
 var DIFF_VIEW_CONFIG = {
   type: "diff-view",
   name: "Diff View",
-  icon: "feather-git-pull-request"
+  icon: "git-pull-request"
 };
 
 // src/openInGitHub.ts
@@ -11222,9 +7168,3529 @@ function getData(manager) {
 }
 
 // src/simpleGit.ts
-var import_child_process = __toModule(require("child_process"));
+var import_child_process2 = __toModule(require("child_process"));
 var path = __toModule(require("path"));
-var simple = __toModule(require_src3());
+var import_path = __toModule(require("path"));
+
+// node_modules/simple-git/dist/esm/index.js
+var import_file_exists = __toModule(require_dist());
+var import_debug = __toModule(require_src());
+var import_child_process = __toModule(require("child_process"));
+var import_promise_deferred = __toModule(require_dist2());
+var import_promise_deferred2 = __toModule(require_dist2());
+var __defProp2 = Object.defineProperty;
+var __defProps2 = Object.defineProperties;
+var __getOwnPropDesc2 = Object.getOwnPropertyDescriptor;
+var __getOwnPropDescs2 = Object.getOwnPropertyDescriptors;
+var __getOwnPropNames2 = Object.getOwnPropertyNames;
+var __getOwnPropSymbols2 = Object.getOwnPropertySymbols;
+var __hasOwnProp2 = Object.prototype.hasOwnProperty;
+var __propIsEnum2 = Object.prototype.propertyIsEnumerable;
+var __defNormalProp2 = (obj, key2, value) => key2 in obj ? __defProp2(obj, key2, { enumerable: true, configurable: true, writable: true, value }) : obj[key2] = value;
+var __spreadValues2 = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp2.call(b, prop))
+      __defNormalProp2(a, prop, b[prop]);
+  if (__getOwnPropSymbols2)
+    for (var prop of __getOwnPropSymbols2(b)) {
+      if (__propIsEnum2.call(b, prop))
+        __defNormalProp2(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps2 = (a, b) => __defProps2(a, __getOwnPropDescs2(b));
+var __markAsModule2 = (target) => __defProp2(target, "__esModule", { value: true });
+var __esm = (fn, res) => function __init() {
+  return fn && (res = (0, fn[__getOwnPropNames2(fn)[0]])(fn = 0)), res;
+};
+var __commonJS2 = (cb, mod) => function __require() {
+  return mod || (0, cb[__getOwnPropNames2(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+};
+var __export2 = (target, all) => {
+  for (var name in all)
+    __defProp2(target, name, { get: all[name], enumerable: true });
+};
+var __reExport2 = (target, module2, copyDefault, desc) => {
+  if (module2 && typeof module2 === "object" || typeof module2 === "function") {
+    for (let key2 of __getOwnPropNames2(module2))
+      if (!__hasOwnProp2.call(target, key2) && (copyDefault || key2 !== "default"))
+        __defProp2(target, key2, { get: () => module2[key2], enumerable: !(desc = __getOwnPropDesc2(module2, key2)) || desc.enumerable });
+  }
+  return target;
+};
+var __toCommonJS = /* @__PURE__ */ ((cache) => {
+  return (module2, temp) => {
+    return cache && cache.get(module2) || (temp = __reExport2(__markAsModule2({}), module2, 1), cache && cache.set(module2, temp), temp);
+  };
+})(typeof WeakMap !== "undefined" ? /* @__PURE__ */ new WeakMap() : 0);
+var __async2 = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+var GitError;
+var init_git_error = __esm({
+  "src/lib/errors/git-error.ts"() {
+    GitError = class extends Error {
+      constructor(task, message) {
+        super(message);
+        this.task = task;
+        Object.setPrototypeOf(this, new.target.prototype);
+      }
+    };
+  }
+});
+var GitResponseError;
+var init_git_response_error = __esm({
+  "src/lib/errors/git-response-error.ts"() {
+    init_git_error();
+    GitResponseError = class extends GitError {
+      constructor(git, message) {
+        super(void 0, message || String(git));
+        this.git = git;
+      }
+    };
+  }
+});
+var TaskConfigurationError;
+var init_task_configuration_error = __esm({
+  "src/lib/errors/task-configuration-error.ts"() {
+    init_git_error();
+    TaskConfigurationError = class extends GitError {
+      constructor(message) {
+        super(void 0, message);
+      }
+    };
+  }
+});
+function asFunction(source) {
+  return typeof source === "function" ? source : NOOP;
+}
+function isUserFunction(source) {
+  return typeof source === "function" && source !== NOOP;
+}
+function splitOn(input, char) {
+  const index = input.indexOf(char);
+  if (index <= 0) {
+    return [input, ""];
+  }
+  return [
+    input.substr(0, index),
+    input.substr(index + 1)
+  ];
+}
+function first(input, offset = 0) {
+  return isArrayLike(input) && input.length > offset ? input[offset] : void 0;
+}
+function last(input, offset = 0) {
+  if (isArrayLike(input) && input.length > offset) {
+    return input[input.length - 1 - offset];
+  }
+}
+function isArrayLike(input) {
+  return !!(input && typeof input.length === "number");
+}
+function toLinesWithContent(input = "", trimmed2 = true, separator = "\n") {
+  return input.split(separator).reduce((output, line) => {
+    const lineContent = trimmed2 ? line.trim() : line;
+    if (lineContent) {
+      output.push(lineContent);
+    }
+    return output;
+  }, []);
+}
+function forEachLineWithContent(input, callback) {
+  return toLinesWithContent(input, true).map((line) => callback(line));
+}
+function folderExists(path3) {
+  return (0, import_file_exists.exists)(path3, import_file_exists.FOLDER);
+}
+function append(target, item) {
+  if (Array.isArray(target)) {
+    if (!target.includes(item)) {
+      target.push(item);
+    }
+  } else {
+    target.add(item);
+  }
+  return item;
+}
+function including(target, item) {
+  if (Array.isArray(target) && !target.includes(item)) {
+    target.push(item);
+  }
+  return target;
+}
+function remove(target, item) {
+  if (Array.isArray(target)) {
+    const index = target.indexOf(item);
+    if (index >= 0) {
+      target.splice(index, 1);
+    }
+  } else {
+    target.delete(item);
+  }
+  return item;
+}
+function asArray(source) {
+  return Array.isArray(source) ? source : [source];
+}
+function asStringArray(source) {
+  return asArray(source).map(String);
+}
+function asNumber(source, onNaN = 0) {
+  if (source == null) {
+    return onNaN;
+  }
+  const num = parseInt(source, 10);
+  return isNaN(num) ? onNaN : num;
+}
+function prefixedArray(input, prefix) {
+  const output = [];
+  for (let i = 0, max = input.length; i < max; i++) {
+    output.push(prefix, input[i]);
+  }
+  return output;
+}
+function bufferToString(input) {
+  return (Array.isArray(input) ? Buffer.concat(input) : input).toString("utf-8");
+}
+function pick(source, properties) {
+  return Object.assign({}, ...properties.map((property) => property in source ? { [property]: source[property] } : {}));
+}
+function delay(duration = 0) {
+  return new Promise((done) => setTimeout(done, duration));
+}
+var NULL;
+var NOOP;
+var objectToString;
+var init_util = __esm({
+  "src/lib/utils/util.ts"() {
+    NULL = "\0";
+    NOOP = () => {
+    };
+    objectToString = Object.prototype.toString.call.bind(Object.prototype.toString);
+  }
+});
+function filterType(input, filter, def) {
+  if (filter(input)) {
+    return input;
+  }
+  return arguments.length > 2 ? def : void 0;
+}
+function filterPrimitives(input, omit) {
+  return /number|string|boolean/.test(typeof input) && (!omit || !omit.includes(typeof input));
+}
+function filterPlainObject(input) {
+  return !!input && objectToString(input) === "[object Object]";
+}
+function filterFunction(input) {
+  return typeof input === "function";
+}
+var filterArray;
+var filterString;
+var filterStringArray;
+var filterStringOrStringArray;
+var filterHasLength;
+var init_argument_filters = __esm({
+  "src/lib/utils/argument-filters.ts"() {
+    init_util();
+    filterArray = (input) => {
+      return Array.isArray(input);
+    };
+    filterString = (input) => {
+      return typeof input === "string";
+    };
+    filterStringArray = (input) => {
+      return Array.isArray(input) && input.every(filterString);
+    };
+    filterStringOrStringArray = (input) => {
+      return filterString(input) || Array.isArray(input) && input.every(filterString);
+    };
+    filterHasLength = (input) => {
+      if (input == null || "number|boolean|function".includes(typeof input)) {
+        return false;
+      }
+      return Array.isArray(input) || typeof input === "string" || typeof input.length === "number";
+    };
+  }
+});
+var ExitCodes;
+var init_exit_codes = __esm({
+  "src/lib/utils/exit-codes.ts"() {
+    ExitCodes = /* @__PURE__ */ ((ExitCodes2) => {
+      ExitCodes2[ExitCodes2["SUCCESS"] = 0] = "SUCCESS";
+      ExitCodes2[ExitCodes2["ERROR"] = 1] = "ERROR";
+      ExitCodes2[ExitCodes2["UNCLEAN"] = 128] = "UNCLEAN";
+      return ExitCodes2;
+    })(ExitCodes || {});
+  }
+});
+var GitOutputStreams;
+var init_git_output_streams = __esm({
+  "src/lib/utils/git-output-streams.ts"() {
+    GitOutputStreams = class {
+      constructor(stdOut, stdErr) {
+        this.stdOut = stdOut;
+        this.stdErr = stdErr;
+      }
+      asStrings() {
+        return new GitOutputStreams(this.stdOut.toString("utf8"), this.stdErr.toString("utf8"));
+      }
+    };
+  }
+});
+var LineParser;
+var RemoteLineParser;
+var init_line_parser = __esm({
+  "src/lib/utils/line-parser.ts"() {
+    LineParser = class {
+      constructor(regExp, useMatches) {
+        this.matches = [];
+        this.parse = (line, target) => {
+          this.resetMatches();
+          if (!this._regExp.every((reg, index) => this.addMatch(reg, index, line(index)))) {
+            return false;
+          }
+          return this.useMatches(target, this.prepareMatches()) !== false;
+        };
+        this._regExp = Array.isArray(regExp) ? regExp : [regExp];
+        if (useMatches) {
+          this.useMatches = useMatches;
+        }
+      }
+      useMatches(target, match) {
+        throw new Error(`LineParser:useMatches not implemented`);
+      }
+      resetMatches() {
+        this.matches.length = 0;
+      }
+      prepareMatches() {
+        return this.matches;
+      }
+      addMatch(reg, index, line) {
+        const matched = line && reg.exec(line);
+        if (matched) {
+          this.pushMatch(index, matched);
+        }
+        return !!matched;
+      }
+      pushMatch(_index, matched) {
+        this.matches.push(...matched.slice(1));
+      }
+    };
+    RemoteLineParser = class extends LineParser {
+      addMatch(reg, index, line) {
+        return /^remote:\s/.test(String(line)) && super.addMatch(reg, index, line);
+      }
+      pushMatch(index, matched) {
+        if (index > 0 || matched.length > 1) {
+          super.pushMatch(index, matched);
+        }
+      }
+    };
+  }
+});
+function createInstanceConfig(...options) {
+  const baseDir = process.cwd();
+  const config = Object.assign(__spreadValues2({ baseDir }, defaultOptions), ...options.filter((o) => typeof o === "object" && o));
+  config.baseDir = config.baseDir || baseDir;
+  return config;
+}
+var defaultOptions;
+var init_simple_git_options = __esm({
+  "src/lib/utils/simple-git-options.ts"() {
+    defaultOptions = {
+      binary: "git",
+      maxConcurrentProcesses: 5,
+      config: []
+    };
+  }
+});
+function appendTaskOptions(options, commands = []) {
+  if (!filterPlainObject(options)) {
+    return commands;
+  }
+  return Object.keys(options).reduce((commands2, key2) => {
+    const value = options[key2];
+    if (filterPrimitives(value, ["boolean"])) {
+      commands2.push(key2 + "=" + value);
+    } else {
+      commands2.push(key2);
+    }
+    return commands2;
+  }, commands);
+}
+function getTrailingOptions(args, initialPrimitive = 0, objectOnly = false) {
+  const command = [];
+  for (let i = 0, max = initialPrimitive < 0 ? args.length : initialPrimitive; i < max; i++) {
+    if ("string|number".includes(typeof args[i])) {
+      command.push(String(args[i]));
+    }
+  }
+  appendTaskOptions(trailingOptionsArgument(args), command);
+  if (!objectOnly) {
+    command.push(...trailingArrayArgument(args));
+  }
+  return command;
+}
+function trailingArrayArgument(args) {
+  const hasTrailingCallback = typeof last(args) === "function";
+  return filterType(last(args, hasTrailingCallback ? 1 : 0), filterArray, []);
+}
+function trailingOptionsArgument(args) {
+  const hasTrailingCallback = filterFunction(last(args));
+  return filterType(last(args, hasTrailingCallback ? 1 : 0), filterPlainObject);
+}
+function trailingFunctionArgument(args, includeNoop = true) {
+  const callback = asFunction(last(args));
+  return includeNoop || isUserFunction(callback) ? callback : void 0;
+}
+var init_task_options = __esm({
+  "src/lib/utils/task-options.ts"() {
+    init_argument_filters();
+    init_util();
+  }
+});
+function callTaskParser(parser3, streams) {
+  return parser3(streams.stdOut, streams.stdErr);
+}
+function parseStringResponse(result, parsers11, ...texts) {
+  texts.forEach((text2) => {
+    for (let lines = toLinesWithContent(text2), i = 0, max = lines.length; i < max; i++) {
+      const line = (offset = 0) => {
+        if (i + offset >= max) {
+          return;
+        }
+        return lines[i + offset];
+      };
+      parsers11.some(({ parse }) => parse(line, result));
+    }
+  });
+  return result;
+}
+var init_task_parser = __esm({
+  "src/lib/utils/task-parser.ts"() {
+    init_util();
+  }
+});
+var utils_exports = {};
+__export2(utils_exports, {
+  ExitCodes: () => ExitCodes,
+  GitOutputStreams: () => GitOutputStreams,
+  LineParser: () => LineParser,
+  NOOP: () => NOOP,
+  NULL: () => NULL,
+  RemoteLineParser: () => RemoteLineParser,
+  append: () => append,
+  appendTaskOptions: () => appendTaskOptions,
+  asArray: () => asArray,
+  asFunction: () => asFunction,
+  asNumber: () => asNumber,
+  asStringArray: () => asStringArray,
+  bufferToString: () => bufferToString,
+  callTaskParser: () => callTaskParser,
+  createInstanceConfig: () => createInstanceConfig,
+  delay: () => delay,
+  filterArray: () => filterArray,
+  filterFunction: () => filterFunction,
+  filterHasLength: () => filterHasLength,
+  filterPlainObject: () => filterPlainObject,
+  filterPrimitives: () => filterPrimitives,
+  filterString: () => filterString,
+  filterStringArray: () => filterStringArray,
+  filterStringOrStringArray: () => filterStringOrStringArray,
+  filterType: () => filterType,
+  first: () => first,
+  folderExists: () => folderExists,
+  forEachLineWithContent: () => forEachLineWithContent,
+  getTrailingOptions: () => getTrailingOptions,
+  including: () => including,
+  isUserFunction: () => isUserFunction,
+  last: () => last,
+  objectToString: () => objectToString,
+  parseStringResponse: () => parseStringResponse,
+  pick: () => pick,
+  prefixedArray: () => prefixedArray,
+  remove: () => remove,
+  splitOn: () => splitOn,
+  toLinesWithContent: () => toLinesWithContent,
+  trailingFunctionArgument: () => trailingFunctionArgument,
+  trailingOptionsArgument: () => trailingOptionsArgument
+});
+var init_utils = __esm({
+  "src/lib/utils/index.ts"() {
+    init_argument_filters();
+    init_exit_codes();
+    init_git_output_streams();
+    init_line_parser();
+    init_simple_git_options();
+    init_task_options();
+    init_task_parser();
+    init_util();
+  }
+});
+var check_is_repo_exports = {};
+__export2(check_is_repo_exports, {
+  CheckRepoActions: () => CheckRepoActions,
+  checkIsBareRepoTask: () => checkIsBareRepoTask,
+  checkIsRepoRootTask: () => checkIsRepoRootTask,
+  checkIsRepoTask: () => checkIsRepoTask
+});
+function checkIsRepoTask(action) {
+  switch (action) {
+    case "bare":
+      return checkIsBareRepoTask();
+    case "root":
+      return checkIsRepoRootTask();
+  }
+  const commands = ["rev-parse", "--is-inside-work-tree"];
+  return {
+    commands,
+    format: "utf-8",
+    onError,
+    parser
+  };
+}
+function checkIsRepoRootTask() {
+  const commands = ["rev-parse", "--git-dir"];
+  return {
+    commands,
+    format: "utf-8",
+    onError,
+    parser(path3) {
+      return /^\.(git)?$/.test(path3.trim());
+    }
+  };
+}
+function checkIsBareRepoTask() {
+  const commands = ["rev-parse", "--is-bare-repository"];
+  return {
+    commands,
+    format: "utf-8",
+    onError,
+    parser
+  };
+}
+function isNotRepoMessage(error) {
+  return /(Not a git repository|Kein Git-Repository)/i.test(String(error));
+}
+var CheckRepoActions;
+var onError;
+var parser;
+var init_check_is_repo = __esm({
+  "src/lib/tasks/check-is-repo.ts"() {
+    init_utils();
+    CheckRepoActions = /* @__PURE__ */ ((CheckRepoActions2) => {
+      CheckRepoActions2["BARE"] = "bare";
+      CheckRepoActions2["IN_TREE"] = "tree";
+      CheckRepoActions2["IS_REPO_ROOT"] = "root";
+      return CheckRepoActions2;
+    })(CheckRepoActions || {});
+    onError = ({ exitCode }, error, done, fail) => {
+      if (exitCode === 128 && isNotRepoMessage(error)) {
+        return done(Buffer.from("false"));
+      }
+      fail(error);
+    };
+    parser = (text2) => {
+      return text2.trim() === "true";
+    };
+  }
+});
+function cleanSummaryParser(dryRun, text2) {
+  const summary = new CleanResponse(dryRun);
+  const regexp = dryRun ? dryRunRemovalRegexp : removalRegexp;
+  toLinesWithContent(text2).forEach((line) => {
+    const removed = line.replace(regexp, "");
+    summary.paths.push(removed);
+    (isFolderRegexp.test(removed) ? summary.folders : summary.files).push(removed);
+  });
+  return summary;
+}
+var CleanResponse;
+var removalRegexp;
+var dryRunRemovalRegexp;
+var isFolderRegexp;
+var init_CleanSummary = __esm({
+  "src/lib/responses/CleanSummary.ts"() {
+    init_utils();
+    CleanResponse = class {
+      constructor(dryRun) {
+        this.dryRun = dryRun;
+        this.paths = [];
+        this.files = [];
+        this.folders = [];
+      }
+    };
+    removalRegexp = /^[a-z]+\s*/i;
+    dryRunRemovalRegexp = /^[a-z]+\s+[a-z]+\s*/i;
+    isFolderRegexp = /\/$/;
+  }
+});
+var task_exports = {};
+__export2(task_exports, {
+  EMPTY_COMMANDS: () => EMPTY_COMMANDS,
+  adhocExecTask: () => adhocExecTask,
+  configurationErrorTask: () => configurationErrorTask,
+  isBufferTask: () => isBufferTask,
+  isEmptyTask: () => isEmptyTask,
+  straightThroughBufferTask: () => straightThroughBufferTask,
+  straightThroughStringTask: () => straightThroughStringTask
+});
+function adhocExecTask(parser3) {
+  return {
+    commands: EMPTY_COMMANDS,
+    format: "empty",
+    parser: parser3
+  };
+}
+function configurationErrorTask(error) {
+  return {
+    commands: EMPTY_COMMANDS,
+    format: "empty",
+    parser() {
+      throw typeof error === "string" ? new TaskConfigurationError(error) : error;
+    }
+  };
+}
+function straightThroughStringTask(commands, trimmed2 = false) {
+  return {
+    commands,
+    format: "utf-8",
+    parser(text2) {
+      return trimmed2 ? String(text2).trim() : text2;
+    }
+  };
+}
+function straightThroughBufferTask(commands) {
+  return {
+    commands,
+    format: "buffer",
+    parser(buffer) {
+      return buffer;
+    }
+  };
+}
+function isBufferTask(task) {
+  return task.format === "buffer";
+}
+function isEmptyTask(task) {
+  return task.format === "empty" || !task.commands.length;
+}
+var EMPTY_COMMANDS;
+var init_task = __esm({
+  "src/lib/tasks/task.ts"() {
+    init_task_configuration_error();
+    EMPTY_COMMANDS = [];
+  }
+});
+var clean_exports = {};
+__export2(clean_exports, {
+  CONFIG_ERROR_INTERACTIVE_MODE: () => CONFIG_ERROR_INTERACTIVE_MODE,
+  CONFIG_ERROR_MODE_REQUIRED: () => CONFIG_ERROR_MODE_REQUIRED,
+  CONFIG_ERROR_UNKNOWN_OPTION: () => CONFIG_ERROR_UNKNOWN_OPTION,
+  CleanOptions: () => CleanOptions,
+  cleanTask: () => cleanTask,
+  cleanWithOptionsTask: () => cleanWithOptionsTask,
+  isCleanOptionsArray: () => isCleanOptionsArray
+});
+function cleanWithOptionsTask(mode, customArgs) {
+  const { cleanMode, options, valid } = getCleanOptions(mode);
+  if (!cleanMode) {
+    return configurationErrorTask(CONFIG_ERROR_MODE_REQUIRED);
+  }
+  if (!valid.options) {
+    return configurationErrorTask(CONFIG_ERROR_UNKNOWN_OPTION + JSON.stringify(mode));
+  }
+  options.push(...customArgs);
+  if (options.some(isInteractiveMode)) {
+    return configurationErrorTask(CONFIG_ERROR_INTERACTIVE_MODE);
+  }
+  return cleanTask(cleanMode, options);
+}
+function cleanTask(mode, customArgs) {
+  const commands = ["clean", `-${mode}`, ...customArgs];
+  return {
+    commands,
+    format: "utf-8",
+    parser(text2) {
+      return cleanSummaryParser(mode === "n", text2);
+    }
+  };
+}
+function isCleanOptionsArray(input) {
+  return Array.isArray(input) && input.every((test) => CleanOptionValues.has(test));
+}
+function getCleanOptions(input) {
+  let cleanMode;
+  let options = [];
+  let valid = { cleanMode: false, options: true };
+  input.replace(/[^a-z]i/g, "").split("").forEach((char) => {
+    if (isCleanMode(char)) {
+      cleanMode = char;
+      valid.cleanMode = true;
+    } else {
+      valid.options = valid.options && isKnownOption(options[options.length] = `-${char}`);
+    }
+  });
+  return {
+    cleanMode,
+    options,
+    valid
+  };
+}
+function isCleanMode(cleanMode) {
+  return cleanMode === "f" || cleanMode === "n";
+}
+function isKnownOption(option) {
+  return /^-[a-z]$/i.test(option) && CleanOptionValues.has(option.charAt(1));
+}
+function isInteractiveMode(option) {
+  if (/^-[^\-]/.test(option)) {
+    return option.indexOf("i") > 0;
+  }
+  return option === "--interactive";
+}
+var CONFIG_ERROR_INTERACTIVE_MODE;
+var CONFIG_ERROR_MODE_REQUIRED;
+var CONFIG_ERROR_UNKNOWN_OPTION;
+var CleanOptions;
+var CleanOptionValues;
+var init_clean = __esm({
+  "src/lib/tasks/clean.ts"() {
+    init_CleanSummary();
+    init_utils();
+    init_task();
+    CONFIG_ERROR_INTERACTIVE_MODE = "Git clean interactive mode is not supported";
+    CONFIG_ERROR_MODE_REQUIRED = 'Git clean mode parameter ("n" or "f") is required';
+    CONFIG_ERROR_UNKNOWN_OPTION = "Git clean unknown option found in: ";
+    CleanOptions = /* @__PURE__ */ ((CleanOptions2) => {
+      CleanOptions2["DRY_RUN"] = "n";
+      CleanOptions2["FORCE"] = "f";
+      CleanOptions2["IGNORED_INCLUDED"] = "x";
+      CleanOptions2["IGNORED_ONLY"] = "X";
+      CleanOptions2["EXCLUDING"] = "e";
+      CleanOptions2["QUIET"] = "q";
+      CleanOptions2["RECURSIVE"] = "d";
+      return CleanOptions2;
+    })(CleanOptions || {});
+    CleanOptionValues = /* @__PURE__ */ new Set(["i", ...asStringArray(Object.values(CleanOptions))]);
+  }
+});
+function configListParser(text2) {
+  const config = new ConfigList();
+  for (const item of configParser(text2)) {
+    config.addValue(item.file, String(item.key), item.value);
+  }
+  return config;
+}
+function configGetParser(text2, key2) {
+  let value = null;
+  const values = [];
+  const scopes = /* @__PURE__ */ new Map();
+  for (const item of configParser(text2, key2)) {
+    if (item.key !== key2) {
+      continue;
+    }
+    values.push(value = item.value);
+    if (!scopes.has(item.file)) {
+      scopes.set(item.file, []);
+    }
+    scopes.get(item.file).push(value);
+  }
+  return {
+    key: key2,
+    paths: Array.from(scopes.keys()),
+    scopes,
+    value,
+    values
+  };
+}
+function configFilePath(filePath) {
+  return filePath.replace(/^(file):/, "");
+}
+function* configParser(text2, requestedKey = null) {
+  const lines = text2.split("\0");
+  for (let i = 0, max = lines.length - 1; i < max; ) {
+    const file = configFilePath(lines[i++]);
+    let value = lines[i++];
+    let key2 = requestedKey;
+    if (value.includes("\n")) {
+      const line = splitOn(value, "\n");
+      key2 = line[0];
+      value = line[1];
+    }
+    yield { file, key: key2, value };
+  }
+}
+var ConfigList;
+var init_ConfigList = __esm({
+  "src/lib/responses/ConfigList.ts"() {
+    init_utils();
+    ConfigList = class {
+      constructor() {
+        this.files = [];
+        this.values = /* @__PURE__ */ Object.create(null);
+      }
+      get all() {
+        if (!this._all) {
+          this._all = this.files.reduce((all, file) => {
+            return Object.assign(all, this.values[file]);
+          }, {});
+        }
+        return this._all;
+      }
+      addFile(file) {
+        if (!(file in this.values)) {
+          const latest = last(this.files);
+          this.values[file] = latest ? Object.create(this.values[latest]) : {};
+          this.files.push(file);
+        }
+        return this.values[file];
+      }
+      addValue(file, key2, value) {
+        const values = this.addFile(file);
+        if (!values.hasOwnProperty(key2)) {
+          values[key2] = value;
+        } else if (Array.isArray(values[key2])) {
+          values[key2].push(value);
+        } else {
+          values[key2] = [values[key2], value];
+        }
+        this._all = void 0;
+      }
+    };
+  }
+});
+function asConfigScope(scope, fallback) {
+  if (typeof scope === "string" && GitConfigScope.hasOwnProperty(scope)) {
+    return scope;
+  }
+  return fallback;
+}
+function addConfigTask(key2, value, append22, scope) {
+  const commands = ["config", `--${scope}`];
+  if (append22) {
+    commands.push("--add");
+  }
+  commands.push(key2, value);
+  return {
+    commands,
+    format: "utf-8",
+    parser(text2) {
+      return text2;
+    }
+  };
+}
+function getConfigTask(key2, scope) {
+  const commands = ["config", "--null", "--show-origin", "--get-all", key2];
+  if (scope) {
+    commands.splice(1, 0, `--${scope}`);
+  }
+  return {
+    commands,
+    format: "utf-8",
+    parser(text2) {
+      return configGetParser(text2, key2);
+    }
+  };
+}
+function listConfigTask(scope) {
+  const commands = ["config", "--list", "--show-origin", "--null"];
+  if (scope) {
+    commands.push(`--${scope}`);
+  }
+  return {
+    commands,
+    format: "utf-8",
+    parser(text2) {
+      return configListParser(text2);
+    }
+  };
+}
+function config_default() {
+  return {
+    addConfig(key2, value, ...rest) {
+      return this._runTask(addConfigTask(key2, value, rest[0] === true, asConfigScope(rest[1], "local")), trailingFunctionArgument(arguments));
+    },
+    getConfig(key2, scope) {
+      return this._runTask(getConfigTask(key2, asConfigScope(scope, void 0)), trailingFunctionArgument(arguments));
+    },
+    listConfig(...rest) {
+      return this._runTask(listConfigTask(asConfigScope(rest[0], void 0)), trailingFunctionArgument(arguments));
+    }
+  };
+}
+var GitConfigScope;
+var init_config = __esm({
+  "src/lib/tasks/config.ts"() {
+    init_ConfigList();
+    init_utils();
+    GitConfigScope = /* @__PURE__ */ ((GitConfigScope2) => {
+      GitConfigScope2["system"] = "system";
+      GitConfigScope2["global"] = "global";
+      GitConfigScope2["local"] = "local";
+      GitConfigScope2["worktree"] = "worktree";
+      return GitConfigScope2;
+    })(GitConfigScope || {});
+  }
+});
+function grepQueryBuilder(...params) {
+  return new GrepQuery().param(...params);
+}
+function parseGrep(grep) {
+  const paths = /* @__PURE__ */ new Set();
+  const results = {};
+  forEachLineWithContent(grep, (input) => {
+    const [path3, line, preview] = input.split(NULL);
+    paths.add(path3);
+    (results[path3] = results[path3] || []).push({
+      line: asNumber(line),
+      path: path3,
+      preview
+    });
+  });
+  return {
+    paths,
+    results
+  };
+}
+function grep_default() {
+  return {
+    grep(searchTerm) {
+      const then = trailingFunctionArgument(arguments);
+      const options = getTrailingOptions(arguments);
+      for (const option of disallowedOptions) {
+        if (options.includes(option)) {
+          return this._runTask(configurationErrorTask(`git.grep: use of "${option}" is not supported.`), then);
+        }
+      }
+      if (typeof searchTerm === "string") {
+        searchTerm = grepQueryBuilder().param(searchTerm);
+      }
+      const commands = ["grep", "--null", "-n", "--full-name", ...options, ...searchTerm];
+      return this._runTask({
+        commands,
+        format: "utf-8",
+        parser(stdOut) {
+          return parseGrep(stdOut);
+        }
+      }, then);
+    }
+  };
+}
+var disallowedOptions;
+var Query;
+var _a;
+var GrepQuery;
+var init_grep = __esm({
+  "src/lib/tasks/grep.ts"() {
+    init_utils();
+    init_task();
+    disallowedOptions = ["-h"];
+    Query = Symbol("grepQuery");
+    GrepQuery = class {
+      constructor() {
+        this[_a] = [];
+      }
+      *[(_a = Query, Symbol.iterator)]() {
+        for (const query of this[Query]) {
+          yield query;
+        }
+      }
+      and(...and) {
+        and.length && this[Query].push("--and", "(", ...prefixedArray(and, "-e"), ")");
+        return this;
+      }
+      param(...param) {
+        this[Query].push(...prefixedArray(param, "-e"));
+        return this;
+      }
+    };
+  }
+});
+var reset_exports = {};
+__export2(reset_exports, {
+  ResetMode: () => ResetMode,
+  getResetMode: () => getResetMode,
+  resetTask: () => resetTask
+});
+function resetTask(mode, customArgs) {
+  const commands = ["reset"];
+  if (isValidResetMode(mode)) {
+    commands.push(`--${mode}`);
+  }
+  commands.push(...customArgs);
+  return straightThroughStringTask(commands);
+}
+function getResetMode(mode) {
+  if (isValidResetMode(mode)) {
+    return mode;
+  }
+  switch (typeof mode) {
+    case "string":
+    case "undefined":
+      return "soft";
+  }
+  return;
+}
+function isValidResetMode(mode) {
+  return ResetModes.includes(mode);
+}
+var ResetMode;
+var ResetModes;
+var init_reset = __esm({
+  "src/lib/tasks/reset.ts"() {
+    init_task();
+    ResetMode = /* @__PURE__ */ ((ResetMode2) => {
+      ResetMode2["MIXED"] = "mixed";
+      ResetMode2["SOFT"] = "soft";
+      ResetMode2["HARD"] = "hard";
+      ResetMode2["MERGE"] = "merge";
+      ResetMode2["KEEP"] = "keep";
+      return ResetMode2;
+    })(ResetMode || {});
+    ResetModes = Array.from(Object.values(ResetMode));
+  }
+});
+function createLog() {
+  return (0, import_debug.default)("simple-git");
+}
+function prefixedLogger(to, prefix, forward) {
+  if (!prefix || !String(prefix).replace(/\s*/, "")) {
+    return !forward ? to : (message, ...args) => {
+      to(message, ...args);
+      forward(message, ...args);
+    };
+  }
+  return (message, ...args) => {
+    to(`%s ${message}`, prefix, ...args);
+    if (forward) {
+      forward(message, ...args);
+    }
+  };
+}
+function childLoggerName(name, childDebugger, { namespace: parentNamespace }) {
+  if (typeof name === "string") {
+    return name;
+  }
+  const childNamespace = childDebugger && childDebugger.namespace || "";
+  if (childNamespace.startsWith(parentNamespace)) {
+    return childNamespace.substr(parentNamespace.length + 1);
+  }
+  return childNamespace || parentNamespace;
+}
+function createLogger(label, verbose, initialStep, infoDebugger = createLog()) {
+  const labelPrefix = label && `[${label}]` || "";
+  const spawned = [];
+  const debugDebugger = typeof verbose === "string" ? infoDebugger.extend(verbose) : verbose;
+  const key2 = childLoggerName(filterType(verbose, filterString), debugDebugger, infoDebugger);
+  return step(initialStep);
+  function sibling(name, initial) {
+    return append(spawned, createLogger(label, key2.replace(/^[^:]+/, name), initial, infoDebugger));
+  }
+  function step(phase) {
+    const stepPrefix = phase && `[${phase}]` || "";
+    const debug2 = debugDebugger && prefixedLogger(debugDebugger, stepPrefix) || NOOP;
+    const info = prefixedLogger(infoDebugger, `${labelPrefix} ${stepPrefix}`, debug2);
+    return Object.assign(debugDebugger ? debug2 : info, {
+      label,
+      sibling,
+      info,
+      step
+    });
+  }
+}
+var init_git_logger = __esm({
+  "src/lib/git-logger.ts"() {
+    init_utils();
+    import_debug.default.formatters.L = (value) => String(filterHasLength(value) ? value.length : "-");
+    import_debug.default.formatters.B = (value) => {
+      if (Buffer.isBuffer(value)) {
+        return value.toString("utf8");
+      }
+      return objectToString(value);
+    };
+  }
+});
+var _TasksPendingQueue;
+var TasksPendingQueue;
+var init_tasks_pending_queue = __esm({
+  "src/lib/runners/tasks-pending-queue.ts"() {
+    init_git_error();
+    init_git_logger();
+    _TasksPendingQueue = class {
+      constructor(logLabel = "GitExecutor") {
+        this.logLabel = logLabel;
+        this._queue = /* @__PURE__ */ new Map();
+      }
+      withProgress(task) {
+        return this._queue.get(task);
+      }
+      createProgress(task) {
+        const name = _TasksPendingQueue.getName(task.commands[0]);
+        const logger = createLogger(this.logLabel, name);
+        return {
+          task,
+          logger,
+          name
+        };
+      }
+      push(task) {
+        const progress = this.createProgress(task);
+        progress.logger("Adding task to the queue, commands = %o", task.commands);
+        this._queue.set(task, progress);
+        return progress;
+      }
+      fatal(err) {
+        for (const [task, { logger }] of Array.from(this._queue.entries())) {
+          if (task === err.task) {
+            logger.info(`Failed %o`, err);
+            logger(`Fatal exception, any as-yet un-started tasks run through this executor will not be attempted`);
+          } else {
+            logger.info(`A fatal exception occurred in a previous task, the queue has been purged: %o`, err.message);
+          }
+          this.complete(task);
+        }
+        if (this._queue.size !== 0) {
+          throw new Error(`Queue size should be zero after fatal: ${this._queue.size}`);
+        }
+      }
+      complete(task) {
+        const progress = this.withProgress(task);
+        if (progress) {
+          this._queue.delete(task);
+        }
+      }
+      attempt(task) {
+        const progress = this.withProgress(task);
+        if (!progress) {
+          throw new GitError(void 0, "TasksPendingQueue: attempt called for an unknown task");
+        }
+        progress.logger("Starting task");
+        return progress;
+      }
+      static getName(name = "empty") {
+        return `task:${name}:${++_TasksPendingQueue.counter}`;
+      }
+    };
+    TasksPendingQueue = _TasksPendingQueue;
+    TasksPendingQueue.counter = 0;
+  }
+});
+function pluginContext(task, commands) {
+  return {
+    method: first(task.commands) || "",
+    commands
+  };
+}
+function onErrorReceived(target, logger) {
+  return (err) => {
+    logger(`[ERROR] child process exception %o`, err);
+    target.push(Buffer.from(String(err.stack), "ascii"));
+  };
+}
+function onDataReceived(target, name, logger, output) {
+  return (buffer) => {
+    logger(`%s received %L bytes`, name, buffer);
+    output(`%B`, buffer);
+    target.push(buffer);
+  };
+}
+var GitExecutorChain;
+var init_git_executor_chain = __esm({
+  "src/lib/runners/git-executor-chain.ts"() {
+    init_git_error();
+    init_task();
+    init_utils();
+    init_tasks_pending_queue();
+    GitExecutorChain = class {
+      constructor(_executor, _scheduler, _plugins) {
+        this._executor = _executor;
+        this._scheduler = _scheduler;
+        this._plugins = _plugins;
+        this._chain = Promise.resolve();
+        this._queue = new TasksPendingQueue();
+      }
+      get binary() {
+        return this._executor.binary;
+      }
+      get cwd() {
+        return this._cwd || this._executor.cwd;
+      }
+      set cwd(cwd) {
+        this._cwd = cwd;
+      }
+      get env() {
+        return this._executor.env;
+      }
+      get outputHandler() {
+        return this._executor.outputHandler;
+      }
+      chain() {
+        return this;
+      }
+      push(task) {
+        this._queue.push(task);
+        return this._chain = this._chain.then(() => this.attemptTask(task));
+      }
+      attemptTask(task) {
+        return __async2(this, null, function* () {
+          const onScheduleComplete = yield this._scheduler.next();
+          const onQueueComplete = () => this._queue.complete(task);
+          try {
+            const { logger } = this._queue.attempt(task);
+            return yield isEmptyTask(task) ? this.attemptEmptyTask(task, logger) : this.attemptRemoteTask(task, logger);
+          } catch (e) {
+            throw this.onFatalException(task, e);
+          } finally {
+            onQueueComplete();
+            onScheduleComplete();
+          }
+        });
+      }
+      onFatalException(task, e) {
+        const gitError = e instanceof GitError ? Object.assign(e, { task }) : new GitError(task, e && String(e));
+        this._chain = Promise.resolve();
+        this._queue.fatal(gitError);
+        return gitError;
+      }
+      attemptRemoteTask(task, logger) {
+        return __async2(this, null, function* () {
+          const args = this._plugins.exec("spawn.args", [...task.commands], pluginContext(task, task.commands));
+          const raw = yield this.gitResponse(task, this.binary, args, this.outputHandler, logger.step("SPAWN"));
+          const outputStreams = yield this.handleTaskData(task, args, raw, logger.step("HANDLE"));
+          logger(`passing response to task's parser as a %s`, task.format);
+          if (isBufferTask(task)) {
+            return callTaskParser(task.parser, outputStreams);
+          }
+          return callTaskParser(task.parser, outputStreams.asStrings());
+        });
+      }
+      attemptEmptyTask(task, logger) {
+        return __async2(this, null, function* () {
+          logger(`empty task bypassing child process to call to task's parser`);
+          return task.parser(this);
+        });
+      }
+      handleTaskData(task, args, result, logger) {
+        const { exitCode, rejection, stdOut, stdErr } = result;
+        return new Promise((done, fail) => {
+          logger(`Preparing to handle process response exitCode=%d stdOut=`, exitCode);
+          const { error } = this._plugins.exec("task.error", { error: rejection }, __spreadValues2(__spreadValues2({}, pluginContext(task, args)), result));
+          if (error && task.onError) {
+            logger.info(`exitCode=%s handling with custom error handler`);
+            return task.onError(result, error, (newStdOut) => {
+              logger.info(`custom error handler treated as success`);
+              logger(`custom error returned a %s`, objectToString(newStdOut));
+              done(new GitOutputStreams(Array.isArray(newStdOut) ? Buffer.concat(newStdOut) : newStdOut, Buffer.concat(stdErr)));
+            }, fail);
+          }
+          if (error) {
+            logger.info(`handling as error: exitCode=%s stdErr=%s rejection=%o`, exitCode, stdErr.length, rejection);
+            return fail(error);
+          }
+          logger.info(`retrieving task output complete`);
+          done(new GitOutputStreams(Buffer.concat(stdOut), Buffer.concat(stdErr)));
+        });
+      }
+      gitResponse(task, command, args, outputHandler, logger) {
+        return __async2(this, null, function* () {
+          const outputLogger = logger.sibling("output");
+          const spawnOptions = this._plugins.exec("spawn.options", {
+            cwd: this.cwd,
+            env: this.env,
+            windowsHide: true
+          }, pluginContext(task, task.commands));
+          return new Promise((done) => {
+            const stdOut = [];
+            const stdErr = [];
+            let rejection;
+            logger.info(`%s %o`, command, args);
+            logger("%O", spawnOptions);
+            const spawned = (0, import_child_process.spawn)(command, args, spawnOptions);
+            spawned.stdout.on("data", onDataReceived(stdOut, "stdOut", logger, outputLogger.step("stdOut")));
+            spawned.stderr.on("data", onDataReceived(stdErr, "stdErr", logger, outputLogger.step("stdErr")));
+            spawned.on("error", onErrorReceived(stdErr, logger));
+            if (outputHandler) {
+              logger(`Passing child process stdOut/stdErr to custom outputHandler`);
+              outputHandler(command, spawned.stdout, spawned.stderr, [...args]);
+            }
+            this._plugins.exec("spawn.after", void 0, __spreadProps2(__spreadValues2({}, pluginContext(task, args)), {
+              spawned,
+              close(exitCode, reason) {
+                done({
+                  stdOut,
+                  stdErr,
+                  exitCode,
+                  rejection: rejection || reason
+                });
+              },
+              kill(reason) {
+                if (spawned.killed) {
+                  return;
+                }
+                rejection = reason;
+                spawned.kill("SIGINT");
+              }
+            }));
+          });
+        });
+      }
+    };
+  }
+});
+var git_executor_exports = {};
+__export2(git_executor_exports, {
+  GitExecutor: () => GitExecutor
+});
+var GitExecutor;
+var init_git_executor = __esm({
+  "src/lib/runners/git-executor.ts"() {
+    init_git_executor_chain();
+    GitExecutor = class {
+      constructor(binary = "git", cwd, _scheduler, _plugins) {
+        this.binary = binary;
+        this.cwd = cwd;
+        this._scheduler = _scheduler;
+        this._plugins = _plugins;
+        this._chain = new GitExecutorChain(this, this._scheduler, this._plugins);
+      }
+      chain() {
+        return new GitExecutorChain(this, this._scheduler, this._plugins);
+      }
+      push(task) {
+        return this._chain.push(task);
+      }
+    };
+  }
+});
+function taskCallback(task, response, callback = NOOP) {
+  const onSuccess = (data) => {
+    callback(null, data);
+  };
+  const onError2 = (err) => {
+    if ((err == null ? void 0 : err.task) === task) {
+      callback(err instanceof GitResponseError ? addDeprecationNoticeToError(err) : err, void 0);
+    }
+  };
+  response.then(onSuccess, onError2);
+}
+function addDeprecationNoticeToError(err) {
+  let log = (name) => {
+    console.warn(`simple-git deprecation notice: accessing GitResponseError.${name} should be GitResponseError.git.${name}, this will no longer be available in version 3`);
+    log = NOOP;
+  };
+  return Object.create(err, Object.getOwnPropertyNames(err.git).reduce(descriptorReducer, {}));
+  function descriptorReducer(all, name) {
+    if (name in err) {
+      return all;
+    }
+    all[name] = {
+      enumerable: false,
+      configurable: false,
+      get() {
+        log(name);
+        return err.git[name];
+      }
+    };
+    return all;
+  }
+}
+var init_task_callback = __esm({
+  "src/lib/task-callback.ts"() {
+    init_git_response_error();
+    init_utils();
+  }
+});
+function changeWorkingDirectoryTask(directory, root) {
+  return adhocExecTask((instance5) => {
+    if (!folderExists(directory)) {
+      throw new Error(`Git.cwd: cannot change to non-directory "${directory}"`);
+    }
+    return (root || instance5).cwd = directory;
+  });
+}
+var init_change_working_directory = __esm({
+  "src/lib/tasks/change-working-directory.ts"() {
+    init_utils();
+    init_task();
+  }
+});
+function hashObjectTask(filePath, write) {
+  const commands = ["hash-object", filePath];
+  if (write) {
+    commands.push("-w");
+  }
+  return straightThroughStringTask(commands, true);
+}
+var init_hash_object = __esm({
+  "src/lib/tasks/hash-object.ts"() {
+    init_task();
+  }
+});
+function parseInit(bare, path3, text2) {
+  const response = String(text2).trim();
+  let result;
+  if (result = initResponseRegex.exec(response)) {
+    return new InitSummary(bare, path3, false, result[1]);
+  }
+  if (result = reInitResponseRegex.exec(response)) {
+    return new InitSummary(bare, path3, true, result[1]);
+  }
+  let gitDir = "";
+  const tokens = response.split(" ");
+  while (tokens.length) {
+    const token = tokens.shift();
+    if (token === "in") {
+      gitDir = tokens.join(" ");
+      break;
+    }
+  }
+  return new InitSummary(bare, path3, /^re/i.test(response), gitDir);
+}
+var InitSummary;
+var initResponseRegex;
+var reInitResponseRegex;
+var init_InitSummary = __esm({
+  "src/lib/responses/InitSummary.ts"() {
+    InitSummary = class {
+      constructor(bare, path3, existing, gitDir) {
+        this.bare = bare;
+        this.path = path3;
+        this.existing = existing;
+        this.gitDir = gitDir;
+      }
+    };
+    initResponseRegex = /^Init.+ repository in (.+)$/;
+    reInitResponseRegex = /^Rein.+ in (.+)$/;
+  }
+});
+function hasBareCommand(command) {
+  return command.includes(bareCommand);
+}
+function initTask(bare = false, path3, customArgs) {
+  const commands = ["init", ...customArgs];
+  if (bare && !hasBareCommand(commands)) {
+    commands.splice(1, 0, bareCommand);
+  }
+  return {
+    commands,
+    format: "utf-8",
+    parser(text2) {
+      return parseInit(commands.includes("--bare"), path3, text2);
+    }
+  };
+}
+var bareCommand;
+var init_init = __esm({
+  "src/lib/tasks/init.ts"() {
+    init_InitSummary();
+    bareCommand = "--bare";
+  }
+});
+var DiffSummary;
+var init_DiffSummary = __esm({
+  "src/lib/responses/DiffSummary.ts"() {
+    DiffSummary = class {
+      constructor() {
+        this.changed = 0;
+        this.deletions = 0;
+        this.insertions = 0;
+        this.files = [];
+      }
+    };
+  }
+});
+function parseDiffResult(stdOut) {
+  const lines = stdOut.trim().split("\n");
+  const status = new DiffSummary();
+  readSummaryLine(status, lines.pop());
+  for (let i = 0, max = lines.length; i < max; i++) {
+    const line = lines[i];
+    textFileChange(line, status) || binaryFileChange(line, status);
+  }
+  return status;
+}
+function readSummaryLine(status, summary) {
+  (summary || "").trim().split(", ").forEach(function(text2) {
+    const summary2 = /(\d+)\s([a-z]+)/.exec(text2);
+    if (!summary2) {
+      return;
+    }
+    summaryType(status, summary2[2], parseInt(summary2[1], 10));
+  });
+}
+function summaryType(status, key2, value) {
+  const match = /([a-z]+?)s?\b/.exec(key2);
+  if (!match || !statusUpdate[match[1]]) {
+    return;
+  }
+  statusUpdate[match[1]](status, value);
+}
+function textFileChange(input, { files }) {
+  const line = input.trim().match(/^(.+)\s+\|\s+(\d+)(\s+[+\-]+)?$/);
+  if (line) {
+    var alterations = (line[3] || "").trim();
+    files.push({
+      file: line[1].trim(),
+      changes: parseInt(line[2], 10),
+      insertions: alterations.replace(/-/g, "").length,
+      deletions: alterations.replace(/\+/g, "").length,
+      binary: false
+    });
+    return true;
+  }
+  return false;
+}
+function binaryFileChange(input, { files }) {
+  const line = input.match(/^(.+) \|\s+Bin ([0-9.]+) -> ([0-9.]+) ([a-z]+)$/);
+  if (line) {
+    files.push({
+      file: line[1].trim(),
+      before: +line[2],
+      after: +line[3],
+      binary: true
+    });
+    return true;
+  }
+  return false;
+}
+var statusUpdate;
+var init_parse_diff_summary = __esm({
+  "src/lib/parsers/parse-diff-summary.ts"() {
+    init_DiffSummary();
+    statusUpdate = {
+      file(status, value) {
+        status.changed = value;
+      },
+      deletion(status, value) {
+        status.deletions = value;
+      },
+      insertion(status, value) {
+        status.insertions = value;
+      }
+    };
+  }
+});
+function lineBuilder(tokens, fields) {
+  return fields.reduce((line, field, index) => {
+    line[field] = tokens[index] || "";
+    return line;
+  }, /* @__PURE__ */ Object.create({ diff: null }));
+}
+function createListLogSummaryParser(splitter = SPLITTER, fields = defaultFieldNames) {
+  return function(stdOut) {
+    const all = toLinesWithContent(stdOut, true, START_BOUNDARY).map(function(item) {
+      const lineDetail = item.trim().split(COMMIT_BOUNDARY);
+      const listLogLine = lineBuilder(lineDetail[0].trim().split(splitter), fields);
+      if (lineDetail.length > 1 && !!lineDetail[1].trim()) {
+        listLogLine.diff = parseDiffResult(lineDetail[1]);
+      }
+      return listLogLine;
+    });
+    return {
+      all,
+      latest: all.length && all[0] || null,
+      total: all.length
+    };
+  };
+}
+var START_BOUNDARY;
+var COMMIT_BOUNDARY;
+var SPLITTER;
+var defaultFieldNames;
+var init_parse_list_log_summary = __esm({
+  "src/lib/parsers/parse-list-log-summary.ts"() {
+    init_utils();
+    init_parse_diff_summary();
+    START_BOUNDARY = "\xF2\xF2\xF2\xF2\xF2\xF2 ";
+    COMMIT_BOUNDARY = " \xF2\xF2";
+    SPLITTER = " \xF2 ";
+    defaultFieldNames = ["hash", "date", "message", "refs", "author_name", "author_email"];
+  }
+});
+function prettyFormat(format, splitter) {
+  const fields = [];
+  const formatStr = [];
+  Object.keys(format).forEach((field) => {
+    fields.push(field);
+    formatStr.push(String(format[field]));
+  });
+  return [
+    fields,
+    formatStr.join(splitter)
+  ];
+}
+function userOptions(input) {
+  return Object.keys(input).reduce((out, key2) => {
+    if (!(key2 in excludeOptions)) {
+      out[key2] = input[key2];
+    }
+    return out;
+  }, {});
+}
+function parseLogOptions(opt = {}, customArgs = []) {
+  const splitter = filterType(opt.splitter, filterString, SPLITTER);
+  const format = !filterPrimitives(opt.format) && opt.format ? opt.format : {
+    hash: "%H",
+    date: opt.strictDate === false ? "%ai" : "%aI",
+    message: "%s",
+    refs: "%D",
+    body: opt.multiLine ? "%B" : "%b",
+    author_name: opt.mailMap !== false ? "%aN" : "%an",
+    author_email: opt.mailMap !== false ? "%aE" : "%ae"
+  };
+  const [fields, formatStr] = prettyFormat(format, splitter);
+  const suffix = [];
+  const command = [
+    `--pretty=format:${START_BOUNDARY}${formatStr}${COMMIT_BOUNDARY}`,
+    ...customArgs
+  ];
+  const maxCount = opt.n || opt["max-count"] || opt.maxCount;
+  if (maxCount) {
+    command.push(`--max-count=${maxCount}`);
+  }
+  if (opt.from && opt.to) {
+    const rangeOperator = opt.symmetric !== false ? "..." : "..";
+    suffix.push(`${opt.from}${rangeOperator}${opt.to}`);
+  }
+  if (filterString(opt.file)) {
+    suffix.push("--follow", opt.file);
+  }
+  appendTaskOptions(userOptions(opt), command);
+  return {
+    fields,
+    splitter,
+    commands: [
+      ...command,
+      ...suffix
+    ]
+  };
+}
+function logTask(splitter, fields, customArgs) {
+  return {
+    commands: ["log", ...customArgs],
+    format: "utf-8",
+    parser: createListLogSummaryParser(splitter, fields)
+  };
+}
+function log_default() {
+  return {
+    log(...rest) {
+      const next = trailingFunctionArgument(arguments);
+      const task = rejectDeprecatedSignatures(...rest) || createLogTask(parseLogOptions(trailingOptionsArgument(arguments), filterType(arguments[0], filterArray)));
+      return this._runTask(task, next);
+    }
+  };
+  function createLogTask(options) {
+    return logTask(options.splitter, options.fields, options.commands);
+  }
+  function rejectDeprecatedSignatures(from, to) {
+    return filterString(from) && filterString(to) && configurationErrorTask(`git.log(string, string) should be replaced with git.log({ from: string, to: string })`);
+  }
+}
+var excludeOptions;
+var init_log = __esm({
+  "src/lib/tasks/log.ts"() {
+    init_parse_list_log_summary();
+    init_utils();
+    init_task();
+    excludeOptions = /* @__PURE__ */ ((excludeOptions2) => {
+      excludeOptions2[excludeOptions2["--pretty"] = 0] = "--pretty";
+      excludeOptions2[excludeOptions2["max-count"] = 1] = "max-count";
+      excludeOptions2[excludeOptions2["maxCount"] = 2] = "maxCount";
+      excludeOptions2[excludeOptions2["n"] = 3] = "n";
+      excludeOptions2[excludeOptions2["file"] = 4] = "file";
+      excludeOptions2[excludeOptions2["format"] = 5] = "format";
+      excludeOptions2[excludeOptions2["from"] = 6] = "from";
+      excludeOptions2[excludeOptions2["to"] = 7] = "to";
+      excludeOptions2[excludeOptions2["splitter"] = 8] = "splitter";
+      excludeOptions2[excludeOptions2["symmetric"] = 9] = "symmetric";
+      excludeOptions2[excludeOptions2["mailMap"] = 10] = "mailMap";
+      excludeOptions2[excludeOptions2["multiLine"] = 11] = "multiLine";
+      excludeOptions2[excludeOptions2["strictDate"] = 12] = "strictDate";
+      return excludeOptions2;
+    })(excludeOptions || {});
+  }
+});
+var MergeSummaryConflict;
+var MergeSummaryDetail;
+var init_MergeSummary = __esm({
+  "src/lib/responses/MergeSummary.ts"() {
+    MergeSummaryConflict = class {
+      constructor(reason, file = null, meta) {
+        this.reason = reason;
+        this.file = file;
+        this.meta = meta;
+      }
+      toString() {
+        return `${this.file}:${this.reason}`;
+      }
+    };
+    MergeSummaryDetail = class {
+      constructor() {
+        this.conflicts = [];
+        this.merges = [];
+        this.result = "success";
+      }
+      get failed() {
+        return this.conflicts.length > 0;
+      }
+      get reason() {
+        return this.result;
+      }
+      toString() {
+        if (this.conflicts.length) {
+          return `CONFLICTS: ${this.conflicts.join(", ")}`;
+        }
+        return "OK";
+      }
+    };
+  }
+});
+var PullSummary;
+var PullFailedSummary;
+var init_PullSummary = __esm({
+  "src/lib/responses/PullSummary.ts"() {
+    PullSummary = class {
+      constructor() {
+        this.remoteMessages = {
+          all: []
+        };
+        this.created = [];
+        this.deleted = [];
+        this.files = [];
+        this.deletions = {};
+        this.insertions = {};
+        this.summary = {
+          changes: 0,
+          deletions: 0,
+          insertions: 0
+        };
+      }
+    };
+    PullFailedSummary = class {
+      constructor() {
+        this.remote = "";
+        this.hash = {
+          local: "",
+          remote: ""
+        };
+        this.branch = {
+          local: "",
+          remote: ""
+        };
+        this.message = "";
+      }
+      toString() {
+        return this.message;
+      }
+    };
+  }
+});
+function objectEnumerationResult(remoteMessages) {
+  return remoteMessages.objects = remoteMessages.objects || {
+    compressing: 0,
+    counting: 0,
+    enumerating: 0,
+    packReused: 0,
+    reused: { count: 0, delta: 0 },
+    total: { count: 0, delta: 0 }
+  };
+}
+function asObjectCount(source) {
+  const count = /^\s*(\d+)/.exec(source);
+  const delta = /delta (\d+)/i.exec(source);
+  return {
+    count: asNumber(count && count[1] || "0"),
+    delta: asNumber(delta && delta[1] || "0")
+  };
+}
+var remoteMessagesObjectParsers;
+var init_parse_remote_objects = __esm({
+  "src/lib/parsers/parse-remote-objects.ts"() {
+    init_utils();
+    remoteMessagesObjectParsers = [
+      new RemoteLineParser(/^remote:\s*(enumerating|counting|compressing) objects: (\d+),/i, (result, [action, count]) => {
+        const key2 = action.toLowerCase();
+        const enumeration = objectEnumerationResult(result.remoteMessages);
+        Object.assign(enumeration, { [key2]: asNumber(count) });
+      }),
+      new RemoteLineParser(/^remote:\s*(enumerating|counting|compressing) objects: \d+% \(\d+\/(\d+)\),/i, (result, [action, count]) => {
+        const key2 = action.toLowerCase();
+        const enumeration = objectEnumerationResult(result.remoteMessages);
+        Object.assign(enumeration, { [key2]: asNumber(count) });
+      }),
+      new RemoteLineParser(/total ([^,]+), reused ([^,]+), pack-reused (\d+)/i, (result, [total, reused, packReused]) => {
+        const objects = objectEnumerationResult(result.remoteMessages);
+        objects.total = asObjectCount(total);
+        objects.reused = asObjectCount(reused);
+        objects.packReused = asNumber(packReused);
+      })
+    ];
+  }
+});
+function parseRemoteMessages(_stdOut, stdErr) {
+  return parseStringResponse({ remoteMessages: new RemoteMessageSummary() }, parsers, stdErr);
+}
+var parsers;
+var RemoteMessageSummary;
+var init_parse_remote_messages = __esm({
+  "src/lib/parsers/parse-remote-messages.ts"() {
+    init_utils();
+    init_parse_remote_objects();
+    parsers = [
+      new RemoteLineParser(/^remote:\s*(.+)$/, (result, [text2]) => {
+        result.remoteMessages.all.push(text2.trim());
+        return false;
+      }),
+      ...remoteMessagesObjectParsers,
+      new RemoteLineParser([/create a (?:pull|merge) request/i, /\s(https?:\/\/\S+)$/], (result, [pullRequestUrl]) => {
+        result.remoteMessages.pullRequestUrl = pullRequestUrl;
+      }),
+      new RemoteLineParser([/found (\d+) vulnerabilities.+\(([^)]+)\)/i, /\s(https?:\/\/\S+)$/], (result, [count, summary, url]) => {
+        result.remoteMessages.vulnerabilities = {
+          count: asNumber(count),
+          summary,
+          url
+        };
+      })
+    ];
+    RemoteMessageSummary = class {
+      constructor() {
+        this.all = [];
+      }
+    };
+  }
+});
+function parsePullErrorResult(stdOut, stdErr) {
+  const pullError = parseStringResponse(new PullFailedSummary(), errorParsers, stdOut, stdErr);
+  return pullError.message && pullError;
+}
+var FILE_UPDATE_REGEX;
+var SUMMARY_REGEX;
+var ACTION_REGEX;
+var parsers2;
+var errorParsers;
+var parsePullDetail;
+var parsePullResult;
+var init_parse_pull = __esm({
+  "src/lib/parsers/parse-pull.ts"() {
+    init_PullSummary();
+    init_utils();
+    init_parse_remote_messages();
+    FILE_UPDATE_REGEX = /^\s*(.+?)\s+\|\s+\d+\s*(\+*)(-*)/;
+    SUMMARY_REGEX = /(\d+)\D+((\d+)\D+\(\+\))?(\D+(\d+)\D+\(-\))?/;
+    ACTION_REGEX = /^(create|delete) mode \d+ (.+)/;
+    parsers2 = [
+      new LineParser(FILE_UPDATE_REGEX, (result, [file, insertions, deletions]) => {
+        result.files.push(file);
+        if (insertions) {
+          result.insertions[file] = insertions.length;
+        }
+        if (deletions) {
+          result.deletions[file] = deletions.length;
+        }
+      }),
+      new LineParser(SUMMARY_REGEX, (result, [changes, , insertions, , deletions]) => {
+        if (insertions !== void 0 || deletions !== void 0) {
+          result.summary.changes = +changes || 0;
+          result.summary.insertions = +insertions || 0;
+          result.summary.deletions = +deletions || 0;
+          return true;
+        }
+        return false;
+      }),
+      new LineParser(ACTION_REGEX, (result, [action, file]) => {
+        append(result.files, file);
+        append(action === "create" ? result.created : result.deleted, file);
+      })
+    ];
+    errorParsers = [
+      new LineParser(/^from\s(.+)$/i, (result, [remote]) => void (result.remote = remote)),
+      new LineParser(/^fatal:\s(.+)$/, (result, [message]) => void (result.message = message)),
+      new LineParser(/([a-z0-9]+)\.\.([a-z0-9]+)\s+(\S+)\s+->\s+(\S+)$/, (result, [hashLocal, hashRemote, branchLocal, branchRemote]) => {
+        result.branch.local = branchLocal;
+        result.hash.local = hashLocal;
+        result.branch.remote = branchRemote;
+        result.hash.remote = hashRemote;
+      })
+    ];
+    parsePullDetail = (stdOut, stdErr) => {
+      return parseStringResponse(new PullSummary(), parsers2, stdOut, stdErr);
+    };
+    parsePullResult = (stdOut, stdErr) => {
+      return Object.assign(new PullSummary(), parsePullDetail(stdOut, stdErr), parseRemoteMessages(stdOut, stdErr));
+    };
+  }
+});
+var parsers3;
+var parseMergeResult;
+var parseMergeDetail;
+var init_parse_merge = __esm({
+  "src/lib/parsers/parse-merge.ts"() {
+    init_MergeSummary();
+    init_utils();
+    init_parse_pull();
+    parsers3 = [
+      new LineParser(/^Auto-merging\s+(.+)$/, (summary, [autoMerge]) => {
+        summary.merges.push(autoMerge);
+      }),
+      new LineParser(/^CONFLICT\s+\((.+)\): Merge conflict in (.+)$/, (summary, [reason, file]) => {
+        summary.conflicts.push(new MergeSummaryConflict(reason, file));
+      }),
+      new LineParser(/^CONFLICT\s+\((.+\/delete)\): (.+) deleted in (.+) and/, (summary, [reason, file, deleteRef]) => {
+        summary.conflicts.push(new MergeSummaryConflict(reason, file, { deleteRef }));
+      }),
+      new LineParser(/^CONFLICT\s+\((.+)\):/, (summary, [reason]) => {
+        summary.conflicts.push(new MergeSummaryConflict(reason, null));
+      }),
+      new LineParser(/^Automatic merge failed;\s+(.+)$/, (summary, [result]) => {
+        summary.result = result;
+      })
+    ];
+    parseMergeResult = (stdOut, stdErr) => {
+      return Object.assign(parseMergeDetail(stdOut, stdErr), parsePullResult(stdOut, stdErr));
+    };
+    parseMergeDetail = (stdOut) => {
+      return parseStringResponse(new MergeSummaryDetail(), parsers3, stdOut);
+    };
+  }
+});
+function mergeTask(customArgs) {
+  if (!customArgs.length) {
+    return configurationErrorTask("Git.merge requires at least one option");
+  }
+  return {
+    commands: ["merge", ...customArgs],
+    format: "utf-8",
+    parser(stdOut, stdErr) {
+      const merge = parseMergeResult(stdOut, stdErr);
+      if (merge.failed) {
+        throw new GitResponseError(merge);
+      }
+      return merge;
+    }
+  };
+}
+var init_merge = __esm({
+  "src/lib/tasks/merge.ts"() {
+    init_git_response_error();
+    init_parse_merge();
+    init_task();
+  }
+});
+function pushResultPushedItem(local, remote, status) {
+  const deleted = status.includes("deleted");
+  const tag = status.includes("tag") || /^refs\/tags/.test(local);
+  const alreadyUpdated = !status.includes("new");
+  return {
+    deleted,
+    tag,
+    branch: !tag,
+    new: !alreadyUpdated,
+    alreadyUpdated,
+    local,
+    remote
+  };
+}
+var parsers4;
+var parsePushResult;
+var parsePushDetail;
+var init_parse_push = __esm({
+  "src/lib/parsers/parse-push.ts"() {
+    init_utils();
+    init_parse_remote_messages();
+    parsers4 = [
+      new LineParser(/^Pushing to (.+)$/, (result, [repo]) => {
+        result.repo = repo;
+      }),
+      new LineParser(/^updating local tracking ref '(.+)'/, (result, [local]) => {
+        result.ref = __spreadProps2(__spreadValues2({}, result.ref || {}), {
+          local
+        });
+      }),
+      new LineParser(/^[*-=]\s+([^:]+):(\S+)\s+\[(.+)]$/, (result, [local, remote, type]) => {
+        result.pushed.push(pushResultPushedItem(local, remote, type));
+      }),
+      new LineParser(/^Branch '([^']+)' set up to track remote branch '([^']+)' from '([^']+)'/, (result, [local, remote, remoteName]) => {
+        result.branch = __spreadProps2(__spreadValues2({}, result.branch || {}), {
+          local,
+          remote,
+          remoteName
+        });
+      }),
+      new LineParser(/^([^:]+):(\S+)\s+([a-z0-9]+)\.\.([a-z0-9]+)$/, (result, [local, remote, from, to]) => {
+        result.update = {
+          head: {
+            local,
+            remote
+          },
+          hash: {
+            from,
+            to
+          }
+        };
+      })
+    ];
+    parsePushResult = (stdOut, stdErr) => {
+      const pushDetail = parsePushDetail(stdOut, stdErr);
+      const responseDetail = parseRemoteMessages(stdOut, stdErr);
+      return __spreadValues2(__spreadValues2({}, pushDetail), responseDetail);
+    };
+    parsePushDetail = (stdOut, stdErr) => {
+      return parseStringResponse({ pushed: [] }, parsers4, stdOut, stdErr);
+    };
+  }
+});
+var push_exports = {};
+__export2(push_exports, {
+  pushTagsTask: () => pushTagsTask,
+  pushTask: () => pushTask
+});
+function pushTagsTask(ref = {}, customArgs) {
+  append(customArgs, "--tags");
+  return pushTask(ref, customArgs);
+}
+function pushTask(ref = {}, customArgs) {
+  const commands = ["push", ...customArgs];
+  if (ref.branch) {
+    commands.splice(1, 0, ref.branch);
+  }
+  if (ref.remote) {
+    commands.splice(1, 0, ref.remote);
+  }
+  remove(commands, "-v");
+  append(commands, "--verbose");
+  append(commands, "--porcelain");
+  return {
+    commands,
+    format: "utf-8",
+    parser: parsePushResult
+  };
+}
+var init_push = __esm({
+  "src/lib/tasks/push.ts"() {
+    init_parse_push();
+    init_utils();
+  }
+});
+var fromPathRegex;
+var FileStatusSummary;
+var init_FileStatusSummary = __esm({
+  "src/lib/responses/FileStatusSummary.ts"() {
+    fromPathRegex = /^(.+) -> (.+)$/;
+    FileStatusSummary = class {
+      constructor(path3, index, working_dir) {
+        this.path = path3;
+        this.index = index;
+        this.working_dir = working_dir;
+        if (index + working_dir === "R") {
+          const detail = fromPathRegex.exec(path3) || [null, path3, path3];
+          this.from = detail[1] || "";
+          this.path = detail[2] || "";
+        }
+      }
+    };
+  }
+});
+function renamedFile(line) {
+  const detail = /^(.+) -> (.+)$/.exec(line);
+  if (!detail) {
+    return {
+      from: line,
+      to: line
+    };
+  }
+  return {
+    from: String(detail[1]),
+    to: String(detail[2])
+  };
+}
+function parser2(indexX, indexY, handler) {
+  return [`${indexX}${indexY}`, handler];
+}
+function conflicts(indexX, ...indexY) {
+  return indexY.map((y) => parser2(indexX, y, (result, file) => append(result.conflicted, file)));
+}
+function splitLine(result, lineStr) {
+  const trimmed2 = lineStr.trim();
+  switch (" ") {
+    case trimmed2.charAt(2):
+      return data(trimmed2.charAt(0), trimmed2.charAt(1), trimmed2.substr(3));
+    case trimmed2.charAt(1):
+      return data(" ", trimmed2.charAt(0), trimmed2.substr(2));
+    default:
+      return;
+  }
+  function data(index, workingDir, path3) {
+    const raw = `${index}${workingDir}`;
+    const handler = parsers5.get(raw);
+    if (handler) {
+      handler(result, path3);
+    }
+    if (raw !== "##" && raw !== "!!") {
+      result.files.push(new FileStatusSummary(path3, index, workingDir));
+    }
+  }
+}
+var StatusSummary;
+var parsers5;
+var parseStatusSummary;
+var init_StatusSummary = __esm({
+  "src/lib/responses/StatusSummary.ts"() {
+    init_utils();
+    init_FileStatusSummary();
+    StatusSummary = class {
+      constructor() {
+        this.not_added = [];
+        this.conflicted = [];
+        this.created = [];
+        this.deleted = [];
+        this.ignored = void 0;
+        this.modified = [];
+        this.renamed = [];
+        this.files = [];
+        this.staged = [];
+        this.ahead = 0;
+        this.behind = 0;
+        this.current = null;
+        this.tracking = null;
+        this.detached = false;
+        this.isClean = () => {
+          return !this.files.length;
+        };
+      }
+    };
+    parsers5 = new Map([
+      parser2(" ", "A", (result, file) => append(result.created, file)),
+      parser2(" ", "D", (result, file) => append(result.deleted, file)),
+      parser2(" ", "M", (result, file) => append(result.modified, file)),
+      parser2("A", " ", (result, file) => append(result.created, file) && append(result.staged, file)),
+      parser2("A", "M", (result, file) => append(result.created, file) && append(result.staged, file) && append(result.modified, file)),
+      parser2("D", " ", (result, file) => append(result.deleted, file) && append(result.staged, file)),
+      parser2("M", " ", (result, file) => append(result.modified, file) && append(result.staged, file)),
+      parser2("M", "M", (result, file) => append(result.modified, file) && append(result.staged, file)),
+      parser2("R", " ", (result, file) => {
+        append(result.renamed, renamedFile(file));
+      }),
+      parser2("R", "M", (result, file) => {
+        const renamed = renamedFile(file);
+        append(result.renamed, renamed);
+        append(result.modified, renamed.to);
+      }),
+      parser2("!", "!", (_result, _file) => {
+        append(_result.ignored = _result.ignored || [], _file);
+      }),
+      parser2("?", "?", (result, file) => append(result.not_added, file)),
+      ...conflicts("A", "A", "U"),
+      ...conflicts("D", "D", "U"),
+      ...conflicts("U", "A", "D", "U"),
+      ["##", (result, line) => {
+        const aheadReg = /ahead (\d+)/;
+        const behindReg = /behind (\d+)/;
+        const currentReg = /^(.+?(?=(?:\.{3}|\s|$)))/;
+        const trackingReg = /\.{3}(\S*)/;
+        const onEmptyBranchReg = /\son\s([\S]+)$/;
+        let regexResult;
+        regexResult = aheadReg.exec(line);
+        result.ahead = regexResult && +regexResult[1] || 0;
+        regexResult = behindReg.exec(line);
+        result.behind = regexResult && +regexResult[1] || 0;
+        regexResult = currentReg.exec(line);
+        result.current = regexResult && regexResult[1];
+        regexResult = trackingReg.exec(line);
+        result.tracking = regexResult && regexResult[1];
+        regexResult = onEmptyBranchReg.exec(line);
+        result.current = regexResult && regexResult[1] || result.current;
+        result.detached = /\(no branch\)/.test(line);
+      }]
+    ]);
+    parseStatusSummary = function(text2) {
+      const lines = text2.trim().split(NULL);
+      const status = new StatusSummary();
+      for (let i = 0, l = lines.length; i < l; i++) {
+        splitLine(status, lines[i]);
+      }
+      return status;
+    };
+  }
+});
+function statusTask(customArgs) {
+  const commands = [
+    "status",
+    "--porcelain",
+    "-b",
+    "-u",
+    "--null",
+    ...customArgs.filter((arg) => !ignoredOptions.includes(arg))
+  ];
+  return {
+    format: "utf-8",
+    commands,
+    parser(text2) {
+      return parseStatusSummary(text2);
+    }
+  };
+}
+var ignoredOptions;
+var init_status = __esm({
+  "src/lib/tasks/status.ts"() {
+    init_StatusSummary();
+    ignoredOptions = ["--null", "-z"];
+  }
+});
+var simple_git_api_exports = {};
+__export2(simple_git_api_exports, {
+  SimpleGitApi: () => SimpleGitApi
+});
+var SimpleGitApi;
+var init_simple_git_api = __esm({
+  "src/lib/simple-git-api.ts"() {
+    init_task_callback();
+    init_change_working_directory();
+    init_config();
+    init_grep();
+    init_hash_object();
+    init_init();
+    init_log();
+    init_merge();
+    init_push();
+    init_status();
+    init_task();
+    init_utils();
+    SimpleGitApi = class {
+      constructor(_executor) {
+        this._executor = _executor;
+      }
+      _runTask(task, then) {
+        const chain = this._executor.chain();
+        const promise2 = chain.push(task);
+        if (then) {
+          taskCallback(task, promise2, then);
+        }
+        return Object.create(this, {
+          then: { value: promise2.then.bind(promise2) },
+          catch: { value: promise2.catch.bind(promise2) },
+          _executor: { value: chain }
+        });
+      }
+      add(files) {
+        return this._runTask(straightThroughStringTask(["add", ...asArray(files)]), trailingFunctionArgument(arguments));
+      }
+      cwd(directory) {
+        const next = trailingFunctionArgument(arguments);
+        if (typeof directory === "string") {
+          return this._runTask(changeWorkingDirectoryTask(directory, this._executor), next);
+        }
+        if (typeof (directory == null ? void 0 : directory.path) === "string") {
+          return this._runTask(changeWorkingDirectoryTask(directory.path, directory.root && this._executor || void 0), next);
+        }
+        return this._runTask(configurationErrorTask("Git.cwd: workingDirectory must be supplied as a string"), next);
+      }
+      hashObject(path3, write) {
+        return this._runTask(hashObjectTask(path3, write === true), trailingFunctionArgument(arguments));
+      }
+      init(bare) {
+        return this._runTask(initTask(bare === true, this._executor.cwd, getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
+      }
+      merge() {
+        return this._runTask(mergeTask(getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
+      }
+      mergeFromTo(remote, branch) {
+        if (!(filterString(remote) && filterString(branch))) {
+          return this._runTask(configurationErrorTask(`Git.mergeFromTo requires that the 'remote' and 'branch' arguments are supplied as strings`));
+        }
+        return this._runTask(mergeTask([remote, branch, ...getTrailingOptions(arguments)]), trailingFunctionArgument(arguments, false));
+      }
+      outputHandler(handler) {
+        this._executor.outputHandler = handler;
+        return this;
+      }
+      push() {
+        const task = pushTask({
+          remote: filterType(arguments[0], filterString),
+          branch: filterType(arguments[1], filterString)
+        }, getTrailingOptions(arguments));
+        return this._runTask(task, trailingFunctionArgument(arguments));
+      }
+      stash() {
+        return this._runTask(straightThroughStringTask(["stash", ...getTrailingOptions(arguments)]), trailingFunctionArgument(arguments));
+      }
+      status() {
+        return this._runTask(statusTask(getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
+      }
+    };
+    Object.assign(SimpleGitApi.prototype, config_default(), grep_default(), log_default());
+  }
+});
+var scheduler_exports = {};
+__export2(scheduler_exports, {
+  Scheduler: () => Scheduler
+});
+var createScheduledTask;
+var Scheduler;
+var init_scheduler = __esm({
+  "src/lib/runners/scheduler.ts"() {
+    init_utils();
+    init_git_logger();
+    createScheduledTask = (() => {
+      let id = 0;
+      return () => {
+        id++;
+        const { promise: promise2, done } = (0, import_promise_deferred.createDeferred)();
+        return {
+          promise: promise2,
+          done,
+          id
+        };
+      };
+    })();
+    Scheduler = class {
+      constructor(concurrency = 2) {
+        this.concurrency = concurrency;
+        this.logger = createLogger("", "scheduler");
+        this.pending = [];
+        this.running = [];
+        this.logger(`Constructed, concurrency=%s`, concurrency);
+      }
+      schedule() {
+        if (!this.pending.length || this.running.length >= this.concurrency) {
+          this.logger(`Schedule attempt ignored, pending=%s running=%s concurrency=%s`, this.pending.length, this.running.length, this.concurrency);
+          return;
+        }
+        const task = append(this.running, this.pending.shift());
+        this.logger(`Attempting id=%s`, task.id);
+        task.done(() => {
+          this.logger(`Completing id=`, task.id);
+          remove(this.running, task);
+          this.schedule();
+        });
+      }
+      next() {
+        const { promise: promise2, id } = append(this.pending, createScheduledTask());
+        this.logger(`Scheduling id=%s`, id);
+        this.schedule();
+        return promise2;
+      }
+    };
+  }
+});
+var apply_patch_exports = {};
+__export2(apply_patch_exports, {
+  applyPatchTask: () => applyPatchTask
+});
+function applyPatchTask(patches, customArgs) {
+  return straightThroughStringTask(["apply", ...customArgs, ...patches]);
+}
+var init_apply_patch = __esm({
+  "src/lib/tasks/apply-patch.ts"() {
+    init_task();
+  }
+});
+function branchDeletionSuccess(branch, hash2) {
+  return {
+    branch,
+    hash: hash2,
+    success: true
+  };
+}
+function branchDeletionFailure(branch) {
+  return {
+    branch,
+    hash: null,
+    success: false
+  };
+}
+var BranchDeletionBatch;
+var init_BranchDeleteSummary = __esm({
+  "src/lib/responses/BranchDeleteSummary.ts"() {
+    BranchDeletionBatch = class {
+      constructor() {
+        this.all = [];
+        this.branches = {};
+        this.errors = [];
+      }
+      get success() {
+        return !this.errors.length;
+      }
+    };
+  }
+});
+function hasBranchDeletionError(data, processExitCode) {
+  return processExitCode === 1 && deleteErrorRegex.test(data);
+}
+var deleteSuccessRegex;
+var deleteErrorRegex;
+var parsers6;
+var parseBranchDeletions;
+var init_parse_branch_delete = __esm({
+  "src/lib/parsers/parse-branch-delete.ts"() {
+    init_BranchDeleteSummary();
+    init_utils();
+    deleteSuccessRegex = /(\S+)\s+\(\S+\s([^)]+)\)/;
+    deleteErrorRegex = /^error[^']+'([^']+)'/m;
+    parsers6 = [
+      new LineParser(deleteSuccessRegex, (result, [branch, hash2]) => {
+        const deletion = branchDeletionSuccess(branch, hash2);
+        result.all.push(deletion);
+        result.branches[branch] = deletion;
+      }),
+      new LineParser(deleteErrorRegex, (result, [branch]) => {
+        const deletion = branchDeletionFailure(branch);
+        result.errors.push(deletion);
+        result.all.push(deletion);
+        result.branches[branch] = deletion;
+      })
+    ];
+    parseBranchDeletions = (stdOut, stdErr) => {
+      return parseStringResponse(new BranchDeletionBatch(), parsers6, stdOut, stdErr);
+    };
+  }
+});
+var BranchSummaryResult;
+var init_BranchSummary = __esm({
+  "src/lib/responses/BranchSummary.ts"() {
+    BranchSummaryResult = class {
+      constructor() {
+        this.all = [];
+        this.branches = {};
+        this.current = "";
+        this.detached = false;
+      }
+      push(current, detached, name, commit, label) {
+        if (current) {
+          this.detached = detached;
+          this.current = name;
+        }
+        this.all.push(name);
+        this.branches[name] = {
+          current,
+          name,
+          commit,
+          label
+        };
+      }
+    };
+  }
+});
+function parseBranchSummary(stdOut) {
+  return parseStringResponse(new BranchSummaryResult(), parsers7, stdOut);
+}
+var parsers7;
+var init_parse_branch = __esm({
+  "src/lib/parsers/parse-branch.ts"() {
+    init_BranchSummary();
+    init_utils();
+    parsers7 = [
+      new LineParser(/^(\*\s)?\((?:HEAD )?detached (?:from|at) (\S+)\)\s+([a-z0-9]+)\s(.*)$/, (result, [current, name, commit, label]) => {
+        result.push(!!current, true, name, commit, label);
+      }),
+      new LineParser(/^(\*\s)?(\S+)\s+([a-z0-9]+)\s?(.*)$/s, (result, [current, name, commit, label]) => {
+        result.push(!!current, false, name, commit, label);
+      })
+    ];
+  }
+});
+var branch_exports = {};
+__export2(branch_exports, {
+  branchLocalTask: () => branchLocalTask,
+  branchTask: () => branchTask,
+  containsDeleteBranchCommand: () => containsDeleteBranchCommand,
+  deleteBranchTask: () => deleteBranchTask,
+  deleteBranchesTask: () => deleteBranchesTask
+});
+function containsDeleteBranchCommand(commands) {
+  const deleteCommands = ["-d", "-D", "--delete"];
+  return commands.some((command) => deleteCommands.includes(command));
+}
+function branchTask(customArgs) {
+  const isDelete = containsDeleteBranchCommand(customArgs);
+  const commands = ["branch", ...customArgs];
+  if (commands.length === 1) {
+    commands.push("-a");
+  }
+  if (!commands.includes("-v")) {
+    commands.splice(1, 0, "-v");
+  }
+  return {
+    format: "utf-8",
+    commands,
+    parser(stdOut, stdErr) {
+      if (isDelete) {
+        return parseBranchDeletions(stdOut, stdErr).all[0];
+      }
+      return parseBranchSummary(stdOut);
+    }
+  };
+}
+function branchLocalTask() {
+  const parser3 = parseBranchSummary;
+  return {
+    format: "utf-8",
+    commands: ["branch", "-v"],
+    parser: parser3
+  };
+}
+function deleteBranchesTask(branches, forceDelete = false) {
+  return {
+    format: "utf-8",
+    commands: ["branch", "-v", forceDelete ? "-D" : "-d", ...branches],
+    parser(stdOut, stdErr) {
+      return parseBranchDeletions(stdOut, stdErr);
+    },
+    onError({ exitCode, stdOut }, error, done, fail) {
+      if (!hasBranchDeletionError(String(error), exitCode)) {
+        return fail(error);
+      }
+      done(stdOut);
+    }
+  };
+}
+function deleteBranchTask(branch, forceDelete = false) {
+  const task = {
+    format: "utf-8",
+    commands: ["branch", "-v", forceDelete ? "-D" : "-d", branch],
+    parser(stdOut, stdErr) {
+      return parseBranchDeletions(stdOut, stdErr).branches[branch];
+    },
+    onError({ exitCode, stdErr, stdOut }, error, _, fail) {
+      if (!hasBranchDeletionError(String(error), exitCode)) {
+        return fail(error);
+      }
+      throw new GitResponseError(task.parser(bufferToString(stdOut), bufferToString(stdErr)), String(error));
+    }
+  };
+  return task;
+}
+var init_branch = __esm({
+  "src/lib/tasks/branch.ts"() {
+    init_git_response_error();
+    init_parse_branch_delete();
+    init_parse_branch();
+    init_utils();
+  }
+});
+var parseCheckIgnore;
+var init_CheckIgnore = __esm({
+  "src/lib/responses/CheckIgnore.ts"() {
+    parseCheckIgnore = (text2) => {
+      return text2.split(/\n/g).map((line) => line.trim()).filter((file) => !!file);
+    };
+  }
+});
+var check_ignore_exports = {};
+__export2(check_ignore_exports, {
+  checkIgnoreTask: () => checkIgnoreTask
+});
+function checkIgnoreTask(paths) {
+  return {
+    commands: ["check-ignore", ...paths],
+    format: "utf-8",
+    parser: parseCheckIgnore
+  };
+}
+var init_check_ignore = __esm({
+  "src/lib/tasks/check-ignore.ts"() {
+    init_CheckIgnore();
+  }
+});
+var clone_exports = {};
+__export2(clone_exports, {
+  cloneMirrorTask: () => cloneMirrorTask,
+  cloneTask: () => cloneTask
+});
+function disallowedCommand(command) {
+  return /^--upload-pack(=|$)/.test(command);
+}
+function cloneTask(repo, directory, customArgs) {
+  const commands = ["clone", ...customArgs];
+  filterString(repo) && commands.push(repo);
+  filterString(directory) && commands.push(directory);
+  const banned = commands.find(disallowedCommand);
+  if (banned) {
+    return configurationErrorTask(`git.fetch: potential exploit argument blocked.`);
+  }
+  return straightThroughStringTask(commands);
+}
+function cloneMirrorTask(repo, directory, customArgs) {
+  append(customArgs, "--mirror");
+  return cloneTask(repo, directory, customArgs);
+}
+var init_clone = __esm({
+  "src/lib/tasks/clone.ts"() {
+    init_task();
+    init_utils();
+  }
+});
+function parseCommitResult(stdOut) {
+  const result = {
+    author: null,
+    branch: "",
+    commit: "",
+    root: false,
+    summary: {
+      changes: 0,
+      insertions: 0,
+      deletions: 0
+    }
+  };
+  return parseStringResponse(result, parsers8, stdOut);
+}
+var parsers8;
+var init_parse_commit = __esm({
+  "src/lib/parsers/parse-commit.ts"() {
+    init_utils();
+    parsers8 = [
+      new LineParser(/^\[([^\s]+)( \([^)]+\))? ([^\]]+)/, (result, [branch, root, commit]) => {
+        result.branch = branch;
+        result.commit = commit;
+        result.root = !!root;
+      }),
+      new LineParser(/\s*Author:\s(.+)/i, (result, [author]) => {
+        const parts = author.split("<");
+        const email = parts.pop();
+        if (!email || !email.includes("@")) {
+          return;
+        }
+        result.author = {
+          email: email.substr(0, email.length - 1),
+          name: parts.join("<").trim()
+        };
+      }),
+      new LineParser(/(\d+)[^,]*(?:,\s*(\d+)[^,]*)(?:,\s*(\d+))/g, (result, [changes, insertions, deletions]) => {
+        result.summary.changes = parseInt(changes, 10) || 0;
+        result.summary.insertions = parseInt(insertions, 10) || 0;
+        result.summary.deletions = parseInt(deletions, 10) || 0;
+      }),
+      new LineParser(/^(\d+)[^,]*(?:,\s*(\d+)[^(]+\(([+-]))?/, (result, [changes, lines, direction]) => {
+        result.summary.changes = parseInt(changes, 10) || 0;
+        const count = parseInt(lines, 10) || 0;
+        if (direction === "-") {
+          result.summary.deletions = count;
+        } else if (direction === "+") {
+          result.summary.insertions = count;
+        }
+      })
+    ];
+  }
+});
+var commit_exports = {};
+__export2(commit_exports, {
+  commitTask: () => commitTask
+});
+function commitTask(message, files, customArgs) {
+  const commands = ["commit"];
+  message.forEach((m) => commands.push("-m", m));
+  commands.push(...files, ...customArgs);
+  return {
+    commands,
+    format: "utf-8",
+    parser: parseCommitResult
+  };
+}
+var init_commit = __esm({
+  "src/lib/tasks/commit.ts"() {
+    init_parse_commit();
+  }
+});
+var diff_exports = {};
+__export2(diff_exports, {
+  diffSummaryTask: () => diffSummaryTask
+});
+function diffSummaryTask(customArgs) {
+  return {
+    commands: ["diff", "--stat=4096", ...customArgs],
+    format: "utf-8",
+    parser(stdOut) {
+      return parseDiffResult(stdOut);
+    }
+  };
+}
+var init_diff = __esm({
+  "src/lib/tasks/diff.ts"() {
+    init_parse_diff_summary();
+  }
+});
+function parseFetchResult(stdOut, stdErr) {
+  const result = {
+    raw: stdOut,
+    remote: null,
+    branches: [],
+    tags: []
+  };
+  return parseStringResponse(result, parsers9, stdOut, stdErr);
+}
+var parsers9;
+var init_parse_fetch = __esm({
+  "src/lib/parsers/parse-fetch.ts"() {
+    init_utils();
+    parsers9 = [
+      new LineParser(/From (.+)$/, (result, [remote]) => {
+        result.remote = remote;
+      }),
+      new LineParser(/\* \[new branch]\s+(\S+)\s*-> (.+)$/, (result, [name, tracking]) => {
+        result.branches.push({
+          name,
+          tracking
+        });
+      }),
+      new LineParser(/\* \[new tag]\s+(\S+)\s*-> (.+)$/, (result, [name, tracking]) => {
+        result.tags.push({
+          name,
+          tracking
+        });
+      })
+    ];
+  }
+});
+var fetch_exports = {};
+__export2(fetch_exports, {
+  fetchTask: () => fetchTask
+});
+function disallowedCommand2(command) {
+  return /^--upload-pack(=|$)/.test(command);
+}
+function fetchTask(remote, branch, customArgs) {
+  const commands = ["fetch", ...customArgs];
+  if (remote && branch) {
+    commands.push(remote, branch);
+  }
+  const banned = commands.find(disallowedCommand2);
+  if (banned) {
+    return configurationErrorTask(`git.fetch: potential exploit argument blocked.`);
+  }
+  return {
+    commands,
+    format: "utf-8",
+    parser: parseFetchResult
+  };
+}
+var init_fetch = __esm({
+  "src/lib/tasks/fetch.ts"() {
+    init_parse_fetch();
+    init_task();
+  }
+});
+function parseMoveResult(stdOut) {
+  return parseStringResponse({ moves: [] }, parsers10, stdOut);
+}
+var parsers10;
+var init_parse_move = __esm({
+  "src/lib/parsers/parse-move.ts"() {
+    init_utils();
+    parsers10 = [
+      new LineParser(/^Renaming (.+) to (.+)$/, (result, [from, to]) => {
+        result.moves.push({ from, to });
+      })
+    ];
+  }
+});
+var move_exports = {};
+__export2(move_exports, {
+  moveTask: () => moveTask
+});
+function moveTask(from, to) {
+  return {
+    commands: ["mv", "-v", ...asArray(from), to],
+    format: "utf-8",
+    parser: parseMoveResult
+  };
+}
+var init_move = __esm({
+  "src/lib/tasks/move.ts"() {
+    init_parse_move();
+    init_utils();
+  }
+});
+var pull_exports = {};
+__export2(pull_exports, {
+  pullTask: () => pullTask
+});
+function pullTask(remote, branch, customArgs) {
+  const commands = ["pull", ...customArgs];
+  if (remote && branch) {
+    commands.splice(1, 0, remote, branch);
+  }
+  return {
+    commands,
+    format: "utf-8",
+    parser(stdOut, stdErr) {
+      return parsePullResult(stdOut, stdErr);
+    },
+    onError(result, _error, _done, fail) {
+      const pullError = parsePullErrorResult(bufferToString(result.stdOut), bufferToString(result.stdErr));
+      if (pullError) {
+        return fail(new GitResponseError(pullError));
+      }
+      fail(_error);
+    }
+  };
+}
+var init_pull = __esm({
+  "src/lib/tasks/pull.ts"() {
+    init_git_response_error();
+    init_parse_pull();
+    init_utils();
+  }
+});
+function parseGetRemotes(text2) {
+  const remotes = {};
+  forEach(text2, ([name]) => remotes[name] = { name });
+  return Object.values(remotes);
+}
+function parseGetRemotesVerbose(text2) {
+  const remotes = {};
+  forEach(text2, ([name, url, purpose]) => {
+    if (!remotes.hasOwnProperty(name)) {
+      remotes[name] = {
+        name,
+        refs: { fetch: "", push: "" }
+      };
+    }
+    if (purpose && url) {
+      remotes[name].refs[purpose.replace(/[^a-z]/g, "")] = url;
+    }
+  });
+  return Object.values(remotes);
+}
+function forEach(text2, handler) {
+  forEachLineWithContent(text2, (line) => handler(line.split(/\s+/)));
+}
+var init_GetRemoteSummary = __esm({
+  "src/lib/responses/GetRemoteSummary.ts"() {
+    init_utils();
+  }
+});
+var remote_exports = {};
+__export2(remote_exports, {
+  addRemoteTask: () => addRemoteTask,
+  getRemotesTask: () => getRemotesTask,
+  listRemotesTask: () => listRemotesTask,
+  remoteTask: () => remoteTask,
+  removeRemoteTask: () => removeRemoteTask
+});
+function addRemoteTask(remoteName, remoteRepo, customArgs = []) {
+  return straightThroughStringTask(["remote", "add", ...customArgs, remoteName, remoteRepo]);
+}
+function getRemotesTask(verbose) {
+  const commands = ["remote"];
+  if (verbose) {
+    commands.push("-v");
+  }
+  return {
+    commands,
+    format: "utf-8",
+    parser: verbose ? parseGetRemotesVerbose : parseGetRemotes
+  };
+}
+function listRemotesTask(customArgs = []) {
+  const commands = [...customArgs];
+  if (commands[0] !== "ls-remote") {
+    commands.unshift("ls-remote");
+  }
+  return straightThroughStringTask(commands);
+}
+function remoteTask(customArgs = []) {
+  const commands = [...customArgs];
+  if (commands[0] !== "remote") {
+    commands.unshift("remote");
+  }
+  return straightThroughStringTask(commands);
+}
+function removeRemoteTask(remoteName) {
+  return straightThroughStringTask(["remote", "remove", remoteName]);
+}
+var init_remote = __esm({
+  "src/lib/tasks/remote.ts"() {
+    init_GetRemoteSummary();
+    init_task();
+  }
+});
+var stash_list_exports = {};
+__export2(stash_list_exports, {
+  stashListTask: () => stashListTask
+});
+function stashListTask(opt = {}, customArgs) {
+  const options = parseLogOptions(opt);
+  const parser3 = createListLogSummaryParser(options.splitter, options.fields);
+  return {
+    commands: ["stash", "list", ...options.commands, ...customArgs],
+    format: "utf-8",
+    parser: parser3
+  };
+}
+var init_stash_list = __esm({
+  "src/lib/tasks/stash-list.ts"() {
+    init_parse_list_log_summary();
+    init_log();
+  }
+});
+var sub_module_exports = {};
+__export2(sub_module_exports, {
+  addSubModuleTask: () => addSubModuleTask,
+  initSubModuleTask: () => initSubModuleTask,
+  subModuleTask: () => subModuleTask,
+  updateSubModuleTask: () => updateSubModuleTask
+});
+function addSubModuleTask(repo, path3) {
+  return subModuleTask(["add", repo, path3]);
+}
+function initSubModuleTask(customArgs) {
+  return subModuleTask(["init", ...customArgs]);
+}
+function subModuleTask(customArgs) {
+  const commands = [...customArgs];
+  if (commands[0] !== "submodule") {
+    commands.unshift("submodule");
+  }
+  return straightThroughStringTask(commands);
+}
+function updateSubModuleTask(customArgs) {
+  return subModuleTask(["update", ...customArgs]);
+}
+var init_sub_module = __esm({
+  "src/lib/tasks/sub-module.ts"() {
+    init_task();
+  }
+});
+function singleSorted(a, b) {
+  const aIsNum = isNaN(a);
+  const bIsNum = isNaN(b);
+  if (aIsNum !== bIsNum) {
+    return aIsNum ? 1 : -1;
+  }
+  return aIsNum ? sorted(a, b) : 0;
+}
+function sorted(a, b) {
+  return a === b ? 0 : a > b ? 1 : -1;
+}
+function trimmed(input) {
+  return input.trim();
+}
+function toNumber(input) {
+  if (typeof input === "string") {
+    return parseInt(input.replace(/^\D+/g, ""), 10) || 0;
+  }
+  return 0;
+}
+var TagList;
+var parseTagList;
+var init_TagList = __esm({
+  "src/lib/responses/TagList.ts"() {
+    TagList = class {
+      constructor(all, latest) {
+        this.all = all;
+        this.latest = latest;
+      }
+    };
+    parseTagList = function(data, customSort = false) {
+      const tags = data.split("\n").map(trimmed).filter(Boolean);
+      if (!customSort) {
+        tags.sort(function(tagA, tagB) {
+          const partsA = tagA.split(".");
+          const partsB = tagB.split(".");
+          if (partsA.length === 1 || partsB.length === 1) {
+            return singleSorted(toNumber(partsA[0]), toNumber(partsB[0]));
+          }
+          for (let i = 0, l = Math.max(partsA.length, partsB.length); i < l; i++) {
+            const diff = sorted(toNumber(partsA[i]), toNumber(partsB[i]));
+            if (diff) {
+              return diff;
+            }
+          }
+          return 0;
+        });
+      }
+      const latest = customSort ? tags[0] : [...tags].reverse().find((tag) => tag.indexOf(".") >= 0);
+      return new TagList(tags, latest);
+    };
+  }
+});
+var tag_exports = {};
+__export2(tag_exports, {
+  addAnnotatedTagTask: () => addAnnotatedTagTask,
+  addTagTask: () => addTagTask,
+  tagListTask: () => tagListTask
+});
+function tagListTask(customArgs = []) {
+  const hasCustomSort = customArgs.some((option) => /^--sort=/.test(option));
+  return {
+    format: "utf-8",
+    commands: ["tag", "-l", ...customArgs],
+    parser(text2) {
+      return parseTagList(text2, hasCustomSort);
+    }
+  };
+}
+function addTagTask(name) {
+  return {
+    format: "utf-8",
+    commands: ["tag", name],
+    parser() {
+      return { name };
+    }
+  };
+}
+function addAnnotatedTagTask(name, tagMessage) {
+  return {
+    format: "utf-8",
+    commands: ["tag", "-a", "-m", tagMessage, name],
+    parser() {
+      return { name };
+    }
+  };
+}
+var init_tag = __esm({
+  "src/lib/tasks/tag.ts"() {
+    init_TagList();
+  }
+});
+var require_git = __commonJS2({
+  "src/git.js"(exports, module2) {
+    var { GitExecutor: GitExecutor2 } = (init_git_executor(), __toCommonJS(git_executor_exports));
+    var { SimpleGitApi: SimpleGitApi2 } = (init_simple_git_api(), __toCommonJS(simple_git_api_exports));
+    var { Scheduler: Scheduler2 } = (init_scheduler(), __toCommonJS(scheduler_exports));
+    var { configurationErrorTask: configurationErrorTask2 } = (init_task(), __toCommonJS(task_exports));
+    var {
+      asArray: asArray2,
+      filterArray: filterArray2,
+      filterPrimitives: filterPrimitives2,
+      filterString: filterString2,
+      filterStringOrStringArray: filterStringOrStringArray2,
+      filterType: filterType2,
+      getTrailingOptions: getTrailingOptions2,
+      trailingFunctionArgument: trailingFunctionArgument2,
+      trailingOptionsArgument: trailingOptionsArgument2
+    } = (init_utils(), __toCommonJS(utils_exports));
+    var { applyPatchTask: applyPatchTask2 } = (init_apply_patch(), __toCommonJS(apply_patch_exports));
+    var { branchTask: branchTask2, branchLocalTask: branchLocalTask2, deleteBranchesTask: deleteBranchesTask2, deleteBranchTask: deleteBranchTask2 } = (init_branch(), __toCommonJS(branch_exports));
+    var { checkIgnoreTask: checkIgnoreTask2 } = (init_check_ignore(), __toCommonJS(check_ignore_exports));
+    var { checkIsRepoTask: checkIsRepoTask2 } = (init_check_is_repo(), __toCommonJS(check_is_repo_exports));
+    var { cloneTask: cloneTask2, cloneMirrorTask: cloneMirrorTask2 } = (init_clone(), __toCommonJS(clone_exports));
+    var { cleanWithOptionsTask: cleanWithOptionsTask2, isCleanOptionsArray: isCleanOptionsArray2 } = (init_clean(), __toCommonJS(clean_exports));
+    var { commitTask: commitTask2 } = (init_commit(), __toCommonJS(commit_exports));
+    var { diffSummaryTask: diffSummaryTask2 } = (init_diff(), __toCommonJS(diff_exports));
+    var { fetchTask: fetchTask2 } = (init_fetch(), __toCommonJS(fetch_exports));
+    var { moveTask: moveTask2 } = (init_move(), __toCommonJS(move_exports));
+    var { pullTask: pullTask2 } = (init_pull(), __toCommonJS(pull_exports));
+    var { pushTagsTask: pushTagsTask2 } = (init_push(), __toCommonJS(push_exports));
+    var { addRemoteTask: addRemoteTask2, getRemotesTask: getRemotesTask2, listRemotesTask: listRemotesTask2, remoteTask: remoteTask2, removeRemoteTask: removeRemoteTask2 } = (init_remote(), __toCommonJS(remote_exports));
+    var { getResetMode: getResetMode2, resetTask: resetTask2 } = (init_reset(), __toCommonJS(reset_exports));
+    var { stashListTask: stashListTask2 } = (init_stash_list(), __toCommonJS(stash_list_exports));
+    var { addSubModuleTask: addSubModuleTask2, initSubModuleTask: initSubModuleTask2, subModuleTask: subModuleTask2, updateSubModuleTask: updateSubModuleTask2 } = (init_sub_module(), __toCommonJS(sub_module_exports));
+    var { addAnnotatedTagTask: addAnnotatedTagTask2, addTagTask: addTagTask2, tagListTask: tagListTask2 } = (init_tag(), __toCommonJS(tag_exports));
+    var { straightThroughBufferTask: straightThroughBufferTask2, straightThroughStringTask: straightThroughStringTask2 } = (init_task(), __toCommonJS(task_exports));
+    function Git2(options, plugins) {
+      this._executor = new GitExecutor2(options.binary, options.baseDir, new Scheduler2(options.maxConcurrentProcesses), plugins);
+    }
+    (Git2.prototype = Object.create(SimpleGitApi2.prototype)).constructor = Git2;
+    Git2.prototype.customBinary = function(command) {
+      this._executor.binary = command;
+      return this;
+    };
+    Git2.prototype.env = function(name, value) {
+      if (arguments.length === 1 && typeof name === "object") {
+        this._executor.env = name;
+      } else {
+        (this._executor.env = this._executor.env || {})[name] = value;
+      }
+      return this;
+    };
+    Git2.prototype.stashList = function(options) {
+      return this._runTask(stashListTask2(trailingOptionsArgument2(arguments) || {}, filterArray2(options) && options || []), trailingFunctionArgument2(arguments));
+    };
+    function createCloneTask(api, task, repoPath, localPath) {
+      if (typeof repoPath !== "string") {
+        return configurationErrorTask2(`git.${api}() requires a string 'repoPath'`);
+      }
+      return task(repoPath, filterType2(localPath, filterString2), getTrailingOptions2(arguments));
+    }
+    Git2.prototype.clone = function() {
+      return this._runTask(createCloneTask("clone", cloneTask2, ...arguments), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.mirror = function() {
+      return this._runTask(createCloneTask("mirror", cloneMirrorTask2, ...arguments), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.mv = function(from, to) {
+      return this._runTask(moveTask2(from, to), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.checkoutLatestTag = function(then) {
+      var git = this;
+      return this.pull(function() {
+        git.tags(function(err, tags) {
+          git.checkout(tags.latest, then);
+        });
+      });
+    };
+    Git2.prototype.commit = function(message, files, options, then) {
+      const next = trailingFunctionArgument2(arguments);
+      if (!filterStringOrStringArray2(message)) {
+        return this._runTask(configurationErrorTask2("git.commit: requires the commit message to be supplied as a string/string[]"), next);
+      }
+      return this._runTask(commitTask2(asArray2(message), asArray2(filterType2(files, filterStringOrStringArray2, [])), [...filterType2(options, filterArray2, []), ...getTrailingOptions2(arguments, 0, true)]), next);
+    };
+    Git2.prototype.pull = function(remote, branch, options, then) {
+      return this._runTask(pullTask2(filterType2(remote, filterString2), filterType2(branch, filterString2), getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.fetch = function(remote, branch) {
+      return this._runTask(fetchTask2(filterType2(remote, filterString2), filterType2(branch, filterString2), getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.silent = function(silence) {
+      console.warn("simple-git deprecation notice: git.silent: logging should be configured using the `debug` library / `DEBUG` environment variable, this will be an error in version 3");
+      return this;
+    };
+    Git2.prototype.tags = function(options, then) {
+      return this._runTask(tagListTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.rebase = function() {
+      return this._runTask(straightThroughStringTask2(["rebase", ...getTrailingOptions2(arguments)]), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.reset = function(mode) {
+      return this._runTask(resetTask2(getResetMode2(mode), getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.revert = function(commit) {
+      const next = trailingFunctionArgument2(arguments);
+      if (typeof commit !== "string") {
+        return this._runTask(configurationErrorTask2("Commit must be a string"), next);
+      }
+      return this._runTask(straightThroughStringTask2(["revert", ...getTrailingOptions2(arguments, 0, true), commit]), next);
+    };
+    Git2.prototype.addTag = function(name) {
+      const task = typeof name === "string" ? addTagTask2(name) : configurationErrorTask2("Git.addTag requires a tag name");
+      return this._runTask(task, trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.addAnnotatedTag = function(tagName, tagMessage) {
+      return this._runTask(addAnnotatedTagTask2(tagName, tagMessage), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.checkout = function() {
+      const commands = ["checkout", ...getTrailingOptions2(arguments, true)];
+      return this._runTask(straightThroughStringTask2(commands), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.checkoutBranch = function(branchName, startPoint, then) {
+      return this.checkout(["-b", branchName, startPoint], trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.checkoutLocalBranch = function(branchName, then) {
+      return this.checkout(["-b", branchName], trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.deleteLocalBranch = function(branchName, forceDelete, then) {
+      return this._runTask(deleteBranchTask2(branchName, typeof forceDelete === "boolean" ? forceDelete : false), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.deleteLocalBranches = function(branchNames, forceDelete, then) {
+      return this._runTask(deleteBranchesTask2(branchNames, typeof forceDelete === "boolean" ? forceDelete : false), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.branch = function(options, then) {
+      return this._runTask(branchTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.branchLocal = function(then) {
+      return this._runTask(branchLocalTask2(), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.raw = function(commands) {
+      const createRestCommands = !Array.isArray(commands);
+      const command = [].slice.call(createRestCommands ? arguments : commands, 0);
+      for (let i = 0; i < command.length && createRestCommands; i++) {
+        if (!filterPrimitives2(command[i])) {
+          command.splice(i, command.length - i);
+          break;
+        }
+      }
+      command.push(...getTrailingOptions2(arguments, 0, true));
+      var next = trailingFunctionArgument2(arguments);
+      if (!command.length) {
+        return this._runTask(configurationErrorTask2("Raw: must supply one or more command to execute"), next);
+      }
+      return this._runTask(straightThroughStringTask2(command), next);
+    };
+    Git2.prototype.submoduleAdd = function(repo, path3, then) {
+      return this._runTask(addSubModuleTask2(repo, path3), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.submoduleUpdate = function(args, then) {
+      return this._runTask(updateSubModuleTask2(getTrailingOptions2(arguments, true)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.submoduleInit = function(args, then) {
+      return this._runTask(initSubModuleTask2(getTrailingOptions2(arguments, true)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.subModule = function(options, then) {
+      return this._runTask(subModuleTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.listRemote = function() {
+      return this._runTask(listRemotesTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.addRemote = function(remoteName, remoteRepo, then) {
+      return this._runTask(addRemoteTask2(remoteName, remoteRepo, getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.removeRemote = function(remoteName, then) {
+      return this._runTask(removeRemoteTask2(remoteName), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.getRemotes = function(verbose, then) {
+      return this._runTask(getRemotesTask2(verbose === true), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.remote = function(options, then) {
+      return this._runTask(remoteTask2(getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.tag = function(options, then) {
+      const command = getTrailingOptions2(arguments);
+      if (command[0] !== "tag") {
+        command.unshift("tag");
+      }
+      return this._runTask(straightThroughStringTask2(command), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.updateServerInfo = function(then) {
+      return this._runTask(straightThroughStringTask2(["update-server-info"]), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.pushTags = function(remote, then) {
+      const task = pushTagsTask2({ remote: filterType2(remote, filterString2) }, getTrailingOptions2(arguments));
+      return this._runTask(task, trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.rm = function(files) {
+      return this._runTask(straightThroughStringTask2(["rm", "-f", ...asArray2(files)]), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.rmKeepLocal = function(files) {
+      return this._runTask(straightThroughStringTask2(["rm", "--cached", ...asArray2(files)]), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.catFile = function(options, then) {
+      return this._catFile("utf-8", arguments);
+    };
+    Git2.prototype.binaryCatFile = function() {
+      return this._catFile("buffer", arguments);
+    };
+    Git2.prototype._catFile = function(format, args) {
+      var handler = trailingFunctionArgument2(args);
+      var command = ["cat-file"];
+      var options = args[0];
+      if (typeof options === "string") {
+        return this._runTask(configurationErrorTask2("Git.catFile: options must be supplied as an array of strings"), handler);
+      }
+      if (Array.isArray(options)) {
+        command.push.apply(command, options);
+      }
+      const task = format === "buffer" ? straightThroughBufferTask2(command) : straightThroughStringTask2(command);
+      return this._runTask(task, handler);
+    };
+    Git2.prototype.diff = function(options, then) {
+      const task = filterString2(options) ? configurationErrorTask2("git.diff: supplying options as a single string is no longer supported, switch to an array of strings") : straightThroughStringTask2(["diff", ...getTrailingOptions2(arguments)]);
+      return this._runTask(task, trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.diffSummary = function() {
+      return this._runTask(diffSummaryTask2(getTrailingOptions2(arguments, 1)), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.applyPatch = function(patches) {
+      const task = !filterStringOrStringArray2(patches) ? configurationErrorTask2(`git.applyPatch requires one or more string patches as the first argument`) : applyPatchTask2(asArray2(patches), getTrailingOptions2([].slice.call(arguments, 1)));
+      return this._runTask(task, trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.revparse = function() {
+      const commands = ["rev-parse", ...getTrailingOptions2(arguments, true)];
+      return this._runTask(straightThroughStringTask2(commands, true), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.show = function(options, then) {
+      return this._runTask(straightThroughStringTask2(["show", ...getTrailingOptions2(arguments, 1)]), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.clean = function(mode, options, then) {
+      const usingCleanOptionsArray = isCleanOptionsArray2(mode);
+      const cleanMode = usingCleanOptionsArray && mode.join("") || filterType2(mode, filterString2) || "";
+      const customArgs = getTrailingOptions2([].slice.call(arguments, usingCleanOptionsArray ? 1 : 0));
+      return this._runTask(cleanWithOptionsTask2(cleanMode, customArgs), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.exec = function(then) {
+      const task = {
+        commands: [],
+        format: "utf-8",
+        parser() {
+          if (typeof then === "function") {
+            then();
+          }
+        }
+      };
+      return this._runTask(task);
+    };
+    Git2.prototype.clearQueue = function() {
+      return this;
+    };
+    Git2.prototype.checkIgnore = function(pathnames, then) {
+      return this._runTask(checkIgnoreTask2(asArray2(filterType2(pathnames, filterStringOrStringArray2, []))), trailingFunctionArgument2(arguments));
+    };
+    Git2.prototype.checkIsRepo = function(checkType, then) {
+      return this._runTask(checkIsRepoTask2(filterType2(checkType, filterString2)), trailingFunctionArgument2(arguments));
+    };
+    module2.exports = Git2;
+  }
+});
+init_git_error();
+var GitConstructError = class extends GitError {
+  constructor(config, message) {
+    super(void 0, message);
+    this.config = config;
+  }
+};
+init_git_error();
+init_git_error();
+var GitPluginError = class extends GitError {
+  constructor(task, plugin, message) {
+    super(task, message);
+    this.task = task;
+    this.plugin = plugin;
+    Object.setPrototypeOf(this, new.target.prototype);
+  }
+};
+init_git_response_error();
+init_task_configuration_error();
+init_check_is_repo();
+init_clean();
+init_config();
+init_grep();
+init_reset();
+init_utils();
+function commandConfigPrefixingPlugin(configuration) {
+  const prefix = prefixedArray(configuration, "-c");
+  return {
+    type: "spawn.args",
+    action(data) {
+      return [...prefix, ...data];
+    }
+  };
+}
+init_utils();
+var never = (0, import_promise_deferred2.deferred)().promise;
+function completionDetectionPlugin({
+  onClose = true,
+  onExit = 50
+} = {}) {
+  function createEvents() {
+    let exitCode = -1;
+    const events = {
+      close: (0, import_promise_deferred2.deferred)(),
+      closeTimeout: (0, import_promise_deferred2.deferred)(),
+      exit: (0, import_promise_deferred2.deferred)(),
+      exitTimeout: (0, import_promise_deferred2.deferred)()
+    };
+    const result = Promise.race([
+      onClose === false ? never : events.closeTimeout.promise,
+      onExit === false ? never : events.exitTimeout.promise
+    ]);
+    configureTimeout(onClose, events.close, events.closeTimeout);
+    configureTimeout(onExit, events.exit, events.exitTimeout);
+    return {
+      close(code) {
+        exitCode = code;
+        events.close.done();
+      },
+      exit(code) {
+        exitCode = code;
+        events.exit.done();
+      },
+      get exitCode() {
+        return exitCode;
+      },
+      result
+    };
+  }
+  function configureTimeout(flag, event, timeout) {
+    if (flag === false) {
+      return;
+    }
+    (flag === true ? event.promise : event.promise.then(() => delay(flag))).then(timeout.done);
+  }
+  return {
+    type: "spawn.after",
+    action(_0, _1) {
+      return __async2(this, arguments, function* (_data, { spawned, close }) {
+        var _a2, _b;
+        const events = createEvents();
+        let deferClose = true;
+        let quickClose = () => void (deferClose = false);
+        (_a2 = spawned.stdout) == null ? void 0 : _a2.on("data", quickClose);
+        (_b = spawned.stderr) == null ? void 0 : _b.on("data", quickClose);
+        spawned.on("error", quickClose);
+        spawned.on("close", (code) => events.close(code));
+        spawned.on("exit", (code) => events.exit(code));
+        try {
+          yield events.result;
+          if (deferClose) {
+            yield delay(50);
+          }
+          close(events.exitCode);
+        } catch (err) {
+          close(events.exitCode, err);
+        }
+      });
+    }
+  };
+}
+init_git_error();
+function isTaskError(result) {
+  return !!(result.exitCode && result.stdErr.length);
+}
+function getErrorMessage(result) {
+  return Buffer.concat([...result.stdOut, ...result.stdErr]);
+}
+function errorDetectionHandler(overwrite = false, isError = isTaskError, errorMessage = getErrorMessage) {
+  return (error, result) => {
+    if (!overwrite && error || !isError(result)) {
+      return error;
+    }
+    return errorMessage(result);
+  };
+}
+function errorDetectionPlugin(config) {
+  return {
+    type: "task.error",
+    action(data, context) {
+      const error = config(data.error, {
+        stdErr: context.stdErr,
+        stdOut: context.stdOut,
+        exitCode: context.exitCode
+      });
+      if (Buffer.isBuffer(error)) {
+        return { error: new GitError(void 0, error.toString("utf-8")) };
+      }
+      return {
+        error
+      };
+    }
+  };
+}
+init_utils();
+var PluginStore = class {
+  constructor() {
+    this.plugins = /* @__PURE__ */ new Set();
+  }
+  add(plugin) {
+    const plugins = [];
+    asArray(plugin).forEach((plugin2) => plugin2 && this.plugins.add(append(plugins, plugin2)));
+    return () => {
+      plugins.forEach((plugin2) => this.plugins.delete(plugin2));
+    };
+  }
+  exec(type, data, context) {
+    let output = data;
+    const contextual = Object.freeze(Object.create(context));
+    for (const plugin of this.plugins) {
+      if (plugin.type === type) {
+        output = plugin.action(output, contextual);
+      }
+    }
+    return output;
+  }
+};
+init_utils();
+function progressMonitorPlugin(progress) {
+  const progressCommand = "--progress";
+  const progressMethods = ["checkout", "clone", "fetch", "pull", "push"];
+  const onProgress = {
+    type: "spawn.after",
+    action(_data, context) {
+      var _a2;
+      if (!context.commands.includes(progressCommand)) {
+        return;
+      }
+      (_a2 = context.spawned.stderr) == null ? void 0 : _a2.on("data", (chunk) => {
+        const message = /^([\s\S]+?):\s*(\d+)% \((\d+)\/(\d+)\)/.exec(chunk.toString("utf8"));
+        if (!message) {
+          return;
+        }
+        progress({
+          method: context.method,
+          stage: progressEventStage(message[1]),
+          progress: asNumber(message[2]),
+          processed: asNumber(message[3]),
+          total: asNumber(message[4])
+        });
+      });
+    }
+  };
+  const onArgs = {
+    type: "spawn.args",
+    action(args, context) {
+      if (!progressMethods.includes(context.method)) {
+        return args;
+      }
+      return including(args, progressCommand);
+    }
+  };
+  return [onArgs, onProgress];
+}
+function progressEventStage(input) {
+  return String(input.toLowerCase().split(" ", 1)) || "unknown";
+}
+init_utils();
+function spawnOptionsPlugin(spawnOptions) {
+  const options = pick(spawnOptions, ["uid", "gid"]);
+  return {
+    type: "spawn.options",
+    action(data) {
+      return __spreadValues2(__spreadValues2({}, options), data);
+    }
+  };
+}
+function timeoutPlugin({ block }) {
+  if (block > 0) {
+    return {
+      type: "spawn.after",
+      action(_data, context) {
+        var _a2, _b;
+        let timeout;
+        function wait3() {
+          timeout && clearTimeout(timeout);
+          timeout = setTimeout(kill, block);
+        }
+        function stop() {
+          var _a3, _b2;
+          (_a3 = context.spawned.stdout) == null ? void 0 : _a3.off("data", wait3);
+          (_b2 = context.spawned.stderr) == null ? void 0 : _b2.off("data", wait3);
+          context.spawned.off("exit", stop);
+          context.spawned.off("close", stop);
+        }
+        function kill() {
+          stop();
+          context.kill(new GitPluginError(void 0, "timeout", `block timeout reached`));
+        }
+        (_a2 = context.spawned.stdout) == null ? void 0 : _a2.on("data", wait3);
+        (_b = context.spawned.stderr) == null ? void 0 : _b.on("data", wait3);
+        context.spawned.on("exit", stop);
+        context.spawned.on("close", stop);
+        wait3();
+      }
+    };
+  }
+}
+init_utils();
+var Git = require_git();
+function gitInstanceFactory(baseDir, options) {
+  const plugins = new PluginStore();
+  const config = createInstanceConfig(baseDir && (typeof baseDir === "string" ? { baseDir } : baseDir) || {}, options);
+  if (!folderExists(config.baseDir)) {
+    throw new GitConstructError(config, `Cannot use simple-git on a directory that does not exist`);
+  }
+  if (Array.isArray(config.config)) {
+    plugins.add(commandConfigPrefixingPlugin(config.config));
+  }
+  plugins.add(completionDetectionPlugin(config.completion));
+  config.progress && plugins.add(progressMonitorPlugin(config.progress));
+  config.timeout && plugins.add(timeoutPlugin(config.timeout));
+  config.spawnOptions && plugins.add(spawnOptionsPlugin(config.spawnOptions));
+  plugins.add(errorDetectionPlugin(errorDetectionHandler(true)));
+  config.errors && plugins.add(errorDetectionPlugin(config.errors));
+  return new Git(config, plugins);
+}
+init_git_response_error();
+var esm_default = gitInstanceFactory;
 
 // src/gitManager.ts
 var GitManager = class {
@@ -11236,8 +10702,8 @@ var GitManager = class {
     let list = [];
     children2 = [...children2];
     while (children2.length > 0) {
-      const first = children2.first();
-      const restPath = first.path.substring(beginLength);
+      const first2 = children2.first();
+      const restPath = first2.path.substring(beginLength);
       if (restPath.contains("/")) {
         const title = restPath.substring(0, restPath.indexOf("/"));
         const childrenWithSameTitle = children2.filter((item) => {
@@ -11249,15 +10715,14 @@ var GitManager = class {
           children: this.getTreeStructure(childrenWithSameTitle, (beginLength > 0 ? beginLength + title.length : title.length) + 1)
         });
       } else {
-        list.push({ title: restPath, statusResult: first });
-        children2.remove(first);
+        list.push({ title: restPath, statusResult: first2 });
+        children2.remove(first2);
       }
     }
     return list;
   }
-  formatCommitMessage(message) {
+  formatCommitMessage(template) {
     return __async(this, null, function* () {
-      let template = message != null ? message : this.plugin.settings.commitMessage;
       let status;
       if (template.includes("{{numFiles}}")) {
         status = yield this.status();
@@ -11306,8 +10771,12 @@ var SimpleGit = class extends GitManager {
       if (this.isGitInstalled()) {
         const adapter = this.app.vault.adapter;
         const path3 = adapter.getBasePath();
-        this.git = (0, simple.default)({
-          baseDir: path3,
+        let extraPath = "";
+        if (this.plugin.settings.basePath) {
+          extraPath = import_path.sep + this.plugin.settings.basePath;
+        }
+        this.git = esm_default({
+          baseDir: path3 + extraPath,
           binary: this.plugin.settings.gitPath || void 0,
           config: ["core.quotepath=off"]
         });
@@ -11318,7 +10787,7 @@ var SimpleGit = class extends GitManager {
   status() {
     return __async(this, null, function* () {
       this.plugin.setState(PluginState.status);
-      const status = yield this.git.status();
+      const status = yield this.git.status((err) => this.onError(err));
       this.plugin.setState(PluginState.idle);
       return {
         changed: status.files.filter((e) => e.working_dir !== " ").map((e) => {
@@ -11362,18 +10831,18 @@ var SimpleGit = class extends GitManager {
     return __async(this, null, function* () {
       if (this.plugin.settings.updateSubmodules) {
         this.plugin.setState(PluginState.commit);
-        yield this.git.subModule(["foreach", "--recursive", `git add -A && if [ ! -z "$(git status --porcelain)" ]; then git commit -m "${message != null ? message : yield this.formatCommitMessage()}"; fi`], (err) => this.onError(err));
+        yield this.git.subModule(["foreach", "--recursive", `git add -A && if [ ! -z "$(git status --porcelain)" ]; then git commit -m "${yield this.formatCommitMessage(message)}"; fi`], (err) => this.onError(err));
       }
       this.plugin.setState(PluginState.add);
-      yield this.git.add("./*", (err) => this.onError(err));
+      yield this.git.add("-A", (err) => this.onError(err));
       this.plugin.setState(PluginState.commit);
-      return (yield this.git.commit(yield this.formatCommitMessage(message))).summary.changes;
+      return (yield this.git.commit(yield this.formatCommitMessage(message), (err) => this.onError(err))).summary.changes;
     });
   }
   commit(message) {
     return __async(this, null, function* () {
       this.plugin.setState(PluginState.commit);
-      const res = (yield this.git.commit(yield this.formatCommitMessage(message))).summary.changes;
+      const res = (yield this.git.commit(yield this.formatCommitMessage(message), (err) => this.onError(err))).summary.changes;
       this.plugin.setState(PluginState.idle);
       return res;
     });
@@ -11381,21 +10850,21 @@ var SimpleGit = class extends GitManager {
   stage(filepath) {
     return __async(this, null, function* () {
       this.plugin.setState(PluginState.add);
-      yield this.git.add(filepath, (err) => this.onError(err));
+      yield this.git.add(["--", filepath], (err) => this.onError(err));
       this.plugin.setState(PluginState.idle);
     });
   }
   stageAll() {
     return __async(this, null, function* () {
       this.plugin.setState(PluginState.add);
-      yield this.git.add("./*", (err) => this.onError(err));
+      yield this.git.add("-A", (err) => this.onError(err));
       this.plugin.setState(PluginState.idle);
     });
   }
   unstageAll() {
     return __async(this, null, function* () {
       this.plugin.setState(PluginState.add);
-      yield this.git.reset(["--", "./*"], (err) => this.onError(err));
+      yield this.git.reset([], (err) => this.onError(err));
       this.plugin.setState(PluginState.idle);
     });
   }
@@ -11419,9 +10888,9 @@ var SimpleGit = class extends GitManager {
       if (this.plugin.settings.updateSubmodules)
         yield this.git.subModule(["update", "--remote", "--merge", "--recursive"], (err) => this.onError(err));
       const branchInfo = yield this.branchInfo();
-      const localCommit = yield this.git.revparse([branchInfo.current]);
+      const localCommit = yield this.git.revparse([branchInfo.tracking], (err) => this.onError(err));
       yield this.git.fetch((err) => this.onError(err));
-      const upstreamCommit = yield this.git.revparse([branchInfo.tracking]);
+      const upstreamCommit = yield this.git.revparse([branchInfo.tracking], (err) => this.onError(err));
       if (localCommit !== upstreamCommit) {
         if (this.plugin.settings.syncMethod === "merge" || this.plugin.settings.syncMethod === "rebase") {
           try {
@@ -11433,8 +10902,8 @@ var SimpleGit = class extends GitManager {
                 yield this.git.rebase([branchInfo.tracking]);
             }
           } catch (err) {
-            this.plugin.displayError(`Sync failed (${this.plugin.settings.syncMethod}): ${err.message}`);
-            const status = yield this.git.status();
+            this.plugin.displayError(`Pull failed (${this.plugin.settings.syncMethod}): ${err.message}`);
+            const status = yield this.status();
             if (status.conflicted.length > 0) {
               this.plugin.handleConflict(status.conflicted);
             }
@@ -11442,7 +10911,7 @@ var SimpleGit = class extends GitManager {
           }
         } else if (this.plugin.settings.syncMethod === "reset") {
           try {
-            yield this.git.raw(["update-ref", `refs/heads/${branchInfo.current}`, upstreamCommit]);
+            yield this.git.raw(["update-ref", `refs/heads/${branchInfo.current}`, upstreamCommit], (err) => this.onError(err));
             yield this.unstageAll();
           } catch (err) {
             this.plugin.displayError(`Sync failed (${this.plugin.settings.syncMethod}): ${err.message}`);
@@ -11502,6 +10971,17 @@ var SimpleGit = class extends GitManager {
         tracking: status.tracking,
         branches: branches.all
       };
+    });
+  }
+  log(file) {
+    return __async(this, null, function* () {
+      const res = yield this.git.log({ file }, (err) => this.onError(err));
+      return res.all;
+    });
+  }
+  show(commitHash, file) {
+    return __async(this, null, function* () {
+      return this.git.show([commitHash + ":" + file], (err) => this.onError(err));
     });
   }
   checkout(branch) {
@@ -11577,13 +11057,24 @@ var SimpleGit = class extends GitManager {
   updateGitPath(gitPath) {
     this.setGitInstance();
   }
-  getDiffString(filePath) {
+  updateBasePath(basePath) {
+    this.setGitInstance();
+  }
+  getDiffString(filePath, stagedChanges = false) {
     return __async(this, null, function* () {
-      return yield this.git.diff([filePath]);
+      if (stagedChanges)
+        return yield this.git.diff(["--cached", "--", filePath]);
+      else
+        return yield this.git.diff(["--", filePath]);
+    });
+  }
+  diff(file, commit1, commit2) {
+    return __async(this, null, function* () {
+      return yield this.git.diff([`${commit1}..${commit2}`, "--", file]);
     });
   }
   isGitInstalled() {
-    const command = (0, import_child_process.spawnSync)(this.plugin.settings.gitPath || "git", ["--version"], {
+    const command = (0, import_child_process2.spawnSync)(this.plugin.settings.gitPath || "git", ["--version"], {
       stdio: "ignore"
     });
     if (command.error) {
@@ -11594,8 +11085,17 @@ var SimpleGit = class extends GitManager {
   }
   onError(error) {
     if (error) {
-      this.plugin.displayError(error.message);
-      this.plugin.setState(PluginState.idle);
+      let networkFailure = error.message.contains("Could not resolve host");
+      if (!networkFailure) {
+        this.plugin.displayError(error.message);
+        this.plugin.setState(PluginState.idle);
+      } else if (!this.plugin.offlineMode) {
+        this.plugin.displayError("Git: Going into offline mode. Future network errors will no longer be displayed.", 2e3);
+      }
+      if (networkFailure) {
+        this.plugin.offlineMode = true;
+        this.plugin.setState(PluginState.idle);
+      }
     }
   }
 };
@@ -11609,21 +11109,7 @@ var DiffView = class extends import_obsidian6.ItemView {
     this.plugin = plugin;
     this.gettingDiff = false;
     this.parser = new DOMParser();
-    this.registerEvent(this.app.workspace.on("active-leaf-change", (leaf2) => {
-      if (leaf2.view instanceof import_obsidian6.MarkdownView) {
-        this.filePath = leaf2.view.file.path;
-      } else {
-        this.filePath = null;
-      }
-      this.refresh();
-    }));
-    addEventListener("diff-update", this.firstOpen.bind(this));
-    this.intervalId = window.setInterval(() => this.refresh(), 1e4);
-    this.registerInterval(this.intervalId);
-  }
-  firstOpen(event) {
-    this.filePath = event.detail.path;
-    this.refresh();
+    addEventListener("git-refresh", this.refresh.bind(this));
   }
   getViewType() {
     return DIFF_VIEW_CONFIG.type;
@@ -11634,9 +11120,18 @@ var DiffView = class extends import_obsidian6.ItemView {
   getIcon() {
     return DIFF_VIEW_CONFIG.icon;
   }
+  setState(state, result) {
+    return __async(this, null, function* () {
+      this.state = state;
+      yield this.refresh();
+      return;
+    });
+  }
+  getState() {
+    return this.state;
+  }
   onClose() {
-    removeEventListener("diff-update", this.firstOpen.bind(this));
-    window.clearInterval(this.intervalId);
+    removeEventListener("git-refresh", this.refresh.bind(this));
     return super.onClose();
   }
   onOpen() {
@@ -11645,115 +11140,28 @@ var DiffView = class extends import_obsidian6.ItemView {
   }
   refresh() {
     return __async(this, null, function* () {
-      if (this.filePath && !this.gettingDiff) {
-        if (!this.app.vault.getAbstractFileByPath(this.filePath)) {
-          this.contentEl.empty();
+      var _a2;
+      if (((_a2 = this.state) == null ? void 0 : _a2.file) && !this.gettingDiff && this.plugin.gitManager) {
+        this.gettingDiff = true;
+        const diff = this.parser.parseFromString((0, import_diff2html.html)(yield this.plugin.gitManager.getDiffString(this.state.file, this.state.staged)), "text/html").querySelector(".d2h-file-diff");
+        this.contentEl.empty();
+        if (diff) {
+          this.contentEl.append(diff);
+        } else {
           const div = this.contentEl.createDiv({ cls: "diff-err" });
           div.createSpan({ text: "\u26A0\uFE0F", cls: "diff-err-sign" });
           div.createEl("br");
-          div.createSpan({ text: this.filePath + " was deleted" });
-        } else {
-          this.gettingDiff = true;
-          const diff = this.parser.parseFromString((0, import_diff2html.html)(yield this.plugin.gitManager.getDiffString(this.filePath)), "text/html").querySelector(".d2h-file-diff");
-          this.contentEl.empty();
-          if (diff) {
-            this.contentEl.append(diff);
-          } else {
-            const div = this.contentEl.createDiv({ cls: "diff-err" });
-            div.createSpan({ text: "\u26A0\uFE0F", cls: "diff-err-sign" });
-            div.createEl("br");
-            div.createSpan({ text: "No changes to" + this.filePath });
-          }
-          this.gettingDiff = false;
+          div.createSpan({ text: "No changes to " + this.state.file });
         }
+        this.gettingDiff = false;
       }
     });
   }
 };
-
-// node_modules/obsidian-community-lib/dist/utils.js
-var feather = __toModule(require_feather());
-var import_obsidian7 = __toModule(require("obsidian"));
-function addFeatherIcon(name, attr2 = { viewBox: "0 0 24 24", width: "100", height: "100" }) {
-  if (feather.icons[name]) {
-    const iconName = `feather-${name}`;
-    (0, import_obsidian7.addIcon)(iconName, feather.icons[name].toSvg(attr2));
-    return iconName;
-  } else {
-    throw Error(`This Icon (${name}) doesn't exist in the Feather Library.`);
-  }
-}
-function hoverPreview(event, view, to) {
-  const targetEl = event.target;
-  view.app.workspace.trigger("hover-link", {
-    event,
-    source: view.getViewType(),
-    hoverParent: view,
-    targetEl,
-    linktext: to
-  });
-}
-function createNewMDNote(app, newName, currFilePath = "") {
-  return __async(this, null, function* () {
-    const newFileFolder = app.fileManager.getNewFileParent(currFilePath).path;
-    const newFilePath = (0, import_obsidian7.normalizePath)(`${newFileFolder}${newFileFolder === "/" ? "" : "/"}${addMD(newName)}`);
-    return yield app.vault.create(newFilePath, "");
-  });
-}
-var addMD = (noteName) => {
-  return noteName.endsWith(".md") ? noteName : noteName + ".md";
-};
-function openOrSwitch(_0, _1, _2) {
-  return __async(this, arguments, function* (app, dest, event, options = { createNewFile: true }) {
-    const { workspace } = app;
-    let destFile = app.metadataCache.getFirstLinkpathDest(dest, "");
-    if (!destFile && options.createNewFile) {
-      destFile = yield createNewMDNote(app, dest);
-    } else if (!destFile && !options.createNewFile)
-      return;
-    const leavesWithDestAlreadyOpen = [];
-    workspace.iterateAllLeaves((leaf) => {
-      var _a;
-      if (leaf.view instanceof import_obsidian7.MarkdownView) {
-        const file = (_a = leaf.view) === null || _a === void 0 ? void 0 : _a.file;
-        if (file && file.basename + "." + file.extension === dest) {
-          leavesWithDestAlreadyOpen.push(leaf);
-        }
-      }
-    });
-    if (leavesWithDestAlreadyOpen.length > 0) {
-      workspace.setActiveLeaf(leavesWithDestAlreadyOpen[0]);
-    } else {
-      const mode = app.vault.getConfig("defaultViewMode");
-      const leaf = event.ctrlKey || event.getModifierState("Meta") ? workspace.splitActiveLeaf() : workspace.getUnpinnedLeaf();
-      yield leaf.openFile(destFile, { active: true, mode });
-    }
-  });
-}
-
-// src/ui/icons.ts
-function addIcons() {
-  addFeatherIcon("git-pull-request");
-  addFeatherIcon("check");
-  addFeatherIcon("refresh-cw");
-  addFeatherIcon("plus-circle");
-  addFeatherIcon("minus-circle");
-  addFeatherIcon("upload");
-  addFeatherIcon("download");
-  addFeatherIcon("plus");
-  addFeatherIcon("skip-back");
-  addFeatherIcon("minus");
-  addFeatherIcon("alert-circle");
-  addFeatherIcon("alert-triangle");
-  addFeatherIcon("git-commit");
-  addFeatherIcon("edit");
-  addFeatherIcon("folder");
-  addFeatherIcon("list");
-}
 
 // src/ui/modals/generalModal.ts
-var import_obsidian8 = __toModule(require("obsidian"));
-var GeneralModal = class extends import_obsidian8.SuggestModal {
+var import_obsidian7 = __toModule(require("obsidian"));
+var GeneralModal = class extends import_obsidian7.SuggestModal {
   constructor(app, remotes, placeholder) {
     super(app);
     this.resolve = null;
@@ -11844,7 +11252,7 @@ function start_hydrating() {
 function end_hydrating() {
   is_hydrating = false;
 }
-function append(target, node) {
+function append2(target, node) {
   target.appendChild(node);
 }
 function append_styles(target, style_sheet_id, styles) {
@@ -11871,7 +11279,7 @@ function append_empty_stylesheet(node) {
   return style_element.sheet;
 }
 function append_stylesheet(node, style) {
-  append(node.head || node, style);
+  append2(node.head || node, style);
 }
 function insert(target, node, anchor) {
   target.insertBefore(node, anchor || null);
@@ -11900,6 +11308,12 @@ function empty() {
 function listen(node, event, handler, options) {
   node.addEventListener(event, handler, options);
   return () => node.removeEventListener(event, handler, options);
+}
+function self2(fn) {
+  return function(event) {
+    if (event.target === this)
+      fn.call(this, event);
+  };
 }
 function attr(node, attribute, value) {
   if (value == null)
@@ -11940,7 +11354,7 @@ function create_style_information(doc, node) {
   managed_styles.set(doc, info);
   return info;
 }
-function create_rule(node, a, b, duration, delay, ease, fn, uid = 0) {
+function create_rule(node, a, b, duration, delay2, ease, fn, uid = 0) {
   const step = 16.666 / duration;
   let keyframes = "{\n";
   for (let p = 0; p <= 1; p += step) {
@@ -11958,7 +11372,7 @@ function create_rule(node, a, b, duration, delay, ease, fn, uid = 0) {
     stylesheet.insertRule(`@keyframes ${name} ${rule}`, stylesheet.cssRules.length);
   }
   const animation = node.style.animation || "";
-  node.style.animation = `${animation ? `${animation}, ` : ""}${name} ${duration}ms linear ${delay}ms 1 both`;
+  node.style.animation = `${animation ? `${animation}, ` : ""}${name} ${duration}ms linear ${delay2}ms 1 both`;
   active += 1;
   return name;
 }
@@ -12063,7 +11477,7 @@ function update($$) {
   }
 }
 var promise;
-function wait2() {
+function wait() {
   if (!promise) {
     promise = Promise.resolve();
     promise.then(() => {
@@ -12137,9 +11551,9 @@ function create_bidirectional_transition(node, fn, params, intro) {
     };
   }
   function go(b) {
-    const { delay = 0, duration = 300, easing = identity, tick: tick2 = noop, css } = config || null_transition;
+    const { delay: delay2 = 0, duration = 300, easing = identity, tick: tick2 = noop, css } = config || null_transition;
     const program = {
-      start: now() + delay,
+      start: now() + delay2,
       b
     };
     if (!b) {
@@ -12151,7 +11565,7 @@ function create_bidirectional_transition(node, fn, params, intro) {
     } else {
       if (css) {
         clear_animation();
-        animation_name = create_rule(node, t, b, duration, delay, easing, css);
+        animation_name = create_rule(node, t, b, duration, delay2, easing, css);
       }
       if (b)
         tick2(0, 1);
@@ -12193,7 +11607,7 @@ function create_bidirectional_transition(node, fn, params, intro) {
   return {
     run(b) {
       if (is_function(config)) {
-        wait2().then(() => {
+        wait().then(() => {
           config = config();
           go(b);
         });
@@ -12428,7 +11842,7 @@ function cubicOut(t) {
 }
 
 // node_modules/svelte/transition/index.mjs
-function slide(node, { delay = 0, duration = 400, easing = cubicOut } = {}) {
+function slide(node, { delay: delay2 = 0, duration = 400, easing = cubicOut } = {}) {
   const style = getComputedStyle(node);
   const opacity = +style.opacity;
   const height = parseFloat(style.height);
@@ -12439,7 +11853,7 @@ function slide(node, { delay = 0, duration = 400, easing = cubicOut } = {}) {
   const border_top_width = parseFloat(style.borderTopWidth);
   const border_bottom_width = parseFloat(style.borderBottomWidth);
   return {
-    delay,
+    delay: delay2,
     duration,
     easing,
     css: (t) => `overflow: hidden;opacity: ${Math.min(t * 20, 1) * opacity};height: ${t * height}px;padding-top: ${t * padding_top}px;padding-bottom: ${t * padding_bottom}px;margin-top: ${t * margin_top}px;margin-bottom: ${t * margin_bottom}px;border-top-width: ${t * border_top_width}px;border-bottom-width: ${t * border_bottom_width}px;`
@@ -12448,6 +11862,57 @@ function slide(node, { delay = 0, duration = 400, easing = cubicOut } = {}) {
 
 // src/ui/sidebar/components/fileComponent.svelte
 var import_obsidian10 = __toModule(require("obsidian"));
+
+// node_modules/obsidian-community-lib/dist/utils.js
+var feather = __toModule(require_feather());
+var import_obsidian8 = __toModule(require("obsidian"));
+function hoverPreview(event, view, to) {
+  const targetEl = event.target;
+  view.app.workspace.trigger("hover-link", {
+    event,
+    source: view.getViewType(),
+    hoverParent: view,
+    targetEl,
+    linktext: to
+  });
+}
+function createNewMDNote(app, newName, currFilePath = "") {
+  return __async(this, null, function* () {
+    const newFileFolder = app.fileManager.getNewFileParent(currFilePath).path;
+    const newFilePath = (0, import_obsidian8.normalizePath)(`${newFileFolder}${newFileFolder === "/" ? "" : "/"}${addMD(newName)}`);
+    return yield app.vault.create(newFilePath, "");
+  });
+}
+var addMD = (noteName) => {
+  return noteName.endsWith(".md") ? noteName : noteName + ".md";
+};
+function openOrSwitch(_0, _1, _2) {
+  return __async(this, arguments, function* (app, dest, event, options = { createNewFile: true }) {
+    const { workspace } = app;
+    let destFile = app.metadataCache.getFirstLinkpathDest(dest, "");
+    if (!destFile && options.createNewFile) {
+      destFile = yield createNewMDNote(app, dest);
+    } else if (!destFile && !options.createNewFile)
+      return;
+    const leavesWithDestAlreadyOpen = [];
+    workspace.iterateAllLeaves((leaf) => {
+      var _a2;
+      if (leaf.view instanceof import_obsidian8.MarkdownView) {
+        const file = (_a2 = leaf.view) === null || _a2 === void 0 ? void 0 : _a2.file;
+        if (file && file.basename + "." + file.extension === dest) {
+          leavesWithDestAlreadyOpen.push(leaf);
+        }
+      }
+    });
+    if (leavesWithDestAlreadyOpen.length > 0) {
+      workspace.setActiveLeaf(leavesWithDestAlreadyOpen[0]);
+    } else {
+      const mode = app.vault.getConfig("defaultViewMode");
+      const leaf = event.ctrlKey || event.getModifierState("Meta") ? workspace.splitActiveLeaf() : workspace.getUnpinnedLeaf();
+      yield leaf.openFile(destFile, { active: true, mode });
+    }
+  });
+}
 
 // src/ui/modals/discardModal.ts
 var import_obsidian9 = __toModule(require("obsidian"));
@@ -12492,7 +11957,36 @@ var DiscardModal = class extends import_obsidian9.Modal {
 
 // src/ui/sidebar/components/fileComponent.svelte
 function add_css(target) {
-  append_styles(target, "svelte-1ncg2cs", "main.svelte-1ncg2cs.svelte-1ncg2cs.svelte-1ncg2cs{background-color:var(--background-secondary);border-radius:4px;width:98%;display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:2px}main.svelte-1ncg2cs .path.svelte-1ncg2cs.svelte-1ncg2cs{color:var(--text-muted);white-space:nowrap;max-width:75%;overflow:hidden;text-overflow:ellipsis}main.svelte-1ncg2cs .path.svelte-1ncg2cs.svelte-1ncg2cs:hover{color:var(--text-normal);transition:all 200ms}main.svelte-1ncg2cs .tools.svelte-1ncg2cs.svelte-1ncg2cs{display:flex;align-items:center}main.svelte-1ncg2cs .tools .type.svelte-1ncg2cs.svelte-1ncg2cs{height:16px;width:16px;margin:0;display:flex;align-items:center;justify-content:center}main.svelte-1ncg2cs .tools .type[data-type=M].svelte-1ncg2cs.svelte-1ncg2cs{color:orange}main.svelte-1ncg2cs .tools .type[data-type=D].svelte-1ncg2cs.svelte-1ncg2cs{color:red}main.svelte-1ncg2cs .tools .buttons.svelte-1ncg2cs.svelte-1ncg2cs{display:flex}main.svelte-1ncg2cs .tools .buttons.svelte-1ncg2cs>.svelte-1ncg2cs{color:var(--text-faint);height:16px;width:16px;margin:0;transition:all 0.2s;border-radius:2px;margin-right:1px}main.svelte-1ncg2cs .tools .buttons.svelte-1ncg2cs>.svelte-1ncg2cs:hover{color:var(--text-normal);background-color:var(--interactive-accent)}");
+  append_styles(target, "svelte-1furf50", "main.svelte-1furf50.svelte-1furf50.svelte-1furf50{cursor:pointer;background-color:var(--background-secondary);border-radius:4px;width:98%;display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:2px}main.svelte-1furf50 .path.svelte-1furf50.svelte-1furf50{color:var(--text-muted);white-space:nowrap;max-width:75%;overflow:hidden;text-overflow:ellipsis}main.svelte-1furf50:hover .path.svelte-1furf50.svelte-1furf50{color:var(--text-normal);transition:all 200ms}main.svelte-1furf50 .tools.svelte-1furf50.svelte-1furf50{display:flex;align-items:center}main.svelte-1furf50 .tools .type.svelte-1furf50.svelte-1furf50{height:16px;width:16px;margin:0;display:flex;align-items:center;justify-content:center}main.svelte-1furf50 .tools .type[data-type=M].svelte-1furf50.svelte-1furf50{color:orange}main.svelte-1furf50 .tools .type[data-type=D].svelte-1furf50.svelte-1furf50{color:red}main.svelte-1furf50 .tools .buttons.svelte-1furf50.svelte-1furf50{display:flex}main.svelte-1furf50 .tools .buttons.svelte-1furf50>.svelte-1furf50{color:var(--text-faint);height:16px;width:16px;margin:0;transition:all 0.2s;border-radius:2px;margin-right:1px}main.svelte-1furf50 .tools .buttons.svelte-1furf50>.svelte-1furf50:hover{color:var(--text-normal);background-color:var(--interactive-accent)}");
+}
+function create_if_block(ctx) {
+  let div;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      div = element("div");
+      attr(div, "data-icon", "go-to-file");
+      attr(div, "aria-label", "Open File");
+      attr(div, "class", "svelte-1furf50");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      ctx[12](div);
+      if (!mounted) {
+        dispose = listen(div, "click", ctx[5]);
+        mounted = true;
+      }
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      ctx[12](null);
+      mounted = false;
+      dispose();
+    }
+  };
 }
 function create_fragment(ctx) {
   let main;
@@ -12503,16 +11997,19 @@ function create_fragment(ctx) {
   let t1;
   let div3;
   let div2;
-  let div0;
+  let show_if = ctx[1].app.vault.getAbstractFileByPath(ctx[0].path);
   let t2;
-  let div1;
+  let div0;
   let t3;
-  let span1;
-  let t4_value = ctx[0].working_dir + "";
+  let div1;
   let t4;
+  let span1;
+  let t5_value = ctx[0].working_dir + "";
+  let t5;
   let span1_data_type_value;
   let mounted;
   let dispose;
+  let if_block = show_if && create_if_block(ctx);
   return {
     c() {
       main = element("main");
@@ -12521,50 +12018,56 @@ function create_fragment(ctx) {
       t1 = space();
       div3 = element("div");
       div2 = element("div");
-      div0 = element("div");
+      if (if_block)
+        if_block.c();
       t2 = space();
-      div1 = element("div");
+      div0 = element("div");
       t3 = space();
+      div1 = element("div");
+      t4 = space();
       span1 = element("span");
-      t4 = text(t4_value);
-      attr(span0, "class", "path svelte-1ncg2cs");
-      attr(span0, "aria-label-position", ctx[2]);
+      t5 = text(t5_value);
+      attr(span0, "class", "path svelte-1furf50");
+      attr(span0, "aria-label-position", ctx[3]);
       attr(span0, "aria-label", span0_aria_label_value = ctx[0].path.split("/").last() != ctx[0].path ? ctx[0].path : "");
-      attr(div0, "data-icon", "feather-skip-back");
+      attr(div0, "data-icon", "skip-back");
       attr(div0, "aria-label", "Discard");
-      attr(div0, "class", "svelte-1ncg2cs");
-      attr(div1, "data-icon", "feather-plus");
+      attr(div0, "class", "svelte-1furf50");
+      attr(div1, "data-icon", "plus");
       attr(div1, "aria-label", "Stage");
-      attr(div1, "class", "svelte-1ncg2cs");
-      attr(div2, "class", "buttons svelte-1ncg2cs");
-      attr(span1, "class", "type svelte-1ncg2cs");
+      attr(div1, "class", "svelte-1furf50");
+      attr(div2, "class", "buttons svelte-1furf50");
+      attr(span1, "class", "type svelte-1furf50");
       attr(span1, "data-type", span1_data_type_value = ctx[0].working_dir);
-      attr(div3, "class", "tools svelte-1ncg2cs");
-      attr(main, "class", "svelte-1ncg2cs");
+      attr(div3, "class", "tools svelte-1furf50");
+      attr(main, "class", "svelte-1furf50");
     },
     m(target, anchor) {
       insert(target, main, anchor);
-      append(main, span0);
-      append(span0, t0);
-      append(main, t1);
-      append(main, div3);
-      append(div3, div2);
-      append(div2, div0);
-      ctx[12](div0);
-      append(div2, t2);
-      append(div2, div1);
-      ctx[13](div1);
-      append(div3, t3);
-      append(div3, span1);
-      append(span1, t4);
+      append2(main, span0);
+      append2(span0, t0);
+      append2(main, t1);
+      append2(main, div3);
+      append2(div3, div2);
+      if (if_block)
+        if_block.m(div2, null);
+      append2(div2, t2);
+      append2(div2, div0);
+      ctx[13](div0);
+      append2(div2, t3);
+      append2(div2, div1);
+      ctx[14](div1);
+      append2(div3, t4);
+      append2(div3, span1);
+      append2(span1, t5);
       if (!mounted) {
         dispose = [
-          listen(span0, "mouseover", ctx[3]),
-          listen(span0, "click", ctx[4]),
-          listen(span0, "dblclick", ctx[6]),
-          listen(span0, "focus", ctx[11]),
-          listen(div0, "click", ctx[7]),
-          listen(div1, "click", ctx[5])
+          listen(span0, "click", self2(ctx[7])),
+          listen(div0, "click", ctx[8]),
+          listen(div1, "click", ctx[6]),
+          listen(main, "mouseover", ctx[4]),
+          listen(main, "click", self2(ctx[7])),
+          listen(main, "focus", ctx[11])
         ];
         mounted = true;
       }
@@ -12572,14 +12075,28 @@ function create_fragment(ctx) {
     p(ctx2, [dirty]) {
       if (dirty & 1 && t0_value !== (t0_value = ctx2[0].path.split("/").last().replace(".md", "") + ""))
         set_data(t0, t0_value);
-      if (dirty & 4) {
-        attr(span0, "aria-label-position", ctx2[2]);
+      if (dirty & 8) {
+        attr(span0, "aria-label-position", ctx2[3]);
       }
       if (dirty & 1 && span0_aria_label_value !== (span0_aria_label_value = ctx2[0].path.split("/").last() != ctx2[0].path ? ctx2[0].path : "")) {
         attr(span0, "aria-label", span0_aria_label_value);
       }
-      if (dirty & 1 && t4_value !== (t4_value = ctx2[0].working_dir + ""))
-        set_data(t4, t4_value);
+      if (dirty & 3)
+        show_if = ctx2[1].app.vault.getAbstractFileByPath(ctx2[0].path);
+      if (show_if) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block(ctx2);
+          if_block.c();
+          if_block.m(div2, t2);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+      if (dirty & 1 && t5_value !== (t5_value = ctx2[0].working_dir + ""))
+        set_data(t5, t5_value);
       if (dirty & 1 && span1_data_type_value !== (span1_data_type_value = ctx2[0].working_dir)) {
         attr(span1, "data-type", span1_data_type_value);
       }
@@ -12589,8 +12106,10 @@ function create_fragment(ctx) {
     d(detaching) {
       if (detaching)
         detach(main);
-      ctx[12](null);
+      if (if_block)
+        if_block.d();
       ctx[13](null);
+      ctx[14](null);
       mounted = false;
       run_all(dispose);
     }
@@ -12615,24 +12134,35 @@ function instance($$self, $$props, $$invalidate) {
     }
   }
   function stage() {
-    manager.stage(change.path).then(() => {
+    manager.stage(change.path).finally(() => {
       dispatchEvent(new CustomEvent("git-refresh"));
     });
   }
-  function showDiff() {
-    workspace.createLeafInParent(workspace.rootSplit, 0).setViewState({ type: DIFF_VIEW_CONFIG.type });
-    dispatchEvent(new CustomEvent("diff-update", { detail: { path: change.path } }));
+  function showDiff(event) {
+    const leaf = workspace.activeLeaf;
+    if (leaf && !leaf.getViewState().pinned && !(event.ctrlKey || event.getModifierState("Meta"))) {
+      leaf.setViewState({
+        type: DIFF_VIEW_CONFIG.type,
+        state: { file: change.path, staged: false }
+      });
+    } else {
+      workspace.createLeafInParent(workspace.rootSplit, 0).setViewState({
+        type: DIFF_VIEW_CONFIG.type,
+        active: true,
+        state: { file: change.path, staged: false }
+      });
+    }
   }
   function discard() {
     const deleteFile = change.working_dir == "U";
     new DiscardModal(view.app, deleteFile, change.path).myOpen().then((shouldDiscard) => {
       if (shouldDiscard === true) {
         if (deleteFile) {
-          view.app.vault.adapter.remove(change.path).then(() => {
+          view.app.vault.adapter.remove(change.path).finally(() => {
             dispatchEvent(new CustomEvent("git-refresh"));
           });
         } else {
-          manager.discard(change.path).then(() => {
+          manager.discard(change.path).finally(() => {
             dispatchEvent(new CustomEvent("git-refresh"));
           });
         }
@@ -12642,36 +12172,43 @@ function instance($$self, $$props, $$invalidate) {
   function focus_handler(event) {
     bubble.call(this, $$self, event);
   }
+  function div_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      buttons[1] = $$value;
+      $$invalidate(2, buttons);
+    });
+  }
   function div0_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       buttons[0] = $$value;
-      $$invalidate(1, buttons);
+      $$invalidate(2, buttons);
     });
   }
   function div1_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       buttons[2] = $$value;
-      $$invalidate(1, buttons);
+      $$invalidate(2, buttons);
     });
   }
   $$self.$$set = ($$props2) => {
     if ("change" in $$props2)
       $$invalidate(0, change = $$props2.change);
     if ("view" in $$props2)
-      $$invalidate(8, view = $$props2.view);
+      $$invalidate(1, view = $$props2.view);
     if ("manager" in $$props2)
       $$invalidate(9, manager = $$props2.manager);
     if ("workspace" in $$props2)
       $$invalidate(10, workspace = $$props2.workspace);
   };
   $$self.$$.update = () => {
-    if ($$self.$$.dirty & 256) {
+    if ($$self.$$.dirty & 2) {
       $:
-        $$invalidate(2, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+        $$invalidate(3, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [
     change,
+    view,
     buttons,
     side,
     hover,
@@ -12679,10 +12216,10 @@ function instance($$self, $$props, $$invalidate) {
     stage,
     showDiff,
     discard,
-    view,
     manager,
     workspace,
     focus_handler,
+    div_binding,
     div0_binding,
     div1_binding
   ];
@@ -12692,7 +12229,7 @@ var FileComponent = class extends SvelteComponent {
     super();
     init(this, options, instance, create_fragment, safe_not_equal, {
       change: 0,
-      view: 8,
+      view: 1,
       manager: 9,
       workspace: 10
     }, add_css);
@@ -12703,25 +12240,57 @@ var fileComponent_default = FileComponent;
 // src/ui/sidebar/components/stagedFileComponent.svelte
 var import_obsidian11 = __toModule(require("obsidian"));
 function add_css2(target) {
-  append_styles(target, "svelte-1m5vxuz", "main.svelte-1m5vxuz.svelte-1m5vxuz.svelte-1m5vxuz{background-color:var(--background-secondary);border-radius:4px;width:98%;display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:2px}main.svelte-1m5vxuz .path.svelte-1m5vxuz.svelte-1m5vxuz{color:var(--text-muted);white-space:nowrap;max-width:75%;overflow:hidden;text-overflow:ellipsis}main.svelte-1m5vxuz .path.svelte-1m5vxuz.svelte-1m5vxuz:hover{color:var(--text-normal);transition:all 200ms}main.svelte-1m5vxuz .tools.svelte-1m5vxuz.svelte-1m5vxuz{display:flex;align-items:center}main.svelte-1m5vxuz .tools .type.svelte-1m5vxuz.svelte-1m5vxuz{height:16px;width:16px;margin:0;display:flex;align-items:center;justify-content:center}main.svelte-1m5vxuz .tools .type[data-type=M].svelte-1m5vxuz.svelte-1m5vxuz{color:orange}main.svelte-1m5vxuz .tools .type[data-type=D].svelte-1m5vxuz.svelte-1m5vxuz{color:red}main.svelte-1m5vxuz .tools .type[data-type=A].svelte-1m5vxuz.svelte-1m5vxuz{color:yellowgreen}main.svelte-1m5vxuz .tools .type[data-type=R].svelte-1m5vxuz.svelte-1m5vxuz{color:violet}main.svelte-1m5vxuz .tools .buttons.svelte-1m5vxuz.svelte-1m5vxuz{display:flex}main.svelte-1m5vxuz .tools .buttons.svelte-1m5vxuz>.svelte-1m5vxuz{color:var(--text-faint);height:16px;width:16px;margin:0;transition:all 0.2s;border-radius:2px;margin-right:1px}main.svelte-1m5vxuz .tools .buttons.svelte-1m5vxuz>.svelte-1m5vxuz:hover{color:var(--text-normal);background-color:var(--interactive-accent)}");
+  append_styles(target, "svelte-15heedx", "main.svelte-15heedx.svelte-15heedx.svelte-15heedx{cursor:pointer;background-color:var(--background-secondary);border-radius:4px;width:98%;display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:2px}main.svelte-15heedx .path.svelte-15heedx.svelte-15heedx{color:var(--text-muted);white-space:nowrap;max-width:75%;overflow:hidden;text-overflow:ellipsis}main.svelte-15heedx:hover .path.svelte-15heedx.svelte-15heedx{color:var(--text-normal);transition:all 200ms}main.svelte-15heedx .tools.svelte-15heedx.svelte-15heedx{display:flex;align-items:center}main.svelte-15heedx .tools .type.svelte-15heedx.svelte-15heedx{height:16px;width:16px;margin:0;display:flex;align-items:center;justify-content:center}main.svelte-15heedx .tools .type[data-type=M].svelte-15heedx.svelte-15heedx{color:orange}main.svelte-15heedx .tools .type[data-type=D].svelte-15heedx.svelte-15heedx{color:red}main.svelte-15heedx .tools .type[data-type=A].svelte-15heedx.svelte-15heedx{color:yellowgreen}main.svelte-15heedx .tools .type[data-type=R].svelte-15heedx.svelte-15heedx{color:violet}main.svelte-15heedx .tools .buttons.svelte-15heedx.svelte-15heedx{display:flex}main.svelte-15heedx .tools .buttons.svelte-15heedx>.svelte-15heedx{color:var(--text-faint);height:16px;width:16px;margin:0;transition:all 0.2s;border-radius:2px;margin-right:1px}main.svelte-15heedx .tools .buttons.svelte-15heedx>.svelte-15heedx:hover{color:var(--text-normal);background-color:var(--interactive-accent)}");
+}
+function create_if_block2(ctx) {
+  let div;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      div = element("div");
+      attr(div, "data-icon", "go-to-file");
+      attr(div, "aria-label", "Open File");
+      attr(div, "class", "svelte-15heedx");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      ctx[11](div);
+      if (!mounted) {
+        dispose = listen(div, "click", ctx[6]);
+        mounted = true;
+      }
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      ctx[11](null);
+      mounted = false;
+      dispose();
+    }
+  };
 }
 function create_fragment2(ctx) {
   let main;
   let span0;
-  let t0_value = ctx[2].split("/").last().replace(".md", "") + "";
+  let t0_value = ctx[3].split("/").last().replace(".md", "") + "";
   let t0;
   let span0_aria_label_value;
   let t1;
   let div2;
   let div1;
-  let div0;
+  let show_if = ctx[1].app.vault.getAbstractFileByPath(ctx[0].path);
   let t2;
-  let span1;
-  let t3_value = ctx[0].index + "";
+  let div0;
   let t3;
+  let span1;
+  let t4_value = ctx[0].index + "";
+  let t4;
   let span1_data_type_value;
   let mounted;
   let dispose;
+  let if_block = show_if && create_if_block2(ctx);
   return {
     c() {
       main = element("main");
@@ -12730,55 +12299,76 @@ function create_fragment2(ctx) {
       t1 = space();
       div2 = element("div");
       div1 = element("div");
-      div0 = element("div");
+      if (if_block)
+        if_block.c();
       t2 = space();
+      div0 = element("div");
+      t3 = space();
       span1 = element("span");
-      t3 = text(t3_value);
-      attr(span0, "class", "path svelte-1m5vxuz");
-      attr(span0, "aria-label-position", ctx[3]);
+      t4 = text(t4_value);
+      attr(span0, "class", "path svelte-15heedx");
+      attr(span0, "aria-label-position", ctx[4]);
       attr(span0, "aria-label", span0_aria_label_value = ctx[0].path.split("/").last() != ctx[0].path ? ctx[0].path : "");
-      attr(div0, "data-icon", "feather-minus");
+      attr(div0, "data-icon", "minus");
       attr(div0, "aria-label", "Unstage");
-      attr(div0, "class", "svelte-1m5vxuz");
-      attr(div1, "class", "buttons svelte-1m5vxuz");
-      attr(span1, "class", "type svelte-1m5vxuz");
+      attr(div0, "class", "svelte-15heedx");
+      attr(div1, "class", "buttons svelte-15heedx");
+      attr(span1, "class", "type svelte-15heedx");
       attr(span1, "data-type", span1_data_type_value = ctx[0].index);
-      attr(div2, "class", "tools svelte-1m5vxuz");
-      attr(main, "class", "svelte-1m5vxuz");
+      attr(div2, "class", "tools svelte-15heedx");
+      attr(main, "class", "svelte-15heedx");
     },
     m(target, anchor) {
       insert(target, main, anchor);
-      append(main, span0);
-      append(span0, t0);
-      append(main, t1);
-      append(main, div2);
-      append(div2, div1);
-      append(div1, div0);
-      ctx[10](div0);
-      append(div2, t2);
-      append(div2, span1);
-      append(span1, t3);
+      append2(main, span0);
+      append2(span0, t0);
+      append2(main, t1);
+      append2(main, div2);
+      append2(div2, div1);
+      if (if_block)
+        if_block.m(div1, null);
+      append2(div1, t2);
+      append2(div1, div0);
+      ctx[12](div0);
+      append2(div2, t3);
+      append2(div2, span1);
+      append2(span1, t4);
       if (!mounted) {
         dispose = [
-          listen(span0, "mouseover", ctx[4]),
-          listen(span0, "focus", ctx[9]),
-          listen(span0, "click", ctx[5]),
-          listen(div0, "click", ctx[6])
+          listen(span0, "click", ctx[7]),
+          listen(div0, "click", ctx[8]),
+          listen(main, "mouseover", ctx[5]),
+          listen(main, "focus", ctx[10]),
+          listen(main, "click", self2(ctx[7]))
         ];
         mounted = true;
       }
     },
     p(ctx2, [dirty]) {
-      if (dirty & 4 && t0_value !== (t0_value = ctx2[2].split("/").last().replace(".md", "") + ""))
+      if (dirty & 8 && t0_value !== (t0_value = ctx2[3].split("/").last().replace(".md", "") + ""))
         set_data(t0, t0_value);
-      if (dirty & 8) {
-        attr(span0, "aria-label-position", ctx2[3]);
+      if (dirty & 16) {
+        attr(span0, "aria-label-position", ctx2[4]);
       }
       if (dirty & 1 && span0_aria_label_value !== (span0_aria_label_value = ctx2[0].path.split("/").last() != ctx2[0].path ? ctx2[0].path : "")) {
         attr(span0, "aria-label", span0_aria_label_value);
       }
-      if (dirty & 1 && t3_value !== (t3_value = ctx2[0].index + ""))
-        set_data(t3, t3_value);
+      if (dirty & 3)
+        show_if = ctx2[1].app.vault.getAbstractFileByPath(ctx2[0].path);
+      if (show_if) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block2(ctx2);
+          if_block.c();
+          if_block.m(div1, t2);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+      if (dirty & 1 && t4_value !== (t4_value = ctx2[0].index + ""))
+        set_data(t4, t4_value);
       if (dirty & 1 && span1_data_type_value !== (span1_data_type_value = ctx2[0].index)) {
         attr(span1, "data-type", span1_data_type_value);
       }
@@ -12788,7 +12378,9 @@ function create_fragment2(ctx) {
     d(detaching) {
       if (detaching)
         detach(main);
-      ctx[10](null);
+      if (if_block)
+        if_block.d();
+      ctx[12](null);
       mounted = false;
       run_all(dispose);
     }
@@ -12812,56 +12404,79 @@ function instance2($$self, $$props, $$invalidate) {
       openOrSwitch(view.app, formattedPath, event);
     }
   }
+  function showDiff(event) {
+    const leaf = view.app.workspace.activeLeaf;
+    if (leaf && !leaf.getViewState().pinned && !(event.ctrlKey || event.getModifierState("Meta"))) {
+      leaf.setViewState({
+        type: DIFF_VIEW_CONFIG.type,
+        state: { file: change.path, staged: true }
+      });
+    } else {
+      view.app.workspace.createLeafInParent(view.app.workspace.rootSplit, 0).setViewState({
+        type: DIFF_VIEW_CONFIG.type,
+        active: true,
+        state: { file: change.path, staged: true }
+      });
+    }
+  }
   function unstage() {
-    manager.unstage(formattedPath).then(() => {
+    manager.unstage(formattedPath).finally(() => {
       dispatchEvent(new CustomEvent("git-refresh"));
     });
   }
   function focus_handler(event) {
     bubble.call(this, $$self, event);
   }
+  function div_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      buttons[1] = $$value;
+      $$invalidate(2, buttons);
+    });
+  }
   function div0_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       buttons[0] = $$value;
-      $$invalidate(1, buttons);
+      $$invalidate(2, buttons);
     });
   }
   $$self.$$set = ($$props2) => {
     if ("change" in $$props2)
       $$invalidate(0, change = $$props2.change);
     if ("view" in $$props2)
-      $$invalidate(7, view = $$props2.view);
+      $$invalidate(1, view = $$props2.view);
     if ("manager" in $$props2)
-      $$invalidate(8, manager = $$props2.manager);
+      $$invalidate(9, manager = $$props2.manager);
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & 1) {
       $:
-        $$invalidate(2, formattedPath = change.path);
+        $$invalidate(3, formattedPath = change.path);
     }
-    if ($$self.$$.dirty & 128) {
+    if ($$self.$$.dirty & 2) {
       $:
-        $$invalidate(3, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+        $$invalidate(4, side = view.leaf.getRoot().side == "left" ? "right" : "left");
     }
   };
   return [
     change,
+    view,
     buttons,
     formattedPath,
     side,
     hover,
     open,
+    showDiff,
     unstage,
-    view,
     manager,
     focus_handler,
+    div_binding,
     div0_binding
   ];
 }
 var StagedFileComponent = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance2, create_fragment2, safe_not_equal, { change: 0, view: 7, manager: 8 }, add_css2);
+    init(this, options, instance2, create_fragment2, safe_not_equal, { change: 0, view: 1, manager: 9 }, add_css2);
   }
 };
 var stagedFileComponent_default = StagedFileComponent;
@@ -12914,11 +12529,11 @@ function create_else_block_1(ctx) {
     },
     m(target, anchor) {
       insert(target, div2, anchor);
-      append(div2, div1);
-      append(div1, div0);
-      append(div1, t0);
-      append(div1, span);
-      append(span, t1);
+      append2(div2, div1);
+      append2(div1, div0);
+      append2(div1, t0);
+      append2(div1, span);
+      append2(span, t1);
       insert(target, t2, anchor);
       if (if_block)
         if_block.m(target, anchor);
@@ -12980,7 +12595,7 @@ function create_else_block_1(ctx) {
     }
   };
 }
-function create_if_block(ctx) {
+function create_if_block3(ctx) {
   let div;
   let current_block_type_index;
   let if_block;
@@ -13005,7 +12620,7 @@ function create_if_block(ctx) {
     m(target, anchor) {
       insert(target, div, anchor);
       if_blocks[current_block_type_index].m(div, null);
-      append(div, t);
+      append2(div, t);
       current = true;
     },
     p(ctx2, dirty) {
@@ -13071,7 +12686,7 @@ function create_if_block_2(ctx) {
     m(target, anchor) {
       insert(target, div, anchor);
       mount_component(treecomponent, div, null);
-      append(div, t);
+      append2(div, t);
       current = true;
     },
     p(ctx2, dirty) {
@@ -13211,7 +12826,7 @@ function create_each_block(ctx) {
   let if_block;
   let if_block_anchor;
   let current;
-  const if_block_creators = [create_if_block, create_else_block_1];
+  const if_block_creators = [create_if_block3, create_else_block_1];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (ctx2[7].statusResult)
@@ -13388,12 +13003,12 @@ function add_css4(target) {
 }
 function get_each_context2(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[33] = list[i];
+  child_ctx[35] = list[i];
   return child_ctx;
 }
 function get_each_context_1(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[36] = list[i];
+  child_ctx[38] = list[i];
   return child_ctx;
 }
 function create_if_block_5(ctx) {
@@ -13423,7 +13038,7 @@ function create_if_block_5(ctx) {
     }
   };
 }
-function create_if_block2(ctx) {
+function create_if_block4(ctx) {
   let div3;
   let div2;
   let div1;
@@ -13484,22 +13099,22 @@ function create_if_block2(ctx) {
     },
     m(target, anchor) {
       insert(target, div3, anchor);
-      append(div3, div2);
-      append(div2, div1);
-      append(div2, t2);
-      append(div2, span1);
-      append(span1, t3);
-      append(div3, t4);
+      append2(div3, div2);
+      append2(div2, div1);
+      append2(div2, t2);
+      append2(div2, span1);
+      append2(span1, t3);
+      append2(div3, t4);
       if (if_block0)
         if_block0.m(div3, null);
       insert(target, t5, anchor);
       insert(target, div7, anchor);
-      append(div7, div6);
-      append(div6, div5);
-      append(div6, t8);
-      append(div6, span3);
-      append(span3, t9);
-      append(div7, t10);
+      append2(div7, div6);
+      append2(div6, div5);
+      append2(div6, t8);
+      append2(div6, span3);
+      append2(span3, t9);
+      append2(div7, t10);
       if (if_block1)
         if_block1.m(div7, null);
       current = true;
@@ -13788,7 +13403,7 @@ function create_each_block_1(ctx) {
   let current;
   stagedfilecomponent = new stagedFileComponent_default({
     props: {
-      change: ctx[36],
+      change: ctx[38],
       view: ctx[1],
       manager: ctx[0].gitManager
     }
@@ -13804,7 +13419,7 @@ function create_each_block_1(ctx) {
     p(ctx2, dirty) {
       const stagedfilecomponent_changes = {};
       if (dirty[0] & 64)
-        stagedfilecomponent_changes.change = ctx2[36];
+        stagedfilecomponent_changes.change = ctx2[38];
       if (dirty[0] & 2)
         stagedfilecomponent_changes.view = ctx2[1];
       if (dirty[0] & 1)
@@ -14025,7 +13640,7 @@ function create_each_block2(ctx) {
   let current;
   filecomponent = new fileComponent_default({
     props: {
-      change: ctx[33],
+      change: ctx[35],
       view: ctx[1],
       manager: ctx[0].gitManager,
       workspace: ctx[0].app.workspace
@@ -14043,7 +13658,7 @@ function create_each_block2(ctx) {
     p(ctx2, dirty) {
       const filecomponent_changes = {};
       if (dirty[0] & 64)
-        filecomponent_changes.change = ctx2[33];
+        filecomponent_changes.change = ctx2[35];
       if (dirty[0] & 2)
         filecomponent_changes.view = ctx2[1];
       if (dirty[0] & 1)
@@ -14094,7 +13709,7 @@ function create_fragment4(ctx) {
   let mounted;
   let dispose;
   let if_block0 = ctx[4] && create_if_block_5(ctx);
-  let if_block1 = ctx[6] && create_if_block2(ctx);
+  let if_block1 = ctx[6] && create_if_block4(ctx);
   return {
     c() {
       main = element("main");
@@ -14124,24 +13739,24 @@ function create_fragment4(ctx) {
       if (if_block1)
         if_block1.c();
       attr(div0, "id", "commit-btn");
-      attr(div0, "data-icon", "feather-check");
+      attr(div0, "data-icon", "check");
       attr(div0, "class", "nav-action-button");
       attr(div0, "aria-label", "Commit");
       attr(div1, "id", "stage-all");
       attr(div1, "class", "nav-action-button");
-      attr(div1, "data-icon", "feather-plus-circle");
+      attr(div1, "data-icon", "plus-circle");
       attr(div1, "aria-label", "Stage all");
       attr(div2, "id", "unstage-all");
       attr(div2, "class", "nav-action-button");
-      attr(div2, "data-icon", "feather-minus-circle");
+      attr(div2, "data-icon", "minus-circle");
       attr(div2, "aria-label", "Unstage all");
       attr(div3, "id", "push");
       attr(div3, "class", "nav-action-button");
-      attr(div3, "data-icon", "feather-upload");
+      attr(div3, "data-icon", "upload");
       attr(div3, "aria-label", "Push");
       attr(div4, "id", "pull");
       attr(div4, "class", "nav-action-button");
-      attr(div4, "data-icon", "feather-download");
+      attr(div4, "data-icon", "download");
       attr(div4, "aria-label", "Pull");
       attr(div5, "id", "layoutChange");
       attr(div5, "class", "nav-action-button");
@@ -14149,7 +13764,7 @@ function create_fragment4(ctx) {
       attr(div6, "class", "group svelte-1f0ksxd");
       attr(div7, "id", "refresh");
       attr(div7, "class", "nav-action-button");
-      attr(div7, "data-icon", "feather-refresh-cw");
+      attr(div7, "data-icon", "refresh-cw");
       attr(div7, "aria-label", "Refresh");
       toggle_class(div7, "loading", ctx[11]);
       attr(textarea, "class", "commit-msg svelte-1f0ksxd");
@@ -14163,37 +13778,37 @@ function create_fragment4(ctx) {
     },
     m(target, anchor) {
       insert(target, main, anchor);
-      append(main, div9);
-      append(div9, div6);
-      append(div6, div0);
+      append2(main, div9);
+      append2(div9, div6);
+      append2(div6, div0);
       ctx[18](div0);
-      append(div6, t0);
-      append(div6, div1);
+      append2(div6, t0);
+      append2(div6, div1);
       ctx[19](div1);
-      append(div6, t1);
-      append(div6, div2);
+      append2(div6, t1);
+      append2(div6, div2);
       ctx[20](div2);
-      append(div6, t2);
-      append(div6, div3);
+      append2(div6, t2);
+      append2(div6, div3);
       ctx[21](div3);
-      append(div6, t3);
-      append(div6, div4);
+      append2(div6, t3);
+      append2(div6, div4);
       ctx[22](div4);
-      append(div6, t4);
-      append(div6, div5);
+      append2(div6, t4);
+      append2(div6, div5);
       ctx[23](div5);
-      append(div9, t5);
-      append(div9, div7);
+      append2(div9, t5);
+      append2(div9, div7);
       ctx[25](div7);
-      append(div9, t6);
-      append(div9, div8);
-      append(div8, textarea);
+      append2(div9, t6);
+      append2(div9, div8);
+      append2(div8, textarea);
       set_input_value(textarea, ctx[4]);
-      append(div8, t7);
+      append2(div8, t7);
       if (if_block0)
         if_block0.m(div8, null);
-      append(main, t8);
-      append(main, div10);
+      append2(main, t8);
+      append2(main, div10);
       if (if_block1)
         if_block1.m(div10, null);
       current = true;
@@ -14237,7 +13852,7 @@ function create_fragment4(ctx) {
             transition_in(if_block1, 1);
           }
         } else {
-          if_block1 = create_if_block2(ctx2);
+          if_block1 = create_if_block4(ctx2);
           if_block1.c();
           transition_in(if_block1, 1);
           if_block1.m(div10, null);
@@ -14290,24 +13905,44 @@ function instance4($$self, $$props, $$invalidate) {
   let changesOpen = true;
   let stagedOpen = true;
   let loading = true;
-  const debRefresh = (0, import_obsidian12.debounce)(() => refresh(), 3e5);
-  const interval = window.setInterval(refresh, 6e5);
+  const debRefresh = (0, import_obsidian12.debounce)(() => {
+    if (plugin.settings.refreshSourceControl) {
+      refresh();
+    }
+  }, 7e3, true);
   let showTree = plugin.settings.treeStructure;
   let layoutBtn;
-  let event;
+  let modifyEvent;
+  let deleteEvent;
+  let createEvent;
+  let renameEvent;
+  addEventListener("git-refresh", refresh);
   plugin.app.workspace.onLayoutReady(() => setImmediate(() => {
     buttons.forEach((btn) => (0, import_obsidian12.setIcon)(btn, btn.getAttr("data-icon"), 16));
-    (0, import_obsidian12.setIcon)(layoutBtn, showTree ? "feather-list" : "feather-folder", 16);
-    refresh();
-    event = plugin.app.metadataCache.on("resolved", () => {
+    (0, import_obsidian12.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
+    modifyEvent = plugin.app.vault.on("modify", () => {
       debRefresh();
     });
-    plugin.registerInterval(interval);
-    plugin.registerEvent(event);
+    deleteEvent = plugin.app.vault.on("delete", () => {
+      debRefresh();
+    });
+    createEvent = plugin.app.vault.on("create", () => {
+      debRefresh();
+    });
+    renameEvent = plugin.app.vault.on("rename", () => {
+      debRefresh();
+    });
+    plugin.registerEvent(modifyEvent);
+    plugin.registerEvent(deleteEvent);
+    plugin.registerEvent(createEvent);
+    plugin.registerEvent(renameEvent);
   }));
   onDestroy(() => {
-    window.clearInterval(interval);
-    plugin.app.metadataCache.offref(event);
+    plugin.app.metadataCache.offref(modifyEvent);
+    plugin.app.metadataCache.offref(deleteEvent);
+    plugin.app.metadataCache.offref(createEvent);
+    plugin.app.metadataCache.offref(renameEvent);
+    removeEventListener("git-refresh", refresh);
   });
   function commit() {
     $$invalidate(11, loading = true);
@@ -14315,12 +13950,8 @@ function instance4($$self, $$props, $$invalidate) {
       if (commitMessage !== plugin.settings.commitMessage) {
         $$invalidate(4, commitMessage = "");
       }
-      refresh();
-    });
+    }).finally(refresh);
   }
-  addEventListener("git-refresh", (_) => {
-    refresh();
-  });
   function refresh() {
     return __awaiter(this, void 0, void 0, function* () {
       $$invalidate(11, loading = true);
@@ -14338,29 +13969,21 @@ function instance4($$self, $$props, $$invalidate) {
   }
   function stageAll() {
     $$invalidate(11, loading = true);
-    plugin.gitManager.stageAll().then(() => {
-      refresh();
-    });
+    plugin.gitManager.stageAll().finally(refresh);
   }
   function unstageAll() {
     $$invalidate(11, loading = true);
-    plugin.gitManager.unstageAll().then(() => {
-      refresh();
-    });
+    plugin.gitManager.unstageAll().finally(refresh);
   }
   function push() {
     $$invalidate(11, loading = true);
     if (ready) {
-      plugin.push().then((pushedFiles) => {
-        refresh();
-      });
+      plugin.push().finally(refresh);
     }
   }
   function pull() {
     $$invalidate(11, loading = true);
-    plugin.pullChangesFromRemote().then(() => {
-      refresh();
-    });
+    plugin.pullChangesFromRemote().finally(refresh);
   }
   function div0_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
@@ -14427,7 +14050,7 @@ function instance4($$self, $$props, $$invalidate) {
       $: {
         if (layoutBtn) {
           layoutBtn.empty();
-          (0, import_obsidian12.setIcon)(layoutBtn, showTree ? "feather-list" : "feather-folder", 16);
+          (0, import_obsidian12.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
         }
       }
     }
@@ -14512,18 +14135,18 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
     this.gitReady = false;
     this.promiseQueue = new PromiseQueue();
     this.conflictOutputFile = "conflict-files-obsidian-git.md";
+    this.offlineMode = false;
   }
   setState(state) {
-    var _a;
+    var _a2;
     this.state = state;
-    (_a = this.statusBar) == null ? void 0 : _a.display();
+    (_a2 = this.statusBar) == null ? void 0 : _a2.display();
   }
   onload() {
     return __async(this, null, function* () {
       console.log("loading " + this.manifest.name + " plugin");
       yield this.loadSettings();
       this.migrateSettings();
-      addIcons();
       this.registerView(GIT_VIEW_CONFIG.type, (leaf) => {
         return new GitView2(leaf, this);
       });
@@ -14545,14 +14168,14 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
             });
           }
           this.app.workspace.revealLeaf(this.app.workspace.getLeavesOfType(GIT_VIEW_CONFIG.type).first());
+          dispatchEvent(new CustomEvent("git-refresh"));
         })
       });
       this.addCommand({
         id: "open-diff-view",
         name: "Open diff view",
         editorCallback: (editor, view) => __async(this, null, function* () {
-          this.app.workspace.createLeafBySplit(view.leaf).setViewState({ type: DIFF_VIEW_CONFIG.type });
-          dispatchEvent(new CustomEvent("diff-update", { detail: { path: view.file.path } }));
+          this.app.workspace.createLeafBySplit(view.leaf).setViewState({ type: DIFF_VIEW_CONFIG.type, state: { staged: false, file: view.file.path } });
         })
       });
       this.addCommand({
@@ -14644,6 +14267,10 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
     if (this.settings.mergeOnPull != void 0) {
       this.settings.syncMethod = this.settings.mergeOnPull ? "merge" : "rebase";
       this.settings.mergeOnPull = void 0;
+      return this.saveSettings();
+    }
+    if (this.settings.autoCommitMessage === void 0) {
+      this.settings.autoCommitMessage = this.settings.commitMessage;
       this.saveSettings();
     }
   }
@@ -14678,9 +14305,9 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
   }
   loadLastAuto() {
     return __async(this, null, function* () {
-      var _a, _b;
+      var _a2, _b;
       return {
-        "backup": new Date((_a = window.localStorage.getItem(this.manifest.id + ":lastAutoBackup")) != null ? _a : ""),
+        "backup": new Date((_a2 = window.localStorage.getItem(this.manifest.id + ":lastAutoBackup")) != null ? _a2 : ""),
         "pull": new Date((_b = window.localStorage.getItem(this.manifest.id + ":lastAutoPull")) != null ? _b : "")
       };
     });
@@ -14700,6 +14327,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
           case "valid":
             this.gitReady = true;
             this.setState(PluginState.idle);
+            dispatchEvent(new CustomEvent("git-refresh"));
             if (this.settings.autoPullOnBoot) {
               this.promiseQueue.addTask(() => this.pullChangesFromRemote());
             }
@@ -14767,6 +14395,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
           this.displayError(`You have ${status.conflicted.length} conflict ${status.conflicted.length > 1 ? "files" : "file"}`);
         }
       }
+      dispatchEvent(new CustomEvent("git-refresh"));
       this.lastUpdate = Date.now();
       this.setState(PluginState.idle);
     });
@@ -14810,7 +14439,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
         return false;
       const changedFiles = (yield this.gitManager.status()).changed;
       if (changedFiles.length !== 0) {
-        let commitMessage;
+        let commitMessage = fromAutoBackup ? this.settings.autoCommitMessage : this.settings.commitMessage;
         if (fromAutoBackup && this.settings.customMessageOnAutoBackup || requestCustomMessage) {
           if (!this.settings.disablePopups && fromAutoBackup) {
             new import_obsidian14.Notice("Auto backup: Please enter a custom commit message. Leave empty to abort");
@@ -14828,6 +14457,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
       } else {
         this.displayMessage("No changes to commit");
       }
+      dispatchEvent(new CustomEvent("git-refresh"));
       this.setState(PluginState.idle);
       return true;
     });
@@ -14848,6 +14478,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
         const pushedFiles = yield this.gitManager.push();
         this.lastUpdate = Date.now();
         this.displayMessage(`Pushed ${pushedFiles} ${pushedFiles > 1 ? "files" : "file"} to remote`);
+        this.offlineMode = false;
         this.setState(PluginState.idle);
         return true;
       }
@@ -14856,6 +14487,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
   pull() {
     return __async(this, null, function* () {
       const pulledFilesLength = yield this.gitManager.pull();
+      this.offlineMode = false;
       if (pulledFilesLength > 0) {
         this.displayMessage(`Pulled ${pulledFilesLength} ${pulledFilesLength > 1 ? "files" : "file"} from remote`);
       }
@@ -14907,7 +14539,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
     }, (minutes != null ? minutes : this.settings.autoPullInterval) * 6e4);
   }
   clearAutoBackup() {
-    var _a;
+    var _a2;
     let wasActive = false;
     if (this.timeoutIDBackup) {
       window.clearTimeout(this.timeoutIDBackup);
@@ -14915,7 +14547,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
       wasActive = true;
     }
     if (this.onFileModifyEventRef) {
-      (_a = this.autoBackupDebouncer) == null ? void 0 : _a.cancel();
+      (_a2 = this.autoBackupDebouncer) == null ? void 0 : _a2.cancel();
       this.app.vault.offref(this.onFileModifyEventRef);
       this.onFileModifyEventRef = void 0;
       wasActive = true;
@@ -15012,19 +14644,19 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
     });
   }
   displayMessage(message, timeout = 4 * 1e3) {
-    var _a;
-    (_a = this.statusBar) == null ? void 0 : _a.displayMessage(message.toLowerCase(), timeout);
+    var _a2;
+    (_a2 = this.statusBar) == null ? void 0 : _a2.displayMessage(message.toLowerCase(), timeout);
     if (!this.settings.disablePopups) {
       new import_obsidian14.Notice(message, 5 * 1e3);
     }
     console.log(`git obsidian message: ${message}`);
   }
-  displayError(message, timeout = 0) {
-    var _a;
+  displayError(message, timeout = 10 * 1e3) {
+    var _a2;
     message = message.toString();
-    new import_obsidian14.Notice(message, 15 * 1e3);
+    new import_obsidian14.Notice(message, timeout);
     console.log(`git obsidian error: ${message}`);
-    (_a = this.statusBar) == null ? void 0 : _a.displayMessage(message.toLowerCase(), timeout);
+    (_a2 = this.statusBar) == null ? void 0 : _a2.displayMessage(message.toLowerCase(), timeout);
   }
 };
 // Annotate the CommonJS export names for ESM import in node:

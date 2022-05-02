@@ -1,12 +1,12 @@
 {
-  "baseFontSize": 11,
+  "baseFontSize": 10,
   "cssTheme": "Minimal",
   "theme": "moonstone",
   "translucency": false,
   "enabledCssSnippets": [
     "embed",
     "list",
-    "imacent",
-    "link"
+    "link",
+    "imacent"
   ]
 }

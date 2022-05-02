@@ -15,7 +15,6 @@
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-hider",
   "sliding-panes-obsidian",
-  "quick-latex",
   "wikilinks-to-mdlinks-obsidian",
   "obsidian-wikipedia",
   "obsidian-pipe-tricks",
@@ -30,5 +29,9 @@
   "obsidian-vault-statistics-plugin",
   "obsidian-style-settings",
   "obsidian-citation-plugin",
-  "open-vscode"
+  "open-vscode",
+  "quick-latex",
+  "code-block-copy",
+  "obsidian-footnotes",
+  "obsidian-linter"
 ]

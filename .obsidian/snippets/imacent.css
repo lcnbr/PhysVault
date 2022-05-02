@@ -41,4 +41,21 @@ vertical-align: sub;
 
  }
 
+ svg.excalidraw-svg-right-wrap {
+    float: right;
+    margin: 4px !important;
+  }
+  
+  svg.excalidraw-svg-left-wrap {
+    float: left;
+    margin: 4px !important;
+  }
+  
+  div.excalidraw-svg-right {
+    text-align: right;
+  }
+  
+  div.excalidraw-svg-left {
+    text-align: left;
+  }
 
