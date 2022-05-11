@@ -47,6 +47,7 @@ $$T(q)=\alpha\int\limits_D^\infty\hat{\dd}w\,\frac{1}{2mq_z}\exp\pqty\Big{-\frac
 Plugging in the definition for $\alpha$ we get:
 
 $$T(q)=\frac{\xi\pi^\cancel{2}}{K_1(2/\xi)}\exp\pqty\Big{-\frac{q_0}{m \xi}}\frac{1}{4\cancel{\pi} mq_z}\frac{\xi}{2} \exp\pqty\Big{-\frac{2D}{\xi}}$$
+ntest
 
 
 
