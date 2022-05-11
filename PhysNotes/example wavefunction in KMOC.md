@@ -37,8 +37,16 @@ Thus we now have:
 
 $$T(q)=\alpha\int\limits_1^\infty\hat{\dd}w\,\frac{1}{2mq_z}\exp\pqty\Big{-\frac{2w}{\xi}}\Theta(A-B)\Theta(A+B)$$
 
-where $A=2mq_z\sqrt{w^{2}-1}$ and $B=2mq_0w+q^2$. The first theta function $\Theta(A)$
+where $A=2mq_z\sqrt{w^{2}-1}$ and $B=2mq_0w+q^2$. The second theta function $\Theta(A+B)$ has no effect in the $\hbar \to 0$ limit and the first one changes the integration bound to:
 
+$$w\geq-\frac{q_0}{2m}+\frac{q_z}{\sqrt{-q^2}}\sqrt{1-\frac{q^2}{4m^2}}=D$$
+
+Finally 
+$$T(q)=\alpha\int\limits_D^\infty\hat{\dd}w\,\frac{1}{2mq_z}\exp\pqty\Big{-\frac{2w}{\xi}}=\frac{\alpha}{4\pi mq_z}\frac{\xi}{2} \exp\pqty\Big{-\frac{2D}{\xi}} $$
+
+Plugging in the definition for $\alpha$ we get:
+
+$$T(q)=\frac{\xi\pi^\cancel{2}}{K_1(2/\xi)}\exp\pqty\Big{-\frac{q_0}{m \xi}}\frac{1}{4\cancel{\pi} mq_z}\frac{\xi}{2} \exp\pqty\Big{-\frac{2D}{\xi}}$$
 
 [^1]: to do this we use the [[hyperbolic parametrisation]], and since $1$ is [[Lorentz invariant]] we can boost to any frame we want. Thus we boost to [[center of momentum frame|CM frame]] of $u$ s.t. $u=(1,0,0,0)$:
 $$1=\frac{m^2\mathcal{N}^2}{2}\int\limits_0^\infty\hat{\dd}\zeta\,\sinh^{2}(\zeta)\int\limits_0^\pi \hat{\dd}\theta\,\sin(\theta)\int \limits_0^{2 \pi}\hat{\dd}\phi\, \exp\pqty\Big{-2\frac{\cosh \zeta }{ \xi}}  \,$$Integration over $\theta$  yields $\frac{1}{\pi}$ from the hat and integration over $\phi$ yields $1$ we are thus left with this equation:$$\frac{1}{\mathcal{N}}=\sqrt{\frac{m^2}{2\pi}\int\limits_0^\infty\hat{\dd}\zeta\,\sinh^{2}(\zeta)\exp\pqty\Big{-2\frac{\cosh \zeta }{ \xi}}}$$
