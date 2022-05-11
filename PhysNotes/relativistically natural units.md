@@ -1,4 +1,8 @@
 ---
+aliases: 
+tags: 
+date created: Saturday, April 16th 2022, 12:03:29 pm
+date modified: Monday, May 2nd 2022, 11:18:03 am
 ---
 
 $c=1$

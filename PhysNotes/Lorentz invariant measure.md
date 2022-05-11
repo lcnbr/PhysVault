@@ -26,4 +26,4 @@ $$\hat{\delta}^{(+)}(p^2-m^2)=2 \pi \,\Theta(p^0)\,\delta(p^2-m^2)$$
 And multiple integrations can be combined using:
 
 $$\dd{\Phi_n(p_1,\dots,p_n)}=\hat{\dd{}}^{4}p_1 \cdots \hat{\dd{}}^{4}p_n \,\hat{\delta}^{(+)}(p_1^2-m_1^2) \cdots \hat{\delta}^{(+)}(p_n^2-m_n^2)$$
-Where $\hat{\dd{}}^{n}p_i=\frac{\dd{p_i}}{(2 \pi)^n}$
+Where $\hat{\dd{}}^{n}p_i=\frac{\dd[n]{p_i}}{(2 \pi)^n}$

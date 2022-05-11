@@ -1,5 +1,5 @@
 {
-  "baseFontSize": 10,
+  "baseFontSize": 12,
   "cssTheme": "Minimal",
   "theme": "moonstone",
   "translucency": false,
@@ -7,6 +7,7 @@
     "embed",
     "list",
     "link",
-    "imacent"
+    "imacent",
+    "supercharged-links-gen"
   ]
 }

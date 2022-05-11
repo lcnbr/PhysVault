@@ -6,6 +6,12 @@
         "Shift"
       ],
       "key": "6"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "]"
     }
   ]
 }

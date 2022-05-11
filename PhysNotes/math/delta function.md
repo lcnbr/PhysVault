@@ -141,6 +141,7 @@ where the sum extends over all roots (i.e., all the different ones) of
 *g*(*x*), which are assumed to be [simple]. Thus, for example
 
 $$\delta\left(x^2-\alpha^2\right) = \frac{1}{2|\alpha|} \Big[\delta\left(x+\alpha\right)+\delta\left(x-\alpha\right)\Big].$$
+^squares
 
 In the integral form, the generalized scaling property may be written as
 
