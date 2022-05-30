@@ -4,7 +4,7 @@ alias:
 tags:
 - qftII
 ---
-Consider a [[simple Lie group|simple]] (finite-dimensional) [[Lie theory]] $\mathfrak{g}$. Up to rescaling it has a unique invariant [[bilinear form#^symmetric|symmetric]] [[bilinear form]] $K: \mathfrak{g} \times \mathfrak{g} \rightarrow \mathbb{K}$ known as the [[Killing form]] $(\mathbb{K}=\mathbb{R}, \mathbb{C}$ denotes the number field over which the [[Lie algebras|Lie algebra]] $\mathfrak{g}$ is defined). Symmetry and invariance means that for all $a, b, c \in \mathfrak{g}$
+Consider a [[simple Lie group|simple]] (finite-dimensional) [[Lie theory]] $\mathfrak{g}$. Up to rescaling it has a unique invariant [[bilinear form#^symmetric|symmetric]] [[bilinear form]] $K: \mathfrak{g} \times \mathfrak{g} \rightarrow \mathbb{K}$ known as the [[.md|Killing form]] $(\mathbb{K}=\mathbb{R}, \mathbb{C}$ denotes the number field over which the [[Lie algebras|Lie algebra]] $\mathfrak{g}$ is defined). Symmetry and invariance means that for all $a, b, c \in \mathfrak{g}$
 $$
 K(a, b)=K(b, a), \quad K([\![ c, a ]\!], b)+K(a, [\![ c, b ]\!])=0 .
 $$

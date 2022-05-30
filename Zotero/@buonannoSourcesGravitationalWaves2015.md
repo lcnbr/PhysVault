@@ -9,4 +9,4 @@ DOI:
 url: 
 
 ---
-# [Sources of Gravitational Waves: Theory and Observations](zotero://select/items/@buonannoSourcesGravitationalWaves2015)
+# [[zotero://select/items/@buonannoSourcesGravitationalWaves2015|Sources of Gravitational Waves: Theory and Observations]]

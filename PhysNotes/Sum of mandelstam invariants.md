@@ -1,7 +1,7 @@
 In an all incoming momentum framework (the final result is independent of this) we have 4-momentum conservation:
 
 $$\sum\limits_i p^\mu_i=0$$
-The [[Mandelstam invariants|Mandelstam variables]] are given by:![[Mandelstam invariants#^allIncomingPP|Mandelstam variables]]
+The [[String/Mandelstam invariants|Mandelstam variables]] are given by:![[String/Mandelstam invariants#^allIncomingPP|Mandelstam variables]]
 Thus we have:
 
 $$\begin{align*}

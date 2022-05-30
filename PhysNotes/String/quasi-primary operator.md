@@ -20,7 +20,7 @@ $$
 \delta \mathcal{O}=\epsilon\left(2 h z \mathcal{O}+z^{2} \partial \mathcal{O}\right)+\bar{\epsilon}\left(2 \bar{h} \bar{z} \mathcal{O}+\bar{z}^{2} \bar{\partial} \mathcal{O}\right) .
 $$
 
-[[descendants|^|]] of [[quasi-primary operator]]s are not [[quasi-primary operator|quasi-primary]]. In a [[conformal field theory|CFT]] it is sufficient to deal with [[quasi-primary operator|quasi-primary operators]] only.
+[[../math/descendants|^|]] of [[.md|quasi-primary operator]]s are not [[.md|quasi-primary]]. In a [[7 CFT/conformal field theory|CFT]] it is sufficient to deal with [[.md|quasi-primary operators]] only.
 
 
 # From [[operator product expansion|OPE]]
@@ -42,5 +42,5 @@ $$
 
 ^70ef67
 
-A [[quasi-primary operator]] is *characterised* by the absence of a third order pole in the [[OPE]] with the [[stress-energy tensor]].
+A [[.md|quasi-primary operator]] is *characterised* by the absence of a third order pole in the [[OPE]] with the [[stress-energy tensor]].
 

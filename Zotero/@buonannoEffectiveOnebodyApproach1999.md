@@ -9,4 +9,4 @@ DOI: 10.1103/PhysRevD.59.084006
 url: 
 
 ---
-# [Effective one-body approach to general relativistic two-body dynamics](zotero://select/items/@buonannoEffectiveOnebodyApproach1999)
+# [[zotero://select/items/@buonannoEffectiveOnebodyApproach1999|Effective one-body approach to general relativistic two-body dynamics]]

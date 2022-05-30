@@ -45,7 +45,7 @@ $$
 What is the motivation for this identification? It is a two-dimensional conformal transformation which incorporates the closed-string periodicity condition $\sigma \equiv \sigma+2 \pi$ automatically . Of course, one has to choose appropriate coordinates for boundaries in the new coordinates.
 
 # $\tau$ dependence
-So far, almost all conditions on the conformal correlator are taken care of. Only translational invariance is spoiled: the [[Polyakov action#Solutions for the closed string|string coordinates]] are functions of $x^{\mathrm{L} / \mathrm{R}}$ except for the linear dependence on $\tau=-\frac{i}{2} \log \left(x^{\mathrm{L}} x^{\mathrm{R}}\right)$. The solution to this problem is obvious: instead of choosing the field $X$ alone, take $\partial X^{\mu} / \partial x^{\mathrm{L} / \mathrm{R}}$ :
+So far, almost all conditions on the conformal correlator are taken care of. Only translational invariance is spoiled: the [[3 Classical Bosonic String/Polyakov action#Solutions for the closed string|string coordinates]] are functions of $x^{\mathrm{L} / \mathrm{R}}$ except for the linear dependence on $\tau=-\frac{i}{2} \log \left(x^{\mathrm{L}} x^{\mathrm{R}}\right)$. The solution to this problem is obvious: instead of choosing the field $X$ alone, take $\partial X^{\mu} / \partial x^{\mathrm{L} / \mathrm{R}}$ :
 
 $$
 \left\langle 0\left|\partial_{\mathrm{L}} X^{\nu}\left(x_{2}\right) \partial_{\mathrm{L}} X^{\mu}\left(x_{1}\right)\right| 0\right\rangle=\frac{-\frac{1}{2} \kappa^{2} \eta^{\mu \nu}}{\left(x_{2}^{\mathrm{L}}-x_{1}^{\mathrm{L}}\right)^{2}} .

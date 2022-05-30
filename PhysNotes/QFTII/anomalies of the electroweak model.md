@@ -32,7 +32,7 @@ $$
 $$
 
 # U(1) x SU(3)
-There is a mixed anomaly of $U(1)$ and the $S U(3)$ of quantum chromodynamics. This one involves only the quarks. Since the quarks all transform in the same [[defining representation of su(n)|fundamental representation]], we only need to sum over the hypercharges
+There is a mixed anomaly of $U(1)$ and the $S U(3)$ of quantum chromodynamics. This one involves only the quarks. Since the quarks all transform in the same [[../math/defining representation of su(n|fundamental representation]].md), we only need to sum over the hypercharges
 $$
 A_{\mathrm{U}(1) \times \mathrm{SU}(3)} \sim \operatorname{Tr}_{\mathrm{Q}, \mathrm{L}} Y-\operatorname{Tr}_{\mathrm{Q}, \mathrm{R}} Y
 $$

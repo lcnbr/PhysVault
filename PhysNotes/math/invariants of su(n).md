@@ -1,4 +1,4 @@
-The symmetric [[structure constants of su(n)]] obey certain Jacobi-like identities among themselves and with the ordinary [[structure constants]] $f_{a b c}$. They ensure that $d_{a b c}$ is an invariant tensor and can be used to define a cubic invariant
+The symmetric [[n)](structure constants of su(n|structure constants of su(n)]].md) obey certain Jacobi-like identities among themselves and with the ordinary [[structure constants]] $f_{a b c}$. They ensure that $d_{a b c}$ is an invariant tensor and can be used to define a cubic invariant
 $$
 C_{3}=d^{a b c} T_{a} \otimes T_{b} \otimes T_{c} \in \mathfrak{s u}(N)^{\otimes 3}
 $$

@@ -2,13 +2,13 @@
 
 #hypothesis
 ## Metadata
-- Author: [physicspages.com]()
+- Author: [[|physicspages.com]]
 - Title: Euler-Lagrange%20equations%20for%20particle%20and%20field%20theories.pdf
 - Reference: https://physicspages.com/pdf/Field%20theory/Euler-Lagrange%20equations%20for%20particle%20and%20field%20theories.pdf
 - Category: #article
 
 ## Highlights
-- To calculate δS, we need to vary the paths slightly. Using the chainrule (actually, we should justify that the chain rule works when calculatingvariations in functions, but we’ll trust the mathematicians on this point) wegetδS = δ[∫ t2t1L dt](3)=∫ t2t1δL dt (4)=∫ t2t1(∂L∂qiδqi + ∂L∂  ̇qiδ ̇qi)dt (5)=∫ t2t1(∂L∂qiδqi + ∂L∂  ̇qid(δqi)dt)dt (6)where the repeated index i is summed. — [Updated on 2022-01-11 15:42:50](https://hyp.is/wBc2XnLsEeymfQdxih7SWw/physicspages.com/pdf/Field%20theory/Euler-Lagrange%20equations%20for%20particle%20and%20field%20theories.pdf)  — Group: #LULUETH
+- To calculate δS, we need to vary the paths slightly. Using the chainrule (actually, we should justify that the chain rule works when calculatingvariations in functions, but we’ll trust the mathematicians on this point) wegetδS = δ[[3|∫ t2t1L dt]]=∫ t2t1δL dt (4)=∫ t2t1(∂L∂qiδqi + ∂L∂  ̇qiδ ̇qi)dt (5)=∫ t2t1(∂L∂qiδqi + ∂L∂  ̇qid(δqi)dt)dt (6)where the repeated index i is summed. — [Updated on 2022-01-11 15:42:50](https://hyp.is/wBc2XnLsEeymfQdxih7SWw/physicspages.com/pdf/Field%20theory/Euler-Lagrange%20equations%20for%20particle%20and%20field%20theories.pdf)  — Group: #LULUETH
 
 - by parts — [Updated on 2022-01-11 15:43:35](https://hyp.is/2uzvbnLsEeyVbd814GhtWQ/physicspages.com/pdf/Field%20theory/Euler-Lagrange%20equations%20for%20particle%20and%20field%20theories.pdf)  — Group: #LULUETH
 
@@ -56,7 +56,7 @@ tag: hypothesis highlights
 
 
 
-- To calculate δS, we need to vary the paths slightly. Using the chainrule (actually, we should justify that the chain rule works when calculatingvariations in functions, but we’ll trust the mathematicians on this point) wegetδS = δ[∫ t2t1L dt](3)=∫ t2t1δL dt (4)=∫ t2t1(∂L∂qiδqi + ∂L∂  ̇qiδ ̇qi)dt (5)=∫ t2t1(∂L∂qiδqi + ∂L∂  ̇qid(δqi)dt)dt (6)where the repeated index i is summed. — [Updated on 2022-01-11 15:42:50](https://hyp.is/wBc2XnLsEeymfQdxih7SWw/physicspages.com/pdf/Field%20theory/Euler-Lagrange%20equations%20for%20particle%20and%20field%20theories.pdf)  — Group: #LULUETH
+- To calculate δS, we need to vary the paths slightly. Using the chainrule (actually, we should justify that the chain rule works when calculatingvariations in functions, but we’ll trust the mathematicians on this point) wegetδS = δ[[3|∫ t2t1L dt]]=∫ t2t1δL dt (4)=∫ t2t1(∂L∂qiδqi + ∂L∂  ̇qiδ ̇qi)dt (5)=∫ t2t1(∂L∂qiδqi + ∂L∂  ̇qid(δqi)dt)dt (6)where the repeated index i is summed. — [Updated on 2022-01-11 15:42:50](https://hyp.is/wBc2XnLsEeymfQdxih7SWw/physicspages.com/pdf/Field%20theory/Euler-Lagrange%20equations%20for%20particle%20and%20field%20theories.pdf)  — Group: #LULUETH
 
 - by parts — [Updated on 2022-01-11 15:43:35](https://hyp.is/2uzvbnLsEeyVbd814GhtWQ/physicspages.com/pdf/Field%20theory/Euler-Lagrange%20equations%20for%20particle%20and%20field%20theories.pdf)  — Group: #LULUETH
 

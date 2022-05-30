@@ -4,9 +4,9 @@ tags:
 - qftII
 ---
 Consider the [[equations of motion for quantum fields]], 
-the first term in the brackets generates the [[Euler-Lagrange equations]], the second one is usually removed by setting $J=0$ in the end. 
+the first term in the brackets generates the [[../AnalyticalMech/Euler-Lagrange equations]], the second one is usually removed by setting $J=0$ in the end. 
 # In terms of [[graph generating functional]]
-In terms of the [[graph generating functional]] this identity is known as the [[Schwinger-Dyson equation]]
+In terms of the [[graph generating functional]] this identity is known as the [[.md|Schwinger-Dyson equation]]
 $$
 \frac{\delta S}{\delta \Psi(x)}\left[-i \frac{\delta}{\delta J}\right] Z[J]=-J(x) Z[J]
 $$
@@ -43,15 +43,15 @@ $$
 We observe that setting $\hbar=0$ implies that the leading order of the effective action $G$ coincides with the classical action $S$ (up to a constant shift).
 
 # Correlator form
-The [[Schwinger-Dyson equation]] is the quantum analogue to the classical [[Euler-Lagrange equations]]
+The [[.md|Schwinger-Dyson equation]] is the quantum analogue to the classical [[../AnalyticalMech/Euler-Lagrange equations]]
 
 A convenient form of the Schwinger-Dyson equation uses correlators in the presence of sources $J$ (c.f. [[effective field functional]])
 $$
 \langle\delta S[\Psi] / \delta \Psi(x)+J(x)\rangle_{J}=0
 $$
-This is precisely the expectation value of the [[Euler-Lagrange equations]] in the presence of (arbitrary) sources. 
+This is precisely the expectation value of the [[../AnalyticalMech/Euler-Lagrange equations]] in the presence of (arbitrary) sources. 
 
-Commonly, the generating functional $Z[J]$ is defined as a [[graph generating functional|path integral]]. . Alternatively the generating functional can be viewed as the solution to the Schwinger-Dyson differential equation which is formulated in terms of the action $S$.
+Commonly, the generating functional $Z[[graph generating functional|J]]. . Alternatively the generating functional can be viewed as the solution to the Schwinger-Dyson differential equation which is formulated in terms of the action $S$.
 
 
 

@@ -13,13 +13,13 @@ Multiplying the [[Schwinger-Dyson equation#In terms of graph generating function
 $$
 \underbrace{\pqty{\frac{\delta \Psi(x)}{\delta \alpha} \frac{\delta S}{\delta \Psi(x)}}}_{\partial_{\mu} N^{\mu}}\left[-i \frac{\delta}{\delta J}\right] Z[J]=-\frac{\delta \Psi(x)}{\delta \alpha}\left[-i \frac{\delta}{\delta J}\right] J(x) Z[J] .
 $$
-We obtain the [[Slavnov-Taylor identities|Slavnov-Taylor equation]]
+We obtain the [[.md|Slavnov-Taylor equation]]
 $$
-\partial_{\mu} N^{\mu}\left[-i \frac{\delta}{\delta J}\right](x) Z[J]=-\frac{\delta \Psi(x)}{\delta \alpha}\left[-i \frac{\delta}{\delta J}\right](J(x) Z[J])
+\partial_{\mu} N^{\mu}\left[[x|-i \frac{\delta}{\delta J}\right]] Z[[x)}{\delta \alpha}\left[-i \frac{\delta}{\delta J}\right](J(x|J]] Z[J])
 $$
 In the integral form the [[Noether's theorem|Noether current]] drops out
 $$
-\int \mathrm{d} x^{D} \frac{\delta \Psi(x)}{\delta \alpha}\left[-i \frac{\delta}{\delta J}\right](J(x) Z[J])=0
+\int \mathrm{d} x^{D} \frac{\delta \Psi(x)}{\delta \alpha}\left[[J(x|-i \frac{\delta}{\delta J}\right]] Z[J])=0
 $$
 The content of the above statements is clearer when expanding $\frac{\delta \Psi(x)}{\delta \alpha}$ in powers of $J$. Their expansion coefficients are identities between quantum correlation functions. For instance, the leading order of the differential form is the classical conservation law of the expectation value
 $$
@@ -58,7 +58,7 @@ Rotation of the fields by a phase $\delta \phi=i \delta \alpha \phi, \delta \phi
 $$
 i \phi \partial^{2} \phi^{*}-i \phi^{*} \partial^{2} \phi=\partial_{\mu} N^{\mu} \quad \Longrightarrow \quad N^{\mu}=i \phi \partial^{\mu} \phi^{*}-i \phi^{*} \partial^{\mu} \phi
 $$
-We can now write the above [[Slavnov-Taylor identities#As a correlator|Slavnov-Taylor equation]] 
+We can now write the above [[.md#As a correlator|Slavnov-Taylor equation]] 
 $$
 \left\langle\partial_{\mu} N^{\mu}(x)\right\rangle_{j, j^{*}}=-i\left\langle\phi(x) j(x)-\phi^{*}(x) j^{*}(x)\right\rangle_{j, j^{*}}
 $$

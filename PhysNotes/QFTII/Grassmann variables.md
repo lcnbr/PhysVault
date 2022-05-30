@@ -23,18 +23,18 @@ In the classical limit, bosonic fields commute with each other,
 and they are represented by ordinary numbers.
 Correspondingly, classical fermionic fields anti-commute with each other.
 Fermionic fields therefore should take values in
-anti-commuting numbers, the so-called odd [[Grassmann variables|Grassmann numbers]].
+anti-commuting numbers, the so-called odd [[.md|Grassmann numbers]].
 
-Let us briefly review [[Grassmann variables|Grassmann numbers]]:
+Let us briefly review [[.md|Grassmann numbers]]:
 - A Graßmann number $a$ can be either:
     -  even ($\mathbb{Z}_2$-grading $|a|=0$)
     -  odd ($\mathbb{Z}_2$-grading $|a|=1$).
-- [[Grassmann variables|Grassmann numbers]] can be added as usual.
-- The products of two [[Grassmann variables|Grassmann numbers]] is commutative unless both factors are odd in which case the product is anti-commutative.
+- [[.md|Grassmann numbers]] can be added as usual.
+- The products of two [[.md|Grassmann numbers]] is commutative unless both factors are odd in which case the product is anti-commutative.
 
 # Grassmann odd numbers
 
-Consider a set of odd [[Grassmann variables|Graßmann variables]] $\theta_k$.
+Consider a set of odd [[.md|Graßmann variables]] $\theta_k$.
 They mutually anti-commute
 $$
 \theta_j \theta_k = -\theta_k \theta_j.
@@ -45,7 +45,7 @@ $$
 \frac{\partial}{\partial \theta_j}\frac{\partial}{\partial \theta_k} =
 -\frac{\partial}{\partial \theta_k}\frac{\partial}{\partial \theta_j}.
 $$
-The defining property of derivatives of [[Grassmann variables#Grassmann odd numbers|odd Grassmann numbers]] is
+The defining property of derivatives of [[.md#Grassmann odd numbers|odd Grassmann numbers]] is
 $$
 \frac{\partial}{\partial \theta_j}\theta_k
 +\theta_k\frac{\partial}{\partial \theta_j}

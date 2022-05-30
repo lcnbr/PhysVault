@@ -2,7 +2,7 @@
 
 Considering open strings in addition to the closed-string states discussed above, leads to additional states, fields and couplings. They complete the geometric picture of [[Dp-branes|D-branes]] in string theory in an exciting way. Introducing open string leads to
 
-- additional string states; e.g. the [[open string spectrum#Quantisation|massless vectors (photon)]]:
+- additional string states; e.g. the [[open string spectrum#Quantisation|massless vectors (photon]]):
 
 $$
 |\zeta ; q\rangle=\zeta_{\mu} \alpha_{-1}^{\mu}|0 ; q\rangle .
@@ -18,7 +18,7 @@ $$
 
 The precise nature of the coupling to the ends of the open string depends on the choice of string boundary conditions. Here is, where the connection to $\mathrm{D} p$-[[Dp-branes|branes]] comes in.
 
-Let us therefore discuss [[Neumann boundary conditions|Neumann conditions]] and [[Dirichlet boundary conditions]]  .
+Let us therefore discuss [[Neumann boundary conditions|Neumann conditions]] and [[6 Open strings and D/Dirichlet boundary conditions]]  .
 
  # [[Neumann boundary conditions|Neumann boundaries]]. 
  Consider the coordinates $X^{a}, a=0, \ldots, p$, with [[Neumann boundary conditions|Neumann conditions]]: We couple an abelian one-form gauge field $A$ to the end of a string
@@ -53,8 +53,8 @@ $$
 
 The leading order is the Maxwell kinetic term, but there are corrections at higher orders in $\kappa$.
 
-# [[Dirichlet boundary conditions|Dirichlet Boundaries]]. 
-The coupling of the [[Dirichlet boundary conditions|Dirichlet]] directions $X^{m}, m=p+1, \ldots, D-$ 1 , is rather different:
+# [[6 Open strings and D/Dirichlet boundary conditions|Dirichlet Boundaries]]. 
+The coupling of the [[6 Open strings and D/Dirichlet boundary conditions|Dirichlet]] directions $X^{m}, m=p+1, \ldots, D-$ 1 , is rather different:
 
 - The field $X^{m}$ is fixed, but we can use $X^{\prime m}$ for the coupling to background fields.
 

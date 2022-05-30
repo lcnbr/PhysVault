@@ -1,6 +1,6 @@
 # Two-form field and dilaton
 
-What about the [[closed string spectrum#First Level|other]] (massless) fields: two-form $B_{\mu \nu}$ and dilaton scalar $\Phi$ ? If we view them as fields in/of the background manifold, can we couple them to the string action as well?
+What about the [[4 String Quantisation/closed string spectrum#First Level|other]] (massless) fields: two-form $B_{\mu \nu}$ and dilaton scalar $\Phi$ ? If we view them as fields in/of the background manifold, can we couple them to the string action as well?
 ## [[Kalb-Ramond 2-form]]
 The two-form naturally couples via antisymmetric combination of [[worldsheet]] derivatives
 
@@ -26,7 +26,7 @@ This is interesting for several reasons:
 Let us discuss them in more detail below.
 
 # Low-Energy Effective Action. 
-First we discuss the various beta functions ([[curved backgrounds#Anomaly|trace of the renormalised stress-energy tensor $T$]] ) which appear in string theory coupled to a generalised background consisting of $G, B$ and $\Phi$ (c.f. [[Graviton vertex operator#Background Metric Construction]])
+First we discuss the various beta functions ([[../GR/curved backgrounds#Anomaly|trace of the renormalised stress-energy tensor $T$]] ) which appear in string theory coupled to a generalised background consisting of $G, B$ and $\Phi$ (c.f. [[Graviton vertex operator#Background Metric Construction]])
 
 $$
 \begin{aligned}

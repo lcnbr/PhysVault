@@ -1,7 +1,7 @@
 # Explain densities to me please!
 
 ## Metadata
-- Author: [math.stackexchange.com]()
+- Author: [[|math.stackexchange.com]]
 - Title: Explain densities to me please!
 - Reference: https://math.stackexchange.com/questions/1210148/explain-densities-to-me-please
 - Category: #article

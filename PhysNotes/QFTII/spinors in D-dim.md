@@ -6,7 +6,7 @@ Everything else must be derived strictly from the Clifford algebra relation
 $$
 \left\{\gamma^{\mu}, \gamma^{v}\right\}=2 \eta^{\mu v},
 $$
-whose [[Minkowski metric]] belongs to $D$ dimensions. For instance, some of the bracketing identities generalise as
+whose [[../GR/Minkowski metric]] belongs to $D$ dimensions. For instance, some of the bracketing identities generalise as
 $$
 \begin{aligned}
 \gamma^{\mu} \gamma_{\mu} &=\frac{1}{2}\left\{\gamma^{\mu}, \gamma_{\mu}\right\}=D, \\

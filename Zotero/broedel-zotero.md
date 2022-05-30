@@ -9,10 +9,10 @@
 * Topics: [[String]]
 , #zotero, #literature-notes, #reference
 * PDF Attachments
-	- [Broedel_Introduction to String theory Notes.pdf](zotero://open-pdf/library/items/4EUWDIY4)
+	- [[zotero://open-pdf/library/items/4EUWDIY4|Broedel_Introduction to String theory Notes.pdf]]
 
 
 ##  Zotero links
-* [Local library](zotero://select/items/1_L73YC464)
+* [[zotero://select/items/1_L73YC464|Local library]]
 * [Cloud library](http://zotero.org/users/7873466/items/L73YC464)
 

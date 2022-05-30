@@ -9,11 +9,11 @@ The [[Einstein's field equations|Einstein's equation]] have the form
 $$
     R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R+8\pi GT_{\mu\nu} =0,
 $$
-where $R_{\mu\nu}$ is the [[Ricci tensor]], $R=g^{\alpha\beta}R_{\alpha\beta}$ the [[Ricci scalar|curvature scalar]] and $T_{\mu\nu}$ is the [[energy-momentum tensor in GR|energy-momentum tensor]]. We will show that the above can be derived as the [[Euler-Lagrange equations]] of an [[Action]] integral
+where $R_{\mu\nu}$ is the [[Ricci tensor]], $R=g^{\alpha\beta}R_{\alpha\beta}$ the [[Ricci scalar|curvature scalar]] and $T_{\mu\nu}$ is the [[energy-momentum tensor in GR|energy-momentum tensor]]. We will show that the above can be derived as the [[../AnalyticalMech/Euler-Lagrange equations]] of an [[../AnalyticalMech/Action]] integral
 $$
     S = \int\dd[4]{x}\sqrt{g}\mathcal{L},
 $$
-where the [[Lagrangian Density]] will be decomposed into a gravitation and a "matter", part
+where the [[../AnalyticalMech/Lagrangian Density]] will be decomposed into a gravitation and a "matter", part
 $$
     \L = \L_G+\L_M.
 $$

@@ -3,7 +3,7 @@ alias:
 tags:
 - qftII
 ---
-We have a [[Killing form]] and [[Casimir invariant]], each defined up to a constant $B^R$ and $C^R_2$
+We have a [[../math/Killing form]] and [[Casimir invariant]], each defined up to a constant $B^R$ and $C^R_2$
 
 
 
@@ -14,19 +14,19 @@ $$
 C_{2}^{R} \operatorname{Tr} \mathrm{id}^{R}=\operatorname{Tr} R\left(C_{2}\right)=\operatorname{Tr}(R \dot{\otimes} R) C_{2}=B^{R} K\left(C_{2}\right) .
 $$
 
-The latter identity uses the [[Killing form#From a lie algebra representation]] $K$. Then $K\left(C_{2}\right)=\operatorname{Tr} i d^{\mathrm{ad}}=D^{\mathrm{ad}}=\operatorname{dim} \mathfrak{g}$ is the dimension of the algebra, ^[ Note that $C_{2}$ is the inverse of $K$ and their contraction yields the dimension of the space $\mathfrak{g}$.] and for the l.h.s. $\operatorname{Tr} \mathrm{id}^{R}=D^{R}$ is the dimension of the representation $R$. We thus find the relation
+The latter identity uses the [[../math/Killing form#From a lie algebra representation]] $K$. Then $K\left(C_{2}\right)=\operatorname{Tr} i d^{\mathrm{ad}}=D^{\mathrm{ad}}=\operatorname{dim} \mathfrak{g}$ is the dimension of the algebra, ^[ Note that $C_{2}$ is the inverse of $K$ and their contraction yields the dimension of the space $\mathfrak{g}$.] and for the l.h.s. $\operatorname{Tr} \mathrm{id}^{R}=D^{R}$ is the dimension of the representation $R$. We thus find the relation
 $$
 D^{\mathrm{ad}} B^{R}=D^{R} C_{2}^{R} .
 $$
-Therefore **all the constants $B^{R}$ can be determined in terms of the constants $C_{2}^{R}$.** In particular, for the [[adjoint representation]] it implies the equality of the two constants
+Therefore **all the constants $B^{R}$ can be determined in terms of the constants $C_{2}^{R}$.** In particular, for the [[../math/adjoint representation]] it implies the equality of the two constants
 $$
 B^{\mathrm{ad}}=C_{2}^{\mathrm{ad}} .
 $$
-Note that there is some arbitrariness in the definition of the [[Killing form]] and the above constants $B^{R}$ and $C_{n}^{R}$ : The common rescaling by factors of $\beta$
+Note that there is some arbitrariness in the definition of the [[../math/Killing form]] and the above constants $B^{R}$ and $C_{n}^{R}$ : The common rescaling by factors of $\beta$
 $$
 K(a, b) \rightarrow \beta K(a, b), \quad B^{R} \rightarrow \beta^{-1} B^{R}, \quad C_{2}^{R} \rightarrow \beta^{-1} C_{2}^{R},
 $$
-leaves all above relationships intact. This result shows **that there is no universal definition for the $B^{R}$ and $C_{2}^{R}$. However, fixing one of them, fixes all the others.** A common normalisation of the [[Killing form]] is $K(a, b):=\operatorname{Tr} \operatorname{ad}(a) \operatorname{ad}(b)$, the constant for the adjoint then equals $B^{\mathrm{ad}}=C_{2}^{\mathrm{ad}}=1$. However, this may neither be a convenient normalisation nor the typical one used in physics in the case of $\mathfrak{s u}(N)$. We therefore will not fix the normalisation, allowing to easily adjust to one's favourite normalisation.
+leaves all above relationships intact. This result shows **that there is no universal definition for the $B^{R}$ and $C_{2}^{R}$. However, fixing one of them, fixes all the others.** A common normalisation of the [[../math/Killing form]] is $K(a, b):=\operatorname{Tr} \operatorname{ad}(a) \operatorname{ad}(b)$, the constant for the adjoint then equals $B^{\mathrm{ad}}=C_{2}^{\mathrm{ad}}=1$. However, this may neither be a convenient normalisation nor the typical one used in physics in the case of $\mathfrak{s u}(N)$. We therefore will not fix the normalisation, allowing to easily adjust to one's favourite normalisation.
 
 
 # totally symmetric invariant polynomials

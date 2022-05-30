@@ -5,7 +5,7 @@ $$
 \mathcal{L}_{\mathrm{SQED}}=-\left(D^{\mu} \phi\right)^{*}\left(D_{\mu} \phi\right)+\mu^{2} \phi^{*} \phi-\frac{1}{4} \lambda\left(\phi^{*} \phi\right)^{2}-\frac{1}{4} F^{\mu v} F_{\mu v}
 $$
 The [[YM covariant derivative|covariant derivative]] is defined as $D_{\mu} \phi=\partial_{\mu} \phi-i q A_{\mu} \phi$.
-Here the ground state solution is specified by a point on a circle in the complex plane (c.f. [[continuous symmetry breaking#^e16c3e|O(N)]] or [[discrete symmetry breaking#^b869b7|Z2]])
+Here the ground state solution is specified by a point on a circle in the complex plane (c.f. [[continuous symmetry breaking#^e16c3e|O(N]]) or [[discrete symmetry breaking#^b869b7|Z2]])
 $$
 \phi^{*} \phi=\frac{1}{2} v^{2}, \quad v=\sqrt{4 \mu^{2} / \lambda},
 $$
@@ -73,5 +73,5 @@ Above we have presented an example of the Higgs mechanism for an abelian [[gauge
 The configuration of massive scalar fields very much depends on the particular model. In principle, spontaneous symmetry breaking can be achieved without additional massive scalar fields. For example, sigma models on group manifolds and coset spaces thereof are particular implementations. However, these models typically have non-polynomial interactions and therefore are non-renormalisable. **Spontaneous symmetry breaking in models with polynomial interactions requires the presence of at least one massive scalar field**. ^[In the above examples, this is the “magnitude” direction of the scalar potential.
 ] In that sense, **the Higgs mechanism implies a massive scalar field, the so-called Higgs particle.**
 
-Note that the number of independent particle modes is preserved by the Higgs mechanism: We start with some scalar fields and some massless vector fields. **For each broken generator of the gauge algebra one of the scalar fields disappears in favour of a massive vector field**. A massless vector field has two [[on-shell]] degrees of freedom whereas a massive one has three. The additional degree of freedom originates from the scalar field; **the gauge field eats a scalar field to become massive**.  ^[In fact, the scalar origin of the additional mode for the massive vector can be observed at very high energies: There the masses of particles are largely irrelevant and the massive vector decomposes into a massless vector and a scalar.
+Note that the number of independent particle modes is preserved by the Higgs mechanism: We start with some scalar fields and some massless vector fields. **For each broken generator of the gauge algebra one of the scalar fields disappears in favour of a massive vector field**. A massless vector field has two [[../on-shell]] degrees of freedom whereas a massive one has three. The additional degree of freedom originates from the scalar field; **the gauge field eats a scalar field to become massive**.  ^[In fact, the scalar origin of the additional mode for the massive vector can be observed at very high energies: There the masses of particles are largely irrelevant and the massive vector decomposes into a massless vector and a scalar.
 ]

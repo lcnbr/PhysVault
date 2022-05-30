@@ -1,5 +1,5 @@
 {
-  "baseFontSize": 12,
+  "baseFontSize": 16,
   "cssTheme": "Minimal",
   "theme": "moonstone",
   "translucency": false,
@@ -8,6 +8,10 @@
     "list",
     "link",
     "imacent",
-    "supercharged-links-gen"
-  ]
+    "supercharged-links-gen",
+    "just",
+    "font",
+    "custom-admonitions.4958b3"
+  ],
+  "baseFontSizeAction": true
 }

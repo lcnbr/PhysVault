@@ -1,6 +1,6 @@
 # Free Scalar Field
 
-The [[Lagrangian Density#Free scalar field|action]] with [[source term in the action|source]] term reads
+The [[../AnalyticalMech/Lagrangian Density#Free scalar field|action]] with [[source term in the action|source]] term reads
 
 $$
 S_\text{free}[\phi]+S_\text{src}[\phi,j]=\int \dd[D]{x}\pqty{-\frac{1}{2} (\partial \phi)^2-\frac{1}{2} m^2 \phi^2+j\phi }.

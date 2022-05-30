@@ -1,3 +1,10 @@
+---
+aliases: 
+tags: 
+sources:
+date created: Saturday, February 19th 2022, 9:44:58 am
+date modified: Monday, May 23rd 2022, 11:04:16 am
+---
 Physics
 
 $$\require{physics}

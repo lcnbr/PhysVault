@@ -11,7 +11,7 @@ tags:
 - qftII
 ---
 
-Let $V$ be a vector space over a field $\mathbb{K}$.  An [[bilinear form]] (in the most general, possibly indefinite, sense) on $V$ is a function
+Let $V$ be a vector space over a field $\mathbb{K}$.  An [[.md|bilinear form]] (in the most general, possibly indefinite, sense) on $V$ is a function
 $$
 B: V \times V \rightarrow K
 $$
@@ -34,7 +34,7 @@ If the characteristic of $K$ is not 2 then the converse is also true: every skew
 
 # Associated matrix
 
-If $V$ is a finite-dimensional vector space, then relative to any basis $\left\{e_{i}\right\}_{i}=\mathcal{B}$ of $V$, a [[bilinear form]] $B$ is represented by a matrix $[B]$,
+If $V$ is a finite-dimensional vector space, then relative to any basis $\left\{e_{i}\right\}_{i}=\mathcal{B}$ of $V$, a [[.md|bilinear form]] $B$ is represented by a matrix $[B]$,
 $$
 B(\vec{v},\vec{w})=B(v^ie_{(i)},w^je_{(j)})=v^iw^j B (e_{(i)},e_{(j)})=[B]_{\mathcal{B}\mathcal{B}}[v]^\mathcal{B}[w]^\mathcal{B}=[B]^\mathcal{B}{}_\mathcal{B}[v^\top]_\mathcal{B}[w]^\mathcal{B}=[v^\top][B][w]
 $$

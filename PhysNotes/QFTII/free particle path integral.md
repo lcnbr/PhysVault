@@ -5,7 +5,7 @@ tags:
 ---
 # 1.3 Free Particle
 
-Consider now the [[Hamiltonian#Free Particle]].
+Consider now the [[../AnalyticalMech/Hamiltonian#Free Particle]].
 
 ## Phase space
 The   [[Path Integral for Transition Amplitude#^discAction|discretised action]] is:
@@ -16,7 +16,7 @@ $$S_{n,0}[q,p]:=\sum_{k=1}^n \pqty{
 
 ^cd1a51
 
-We observe that each variable $q_k$ appears only in a product with either $p_k$ or $p_{k+1}$. The [[Path Integral for Transition Amplitude#^transAmp|transition amplitude]] integral  over $q_k$ therefore yields a [[delta-function]]:
+We observe that each variable $q_k$ appears only in a product with either $p_k$ or $p_{k+1}$. The [[Path Integral for Transition Amplitude#^transAmp|transition amplitude]] integral  over $q_k$ therefore yields a [[../delta-function]]:
 $$\int \dd{q_k}\exp\pqty{\iunit \hbar^{-1}q_k(p_k-p_{k+1})}=2\pi \hbar\, \delta(p_k-p_{k+1})$$
 We can therefore perform the rest of the $p_k$ integrals and obtain:
 $$\begin{align}

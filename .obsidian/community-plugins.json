@@ -33,5 +33,7 @@
   "quick-latex",
   "code-block-copy",
   "obsidian-footnotes",
-  "obsidian-linter"
+  "obsidian-linter",
+  "obsidian-pandoc",
+  "obsidian-admonition"
 ]

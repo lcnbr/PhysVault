@@ -6,11 +6,11 @@ alias:
 tags: SR GR
 ---
 
-From [[particle dynamics in SR]] and the [[relativistic particle]] we define
+From [[particle dynamics in SR]] and the [[../String/2 Point particle actions/2.1 non-rel to rel/relativistic particle]] we define
 $$
 p^{\mu}=m \frac{\mathrm{d} x^{\mu}}{\mathrm{d} \tau}
 $$
-which seems like an intuitive generalization of $\vec{p}=\frac{\mathrm{d} \vec{x}}{\mathrm{~d} E}$ from classical mechanics. Under a [[Lorentz transformation]]
+which seems like an intuitive generalization of $\vec{p}=\frac{\mathrm{d} \vec{x}}{\mathrm{~d} E}$ from classical mechanics. Under a [[../String/Lorentz transformation]]
 $$
 p^{\prime \mu}=\Lambda^{\mu}{}_{\nu} p^{\nu} .
 $$
@@ -21,7 +21,7 @@ p^{0}=m, \\
 p^{i}=0 .
 \end{array}\right.
 $$
-In the [[Lorentz transformation#^boost|boosted]] frame where the particle has a velocity $\vec{v}$, we have
+In the [[../String/Lorentz transformation#^boost|boosted]] frame where the particle has a velocity $\vec{v}$, we have
 $$
 \begin{aligned}
 & p^{\mu}=\Lambda(\vec{v})^{\mu}{}_{\nu} p_{\text {rest }}^{\nu} \\

@@ -7,7 +7,7 @@ $$
 The first constraint demands the lines of constant $\tau$ to be orthogonal to lines of constant $\sigma$. This means, the [[Strings|string]] can move perpendicular to the direction it is stretched out^[[[broedela-3 Classical Bosonic String#^673caf]]. In other words, there are no longitudinal waves allowed, as already noted above: the [[Strings|string]] does not have an inner structure!^[[[broedela-3 Classical Bosonic String#^2bf2c3]]].
 Let's try to get some intuition for these constraints. There is a simple meaning of the first constraint ($\dot{X} \cdot X^{\prime}$): we must choose our parameterization such that lines of constant $\sigma$ are perpendicular to the lines of constant $\tau$.
 
-But we can do better. To gain more physical insight, we need to make use of the fact that we haven't quite exhausted our [[gauge symmetry]], there is enough remnant [[gauge symmetry]] to allow us to go to [[Temporal Gauge]],
+But we can do better. To gain more physical insight, we need to make use of the fact that we haven't quite exhausted our [[../QFTII/gauge symmetry]], there is enough remnant [[../QFTII/gauge symmetry]] to allow us to go to [[Temporal Gauge]],
 $$
 X^{0} \equiv t=R \tau
 $$
@@ -48,5 +48,5 @@ X_{\mathrm{L} / \mathrm{R}}^{+}=x_{\mathrm{L} / \mathrm{R}}^{+}+\frac{1}{2} \kap
 Thus from [[#^800683]], and [[light cone coordinates#^a95469]] we have:
 $$\left(\partial_{\mathrm{L} / \mathrm{R}} X_{\mathrm{L} / \mathrm{R}}^{\mu}\right)\cdot\left(\partial_{\mathrm{L} / \mathrm{R}} X_{\mathrm{L} / \mathrm{R}}^{\mu}\right)=-2\left(\partial_{\mathrm{L} / \mathrm{R}} X_{\mathrm{L} / \mathrm{R}}^{+}\right)\left(\partial_{\mathrm{L} / \mathrm{R}} X_{\mathrm{L} / \mathrm{R}}^{-}\right)+\left(\partial_{\mathrm{L} / \mathrm{R}} \vec{X}_{\mathrm{L}/\mathrm{R}}\right)^2$$
 
-And the [[Virasoro constraints]] become:
+And the [[.md|Virasoro constraints]] become:
 $$\left(\partial_{\mathrm{L} / \mathrm{R}} \vec{X}_{\mathrm{L} / \mathrm{R}}\right)^{2}-\kappa^{2} p_{\mathrm{L} / \mathrm{R}}^{+} \partial_{\mathrm{L} / \mathrm{R}} X_{\mathrm{L} / \mathrm{R}}^{-}=0$$

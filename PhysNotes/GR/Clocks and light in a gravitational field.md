@@ -1,7 +1,7 @@
 Consider a clock which is at rest in our lab-frame. We will assume that the clock is inside a non-zero gravitational field. We would like to compare its ticking rate with the ticking rate that the same clock has when it is also at rest in absence of the gravitational field.
 
 $$\left.\Delta t\right|_{\text {gravity \& at rest }} \quad \text{vs}\left.\quad \Delta t\right|_{\text {no gravity \& at rest }}$$
-To perform this comparison we will use the [[principle of equivalence|equivalence principle]]. First, we will perform a coordinate transformation (not a [[Lorentz transformation]]) which will have the effect to cancel gravity in the spacetime region of the clock ($S_{\text{einstein}}$). Second, we will perform a [[Lorentz transformation]] which will bring us to an equivalent [[inertial frames of reference|inertial frame]] with gravity cancelled out and the clock at rest: $S'_{\text{einstein}}$. Schematically:
+To perform this comparison we will use the [[principle of equivalence|equivalence principle]]. First, we will perform a coordinate transformation (not a [[../String/Lorentz transformation]]) which will have the effect to cancel gravity in the spacetime region of the clock ($S_{\text{einstein}}$). Second, we will perform a [[../String/Lorentz transformation]] which will bring us to an equivalent [[inertial frames of reference|inertial frame]] with gravity cancelled out and the clock at rest: $S'_{\text{einstein}}$. Schematically:
 ![[Untitled 4.svg#center|600]]
 In the $S'_{\text{einstein}}$ frame, the time interval in between two ticks of the clock is also a [[infinitesimal proper time interval in SR|proper time interval]]
 $$

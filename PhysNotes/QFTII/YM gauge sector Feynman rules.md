@@ -1,9 +1,9 @@
 # Gauge Sector. 
 
 ## Fields in components
-First we write the fields in components of the Lie algebra. In the above considerations we have assumed that the fields $A_{\mu}, F_{\mu \nu}, C$ and $\bar{C}$ are $N \times N$ hermitian matrices. In other words we have implicitly used the [[defining representation of su(n)|defining representation]] of $\mathrm{U}(N)$. We furthermore would like to restrict to traceless matrices and the corresponding group $\mathrm{SU}(N)$.
+First we write the fields in components of the Lie algebra. In the above considerations we have assumed that the fields $A_{\mu}, F_{\mu \nu}, C$ and $\bar{C}$ are $N \times N$ hermitian matrices. In other words we have implicitly used the [[../math/defining representation of su(n|defining representation]].md) of $\mathrm{U}(N)$. We furthermore would like to restrict to traceless matrices and the corresponding group $\mathrm{SU}(N)$.
 
-We would like to obtain the Feynman rules for the most general case. Therefore we write the fields $A_{\mu}^{a}$ in a basis $T_{a}$ of the Lie algebra $\mathfrak{g}$. The following relations express the matrix-valued fields in terms of the [[defining representation of su(n)|defining representation]] of $\mathrm{SU}(N)$.
+We would like to obtain the Feynman rules for the most general case. Therefore we write the fields $A_{\mu}^{a}$ in a basis $T_{a}$ of the Lie algebra $\mathfrak{g}$. The following relations express the matrix-valued fields in terms of the [[../math/defining representation of su(n|defining representation]].md) of $\mathrm{SU}(N)$.
 $$
 \begin{array}{rlrl}
 A_{\mu} & =g T_{a}^{\text {def }} A_{\mu,}^{a} & C & =g T_{a}^{\text {def }} C^{a}, \\
@@ -37,7 +37,7 @@ $$
 &=-\frac{g^{2} B^{\text {def }}}{2 g_{\mathrm{YM}}^{2}} k_{a b} F^{a, \mu v} F_{\mu v}^{b}
 \end{aligned}
 $$
-Where in the last line we used the [[structure constants#Killing form and Casimir invariant in basis|killing form in basis]]
+Where in the last line we used the [[../math/structure constants#Killing form and Casimir invariant in basis|killing form in basis]]
 In order to obtain a canonical prefactor we shall set ^[For the choice $B^{\text {def }}=1 / 2$ this would simply be $g=g_{\mathrm{YM}}$. However, we shall not fix $B^{\text {def }}$ and continue to work with $g$ instead of $g_{\mathrm{YM}}$.]
 $$
 g=\frac{g_{\mathrm{YM}}}{\sqrt{2 B^{\mathrm{def}}}} .

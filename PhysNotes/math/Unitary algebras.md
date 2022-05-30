@@ -7,12 +7,12 @@ Among the simple Lie groups, the [[special unitary group]]s $\operatorname{SU}(N
 
 
 
-Definition: [[su(n)]]
+Definition: [[n)](su(n|su(n)]].md)
 
-[[defining representation of su(n)]]
-[[tensor product of su(n)]]
-[[Young diagrams and Dynkin labels of su(n)]]
-[[completness relations in su(n)]]
-[[structure constants of su(n)]]
-[[invariants of su(n)]]
-[[su(2) and su(3)]]
+[[n)](defining representation of su(n|defining representation of su(n)]].md)
+[[n)](tensor product of su(n|tensor product of su(n)]].md)
+[[n)](../QFTII/Young diagrams and Dynkin labels of su(n|Young diagrams and Dynkin labels of su(n)]].md)
+[[n)](../QFTII/completness relations in su(n|completness relations in su(n)]].md)
+[[n)](structure constants of su(n|structure constants of su(n)]].md)
+[[n)](invariants of su(n|invariants of su(n)]].md)
+[[2) and su(3)](../QFTII/su(2|su(2) and su(3)]]%20and%20su(3).md)

@@ -25,14 +25,14 @@
         2. Spin
     2. [[electrodynamics in GR|Electrodynamics]]
 6. [[laws of general relatitivity|Einstein's field equations]]
-    1. [[Riemann Curvature Tensor]]
+    1. [[Riemann curvature tensor]]
         1. Parallel transport and the Riemann Tensor
-        2. [[Algebraic properties of the Riemann Tensor]]
+        2. [[algebraic properties of the Riemann Tensor]]
         3. The [[Ricci tensor]] and Ricci scalar
         4. The [[Bianchi identities]]
     2. The [[energy-momentum tensor in GR|energy-momentum tensor]]
     3. [[Einstein's field equations]]
-        1. [[Coordinate conditions]]
+        1. [[coordinate conditions]]
         2. Energy, momentum and angular momentum
 7. The Schwarzschild solution of Einstein's field equations
     1. Trajectories

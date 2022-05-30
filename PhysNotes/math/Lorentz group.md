@@ -25,9 +25,9 @@ alias:
 - proper, orthochronous Lorentz transformations
 tags: GR SR notation definition
 ---
-We denote it by $\mathrm{O}(1,3)$ for [[Minkowski signature#In GR]] #notation (see [[orthogonal group]])
+We denote it by $\mathrm{O}(1,3)$ for [[../String/Minkowski signature#In GR]] #notation (see [[orthogonal group]])
 
-Following the [[Lorentz transformation#Matrix Properties|matrix properties of Lorentz transformations]] we have:
+Following the [[../String/Lorentz transformation#Matrix Properties|matrix properties of Lorentz transformations]] we have:
 - $\operatorname{det} \Lambda=\pm 1$,
 - $\Lambda_{0}^{0} \geq+1$ or $\Lambda_{0}^{0} \leq-1 .$
 
@@ -45,4 +45,4 @@ When we supplement this group with translations it becomes the [[Poincaré group
 ---
 # See also
 
-[[Representations of the Lorentz group]]
+[[../Representations of the Lorentz group]]

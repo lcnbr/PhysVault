@@ -20,7 +20,7 @@ We have seen that there is almost no interaction between the left and right move
 
 This string is called the heterotic string. It has 16 supersymmetries from the left moving sector.
 
-Again, the anomaly cancellation requires a particular [[gauge symmetry]]:
+Again, the anomaly cancellation requires a particular [[../QFTII/gauge symmetry]]:
 
 - HET-O: SO(32) or
 

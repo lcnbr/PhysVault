@@ -58,7 +58,7 @@ $$
 Using the [[Free Scalar Field]] as an example we write:
 ![[Free Scalar Field#^2d84e1]]
 With the [[connected graph generating functional#In feynman graphical notation]]:
-![](file:///C:/Users/Lucien/Documents/UNI/images/image46.png)
+![[image46.png]]
 
 ## Interacting theories
 
@@ -66,7 +66,7 @@ Using the [[cubic and quartic interaction generating functional]] example we ext
 whose legs are all saturated by source fields $J$
 (monomials)
 
-![|250](file:///C:/Users/Lucien/Documents/UNI/images/image86.png)
+![[image86.png||250]]
 
 To obtain a correlation function, all sources $J$ have to be saturated by
 functional derivatives $-\iunit\delta/\delta J$ representing the fields $\Psi$

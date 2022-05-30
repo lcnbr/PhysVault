@@ -7,7 +7,7 @@ tag:
 ---
 
 Initial paper:
-[[@buonannoEffectiveOnebodyApproach1999]]
+[[../Zotero/@buonannoEffectiveOnebodyApproach1999]]
 
 Review:
-[[@buonannoSourcesGravitationalWaves2015]]
+[[../Zotero/@buonannoSourcesGravitationalWaves2015]]

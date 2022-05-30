@@ -23,14 +23,14 @@ The terms $\partial \mathcal{O}$ in this expression would be there for any opera
     - Meanwhile, the *scaling dimension* $\Delta$ of an operator is $$\Delta=h+\bar{h}$$ ^scaleingdim
 
 
-# [[Unitary]] [[conformal field theory|CFT]]
-For a unitary [[conformal field theory|CFT]] (physical, as the probabilistic interpretation yields conserved probabilities and add up to one), both $h$ and $\bar{h}$ have to be real and non-negative. Here are two examples of weights for some fields:
+# [[Unitary]] [[7 CFT/conformal field theory|CFT]]
+For a unitary [[7 CFT/conformal field theory|CFT]] (physical, as the probabilistic interpretation yields conserved probabilities and add up to one), both $h$ and $\bar{h}$ have to be real and non-negative. Here are two examples of weights for some fields:
 - $\partial X \rightarrow(1,0)$ 
 - $(\partial X)^{2} \rightarrow(2,0)$. 
 - The field $X$ does not have proper weights.
 
 # Product
-[[conformal weight|Weight]] of the products of [[local operator]]s $\mathcal{O}=\mathcal{O}_{1} \mathcal{O}_{2}$ will be:
+[[.md|Weight]] of the products of [[local operator]]s $\mathcal{O}=\mathcal{O}_{1} \mathcal{O}_{2}$ will be:
 
 - In classical theory, the sum of individual weights. 
 - In a quantum theory, weights are usually not additive, due to implicit normal ordering.
@@ -51,4 +51,4 @@ $$
 
 ^70ef67
 
-The [[conformal weight]] can be read off the [[stress-energy tensor#Stress-Energy operator product expansion OPE|T OPE]]'s second order pole!
+The [[.md|conformal weight]] can be read off the [[stress-energy tensor#Stress-Energy operator product expansion OPE|T OPE]]'s second order pole!

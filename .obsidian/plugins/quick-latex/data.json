@@ -5,7 +5,7 @@
   "autoCloseSquare_toggle": true,
   "autoCloseCurly_toggle": true,
   "addAlignBlock_toggle": true,
-  "addAlignBlock_parameter": "align*",
+  "addAlignBlock_parameter": "aligned",
   "addMatrixBlock_toggle": true,
   "addMatrixBlock_parameter": "pmatrix",
   "addCasesBlock_toggle": true,

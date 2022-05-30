@@ -11,12 +11,12 @@ $$
 $$
 This means that the end points of the string lie at some constant position, $X^{\mu}=$ $c^{\mu}$, in space.
 
-Now consider [[Compactification and T-Duality|compactification]] for open strings. Again, this is almost the same as for closed strings. However, we have no [[winding modes]] because the open string can always unwind.
+Now consider [[../5 Compactification/Compactification and T-Duality|compactification]] for open strings. Again, this is almost the same as for closed strings. However, we have no [[../winding modes]] because the open string can always unwind.
 
 ![](https://cdn.mathpix.com/cropped/2022_01_21_c2f821e442f23993db05g-3.jpg?height=94&width=617&top_left_y=1131&top_left_x=308)
 
-# [[T-Duality]]. 
-We apply [[T-Duality]] to open strings and introduce the dual field $\tilde{X}^{25}$ by the relation
+# [[../T-Duality]]. 
+We apply [[../T-Duality]] to open strings and introduce the dual field $\tilde{X}^{25}$ by the relation
 
 $$
 X^{\prime 25}=\dot{\tilde{X}}^{25}, \quad \dot{X}^{25}=\tilde{X}^{\prime 25} .
@@ -28,7 +28,7 @@ $$
 X^{\prime \mu}=0 \quad(\mu=0, \ldots, 24), \quad \dot{\tilde{X}}^{25}=0 .
 $$
 
-We obtain Dirichlet boundary condition for the dual coordinate $\tilde{X}^{25}$ while the [[Neumann boundary conditions]] remains for the remaining original coordinates $X^{\mu}$. The Dirichlet condition implies that the ends of the string are fixed to constant values in the coordinate $\tilde{X}^{25}$. This corresponds to the alternate choice of boundary e.o.m. where the variation is suppressed, $\delta \tilde{X}^{25}=0$.
+We obtain Dirichlet boundary condition for the dual coordinate $\tilde{X}^{25}$ while the [[../Neumann boundary conditions]] remains for the remaining original coordinates $X^{\mu}$. The Dirichlet condition implies that the ends of the string are fixed to constant values in the coordinate $\tilde{X}^{25}$. This corresponds to the alternate choice of boundary e.o.m. where the variation is suppressed, $\delta \tilde{X}^{25}=0$.
 
 ![](https://cdn.mathpix.com/cropped/2022_01_21_c2f821e442f23993db05g-4.jpg?height=137&width=151&top_left_y=197&top_left_x=541)
 

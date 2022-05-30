@@ -9,4 +9,4 @@ DOI:
 url: 
 
 ---
-# [Applied asymptotic expansions in momenta and masses](zotero://select/items/@smirnovAppliedAsymptoticExpansions2002)
+# [[zotero://select/items/@smirnovAppliedAsymptoticExpansions2002|Applied asymptotic expansions in momenta and masses]]

@@ -10,7 +10,7 @@ Alias:
 ---
 # Ramond-Neveu-Schwarz Superstring
 
-There is an alternative formulation for the superstring: the so-called Ramond-NeveuSchwarz (RNS) superstring. This formulation has manifest [[Ramond-Neveu-Schwarz Superstring|worldsheet Supersymmetry]] while  [[Green-Schwarz Superstring|spacetime supersymmetry]] is obscured.
+There is an alternative formulation for the superstring: the so-called Ramond-NeveuSchwarz (RNS) superstring. This formulation has manifest [[.md|worldsheet Supersymmetry]] while  [[Green-Schwarz Superstring|spacetime supersymmetry]] is obscured.
 
 # Action. 
 The action of the RNS superstring in conformal gauge consists of the real bosonic scalar fields $X^{\mu}$ and a pair of real fermionic spinors of either chirality $\Psi_{\mathrm{L}, \mathrm{R}}^{\mu}$

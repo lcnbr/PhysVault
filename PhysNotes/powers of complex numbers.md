@@ -47,5 +47,5 @@ $$
 but the general value of $\mathrm{e}^{z}$ is
 
 $$
-\mathrm{e}^{z}=(\exp z) \exp (2 k z \pi \iunit)
+\mathrm{e}^{z}=(\exp z) \exp (2 k z \pi iu)
 $$

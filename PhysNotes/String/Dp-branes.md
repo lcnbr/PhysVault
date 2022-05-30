@@ -12,14 +12,14 @@ alias:
 
 - D $p$-branes are $(p+1)$-dimensional submanifold of spacetime.
 - The submanifold includes the time direction, it has signature $(p, 1)$.
-- [[Dirichlet boundary conditions|Dirichlet conditions]] for the $D-p-1$ orthogonal directions of the submanifold.
+- [[6 Open strings and D/Dirichlet boundary conditions|Dirichlet conditions]] for the $D-p-1$ orthogonal directions of the submanifold.
 - [[Neumann boundary conditions|Neumann conditions]] along the remaining $p+1$ directions along the submanifold.
-- [[Dp-branes|D-branes]] can be curved submanifolds. 
-- Open strings with pure [[Neumann boundary conditions|Neumann conditions]] can be viewed as a spacetime-filling $\mathrm{D}(D-1)$-[[Dp-branes|brane]].
-- [[T-Duality]] maps between $\mathrm{D} p$-[[Dp-branes|branes]] and $\mathrm{D}(p \pm 1)$-[[Dp-branes|branes]].
+- [[.md|D-branes]] can be curved submanifolds. 
+- Open strings with pure [[Neumann boundary conditions|Neumann conditions]] can be viewed as a spacetime-filling $\mathrm{D}(D-1)$-[[.md|brane]].
+- [[T-Duality]] maps between $\mathrm{D} p$-[[.md|branes]] and $\mathrm{D}(p \pm 1)$-[[.md|branes]].
 
-Strings propagate on backgrounds with [[Dp-branes|D-branes]]:
+Strings propagate on backgrounds with [[.md|D-branes]]:
 - The bulk spacetime curvature governs the propagation of the string bulk,
-- [[Dp-branes|D-branes]] govern the propagation of string ends.
+- [[.md|D-branes]] govern the propagation of string ends.
 
-There is even more to [[Dp-branes|D-branes]] as non-perturbative objects: We will continue this discussion later.
+There is even more to [[.md|D-branes]] as non-perturbative objects: We will continue this discussion later.

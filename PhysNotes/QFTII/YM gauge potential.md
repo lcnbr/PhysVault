@@ -8,7 +8,7 @@ A_{\mu}^{\prime}=U A_{\mu} U^{-1}+i U\left(\partial_{\mu} U^{-1}\right)
 $$
 
 
-This shows that the gauge potential itself must be an $N \times N$ matrix. However, we can restrict it further by imposing a reality condition. The reality condition must be compatible with the gauge transformation rule. We make use of the [[unitary matrix|unitary properties]] of $U$ and write the transformation of the hermitian conjugate of the potential $A^{\mu}$
+This shows that the gauge potential itself must be an $N \times N$ matrix. However, we can restrict it further by imposing a reality condition. The reality condition must be compatible with the gauge transformation rule. We make use of the [[../math/unitary matrix|unitary properties]] of $U$ and write the transformation of the hermitian conjugate of the potential $A^{\mu}$
 $$
 \left(A_{\mu}^{\prime}\right)^{\dagger}=U A_{\mu}^{\dagger} U^{-1}-i\left(\partial_{\mu} U\right) U^{-1} .
 $$

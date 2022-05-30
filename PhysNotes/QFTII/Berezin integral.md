@@ -48,8 +48,8 @@ $$
 $$
 
 
-The so-called [[Berezin integral]] over  [[Grassmann variables#Grassmann odd numbers|odd Graßmann variables]] behaves in many other respects
+The so-called [[.md|Berezin integral]] over  [[Grassmann variables#Grassmann odd numbers|odd Graßmann variables]] behaves in many other respects
 like the standard bosonic integral.
 For the path integral in quantum field theory,
-the most important concepts are [[Fourier integrals for odd Grassmann numbers|Fourier integrals]], [[delta function for odd Grassmann numbers|delta functions]]
+the most important concepts are [[Fourier integrals for odd Grassmann numbers|Fourier integrals]], [[../math/delta function for odd Grassmann numbers|delta functions]]
  and [[Gaussian integrals for odd Grassmann numbers|Gaußian integrals]]. 

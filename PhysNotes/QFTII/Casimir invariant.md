@@ -3,7 +3,7 @@ alias:
 tags:
 - qftII
 ---
-The [[Killing form]] of a [[semi-simple Lie group|semi-simple]] [[Lie algebras|Lie algebra]] is invertible. Therefore there is a corresponding invariant element $C_{2} \in \mathfrak{g} \otimes \mathfrak{g}$ called the Casimir invariant. Thought of as a matrix, $C_{2}$ is the inverse of the [[Killing form]] $K \in \mathfrak{g}^{*} \otimes \mathfrak{g}^{*}$. It obeys the invariance property for all $a \in \mathfrak{g}$
+The [[../math/Killing form]] of a [[../math/semi-simple Lie group|semi-simple]] [[../math/Lie algebras|Lie algebra]] is invertible. Therefore there is a corresponding invariant element $C_{2} \in \mathfrak{g} \otimes \mathfrak{g}$ called the Casimir invariant. Thought of as a matrix, $C_{2}$ is the inverse of the [[../math/Killing form]] $K \in \mathfrak{g}^{*} \otimes \mathfrak{g}^{*}$. It obeys the invariance property for all $a \in \mathfrak{g}$
 $$
 (\operatorname{ad}(a) \otimes \mathrm{id}+\mathrm{id} \otimes \operatorname{ad}(a)) C_{2}=0 .
 $$
@@ -17,7 +17,7 @@ The above invariance condition then reads for all $a \in \mathfrak{g}$
 $$
 \left[R(a), R\left(C_{2}\right)\right]=0 .
 $$
-By a version of Schur's lemma for [[Lie algebras]], this implies that **an irreducible representation of $C_{2}$ is necessarily proportional to the identity operator**
+By a version of Schur's lemma for [[../math/Lie algebras]], this implies that **an irreducible representation of $C_{2}$ is necessarily proportional to the identity operator**
 $$
 R\left(C_{2}\right)=C_{2}^{R} \mathrm{id}^{R} .
 $$

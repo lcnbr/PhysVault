@@ -4,7 +4,7 @@ alias:
 ---
 # source term in the action
 
-We can always add this [[source term in the action|source term]] in the [[Action|action]]:
+We can always add this [[.md|source term]] in the [[../AnalyticalMech/Action|action]]:
 \footnote{The field $J(x)$ is the same source field
 as discussed in QFT I in connection to propagators.}
 
@@ -16,7 +16,7 @@ $$
 ## Functional derivative
 This source term has the simple property
 that a [[functional derivative]] w.r.t.\ the source $J(x)$
-produces precisely the [[Field|field]] $\Psi(x)$ at the same location
+produces precisely the [[../AnalyticalMech/Field|field]] $\Psi(x)$ at the same location
 
 $$
 \frac{\delta S_\text{src}[\Psi,J]}{\delta J(x)}

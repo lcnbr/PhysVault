@@ -8,9 +8,9 @@ tags:
 >
 > [Wikipedia](https://en.wikipedia.org/wiki/Wick%20rotation)
 
-Wick rotation is motivated by the observation that the [Minkowski metric](https://en.wikipedia.org/wiki/Minkowski_metric "Minkowski metric") in natural units (with [metric signature](https://en.wikipedia.org/wiki/Metric_signature "Metric signature") (−1, +1, +1, +1) [[Conventions]])
+Wick rotation is motivated by the observation that the [Minkowski metric](https://en.wikipedia.org/wiki/Minkowski_metric "Minkowski metric") in natural units (with [metric signature](https://en.wikipedia.org/wiki/Metric_signature "Metric signature") (−1, +1, +1, +1) [[1 Intro and Motivation/1.1 Point to string/Conventions]])
 
-![{\displaystyle ds^{2}=-\left(dt^{2}\right)+dx^{2}+dy^{2}+dz^{2}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/04dc2ca3d71d46992aa7d4e07865f5fd47a22fc5)
+![[dt^{2}\right)+dx^{2}+dy^{2}+dz^{2}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/04dc2ca3d71d46992aa7d4e07865f5fd47a22fc5|{\displaystyle ds^{2}=-\left(dt^{2}\right)+dx^{2}+dy^{2}+dz^{2}}]]
 
 and the four-dimensional Euclidean metric
 
@@ -18,8 +18,8 @@ and the four-dimensional Euclidean metric
 
 are equivalent if one permits the coordinate t to take on [imaginary](https://en.wikipedia.org/wiki/Imaginary_number "Imaginary number") values. The Minkowski metric becomes Euclidean when t is restricted to the [imaginary axis](https://en.wikipedia.org/wiki/Imaginary_number "Imaginary number"), and vice versa. Taking a problem expressed in Minkowski space with coordinates x, y, z, t, and substituting _t_ = −_iτ_ sometimes yields a problem in real Euclidean coordinates x, y, z, τ which is easier to solve. This solution may then, under reverse substitution, yield a solution to the original problem.
 
-# In [[conformal field theory|CFT]]
-In the context of [[conformal field theory]], the [[worldsheet]] is conventionally taken to have [[euclidean signature]]. In order to get there, perform the [[Wick rotation]] $\tau=-i \tilde{\tau}$ (now $\tilde{\tau}$ is real) and define
+# In [[7 CFT/conformal field theory|CFT]]
+In the context of [[7 CFT/conformal field theory]], the [[worldsheet]] is conventionally taken to have [[euclidean signature]]. In order to get there, perform the [[.md|Wick rotation]] $\tau=-i \tilde{\tau}$ (now $\tilde{\tau}$ is real) and define
 
 $$
 \exp \left(i \xi^{\mathrm{L}}\right)=\exp (\tilde{\tau}-i \sigma)=: \bar{z}, \quad \exp \left(i \xi^{\mathrm{R}}\right)=\exp (\tilde{\tau}+i \sigma)=: z .
@@ -33,7 +33,7 @@ The radius $|z|$ denotes the exponential euclidean time $\tilde{\tau}$, while $\
 ## [[worldsheet#Embedding]]
 
 
-[[Polyakov action#^b37d90|Splitting of the string coordinates]] into a [[light cone coordinates#In the worldsheet|right and a left part]] is replaced by considering a holomorphic and a anti-holomorphic part:
+[[3 Classical Bosonic String/Polyakov action#^b37d90|Splitting of the string coordinates]] into a [[light cone coordinates#In the worldsheet|right and a left part]] is replaced by considering a holomorphic and a anti-holomorphic part:
 
 $$
 X(z, \bar{z})=X(z)+\bar{X}(\bar{z}) \text {. }

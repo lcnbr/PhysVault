@@ -8,9 +8,9 @@ S_\text{int}[\Psi]
 -\frac{1}{24}\lambda \,\Psi^4
 $$
 
-In a graphical notation we could represent this as^[To distinguish propagators from direct connections on the board, could use double linfor propagator or use dashed line for direct connection.], where we used [[Feynman graphical notation#Functional derivative]]
+In a graphical notation we could represent this as^[[Feynman graphical notation#Functional derivative]]
 
-![|300](file:///C:/Users/Lucien/Documents/UNI/images/image70.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image70.png||300]]
 
 where we have made the dependence on the
 coupling constants $\kappa$ and $\lambda$ explicit
@@ -63,7 +63,7 @@ We can also perform the calculation using diagrams.
 We already understand the free generating functional $Z_0[J]$.
 It can be [[graph generating functional#In a free theory|viewed as a bag of arbitrarily many propagators]]
 
-![|400](file:///C:/Users/Lucien/Documents/UNI/images/image89.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image89.png||400]]
 
 
 For the second term,
@@ -91,7 +91,7 @@ $$ \begin{align}
 
 or graphically
 
-![|400](file:///C:/Users/Lucien/Documents/UNI/images/image93.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image93.png||400]]
  
 
 Let us finally consider two cubic vertices
@@ -105,8 +105,8 @@ $$
 We can start with the single cubic vertex as intermediate result
 
 
-![|250](file:///C:/Users/Lucien/Documents/UNI/images/image83.png)
-![|400](file:///C:/Users/Lucien/Documents/UNI/images/image81.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image83.png||250]]
+![[file:///C:/Users/Lucien/Documents/UNI/images/image81.png||400]]
 
 
  

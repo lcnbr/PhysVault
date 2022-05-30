@@ -14,7 +14,7 @@ $$S_\text{f,i}[q,p]=\int_{t_\text{i}}^{t_\text{f}} \dd {t}\qty(p(t)\dot q(t)-H(q
 
 ^46a265
 
-This form is exciting, it is precisely the action in phase space, whose associated [[Euler-Lagrange equations]], are just the [[Hamiltonian#Hamilton's equations|Hamitonian equations of motion]] 
+This form is exciting, it is precisely the action in phase space, whose associated [[../AnalyticalMech/Euler-Lagrange equations]], are just the [[../AnalyticalMech/Hamiltonian#Hamilton's equations|Hamitonian equations of motion]] 
 
 When quantum corrections are taking into account, the allowable paths can wiggle around the classical trajectory slightly, on the order of $\hbar$.
 

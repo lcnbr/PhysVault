@@ -4,8 +4,8 @@ alias:
 - equations of motion
 tags: GR SR
 ---
-See also [[relativistic particle]]
-We can directly generalize the equations of classical mechanics so that they can be consistent with [[Lorentz transformation|Lorentz transformations]]. We introduce a relativistic force
+See also [[../String/2 Point particle actions/2.1 non-rel to rel/relativistic particle]]
+We can directly generalize the equations of classical mechanics so that they can be consistent with [[../String/Lorentz transformation|Lorentz transformations]]. We introduce a relativistic force
 $$
 
 f^{\mu}=m \frac{\mathrm{d}^{2} x^{\mu}}{\mathrm{d} \tau^{2}}
@@ -27,7 +27,7 @@ f_{\text {rest }}^i=m \frac{\mathrm{d}^{2} x^i}{\mathrm{~d} \tau^{2}}=m \frac{\m
 $$
 ^fresti
 
-Let us now look at what happens in the frame where the particle has an instantaneous velocity $\vec{v}$. we use a [[Lorentz transformation#^boost|Lorentz boost]]
+Let us now look at what happens in the frame where the particle has an instantaneous velocity $\vec{v}$. we use a [[../String/Lorentz transformation#^boost|Lorentz boost]]
 $$
 f^{\mu}=\underbracket{\Lambda^{\mu}{ }_\nu(\vec{v})}_{\text {boost }} f^\nu_{\text {rest }},
 $$
@@ -76,7 +76,7 @@ m \frac{\mathrm{d}}{\mathrm{d} \tau}\left(\eta_{\mu \nu} \frac{\mathrm{d} x^{\mu
 & \equiv K(x)
 \end{aligned}
 $$
-Notice that $K(x)$ is invariant under [[Lorentz transformation|Lorentz transformations]]. Indeed,
+Notice that $K(x)$ is invariant under [[../String/Lorentz transformation|Lorentz transformations]]. Indeed,
 $$
 \begin{aligned}
 

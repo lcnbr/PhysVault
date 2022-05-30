@@ -10,7 +10,7 @@ $$ B(x,y) = \int_0^1 t^{x-1}(1-t)^{y-1}\,dt$$
 
 for [[complex number]] inputs$x,y$ such that $\mathrm{Re}(x)>0, ~\mathrm{Re}(y)>0$.
 
-The beta function was studied by [[Leonhard Euler|Euler]] and [[Adrien-Marie Legendre|Legendre]] and was given its name by [[Jacques Philippe Marie Binet|Jacques Binet]]; its symbol $B$ is a [[Greek alphabet|Greek]] capital [[Beta (letter)|beta]].
+The beta function was studied by [[Leonhard Euler|Euler]] and [[Adrien-Marie Legendre|Legendre]] and was given its name by [[Jacques Philippe Marie Binet|Jacques Binet]]; its symbol $B$ is a [[Greek alphabet|Greek]] capital [[Beta (letter|beta]]).
 
 # Properties
 The beta function is [[symmetric function|symmetric]], meaning that

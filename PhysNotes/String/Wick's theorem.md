@@ -6,7 +6,7 @@ alias:
 ---
 If we can find an algorithm for turning a [[time-ordered|time ordered]] product of operators into a [[normal-ordered]] product of those operators, plus perhaps some c-number terms, we will have gone a long way in making the successive terms of this perturbation expansion easier to compute, and minimizing the amount of operator algebra we have to play with.
 
-We need  [[contractions]]
+We need  [[../QFTII/contractions]]
 
 
 $\require{physics} \op{a}{b}$

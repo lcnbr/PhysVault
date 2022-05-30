@@ -3,7 +3,7 @@
 In a quantum theory, one is usually interested in the spectrum of [[operators]], which in our situation is just the [[string spectrum]]. Furthermore, one would like to calculate probabilities, which in turn can be derived from expectation values of operators acting on states. 
 
 In a [[quantum field theory]], there are two formulations available for calculating the [[vacuum expectation values]]. 
-- Starting from [[momentum eigenstate]], the [[S-matrix]] describing the scattering of particles is defined via
+- Starting from [[../QFTII/momentum eigenstate]], the [[S-matrix]] describing the scattering of particles is defined via
 $$
 \left\langle\vec{q}_{1}, \vec{q}_{2}, \ldots|S| \vec{p}_{1}, \vec{p}_{2}, \ldots\right\rangle=\left\langle 0\left|a\left(\vec{q}_{1}\right) a\left(\vec{q}_{2}\right) \ldots S \ldots a^{\dagger}\left(\vec{p}_{2}\right) a^{\dagger}\left(\vec{p}_{1}\right)\right| 0\right\rangle
 $$
@@ -23,7 +23,7 @@ $$
 \end{aligned}
 $$
 
-Is it possible, to produce the same answer from the [[worldsheet]] [[conformal field theory|CFT]]? In order to answer this question, let us first consider which properties the corresponding [[CFT 2-correlator]] should have: ![[CFT 2-correlator#^191134]]
+Is it possible, to produce the same answer from the [[worldsheet]] [[7 CFT/conformal field theory|CFT]]? In order to answer this question, let us first consider which properties the corresponding [[CFT 2-correlator]] should have: ![[CFT 2-correlator#^191134]]
 
 # Wick Rotation. 
 ![[Wick rotation#In conformal field theory CFT]]

@@ -16,7 +16,7 @@ $$
 Calculating the OPE with the stress-energy tensor $T$
 
 $$
-T(z) \mathcal{O}[q](w, \bar{w})=\frac{\frac{1}{4} \kappa^{2} q^{2} \mathcal{O}[q](w, \bar{w})}{(z-w)^{2}}+\frac{\partial \mathcal{O}[q](w, \bar{w})}{z-w}+\ldots
+T(z) \mathcal{O}[[w, \bar{w}|q]]=\frac{\frac{1}{4} \kappa^{2} q^{2} \mathcal{O}[[w, \bar{w}|q]]}{(z-w)^{2}}+\frac{\partial \mathcal{O}[[w, \bar{w}|q]]}{z-w}+\ldots
 $$
 (Exercise 8.1) singles out a [[primary operator#From OPE]] with [[conformal weight#From operator product expansion OPE|weights]] $\left(\frac{1}{4} \kappa^{2} q^{2}, \frac{1}{4} \kappa^{2} q^{2}\right)$.
 
@@ -40,10 +40,10 @@ $$
 \left\langle\mathcal{O}_{1}\left[q_{1}\right] \mathcal{O}_{2}\left[q_{2}\right]\right\rangle \simeq \frac{\delta^{D}\left(q_{1}+q_{2}\right)}{\left|z_{1}-z_{2}\right|^{\kappa^{2} q_{1}^{2}}}
 $$
 
-The operator $\mathcal{O}[q](z, \bar{z})$ creates a string state at the [[worldsheet]] location $(z, \bar{z})$. The [[worldsheet]] location is unphysical, hence integrate over all potential insertion points:
+The operator $\mathcal{O}[[z, \bar{z}|q]]$ creates a string state at the [[worldsheet]] location $(z, \bar{z})$. The [[worldsheet]] location is unphysical, hence integrate over all potential insertion points:
 
 $$
-V[q]=g_{\mathrm{s}} \int \mathrm{d} z^{2} \mathcal{O}[q](z, \bar{z})
+V[[z, \bar{z}|q]]
 $$
 
 Importantly, one can only integrate weight- $(1,1)$ primary operators: a scaling transformation of the integration variables needs to be compensated by a scaling transformation of the primary operator. Unless the two resulting factors compensate, the integral must be zero or ill-defined.
@@ -66,7 +66,7 @@ $$
 - Primary condition removes unphysical polarisations, e.g.
 
 $$
-T(z) \partial X^{\mu}(w) \mathcal{O}[q](w, \bar{w}) \sim \frac{q^{\mu} \mathcal{O}[q]}{(z-w)^{3}}+\ldots
+T(z) \partial X^{\mu}(w) \mathcal{O}[[w, \bar{w}|q]] \sim \frac{q^{\mu} \mathcal{O}[q]}{(z-w)^{3}}+\ldots
 $$
 
 - Gauge d.o.f. are total derivatives
@@ -79,9 +79,9 @@ We obtain the following vertex operator picture:
 
 - CFT vacuum is empty [[worldsheet]] (genus 0 , no punctures).
 
-- $\int \mathrm{d} z^{2} \mathcal{O}[q](z, \bar{z})$ is string vacuum $|0 ; q\rangle$ (add puncture).
+- $\int \mathrm{d} z^{2} \mathcal{O}[[z, \bar{z}|q]]$ is string vacuum $|0 ; q\rangle$ (add puncture).
 
-- $\int \mathrm{d} z^{2} \ldots \mathcal{O}[q](z, \bar{z})$ are excited string states.
+- $\int \mathrm{d} z^{2} \ldots \mathcal{O}[[z, \bar{z}|q]]$ are excited string states.
 
 - Insertions of $\partial^{n} X^{\mu}$ correspond to string oscillators $\alpha_{n}^{\mu}$; insertions of $\bar{\partial}^{n} X^{\mu}$ correspond to $\bar{\alpha}_{n}^{\mu}$.
 ![](https://cdn.mathpix.com/cropped/2022_01_21_c033a2aa489843817853g-3.jpg?height=166&width=424&top_left_y=608&top_left_x=404)

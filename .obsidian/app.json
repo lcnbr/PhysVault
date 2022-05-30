@@ -10,11 +10,17 @@
   "useTab": false,
   "readableLineLength": true,
   "showUnsupportedFiles": true,
-  "strictLineBreaks": false,
+  "strictLineBreaks": true,
   "showLineNumber": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "PhysNotes",
   "attachmentFolderPath": "Attachements",
   "fileSortOrder": "alphabetical",
-  "defaultViewMode": "preview"
+  "defaultViewMode": "preview",
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

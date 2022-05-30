@@ -1,8 +1,8 @@
-# Compactification and [[T-Duality]]
-The [[closed string spectrum]] contains one [[tachyon|tachyonic scalar particle]] (due to wrong vacuum), a [[graviton]] and a few [[dilaton|other]] massless particles as well as a [[closed string spectrum#Higher Levels|tower of particles]] of increasing mass, which are practically inaccessible due to Planck scale masses. While this sounds very promising, quantum consistency of the string required $D=26$ dimensions - by far more than we observer in reality. In particular, Gauss' law predicts that the gravitational force $F$ decays with a high power of the distance $r$ namely $F \sim 1 / A \sim 1 / r^{24}$ instead of the observed $F \sim 1 / r^{2}$ behaviour. In other words, if we would have 26 dimensions, we would experience a completely different (weaker) behaviour of the gravitational force.
-A possible solution to this problem is to consider some of the dimensions as small and compact (e.g. circular) dimensions. We would like to compactify 22 spatial dimensions to a microscopic size. Correspondingly, large distances will exist along the four remaining [[spacetime]] dimensions only. For sufficiently small compactification radii, the compact dimensions are almost unobservable, but will influence the effective mas spectrum in the four uncompactified dimensions.
-![[Kaluza-Klein Modes]]
-![[winding modes]]
-![[Mass spectrum in compactified theories]]
-![[T-Duality]]
-![[general compactifications]]
+# Compactification and [[../T-Duality]]
+The [[../4 String Quantisation/closed string spectrum]] contains one [[../../QFTII/tachyon|tachyonic scalar particle]] (due to wrong vacuum), a [[../graviton]] and a few [[dilaton|other]] massless particles as well as a [[../4 String Quantisation/closed string spectrum#Higher Levels|tower of particles]] of increasing mass, which are practically inaccessible due to Planck scale masses. While this sounds very promising, quantum consistency of the string required $D=26$ dimensions - by far more than we observer in reality. In particular, Gauss' law predicts that the gravitational force $F$ decays with a high power of the distance $r$ namely $F \sim 1 / A \sim 1 / r^{24}$ instead of the observed $F \sim 1 / r^{2}$ behaviour. In other words, if we would have 26 dimensions, we would experience a completely different (weaker) behaviour of the gravitational force.
+A possible solution to this problem is to consider some of the dimensions as small and compact (e.g. circular) dimensions. We would like to compactify 22 spatial dimensions to a microscopic size. Correspondingly, large distances will exist along the four remaining [[../../QFTII/spacetime]] dimensions only. For sufficiently small compactification radii, the compact dimensions are almost unobservable, but will influence the effective mas spectrum in the four uncompactified dimensions.
+![[../Kaluza-Klein Modes]]
+![[../winding modes]]
+![[../Mass spectrum in compactified theories]]
+![[../T-Duality]]
+![[../general compactifications]]

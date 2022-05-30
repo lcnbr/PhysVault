@@ -46,7 +46,7 @@ $$
 
 ^contEq
 
-The continuity equation implies the conservation of charge. Indeed just as in [[Noether's theorem]]
+The continuity equation implies the conservation of charge. Indeed just as in [[../QFTII/Noether's theorem]]
 $$
 \dv{ Q}{ t}=\dv{}{ t} \int  \dd[3]{x} J^{0}(\vec{x})=\int  \dd[3]{x} \dv{}{ t} J^{0}(\vec{x})=-\int  \dd[3]{x} \vec{\nabla} \cdot \vec{J}(\vec{x}) \underset{\text { Gauss }}{=} 0 .
 $$
@@ -64,7 +64,7 @@ $$
 
 ^current4vec
 
-Under a [[Lorentz transformation]]
+Under a [[../String/Lorentz transformation]]
 $$
 \begin{aligned}
 (J^\mu)' &=\sum_n q_n \int  \dd{\tau} \dv{ (x_n^{ \mu})'}{ \tau} \delta^{(4)}\left(x^{\prime \mu}-x_n^{\prime \mu}(\tau)\right) \\
@@ -73,4 +73,4 @@ $$
 &=\Lambda^{\mu}{}_{\nu} J^{\nu}
 \end{aligned}
 $$
-Where we used [[delta function#Composition with a function]]. Note that for [[general coordinate transformation|general coordinate transformations]] the determinant of the Jacobian is not one and current [[densities]] transform differently than vectors.
+Where we used [[../math/delta function#Composition with a function]]. Note that for [[general coordinate transformation|general coordinate transformations]] the determinant of the Jacobian is not one and current [[densities]] transform differently than vectors.

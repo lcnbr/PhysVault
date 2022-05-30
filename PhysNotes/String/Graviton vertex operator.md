@@ -3,7 +3,7 @@
 As a starting point, let us compare the [[graviton]] as a string excitation and as an perturbation of the background metric. The [[graviton]] is supposed to have momentum $q$ and polarisation tensor $\epsilon_{\mu \nu}$.
 
 # Vertex Operator Construction. 
-The [[graviton]] is represented by the [[closed string spectrum#^45d063]] with  [[closed string spectrum#^57efbd]]
+The [[graviton]] is represented by the [[4 String Quantisation/closed string spectrum#^45d063]] with  [[4 String Quantisation/closed string spectrum#^57efbd]]
 
 $$
 |\epsilon ; q\rangle=\epsilon_{\mu \nu}\left(\alpha_{-1}^{\mathrm{L}, \mu} \alpha_{-1}^{\mathrm{R}, \nu}+\alpha_{-1}^{\mathrm{L}, \nu} \alpha_{-1}^{\mathrm{R}, \mu}\right)|0 ; q\rangle .
@@ -18,7 +18,7 @@ $$
 \end{aligned}
 $$
 
-where in the second line the [[intrinsic worldsheet metric]] has been restored in order to make the expression valid outside [[conformal gauge]].
+where in the second line the [[intrinsic worldsheet metric]] has been restored in order to make the expression valid outside [[3 Classical Bosonic String/conformal gauge]].
 
 Insertion of the vertex operator into the string [[worldsheet]] yields the expression
 
@@ -33,7 +33,7 @@ $$
 G_{\mu \nu}(x)=\eta_{\mu \nu}+\epsilon_{\mu \nu} \mathrm{e}^{i q \cdot x}+\ldots
 $$
 
-The coupling of strings to generic background is straight-forward by the replacement $\eta_{\mu \nu} \rightarrow$ $G_{\mu \nu}$ in the [[Polyakov action#^2638f6|worldsheet action]] 
+The coupling of strings to generic background is straight-forward by the replacement $\eta_{\mu \nu} \rightarrow$ $G_{\mu \nu}$ in the [[3 Classical Bosonic String/Polyakov action#^2638f6|worldsheet action]] 
 
 $$
 S=-\frac{1}{2 \pi \kappa^{2}} \int \mathrm{d} \xi^{2} \sqrt{-\operatorname{det} g} g^{\alpha \beta} \frac{1}{2} G_{\mu \nu}(X) \partial_{\alpha} X^{\mu} \partial_{\beta} X^{\nu} .

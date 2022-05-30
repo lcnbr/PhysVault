@@ -7,7 +7,7 @@ alias:
 
 # Operator Product Expansion
 
-In a [[conformal field theory|CFT]] we wish to compute [[correlation functions]]
+In a [[7 CFT/conformal field theory|CFT]] we wish to compute [[correlation functions]]
 
 $$
 \left\langle\mathcal{O}_{1}\left(\xi_{1}\right) \mathcal{O}_{2}\left(\xi_{2}\right) \ldots \mathcal{O}_{n}\left(\xi_{n}\right)\right\rangle=F_{12 \ldots n}
@@ -34,9 +34,9 @@ $$
 \left\langle\mathcal{O}_{1}\left(\xi_{1}\right) \mathcal{O}_{2}\left(\xi_{2}\right) \ldots\right\rangle=\sum_{i} C_{12}^{i}\left(\xi_{2}-\xi_{1}\right)\left\langle\mathcal{O}_{i}\left(\xi_{1}\right) \ldots\right\rangle
 $$
 
-This statement is called *[[operator product expansion]]* (OPE), where $C_{i j}^{k}\left(\xi_{2}-\xi_{1}\right)$ are called *structure constants* and *conformal blocks*. The sum extends over all [[Local Operators]] (including [[descendants]]).
+This statement is called *[[.md|operator product expansion]]* (OPE), where $C_{i j}^{k}\left(\xi_{2}-\xi_{1}\right)$ are called *structure constants* and *conformal blocks*. The sum extends over all [[Local Operators]] (including [[../math/descendants]]).
 
-This is a very powerful idea: every (non-local) operator can be written as an expansion in [[Local Operators]]. This statement is analogous to the multipole expansion of electrodynamics. The formalism works exactly in any [[conformal field theory|CFT]] and is a central tool.
+This is a very powerful idea: every (non-local) operator can be written as an expansion in [[Local Operators]]. This statement is analogous to the multipole expansion of electrodynamics. The formalism works exactly in any [[7 CFT/conformal field theory|CFT]] and is a central tool.
 
 # Higher Points. 
 Formally, one can compute higher-point correlation functions:
@@ -51,7 +51,7 @@ $$
 \left\langle\mathcal{O}_{i}\right\rangle=0, \quad\langle 1\rangle=1 .
 $$
 
-Higher-point functions can thus be reduced to a sequence of structure constants $C_{i j}^{k}$. This is a vast simplification: one needs only $C_{i j}^{k}$ in order to describe correlators in [[conformal field theory|CFT]]. In practice, the structure constants are hard to compute and moreover the result of a single OPE are infinitely many [[Local Operators]]. Superficially, the result seems to depend on the sequence of reducing correlators using OPE's. This is of course not true because the structure constants are special quantities which obey crossing relations that ensure independence of the way the correlator is decomposed. 
+Higher-point functions can thus be reduced to a sequence of structure constants $C_{i j}^{k}$. This is a vast simplification: one needs only $C_{i j}^{k}$ in order to describe correlators in [[7 CFT/conformal field theory|CFT]]. In practice, the structure constants are hard to compute and moreover the result of a single OPE are infinitely many [[Local Operators]]. Superficially, the result seems to depend on the sequence of reducing correlators using OPE's. This is of course not true because the structure constants are special quantities which obey crossing relations that ensure independence of the way the correlator is decomposed. 
 
 # Lower Points. 
 one-point function, is trivial except for the unit operator 1
@@ -72,7 +72,7 @@ $$
 
 Lower-point functions are restricted tightly by [[conformal invariance|conformal symmetry]]:
 
-- Two-point function are non-trivial only for operators related by [[conformal invariance|conformal symmetry]] ([[descendants]]).
+- Two-point function are non-trivial only for operators related by [[conformal invariance|conformal symmetry]] ([[../math/descendants]]).
 - Non-trivial three-point functions exist for three unrelated operators.
 
 [[conformal invariance|Conformal symmetry]] allows to map a triple of points to any other triple of points. Consequently, there are no conformally invariant functions depending on the positions of two or three points only: the correlator will always contain quantities like the scaling weight etc.. This implies the following form for correlation functions:
@@ -91,7 +91,7 @@ with scaling weights $\Delta_{i j}=\Delta_{i}+\Delta_{j}-\Delta_{k}$. The numera
 
 - Higher-point functions can depend on the available conformally invariant cross ratios in an arbitrary fashion.
 
-Once one has chosen a normalisation for operators, the data in a [[conformal field theory|CFT]] consists of
+Once one has chosen a normalisation for operators, the data in a [[7 CFT/conformal field theory|CFT]] consists of
 
 - [[conformal weight#^scaleingdim|scaling dimension]] along with the [[conformal weight#^confspin|spins]] of the [[Local Operators]]: this gives us the spectrum!,
 - coefficients of three-point function: structure constants.

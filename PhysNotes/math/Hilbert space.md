@@ -6,4 +6,4 @@ A Hilbert space is a (real or, usually, complex) [[inner product]] space, possib
 Hilbert spaces are central to quantum physics and specifically to quantum mechanics, where they serve as spaces of pure states.
 
 # Definition
- a Hilbert space is simply a vector space equipped with a [[(semi)definiteness#^complete|complete]] [[(semi)definiteness#^posdef|positive definite]]  [[inner product]].
+ a Hilbert space is simply a vector space equipped with a [[(semi]]definiteness.md#^complete%7Ccomplete) [[(semi]]definiteness.md#^posdef%7Cpositive%20definite)  [[inner product]].

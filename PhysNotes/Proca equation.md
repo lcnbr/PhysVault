@@ -3,7 +3,7 @@ alias:
 tag:
 ---
 
-Written in terms of $F_{\mu \nu}$, the [[Euler-Lagrange equations]] of [[vector lagrangian#^freeVectLag]] are
+Written in terms of $F_{\mu \nu}$, the [[AnalyticalMech/Euler-Lagrange equations]] of [[QFT/vector lagrangian#^freeVectLag]] are
 $$
 \partial^{\mu} F_{\nu \mu}-\mu^{2} A_{\nu}=0
 $$

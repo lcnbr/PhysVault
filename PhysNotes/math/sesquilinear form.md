@@ -11,7 +11,7 @@ tags:
 - qftII
 - LA
 ---
-Let $V$ be a vector space over the field $\mathbb{C}$. (One can generalise the choice of field somewhat.) A [[sesquilinear form]] (in the most general, possibly indefinite, sense) on $V$ is a function
+Let $V$ be a vector space over the field $\mathbb{C}$. (One can generalise the choice of field somewhat.) A [[.md|sesquilinear form]] (in the most general, possibly indefinite, sense) on $V$ is a function
 $$
 \phi: V \times V \rightarrow \mathbb{C}
 $$
@@ -33,7 +33,7 @@ that is (1-3) sesquilinear:
     
 # Matrix form
 
-If $V$ is a finite-dimensional complex vector space, then relative to any basis $\left\{e_{i}\right\}_{i}=\mathcal{B}$ of $V$, a [[sesquilinear form]] $\phi$ is represented by a matrix $[\phi]$,
+If $V$ is a finite-dimensional complex vector space, then relative to any basis $\left\{e_{i}\right\}_{i}=\mathcal{B}$ of $V$, a [[.md|sesquilinear form]] $\phi$ is represented by a matrix $[\phi]$,
 $$
 \phi(\vec{w},\vec{z})=\phi(w^ie_{(i)},z^je_{(j)})=\overline{w^i}z^j \phi (e_{(i)},e_{(j)})=[\phi]_{\mathcal{B}\mathcal{B}}[\bar{w}]^\mathcal{B}[z]^\mathcal{B}=[\phi]^\mathcal{B}{}_\mathcal{B}[\bar{w}^\top]_\mathcal{B}[z]^\mathcal{B}=[\bar{w}^\top][\phi][z]
 $$

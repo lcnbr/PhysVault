@@ -4,7 +4,7 @@ alias:
 - parallely transported
 tag: GR physics
 ---
-![[Pasted image 20220205191415.png#leftwrap|300]]We discussed parallel transport in the context of [[spin in GR|spin]], and concluded that it would necessarily be [[parallel transport|parallel transported]] because its eom was:
+![[Pasted image 20220205191415.png#leftwrap|300]]We discussed parallel transport in the context of [[spin in GR|spin]], and concluded that it would necessarily be [[.md|parallel transported]] because its eom was:
 
 ![[spin in GR#^eaf4ec|spin]]
 It is often the case that a vector $A^{\mu}(\tau)$ carried along a curve by a particle does not change at $\tau$ if viewed from a reference frame $\xi_{x(\tau)}$ that is locally inertial at $x(\tau)$. In this frame the [[affine connection]] as well as $d A^{\mu} / d \tau$ vanishes, so

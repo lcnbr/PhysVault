@@ -2,7 +2,7 @@
 alias:
 ---
 
-Described in [[@smirnovAppliedAsymptoticExpansions2002]]
+Described in [[../Zotero/@smirnovAppliedAsymptoticExpansions2002]]
 
  Suppose that we want to expand a Feynman integral in some limit of momenta and masses.
 

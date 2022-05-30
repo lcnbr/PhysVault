@@ -1,4 +1,4 @@
-The following coordinate transformations are comprised by the [[conformal group]]:
+The following coordinate transformations are comprised by the [[.md|conformal group]]:
 
 - Lorentz rotations $x^{\mu} \rightarrow \Lambda^{\mu}{ }_{\nu} x^{\nu}$, ^2426d1
 - translations $x^{\mu} \rightarrow x^{\mu}+a^{\mu}$, ^7e1b95
@@ -6,7 +6,7 @@ The following coordinate transformations are comprised by the [[conformal group]
 - conformal inversions (discrete) $x^{\mu} \rightarrow x^{\mu} / x^{2}$, ^cd9a43
 - conformal boosts (inversion, translation, inversion).
 
-The conformal group in $D$ dimensions is the ([[universal cover]]) of $\operatorname{SO}(D, 2)$. 
+The conformal group in $D$ dimensions is the ([[../math/universal cover]]) of $\operatorname{SO}(D, 2)$. 
 # In 2D
 the conformal group splits into
 

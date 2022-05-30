@@ -7,7 +7,7 @@ tags:
 
 1. [[Grassmann variables]]
 2. [[Berezin integral]]
-3. [[delta function for odd Grassmann numbers]]
+3. [[../math/delta function for odd Grassmann numbers]]
 4. [[Fourier integrals for odd Grassmann numbers]]
 5. [[Gaussian integrals for odd Grassmann numbers]]
 6. [[complex Gaussian integrals for odd Grassmann numbers]]

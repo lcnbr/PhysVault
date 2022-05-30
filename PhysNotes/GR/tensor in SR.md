@@ -8,7 +8,7 @@ We can define objects with multiple indices that we call tensors
 $$
 T^{\mu_{1} \mu_{2} \cdots}{ }_{\nu_{1} \nu_{2} \cdots} .
 $$
-Tensors include products of vectors and transform as such under a [[Lorentz transformation]]
+Tensors include products of vectors and transform as such under a [[../String/Lorentz transformation]]
 $$
 (T^{ \mu_{1} \mu_{2} \cdots}{ }_{\nu_{1} \nu_{2} \cdots})'=\Lambda^{\mu_{1}}{ }_{\alpha_{1}} \Lambda^{\mu_{2}}{}_{\alpha_{2}} \cdots \Lambda_{\nu_{1}}{ }^{\beta_{1}} \Lambda_{\nu_{2}}{ }^{\beta_{2}} \cdots T^{\alpha_{1} \alpha_{2} \cdots}{ }_{\beta_{1} \beta_{2} \cdots} .
 $$
@@ -49,8 +49,8 @@ then $T_{\alpha}{}^{\beta \gamma}$ is a tensor, that is,
 $$(T_{\alpha}{}^{\beta \gamma})'= \pdv{}{ (x^{\alpha})'} (T^{\beta \gamma})'=\Lambda_\alpha{}^\mu \pdv{x^\mu} \Lambda^\beta{}_\nu \Lambda^\gamma{}_\rho T^{\nu \rho}=\Lambda_\alpha{}^\mu  \Lambda^\beta{}_\nu \Lambda^\gamma{}_\rho T_\mu{}^{\nu \rho}$$
 
 
-Now we have already encountered some [[tensor in SR|tensors]] for example:
-- Metric $\eta_{\mu \nu}$ : This is a covariant tensor, as can be seen from the definition of the [[Lorentz transformation]]
+Now we have already encountered some [[.md|tensors]] for example:
+- Metric $\eta_{\mu \nu}$ : This is a covariant tensor, as can be seen from the definition of the [[../String/Lorentz transformation]]
 $$
 (\eta_{\rho \sigma})^{\prime}=\eta_{\mu \nu} \Lambda^{\mu}{ }_{\rho} \Lambda^{\nu}{ }_{\sigma}=\eta_{\rho \sigma} .
 $$
@@ -90,7 +90,7 @@ $$
 \rightarrow \operatorname{det} \Lambda &=\text { constant } \cdot(+1)
 \end{aligned}
 $$
-Since we are only considering proper [[Lorentz transformation|Lorentz transformations]] $\operatorname{det} \Lambda=1$ and we have
+Since we are only considering proper [[../String/Lorentz transformation|Lorentz transformations]] $\operatorname{det} \Lambda=1$ and we have
 $$
 \varepsilon^{\prime \alpha \beta \gamma \delta}=\Lambda_{\mu}^{\alpha} \Lambda_{\nu}^{\beta} \Lambda_{\rho}^{\gamma} \Lambda_{\sigma}^{\delta} \varepsilon^{\mu \nu \rho \sigma}=\varepsilon^{\alpha \beta \gamma \delta} .
 $$

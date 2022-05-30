@@ -10,42 +10,42 @@ url:
 alias: KMOC paper
 
 ---
-# [Amplitudes, observables, and classical scattering](zotero://select/items/@kosowerAmplitudesObservablesClassical2019)
+# [[zotero://select/items/@kosowerAmplitudesObservablesClassical2019|Amplitudes, observables, and classical scattering]]
 
 **Contents**
 
-# [Introduction](zotero://open-pdf/0_XIBRM7N7/3)
+# [[zotero://open-pdf/0_XIBRM7N7/3|Introduction]]
 
 we must understand  systematically how to extract the classical result using on-shell quantum-mechanical scattering amplitudes.  Our formalism applies to both electrodynamics and gravity. And for simplicity we restrict to spinless scattering.
     
-# [Restoring $\hbar$](zotero://open-pdf/0_XIBRM7N7/5)
+# [[zotero://open-pdf/0_XIBRM7N7/5|Restoring $\hbar$]]
 
-#convention Use [[relativistically natural units]] i.e. $c=1 \implies [L][T]^{-1}=1 \implies [L]=[T]$ 
+#convention Use [[../PhysNotes/relativistically natural units]] i.e. $c=1 \implies [L][T]^{-1}=1 \implies [L]=[T]$ 
 
 
 A straightforward and pragmatic approach to restoring all factors of $\hbar$ in an expression is  dimensional analysis.
 
-#definition : Denote dimensions of mass and length by $[M]$ and $[L]$, respectively ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^dimension]]]
+#definition : Denote dimensions of mass and length by $[[@kosowerAmplitudesObservablesClassical2019annotations#^dimension]]]
 #definition : Denote spatial three vectors in bold i.e. $p^i=\boldsymbol{p}$
 
 Using 
 $$
 \bqty\big{\hat{a}_{p}, \hat{a}_{p^{\prime}}^{\dagger}}=(2 \pi)^{3} \delta^{(3)}\pqty{\boldsymbol{p}-\boldsymbol{p}^{\prime}},
 $$
-to define the dimensions of $\hat{a}_p$, using that $\delta^{(n)}([x])=[x]$^[[[delta function#In dimensional analysis]]] we have:
+to define the dimensions of $\hat{a}_p$, using that $\delta^{(n)}([[[delta function#In dimensional analysis]]] we have:
 
 $$\bqty{\bqty\big{\hat{a}_{p}, \hat{a}_{p^{\prime}}^{\dagger}}}=\bqty{\hat{a}_{p}}^2=\bqty{ \delta^{(3)}\pqty{\boldsymbol{p}-\boldsymbol{p}^{\prime}}}=\bqty{\boldsymbol{p}}^{-3}=[M]^{-3}$$
 Thus $[\hat{a}_p]=[M]^{-\frac{3}{2}}$
 
-#definition Single particle state: $\ket{p}=\sqrt{2E_p} \hat{a}^\dagger_p \ket{0}$ with dimension ^[in [[relativistically natural units]]] $[M]^{\frac{1}{2}}[M]^{-\frac{3}{2}}=[M]^{-1}$ ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^singlePart]]]
+#definition Single particle state: $\ket{p}=\sqrt{2E_p} \hat{a}^\dagger_p \ket{0}$ with dimension ^[[../PhysNotes/relativistically natural units|in [relativistically natural units]]] $[[@kosowerAmplitudesObservablesClassical2019annotations#^singlePart]]]
 
-#definition $\hat{\delta}^{(n)}(p) \equiv(2 \pi)^{n} \delta^{(n)}(p)$ ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^delta]]]
+#definition $\hat{\delta}^{(n)}(p) \equiv(2 \pi)^{n} \delta^{(n)}(p)$ ^[[@kosowerAmplitudesObservablesClassical2019annotations#^delta]]]
 
-#definition We define the amplitudes in four dimensions as usual by$\mel{p'_1 \cdots p'_m}{T}{p_1 \cdots p_n}=\mathcal{A}(p_1 \cdots p_n\rightarrow p'_1 \cdots p'_m)\hat{\delta}(p_1 +\cdots+ p_n- p'_1- \cdots-p'_m)$with an in out momentum convention. ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^amplitude]]]
+#definition We define the amplitudes in four dimensions as usual by$\mel{p'_1 \cdots p'_m}{T}{p_1 \cdots p_n}=\mathcal{A}(p_1 \cdots p_n\rightarrow p'_1 \cdots p'_m)\hat{\delta}(p_1 +\cdots+ p_n- p'_1- \cdots-p'_m)$with an in out momentum convention. ^[[@kosowerAmplitudesObservablesClassical2019annotations#^amplitude]]]
 
-#definition  wavenumber $\bar{p}$ associated with a  momentum $p$: $\bar{p}\equiv \frac{p}{\hbar}$ ^[![[@kosowerAmplitudesObservablesClassical2019annotations#^wavenumber]]]
+#definition  wavenumber $\bar{p}$ associated with a  momentum $p$: $\bar{p}\equiv \frac{p}{\hbar}$ ^[[@kosowerAmplitudesObservablesClassical2019annotations#^wavenumber]]]
 
-We consider the scattering  of two point-like objects, with momenta $p_{1,2}$, initially separated by a transverse impact  parameter $b_\mu$^[![[@kosowerAmplitudesObservablesClassical2019annotations#^transverseImpact]]]
+We consider the scattering  of two point-like objects, with momenta $p_{1,2}$, initially separated by a transverse impact  parameter $b_\mu$^[[@kosowerAmplitudesObservablesClassical2019annotations#^transverseImpact]]]
 
 #definition (reduced) Compton wavelengths $\ell_c^{(i)}\equiv  \frac{\hbar}{m_i}$  
 
@@ -70,23 +70,23 @@ But the dimensionless couplings in scalar QED and gravity have a factor of $\fra
 
 
 
-# [Impulse and radiated momentum in quantum field theory](zotero://open-pdf/0_XIBRM7N7/7)
+# [[zotero://open-pdf/0_XIBRM7N7/7|Impulse and radiated momentum in quantum field theory]]
 
 We examine scattering events in which two widely separated particles are prepared at $t \rightarrow - \infty$, and then shot at each other with impact parameter $b_\mu$. We will also restrict  our attention to scattering processes in which quanta of fields 1 and 2 are both present in  the final state.
 
 
     
-## [The incoming state](zotero://open-pdf/0_XIBRM7N7/7)
+## [[zotero://open-pdf/0_XIBRM7N7/7|The incoming state]]
 
 $$\ket{\psi}_{\text{in}}=\int \dd{\Phi_2(p_1,p_2)} \phi_1(p_1) \phi_2(p_2) e^{\iunit b_\mu p^\mu_1 /\hbar}\ket{p_1,p_2}_\text{in}$$
 
 ^inState
 
-Where we use the multiple [[Lorentz invariant measure]]. Note the explicit phase extracted from the two wavepackets functions such that the wavepacket of particle 1 is translated by the impact parameter $b$ relative to particle 2.
+Where we use the multiple [[../PhysNotes/Lorentz invariant measure]]. Note the explicit phase extracted from the two wavepackets functions such that the wavepacket of particle 1 is translated by the impact parameter $b$ relative to particle 2.
 
 
         
-## [The impulse on a particle](zotero://open-pdf/0_XIBRM7N7/9)
+## [[zotero://open-pdf/0_XIBRM7N7/9|The impulse on a particle]]
 
 #definition : the *impulse* on a particle during  a scattering event: at the classical level, this is simply the total change in the momentum  of one of the particles — say particle 1 — during the collision.
 
@@ -107,67 +107,67 @@ $$
 
 
         
-## [Impulse in terms of amplitudes](zotero://open-pdf/0_XIBRM7N7/10)
+## [[zotero://open-pdf/0_XIBRM7N7/10|Impulse in terms of amplitudes]]
         
-## [The momentum radiated during a collision](zotero://open-pdf/0_XIBRM7N7/13)
+## [[zotero://open-pdf/0_XIBRM7N7/13|The momentum radiated during a collision]]
         
-## [Conservation of momentum](zotero://open-pdf/0_XIBRM7N7/15)
+## [[zotero://open-pdf/0_XIBRM7N7/15|Conservation of momentum]]
         
-# [Classical point particles](zotero://open-pdf/0_XIBRM7N7/17)
+# [[zotero://open-pdf/0_XIBRM7N7/17|Classical point particles]]
     
-## [Wavefunctions](zotero://open-pdf/0_XIBRM7N7/17)
+## [[zotero://open-pdf/0_XIBRM7N7/17|Wavefunctions]]
         
-## [An example wavefunction](zotero://open-pdf/0_XIBRM7N7/22)
+## [[zotero://open-pdf/0_XIBRM7N7/22|An example wavefunction]]
         
-## [Classical impulse](zotero://open-pdf/0_XIBRM7N7/24)
+## [[zotero://open-pdf/0_XIBRM7N7/24|Classical impulse]]
         
-## [Classical radiation](zotero://open-pdf/0_XIBRM7N7/26)
+## [[zotero://open-pdf/0_XIBRM7N7/26|Classical radiation]]
         
-## [Conservation of momentum](zotero://open-pdf/0_XIBRM7N7/28)
+## [[zotero://open-pdf/0_XIBRM7N7/28|Conservation of momentum]]
         
-# [Examples](zotero://open-pdf/0_XIBRM7N7/29)
+# [[zotero://open-pdf/0_XIBRM7N7/29|Examples]]
     
-## [Leading-order electromagnetic impulse](zotero://open-pdf/0_XIBRM7N7/29)
+## [[zotero://open-pdf/0_XIBRM7N7/29|Leading-order electromagnetic impulse]]
         
-## [Next-to-leading order impulse](zotero://open-pdf/0_XIBRM7N7/31)
+## [[zotero://open-pdf/0_XIBRM7N7/31|Next-to-leading order impulse]]
         
-### [Purely quantum contributions](zotero://open-pdf/0_XIBRM7N7/32)
+### [[zotero://open-pdf/0_XIBRM7N7/32|Purely quantum contributions]]
             
-### [Triangles](zotero://open-pdf/0_XIBRM7N7/33)
+### [[zotero://open-pdf/0_XIBRM7N7/33|Triangles]]
             
-### [Boxes](zotero://open-pdf/0_XIBRM7N7/34)
+### [[zotero://open-pdf/0_XIBRM7N7/34|Boxes]]
           
-### [Cut box](zotero://open-pdf/0_XIBRM7N7/36)
+### [[zotero://open-pdf/0_XIBRM7N7/36|Cut box]]
             
-### [Combining contributions](zotero://open-pdf/0_XIBRM7N7/37)
+### [[zotero://open-pdf/0_XIBRM7N7/37|Combining contributions]]
             
-### [On-shell cross check](zotero://open-pdf/0_XIBRM7N7/39)
+### [[zotero://open-pdf/0_XIBRM7N7/39|On-shell cross check]]
             
-### [Radiation](zotero://open-pdf/0_XIBRM7N7/40)
+### [[zotero://open-pdf/0_XIBRM7N7/40|Radiation]]
         
-## [Momentum conservation and radiation reaction](zotero://open-pdf/0_XIBRM7N7/42)
+## [[zotero://open-pdf/0_XIBRM7N7/42|Momentum conservation and radiation reaction]]
         
-# [Classical calculations](zotero://open-pdf/0_XIBRM7N7/44)
+# [[zotero://open-pdf/0_XIBRM7N7/44|Classical calculations]]
     
-## [The classical electromagnetic impulse](zotero://open-pdf/0_XIBRM7N7/44)
+## [[zotero://open-pdf/0_XIBRM7N7/44|The classical electromagnetic impulse]]
         
-### [Leading order](zotero://open-pdf/0_XIBRM7N7/45)
+### [[zotero://open-pdf/0_XIBRM7N7/45|Leading order]]
             
  
-### [Classical radiated momentum](zotero://open-pdf/0_XIBRM7N7/48)
+### [[zotero://open-pdf/0_XIBRM7N7/48|Classical radiated momentum]]
         
-### [General expressions](zotero://open-pdf/0_XIBRM7N7/48)
+### [[zotero://open-pdf/0_XIBRM7N7/48|General expressions]]
             
-### [Application at leading order](zotero://open-pdf/0_XIBRM7N7/50)
+### [[zotero://open-pdf/0_XIBRM7N7/50|Application at leading order]]
             
-## [Momentum conservation and the radiation reaction force](zotero://open-pdf/0_XIBRM7N7/51)
+## [[zotero://open-pdf/0_XIBRM7N7/51|Momentum conservation and the radiation reaction force]]
         
-# [Discussion and conclusions](zotero://open-pdf/0_XIBRM7N7/53)
+# [[zotero://open-pdf/0_XIBRM7N7/53|Discussion and conclusions]]
     
-# [Conventions](zotero://open-pdf/0_XIBRM7N7/55)
+# [[zotero://open-pdf/0_XIBRM7N7/55|Conventions]]
     
-# [Linear wavefunction integrals](zotero://open-pdf/0_XIBRM7N7/55)
+# [[zotero://open-pdf/0_XIBRM7N7/55|Linear wavefunction integrals]]
     
-# [Angular integrals](zotero://open-pdf/0_XIBRM7N7/58)
+# [[zotero://open-pdf/0_XIBRM7N7/58|Angular integrals]]
     
-# [An alternative classical point of view on momentum radiation](zotero://open-pdf/0_XIBRM7N7/59)
+# [[zotero://open-pdf/0_XIBRM7N7/59|An alternative classical point of view on momentum radiation]]

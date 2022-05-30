@@ -2,7 +2,7 @@
 Alias:
 - Legendre transformation
 ---
-[[rowec-zotero#^d7ebeb]]
+[[../../Zotero/rowec-zotero#^d7ebeb]]
 
 # 1-d
 In one dimension we have $f^{*}(p)=f(x)-p x$, where $x=\left(f^{\prime}\right)^{-1}(p)$
@@ -14,7 +14,7 @@ Suppose we start with a function $f (x_1, x_2,\dots, x_n)$ want to replace a sub
 
 $$u_i= \frac{\partial f}{\partial x_i} $$ ^e320f3
 
-The [[Legendre transform]] transform of $f$ is:
+The [[.md|Legendre transform]] transform of $f$ is:
  $$g(u_1,\dots, u_j,x_{j+1},\dots,x_n):=\sum\limits_{i=1}^{j}u_ix_i-f(x_1, x_2,\dots, x_n)$$ ^0bf46f
  
  Assuming that all the $x_i$ in the set $\left\{x_i, i = 1,\dots , j\right\}$ can be written as functions of $\left\{u_1,\dots, u_j,x_{j+1},\dots,x_n\right\}$

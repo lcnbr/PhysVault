@@ -1,6 +1,6 @@
 # Matter Couplings. 
 
-In our [[YM eoms#Matter eom|previous]] [[N QED fields#spinor matter coupling| discussion]] of matter fields we assumed that the gauge group is $\operatorname{SU}(N)$ and that there are $N$ matter fields. In other words, they transform in the [[defining representation of su(n)|defining representation]] of $\mathrm{SU}(N)$.
+In our [[YM eoms#Matter eom|previous]] [[N QED fields#spinor matter coupling| discussion]] of matter fields we assumed that the gauge group is $\operatorname{SU}(N)$ and that there are $N$ matter fields. In other words, they transform in the [[../math/defining representation of su(n|defining representation]].md) of $\mathrm{SU}(N)$.
 
 Let us now consider spinor matter fields transforming in some unitary representation $R$ of the gauge group. The kinetic term for spinor matter in Yang-Mills theory reads
 $$

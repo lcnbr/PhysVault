@@ -4,7 +4,7 @@ Whenever a physical system is considered and described mathematically, it is goi
 
 In the same way, we have been considering string theory so far: we always assumed an inertial frame, no curved metrics, that is, the string was moving in a flat background with canonical coordinates. However, a string can as well move in a curved space time.
 
-Simultaneously, we have been considering the [[graviton]] as a particle in the [[closed string spectrum]], which clearly interacts with other particles according to the laws of general relativity (plus possible higher string corrections).
+Simultaneously, we have been considering the [[graviton]] as a particle in the [[4 String Quantisation/closed string spectrum]], which clearly interacts with other particles according to the laws of general relativity (plus possible higher string corrections).
 
 In this chapter, the connection between the two pictures above will be discussed. We will find out, whether the stringy [[graviton]] state can actually be identified with the Einstein [[graviton]] and discuss the backreaction between strings and gravity.
 
@@ -12,7 +12,7 @@ This will lead to the definition of a string background: a string background is 
 
 As a starting point, let us compare the [[graviton]] as a string excitation and as an perturbation of the background metric:  [[Graviton vertex operator]]
 
-[[curved backgrounds]]
+[[../GR/curved backgrounds]]
 
 [[Two-form field and dilaton]]
 [[open strings on background]]

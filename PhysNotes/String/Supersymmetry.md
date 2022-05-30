@@ -11,7 +11,7 @@ $$
 [M, M] \sim M, \quad[M, P] \sim P, \quad[P, P]=0
 $$
 
-The super-Poincaré algebra has additional generators, the so-called supercharges $Q_{m}^{I}$. They transform in spinor representations of the Lorentz algebra ( $m$ is a spinor index), and they are odd generators whose [[Lie bracket|Lie brackets]] are symmetric rather than anti-symmetric
+The super-Poincaré algebra has additional generators, the so-called supercharges $Q_{m}^{I}$. They transform in spinor representations of the Lorentz algebra ( $m$ is a spinor index), and they are odd generators whose [[../math/Lie bracket|Lie brackets]] are symmetric rather than anti-symmetric
 
 $$
 [M, Q] \sim Q, \quad[Q, P]=0, \quad\left\{Q_{m}^{I}, Q_{n}^{J}\right\} \sim \delta^{I J} \gamma_{m n}^{\mu} P_{\mu} .
@@ -72,7 +72,7 @@ $$
 This allows to package a supermultiplet of particles into a single field on superspace.
 
 # Spinors. 
-Supersymmetry is based on spinor representations of the group $\operatorname{Spin}(D-1,1)$ which is a two-fold cover of the [[Lorentz group]] $\mathrm{SO}(D-1,1)$. Let us discuss spinor representations in various dimensions.
+Supersymmetry is based on spinor representations of the group $\operatorname{Spin}(D-1,1)$ which is a two-fold cover of the [[../math/Lorentz group]] $\mathrm{SO}(D-1,1)$. Let us discuss spinor representations in various dimensions.
 
 In $D=4$, the default (Dirac) spinor has 4 complex components, it belongs to the space $\mathbb{C}^{4}$. It can be split into two chiral spinors (Weyl): $\mathbb{C}^{2} \oplus \mathbb{C}^{2}$. Alternatively, a reality condition (Majorana) can be imposed: $\operatorname{Re}\left(\mathbb{C}^{4}\right)=\mathbb{R}^{4} \simeq \mathbb{C}^{2}=\operatorname{Re}\left(\mathbb{C}^{2} \oplus \mathbb{C}^{2}\right)$. Note that in $D=4$ the reality condition cannot be imposed on chiral spinors because complex conjugation flips chirality.
 

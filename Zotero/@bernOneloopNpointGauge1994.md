@@ -9,4 +9,4 @@ DOI: 10.1016/0550-3213(94)90179-1
 url: 
 
 ---
-# [One-loop n-Point gauge theory amplitudes, unitarity and collinear limits](zotero://select/items/@bernOneloopNpointGauge1994)
+# [[zotero://select/items/@bernOneloopNpointGauge1994|One-loop n-Point gauge theory amplitudes, unitarity and collinear limits]]

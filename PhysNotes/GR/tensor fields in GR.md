@@ -8,7 +8,7 @@ tag: GR physics
 ---
 Just as we can see elements ([[one-forms in GR|covectors]]) in the dual tangent space (the cotangent space $T^*_p \mathcal{M}$) as linear maps from $T_p \mathcal{M}\rightarrow \mathbb{R}$ we can see elements of $T_p \mathcal{M}$ as linear maps from $T^*_p  \mathcal{M} \rightarrow \mathbb{R}$. Now consider a *multilinear* map: $${\large\stackrel{r}{\cross}}\,T^*_p \mathcal{M} \times{\large \stackrel{s}{\cross}}T_p\mathcal{M}\longrightarrow \mathbb{R}$$
 
-This is what we call an $(r,s)$ tensor at $p$, where $r+s$ is the rank of the tensor. Now the transformation properties of a [[tensor fields in GR|tensor]] under a  [[general coordinate transformation]] comes directly from the transformation properties of [[vector fields in GR|vectors]] and [[one-forms in GR|covectors]]: 
+This is what we call an $(r,s)$ tensor at $p$, where $r+s$ is the rank of the tensor. Now the transformation properties of a [[.md|tensor]] under a  [[general coordinate transformation]] comes directly from the transformation properties of [[vector fields in GR|vectors]] and [[one-forms in GR|covectors]]: 
 
 Let $T$ be a $(r,s)$ tensor, we write it in the coordinate basis:
 
@@ -32,7 +32,7 @@ Special cases of type $(r, s)$ tensors include
 
 # Fields
 
- Now the collection of all type $(r,s)$ [[tensor fields in GR|tensors]] at all points of $\mathcal{M}$ is an associated bundle of the principal frame bundle of $\mathcal{M}$ known as the *bundle of tensors of contravariant rank $r$ and covariant rank $s$*: $\mathbf{B}[\otimes^{r,s}\mathbb{R}]$. And we thus define  [[tensor fields in GR|tensor fields]] as maps (or more precisely sections) from [[spacetime]] (manifold) to this bundle, associating to every point $p$ in [[spacetime]] (manifold) $\mathcal{M}$ a [[tensor fields in GR|tensor]]:
+ Now the collection of all type $(r,s)$ [[.md|tensors]] at all points of $\mathcal{M}$ is an associated bundle of the principal frame bundle of $\mathcal{M}$ known as the *bundle of tensors of contravariant rank $r$ and covariant rank $s$*: $\mathbf{B}[[.md|\otimes^{r,s}\mathbb{R}]] as maps (or more precisely sections) from [[../QFTII/spacetime]] (manifold) to this bundle, associating to every point $p$ in [[../QFTII/spacetime]] (manifold) $\mathcal{M}$ a [[.md|tensor]]:
 $$\begin{align}
 T:\mathcal{M} &\rightarrow \mathbf{B}[\otimes^{r,s}\mathbb{R}]\\
 p&\mapsto T(p)

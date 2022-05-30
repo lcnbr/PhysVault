@@ -1,5 +1,5 @@
 # Primary operators.
-[[primary operator|^|]]s are a subclass of the [[quasi-primary operator]]s described above. An operator is called primary, if it satisfies the [[quasi-primary operator|quasi-primary]] conditions for all transformations
+[[.md|^|]]s are a subclass of the [[quasi-primary operator]]s described above. An operator is called primary, if it satisfies the [[quasi-primary operator|quasi-primary]] conditions for all transformations
 
 $$
 (z, \bar{z}) \rightarrow\left(z^{\prime}(z), \bar{z}^{\prime}(\bar{z})\right) \quad \text { or } \quad(\delta z, \delta \bar{z})=(\epsilon(z), \bar{\epsilon}(\bar{z}))

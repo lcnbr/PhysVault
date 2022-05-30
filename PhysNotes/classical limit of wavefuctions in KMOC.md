@@ -62,7 +62,7 @@ imposed on the $q$ integration.[^5] Let us examine this statement more closely:
 $$d(m,\xi,u,q)=\int \dd{\Phi(p)} \hat{\delta}(2 p \cdot q+q^2) \Theta(p^0+q^2)\varphi(\frac{p \cdot u }{m \xi})\varphi^\dagger(\frac{(p+q) \cdot u }{m \xi})$$
 ^dfunct
 
-This integral must be Lorentz invariant and depends on $m,\xi, u,q$ thus it must manifestly only depend on the following [[Lorentz group|Lorentz invariants]]: $u^2,q^2,u \cdot q, \xi$. One of these is not actually a variable as we will normalise $u^2=1$. The rest aren't fully dimensionless, and we can render them dimensionless:[^6]
+This integral must be Lorentz invariant and depends on $m,\xi, u,q$ thus it must manifestly only depend on the following [[math/Lorentz group|Lorentz invariants]]: $u^2,q^2,u \cdot q, \xi$. One of these is not actually a variable as we will normalise $u^2=1$. The rest aren't fully dimensionless, and we can render them dimensionless:[^6]
 
 $$\begin{align*}
 [q^2]&=[\hbar \bar{q}]^2=[M]^2\implies[\ell_c \sqrt{-\bar{q}^2}]=[\frac{\hbar}{m}\sqrt{-\bar{q}^2}]=\frac{[M]}{[M]}=1\\
@@ -83,6 +83,6 @@ $$\hat{\delta}(2 p \cdot q+q^2)=\hat{\delta}(2\hbar m\, u\cdot \bar{q}+\hbar^2 \
 [^3]: This encodes the limit of the spread as $\xi \to0$. $\ev{p_i^2}=m_i^2$ is enforced by the measure $\dd{\Phi(p)}$
 [^4]: This enforces the normalisation condition $\breve{u}_i^2=1$ in the $\xi \to0$ limit 
 [^5]: Here $\bar{q}=\frac{q}{\hbar}$ is the wavenumber
-[^6]: Remember we use [[relativistically natural units]]
-[^7]: In [[relativistically natural units]] $[\frac{1}{\sqrt{-\bar{q}^2}}]=[T]=[L]=[\ell_s]$
-[^8]: see [[example wavefunction in KMOC]]
+[[relativistically natural units|^6]]
+[[relativistically natural units|^7]] $[\frac{1}{\sqrt{-\bar{q}^2}}]=[T]=[L]=[\ell_s]$
+[[example wavefunction in KMOC|^8]]

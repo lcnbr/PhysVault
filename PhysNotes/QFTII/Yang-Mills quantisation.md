@@ -24,6 +24,6 @@ Note, however, that unphysical polarisations do remain for asymptotic vector fie
 ![[Pasted image 20220126234505.png|400]]
 As we shall see later, the unphysical particles can now be projected out safely without violating unitarity.
 
-Note that the [[Faddeev-Popov ghosts]] are not required for all gauges. For example, the light cone gauge is typically formulated in terms of the gauge field only. The point is that the vector field in the [[Light Cone Gauge]] has no unphysical modes, hence no ghosts are needed to cancel their effects.
+Note that the [[Faddeev-Popov ghosts]] are not required for all gauges. For example, the light cone gauge is typically formulated in terms of the gauge field only. The point is that the vector field in the [[../String/Light Cone Gauge]] has no unphysical modes, hence no ghosts are needed to cancel their effects.
 
 Another example where no ghosts are needed is the abelian theory. Here the gauge field never forms closed loops on its own. Consequently, the [[Faddeev-Popov ghosts|ghost field]] does not couple to the gauge field.

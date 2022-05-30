@@ -2,9 +2,9 @@
 Alias:
 - canonical quantisation
 ---
-From the [[classical closed string in the Hamiltonian formalism]] we derived the [[Poisson brackets]] for the [[closed string]]: 
+From the [[classical closed string in the Hamiltonian formalism]] we derived the [[../Poisson brackets]] for the [[../closed string]]: 
 ![[classical closed string in the Hamiltonian formalism#^b420f5]]
-In [[covariant quantisation|canonical quantisation]] this results in the following set of commutation relations of the corresponding quantum operators
+In [[.md|canonical quantisation]] this results in the following set of commutation relations of the corresponding quantum operators
 $$
 \begin{aligned}
 \left[x^{\mu}, p^{\nu}\right] &=i \eta^{\mu \nu} \\
@@ -15,11 +15,11 @@ $$
 ^58ef6b
 
 ## Space of States. 
-Compose the space of [[states]] from a [[quantum free particle]] and a set of [[quantum harmonic oscillator]]s:
+Compose the space of [[states]] from a [[quantum free particle]] and a set of [[../quantum harmonic oscillator]]s:
 - momentum eigenstates for free particle $|q\rangle$,
-- [[quantum harmonic oscillator|HO]] vacuum $|0\rangle$ and excitations for each mode/orientation.
+- [[../quantum harmonic oscillator|HO]] vacuum $|0\rangle$ and excitations for each mode/orientation.
 
-Define ![[closed string vacuum state]] 
+Define ![[../closed string vacuum state]] 
 ## Negative Norm States. 
 One problem: we have states with negative norm
 $$

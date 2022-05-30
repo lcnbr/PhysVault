@@ -1,3 +1,10 @@
+---
+aliases: 
+tags: 
+sources:
+date created: Saturday, February 19th 2022, 9:45:03 am
+date modified: Monday, May 23rd 2022, 12:07:53 pm
+---
 
 Next let us understand the role of the quantum parameter $\hbar$
 in QFT better.
@@ -50,11 +57,11 @@ The latter is not immediately given by the graph parameters,
 but it can be expressed in terms of the number of
 internal and external lines:
 - Each internal line contributes $\hbar^{-1}$ for the line itself times $\hbar^{+2}$ from the two junctions with vertices.
-    ![|400](file:///C:/Users/Lucien/Documents/UNI/images/image37.png)
+- ![[image37.png#center|200]]
 - Each external line contributes $\hbar^{-1}$ for the line itself times $\hbar^{+1}$ from a single junction to a vertex.
-![|400](file:///C:/Users/Lucien/Documents/UNI/images/image27.png)
+![[image27.png#center|200]]
 - Each interaction vertex contributes $\hbar^{-1}$.
-![|300](file:///C:/Users/Lucien/Documents/UNI/images/image58.png)
+![[image58.png#center|200]]
 
 
 Altogether we obtain the total power of $\hbar$ associated to the graph

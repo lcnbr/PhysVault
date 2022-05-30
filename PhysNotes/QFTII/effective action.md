@@ -5,17 +5,17 @@ tags:
 - qftII
 ---
 We have seen that the [[tree graph generating functional|tree functional]] $T[J]$
-is the classical limit of the [[connected graph generating functional|connected functional]] [$W$](connected%20graph%20generating%20functional.md).
-Furthermore, $T[J]$ is the [[Legendre transform]] of the [[action as a generating functional]] $S[\Psi]$.
-It therefore makes sense to consider also the [[Legendre transform]]
-of [$W$](connected%20graph%20generating%20functional.md). This functional is called the effective action $G[\Psi]$.
+is the classical limit of the [[connected graph generating functional|connected functional]] [[connected graph generating functional|$W$]].
+Furthermore, $T[[../math/Legendre transform|J]] of the [[action as a generating functional]] $S[\Psi]$.
+It therefore makes sense to consider also the [[../math/Legendre transform]]
+of [[connected graph generating functional|$W$]]. This functional is called the effective action $G[\Psi]$.
 ^[It is also denoted by $\Gamma$. Its argument sometimes takes a
 different symbol to clearly distinguish it from the quantum field $\Psi$. However, there is no danger of confusion, and we shall use the same symbol.]
 # Definition
 We use the [[effective field functional]] to define the effective action is then defined as
 
 $$
-G[\Psi]:=W[J[\Psi]]-\int \dd[D]{x} J[\Psi](x)  \, \Psi(x).
+G[[x|\Psi]]  \, \Psi(x).
 $$
 
 It turns out to generate
@@ -33,13 +33,13 @@ How can this be seen? We know that the Legendre transformation
 switches between [[action as a generating functional|vertices]] ($S[\Psi]$)
 and [[tree graph generating functional|connected tree graphs made from these vertices]] ($T[J]$).
 Here the starting point is
-the [[connected graph generating functional|generating functional of connected graphs]] [$W$](connected%20graph%20generating%20functional.md) with loops.
+the [[connected graph generating functional|generating functional of connected graphs]] [[connected graph generating functional|$W$]] with loops.
 **We view the connected graphs as trees made from some effective vertices**.
 
 **How to describe these effective vertices?**
 A defining property of trees is that cutting any line splits
 a tree into two trees.
-Therefore we iteratively split a graph in [$W$](connected%20graph%20generating%20functional.md) into subgraphs by cutting lines
+Therefore we iteratively split a graph in [[connected graph generating functional|$W$]] into subgraphs by cutting lines
 such that each cut splits the graph into two components.
 At the end of the procedure the graph is decomposed into
 *effective vertices*.
@@ -53,18 +53,18 @@ Hence $G[\Psi]$ encodes precisely the 1PI graphs.
 
 The effective vertices in $G[\Psi]$ certainly
 contain the elementary vertices in the original action $S[\Psi]$.
-This is evident since $T[J]$ is the classical limit of [$W$](connected%20graph%20generating%20functional.md),
+This is evident since $T[[connected graph generating functional|J]],
 consequently **$S[\Psi]$ must be the classical limit of $G[\Psi]$**.
 The higher contributions are amputated loop graphs:
 
-![|400](file:///C:/Users/Lucien/Documents/UNI/images/image156.png)
-![|400](file:///C:/Users/Lucien/Documents/UNI/images/image155.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image156.png||400]]
+![[file:///C:/Users/Lucien/Documents/UNI/images/image155.png||400]]
 
 
 This generating functional comprises a small subset of all graphs.
 Any connected graph can easily be reassembled as a tree graph
 consisting of the vertices encoded by the effective action
-![|400](file:///C:/Users/Lucien/Documents/UNI/images/image158.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image158.png||400]]
 
 
 We assume that the effective vertices labelled $\iunit G$
@@ -74,7 +74,7 @@ represents a linear sequence
 of effective two-point vertices $G'_2$
 of arbitrary length
 
-![|400](file:///C:/Users/Lucien/Documents/UNI/images/image157.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image157.png||400]]
 
 Here, $G'_2=G_2-S_0$ are those effective two-point vertices
 which are not already in the kinetic term of the free action $S_0$.
@@ -83,23 +83,23 @@ Summing up the geometric series
 shows that the effective propagator marked by $\ast$
 is minus the inverse of the two-point effective vertex $G_2$
 
-![|350](file:///C:/Users/Lucien/Documents/UNI/images/image154.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image154.png||350]]
 
 
 Note that the above relationship uses the fact
 that the inverse of the Feynman propagator
 is minus the free action $S_0$
 
-![|200](file:///C:/Users/Lucien/Documents/UNI/images/image153.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image153.png||200]]
 
 The reason for calling $G[\Psi]$ the (quantum) effective action is as follows:
 
 - Quantisation of a classical action $S[\Psi]$ yields the functional $Z[J]=\exp(\iunit W[J])$. We may thus say (define) that quantum physics of the classical model described by $S[\Psi]$ is given by $Z[J]$.
-- The corresponding classical functional is the exponential $\exp(\iunit T[J])$ of the [[tree graph generating functional|tree functional]] $T[J]$. We note that the latter is the [[Legendre transform]] of $S[\Psi]$. Therefore we can say that **classical physics is given by exponentiation of the [[Legendre transform]] of $S[\Psi]$.**
+- The corresponding classical functional is the exponential $\exp(\iunit T[[tree graph generating functional|J]] $T[[../math/Legendre transform|J]] of $S[[../math/Legendre transform|\Psi]] of $S[\Psi]$.**
 
 
-Noting further that the [[connected graph generating functional|connected functional]] [$W$](connected%20graph%20generating%20functional.md)
-is the [[Legendre transform]] of $G[\Psi]$,
+Noting further that the [[connected graph generating functional|connected functional]] [[connected graph generating functional|$W$]]
+is the [[../math/Legendre transform]] of $G[\Psi]$,
 we can thus say that quantum physics $Z[J]$
 is equivalently described by:
 

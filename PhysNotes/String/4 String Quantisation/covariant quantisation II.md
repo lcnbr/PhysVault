@@ -4,7 +4,7 @@ tags:
 - stringTheory
 ---
 # Covariant quantisation II
-In [[light cone quantisation]], [[Poincare invariance|Poincaré symmetry]] is subject to an [[anomaly]]. One can as well keep [[Poincare invariance|Poincaré symmetry]] manifest: this is known as covariant quantisation. First steps for covariant quantisation have been done in [[covariant quantisation]].
+In [[light cone quantisation]], [[../Poincare invariance|Poincaré symmetry]] is subject to an [[../../QFTII/anomaly]]. One can as well keep [[../Poincare invariance|Poincaré symmetry]] manifest: this is known as covariant quantisation. First steps for covariant quantisation have been done in [[covariant quantisation]].
 
 Let us see how the spectrum arises in covariant approach. For simplicity, consider only one set of $L$ or $R$ oscillators.
 
@@ -16,7 +16,7 @@ $$
 The state is not annihilated by the negative Virasoro modes. Instead $\langle 0 ; q| L_{n<0}=0$ hence $\left\langle 0 ; q\left|\left(L_{n}-\delta_{n} a\right)\right| 0 ; q\right\rangle=0 .$
 
 #  generic physical states
-For generic physical states $|\Psi\rangle,\langle\Phi|$ we should impose the [[Virasoro constraints]]
+For generic physical states $|\Psi\rangle,\langle\Phi|$ we should impose the [[../Virasoro constraints]]
 $$
 \begin{array}{ll}
 L_{n>0}|\Psi\rangle=0, & L_{0}|\Psi\rangle=a|\Psi\rangle, \\
@@ -38,8 +38,8 @@ $$
 L_{n>0}|\Psi\rangle=0, \quad L_{0}|\Psi\rangle=a|\Psi\rangle .
 $$
 We can now apply representation theory of the Virasoro algebra $\Rightarrow 2 \mathrm{D}$ CFT.
-A proper treatment (BRST) requires additional [[Faddeev-Popov ghosts|ghost]] fields. Inclusion of [[Faddeev-Popov ghosts|ghost]] fields recovers the classical conformal algebra precisely when $D=26$ and $a=1$
+A proper treatment (BRST) requires additional [[../../QFTII/Faddeev-Popov ghosts|ghost]] fields. Inclusion of [[../../QFTII/Faddeev-Popov ghosts|ghost]] fields recovers the classical conformal algebra precisely when $D=26$ and $a=1$
 $$
 \left[L_{m}, L_{n}\right]=(m-n) L_{m+n} .
 $$
-In covariant gauge, the conformal algebra is anomalous. In light cone gauge, however, the [[anomaly]] is shifted to the Lorentz algebra. $^{7}$ The [[anomaly]] is proportional to $D-26$ and $a-1$, i.e. it can be avoided for a very specific choice of parameters.
+In covariant gauge, the conformal algebra is anomalous. In light cone gauge, however, the [[../../QFTII/anomaly]] is shifted to the Lorentz algebra. $^{7}$ The [[../../QFTII/anomaly]] is proportional to $D-26$ and $a-1$, i.e. it can be avoided for a very specific choice of parameters.

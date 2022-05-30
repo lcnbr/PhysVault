@@ -1,1 +1,1 @@
-[[rowea-zotero]]
+[[../../Zotero/rowea-zotero]]

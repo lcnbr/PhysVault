@@ -9,4 +9,4 @@ DOI:
 url: 
 
 ---
-# [Modern quantum mechanics](zotero://select/items/@sakuraiModernQuantumMechanics2011)
+# [[zotero://select/items/@sakuraiModernQuantumMechanics2011|Modern quantum mechanics]]

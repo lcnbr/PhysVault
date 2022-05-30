@@ -1010,7 +1010,7 @@ var require_diff_parser = __commonJS({
     var baseDiffFilenamePrefixes = ["a/", "b/", "i/", "w/", "c/", "o/"];
     function getFilename(line, linePrefix, extraPrefix) {
       var prefixes = extraPrefix !== void 0 ? __spreadArray2(__spreadArray2([], baseDiffFilenamePrefixes, true), [extraPrefix], false) : baseDiffFilenamePrefixes;
-      var FilenameRegExp = linePrefix ? new RegExp("^" + (0, utils_1.escapeForRegExp)(linePrefix) + ' "?(.+?)"?$') : new RegExp('^"?(.+?)"?$');
+      var FilenameRegExp = linePrefix ? new RegExp("^".concat((0, utils_1.escapeForRegExp)(linePrefix), ' "?(.+?)"?$')) : new RegExp('^"?(.+?)"?$');
       var _a2 = FilenameRegExp.exec(line) || [], _b = _a2[1], filename = _b === void 0 ? "" : _b;
       var matchingPrefix = prefixes.find(function(p) {
         return filename.indexOf(p) === 0;
@@ -2950,9 +2950,13 @@ var require_render_utils = __commonJS({
     var __createBinding2 = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
-      Object.defineProperty(o, k2, { enumerable: true, get: function() {
-        return m[k];
-      } });
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
     } : function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
@@ -3088,7 +3092,7 @@ var require_render_utils = __commonJS({
     }
     exports.filenameDiff = filenameDiff;
     function getHtmlId(file) {
-      return "d2h-" + (0, utils_1.hashCode)(filenameDiff(file)).toString().slice(-6);
+      return "d2h-".concat((0, utils_1.hashCode)(filenameDiff(file)).toString().slice(-6));
     }
     exports.getHtmlId = getHtmlId;
     function getFileIcon(file) {
@@ -3150,7 +3154,7 @@ var require_render_utils = __commonJS({
         var elemType = part.added ? "ins" : part.removed ? "del" : null;
         var addClass = changedWords.indexOf(part) > -1 ? ' class="d2h-change"' : "";
         var escapedValue = escapeForHtml(part.value);
-        return elemType !== null ? highlightedLine2 + "<" + elemType + addClass + ">" + escapedValue + "</" + elemType + ">" : "" + highlightedLine2 + escapedValue;
+        return elemType !== null ? "".concat(highlightedLine2, "<").concat(elemType).concat(addClass, ">").concat(escapedValue, "</").concat(elemType, ">") : "".concat(highlightedLine2).concat(escapedValue);
       }, "");
       return {
         oldLine: {
@@ -3174,9 +3178,13 @@ var require_file_list_renderer = __commonJS({
     var __createBinding2 = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
-      Object.defineProperty(o, k2, { enumerable: true, get: function() {
-        return m[k];
-      } });
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
     } : function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
@@ -3245,9 +3253,13 @@ var require_line_by_line_renderer = __commonJS({
     var __createBinding2 = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
-      Object.defineProperty(o, k2, { enumerable: true, get: function() {
-        return m[k];
-      } });
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
     } : function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
@@ -3478,9 +3490,13 @@ var require_side_by_side_renderer = __commonJS({
     var __createBinding2 = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
-      Object.defineProperty(o, k2, { enumerable: true, get: function() {
-        return m[k];
-      } });
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
     } : function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
@@ -3691,9 +3707,9 @@ var require_side_by_side_renderer = __commonJS({
         var lineClass = "d2h-code-side-linenumber";
         var contentClass = "d2h-code-side-line";
         return this.hoganUtils.render(genericTemplatesPath, "line", {
-          type: (line === null || line === void 0 ? void 0 : line.type) || renderUtils.CSSLineClass.CONTEXT + " d2h-emptyplaceholder",
-          lineClass: line !== void 0 ? lineClass : lineClass + " d2h-code-side-emptyplaceholder",
-          contentClass: line !== void 0 ? contentClass : contentClass + " d2h-code-side-emptyplaceholder",
+          type: (line === null || line === void 0 ? void 0 : line.type) || "".concat(renderUtils.CSSLineClass.CONTEXT, " d2h-emptyplaceholder"),
+          lineClass: line !== void 0 ? lineClass : "".concat(lineClass, " d2h-code-side-emptyplaceholder"),
+          contentClass: line !== void 0 ? contentClass : "".concat(contentClass, " d2h-code-side-emptyplaceholder"),
           prefix: (line === null || line === void 0 ? void 0 : line.prefix) === " " ? "&nbsp;" : line === null || line === void 0 ? void 0 : line.prefix,
           content: line === null || line === void 0 ? void 0 : line.content,
           lineNumber: line === null || line === void 0 ? void 0 : line.number
@@ -4291,9 +4307,13 @@ var require_diff2html_templates = __commonJS({
     var __createBinding2 = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
-      Object.defineProperty(o, k2, { enumerable: true, get: function() {
-        return m[k];
-      } });
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
     } : function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
@@ -4733,9 +4753,13 @@ var require_hoganjs_utils = __commonJS({
     var __createBinding2 = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
-      Object.defineProperty(o, k2, { enumerable: true, get: function() {
-        return m[k];
-      } });
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
     } : function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
@@ -4781,14 +4805,14 @@ var require_hoganjs_utils = __commonJS({
           var template = this.preCompiledTemplates[templateKey];
           return template.render(params, partials, indent);
         } catch (e) {
-          throw new Error("Could not find template to render '" + templateKey + "'");
+          throw new Error("Could not find template to render '".concat(templateKey, "'"));
         }
       };
       HoganJsUtils2.prototype.template = function(namespace, view) {
         return this.preCompiledTemplates[this.templateKey(namespace, view)];
       };
       HoganJsUtils2.prototype.templateKey = function(namespace, view) {
-        return namespace + "-" + view;
+        return "".concat(namespace, "-").concat(view);
       };
       return HoganJsUtils2;
     }();
@@ -4815,9 +4839,13 @@ var require_diff2html = __commonJS({
     var __createBinding2 = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
-      Object.defineProperty(o, k2, { enumerable: true, get: function() {
-        return m[k];
-      } });
+      var desc = Object.getOwnPropertyDescriptor(m, k);
+      if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() {
+          return m[k];
+        } };
+      }
+      Object.defineProperty(o, k2, desc);
     } : function(o, m, k, k2) {
       if (k2 === void 0)
         k2 = k;
@@ -4900,6 +4928,7 @@ var require_tslib = __commonJS({
     var __importDefault2;
     var __classPrivateFieldGet2;
     var __classPrivateFieldSet2;
+    var __classPrivateFieldIn2;
     var __createBinding2;
     (function(factory) {
       var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
@@ -5092,9 +5121,13 @@ var require_tslib = __commonJS({
       __createBinding2 = Object.create ? function(o, m, k, k2) {
         if (k2 === void 0)
           k2 = k;
-        Object.defineProperty(o, k2, { enumerable: true, get: function() {
-          return m[k];
-        } });
+        var desc = Object.getOwnPropertyDescriptor(m, k);
+        if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+          desc = { enumerable: true, get: function() {
+            return m[k];
+          } };
+        }
+        Object.defineProperty(o, k2, desc);
       } : function(o, m, k, k2) {
         if (k2 === void 0)
           k2 = k;
@@ -5275,6 +5308,11 @@ var require_tslib = __commonJS({
           throw new TypeError("Cannot write private member to an object whose class did not declare it");
         return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
       };
+      __classPrivateFieldIn2 = function(state, receiver) {
+        if (receiver === null || typeof receiver !== "object" && typeof receiver !== "function")
+          throw new TypeError("Cannot use 'in' operator on non-object");
+        return typeof state === "function" ? receiver === state : state.has(receiver);
+      };
       exporter("__extends", __extends2);
       exporter("__assign", __assign2);
       exporter("__rest", __rest2);
@@ -5299,6 +5337,7 @@ var require_tslib = __commonJS({
       exporter("__importDefault", __importDefault2);
       exporter("__classPrivateFieldGet", __classPrivateFieldGet2);
       exporter("__classPrivateFieldSet", __classPrivateFieldSet2);
+      exporter("__classPrivateFieldIn", __classPrivateFieldIn2);
     });
   }
 });
@@ -6728,7 +6767,7 @@ var require_feather = __commonJS({
 __export(exports, {
   default: () => ObsidianGit
 });
-var import_obsidian14 = __toModule(require("obsidian"));
+var import_obsidian15 = __toModule(require("obsidian"));
 var path2 = __toModule(require("path"));
 
 // src/promiseQueue.ts
@@ -6888,8 +6927,12 @@ var ObsidianGitSettingsTab = class extends import_obsidian.PluginSettingTab {
         plugin.gitManager.updateGitPath(value || "git");
       });
     });
-    new import_obsidian.Setting(containerEl).setName("Base Path (Git repository path)").setDesc("Sets the relative path from where to execute the git binary. Mostly used to set the path to the git repository.").addText((cb) => {
+    new import_obsidian.Setting(containerEl).setName("Custom base path (Git repository path)").setDesc(`
+            Sets the relative path to the vault from which the Git binary should be executed.
+             Mostly used to set the path to the Git repository, which is only required if the Git repository is below the vault root directory. Use "\\" instead of "/" on Windows.
+            `).addText((cb) => {
       cb.setValue(plugin.settings.basePath);
+      cb.setPlaceholder("directory/directory-with-git-repo");
       cb.onChange((value) => {
         plugin.settings.basePath = value;
         plugin.saveSettings();
@@ -7169,6 +7212,7 @@ function getData(manager) {
 
 // src/simpleGit.ts
 var import_child_process2 = __toModule(require("child_process"));
+var import_obsidian6 = __toModule(require("obsidian"));
 var path = __toModule(require("path"));
 var import_path = __toModule(require("path"));
 
@@ -8533,6 +8577,97 @@ var init_change_working_directory = __esm({
     init_task();
   }
 });
+function parseCommitResult(stdOut) {
+  const result = {
+    author: null,
+    branch: "",
+    commit: "",
+    root: false,
+    summary: {
+      changes: 0,
+      insertions: 0,
+      deletions: 0
+    }
+  };
+  return parseStringResponse(result, parsers, stdOut);
+}
+var parsers;
+var init_parse_commit = __esm({
+  "src/lib/parsers/parse-commit.ts"() {
+    init_utils();
+    parsers = [
+      new LineParser(/^\[([^\s]+)( \([^)]+\))? ([^\]]+)/, (result, [branch, root, commit]) => {
+        result.branch = branch;
+        result.commit = commit;
+        result.root = !!root;
+      }),
+      new LineParser(/\s*Author:\s(.+)/i, (result, [author]) => {
+        const parts = author.split("<");
+        const email = parts.pop();
+        if (!email || !email.includes("@")) {
+          return;
+        }
+        result.author = {
+          email: email.substr(0, email.length - 1),
+          name: parts.join("<").trim()
+        };
+      }),
+      new LineParser(/(\d+)[^,]*(?:,\s*(\d+)[^,]*)(?:,\s*(\d+))/g, (result, [changes, insertions, deletions]) => {
+        result.summary.changes = parseInt(changes, 10) || 0;
+        result.summary.insertions = parseInt(insertions, 10) || 0;
+        result.summary.deletions = parseInt(deletions, 10) || 0;
+      }),
+      new LineParser(/^(\d+)[^,]*(?:,\s*(\d+)[^(]+\(([+-]))?/, (result, [changes, lines, direction]) => {
+        result.summary.changes = parseInt(changes, 10) || 0;
+        const count = parseInt(lines, 10) || 0;
+        if (direction === "-") {
+          result.summary.deletions = count;
+        } else if (direction === "+") {
+          result.summary.insertions = count;
+        }
+      })
+    ];
+  }
+});
+var commit_exports = {};
+__export2(commit_exports, {
+  commitTask: () => commitTask,
+  default: () => commit_default
+});
+function commitTask(message, files, customArgs) {
+  const commands = [
+    "-c",
+    "core.abbrev=40",
+    "commit",
+    ...prefixedArray(message, "-m"),
+    ...files,
+    ...customArgs
+  ];
+  return {
+    commands,
+    format: "utf-8",
+    parser: parseCommitResult
+  };
+}
+function commit_default() {
+  return {
+    commit(message, ...rest) {
+      const next = trailingFunctionArgument(arguments);
+      const task = rejectDeprecatedSignatures(message) || commitTask(asArray(message), asArray(filterType(rest[0], filterStringOrStringArray, [])), [...filterType(rest[1], filterArray, []), ...getTrailingOptions(arguments, 0, true)]);
+      return this._runTask(task, next);
+    }
+  };
+  function rejectDeprecatedSignatures(message) {
+    return !filterStringOrStringArray(message) && configurationErrorTask(`git.commit: requires the commit message to be supplied as a string/string[]`);
+  }
+}
+var init_commit = __esm({
+  "src/lib/tasks/commit.ts"() {
+    init_parse_commit();
+    init_utils();
+    init_task();
+  }
+});
 function hashObjectTask(filePath, write) {
   const commands = ["hash-object", filePath];
   if (write) {
@@ -8948,15 +9083,15 @@ var init_parse_remote_objects = __esm({
   }
 });
 function parseRemoteMessages(_stdOut, stdErr) {
-  return parseStringResponse({ remoteMessages: new RemoteMessageSummary() }, parsers, stdErr);
+  return parseStringResponse({ remoteMessages: new RemoteMessageSummary() }, parsers2, stdErr);
 }
-var parsers;
+var parsers2;
 var RemoteMessageSummary;
 var init_parse_remote_messages = __esm({
   "src/lib/parsers/parse-remote-messages.ts"() {
     init_utils();
     init_parse_remote_objects();
-    parsers = [
+    parsers2 = [
       new RemoteLineParser(/^remote:\s*(.+)$/, (result, [text2]) => {
         result.remoteMessages.all.push(text2.trim());
         return false;
@@ -8987,7 +9122,7 @@ function parsePullErrorResult(stdOut, stdErr) {
 var FILE_UPDATE_REGEX;
 var SUMMARY_REGEX;
 var ACTION_REGEX;
-var parsers2;
+var parsers3;
 var errorParsers;
 var parsePullDetail;
 var parsePullResult;
@@ -8999,7 +9134,7 @@ var init_parse_pull = __esm({
     FILE_UPDATE_REGEX = /^\s*(.+?)\s+\|\s+\d+\s*(\+*)(-*)/;
     SUMMARY_REGEX = /(\d+)\D+((\d+)\D+\(\+\))?(\D+(\d+)\D+\(-\))?/;
     ACTION_REGEX = /^(create|delete) mode \d+ (.+)/;
-    parsers2 = [
+    parsers3 = [
       new LineParser(FILE_UPDATE_REGEX, (result, [file, insertions, deletions]) => {
         result.files.push(file);
         if (insertions) {
@@ -9034,14 +9169,14 @@ var init_parse_pull = __esm({
       })
     ];
     parsePullDetail = (stdOut, stdErr) => {
-      return parseStringResponse(new PullSummary(), parsers2, stdOut, stdErr);
+      return parseStringResponse(new PullSummary(), parsers3, stdOut, stdErr);
     };
     parsePullResult = (stdOut, stdErr) => {
       return Object.assign(new PullSummary(), parsePullDetail(stdOut, stdErr), parseRemoteMessages(stdOut, stdErr));
     };
   }
 });
-var parsers3;
+var parsers4;
 var parseMergeResult;
 var parseMergeDetail;
 var init_parse_merge = __esm({
@@ -9049,7 +9184,7 @@ var init_parse_merge = __esm({
     init_MergeSummary();
     init_utils();
     init_parse_pull();
-    parsers3 = [
+    parsers4 = [
       new LineParser(/^Auto-merging\s+(.+)$/, (summary, [autoMerge]) => {
         summary.merges.push(autoMerge);
       }),
@@ -9070,7 +9205,7 @@ var init_parse_merge = __esm({
       return Object.assign(parseMergeDetail(stdOut, stdErr), parsePullResult(stdOut, stdErr));
     };
     parseMergeDetail = (stdOut) => {
-      return parseStringResponse(new MergeSummaryDetail(), parsers3, stdOut);
+      return parseStringResponse(new MergeSummaryDetail(), parsers4, stdOut);
     };
   }
 });
@@ -9111,14 +9246,14 @@ function pushResultPushedItem(local, remote, status) {
     remote
   };
 }
-var parsers4;
+var parsers5;
 var parsePushResult;
 var parsePushDetail;
 var init_parse_push = __esm({
   "src/lib/parsers/parse-push.ts"() {
     init_utils();
     init_parse_remote_messages();
-    parsers4 = [
+    parsers5 = [
       new LineParser(/^Pushing to (.+)$/, (result, [repo]) => {
         result.repo = repo;
       }),
@@ -9156,7 +9291,7 @@ var init_parse_push = __esm({
       return __spreadValues2(__spreadValues2({}, pushDetail), responseDetail);
     };
     parsePushDetail = (stdOut, stdErr) => {
-      return parseStringResponse({ pushed: [] }, parsers4, stdOut, stdErr);
+      return parseStringResponse({ pushed: [] }, parsers5, stdOut, stdErr);
     };
   }
 });
@@ -9212,16 +9347,10 @@ var init_FileStatusSummary = __esm({
   }
 });
 function renamedFile(line) {
-  const detail = /^(.+) -> (.+)$/.exec(line);
-  if (!detail) {
-    return {
-      from: line,
-      to: line
-    };
-  }
+  const [to, from] = line.split(NULL);
   return {
-    from: String(detail[1]),
-    to: String(detail[2])
+    from: from || to,
+    to
   };
 }
 function parser2(indexX, indexY, handler) {
@@ -9242,17 +9371,17 @@ function splitLine(result, lineStr) {
   }
   function data(index, workingDir, path3) {
     const raw = `${index}${workingDir}`;
-    const handler = parsers5.get(raw);
+    const handler = parsers6.get(raw);
     if (handler) {
       handler(result, path3);
     }
     if (raw !== "##" && raw !== "!!") {
-      result.files.push(new FileStatusSummary(path3, index, workingDir));
+      result.files.push(new FileStatusSummary(path3.replace(/\0.+$/, ""), index, workingDir));
     }
   }
 }
 var StatusSummary;
-var parsers5;
+var parsers6;
 var parseStatusSummary;
 var init_StatusSummary = __esm({
   "src/lib/responses/StatusSummary.ts"() {
@@ -9279,7 +9408,7 @@ var init_StatusSummary = __esm({
         };
       }
     };
-    parsers5 = new Map([
+    parsers6 = new Map([
       parser2(" ", "A", (result, file) => append(result.created, file)),
       parser2(" ", "D", (result, file) => append(result.deleted, file)),
       parser2(" ", "M", (result, file) => append(result.modified, file)),
@@ -9324,10 +9453,17 @@ var init_StatusSummary = __esm({
       }]
     ]);
     parseStatusSummary = function(text2) {
-      const lines = text2.trim().split(NULL);
+      const lines = text2.split(NULL);
       const status = new StatusSummary();
-      for (let i = 0, l = lines.length; i < l; i++) {
-        splitLine(status, lines[i]);
+      for (let i = 0, l = lines.length; i < l; ) {
+        let line = lines[i++].trim();
+        if (!line) {
+          continue;
+        }
+        if (line.charAt(0) === "R") {
+          line += NULL + (lines[i++] || "");
+        }
+        splitLine(status, line);
       }
       return status;
     };
@@ -9366,6 +9502,7 @@ var init_simple_git_api = __esm({
   "src/lib/simple-git-api.ts"() {
     init_task_callback();
     init_change_working_directory();
+    init_commit();
     init_config();
     init_grep();
     init_hash_object();
@@ -9438,7 +9575,7 @@ var init_simple_git_api = __esm({
         return this._runTask(statusTask(getTrailingOptions(arguments)), trailingFunctionArgument(arguments));
       }
     };
-    Object.assign(SimpleGitApi.prototype, config_default(), grep_default(), log_default());
+    Object.assign(SimpleGitApi.prototype, commit_default(), config_default(), grep_default(), log_default());
   }
 });
 var scheduler_exports = {};
@@ -9539,7 +9676,7 @@ function hasBranchDeletionError(data, processExitCode) {
 }
 var deleteSuccessRegex;
 var deleteErrorRegex;
-var parsers6;
+var parsers7;
 var parseBranchDeletions;
 var init_parse_branch_delete = __esm({
   "src/lib/parsers/parse-branch-delete.ts"() {
@@ -9547,7 +9684,7 @@ var init_parse_branch_delete = __esm({
     init_utils();
     deleteSuccessRegex = /(\S+)\s+\(\S+\s([^)]+)\)/;
     deleteErrorRegex = /^error[^']+'([^']+)'/m;
-    parsers6 = [
+    parsers7 = [
       new LineParser(deleteSuccessRegex, (result, [branch, hash2]) => {
         const deletion = branchDeletionSuccess(branch, hash2);
         result.all.push(deletion);
@@ -9561,7 +9698,7 @@ var init_parse_branch_delete = __esm({
       })
     ];
     parseBranchDeletions = (stdOut, stdErr) => {
-      return parseStringResponse(new BranchDeletionBatch(), parsers6, stdOut, stdErr);
+      return parseStringResponse(new BranchDeletionBatch(), parsers7, stdOut, stdErr);
     };
   }
 });
@@ -9592,14 +9729,14 @@ var init_BranchSummary = __esm({
   }
 });
 function parseBranchSummary(stdOut) {
-  return parseStringResponse(new BranchSummaryResult(), parsers7, stdOut);
+  return parseStringResponse(new BranchSummaryResult(), parsers8, stdOut);
 }
-var parsers7;
+var parsers8;
 var init_parse_branch = __esm({
   "src/lib/parsers/parse-branch.ts"() {
     init_BranchSummary();
     init_utils();
-    parsers7 = [
+    parsers8 = [
       new LineParser(/^(\*\s)?\((?:HEAD )?detached (?:from|at) (\S+)\)\s+([a-z0-9]+)\s(.*)$/, (result, [current, name, commit, label]) => {
         result.push(!!current, true, name, commit, label);
       }),
@@ -9738,77 +9875,6 @@ var init_clone = __esm({
   "src/lib/tasks/clone.ts"() {
     init_task();
     init_utils();
-  }
-});
-function parseCommitResult(stdOut) {
-  const result = {
-    author: null,
-    branch: "",
-    commit: "",
-    root: false,
-    summary: {
-      changes: 0,
-      insertions: 0,
-      deletions: 0
-    }
-  };
-  return parseStringResponse(result, parsers8, stdOut);
-}
-var parsers8;
-var init_parse_commit = __esm({
-  "src/lib/parsers/parse-commit.ts"() {
-    init_utils();
-    parsers8 = [
-      new LineParser(/^\[([^\s]+)( \([^)]+\))? ([^\]]+)/, (result, [branch, root, commit]) => {
-        result.branch = branch;
-        result.commit = commit;
-        result.root = !!root;
-      }),
-      new LineParser(/\s*Author:\s(.+)/i, (result, [author]) => {
-        const parts = author.split("<");
-        const email = parts.pop();
-        if (!email || !email.includes("@")) {
-          return;
-        }
-        result.author = {
-          email: email.substr(0, email.length - 1),
-          name: parts.join("<").trim()
-        };
-      }),
-      new LineParser(/(\d+)[^,]*(?:,\s*(\d+)[^,]*)(?:,\s*(\d+))/g, (result, [changes, insertions, deletions]) => {
-        result.summary.changes = parseInt(changes, 10) || 0;
-        result.summary.insertions = parseInt(insertions, 10) || 0;
-        result.summary.deletions = parseInt(deletions, 10) || 0;
-      }),
-      new LineParser(/^(\d+)[^,]*(?:,\s*(\d+)[^(]+\(([+-]))?/, (result, [changes, lines, direction]) => {
-        result.summary.changes = parseInt(changes, 10) || 0;
-        const count = parseInt(lines, 10) || 0;
-        if (direction === "-") {
-          result.summary.deletions = count;
-        } else if (direction === "+") {
-          result.summary.insertions = count;
-        }
-      })
-    ];
-  }
-});
-var commit_exports = {};
-__export2(commit_exports, {
-  commitTask: () => commitTask
-});
-function commitTask(message, files, customArgs) {
-  const commands = ["commit"];
-  message.forEach((m) => commands.push("-m", m));
-  commands.push(...files, ...customArgs);
-  return {
-    commands,
-    format: "utf-8",
-    parser: parseCommitResult
-  };
-}
-var init_commit = __esm({
-  "src/lib/tasks/commit.ts"() {
-    init_parse_commit();
   }
 });
 var diff_exports = {};
@@ -10240,13 +10306,6 @@ var require_git = __commonJS2({
         });
       });
     };
-    Git2.prototype.commit = function(message, files, options, then) {
-      const next = trailingFunctionArgument2(arguments);
-      if (!filterStringOrStringArray2(message)) {
-        return this._runTask(configurationErrorTask2("git.commit: requires the commit message to be supplied as a string/string[]"), next);
-      }
-      return this._runTask(commitTask2(asArray2(message), asArray2(filterType2(files, filterStringOrStringArray2, [])), [...filterType2(options, filterArray2, []), ...getTrailingOptions2(arguments, 0, true)]), next);
-    };
     Git2.prototype.pull = function(remote, branch, options, then) {
       return this._runTask(pullTask2(filterType2(remote, filterString2), filterType2(branch, filterString2), getTrailingOptions2(arguments)), trailingFunctionArgument2(arguments));
     };
@@ -10656,6 +10715,7 @@ function timeoutPlugin({ block }) {
           (_b2 = context.spawned.stderr) == null ? void 0 : _b2.off("data", wait3);
           context.spawned.off("exit", stop);
           context.spawned.off("close", stop);
+          timeout && clearTimeout(timeout);
         }
         function kill() {
           stop();
@@ -10764,19 +10824,23 @@ var GitManager = class {
 var SimpleGit = class extends GitManager {
   constructor(plugin) {
     super(plugin);
-    this.setGitInstance();
   }
-  setGitInstance() {
+  setGitInstance(ignoreError = false) {
     return __async(this, null, function* () {
       if (this.isGitInstalled()) {
         const adapter = this.app.vault.adapter;
         const path3 = adapter.getBasePath();
-        let extraPath = "";
+        let basePath = path3;
         if (this.plugin.settings.basePath) {
-          extraPath = import_path.sep + this.plugin.settings.basePath;
+          const exists2 = yield adapter.exists((0, import_obsidian6.normalizePath)(this.plugin.settings.basePath));
+          if (exists2) {
+            basePath = path3 + import_path.sep + this.plugin.settings.basePath;
+          } else if (!ignoreError) {
+            new import_obsidian6.Notice("ObsidianGit: Base path does not exist");
+          }
         }
         this.git = esm_default({
-          baseDir: path3 + extraPath,
+          baseDir: basePath,
           binary: this.plugin.settings.gitPath || void 0,
           config: ["core.quotepath=off"]
         });
@@ -10791,24 +10855,31 @@ var SimpleGit = class extends GitManager {
       this.plugin.setState(PluginState.idle);
       return {
         changed: status.files.filter((e) => e.working_dir !== " ").map((e) => {
-          const res = this.formatPath(e.path);
+          const res = this.formatPath(e);
           e.path = res.path;
           e.from = res.from;
           e.working_dir = e.working_dir === "?" ? "U" : e.working_dir;
           return e;
         }),
         staged: status.files.filter((e) => e.index !== " " && e.index != "?").map((e) => {
-          const res = this.formatPath(e.path, e.index === "R");
+          const res = this.formatPath(e, e.index === "R");
           e.path = res.path;
           e.from = res.from;
           return e;
         }),
-        conflicted: status.conflicted.map((e) => this.formatPath(e).path)
+        conflicted: status.conflicted.map((e) => this.formatPath({
+          path: e,
+          from: void 0,
+          index: void 0,
+          working_dir: void 0
+        }).path)
       };
     });
   }
   formatPath(path3, renamed = false) {
     function format(path4) {
+      if (path4 == void 0)
+        return void 0;
       if (path4.startsWith('"') && path4.endsWith('"')) {
         return path4.substring(1, path4.length - 1);
       } else {
@@ -10816,14 +10887,13 @@ var SimpleGit = class extends GitManager {
       }
     }
     if (renamed) {
-      const paths = path3.split(" -> ").map((e) => format(e));
       return {
-        from: paths[0],
-        path: paths[1]
+        from: format(path3.from),
+        path: format(path3.path)
       };
     } else {
       return {
-        path: format(path3)
+        path: format(path3.path)
       };
     }
   }
@@ -10831,7 +10901,37 @@ var SimpleGit = class extends GitManager {
     return __async(this, null, function* () {
       if (this.plugin.settings.updateSubmodules) {
         this.plugin.setState(PluginState.commit);
-        yield this.git.subModule(["foreach", "--recursive", `git add -A && if [ ! -z "$(git status --porcelain)" ]; then git commit -m "${yield this.formatCommitMessage(message)}"; fi`], (err) => this.onError(err));
+        yield new Promise((resolve, reject) => __async(this, null, function* () {
+          this.git.outputHandler((cmd, stdout, stderr, args) => __async(this, null, function* () {
+            if (!(args.contains("submodule") && args.contains("foreach")))
+              return;
+            let body = "";
+            let root = this.app.vault.adapter.getBasePath() + (this.plugin.settings.basePath ? import_path.sep + this.plugin.settings.basePath : "");
+            stdout.on("data", (chunk) => {
+              body += chunk.toString("utf8");
+            });
+            stdout.on("end", () => __async(this, null, function* () {
+              let submods = body.split("\n");
+              submods = submods.map((i) => {
+                let submod = i.match(/'([^']*)'/);
+                if (submod != void 0) {
+                  return root + import_path.sep + submod[1] + import_path.sep;
+                }
+              });
+              submods.reverse();
+              for (const item of submods) {
+                if (item != void 0) {
+                  yield this.git.cwd({ path: item, root: false }).add("-A", (err) => this.onError(err));
+                  yield this.git.cwd({ path: item, root: false }).commit(yield this.formatCommitMessage(message), (err) => this.onError(err));
+                }
+              }
+              resolve();
+            }));
+          }));
+          yield this.git.subModule(["foreach", "--recursive", ""]);
+          this.git.outputHandler(() => {
+          });
+        }));
       }
       this.plugin.setState(PluginState.add);
       yield this.git.add("-A", (err) => this.onError(err));
@@ -10930,7 +11030,7 @@ var SimpleGit = class extends GitManager {
       const status = yield this.git.status();
       const trackingBranch = status.tracking;
       const currentBranch = status.current;
-      const remoteChangedFiles = (yield this.git.diffSummary([currentBranch, trackingBranch])).changed;
+      const remoteChangedFiles = (yield this.git.diffSummary([currentBranch, trackingBranch], (err) => this.onError(err))).changed;
       this.plugin.setState(PluginState.push);
       if (this.plugin.settings.updateSubmodules) {
         yield this.git.env(__spreadProps(__spreadValues({}, process.env), { "OBSIDIAN_GIT": 1 })).subModule(["foreach", "--recursive", `tracking=$(git for-each-ref --format='%(upstream:short)' "$(git symbolic-ref -q HEAD)"); echo $tracking; if [ ! -z "$(git diff --shortstat $tracking)" ]; then git push; fi`], (err) => this.onError(err));
@@ -11058,7 +11158,7 @@ var SimpleGit = class extends GitManager {
     this.setGitInstance();
   }
   updateBasePath(basePath) {
-    this.setGitInstance();
+    this.setGitInstance(true);
   }
   getDiffString(filePath, stagedChanges = false) {
     return __async(this, null, function* () {
@@ -11102,8 +11202,8 @@ var SimpleGit = class extends GitManager {
 
 // src/ui/diff/diffView.ts
 var import_diff2html = __toModule(require_diff2html());
-var import_obsidian6 = __toModule(require("obsidian"));
-var DiffView = class extends import_obsidian6.ItemView {
+var import_obsidian7 = __toModule(require("obsidian"));
+var DiffView = class extends import_obsidian7.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
@@ -11160,10 +11260,10 @@ var DiffView = class extends import_obsidian6.ItemView {
 };
 
 // src/ui/modals/generalModal.ts
-var import_obsidian7 = __toModule(require("obsidian"));
-var GeneralModal = class extends import_obsidian7.SuggestModal {
-  constructor(app, remotes, placeholder) {
-    super(app);
+var import_obsidian8 = __toModule(require("obsidian"));
+var GeneralModal = class extends import_obsidian8.SuggestModal {
+  constructor(app2, remotes, placeholder) {
+    super(app2);
     this.resolve = null;
     this.list = remotes;
     this.setPlaceholder(placeholder);
@@ -11194,7 +11294,7 @@ var GeneralModal = class extends import_obsidian7.SuggestModal {
 };
 
 // src/ui/sidebar/sidebarView.ts
-var import_obsidian13 = __toModule(require("obsidian"));
+var import_obsidian14 = __toModule(require("obsidian"));
 
 // node_modules/svelte/internal/index.mjs
 function noop() {
@@ -11335,9 +11435,9 @@ function set_input_value(input, value) {
 function toggle_class(element2, name, toggle) {
   element2.classList[toggle ? "add" : "remove"](name);
 }
-function custom_event(type, detail, bubbles = false) {
+function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
   const e = document.createEvent("CustomEvent");
-  e.initCustomEvent(type, bubbles, false, detail);
+  e.initCustomEvent(type, bubbles, cancelable, detail);
   return e;
 }
 var managed_styles = new Map();
@@ -11829,11 +11929,12 @@ var {
   __importStar,
   __importDefault,
   __classPrivateFieldGet,
-  __classPrivateFieldSet
+  __classPrivateFieldSet,
+  __classPrivateFieldIn
 } = import_tslib.default;
 
 // src/ui/sidebar/gitView.svelte
-var import_obsidian12 = __toModule(require("obsidian"));
+var import_obsidian13 = __toModule(require("obsidian"));
 
 // node_modules/svelte/easing/index.mjs
 function cubicOut(t) {
@@ -11861,14 +11962,14 @@ function slide(node, { delay: delay2 = 0, duration = 400, easing = cubicOut } = 
 }
 
 // src/ui/sidebar/components/fileComponent.svelte
-var import_obsidian10 = __toModule(require("obsidian"));
+var import_obsidian11 = __toModule(require("obsidian"));
 
 // node_modules/obsidian-community-lib/dist/utils.js
 var feather = __toModule(require_feather());
-var import_obsidian8 = __toModule(require("obsidian"));
+var import_obsidian9 = __toModule(require("obsidian"));
 function hoverPreview(event, view, to) {
   const targetEl = event.target;
-  view.app.workspace.trigger("hover-link", {
+  app.workspace.trigger("hover-link", {
     event,
     source: view.getViewType(),
     hoverParent: view,
@@ -11876,28 +11977,28 @@ function hoverPreview(event, view, to) {
     linktext: to
   });
 }
-function createNewMDNote(app, newName, currFilePath = "") {
+function createNewMDNote(newName, currFilePath = "") {
   return __async(this, null, function* () {
     const newFileFolder = app.fileManager.getNewFileParent(currFilePath).path;
-    const newFilePath = (0, import_obsidian8.normalizePath)(`${newFileFolder}${newFileFolder === "/" ? "" : "/"}${addMD(newName)}`);
+    const newFilePath = (0, import_obsidian9.normalizePath)(`${newFileFolder}${newFileFolder === "/" ? "" : "/"}${addMD(newName)}`);
     return yield app.vault.create(newFilePath, "");
   });
 }
 var addMD = (noteName) => {
-  return noteName.endsWith(".md") ? noteName : noteName + ".md";
+  return noteName.match(/\.MD$|\.md$/m) ? noteName : noteName + ".md";
 };
-function openOrSwitch(_0, _1, _2) {
-  return __async(this, arguments, function* (app, dest, event, options = { createNewFile: true }) {
+function openOrSwitch(_0, _1) {
+  return __async(this, arguments, function* (dest, event, options = { createNewFile: true }) {
     const { workspace } = app;
     let destFile = app.metadataCache.getFirstLinkpathDest(dest, "");
     if (!destFile && options.createNewFile) {
-      destFile = yield createNewMDNote(app, dest);
+      destFile = yield createNewMDNote(dest);
     } else if (!destFile && !options.createNewFile)
       return;
     const leavesWithDestAlreadyOpen = [];
     workspace.iterateAllLeaves((leaf) => {
       var _a2;
-      if (leaf.view instanceof import_obsidian8.MarkdownView) {
+      if (leaf.view instanceof import_obsidian9.MarkdownView) {
         const file = (_a2 = leaf.view) === null || _a2 === void 0 ? void 0 : _a2.file;
         if (file && file.basename + "." + file.extension === dest) {
           leavesWithDestAlreadyOpen.push(leaf);
@@ -11915,10 +12016,10 @@ function openOrSwitch(_0, _1, _2) {
 }
 
 // src/ui/modals/discardModal.ts
-var import_obsidian9 = __toModule(require("obsidian"));
-var DiscardModal = class extends import_obsidian9.Modal {
-  constructor(app, deletion, filename) {
-    super(app);
+var import_obsidian10 = __toModule(require("obsidian"));
+var DiscardModal = class extends import_obsidian10.Modal {
+  constructor(app2, deletion, filename) {
+    super(app2);
     this.deletion = deletion;
     this.filename = filename;
     this.resolve = null;
@@ -12122,7 +12223,7 @@ function instance($$self, $$props, $$invalidate) {
   let { manager } = $$props;
   let { workspace } = $$props;
   let buttons = [];
-  setImmediate(() => buttons.forEach((b) => (0, import_obsidian10.setIcon)(b, b.getAttr("data-icon"), 16)));
+  setImmediate(() => buttons.forEach((b) => (0, import_obsidian11.setIcon)(b, b.getAttr("data-icon"), 16)));
   function hover(event) {
     if (!change.path.startsWith(view.app.vault.configDir) || !change.path.startsWith(".")) {
       hoverPreview(event, view, change.path.split("/").last().replace(".md", ""));
@@ -12238,7 +12339,7 @@ var FileComponent = class extends SvelteComponent {
 var fileComponent_default = FileComponent;
 
 // src/ui/sidebar/components/stagedFileComponent.svelte
-var import_obsidian11 = __toModule(require("obsidian"));
+var import_obsidian12 = __toModule(require("obsidian"));
 function add_css2(target) {
   append_styles(target, "svelte-15heedx", "main.svelte-15heedx.svelte-15heedx.svelte-15heedx{cursor:pointer;background-color:var(--background-secondary);border-radius:4px;width:98%;display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:2px}main.svelte-15heedx .path.svelte-15heedx.svelte-15heedx{color:var(--text-muted);white-space:nowrap;max-width:75%;overflow:hidden;text-overflow:ellipsis}main.svelte-15heedx:hover .path.svelte-15heedx.svelte-15heedx{color:var(--text-normal);transition:all 200ms}main.svelte-15heedx .tools.svelte-15heedx.svelte-15heedx{display:flex;align-items:center}main.svelte-15heedx .tools .type.svelte-15heedx.svelte-15heedx{height:16px;width:16px;margin:0;display:flex;align-items:center;justify-content:center}main.svelte-15heedx .tools .type[data-type=M].svelte-15heedx.svelte-15heedx{color:orange}main.svelte-15heedx .tools .type[data-type=D].svelte-15heedx.svelte-15heedx{color:red}main.svelte-15heedx .tools .type[data-type=A].svelte-15heedx.svelte-15heedx{color:yellowgreen}main.svelte-15heedx .tools .type[data-type=R].svelte-15heedx.svelte-15heedx{color:violet}main.svelte-15heedx .tools .buttons.svelte-15heedx.svelte-15heedx{display:flex}main.svelte-15heedx .tools .buttons.svelte-15heedx>.svelte-15heedx{color:var(--text-faint);height:16px;width:16px;margin:0;transition:all 0.2s;border-radius:2px;margin-right:1px}main.svelte-15heedx .tools .buttons.svelte-15heedx>.svelte-15heedx:hover{color:var(--text-normal);background-color:var(--interactive-accent)}");
 }
@@ -12393,7 +12494,7 @@ function instance2($$self, $$props, $$invalidate) {
   let { view } = $$props;
   let { manager } = $$props;
   let buttons = [];
-  setImmediate(() => buttons.forEach((b) => (0, import_obsidian11.setIcon)(b, b.getAttr("data-icon"), 16)));
+  setImmediate(() => buttons.forEach((b) => (0, import_obsidian12.setIcon)(b, b.getAttr("data-icon"), 16)));
   function hover(event) {
     if (!change.path.startsWith(view.app.vault.configDir) || !change.path.startsWith(".")) {
       hoverPreview(event, view, formattedPath.split("/").last().replace(".md", ""));
@@ -13905,7 +14006,7 @@ function instance4($$self, $$props, $$invalidate) {
   let changesOpen = true;
   let stagedOpen = true;
   let loading = true;
-  const debRefresh = (0, import_obsidian12.debounce)(() => {
+  const debRefresh = (0, import_obsidian13.debounce)(() => {
     if (plugin.settings.refreshSourceControl) {
       refresh();
     }
@@ -13918,8 +14019,8 @@ function instance4($$self, $$props, $$invalidate) {
   let renameEvent;
   addEventListener("git-refresh", refresh);
   plugin.app.workspace.onLayoutReady(() => setImmediate(() => {
-    buttons.forEach((btn) => (0, import_obsidian12.setIcon)(btn, btn.getAttr("data-icon"), 16));
-    (0, import_obsidian12.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
+    buttons.forEach((btn) => (0, import_obsidian13.setIcon)(btn, btn.getAttr("data-icon"), 16));
+    (0, import_obsidian13.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
     modifyEvent = plugin.app.vault.on("modify", () => {
       debRefresh();
     });
@@ -14050,7 +14151,7 @@ function instance4($$self, $$props, $$invalidate) {
       $: {
         if (layoutBtn) {
           layoutBtn.empty();
-          (0, import_obsidian12.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
+          (0, import_obsidian13.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
         }
       }
     }
@@ -14097,7 +14198,7 @@ var GitView = class extends SvelteComponent {
 var gitView_default = GitView;
 
 // src/ui/sidebar/sidebarView.ts
-var GitView2 = class extends import_obsidian13.ItemView {
+var GitView2 = class extends import_obsidian14.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
@@ -14129,7 +14230,7 @@ var GitView2 = class extends import_obsidian13.ItemView {
 };
 
 // src/main.ts
-var ObsidianGit = class extends import_obsidian14.Plugin {
+var ObsidianGit = class extends import_obsidian15.Plugin {
   constructor() {
     super(...arguments);
     this.gitReady = false;
@@ -14316,13 +14417,16 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
     return __async(this, null, function* () {
       try {
         this.gitManager = new SimpleGit(this);
+        if (this.gitManager instanceof SimpleGit) {
+          yield this.gitManager.setGitInstance();
+        }
         const result = yield this.gitManager.checkRequirements();
         switch (result) {
           case "missing-git":
             this.displayError("Cannot run git command");
             break;
           case "missing-repo":
-            new import_obsidian14.Notice("Can't find a valid git repository. Please create one via the given command.");
+            new import_obsidian15.Notice("Can't find a valid git repository. Please create one via the given command.");
             break;
           case "valid":
             this.gitReady = true;
@@ -14355,7 +14459,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
   createNewRepo() {
     return __async(this, null, function* () {
       yield this.gitManager.init();
-      new import_obsidian14.Notice("Initialized new repo");
+      new import_obsidian15.Notice("Initialized new repo");
     });
   }
   cloneNewRepo() {
@@ -14366,9 +14470,9 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
         let dir = yield new GeneralModal(this.app, [], "Enter directory for clone. It needs to be empty or not existent.").open();
         if (dir) {
           dir = path2.normalize(dir);
-          new import_obsidian14.Notice(`Cloning new repo into "${dir}"`);
+          new import_obsidian15.Notice(`Cloning new repo into "${dir}"`);
           yield this.gitManager.clone(url, dir);
-          new import_obsidian14.Notice("Cloned new repo");
+          new import_obsidian15.Notice("Cloned new repo");
         }
       }
     });
@@ -14442,7 +14546,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
         let commitMessage = fromAutoBackup ? this.settings.autoCommitMessage : this.settings.commitMessage;
         if (fromAutoBackup && this.settings.customMessageOnAutoBackup || requestCustomMessage) {
           if (!this.settings.disablePopups && fromAutoBackup) {
-            new import_obsidian14.Notice("Auto backup: Please enter a custom commit message. Leave empty to abort");
+            new import_obsidian15.Notice("Auto backup: Please enter a custom commit message. Leave empty to abort");
           }
           const tempMessage = yield new CustomMessageModal(this, true).open();
           if (tempMessage != void 0 && tempMessage != "" && tempMessage != "...") {
@@ -14497,7 +14601,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
   remotesAreSet() {
     return __async(this, null, function* () {
       if (!(yield this.gitManager.branchInfo()).tracking) {
-        new import_obsidian14.Notice("No upstream branch is set. Please select one.");
+        new import_obsidian15.Notice("No upstream branch is set. Please select one.");
         const remoteBranch = yield this.selectRemoteBranch();
         if (remoteBranch == void 0) {
           this.displayError("Did not push. No upstream-branch is set!", 1e4);
@@ -14518,7 +14622,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
         this.doAutoBackup();
       } else {
         this.onFileModifyEventRef = this.app.vault.on("modify", () => this.autoBackupDebouncer());
-        this.autoBackupDebouncer = (0, import_obsidian14.debounce)(() => this.doAutoBackup(), time, true);
+        this.autoBackupDebouncer = (0, import_obsidian15.debounce)(() => this.doAutoBackup(), time, true);
       }
     } else {
       this.timeoutIDBackup = window.setTimeout(() => this.doAutoBackup(), time);
@@ -14570,7 +14674,7 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
         "Please resolve them and commit per command (This file will be deleted before the commit).",
         ...conflicted.map((e) => {
           const file = this.app.vault.getAbstractFileByPath(e);
-          if (file instanceof import_obsidian14.TFile) {
+          if (file instanceof import_obsidian15.TFile) {
             const link = this.app.metadataCache.fileToLinktext(file, "/");
             return `- [[${link}]]`;
           } else {
@@ -14647,14 +14751,14 @@ var ObsidianGit = class extends import_obsidian14.Plugin {
     var _a2;
     (_a2 = this.statusBar) == null ? void 0 : _a2.displayMessage(message.toLowerCase(), timeout);
     if (!this.settings.disablePopups) {
-      new import_obsidian14.Notice(message, 5 * 1e3);
+      new import_obsidian15.Notice(message, 5 * 1e3);
     }
     console.log(`git obsidian message: ${message}`);
   }
   displayError(message, timeout = 10 * 1e3) {
     var _a2;
     message = message.toString();
-    new import_obsidian14.Notice(message, timeout);
+    new import_obsidian15.Notice(message, timeout);
     console.log(`git obsidian error: ${message}`);
     (_a2 = this.statusBar) == null ? void 0 : _a2.displayMessage(message.toLowerCase(), timeout);
   }

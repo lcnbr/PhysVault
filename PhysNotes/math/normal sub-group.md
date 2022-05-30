@@ -12,4 +12,4 @@ i.e.\ $ghg^{-1}\in\text{H}$ for all $h\in\text{H},g\in\text{G}$.
 
 # Quotient group
 For normal subgroups the [[coset|coset space]] $\text{G}/\text{H}$
-has a group structure, called the [[normal sub-group|quotient group]].
+has a group structure, called the [[.md|quotient group]].

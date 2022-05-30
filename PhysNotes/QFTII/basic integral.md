@@ -10,7 +10,7 @@ $$
 
 ^098603
 
-For convenience, we first [[Wick rotation]] the integral
+For convenience, we first [[../String/Wick rotation]] the integral
 $$
 I_{n}(X)=\int \frac{\mathrm{d} \ell_{\mathrm{E}}^{D}}{(2 \pi)^{D}} \frac{1}{\left(\ell_{\mathrm{E}}^{2}+X-i \epsilon\right)^{n}} .
 $$
@@ -18,7 +18,7 @@ Now the integrand is spherically symmetric, therefore we transform to spherical 
 $$
 I_{n}(X)=\operatorname{Vol}\left(S^{D-1}\right) \int_{0}^{\infty} \frac{\mathrm{d} \ell_{\mathrm{E}}}{(2 \pi)^{D}} \frac{\ell_{\mathrm{E}}^{D-1}}{\left(\ell_{\mathrm{E}}^{2}+X-i \epsilon\right)^{n}} .
 $$
-The volume of a $(D-1)$-sphere equals $\operatorname{Vol}\left(S^{D-1}\right)=2 \pi^{D / 2} / \Gamma(D / 2)$. The remaining radial integral after a change of variables $\ell_{\mathrm{E}}^{2}=z$ is a [[Euler Beta function]] in $D$
+The volume of a $(D-1)$-sphere equals $\operatorname{Vol}\left(S^{D-1}\right)=2 \pi^{D / 2} / \Gamma(D / 2)$. The remaining radial integral after a change of variables $\ell_{\mathrm{E}}^{2}=z$ is a [[../String/Euler Beta function]] in $D$
 $$
 \frac{1}{2} \int_{0}^{\infty} \frac{\mathrm{d} z}{(2 \pi)^{D}} \frac{z^{D / 2-1}}{(z+X-i \epsilon)^{n}}=\frac{\Gamma(D / 2) \Gamma(n-D / 2)}{2(2 \pi)^{D} \Gamma(n)(X-i \epsilon)^{n-D / 2}} .
 $$

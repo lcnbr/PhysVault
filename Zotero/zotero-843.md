@@ -3,11 +3,11 @@
 ![[zotero-843-zotero#Metadata]]
 
 Other files:
-* Mdnotes File Name: [[zotero-843]]
+* Mdnotes File Name: [[.md|zotero-843]]
 * Metadata File Name: [[zotero-843-zotero]]
 
 ##  Zotero links
-* [Local library](zotero://select/items/1_HVHSCDDI)
+* [[zotero://select/items/1_HVHSCDDI|Local library]]
 * [Cloud library](http://zotero.org/users/7873466/items/HVHSCDDI)
 
 ## Notes

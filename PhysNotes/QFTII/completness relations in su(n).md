@@ -3,7 +3,7 @@ alias:
 tags:
 - qftII
 ---
-The [[defining representation of su(n)|defining representation]] of $\mathfrak{s u}(N)$ maps elements of $\mathfrak{g}$ to $N \times N$ traceless anti-hermitian matrices. The representation $T_{a}^{\text {def }}$ of the basis $T_{a}$ therefore consists of traceless hermitian matrices ^[When $\mathfrak{s u}(N)$ is viewed as a matrix algebra, it makes sense to identify $T_{a}^{\text {def }}$ with $T_{a}$ and drop the label def from all matrices $T_{a}^{\text {def }}$ below for convenience.]
+The [[../math/defining representation of su(n|defining representation]].md) of $\mathfrak{s u}(N)$ maps elements of $\mathfrak{g}$ to $N \times N$ traceless anti-hermitian matrices. The representation $T_{a}^{\text {def }}$ of the basis $T_{a}$ therefore consists of traceless hermitian matrices ^[When $\mathfrak{s u}(N)$ is viewed as a matrix algebra, it makes sense to identify $T_{a}^{\text {def }}$ with $T_{a}$ and drop the label def from all matrices $T_{a}^{\text {def }}$ below for convenience.]
 $$\left(T_{a}^{\text {def }}\right)^{+}=T_{a}^{\text {def }}, \quad \operatorname{Tr} T_{a}^{\text {def }}=0 .$$
 The matrices $T_{a}^{\text {def }}$ are used to translate between the two standard formulations of unitary gauge theories: 
 - One formulation assumes gauge fields to be traceless hermitian matrices $A$; 
@@ -11,7 +11,7 @@ The matrices $T_{a}^{\text {def }}$ are used to translate between the two standa
 
 Consequently, the two are related by $A \sim T_{a}^{\text {def }} A^{a}$.
 
-An important property of the representation matrices $T_{a}^{\text {def }}$ is that they also form a basis of $N \times N$ matrices (over the complex numbers) when supplemented with the unit matrix id. The completeness relation reads (using [[structure constants#Killing form in basis]])
+An important property of the representation matrices $T_{a}^{\text {def }}$ is that they also form a basis of $N \times N$ matrices (over the complex numbers) when supplemented with the unit matrix id. The completeness relation reads (using [[../math/structure constants#Killing form in basis]])
 $$
 k^{a b}\left(T_{a}^{\operatorname{def}}\right)^{i}{ }_{j}\left(T_{b}^{\operatorname{def}}\right)^{k}{ }_{l}=B^{\operatorname{def}}\left(\delta_{l}^{i} \delta_{j}^{k}-\frac{1}{N} \delta_{j}^{i} \delta_{l}^{k}\right) .
 $$
@@ -36,6 +36,6 @@ $$
 \end{aligned}
 $$
 The above completeness relation also has a useful graphical representation reminiscent of Feynman graphs and rules. Both identities can be written as
-![[Pasted image 20220126211944.png|400]]
+![[../math/Pasted image 20220126211944.png|400]]
 
-Here a curly line depicts an algebra index and the directed straight line depicts the flow of the [[defining representation of su(n)|fundamental representation]]. Inserting a matrix $X$ in two different places results in the above completeness relations which are thus equivalent.
+Here a curly line depicts an algebra index and the directed straight line depicts the flow of the [[../math/defining representation of su(n|fundamental representation]].md). Inserting a matrix $X$ in two different places results in the above completeness relations which are thus equivalent.

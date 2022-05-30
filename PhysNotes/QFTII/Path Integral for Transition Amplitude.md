@@ -10,11 +10,11 @@ $\newcommand{\iunit}{{\mathring{\imath}}}$
 
 We follow [[QFTIIconventions#Operators]], and make $\hbar$ explicit.
 
-We [[canonical quantisation|canonically quantise]] the  classical [[Hamiltonian]], and promote it to an operator: $\hat{H}=H(\hat{q},\hat{p})$
+We [[canonical quantisation|canonically quantise]] the  classical [[../AnalyticalMech/Hamiltonian]], and promote it to an operator: $\hat{H}=H(\hat{q},\hat{p})$
 
 
 # Transition Amplitude
- Want the [[transition amplitude]] $A_{f,i}$ between position $q_i$ at time $t_i$ and position $q_f$ at time $t_f$, which merely uses the classical [[Hamiltonian]] $H(p,q)$ instead of the [[Hamiltonian operator]] $\hat{H}$.
+ Want the [[transition amplitude]] $A_{f,i}$ between position $q_i$ at time $t_i$ and position $q_f$ at time $t_f$, which merely uses the classical [[../AnalyticalMech/Hamiltonian]] $H(p,q)$ instead of the [[Hamiltonian operator]] $\hat{H}$.
 
  
 # Time Slices
@@ -24,7 +24,7 @@ We iterate the subdivision $n$ times to obtain a very fine resolution for the [[
 $$
 A_{\mathrm{f}, \mathrm{i}}=\int \mathrm{d} q_{n-1} \ldots \mathrm{d} q_{1} A_{\mathrm{f}, n-1} \ldots A_{1, \mathrm{i}}=\int \prod_{k=1}^{n-1} \mathrm{~d} q_{k} \prod_{k=1}^{n} A_{k, k-1}
 $$
-![|300](file:///C:/Users/Lucien/Documents/UNI/images/image25.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image25.png||300]]
 For a sufficiently small time interval we can approximate the [[time evolution operator|time evolution]] by an exponential
 
 $$
@@ -32,7 +32,7 @@ $$
 $$
  In other words we should be able to evaluate:
  $$\bra{q_k}\hat{H}\ket{q_{k-1}}=\bra{q_k}H(\hat{q},\hat{p})\ket{q_{k-1}}$$
-This expression certainly depends on the ordering of factors $\hat{q}$ and $\hat{p}$ in $H( \hat{q},\hat{p})$ which is not determined by the classical [[Hamiltonian]] function [[H(q, p)]]: 
+This expression certainly depends on the ordering of factors $\hat{q}$ and $\hat{p}$ in $H( \hat{q},\hat{p})$ which is not determined by the classical [[../AnalyticalMech/Hamiltonian]] function [[q, p)](H(q, p|H(q, p)]]): 
 - If we order all $\hat{q}$ to be to the left of all $\hat{p}$ we will get $$\bra{q_k}H(q_k,\hat{p})\ket{q_{k-1}}$$
 - If we all $\hat{q}$ to be to the right of all $\hat{p}$ we will get $$\bra{q_k}H(q_{k-1},\hat{p})\ket{q_{k-1}}$$
 - Weyl order: we could order the operators such that $\hat{q}$ evaluates to $\bar{q_k}=\frac{1}{2}(q_k+q_{k-1})$:$$\bra{q_k}H(\bar{q_k},\hat{p})\ket{q_{k-1}}$$
@@ -53,7 +53,7 @@ We substitute the [[momentum and position eigenstates#Fourrier exponent|Fourier 
 $$\int \frac{\mathrm{d}{p_k}}{2\pi\hbar}\exp\left[-\frac{\iunit}{\hbar}(t_k-t_{k-1})H(\bar q_k, p_k)
 +\frac{\iunit}{\hbar}p_k(q_{k}-q_{k-1} \right].
 $$
-Putting everything together we now have an integral expression for the transition amplitude $A_{n,0}$ in terms of the classical [[Hamiltonian]]
+Putting everything together we now have an integral expression for the transition amplitude $A_{n,0}$ in terms of the classical [[../AnalyticalMech/Hamiltonian]]
 $$
 A_\text{f,i}
 \approx A_{n,0}\coloneq
@@ -71,7 +71,7 @@ S_{n,0}[q,p]:=\sum_{k=1}^n \left(
 $$
 ^discAction
 
-![|300](file:///C:/Users/Lucien/Documents/UNI/images/image54.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image54.png||300]]
   
 ![[Path Integral in Phase Space]]
 

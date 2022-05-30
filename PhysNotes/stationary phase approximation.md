@@ -1,4 +1,4 @@
-from [[@colemanQUANTUMFIELDTHEORY2018#17 4 Obtaining the decay law by stationary phase approximation zotero open-pdf 0_4E7XKTS3 408|QFT by S.C.]].
+from [[../Zotero/@colemanQUANTUMFIELDTHEORY2018#17 4 Obtaining the decay law by stationary phase approximation zotero open-pdf 0_4E7XKTS3 408|QFT by S.C.]].
 
 If we have an integral
 $$

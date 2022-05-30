@@ -1,14 +1,14 @@
-In the [calculus of variations](https://en.wikipedia.org/wiki/Calculus_of_variations "Calculus of variations"), a field of [mathematical analysis](https://en.wikipedia.org/wiki/Mathematical_analysis "Mathematical analysis"), the **functional derivative** (or **variational derivative**)[\[1\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-GiaquintaHildebrandtP18-1) relates a change in a [functional](https://en.wikipedia.org/wiki/Functional_(mathematics) "Functional (mathematics)") (a functional in this sense is a function that acts on functions) to a change in a [function](https://en.wikipedia.org/wiki/Function_(mathematics) "Function (mathematics)") on which the functional depends.
+In the [calculus of variations](https://en.wikipedia.org/wiki/Calculus_of_variations "Calculus of variations"), a field of [mathematical analysis](https://en.wikipedia.org/wiki/Mathematical_analysis "Mathematical analysis"), the **functional derivative** (or **variational derivative**)[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-GiaquintaHildebrandtP18-1]] relates a change in a [functional](https://en.wikipedia.org/wiki/Functional_(mathematics) "Functional (mathematics)") (a functional in this sense is a function that acts on functions) to a change in a [function](https://en.wikipedia.org/wiki/Function_(mathematics) "Function (mathematics)") on which the functional depends.
 
 In the calculus of variations, functionals are usually expressed in terms of an [integral](https://en.wikipedia.org/wiki/Integral "Integral") of functions, their [arguments](https://en.wikipedia.org/wiki/Argument_of_a_function "Argument of a function"), and their [derivatives](https://en.wikipedia.org/wiki/Derivative "Derivative"). In an integral _L_ of a functional, if a function _f_ is varied by adding to it another function _δf_ that is arbitrarily small, and the resulting integrand is expanded in powers of _δf_, the coefficient of _δf_ in the first order term is called the functional derivative.
 
 For example, consider the functional
 
-![{\displaystyle J[f]=\int _{a}^{b}L(\,x,f(x),f\,'(x)\,)\,dx\ ,}](https://wikimedia.org/api/rest_v1/media/math/render/svg/68be973ffd7b1b84391c61f2dcacd0ecf74ca766)
+![[\,x,f(x),f\,'(x)\,)\,dx\ ,}](https://wikimedia.org/api/rest_v1/media/math/render/svg/68be973ffd7b1b84391c61f2dcacd0ecf74ca766|{\displaystyle J[f]]
 
-where _f_ ′(_x_) ≡ _df/dx_. If _f_ is varied by adding to it a function _δf_, and the resulting integrand _L_(_x, f +δf, f '+δf_ ′) is expanded in powers of _δf_, then the change in the value of _J_ to first order in _δf_ can be expressed as follows:[\[1\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-GiaquintaHildebrandtP18-1)[\[Note 1\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-2)
+where _f_ ′(_x_) ≡ _df/dx_. If _f_ is varied by adding to it a function _δf_, and the resulting integrand _L_(_x, f +δf, f '+δf_ ′) is expanded in powers of _δf_, then the change in the value of _J_ to first order in _δf_ can be expressed as follows:[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-GiaquintaHildebrandtP18-1]][[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-2]]
 
-![{\displaystyle \delta J=\int _{a}^{b}\left({\frac {\partial L}{\partial f}}\delta f(x)+{\frac {\partial L}{\partial f'}}{\frac {d}{dx}}\delta f(x)\right)\,dx\,=\int _{a}^{b}\left({\frac {\partial L}{\partial f}}-{\frac {d}{dx}}{\frac {\partial L}{\partial f'}}\right)\delta f(x)\,dx\,+\,{\frac {\partial L}{\partial f'}}(b)\delta f(b)\,-\,{\frac {\partial L}{\partial f'}}(a)\delta f(a)\,}](https://wikimedia.org/api/rest_v1/media/math/render/svg/0a158226d573ac9354c92c290fb21e7c6830e566)
+![[{\frac {\partial L}{\partial f}}\delta f(x)+{\frac {\partial L}{\partial f'}}{\frac {d}{dx}}\delta f(x)\right)\,dx\,=\int _{a}^{b}\left({\frac {\partial L}{\partial f}}-{\frac {d}{dx}}{\frac {\partial L}{\partial f'}}\right)\delta f(x)\,dx\,+\,{\frac {\partial L}{\partial f'}}(b)\delta f(b)\,-\,{\frac {\partial L}{\partial f'}}(a)\delta f(a)\,}](https://wikimedia.org/api/rest_v1/media/math/render/svg/0a158226d573ac9354c92c290fb21e7c6830e566|{\displaystyle \delta J=\int _{a}^{b}\left({\frac {\partial L}{\partial f}}\delta f(x)+{\frac {\partial L}{\partial f'}}{\frac {d}{dx}}\delta f(x)\right)\,dx\,=\int _{a}^{b}\left({\frac {\partial L}{\partial f}}-{\frac {d}{dx}}{\frac {\partial L}{\partial f'}}\right)\delta f(x)\,dx\,+\,{\frac {\partial L}{\partial f'}}(b)\delta f(b)\,-\,{\frac {\partial L}{\partial f'}}(a)\delta f(a)\,}]]
 
 where the variation in the derivative, _δf_ ′ was rewritten as the derivative of the variation (_δf_) ′, and [integration by parts](https://en.wikipedia.org/wiki/Integration_by_parts "Integration by parts") was used.
 
@@ -22,9 +22,9 @@ Given a [manifold](https://en.wikipedia.org/wiki/Manifold "Manifold") _M_ repres
 
 ![F\colon M \rightarrow \mathbb{R} \quad \mbox{or} \quad F\colon M \rightarrow \mathbb{C} \, ,](https://wikimedia.org/api/rest_v1/media/math/render/svg/619e4ea211514bac49c0fbf890ba895cf0e8b358)
 
-the **functional derivative** of _F_\[_ρ_\], denoted _δF/δρ_, is defined through[\[2\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP246A.2-3)
+the **functional derivative** of _F_\[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP246A.2-3]]
 
-![{\displaystyle {\begin{aligned}\int {\frac {\delta F}{\delta \rho }}(x)\phi (x)\;dx&=\lim _{\varepsilon \to 0}{\frac {F[\rho +\varepsilon \phi ]-F[\rho ]}{\varepsilon }}\\&=\left[{\frac {d}{d\varepsilon }}F[\rho +\varepsilon \phi ]\right]_{\varepsilon =0},\end{aligned}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/132e1da8f763ed918cb58f7d83cd4c108acc888f)
+![[x)\phi (x)\;dx&=\lim _{\varepsilon \to 0}{\frac {F[\rho +\varepsilon \phi ]-F[\rho ]}{\varepsilon }}\\&=\left[{\frac {d}{d\varepsilon }}F[\rho +\varepsilon \phi ]\right]_{\varepsilon =0},\end{aligned}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/132e1da8f763ed918cb58f7d83cd4c108acc888f|{\displaystyle {\begin{aligned}\int {\frac {\delta F}{\delta \rho }}(x)\phi (x)\;dx&=\lim _{\varepsilon \to 0}{\frac {F[\rho +\varepsilon \phi ]]
 
 where ![\phi ](https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4) is an arbitrary function. The quantity ![{\displaystyle \varepsilon \phi }](https://wikimedia.org/api/rest_v1/media/math/render/svg/d985d11fd66f00c42d03a6925abb23d8ae319292) is called the variation of _ρ_.
 
@@ -36,45 +36,45 @@ is a linear functional, so one may apply the [Riesz–Markov–Kakutani represen
 
 One thinks of the function _δF_/_δρ_ as the gradient of _F_ at the point _ρ_ and
 
-![\int \frac{\delta F}{\delta\rho}(x) \phi(x) \; dx](https://wikimedia.org/api/rest_v1/media/math/render/svg/50360a6873c3b76ccb1bf161fedf5ec9728e205f)
+![[x) \phi(x) \; dx](https://wikimedia.org/api/rest_v1/media/math/render/svg/50360a6873c3b76ccb1bf161fedf5ec9728e205f|\int \frac{\delta F}{\delta\rho}(x) \phi(x) \; dx]]
 
 as the directional derivative at point _ρ_ in the direction of _ϕ_. Then analogous to vector calculus, the inner product with the gradient gives the directional derivative.
 
 ### Functional differential\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=3 "Edit section: Functional differential")\]
 
-The differential (or variation or first variation) of the functional ![{\displaystyle F\left[\rho \right]}](https://wikimedia.org/api/rest_v1/media/math/render/svg/b5f2b97341e91c7e096b9fdb0cfa2cd7294b2afc) is [\[3\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP246A.1-4) [\[Note 2\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-5)
+The differential (or variation or first variation) of the functional ![{\displaystyle F\left[\rho \right]}](https://wikimedia.org/api/rest_v1/media/math/render/svg/b5f2b97341e91c7e096b9fdb0cfa2cd7294b2afc) is [[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP246A.1-4]] [[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-5]]
 
-![{\displaystyle \delta F[\rho ;\phi ]=\int {\frac {\delta F}{\delta \rho }}(x)\ \phi (x)\ dx\ .}](https://wikimedia.org/api/rest_v1/media/math/render/svg/1d7e377793bd3f8a8deb912eb0199638f4c2975a)
+![[x)\ \phi (x)\ dx\ .}](https://wikimedia.org/api/rest_v1/media/math/render/svg/1d7e377793bd3f8a8deb912eb0199638f4c2975a|{\displaystyle \delta F[\rho ;\phi ]]
 
-Heuristically, ![\phi ](https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4) is the change in ![\rho ](https://wikimedia.org/api/rest_v1/media/math/render/svg/1f7d439671d1289b6a816e6af7a304be40608d64), so we 'formally' have ![\phi =\delta \rho ](https://wikimedia.org/api/rest_v1/media/math/render/svg/072cafb6fc9caf296796ed601c8bc2bdcd3e99e1), and then this is similar in form to the [total differential](https://en.wikipedia.org/wiki/Total_differential "Total differential") of a function ![{\displaystyle F(\rho _{1},\rho _{2},\dots ,\rho _{n})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/71fc74ad4256da18bb0aa5b452f488ba10ddf6d2),
+Heuristically, ![\phi ](https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4) is the change in ![\rho ](https://wikimedia.org/api/rest_v1/media/math/render/svg/1f7d439671d1289b6a816e6af7a304be40608d64), so we 'formally' have ![\phi =\delta \rho ](https://wikimedia.org/api/rest_v1/media/math/render/svg/072cafb6fc9caf296796ed601c8bc2bdcd3e99e1), and then this is similar in form to the [total differential](https://en.wikipedia.org/wiki/Total_differential "Total differential") of a function ![[\rho _{1},\rho _{2},\dots ,\rho _{n})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/71fc74ad4256da18bb0aa5b452f488ba10ddf6d2|{\displaystyle F(\rho _{1},\rho _{2},\dots ,\rho _{n})}]],
 
 ![ dF =   \sum_{i=1} ^n  \frac {\partial F} {\partial \rho_i} \ d\rho_i  \ ,](https://wikimedia.org/api/rest_v1/media/math/render/svg/d42e2d895d30e7b4d8888ee7b6f6ffc6a1e8dc52)
 
-where ![{\displaystyle \rho _{1},\rho _{2},\dots ,\rho _{n}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/18e9dfc44cd0a2ab384e0f5ba57fe40959545ca7) are independent variables. Comparing the last two equations, the functional derivative ![{\displaystyle \delta F/\delta \rho (x)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/fe130f00d494d704fe53af2533436aee5a1f8f26) has a role similar to that of the partial derivative ![{\displaystyle \partial F/\partial \rho _{i}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/609308f616a84019fcea5797e0936c6c3859f3c0), where the variable of integration ![x](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4) is like a continuous version of the summation index ![i](https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20).[\[4\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP246-6)
+where ![{\displaystyle \rho _{1},\rho _{2},\dots ,\rho _{n}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/18e9dfc44cd0a2ab384e0f5ba57fe40959545ca7) are independent variables. Comparing the last two equations, the functional derivative ![[x)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/fe130f00d494d704fe53af2533436aee5a1f8f26|{\displaystyle \delta F/\delta \rho (x)}]] has a role similar to that of the partial derivative ![{\displaystyle \partial F/\partial \rho _{i}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/609308f616a84019fcea5797e0936c6c3859f3c0), where the variable of integration ![x](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4) is like a continuous version of the summation index ![i](https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20).[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP246-6]]
 
 ## Properties\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=4 "Edit section: Properties")\]
 
-Like the derivative of a function, the functional derivative satisfies the following properties, where _F_\[_ρ_\] and _G_\[_ρ_\] are functionals:[\[Note 3\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-7)
+Like the derivative of a function, the functional derivative satisfies the following properties, where _F_\[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-7]]
 
--   Linearity:[\[5\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP247A.3-8)
+-   Linearity:[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP247A.3-8]]
 
-![{\frac  {\delta (\lambda F+\mu G)[\rho ]}{\delta \rho (x)}}=\lambda {\frac  {\delta F[\rho ]}{\delta \rho (x)}}+\mu {\frac  {\delta G[\rho ]}{\delta \rho (x)}},](https://wikimedia.org/api/rest_v1/media/math/render/svg/a3855d2be1b75c59c9da233cf9c8c71eeed66eaf)
+![[\lambda F+\mu G)[\rho ]}{\delta \rho (x)}}=\lambda {\frac  {\delta F[\rho ]}{\delta \rho (x)}}+\mu {\frac  {\delta G[\rho ]}{\delta \rho (x)}},](https://wikimedia.org/api/rest_v1/media/math/render/svg/a3855d2be1b75c59c9da233cf9c8c71eeed66eaf|{\frac  {\delta (\lambda F+\mu G)[\rho ]]
 
 where _λ_, _μ_ are constants.
 
--   Product rule:[\[6\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP247A.4-9)
+-   Product rule:[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP247A.4-9]]
 
-![{\frac  {\delta (FG)[\rho ]}{\delta \rho (x)}}={\frac  {\delta F[\rho ]}{\delta \rho (x)}}G[\rho ]+F[\rho ]{\frac  {\delta G[\rho ]}{\delta \rho (x)}}\,,](https://wikimedia.org/api/rest_v1/media/math/render/svg/ee0421ecdfb105f4b62dcbd729c20e8ca587bda2)
+![[FG)[\rho ]}{\delta \rho (x)}}={\frac  {\delta F[\rho ]}{\delta \rho (x)}}G[\rho ]+F[\rho ]{\frac  {\delta G[\rho ]}{\delta \rho (x)}}\,,](https://wikimedia.org/api/rest_v1/media/math/render/svg/ee0421ecdfb105f4b62dcbd729c20e8ca587bda2|{\frac  {\delta (FG)[\rho ]]
 
 -   Chain rules:
 
-If _F_ is a functional and _G_ another functional, then[\[7\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-10)
+If _F_ is a functional and _G_ another functional, then[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-10]]
 
-![\displaystyle\frac{\delta F[G[\rho]] }{\delta\rho(y)}  = \int dx \frac{\delta F[G]}{\delta G(x)}_{G = G[\rho]}\cdot\frac {\delta G[\rho](x)} {\delta\rho(y)} \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/0e0aabc7b3b65317e5567d152a86c9c3adefc3fc)
+![[y)}  = \int dx \frac{\delta F[G]}{\delta G(x)}_{G = G[\rho]}\cdot\frac {\delta G[\rho](x|\displaystyle\frac{\delta F[G[\rho]]} {\delta\rho(y)} \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/0e0aabc7b3b65317e5567d152a86c9c3adefc3fc)
 
-If _G_ is an ordinary differentiable function (local functional) _g_, then this reduces to[\[8\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-11)
+If _G_ is an ordinary differentiable function (local functional) _g_, then this reduces to[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-11]]
 
-![{\displaystyle \displaystyle {\frac {\delta F[g(\rho )]}{\delta \rho (y)}}={\frac {\delta F[g(\rho )]}{\delta g[\rho (y)]}}\ {\frac {dg(\rho )}{d\rho (y)}}\ .}](https://wikimedia.org/api/rest_v1/media/math/render/svg/2ceb8c9983e83b468694e9eb59635b8ff9ea924a)
+![[\rho )]}{\delta \rho (y)}}={\frac {\delta F[g(\rho )]}{\delta g[\rho (y)]}}\ {\frac {dg(\rho )}{d\rho (y)}}\ .}](https://wikimedia.org/api/rest_v1/media/math/render/svg/2ceb8c9983e83b468694e9eb59635b8ff9ea924a|{\displaystyle \displaystyle {\frac {\delta F[g(\rho )]]
 
 ## Determining functional derivatives\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=5 "Edit section: Determining functional derivatives")\]
 
@@ -84,9 +84,9 @@ A formula to determine functional derivatives for a common class of functionals 
 
 Given a functional
 
-![F[\rho] = \int f( \boldsymbol{r}, \rho(\boldsymbol{r}), \nabla\rho(\boldsymbol{r}) )\, d\boldsymbol{r},](https://wikimedia.org/api/rest_v1/media/math/render/svg/984500e18fa20fadb9f03147b92b046a166aafc7)
+![[ \boldsymbol{r}, \rho(\boldsymbol{r}), \nabla\rho(\boldsymbol{r}) )\, d\boldsymbol{r},](https://wikimedia.org/api/rest_v1/media/math/render/svg/984500e18fa20fadb9f03147b92b046a166aafc7|F[\rho]]
 
-and a function _ϕ_(**_r_**) that vanishes on the boundary of the region of integration, from a previous section [Definition](https://en.wikipedia.org/wiki/Functional_derivative#Definition "Functional derivative"),
+and a function _ϕ_(**_r_**) that vanishes on the boundary of the region of integration, from a previous section [[https://en.wikipedia.org/wiki/Functional_derivative#Definition "Functional derivative"]],
 
 ![
 \begin{align}
@@ -99,15 +99,15 @@ and a function _ϕ_(**_r_**) that vanishes on the boundary of the region of inte
 \end{align}
 ](https://wikimedia.org/api/rest_v1/media/math/render/svg/364480cb1cb7bbad967750d4f4c2b2baa061f134)
 
-The second line is obtained using the [total derivative](https://en.wikipedia.org/wiki/Total_derivative "Total derivative"), where _∂f_ /_∂∇__ρ_ is a [derivative of a scalar with respect to a vector](https://en.wikipedia.org/wiki/Matrix_calculus#Scalar-by-vector "Matrix calculus").[\[Note 4\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-12)
+The second line is obtained using the [total derivative](https://en.wikipedia.org/wiki/Total_derivative "Total derivative"), where _∂f_ /_∂∇__ρ_ is a [[https://en.wikipedia.org/wiki/Matrix_calculus#Scalar-by-vector "Matrix calculus"]].[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-12]]
 
-The third line was obtained by use of a [product rule for divergence](https://en.wikipedia.org/wiki/Divergence#Properties "Divergence"). The fourth line was obtained using the [divergence theorem](https://en.wikipedia.org/wiki/Divergence_theorem "Divergence theorem") and the condition that _ϕ_\=0 on the boundary of the region of integration. Since _ϕ_ is also an arbitrary function, applying the [fundamental lemma of calculus of variations](https://en.wikipedia.org/wiki/Fundamental_lemma_of_calculus_of_variations "Fundamental lemma of calculus of variations") to the last line, the functional derivative is
+The third line was obtained by use of a [[https://en.wikipedia.org/wiki/Divergence#Properties "Divergence"]]. The fourth line was obtained using the [divergence theorem](https://en.wikipedia.org/wiki/Divergence_theorem "Divergence theorem") and the condition that _ϕ_\=0 on the boundary of the region of integration. Since _ϕ_ is also an arbitrary function, applying the [fundamental lemma of calculus of variations](https://en.wikipedia.org/wiki/Fundamental_lemma_of_calculus_of_variations "Fundamental lemma of calculus of variations") to the last line, the functional derivative is
 
 ![
 \frac{\delta F}{\delta\rho(\boldsymbol{r})} = \frac{\partial f}{\partial\rho} - \nabla \cdot \frac{\partial f}{\partial\nabla\rho} 
 ](https://wikimedia.org/api/rest_v1/media/math/render/svg/22ee5ae13b023dfb79c4ce74ae1c462d0df9b8c0)
 
-where _ρ_ = _ρ_(**_r_**) and _f_ = _f_ (**_r_**, _ρ_, ∇_ρ_). This formula is for the case of the functional form given by _F_\[_ρ_\] at the beginning of this section. For other functional forms, the definition of the functional derivative can be used as the starting point for its determination. (See the example [Coulomb potential energy functional](https://en.wikipedia.org/wiki/Functional_derivative#Coulomb_potential_energy_functional "Functional derivative").)
+where _ρ_ = _ρ_(**_r_**) and _f_ = _f_ (**_r_**, _ρ_, ∇_ρ_). This formula is for the case of the functional form given by _F_\[[https://en.wikipedia.org/wiki/Functional_derivative#Coulomb_potential_energy_functional "Functional derivative"]].)
 
 The above equation for the functional derivative can be generalized to the case that includes higher dimensions and higher order derivatives. The functional would be,
 
@@ -117,7 +117,7 @@ F[\rho(\boldsymbol{r})] = \int f( \boldsymbol{r}, \rho(\boldsymbol{r}), \nabla\r
 
 where the vector _**r**_ ∈ ℝ_n_, and ∇(_i_) is a tensor whose _ni_ components are partial derivative operators of order _i_,
 
-![ \left [ \nabla^{(i)} \right ]_{\alpha_1 \alpha_2 \cdots \alpha_i} = \frac {\partial^{\, i}} {\partial r_{\alpha_1}  \partial r_{\alpha_2} \cdots \partial r_{\alpha_i} } \qquad \qquad \text{where} \quad  \alpha_1, \alpha_2, \cdots, \alpha_i = 1, 2, \cdots , n \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/56d037aa2a7b100d82e701c7c784e8fc1c4db99f)[\[Note 5\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-13)
+![[i)} \right ]_{\alpha_1 \alpha_2 \cdots \alpha_i} = \frac {\partial^{\, i}} {\partial r_{\alpha_1}  \partial r_{\alpha_2} \cdots \partial r_{\alpha_i} } \qquad \qquad \text{where} \quad  \alpha_1, \alpha_2, \cdots, \alpha_i = 1, 2, \cdots , n \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/56d037aa2a7b100d82e701c7c784e8fc1c4db99f| \left [ \nabla^{(i)} \right ]][[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-13]]
 
 An analogous application of the definition of the functional derivative yields
 
@@ -128,13 +128,13 @@ An analogous application of the definition of the functional derivative yields
 \end{align}
 ](https://wikimedia.org/api/rest_v1/media/math/render/svg/5e309ee6857a3699070ebbbb3e9380ededa6572d)
 
-In the last two equations, the _ni_ components of the tensor ![ \frac{\partial f}{\partial\left(\nabla^{(i)}\rho\right)} ](https://wikimedia.org/api/rest_v1/media/math/render/svg/c1bfbfa0573912d3a2d6dfb4267e7bb7d75dfb5f) are partial derivatives of _f_ with respect to partial derivatives of _ρ_,
+In the last two equations, the _ni_ components of the tensor ![[\nabla^{(i)}\rho\right)} ](https://wikimedia.org/api/rest_v1/media/math/render/svg/c1bfbfa0573912d3a2d6dfb4267e7bb7d75dfb5f| \frac{\partial f}{\partial\left(\nabla^{(i)}\rho\right)} ]] are partial derivatives of _f_ with respect to partial derivatives of _ρ_,
 
-![ \left [ \frac {\partial f} {\partial \left (\nabla^{(i)}\rho \right ) } \right ]_{\alpha_1 \alpha_2 \cdots \alpha_i} = \frac {\partial f} {\partial \rho_{\alpha_1 \alpha_2 \cdots \alpha_i} } \qquad \qquad \text{where} \quad \rho_{\alpha_1 \alpha_2 \cdots \alpha_i} \equiv \frac {\partial^{\, i}\rho} {\partial r_{\alpha_1} \, \partial r_{\alpha_2} \cdots \partial r_{\alpha_i} }   \ ,   ](https://wikimedia.org/api/rest_v1/media/math/render/svg/75a055a108cb726caf3543357d6e379254a09dbf)
+![[\nabla^{(i)}\rho \right ) } \right ]_{\alpha_1 \alpha_2 \cdots \alpha_i} = \frac {\partial f} {\partial \rho_{\alpha_1 \alpha_2 \cdots \alpha_i} } \qquad \qquad \text{where} \quad \rho_{\alpha_1 \alpha_2 \cdots \alpha_i} \equiv \frac {\partial^{\, i}\rho} {\partial r_{\alpha_1} \, \partial r_{\alpha_2} \cdots \partial r_{\alpha_i} }   \ ,   ](https://wikimedia.org/api/rest_v1/media/math/render/svg/75a055a108cb726caf3543357d6e379254a09dbf| \left [ \frac {\partial f} {\partial \left (\nabla^{(i)}\rho \right ) } \right ]]
 
 and the tensor scalar product is,
 
-![ \nabla^{(i)} \cdot \frac{\partial f}{\partial\left(\nabla^{(i)}\rho\right)} = \sum_{\alpha_1, \alpha_2, \cdots, \alpha_i = 1}^n \ \frac {\partial^{\, i} } {\partial r_{\alpha_1} \, \partial r_{\alpha_2} \cdots \partial r_{\alpha_i} }  \ \frac {\partial f} {\partial \rho_{\alpha_1 \alpha_2 \cdots \alpha_i} }   \  .  ](https://wikimedia.org/api/rest_v1/media/math/render/svg/dd5095d63edbd303f91b2a2a25dc1feddaefba0f) [\[Note 6\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-14)
+![[i)} \cdot \frac{\partial f}{\partial\left(\nabla^{(i)}\rho\right)} = \sum_{\alpha_1, \alpha_2, \cdots, \alpha_i = 1}^n \ \frac {\partial^{\, i} } {\partial r_{\alpha_1} \, \partial r_{\alpha_2} \cdots \partial r_{\alpha_i} }  \ \frac {\partial f} {\partial \rho_{\alpha_1 \alpha_2 \cdots \alpha_i} }   \  .  ](https://wikimedia.org/api/rest_v1/media/math/render/svg/dd5095d63edbd303f91b2a2a25dc1feddaefba0f| \nabla^{(i)} \cdot \frac{\partial f}{\partial\left(\nabla^{(i)}\rho\right)} = \sum_{\alpha_1, \alpha_2, \cdots, \alpha_i = 1}^n \ \frac {\partial^{\, i} } {\partial r_{\alpha_1} \, \partial r_{\alpha_2} \cdots \partial r_{\alpha_i} }  \ \frac {\partial f} {\partial \rho_{\alpha_1 \alpha_2 \cdots \alpha_i} }   \  .  ]] [[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-14]]
 
 ### Examples\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=7 "Edit section: Examples")\]
 
@@ -142,9 +142,9 @@ and the tensor scalar product is,
 
 The [Thomas–Fermi model](https://en.wikipedia.org/wiki/Thomas%E2%80%93Fermi_model "Thomas–Fermi model") of 1927 used a kinetic energy functional for a noninteracting uniform [electron gas](https://en.wikipedia.org/wiki/Free_electron_model "Free electron model") in a first attempt of [density-functional theory](https://en.wikipedia.org/wiki/Density-functional_theory "Density-functional theory") of electronic structure:
 
-![T_\mathrm{TF}[\rho] = C_\mathrm{F} \int \rho^{5/3}(\mathbf{r}) \, d\mathbf{r} \, .](https://wikimedia.org/api/rest_v1/media/math/render/svg/805e085a9d15321704c17fcea9c5c2f3a1f8924b)
+![[\mathbf{r}) \, d\mathbf{r} \, .](https://wikimedia.org/api/rest_v1/media/math/render/svg/805e085a9d15321704c17fcea9c5c2f3a1f8924b|T_\mathrm{TF}[\rho]]
 
-Since the integrand of _T_TF\[_ρ_\] does not involve derivatives of _ρ_(_**r**_), the functional derivative of _T_TF\[_ρ_\] is,[\[9\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP247A.6-15)
+Since the integrand of _T_TF\[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP247A.6-15]]
 
 ![
 \begin{align}
@@ -158,7 +158,7 @@ Since the integrand of _T_TF\[_ρ_\] does not involve derivatives of _ρ_(_**r**
 
 For the **electron-nucleus potential**, Thomas and Fermi employed the [Coulomb](https://en.wikipedia.org/wiki/Coulomb%27s_law "Coulomb's law") potential energy functional
 
-![V[\rho] =  \int \frac{\rho(\boldsymbol{r})}{|\boldsymbol{r}|} \ d\boldsymbol{r}.](https://wikimedia.org/api/rest_v1/media/math/render/svg/2c1593ae52b426aa72244fda7d98ac6aab5a6fd4)
+![[\boldsymbol{r})}{|\boldsymbol{r}|} \ d\boldsymbol{r}.](https://wikimedia.org/api/rest_v1/media/math/render/svg/2c1593ae52b426aa72244fda7d98ac6aab5a6fd4|V[\rho]]
 
 Applying the definition of functional derivative,
 
@@ -172,13 +172,13 @@ Applying the definition of functional derivative,
 
 So,
 
-![ \frac{\delta V}{\delta \rho(\boldsymbol{r})} = \frac{1}{|\boldsymbol{r}|} \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/1c1cee60ee7e8ff1b8ce269836ddb38a45629fd6)
+![[\boldsymbol{r})} = \frac{1}{|\boldsymbol{r}|} \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/1c1cee60ee7e8ff1b8ce269836ddb38a45629fd6| \frac{\delta V}{\delta \rho(\boldsymbol{r})} = \frac{1}{|\boldsymbol{r}|} \ . ]]
 
 For the classical part of the **electron-electron interaction**, Thomas and Fermi employed the [Coulomb](https://en.wikipedia.org/wiki/Coulomb%27s_law "Coulomb's law") potential energy functional
 
-![J[\rho] = \frac{1}{2}\iint \frac{\rho(\mathbf{r}) \rho(\mathbf{r}')}{\vert \mathbf{r}-\mathbf{r}' \vert}\, d\mathbf{r} d\mathbf{r}' \, .](https://wikimedia.org/api/rest_v1/media/math/render/svg/2a6d16f5ade6b1bc0c8c78a03ff33b386221d068)
+![[\mathbf{r}) \rho(\mathbf{r}')}{\vert \mathbf{r}-\mathbf{r}' \vert}\, d\mathbf{r} d\mathbf{r}' \, .](https://wikimedia.org/api/rest_v1/media/math/render/svg/2a6d16f5ade6b1bc0c8c78a03ff33b386221d068|J[\rho]]
 
-From the [definition of the functional derivative](https://en.wikipedia.org/wiki/Functional_derivative#Functional_derivative "Functional derivative"),
+From the [[https://en.wikipedia.org/wiki/Functional_derivative#Functional_derivative "Functional derivative"]],
 
 ![
 \begin{align}
@@ -192,11 +192,11 @@ From the [definition of the functional derivative](https://en.wikipedia.org/wiki
 
 The first and second terms on the right hand side of the last equation are equal, since _**r**_ and _**r′**_ in the second term can be interchanged without changing the value of the integral. Therefore,
 
-![ \int \frac{\delta J}{\delta\rho(\boldsymbol{r})} \phi(\boldsymbol{r})d\boldsymbol{r} = \int \left ( \int \frac {\rho(\boldsymbol{r}') }{\vert \boldsymbol{r}-\boldsymbol{r}' \vert} d\boldsymbol{r}' \right )  \phi(\boldsymbol{r}) d\boldsymbol{r}  ](https://wikimedia.org/api/rest_v1/media/math/render/svg/a37ec62be367efd27e812fb1168b1dca8d1f27ee)
+![[\boldsymbol{r})} \phi(\boldsymbol{r})d\boldsymbol{r} = \int \left ( \int \frac {\rho(\boldsymbol{r}') }{\vert \boldsymbol{r}-\boldsymbol{r}' \vert} d\boldsymbol{r}' \right )  \phi(\boldsymbol{r}) d\boldsymbol{r}  ](https://wikimedia.org/api/rest_v1/media/math/render/svg/a37ec62be367efd27e812fb1168b1dca8d1f27ee| \int \frac{\delta J}{\delta\rho(\boldsymbol{r})} \phi(\boldsymbol{r})d\boldsymbol{r} = \int \left ( \int \frac {\rho(\boldsymbol{r}') }{\vert \boldsymbol{r}-\boldsymbol{r}' \vert} d\boldsymbol{r}' \right )  \phi(\boldsymbol{r}) d\boldsymbol{r}  ]]
 
-and the functional derivative of the electron-electron coulomb potential energy functional _J_\[_ρ_\] is,[\[10\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP248A.11-16)
+and the functional derivative of the electron-electron coulomb potential energy functional _J_\[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP248A.11-16]]
 
-![ \frac{\delta J}{\delta\rho(\boldsymbol{r})} = \int \frac {\rho(\boldsymbol{r}') }{\vert \boldsymbol{r}-\boldsymbol{r}' \vert} d\boldsymbol{r}' \, . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/f39bc784298e5fd4f7f7503aeff0c0638d2621ad)
+![[\boldsymbol{r})} = \int \frac {\rho(\boldsymbol{r}') }{\vert \boldsymbol{r}-\boldsymbol{r}' \vert} d\boldsymbol{r}' \, . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/f39bc784298e5fd4f7f7503aeff0c0638d2621ad| \frac{\delta J}{\delta\rho(\boldsymbol{r})} = \int \frac {\rho(\boldsymbol{r}') }{\vert \boldsymbol{r}-\boldsymbol{r}' \vert} d\boldsymbol{r}' \, . ]]
 
 The second functional derivative is
 
@@ -207,13 +207,13 @@ The second functional derivative is
 
 In 1935 [von Weizsäcker](https://en.wikipedia.org/wiki/Carl_Friedrich_von_Weizsacker "Carl Friedrich von Weizsacker") proposed to add a gradient correction to the Thomas-Fermi kinetic energy functional to make it suit better a molecular electron cloud:
 
-![T_\mathrm{W}[\rho] = \frac{1}{8} \int \frac{\nabla\rho(\mathbf{r}) \cdot \nabla\rho(\mathbf{r})}{ \rho(\mathbf{r}) } d\mathbf{r} =  \int t_\mathrm{W} \ d\mathbf{r} \, ,](https://wikimedia.org/api/rest_v1/media/math/render/svg/0eafe31ae78208f4c75df2c3147f18c61ed02e29)
+![[\mathbf{r}) \cdot \nabla\rho(\mathbf{r})}{ \rho(\mathbf{r}) } d\mathbf{r} =  \int t_\mathrm{W} \ d\mathbf{r} \, ,](https://wikimedia.org/api/rest_v1/media/math/render/svg/0eafe31ae78208f4c75df2c3147f18c61ed02e29|T_\mathrm{W}[\rho]]
 
 where
 
-![ t_\mathrm{W} \equiv  \frac{1}{8}  \frac{\nabla\rho \cdot \nabla\rho}{ \rho } \qquad \text{and} \ \ \rho = \rho(\boldsymbol{r}) \ .  ](https://wikimedia.org/api/rest_v1/media/math/render/svg/6ba8b6c7fe84535137fe832d2b552d3ee4d237f0)
+![[\boldsymbol{r}) \ .  ](https://wikimedia.org/api/rest_v1/media/math/render/svg/6ba8b6c7fe84535137fe832d2b552d3ee4d237f0| t_\mathrm{W} \equiv  \frac{1}{8}  \frac{\nabla\rho \cdot \nabla\rho}{ \rho } \qquad \text{and} \ \ \rho = \rho(\boldsymbol{r}) \ .  ]]
 
-Using a previously derived [formula](https://en.wikipedia.org/wiki/Functional_derivative#Formula "Functional derivative") for the functional derivative,
+Using a previously derived [[https://en.wikipedia.org/wiki/Functional_derivative#Formula "Functional derivative"]] for the functional derivative,
 
 ![
 \begin{align}
@@ -223,9 +223,9 @@ Using a previously derived [formula](https://en.wikipedia.org/wiki/Functional_de
 \end{align}
 ](https://wikimedia.org/api/rest_v1/media/math/render/svg/7606a5a837e42b5c6fef0dc4f579708e225a4fce)
 
-and the result is,[\[11\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP247A.9-17)
+and the result is,[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-ParrYangP247A.9-17]]
 
-![ \frac{\delta T_\mathrm{W}}{\delta \rho(\boldsymbol{r})} =  \ \ \, \frac{1}{8}\frac{\nabla\rho \cdot \nabla\rho}{\rho^2} - \frac{1}{4}\frac{\nabla^2\rho}{\rho} \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/baa84f1f6ef2c83d9e6f447b2c48ccdd01430759)
+![[\boldsymbol{r})} =  \ \ \, \frac{1}{8}\frac{\nabla\rho \cdot \nabla\rho}{\rho^2} - \frac{1}{4}\frac{\nabla^2\rho}{\rho} \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/baa84f1f6ef2c83d9e6f447b2c48ccdd01430759| \frac{\delta T_\mathrm{W}}{\delta \rho(\boldsymbol{r})} =  \ \ \, \frac{1}{8}\frac{\nabla\rho \cdot \nabla\rho}{\rho^2} - \frac{1}{4}\frac{\nabla^2\rho}{\rho} \ . ]]
 
 #### Entropy\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=11 "Edit section: Entropy")\]
 
@@ -258,9 +258,9 @@ Thus,
 
 Let
 
-![ F[\varphi(x)]= e^{\int \varphi(x) g(x)dx}.](https://wikimedia.org/api/rest_v1/media/math/render/svg/8cf62da868a4878d3d5c56043e0e7947d1a3789f)
+![[x)]= e^{\int \varphi(x) g(x)dx}.](https://wikimedia.org/api/rest_v1/media/math/render/svg/8cf62da868a4878d3d5c56043e0e7947d1a3789f| F[\varphi(x)]]
 
-Using the [[delta function]] as a test function,
+Using the [[../math/delta function]] as a test function,
 
 ![
 \begin{align}
@@ -275,7 +275,7 @@ Using the [[delta function]] as a test function,
 
 Thus,
 
-![ \frac{\delta F[\varphi(x)]}{\delta \varphi(y)} = g(y) F[\varphi(x)]. ](https://wikimedia.org/api/rest_v1/media/math/render/svg/e78f30af55466f2e117b3dc25af74e86a2db308c)
+![[x)]}{\delta \varphi(y)} = g(y) F[\varphi(x)]. ](https://wikimedia.org/api/rest_v1/media/math/render/svg/e78f30af55466f2e117b3dc25af74e86a2db308c| \frac{\delta F[\varphi(x)]]
 
 This is particularly useful in calculating the [correlation functions](https://en.wikipedia.org/wiki/Correlation_function_(quantum_field_theory) "Correlation function (quantum field theory)") from the [partition function](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory) "Partition function (quantum field theory)") in [quantum field theory](https://en.wikipedia.org/wiki/Quantum_field_theory "Quantum field theory").
 
@@ -283,7 +283,7 @@ This is particularly useful in calculating the [correlation functions](https://e
 
 A function can be written in the form of an integral like a functional. For example,
 
-![\rho(\boldsymbol{r}) = F[\rho] = \int \rho(\boldsymbol{r}') \delta(\boldsymbol{r}-\boldsymbol{r}')\, d\boldsymbol{r}'.](https://wikimedia.org/api/rest_v1/media/math/render/svg/d4a462a8d7648c751791e624f6bb5abdfa985733)
+![[\boldsymbol{r}) = F[\rho] = \int \rho(\boldsymbol{r}') \delta(\boldsymbol{r}-\boldsymbol{r}')\, d\boldsymbol{r}'.](https://wikimedia.org/api/rest_v1/media/math/render/svg/d4a462a8d7648c751791e624f6bb5abdfa985733|\rho(\boldsymbol{r}) = F[\rho]]
 
 Since the integrand does not depend on derivatives of _ρ_, the functional derivative of _ρ_(_**r**_) is,
 
@@ -297,41 +297,41 @@ Since the integrand does not depend on derivatives of _ρ_, the functional deriv
 
 #### Functional derivative of iterated function\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=14 "Edit section: Functional derivative of iterated function")\]
 
-The functional derivative of the iterated function ![{\displaystyle f(f(x))}](https://wikimedia.org/api/rest_v1/media/math/render/svg/f11f1c1b426c8f37ee0d2c5b9a60e413d8793913) is given by:
+The functional derivative of the iterated function ![[f(x))}](https://wikimedia.org/api/rest_v1/media/math/render/svg/f11f1c1b426c8f37ee0d2c5b9a60e413d8793913|{\displaystyle f(f(x))}]] is given by:
 
-![{\displaystyle {\frac {\delta f(f(x))}{\delta f(y)}}=f'(f(x))\delta (x-y)+\delta (f(x)-y)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/08cee11f422cb7194e8da8f41adc48919e5a1ced)
+![[f(x))}{\delta f(y)}}=f'(f(x))\delta (x-y)+\delta (f(x)-y)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/08cee11f422cb7194e8da8f41adc48919e5a1ced|{\displaystyle {\frac {\delta f(f(x))}{\delta f(y)}}=f'(f(x))\delta (x-y)+\delta (f(x)-y)}]]
 
 and
 
-![{\displaystyle {\frac {\delta f(f(f(x)))}{\delta f(y)}}=f'(f(f(x))(f'(f(x))\delta (x-y)+\delta (f(x)-y))+\delta (f(f(x))-y)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/54c2245f3b3a5ccb7f3f581cbbca60731f909460)
+![[f(f(x)))}{\delta f(y)}}=f'(f(f(x))(f'(f(x))\delta (x-y)+\delta (f(x)-y))+\delta (f(f(x))-y)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/54c2245f3b3a5ccb7f3f581cbbca60731f909460|{\displaystyle {\frac {\delta f(f(f(x)))}{\delta f(y)}}=f'(f(f(x))(f'(f(x))\delta (x-y)+\delta (f(x)-y))+\delta (f(f(x))-y)}]]
 
 In general:
 
-![{\displaystyle {\frac {\delta f^{N}(x)}{\delta f(y)}}=f'(f^{N-1}(x)){\frac {\delta f^{N-1}(x)}{\delta f(y)}}+\delta (f^{N-1}(x)-y)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b2c2f80661a94f479f5a9eff3640049d01ea097)
+![[x)}{\delta f(y)}}=f'(f^{N-1}(x)){\frac {\delta f^{N-1}(x)}{\delta f(y)}}+\delta (f^{N-1}(x)-y)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b2c2f80661a94f479f5a9eff3640049d01ea097|{\displaystyle {\frac {\delta f^{N}(x)}{\delta f(y)}}=f'(f^{N-1}(x)){\frac {\delta f^{N-1}(x)}{\delta f(y)}}+\delta (f^{N-1}(x)-y)}]]
 
 Putting in N=0 gives:
 
-![{\displaystyle {\frac {\delta f^{-1}(x)}{\delta f(y)}}=-{\frac {\delta (f^{-1}(x)-y)}{f'(f^{-1}(x))}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/c59e61027e20323d8cd7cbf298f472f6c0af14d7)
+![[x)}{\delta f(y)}}=-{\frac {\delta (f^{-1}(x)-y)}{f'(f^{-1}(x))}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/c59e61027e20323d8cd7cbf298f472f6c0af14d7|{\displaystyle {\frac {\delta f^{-1}(x)}{\delta f(y)}}=-{\frac {\delta (f^{-1}(x)-y)}{f'(f^{-1}(x))}}}]]
 
-## Using the [[delta function]] as a test function\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=15 "Edit section: Using the [[delta function]] as a test function")\]
+## Using the [[../math/delta function]] as a test function\[[edit]] as a test function")\]
 
-In physics, it is common to use the [Dirac delta function](https://en.wikipedia.org/wiki/Dirac_delta_function "Dirac [[delta function]]") ![\delta(x-y)](https://wikimedia.org/api/rest_v1/media/math/render/svg/caadbaf86974aa6db3aaf6f3566c6eb8d762f3e5) in place of a generic test function ![\phi (x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/546b660b2f3cfb5f34be7b3ed8371d54f5c74227), for yielding the functional derivative at the point ![y](https://wikimedia.org/api/rest_v1/media/math/render/svg/b8a6208ec717213d4317e666f1ae872e00620a0d) (this is a point of the whole functional derivative as a [partial derivative](https://en.wikipedia.org/wiki/Partial_derivative "Partial derivative") is a component of the gradient):[\[12\]](https://en.wikipedia.org/wiki/Functional_derivative#cite_note-18)
+In physics, it is common to use the [Dirac delta function](https://en.wikipedia.org/wiki/Dirac_delta_function "Dirac [delta function](../math/delta%20function.md)") ![[x-y)](https://wikimedia.org/api/rest_v1/media/math/render/svg/caadbaf86974aa6db3aaf6f3566c6eb8d762f3e5|\delta(x-y)]] in place of a generic test function ![[x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/546b660b2f3cfb5f34be7b3ed8371d54f5c74227|\phi (x)]], for yielding the functional derivative at the point ![y](https://wikimedia.org/api/rest_v1/media/math/render/svg/b8a6208ec717213d4317e666f1ae872e00620a0d) (this is a point of the whole functional derivative as a [partial derivative](https://en.wikipedia.org/wiki/Partial_derivative "Partial derivative") is a component of the gradient):[[https://en.wikipedia.org/wiki/Functional_derivative#cite_note-18]]
 
 ![\frac{\delta F[\rho(x)]}{\delta \rho(y)}=\lim_{\varepsilon\to 0}\frac{F[\rho(x)+\varepsilon\delta(x-y)]-F[\rho(x)]}{\varepsilon}.
 ](https://wikimedia.org/api/rest_v1/media/math/render/svg/b01a2033e8c8afc08ec56de9981c0e29042885f6)
 
-This works in cases when ![F[\rho(x)+\varepsilon f(x)]](https://wikimedia.org/api/rest_v1/media/math/render/svg/b979a338aa9020b6c02e0bcae441aaa605ec2a20) formally can be expanded as a series (or at least up to first order) in ![\varepsilon ](https://wikimedia.org/api/rest_v1/media/math/render/svg/a30c89172e5b88edbd45d3e2772c7f5e562e5173). The formula is however not mathematically rigorous, since ![F[\rho(x)+\varepsilon\delta(x-y)]](https://wikimedia.org/api/rest_v1/media/math/render/svg/659a52b75b432c570f6c2a7415fc5b4334bf3618) is usually not even defined.
+This works in cases when ![[x)+\varepsilon f(x)]](https://wikimedia.org/api/rest_v1/media/math/render/svg/b979a338aa9020b6c02e0bcae441aaa605ec2a20|F[\rho(x)+\varepsilon f(x)]] formally can be expanded as a series (or at least up to first order) in ![\varepsilon ](https://wikimedia.org/api/rest_v1/media/math/render/svg/a30c89172e5b88edbd45d3e2772c7f5e562e5173). The formula is however not mathematically rigorous, since ![[x)+\varepsilon\delta(x-y)]](https://wikimedia.org/api/rest_v1/media/math/render/svg/659a52b75b432c570f6c2a7415fc5b4334bf3618|F[\rho(x)+\varepsilon\delta(x-y)]] is usually not even defined.
 
-The definition given in a previous section is based on a relationship that holds for all test functions ![\phi (x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/546b660b2f3cfb5f34be7b3ed8371d54f5c74227), so one might think that it should hold also when ![\phi (x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/546b660b2f3cfb5f34be7b3ed8371d54f5c74227) is chosen to be a specific function such as the [delta function](https://en.wikipedia.org/wiki/Dirac_delta_function "[[delta function|Dirac delta function]]"). However, the latter is not a valid test function (it is not even a proper function).
+The definition given in a previous section is based on a relationship that holds for all test functions ![[x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/546b660b2f3cfb5f34be7b3ed8371d54f5c74227|\phi (x)]], so one might think that it should hold also when ![[x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/546b660b2f3cfb5f34be7b3ed8371d54f5c74227|\phi (x)]] is chosen to be a specific function such as the [delta function](https://en.wikipedia.org/wiki/Dirac_delta_function "[Dirac delta function](../math/delta%20function.md)"). However, the latter is not a valid test function (it is not even a proper function).
 
-In the definition, the functional derivative describes how the functional ![{\displaystyle F[\rho (x)]}](https://wikimedia.org/api/rest_v1/media/math/render/svg/c7fab43f9b14ba7f5581e7767857988b966692be) changes as a result of a small change in the entire function ![\rho (x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/0f32a26d8795457b2f5c2bdc078758dcbbc71b30). The particular form of the change in ![\rho (x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/0f32a26d8795457b2f5c2bdc078758dcbbc71b30) is not specified, but it should stretch over the whole interval on which ![x](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4) is defined. Employing the particular form of the perturbation given by the delta function has the meaning that ![\rho (x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/0f32a26d8795457b2f5c2bdc078758dcbbc71b30) is varied only in the point ![y](https://wikimedia.org/api/rest_v1/media/math/render/svg/b8a6208ec717213d4317e666f1ae872e00620a0d). Except for this point, there is no variation in ![\rho (x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/0f32a26d8795457b2f5c2bdc078758dcbbc71b30).
+In the definition, the functional derivative describes how the functional ![[x)]}](https://wikimedia.org/api/rest_v1/media/math/render/svg/c7fab43f9b14ba7f5581e7767857988b966692be|{\displaystyle F[\rho (x)]] changes as a result of a small change in the entire function ![[x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/0f32a26d8795457b2f5c2bdc078758dcbbc71b30|\rho (x)]]. The particular form of the change in ![[x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/0f32a26d8795457b2f5c2bdc078758dcbbc71b30|\rho (x)]] is not specified, but it should stretch over the whole interval on which ![x](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4) is defined. Employing the particular form of the perturbation given by the delta function has the meaning that ![[x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/0f32a26d8795457b2f5c2bdc078758dcbbc71b30|\rho (x)]] is varied only in the point ![y](https://wikimedia.org/api/rest_v1/media/math/render/svg/b8a6208ec717213d4317e666f1ae872e00620a0d). Except for this point, there is no variation in ![[x)](https://wikimedia.org/api/rest_v1/media/math/render/svg/0f32a26d8795457b2f5c2bdc078758dcbbc71b30|\rho (x)]].
 
 ## Notes\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=16 "Edit section: Notes")\]
 
-1.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-2 "Jump up")** According to [Giaquinta & Hildebrandt (1996)](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGiaquintaHildebrandt1996), p. 18, this notation is customary in [physical](https://en.wikipedia.org/wiki/Physics "Physics") literature.
-2.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-5 "Jump up")** Called _differential_ in ([Parr & Yang 1989](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989), p. 246), _variation_ or _first variation_ in ([Courant & Hilbert 1953](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFCourantHilbert1953), p. 186), and _variation_ or _differential_ in ([Gelfand & Fomin 2000](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGelfandFomin2000), p. 11, § 3.2).
-3.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-7 "Jump up")** Here the notation ![{\displaystyle {\frac {\delta {F}}{\delta \rho }}(x)\equiv {\frac {\delta {F}}{\delta \rho (x)}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/151e3a56bb44d7a18ea72ecd4d316ff49e1055a9) is introduced.
-4.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-12 "Jump up")** For a three-dimensional cartesian coordinate system,
+1.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-2 "Jump up"]]** According to [[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGiaquintaHildebrandt1996]], p. 18, this notation is customary in [physical](https://en.wikipedia.org/wiki/Physics "Physics") literature.
+2.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-5 "Jump up"]]** Called _differential_ in ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989]], p. 246), _variation_ or _first variation_ in ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFCourantHilbert1953]], p. 186), and _variation_ or _differential_ in ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGelfandFomin2000]], p. 11, § 3.2).
+3.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-7 "Jump up"]]** Here the notation ![[x)\equiv {\frac {\delta {F}}{\delta \rho (x)}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/151e3a56bb44d7a18ea72ecd4d316ff49e1055a9|{\displaystyle {\frac {\delta {F}}{\delta \rho }}(x)\equiv {\frac {\delta {F}}{\delta \rho (x)}}}]] is introduced.
+4.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-12 "Jump up"]]** For a three-dimensional cartesian coordinate system,
     
     ![
     \begin{align}
@@ -341,29 +341,29 @@ In the definition, the functional derivative describes how the functional ![{\di
     \end{align}
     ](https://wikimedia.org/api/rest_v1/media/math/render/svg/17e7ed61ed5dccd09100ee7792ffe6a997bd2c14)
     
-5.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-13 "Jump up")** For example, for the case of three dimensions (_n_ = 3) and second order derivatives (_i_ = 2), the tensor ∇(2) has components,
+5.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-13 "Jump up"]]** For example, for the case of three dimensions (_n_ = 3) and second order derivatives (_i_ = 2), the tensor ∇(2) has components,
     
-    ![ \left [ \nabla^{(2)} \right ]_{\alpha \beta} = \frac {\partial^{\,2}} {\partial r_{\alpha} \, \partial r_{\beta}} \qquad \qquad \text{where} \quad \alpha, \beta = 1, 2, 3 \, . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/78cbff2c145d8b1d793a8318a07d6f72883d2f3d)
+    ![[2)} \right ]_{\alpha \beta} = \frac {\partial^{\,2}} {\partial r_{\alpha} \, \partial r_{\beta}} \qquad \qquad \text{where} \quad \alpha, \beta = 1, 2, 3 \, . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/78cbff2c145d8b1d793a8318a07d6f72883d2f3d| \left [ \nabla^{(2)} \right ]]
     
-6.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-14 "Jump up")** For example, for the case _n_ = 3 and _i_ = 2, the tensor scalar product is,
+6.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-14 "Jump up"]]** For example, for the case _n_ = 3 and _i_ = 2, the tensor scalar product is,
     
-    ![ \nabla^{(2)} \cdot \frac{\partial f}{\partial\left(\nabla^{(2)}\rho\right)} = \sum_{\alpha, \beta = 1}^3 \ \frac {\partial^{\, 2} } {\partial r_{\alpha} \, \partial r_{\beta} }  \ \frac {\partial f} {\partial \rho_{\alpha \beta} }    \qquad \text{where} \ \ \rho_{\alpha \beta} \equiv \frac {\partial^{\, 2}\rho} {\partial r_{\alpha} \, \partial r_{\beta} } \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/8614c20390d2fe431b437a27daaae4aa9851b10d)
+    ![[2)} \cdot \frac{\partial f}{\partial\left(\nabla^{(2)}\rho\right)} = \sum_{\alpha, \beta = 1}^3 \ \frac {\partial^{\, 2} } {\partial r_{\alpha} \, \partial r_{\beta} }  \ \frac {\partial f} {\partial \rho_{\alpha \beta} }    \qquad \text{where} \ \ \rho_{\alpha \beta} \equiv \frac {\partial^{\, 2}\rho} {\partial r_{\alpha} \, \partial r_{\beta} } \ . ](https://wikimedia.org/api/rest_v1/media/math/render/svg/8614c20390d2fe431b437a27daaae4aa9851b10d| \nabla^{(2)} \cdot \frac{\partial f}{\partial\left(\nabla^{(2)}\rho\right)} = \sum_{\alpha, \beta = 1}^3 \ \frac {\partial^{\, 2} } {\partial r_{\alpha} \, \partial r_{\beta} }  \ \frac {\partial f} {\partial \rho_{\alpha \beta} }    \qquad \text{where} \ \ \rho_{\alpha \beta} \equiv \frac {\partial^{\, 2}\rho} {\partial r_{\alpha} \, \partial r_{\beta} } \ . ]]
     
 
 ## Footnotes\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=17 "Edit section: Footnotes")\]
 
-1.  ^ [Jump up to: _**a**_](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-GiaquintaHildebrandtP18_1-0) [_**b**_](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-GiaquintaHildebrandtP18_1-1) ([Giaquinta & Hildebrandt 1996](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGiaquintaHildebrandt1996), p. 18)
-2.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP246A.2_3-0 "Jump up")** ([Parr & Yang 1989](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989), p. 246, Eq. A.2).
-3.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP246A.1_4-0 "Jump up")** ([Parr & Yang 1989](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989), p. 246, Eq. A.1).
-4.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP246_6-0 "Jump up")** ([Parr & Yang 1989](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989), p. 246).
-5.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP247A.3_8-0 "Jump up")** ([Parr & Yang 1989](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989), p. 247, Eq. A.3).
-6.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP247A.4_9-0 "Jump up")** ([Parr & Yang 1989](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989), p. 247, Eq. A.4).
-7.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-10 "Jump up")** ([Greiner & Reinhardt 1996](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGreinerReinhardt1996), p. 38, Eq. 6).
-8.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-11 "Jump up")** ([Greiner & Reinhardt 1996](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGreinerReinhardt1996), p. 38, Eq. 7).
-9.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP247A.6_15-0 "Jump up")** ([Parr & Yang 1989](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989), p. 247, Eq. A.6).
-10.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP248A.11_16-0 "Jump up")** ([Parr & Yang 1989](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989), p. 248, Eq. A.11).
-11.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP247A.9_17-0 "Jump up")** ([Parr & Yang 1989](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989), p. 247, Eq. A.9).
-12.  **[^](https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-18 "Jump up")** [Greiner & Reinhardt 1996](https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGreinerReinhardt1996), p. 37
+1.  ^ [[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-GiaquintaHildebrandtP18_1-0]] [[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-GiaquintaHildebrandtP18_1-1]] ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGiaquintaHildebrandt1996]], p. 18)
+2.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP246A.2_3-0 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989]], p. 246, Eq. A.2).
+3.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP246A.1_4-0 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989]], p. 246, Eq. A.1).
+4.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP246_6-0 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989]], p. 246).
+5.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP247A.3_8-0 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989]], p. 247, Eq. A.3).
+6.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP247A.4_9-0 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989]], p. 247, Eq. A.4).
+7.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-10 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGreinerReinhardt1996]], p. 38, Eq. 6).
+8.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-11 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGreinerReinhardt1996]], p. 38, Eq. 7).
+9.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP247A.6_15-0 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989]], p. 247, Eq. A.6).
+10.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP248A.11_16-0 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989]], p. 248, Eq. A.11).
+11.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-ParrYangP247A.9_17-0 "Jump up"]]** ([[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFParrYang1989]], p. 247, Eq. A.9).
+12.  **[[https://en.wikipedia.org/wiki/Functional_derivative#cite_ref-18 "Jump up"]]** [[https://en.wikipedia.org/wiki/Functional_derivative#CITEREFGreinerReinhardt1996]], p. 37
 
 ## References\[[edit](https://en.wikipedia.org/w/index.php?title=Functional_derivative&action=edit&section=18 "Edit section: References")\]
 

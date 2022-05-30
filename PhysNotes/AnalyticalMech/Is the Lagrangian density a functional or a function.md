@@ -1,7 +1,7 @@
 # Is the Lagrangian density a functional or a function?
 
 ## Metadata
-- Author: [physics.stackexchange.com]()
+- Author: [[|physics.stackexchange.com]]
 - Title: Is the Lagrangian density a functional or a function?
 - Reference: https://physics.stackexchange.com/questions/313084/is-the-lagrangian-density-a-functional-or-a-function
 - Category: #article

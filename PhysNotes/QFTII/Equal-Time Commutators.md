@@ -79,7 +79,7 @@ $$
 \end{align}
 $$
 Now the only thing that protects the factor
-$(p_k-p_{k-1})$ from vanishing by means of the [[delta function]]
+$(p_k-p_{k-1})$ from vanishing by means of the [[../math/delta function]]
 $\delta(p_k-p_{k-1})$ is the derivative $\partial/\partial p_k$.
 We therefore integrate by parts and let the
 derivative act on the remainder of the integrand.

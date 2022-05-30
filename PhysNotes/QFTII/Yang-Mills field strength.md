@@ -9,7 +9,7 @@ $$
 
 
 
-This field is hermitian $\left(F_{\mu \nu}\right)^{\dagger}=F_{\mu \nu}$ and it transforms [[contravariance and covariance|covariantly]] under gauge transformations (c.f. [[#Covariant derivative]])
+This field is hermitian $\left(F_{\mu \nu}\right)^{\dagger}=F_{\mu \nu}$ and it transforms [[../GR/contravariance and covariance|covariantly]] under gauge transformations (c.f. [[#Covariant derivative]])
 $$
 F_{\mu \nu}^{\prime}=U F_{\mu \nu} U^{-1} .
 $$

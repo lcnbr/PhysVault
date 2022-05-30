@@ -51,6 +51,6 @@ ntest
 
 
 
-[^1]: to do this we use the [[hyperbolic parametrisation]], and since $1$ is [[Lorentz invariant]] we can boost to any frame we want. Thus we boost to [[center of momentum frame|CM frame]] of $u$ s.t. $u=(1,0,0,0)$:
+[[hyperbolic parametrisation|^1]], and since $1$ is [[Lorentz invariant]] we can boost to any frame we want. Thus we boost to [[center of momentum frame|CM frame]] of $u$ s.t. $u=(1,0,0,0)$:
 $$1=\frac{m^2\mathcal{N}^2}{2}\int\limits_0^\infty\hat{\dd}\zeta\,\sinh^{2}(\zeta)\int\limits_0^\pi \hat{\dd}\theta\,\sin(\theta)\int \limits_0^{2 \pi}\hat{\dd}\phi\, \exp\pqty\Big{-2\frac{\cosh \zeta }{ \xi}}  \,$$Integration over $\theta$  yields $\frac{1}{\pi}$ from the hat and integration over $\phi$ yields $1$ we are thus left with this equation:$$\frac{1}{\mathcal{N}}=\sqrt{\frac{m^2}{2\pi}\int\limits_0^\infty\hat{\dd}\zeta\,\sinh^{2}(\zeta)\exp\pqty\Big{-2\frac{\cosh \zeta }{ \xi}}}$$
-The integral over $\zeta$ can be identified with a [[modified Bessel function of the Second Kind#^3c41e3]]: $$\frac{1}{\mathcal{N}}=\sqrt{\frac{m^2}{4 \pi^2}\frac{\sqrt{\pi}}{\xi\Gamma\pqty{1+\frac{1}{2}}}K_1(\frac{2}{\xi})}$$Using the properties of the [[gamma function]]: $\Gamma(z+1)=z \Gamma (z)$ and $\Gamma(\frac{1}{2})=\sqrt{\pi}$ we get:$$\mathcal{N}=\frac{1}{m}\sqrt{\frac{2\xi\pi^2}{K_1(2/\xi)}}$$
+The integral over $\zeta$ can be identified with a [[modified Bessel function of the Second Kind#^3c41e3]]: $$\frac{1}{\mathcal{N}}=\sqrt{\frac{m^2}{4 \pi^2}\frac{\sqrt{\pi}}{\xi\Gamma\pqty{1+\frac{1}{2}}}K_1(\frac{2}{\xi})}$$Using the properties of the [[String/gamma function]]: $\Gamma(z+1)=z \Gamma (z)$ and $\Gamma(\frac{1}{2})=\sqrt{\pi}$ we get:$$\mathcal{N}=\frac{1}{m}\sqrt{\frac{2\xi\pi^2}{K_1(2/\xi)}}$$

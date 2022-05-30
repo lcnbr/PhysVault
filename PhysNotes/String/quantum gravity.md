@@ -1,1 +1,1 @@
-- Quantum gravity has [infinitely many allowed interactions, which lets renormalization fail.](zotero://open-pdf/library/items/E2TKJSGY?page=7&annotation=DUEUIMPZ)^int
+- Quantum gravity has [[zotero://open-pdf/library/items/E2TKJSGY?page=7&annotation=DUEUIMPZ|infinitely many allowed interactions, which lets renormalization fail.]]^int

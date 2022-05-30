@@ -3,7 +3,7 @@ Taking [[Kaluza-Klein Modes]] as well as [[winding modes|winding effects]] into 
 $$
 M^{2}=\frac{4}{\kappa^{2}}\left(N^{L / R}-a\right)+\left(\frac{n}{R} \mp \frac{m R}{\kappa^{2}}\right)^{2} .
 $$
-Remember the mass spectrum in [[light cone quantisation#^f12d71]]
+Remember the mass spectrum in [[4 String Quantisation/light cone quantisation#^f12d71]]
 In addition, the level matching condition is modified by [[winding modes|winding]] $^{2}$
 $$
 N^{\mathrm{L}}-N^{\mathrm{R}}=n m \text {. }

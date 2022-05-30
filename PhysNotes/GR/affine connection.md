@@ -139,7 +139,7 @@ where $g \equiv-\operatorname{det} g_{\mu \nu}$.
 See [[transformation of the affine connection]] to see how it transforms and motivates the [[covariant derivative]]
 
 # Weak field approx
-Let us now compute the limit of weak gravitational fields. We can decompose $g_{\mu \nu} \approx \eta_{\mu \nu}+h_{\mu \nu}$ with a small $h_{\mu \nu}$. Then the [[affine connection#From metric tensor metric|affine connection]] is
+Let us now compute the limit of weak gravitational fields. We can decompose $g_{\mu \nu} \approx \eta_{\mu \nu}+h_{\mu \nu}$ with a small $h_{\mu \nu}$. Then the [[.md#From metric tensor metric|affine connection]] is
 $$
 \Gamma^{\mu}{ }_{\nu \rho} \approx \frac{1}{2} \eta^{\mu \alpha}\left[\frac{\partial h_{\alpha \nu}}{\partial x^{\rho}}+\frac{\partial h_{\alpha \rho}}{\partial x^{\nu}}-\frac{\partial h_{\nu \rho}}{\partial x^{\alpha}}\right] \sim \mathcal{O}(h) .
 $$

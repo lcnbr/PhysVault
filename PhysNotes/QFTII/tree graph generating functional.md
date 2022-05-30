@@ -41,7 +41,7 @@ $$
 where we have introduced the functional $T[J]$ for the leading contribution to the exponent
 
 $$
-T[J]:=S[\Psi[J]]+\int \dd[D]{x} J(x) \,\Psi[J](x).
+T[[x) \,\Psi[J](x|J]].
 $$
 
 What can we say about $T[J]$?
@@ -65,8 +65,8 @@ Therefore $T[J]$ generates precisely the
 # Is the legendre transform
 
 Another important observation is that
-$T[J]$ formally is the [[Legendre transform|Legendre transformation]] of the action $S[\Psi]$, since 
-The source $J$ is defined as the functional derivative of $S[\Psi]$ (c.f. [[graph generating functional with interaction]])
+$T[[../math/Legendre transform|J]] of the action $S[\Psi]$, since 
+The source $J$ is defined as the functional derivative of $S[[c.f. [graph generating functional with interaction](graph generating functional with interaction.md|\Psi]])
 
 $$
 J(x)=-\frac{\delta S[\Psi]}{\delta \Psi(x)}.
@@ -83,21 +83,21 @@ some generating functional $S[\Psi]$
 is a functional $T[J]$ which generates connected trees
 from the lines and vertices encoded by $S_0[\Psi]$ and $S_\text{int}[\Psi]$, respectively
 
- ![|400](file:///C:/Users/Lucien/Documents/UNI/images/image1.png)
+ ![[file:///C:/Users/Lucien/Documents/UNI/images/image1.png||400]]
 
 # Example
 Let us consider this transformation explicitly
 for the example of a theory with a cubic interaction
 
-![|300](file:///C:/Users/Lucien/Documents/UNI/images/image170.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image170.png||300]]
 
 The source field $J$ is then defined in terms of the field $\Psi$
- ![|300](file:///C:/Users/Lucien/Documents/UNI/images/image171.png)
+ ![[file:///C:/Users/Lucien/Documents/UNI/images/image171.png||300]]
 
 We need to find the inverse functional $\Psi[J]$
 
 
- ![|450](file:///C:/Users/Lucien/Documents/UNI/images/image169.png)
+ ![[file:///C:/Users/Lucien/Documents/UNI/images/image169.png||450]]
 
 
 One can confirm by substitution that these two functions are mutually inverse
@@ -113,11 +113,11 @@ Now substitute $\Psi[J]$ into the two terms of the action $S[\Psi]$
 and the Legendre transformation term $S_\text{src}[\Psi,J]$
 
 
- ![|400](file:///C:/Users/Lucien/Documents/UNI/images/image167.png) 
- ![|400](file:///C:/Users/Lucien/Documents/UNI/images/image168.png)
+ ![[file:///C:/Users/Lucien/Documents/UNI/images/image167.png||400]] 
+ ![[file:///C:/Users/Lucien/Documents/UNI/images/image168.png||400]]
 
 The sum of these terms yields the Legendre transform
 
- ![|400](file:///C:/Users/Lucien/Documents/UNI/images/image160.png)
+ ![[file:///C:/Users/Lucien/Documents/UNI/images/image160.png||400]]
 
  The various prefactors in the above conspire to yield the canonical symmetry factors of the tree graphs

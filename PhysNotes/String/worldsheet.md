@@ -1,4 +1,4 @@
-A particle swipes out a [[worldline]] through [[spacetime]] and thus a [[Strings|string]] swipes out a [[worldsheet]]. One usually relies on a [[parameter space]] to parametrise this surface. As its is a 2D surface, one requires two parameters, and call them 
+A particle swipes out a [[worldline]] through [[../QFTII/spacetime]] and thus a [[Strings|string]] swipes out a [[.md|worldsheet]]. One usually relies on a [[parameter space]] to parametrise this surface. As its is a 2D surface, one requires two parameters, and call them 
 
 ## worldsheet coordinates
 

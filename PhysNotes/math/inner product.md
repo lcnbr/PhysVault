@@ -3,7 +3,7 @@ alias:
 - Hermitian inner product
 - Hermitian form
 ---
-Let $V$ be a vector space over the field of complex numbers. (One can generalise the choice of field somewhat.) An [[inner product]] (in the most general, possibly indefinite, sense) on $V$ is a function
+Let $V$ be a vector space over the field of complex numbers. (One can generalise the choice of field somewhat.) An [[.md|inner product]] (in the most general, possibly indefinite, sense) on $V$ is a function
 $$
 \langle-,-\rangle: V \times V \rightarrow \mathbb{C}
 $$
@@ -21,7 +21,7 @@ The axiom list above is rather redundant. First of all, (1) follows from (3) by 
 
 
 # Signature
-A [[inner product]] defines a [[quadratic form]], and one can thus define its signature, based on its [[sesquilinear form#Matrix form|matrix representation]] $[H]$:
+A [[.md|inner product]] defines a [[quadratic form]], and one can thus define its signature, based on its [[sesquilinear form#Matrix form|matrix representation]] $[H]$:
 
-Since $[H]$ is Hermitian (c.f. [[sesquilinear form#Induced properties]]), its eigenvalues are real, and thus $[H]$ has a defined [[signature]]. We can identify the [[(semi)definiteness]] of the form from the [[(semi)definiteness#From signature|signature]]
+Since $[[sesquilinear form#Induced properties]]), its eigenvalues are real, and thus $[[signature|H]]. We can identify the [[semi)definiteness]((semi|(semi)definiteness]]definiteness.md) of the form from the [[(semi]]definiteness.md#From%20signature%7Csignature)
 

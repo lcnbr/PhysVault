@@ -41,8 +41,8 @@ $$
 
 Consider the vector particles at level 1 with mass $\left|x_{a}-x_{b}\right| / 2 \pi \kappa^{2}$. Massless vectors indicate gauge symmetries.
 
-- There are at least $N$ massless vectors. [[gauge symmetry]]: $\mathrm{U}(1)^{N}$.
-- $K$ coincident [[Dp-branes|branes]] contribute $K^{2}$ massless vectors. Enhanced [[gauge symmetry]] $\mathrm{U}(1)^{K} \rightarrow \mathrm{U}(K)$.
+- There are at least $N$ massless vectors. [[../QFTII/gauge symmetry]]: $\mathrm{U}(1)^{N}$.
+- $K$ coincident [[Dp-branes|branes]] contribute $K^{2}$ massless vectors. Enhanced [[../QFTII/gauge symmetry]] $\mathrm{U}(1)^{K} \rightarrow \mathrm{U}(K)$.
 
 Massive vectors indicate spontaneously broken symmetries starting from the group $\mathrm{U}(N)$. Geometric picture of gauge symmetries:
 

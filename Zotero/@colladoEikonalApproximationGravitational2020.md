@@ -9,4 +9,4 @@ DOI:
 url: 
 
 ---
-# [The Eikonal Approximation and the Gravitational Dynamics of Binary Systems](zotero://select/items/@colladoEikonalApproximationGravitational2020)
+# [[zotero://select/items/@colladoEikonalApproximationGravitational2020|The Eikonal Approximation and the Gravitational Dynamics of Binary Systems]]

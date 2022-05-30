@@ -38,6 +38,9 @@
   "underlineExternal": true,
   "useSystemTheme": false,
   "folding": true,
+  "lineNumbers": true,
+  "readableLineLength": true,
+  "devBlockWidth": false,
   "relationLinesPreview": false,
   "relationLinesEdit": true
 }

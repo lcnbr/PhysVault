@@ -1,0 +1,32 @@
+ /*----------------------------------------------------------------
+  Font styles
+  Preview mode and UI */
+
+  --text:"Atkinson Hyperlegible",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  
+  /* Editor mode */
+
+  --text-editor:"IBM Plex Sans",BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  
+  /* Code */
+
+  --font-monospace:"IBM Plex Mono",SFMono-Regular,Consolas,"Roboto Mono",monospace;
+
+  /* Sizes, weights, padding */
+
+  --font-normal:16px;
+  --font-small:13px;
+  --font-smaller:11px;
+  --font-smallest:10px;
+  --normal-weight:400;   /* Switch to 300 if you want thinner default text */
+  --bold-weight:600;     /* Switch to 700 if you want thicker bold text */
+  --line-width:40rem;    /* Maximum characters per line */
+  --line-height:1.5;
+  --max-width:87%;       /* Amount of padding around the text, use 90% for narrower padding */
+  --nested-padding:3.5%; /* Amount of padding for quotes and transclusions */
+  --icon-muted:0.4;
+  --border-width:1px;
+  --border-width-alt:1px;
+
+  /*----------------------------------------------------------------
+"

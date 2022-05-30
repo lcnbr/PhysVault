@@ -11,7 +11,7 @@ Vanishing of the integral on the r.h.s. implies that the integrand is a total de
 $$
 \frac{\delta \Psi(x)}{\delta \alpha} \frac{\delta S}{\delta \Psi(x)}=: \partial_{\mu} N^{\mu}(x)
 $$
-This current is conserved on solutions of the [[Euler-Lagrange equations]] because the l.h.s. of this equation vanishes
+This current is conserved on solutions of the [[../AnalyticalMech/Euler-Lagrange equations]] because the l.h.s. of this equation vanishes
 $$
 \partial_{\mu} N^{\mu}=\frac{\delta \Psi}{\delta \alpha} \frac{\delta S}{\delta \Psi}=0
 $$

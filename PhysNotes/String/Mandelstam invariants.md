@@ -27,7 +27,7 @@ From landau lifshitz 4
 
 Let us consider some kinematic relations for scattering processes in which there are only two particles, both in the initial state and in the final state. The relations in question are deduced from the general conservation laws alone, and are therefore valid for all particles and all laws of interaction.
 
-![[s-channel 2022-04-29 14.44.24.excalidraw|100|left-wrap]]
+![[../../Attachements/s-channel 2022-04-29 14.44.24.excalidraw|100|left-wrap]]
 The law of conservation of 4-momentum, in a general form that does not specify which are the initial and which the final particles, is$$
 q_{1}+q_{2}+q_{3}+q_{4}=0 .
 $$Here $\pm q_{a}$ are the momentum 4-vectors; two of them pertain to the incident particles and two to the scattered particles, the momenta for the latter being $-q_{a}$. Thus for two of the $q_{a}$ the time component $q_{a}^{0}>0$, and for two $q_{a}^{0}<0$. ^ca96c7
@@ -75,7 +75,7 @@ h=m_{1}^{2}+m_{2}^{2}+m_{3}^{2}+m_{4}^{2} .
 $$
 $+$ In the general case of a reaction involving $n(\geqslant 4)$ particles, the number of functionally independent invariant quantities is $3 n-10$. There are altogether $4 n$ quantities, the components of the $n$ 4-momenta $q_{a}$, between which there are $n$ functional relations $q_{a}^{2}=m_{a}^{2}$ and four given by the conservation law $\Sigma q_{a}=0$. Arbitrary values can be assigned to six quantities, in accordance with the number of parameters which define the general Lorentz transformation (a general
 
-In the [[s-channel|principal channel (I)]], the invariant $s$ has a simple physical significance. It is the square of the total energy of the colliding particles $(1$ and 2$)$ in their [[center of momentum frame|centre-of-mass system]] (for $\mathbf{p}_{1}+\mathbf{p}_{2}=0, s=\left(\varepsilon_{1}+\varepsilon_{2}\right)^{2}$ ). In channel II, the invariant $t$ has a similar significance, and in channel III the invariant $u$. The three channels are therefore of called $s, t$ and $u$ channels. 
+In the [[I)](../s-channel.md|principal channel (I)]], the invariant $s$ has a simple physical significance. It is the square of the total energy of the colliding particles $(1$ and 2$)$ in their [[../center of momentum frame|centre-of-mass system]] (for $\mathbf{p}_{1}+\mathbf{p}_{2}=0, s=\left(\varepsilon_{1}+\varepsilon_{2}\right)^{2}$ ). In channel II, the invariant $t$ has a similar significance, and in channel III the invariant $u$. The three channels are therefore of called $s, t$ and $u$ channels. 
 
 It is easy to express each of the invariants $s, t$ and $u$ in terms of the energies and momenta of the colliding particles in each channel. Let us consider the $s$ channel. In the centre-of-mass system of particles 1 and 2 , the time and space components of the 4-vectors $q_{a}$ are
 $$

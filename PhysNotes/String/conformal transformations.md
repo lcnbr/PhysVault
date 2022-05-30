@@ -5,18 +5,18 @@ Conformal transformations are coordinate transformations preserving the angles l
 $$
 g_{\mu^{\prime} \nu^{\prime}}^{\prime}\left(x^{\prime}\right)=\frac{\mathrm{d} x^{\mu}}{\mathrm{d} x^{\prime \mu^{\prime}}} \frac{\mathrm{d} x^{\nu}}{\mathrm{d} x^{\prime \nu^{\prime}}} g_{\mu \nu}(x) \stackrel{!}{=} f(x) g_{\mu^{\prime} \nu^{\prime}}(x) .
 $$
- [[conformal transformations]] are the coordiante transform version of  [[Weyl invariance|weyl transformations]]
+ [[.md|conformal transformations]] are the coordiante transform version of  [[Weyl invariance|weyl transformations]]
 # Action on Coordinates. 
 ![[conformal group]]
 
 # Action on Fields. 
-Consider a free [[Field#Scalar Field|scalar]] with action
+Consider a free [[../AnalyticalMech/Field#Scalar Field|scalar]] with action
 
 $$
 S \sim \int \mathrm{d} x^{D} \frac{1}{2} \partial_{\mu} \Phi(x) \partial^{\mu} \Phi(x) .
 $$
 
-In order for the action to be invariant under the [[conformal group]], the [[Field#Scalar Field|scalar]] must
+In order for the action to be invariant under the [[conformal group]], the [[../AnalyticalMech/Field#Scalar Field|scalar]] must
 - transform under [[conformal group#^2426d1|Lorentz rotations]] and [[conformal group#^7e1b95|translations]] as
 $$\Phi^{\prime}(x)=\Phi(\Lambda x+a) .$$
 
@@ -41,7 +41,7 @@ In the same way one can derive similar, but more complicated rules for
 - derivatives $\partial_{\mu} \Phi, \partial_{\mu} \partial_{\nu} \Phi, \partial^{2} \Phi, \ldots$
 
 # 2D Conformal Symmetries. 
-In comparison to other dimensions, QFT's in 2D are rather tractable. [[conformal field theory|CFT]]'s in 2D are especially simple. The [[conformal group]] splits: [[conformal group#In 2D]]
+In comparison to other dimensions, QFT's in 2D are rather tractable. [[7 CFT/conformal field theory|CFT]]'s in 2D are especially simple. The [[conformal group]] splits: [[conformal group#In 2D]]
 
 The generators of the algebra underlying the group $\operatorname{SL}(2, \mathbb{R})_{\mathrm{L} / \mathrm{R}}$ can be supplemented by further generators to yield the infinite-dimensional Virasoro algebra. Infinitesimal transformations are then given by
 

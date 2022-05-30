@@ -1,4 +1,4 @@
-for a local transformation $x \rightarrow x^{\prime}$ the [[Jacobian]] is the [[matrix]] of all the first derivatives:
+for a local transformation $x \rightarrow x^{\prime}$ the [[.md|Jacobian]] is the [[matrix]] of all the first derivatives:
 
 $$\pdv{x'^\mu}{x^\nu}=\mathbf{J}^\mu_\nu$$
 

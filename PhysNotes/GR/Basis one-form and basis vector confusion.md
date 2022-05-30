@@ -1,7 +1,7 @@
 # Basis one-form and basis vector confusion
 
 ## Metadata
-- Author: [math.stackexchange.com]()
+- Author: [[|math.stackexchange.com]]
 - Title: Basis one-form and basis vector confusion
 - Reference: https://math.stackexchange.com/questions/1478544/basis-one-form-and-basis-vector-confusion
 - Category: #article

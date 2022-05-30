@@ -11,13 +11,13 @@ S_{\mathrm{YM}}[A, J]=-\frac{1}{2 g_{\mathrm{YM}}^{2}} \int \mathrm{d} x^{4} \op
 $$
 We can choose the same gauge-fixing function as [[gauge fixing for EM|before]]
 $$
-G[A, \Omega](x)=\partial^{\mu} A_{\mu}(x)-\Omega(x),
+G[[x|A, \Omega]]=\partial^{\mu} A_{\mu}(x)-\Omega(x),
 $$
 and fix the gauge by means of the identity (compare to [[gauge fixing for EM#Delta functional|EM identity]])
 $$
 1=\int \operatorname{D} U \Delta\left[G\left[A^{\prime}, \Omega\right]\right] \operatorname{Det}_{(x a, y b)}\left(\frac{\delta G\left[A^{\prime}, \Omega\right]^{a}(x)}{\delta \alpha^{b}(y)}\right) .
 $$
-Here $U(x)$ is a group element, and the integration measure $D U$ is assumed to be invariant under group multiplication. In other words, for a fixed $V, \mathrm{D}(U V)=\mathrm{D} U=\mathrm{D}(V U)$. Moreover, the variation $\delta U$ of a group element $U$ is expressed through the [[Unitary algebras|algebra]] element $\delta \alpha$ as, (c.f. [[infinitesimal YM gauge transformations]])
+Here $U(x)$ is a group element, and the integration measure $D U$ is assumed to be invariant under group multiplication. In other words, for a fixed $V, \mathrm{D}(U V)=\mathrm{D} U=\mathrm{D}(V U)$. Moreover, the variation $\delta U$ of a group element $U$ is expressed through the [[../math/Unitary algebras|algebra]] element $\delta \alpha$ as, (c.f. [[infinitesimal YM gauge transformations]])
 $$
 \delta U=i \delta \alpha U .
 $$

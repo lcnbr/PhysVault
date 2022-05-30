@@ -15,7 +15,7 @@ $$
 \delta(\theta) = \theta.
 $$
 
-Under variable transformations this [[delta function for odd Grassmann numbers|delta function]] behaves as
+Under variable transformations this [[.md|delta function]] behaves as
 
 $$
 \delta\pqty{\phi(\theta)} = \frac{\partial \phi}{\partial\theta} \delta(\theta-\theta_0).

@@ -51,7 +51,7 @@ $$
 ^RiemannTensor
 
 
-the so called [[Riemann curvature tensor]]. It is indeed a tensor, as the left-hand side of [[#^RiemannComm]] is a tensor and $A_{\beta}$ in the right-hand side is a vector. 
+the so called [[.md|Riemann curvature tensor]]. It is indeed a tensor, as the left-hand side of [[#^RiemannComm]] is a tensor and $A_{\beta}$ in the right-hand side is a vector. 
 Similarly, we can find that
 $$
 V^\mu{}_{; \nu ; \rho}-V^\mu{}_{; \rho ; \nu}=R^\mu{}_{\beta \nu \rho} V^{\beta},
@@ -64,13 +64,13 @@ $$
 
 ^9f35dc
 
-**Thus the [[Riemann curvature tensor|curvature tensor]] measures the amount with which [[covariant derivative]]s don't commute! If it vanishes, then they do commute, which is the mark of flat space, i.e no curvature** 
+**Thus the [[.md|curvature tensor]] measures the amount with which [[covariant derivative]]s don't commute! If it vanishes, then they do commute, which is the mark of flat space, i.e no curvature** 
 
 The curvature tensor is very special. We will prove that it is unique, i.e it is the only tensor which can be constructed from the metric, its first and its second derivatives and it is linear in the second derivative of the metric $\left(\rightarrow\right.$ contains $\left.\nabla^{2} \phi\right)$ ! The [[uniqueness of the Riemann curvature tensor|uniqueness of the Riemann tensor]] will be essential for generalizing the Poisson equation of Newtonian mechanics to the field equations of Einstein. 
 
-As stated above the [[Riemann curvature tensor|curvature tensor]] measures the deviation from flatness by seeing how much derivatives don't commute. But when can we be sure that space is in fact flat?:  [[when space is flat]]. 
+As stated above the [[.md|curvature tensor]] measures the deviation from flatness by seeing how much derivatives don't commute. But when can we be sure that space is in fact flat?:  [[when space is flat]]. 
 
-The Riemann tensor has very nice [[algebraic properties of the Riemann Tensor|algebraic properties]], and thus give rise to two important objects as linear combinations of the [[Riemann curvature tensor|Riemann tensor]]: 
+The Riemann tensor has very nice [[algebraic properties of the Riemann Tensor|algebraic properties]], and thus give rise to two important objects as linear combinations of the [[.md|Riemann tensor]]: 
 
 - [[Ricci tensor]]
 - [[Ricci scalar]]

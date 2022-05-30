@@ -11,7 +11,7 @@ $$
 $$
 We have from [[special relativity|measuring the speed of light]] that $\mathrm{d} \tau^{2}=0$ for events marked by the propagation of light ($\dd{\tau}=0$) and invariant under change of inertial frames for . Assuming that spacetime is homogeneous and isotropic yields that $\mathrm{d} \tau^{2}$ for any type of event is the same in all inertial frames. 
 
-To illustrate this assume $\tau$ does depend on [[spacetime]] and [[velocity]].
+To illustrate this assume $\tau$ does depend on [[../QFTII/spacetime]] and [[velocity]].
 $$
 \mathrm{d} \tau^{2}=\mathrm{d} \tau^{\prime 2} \lambda(\cdots),
 $$
@@ -65,7 +65,7 @@ $$
 
 ^metricInvar
 
-# [[linear transformation]]
+# [[../math/linear transformation]]
 
-The transformation that we used in [[infinitesimal proper time interval in SR#^BoostInvariance|boost invariance]] is a part of a [[group]] of transformations that all have this property: the [[Lorentz transformation]]s
+The transformation that we used in [[.md#^BoostInvariance|boost invariance]] is a part of a [[../math/group]] of transformations that all have this property: the [[../String/Lorentz transformation]]s
 

@@ -2,7 +2,7 @@ With a particular choice of normalization convention, we define the [[stress-ene
 $$
 T_{\alpha \beta}=-\frac{2}{T} \frac{1}{\sqrt{-g}} \frac{\partial S}{\partial g^{\alpha \beta}}
 $$
-We varied the [[Polyakov action]] with respect to $g_{\alpha \beta}$ in $(1.24)$. When we set $g_{\alpha \beta}=\eta_{\alpha \beta}$ we get
+We varied the [[3 Classical Bosonic String/Polyakov action]] with respect to $g_{\alpha \beta}$ in $(1.24)$. When we set $g_{\alpha \beta}=\eta_{\alpha \beta}$ we get
 $$
 T_{\alpha \beta}=\partial_{\alpha} X \cdot \partial_{\beta} X-\frac{1}{2} \eta_{\alpha \beta} \eta^{\rho \sigma} \partial_{\rho} X \cdot \partial_{\sigma} X
 $$

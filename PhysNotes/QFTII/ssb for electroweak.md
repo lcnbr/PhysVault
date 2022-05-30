@@ -4,7 +4,7 @@ alias:
 tags:
 - qftII
 ---
-The electroweak theory is based on the [[gauge group]] $\mathrm{SU}(2) \times \mathrm{U}(1)$ (c.f [[unitary group]] and [[special unitary group]]). We denote the associated gauge potentials by the $2 \times 2$ traceless matrix $W_{\mu}$ and the field $B_{\mu}$ acting as a $2 \times 2$ matrix proportional to unity. The coupling constants for these groups are denoted by $g$ and $g^{\prime}$, respectively. We define the corresponding field strengths as
+The electroweak theory is based on the [[gauge group]] $\mathrm{SU}(2) \times \mathrm{U}(1)$ (c.f [[../math/unitary group]] and [[../math/special unitary group]]). We denote the associated gauge potentials by the $2 \times 2$ traceless matrix $W_{\mu}$ and the field $B_{\mu}$ acting as a $2 \times 2$ matrix proportional to unity. The coupling constants for these groups are denoted by $g$ and $g^{\prime}$, respectively. We define the corresponding field strengths as
 $$
 \begin{aligned}
 W_{\mu v} &=\partial_{\mu} W_{v}-\partial_{\nu} W_{\mu}-i g\left[W_{\mu}, W_{\nu}\right] \\

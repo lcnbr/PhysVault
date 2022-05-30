@@ -1,4 +1,4 @@
-The Euler characteristic of an  [[Orientability|orientable]] [[Surface (topology)|surface]] with $b$ [[boundary]] components can be calculated from its [[genus (mathematics)|genus]] ''g'' (the number of [[torus|tori]] in a [[connected sum]] decomposition of the surface; intuitively, the number of "handles") as
+The Euler characteristic of an  [[Orientability|orientable]] [[Surface (topology|surface]]) with $b$ [[boundary]] components can be calculated from its [[genus (mathematics|genus]]) ''g'' (the number of [[torus|tori]] in a [[connected sum]] decomposition of the surface; intuitively, the number of "handles") as
 
 $$\chi = 2 - 2g-b.$$
 
@@ -10,6 +10,6 @@ For closed smooth manifolds, the Euler characteristic coincides with the '''Eule
 
 For closed [[Riemannian manifold]]s, the Euler characteristic can also be found by integrating the curvature; see the [[Gauss&ndash;Bonnet theorem]] for the two-dimensional case and the [[generalized Gauss&ndash;Bonnet theorem]] for the general case.
 
-A discrete analog of the Gauss&ndash;Bonnet theorem is [[René Descartes|Descartes']] theorem that the "total defect" of a [[polyhedron]], measured in full circles, is the Euler characteristic of the polyhedron; see [[defect (geometry)]].
+A discrete analog of the Gauss&ndash;Bonnet theorem is [[René Descartes|Descartes']] theorem that the "total defect" of a [[polyhedron]], measured in full circles, is the Euler characteristic of the polyhedron; see [[geometry)](defect (geometry|defect (geometry)]]).
 
 [[Hadwiger's theorem]] characterizes the Euler characteristic as the ''unique'' ([[up to]] [[scalar multiplication]]) translation-invariant, finitely additive, not-necessarily-nonnegative set function defined on [[finite unions]] of [[compact space|compact]] [[Convex polyhedron|convex]] sets in '''R'''<sup>''n''</sup> that is "homogeneous of degree 0".

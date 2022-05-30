@@ -15,7 +15,7 @@ $$
 
 ^4fe3a4
 
-Since $Z[J]$ only formally depends on $\Omega$ this merely introduces another constant factor into the original [[gauge fixing for EM#^20dd2a|path integral]]
+Since $Z[[gauge fixing for EM#^20dd2a|path integral]]
 $$
 Z[J] \sim \int \mathrm{D} \Omega \,\mathrm{D} A \,\Delta\left[G\left[A, {\Omega}\right]\right] \exp \left(i S_{\mathrm{EM}}[A, J]+i S_{\Omega}[\Omega]\right) .
 $$

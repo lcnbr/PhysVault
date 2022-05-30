@@ -4,7 +4,7 @@ Alias:
 tags:
 - qftII
 ---
-QED is a gauge theory with one abelian [[gauge symmetry]]. In the quantisation process we have broken gauge invariance, but a global $\mathrm{U}(1)$ invariance remains. The [[Slavnov-Taylor identities|Slavnov-Taylor identity]] for the latter is called [[Ward-Takahashi Identities|Ward-Takahashi identity]]. **It guarantees consistent renormalisation of the coupling constant (charges).**
+QED is a gauge theory with one abelian [[gauge symmetry]]. In the quantisation process we have broken gauge invariance, but a global $\mathrm{U}(1)$ invariance remains. The [[Slavnov-Taylor identities|Slavnov-Taylor identity]] for the latter is called [[.md|Ward-Takahashi identity]]. **It guarantees consistent renormalisation of the coupling constant (charges).**
 
 
 The gauge-fixed QED Lagrangian with sources has the following terms
@@ -80,7 +80,7 @@ M^{\mu v}(k) \sim \eta^{\mu v}-k^{\mu} k^{\nu} / k^{2} .
 $$
 The only violation of transversality originates from the [[gauge fixing action for EM|gauge fixing]] term in the plain propagator. This identity substantiates our earlier claim in the context of introduction of [[Faddeev-Popov ghosts|ghost]] fields.
 
-Next, consider a quantum vertex $M_{\mu}\left(k, p, p^{\prime}\right)$ of two spinor fields and a photon where the photon line of momentum $k$ was already amputated. Denote by $M_{0}\left(p, p^{\prime}\right)$ the quantum propagator of the spinor field. The [[Ward-Takahashi Identities#^wardloop|Ward-Takahashi identity]] implies ${ }^{8}$
+Next, consider a quantum vertex $M_{\mu}\left(k, p, p^{\prime}\right)$ of two spinor fields and a photon where the photon line of momentum $k$ was already amputated. Denote by $M_{0}\left(p, p^{\prime}\right)$ the quantum propagator of the spinor field. The [[.md#^wardloop|Ward-Takahashi identity]] implies ${ }^{8}$
 $$
 -i k \cdot M\left(k, p, p^{\prime}\right)=i q M_{0}\left(p, p^{\prime}+k\right)-i q M_{0}\left(p+k, p^{\prime}\right)
 $$

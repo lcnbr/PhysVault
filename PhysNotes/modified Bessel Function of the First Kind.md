@@ -19,4 +19,4 @@ For $-\pi \leq \pm \operatorname{ph} z \leq \frac{1}{2} \pi$
 
 
 
-[^1]: the [[Bessel Function of the First Kind]]
+[[Bessel Function of the First Kind|^1]]

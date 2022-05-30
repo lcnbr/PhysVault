@@ -2,212 +2,212 @@
 # Annotations  
 (1/11/2022, 7:20:22 PM)
 
-> N particles in 3-d space, for a total of 3N degrees of freedom  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=DM9PTLAJ))
+> N particles in 3-d space, for a total of 3N degrees of freedom  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=DM9PTLAJ|pdf]])
 
 ^f4974d
 
-> $L(q_i,\dot{q_{i}}):=T(\dot{q_i})-V(q_{i})$ ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=B374YNPW))   ^323fd0
+> $L(q_i,\dot{q_{i}}):=T(\dot{q_i})-V(q_{i})$ ([[zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=B374YNPW|pdf]])   ^323fd0
 
 
-> T is the kinetic energy (that depends only on velocities $\dot{q_i}$)  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=Y23MCBQE))
+> T is the kinetic energy (that depends only on velocities $\dot{q_i}$)  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=Y23MCBQE|pdf]])
 
 ^dd1fcc
 
-> V is the potential energy (that depends only on positions $q_i$).  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=XGBVW5WQ))
+> V is the potential energy (that depends only on positions $q_i$).  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=XGBVW5WQ|pdf]])
 
 ^32ca1d
 
-> we want to find $q_i(t)$ between those times, subject to the constraint that $q_i(t_1)$ and $q_i(t_2)$ are fixed at some known values.  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=H2Y2SFWF)) #
+> we want to find $q_i(t)$ between those times, subject to the constraint that $q_i(t_1)$ and $q_i(t_2)$ are fixed at some known values.  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=H2Y2SFWF|pdf]]) #
 
 ^645ab9
 
-> infinite number of paths the system could take between these two times, and each path is specified by choosing the functions $q_i(t)$ (which in turn determines $\dot{q_i}$). Each choice of path gives a different form for the Lagrangian  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=6HZSCQK9))
+> infinite number of paths the system could take between these two times, and each path is specified by choosing the functions $q_i(t)$ (which in turn determines $\dot{q_i}$). Each choice of path gives a different form for the Lagrangian  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=6HZSCQK9|pdf]])
 
 ^f2b5a1
 
-> the action S, defined as a functional of the paths that can be followed, is an extremum  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=SLW8BABK))
+> the action S, defined as a functional of the paths that can be followed, is an extremum  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=SLW8BABK|pdf]])
 
 ^266b73
 
-> \[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=YWU2PSG5))  
+> \[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=YWU2PSG5|image\]])  
 
 ^4370de
 
 
-> The condition that S be an extremum is specified by requiring δS = 0  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=Y7XYFHFN))
+> The condition that S be an extremum is specified by requiring δS = 0  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=1&annotation=Y7XYFHFN|pdf]])
 
 ^a3b30e
 
-> Using the chain rule  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=APXBCKE9))
+> Using the chain rule  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=APXBCKE9|pdf]])
 
 ^b26c54
 
-> \[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=G2LIYEI7))  
+> \[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=G2LIYEI7|image\]])  
 
 ^8311af
 
 
-> integrate by parts  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=WMEG44CC))
+> integrate by parts  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=WMEG44CC|pdf]])
 
 ^5b3394
 
->\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=DZQRTID8))  
+>\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=DZQRTID8|image\]])  
 
 ^867192
 
 
->qi (t1) and qi (t2) are fixed means that δqi = 0 at the limits of integration, so the middle term is zero.  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=UMYNAEWA))
+>qi (t1) and qi (t2) are fixed means that δqi = 0 at the limits of integration, so the middle term is zero.  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=UMYNAEWA|pdf]])
 
->\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=RPE3UJAK))  
-
-
->quantity in brackets must be zero  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=S72SR9KR))
-
->Euler-Lagrange equations  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=PI4TLXET))
-
->\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=H9IRQE86))  
+>\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=RPE3UJAK|image\]])  
 
 
->Why are position and velocity treated as independent?  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=BUK3TIV4))
+>quantity in brackets must be zero  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=S72SR9KR|pdf]])
 
->we can take qi and ̇ qi as independent variables  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=STSA2APZ))
+>Euler-Lagrange equations  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=PI4TLXET|pdf]])
+
+>\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=H9IRQE86|image\]])  
+
+
+>Why are position and velocity treated as independent?  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=BUK3TIV4|pdf]])
+
+>we can take qi and ̇ qi as independent variables  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=STSA2APZ|pdf]])
 
 ^af8f23
 
->considering a simple case of an ordinary function in the 2-d x − y plane, such as y = x2  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=HBSBTL73))
+>considering a simple case of an ordinary function in the 2-d x − y plane, such as y = x2  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=2&annotation=HBSBTL73|pdf]])
 
 ^6e5c85
 
->suppose we define another function such as  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=HMA9K8CM))
+>suppose we define another function such as  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=HMA9K8CM|pdf]])
 
 ^d3973c
 
->\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=C58CZUM3))  
+>\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=C58CZUM3|image\]])  
 
 
->obtain different curves  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=ET429NCQ))
+>obtain different curves  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=ET429NCQ|pdf]])
 
 ^80c6c3
 
->requiring f (x, y) to be equal to various constants  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=3EXYA8UK))
+>requiring f (x, y) to be equal to various constants  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=3EXYA8UK|pdf]])
 
 ^934a08
 
->to obtain the specific curve y = x2, we must impose a specific constraint on L, namely that f (x, y) =  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=PZQWMGJU))
+>to obtain the specific curve y = x2, we must impose a specific constraint on L, namely that f (x, y) =  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=PZQWMGJU|pdf]])
 
 ^1ebbbf
 
->same logic applies to the Lagrangian, except that the constraint is a bit more elaborate  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=C85VLISW))
+>same logic applies to the Lagrangian, except that the constraint is a bit more elaborate  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=C85VLISW|pdf]])
 
 ^df626f
 
->If all we’re doing is specifying the position and velocity of a particle at one point, then qi and vi can take on any values so, at this stage, they are technically independent variables  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=5V5GLM5E))
+>If all we’re doing is specifying the position and velocity of a particle at one point, then qi and vi can take on any values so, at this stage, they are technically independent variables  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=5V5GLM5E|pdf]])
 
->The constraint is to apply the principle of least action  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=QW829TNQ))
+>The constraint is to apply the principle of least action  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=QW829TNQ|pdf]])
 
 ^bd2cff
 
->This leads to the Euler-Lagrange equations  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=JBHZFZ5M))
+>This leads to the Euler-Lagrange equations  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=JBHZFZ5M|pdf]])
 
->now qi and ̇ qi are no longer independent, as ̇ qi (t) is just the derivative of qi  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=STQFB59R))
+>now qi and ̇ qi are no longer independent, as ̇ qi (t) is just the derivative of qi  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=STQFB59R|pdf]])
 
 ^91647f
 
->The connection of qi and ̇ qi emerges only after we solve the Euler-Lagrange equations.  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=ZFS23J69))
+>The connection of qi and ̇ qi emerges only after we solve the Euler-Lagrange equations.  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=ZFS23J69|pdf]])
 
 ^64a08d
 
->Other types of Lagrangian  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=JNTHABJX))
+>Other types of Lagrangian  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=JNTHABJX|pdf]])
 
->conceive of a Lagrangian that depended on qi, ̇ qi and ̈ qi  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=INC55476))
+>conceive of a Lagrangian that depended on qi, ̇ qi and ̈ qi  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=INC55476|pdf]])
 
->The fact that physical Lagrangians depend only on qi, and ̇ qi is a consequence of Newton’s second law F = ma  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=GD7ENKKU))
+>The fact that physical Lagrangians depend only on qi, and ̇ qi is a consequence of Newton’s second law F = ma  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=3&annotation=GD7ENKKU|pdf]])
 
->\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=C5URHCH7))  
-
-
->pi is the momentum of degree of freedom i  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=GTSDZ87X))
-
->EulerLagrange equations are equivalent to  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=LIHXUZH3))
-
->\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=GR263YNE))  
+>\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=C5URHCH7|image\]])  
 
 
->This is just Newton’s second law, so the Euler-Lagrange formulation is indeed equivalent to Newton’s laws  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=NCBSLSDQ))
+>pi is the momentum of degree of freedom i  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=GTSDZ87X|pdf]])
 
->2.CLASSICAL FIELD THEORY  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=DIDK3WTD))
+>EulerLagrange equations are equivalent to  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=LIHXUZH3|pdf]])
 
->difference between particle theory and field theory is that the variables qi no longer describe the motion of anything, that is, they are no longer functions of time  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=XMYBE57W))
+>\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=GR263YNE|image\]])  
+
+
+>This is just Newton’s second law, so the Euler-Lagrange formulation is indeed equivalent to Newton’s laws  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=NCBSLSDQ|pdf]])
+
+>2.CLASSICAL FIELD THEORY  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=DIDK3WTD|pdf]])
+
+>difference between particle theory and field theory is that the variables qi no longer describe the motion of anything, that is, they are no longer functions of time  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=XMYBE57W|pdf]])
 
 ^11daed
 
->Rather, they become fixed labels for points in space.  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=LKY96CM6))
+>Rather, they become fixed labels for points in space.  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=LKY96CM6|pdf]])
 
 ^c35748
 
->$q_i$ become independent variables  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=9H7MC5FF))
+>$q_i$ become independent variables  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=9H7MC5FF|pdf]])
 
-label points in spacetime  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=AYTCS4BF)) ^0246d7
+label points in spacetime  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=AYTCS4BF|pdf]]) ^0246d7
 
-A field is some quantity that has a value for each point in spacetime, and it is this quantity that can change as we move from place to place or forward in time  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=8TAHBHVN)) ^85f679
+A field is some quantity that has a value for each point in spacetime, and it is this quantity that can change as we move from place to place or forward in time  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=8TAHBHVN|pdf]]) ^85f679
 
-scalar field  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=XX3C3GCI))
+scalar field  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=XX3C3GCI|pdf]])
 
-consists of a single value φ (qμ) attached to each point in spacetime  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=9RYQCRIP)) ^96fc16
+consists of a single value φ (qμ) attached to each point in spacetime  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=4&annotation=9RYQCRIP|pdf]]) ^96fc16
 
-what is meant by a ’path’ that the system follows.  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=R8QSUBK8))
+what is meant by a ’path’ that the system follows.  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=R8QSUBK8|pdf]])
 
-spacetime coordinates qμ are no longer dynamical variables  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=FH3JXDVI))
+spacetime coordinates qμ are no longer dynamical variables  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=FH3JXDVI|pdf]])
 
-What does change is the value of the field φ  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=ZDB5BZMN))
+What does change is the value of the field φ  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=ZDB5BZMN|pdf]])
 
-φr if we have more than one field  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=8P63P39V))
+φr if we have more than one field  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=8P63P39V|pdf]])
 
-path followed is determined by a function of the field values  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=WB9DHVRS)) ^92b120
+path followed is determined by a function of the field values  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=WB9DHVRS|pdf]]) ^92b120
 
-define the Lagrangian density L (φr, φr,μ, qμ)  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=Q46S9A7S)) ^b6d267
+define the Lagrangian density L (φr, φr,μ, qμ)  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=Q46S9A7S|pdf]]) ^b6d267
 
-φr,μ is defined as  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=7GDD8NQH)) ^05efbb
+φr,μ is defined as  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=7GDD8NQH|pdf]]) ^05efbb
 
-\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=T9C8MDAP))  
-
-
-Lagrangian density is the Lagrangian per unit volume  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=PE963JZ5))
-
-action element of this volume element between times t1 and t2 is  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=6XQRJMJE))
-
-\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=NCZC8VNC))  
+\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=T9C8MDAP|image\]])  
 
 
-dS for only the volume element centred at qμ  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=HDY3777H)) ^0dacc9
+Lagrangian density is the Lagrangian per unit volume  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=PE963JZ5|pdf]])
 
-total action  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=KBRM8M9B))
+action element of this volume element between times t1 and t2 is  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=6XQRJMJE|pdf]])
 
-\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=T53J785B))  
-
-
-apply to each field φr separately  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=THDR24AC))
-
-summation over μ is implied  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=V5IXEK4X))
-
-\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=554GJZHM))  
+\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=NCZC8VNC|image\]])  
 
 
-\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=75YHCWC5))  
+dS for only the volume element centred at qμ  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=HDY3777H|pdf]]) ^0dacc9
+
+total action  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=KBRM8M9B|pdf]])
+
+\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=T53J785B|image\]])  
 
 
-product rule  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=734LBEEJ))
+apply to each field φr separately  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=THDR24AC|pdf]])
 
-\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=4D6ARCVI))   ^d3367a
+summation over μ is implied  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=V5IXEK4X|pdf]])
 
-
-last term is the integral of a 4-d divergence over a 4-d volume  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=EAARESRK))
-
-this integral goes to zero.  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=DB8ICX6W))
-
-\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=6AADPT79))  
+\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=5&annotation=554GJZHM|image\]])  
 
 
-for all variations δφ  ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=EX6NWWRS))
+\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=75YHCWC5|image\]])  
 
-\[image\] ([pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=LCQMGV6X))   ^caea84
+
+product rule  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=734LBEEJ|pdf]])
+
+\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=4D6ARCVI|image\]])   ^d3367a
+
+
+last term is the integral of a 4-d divergence over a 4-d volume  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=EAARESRK|pdf]])
+
+this integral goes to zero.  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=DB8ICX6W|pdf]])
+
+\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=6AADPT79|image\]])  
+
+
+for all variations δφ  ([[zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=EX6NWWRS|pdf]])
+
+\[[[pdf](zotero://open-pdf/library/items/TAE9KIDZ?page=6&annotation=LCQMGV6X|image\]])   ^caea84

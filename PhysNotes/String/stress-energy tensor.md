@@ -40,8 +40,8 @@ $$
 T_{\alpha \beta}=-\frac{1}{4 \pi \kappa^{2}}\left(\left(\partial_{\alpha} X\right) \cdot\left(\partial_{\beta} X\right)-\frac{1}{2} \eta_{\alpha \beta} \eta^{\gamma \delta}\left(\partial_{\gamma} X\right) \cdot\left(\partial_{\delta} X\right)\right)
 $$
 
-The stress-energy tensor is an object of central importance for [[conformal field theory|CFT]] and its [[operator product expansion|OPE]] will allow to characterize operators.
-# Tracelessness in a [[conformal field theory|CFT]]
+The stress-energy tensor is an object of central importance for [[7 CFT/conformal field theory|CFT]] and its [[operator product expansion|OPE]] will allow to characterize operators.
+# Tracelessness in a [[7 CFT/conformal field theory|CFT]]
 The Stress-Energy Tensor is Traceless
 In conformal theories, $T_{\alpha \beta}$ has a very important property: its trace vanishes. To see this, let's vary the action with respect to a [[conformal group#^8c03fe|scale transformation]] which is a special case of a [[conformal group|conformal transformation]],
 $$
@@ -153,7 +153,7 @@ Further terms with higher poles and polynomials in "..." are unconstrained from 
 - For an operator $\mathcal{O}$ of [[conformal weight|holomorphic weight]] $h$ [[conformal weight#From operator product expansion OPE|we have]]:![[conformal weight#^70ef67]]
 - For a [[quasi-primary operator#From operator product expansion OPE]] we have:![[quasi-primary operator#^70ef67]]
 - For a [[primary operator#From OPE|primary operator]] we have: ![[primary operator#^b8595a]]
-- When there is a derivative acting on an operator, the poles are shifted by one order. Thus, [[descendants]] are not ([[quasi-primary operator|quasi-]])[[primary operator]]s.
+- When there is a derivative acting on an operator, the poles are shifted by one order. Thus, [[../math/descendants]] are not ([[quasi-primary operator|quasi-]])[[primary operator]]s.
 
 Let us state the [[operator product expansion|OPE]] of the stress-energy tensor. An explicit computation using [[Wick's theorem]] yields:
 
@@ -161,7 +161,7 @@ $$
 T(z) T(w)=\frac{c / 2}{(z-w)^{4}}+\frac{2 T(w)}{(z-w)^{2}}+\frac{\partial T(w)}{z-w}+\ldots .
 $$
 
-This is a general result in [[conformal field theory|CFT]]'s. It encodes the Virasoro algebra! Let us note a couple of properties of the stress-energy tensor:
+This is a general result in [[7 CFT/conformal field theory|CFT]]'s. It encodes the Virasoro algebra! Let us note a couple of properties of the stress-energy tensor:
 
 - $T$ is a [[local operator]],
 - $T$ has holomorphic weight $h=2$ (classically),

@@ -1,7 +1,7 @@
 # Hypothesis
 
 ## Metadata
-- Author: [hypothes.is]()
+- Author: [[|hypothes.is]]
 - Title: Hypothesis
 - Reference: https://hypothes.is/welcome/5153483335fb54cd
 - Category: #article

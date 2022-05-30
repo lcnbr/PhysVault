@@ -4,7 +4,7 @@ tags:
 - qftII
 ---
 A plain Fourier integral
-produces a [[delta function]] as usual
+produces a [[../math/delta function]] as usual
 $$
 \int \dd{\theta} \exp(c\theta\alpha)
 =

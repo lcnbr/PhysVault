@@ -48,7 +48,7 @@ $$
 c=10+32 \frac{1}{2}=26 \text {. }
 $$
 
-This number is the same as for bosonic string theory and cancels precisely against the contribution of [[Faddeev-Popov ghosts|ghost]] fields.
+This number is the same as for bosonic string theory and cancels precisely against the contribution of [[../QFTII/Faddeev-Popov ghosts|ghost]] fields.
 
 - The super-Poincaré anomaly cancels in light cone gauge.
 

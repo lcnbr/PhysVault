@@ -18,21 +18,21 @@ $$
 This is precisely the expected result.
 
 We can also perform the exercise with more than two fields.
-The result agrees with [[Wick's theorem]].
+The result agrees with [[../String/Wick's theorem]].
 In fact the form of $Z[J]$ as the exponent of $W[J]$
 which is a quadratic monomial of $J$
 can be viewed as the functional formulation of Wick's theorem:
 
 - The first derivative knocks down a linear term $\delta W/\delta J$
-from the quadratic exponent. In [[Feynman graphical notation]], using [[graph generating functional#In feynman graphical notation]]:    ![|500](file:///C:/Users/Lucien/Documents/UNI/images/image149.png) then 
-![|500](file:///C:/Users/Lucien/Documents/UNI/images/image145.png)
+from the quadratic exponent. In [[Feynman graphical notation]], using [[graph generating functional#In feynman graphical notation]]:    ![[file:///C:/Users/Lucien/Documents/UNI/images/image149.png||500]] then 
+![[file:///C:/Users/Lucien/Documents/UNI/images/image145.png||500]]
 
 
 - Subsequent derivatives can knock further linear terms $\delta W/\delta J$
 from the exponent. They can also hit the remaining $J$ in some $\delta W/\delta J$
-leaving behind a Feynman propagator $\delta^2W/\delta J^2\simeq-\iunit G_\text{F}(x_k-x_l)$. Again with [[Feynman graphical notation]]: ![|500](file:///C:/Users/Lucien/Documents/UNI/images/image142.png)
+leaving behind a Feynman propagator $\delta^2W/\delta J^2\simeq-\iunit G_\text{F}(x_k-x_l)$. Again with [[Feynman graphical notation]]: ![[file:///C:/Users/Lucien/Documents/UNI/images/image142.png||500]]
 thus
-![|500](file:///C:/Users/Lucien/Documents/UNI/images/image152.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image152.png||500]]
 - Any first derivative term $\delta W/\delta J$ that remains after the functional derivatives cause the expression to vanish when $J=0$.
 - As every<mark style="background: #FF5582A6;"> exponent requires two functional derivatives, all fields $\phi(x_k)$ must be Wick contracted to some other field.</mark> 
 - The product rule of derivatives takes care of the sum of all combinations.

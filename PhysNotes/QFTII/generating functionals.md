@@ -5,7 +5,7 @@
 4. [[action as a generating functional]]
 
 Summary
-![|500](file:///C:/Users/Lucien/Documents/UNI/images/image166.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image166.png||500]]
 
 
 

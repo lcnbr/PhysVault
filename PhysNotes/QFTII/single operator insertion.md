@@ -6,7 +6,7 @@ tags:
 ---
 ---
 # Single Insertion
- ![|300](file:///C:/Users/Lucien/Documents/UNI/images/image67.png)
+ ![[file:///C:/Users/Lucien/Documents/UNI/images/image67.png||300]]
 
 We insert one quantum operator $\hat O = O(\hat q,\hat p)$ at time $t_\text{o}$ with $t_\text{f}>t_\text{o}>t_\text{i}$ into the [[transition amplitude]]^[Here we have used the Heisenberg and Schrödinger pictures
 of the operator related by
@@ -46,7 +46,7 @@ Continuing^[Note that we assumed the two consecutive times
 $t_\text{o},t_\text{o'}$
 before and after the operator insertion as
 identified $t_\text{o}=t_\text{o'}$.
-This explains the absence of [[Hamiltonian]] contribution
+This explains the absence of [[../AnalyticalMech/Hamiltonian]] contribution
 $-(t_\text{o}-t_\text{o'})H$ at the operator insertion.],
 
 $$

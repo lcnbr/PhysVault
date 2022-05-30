@@ -1,11 +1,11 @@
 ---
 ---
 
-We want a manifestly [[Lorentz group|Lorentz invariant]] momentum state. Starting from the completeness relations:
+We want a manifestly [[math/Lorentz group|Lorentz invariant]] momentum state. Starting from the completeness relations:
 
 $1=\int \dd[3]{\mathbf{p}}\dyad{\mathbf{p}}$
 
-Since $\dd[3]{\mathbf{p}}$ is not [[Lorentz group|Lorentz invariant]] we use the [[Lorentz invariant measure]]:
+Since $\dd[[math/Lorentz group|3]] we use the [[Lorentz invariant measure]]:
 
 $1=\int \frac{\dd[3]{\mathbf{p}}}{2 \omega_\mathbf{p}} \dyad{p'} \iff \ket{p'}=\sqrt{2 \omega_\mathbf{p}}\ket{\mathbf{p}}$
 

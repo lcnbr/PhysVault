@@ -1,0 +1,113 @@
+{
+  "userAdmonitions": {
+    "thm": {
+      "type": "thm",
+      "color": "93, 141, 218",
+      "icon": {
+        "type": "obsidian",
+        "name": "Sigma"
+      },
+      "command": false,
+      "title": "Theorem",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "lmm": {
+      "type": "lmm",
+      "color": "37, 28, 110",
+      "icon": {
+        "type": "obsidian",
+        "name": "Lightbulb"
+      },
+      "command": false,
+      "title": "Lemma",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "prf": {
+      "type": "prf",
+      "color": "0, 0, 0",
+      "icon": {
+        "type": "obsidian",
+        "name": "Square"
+      },
+      "command": false,
+      "title": "Proof",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "rmk": {
+      "type": "rmk",
+      "color": "223, 210, 73",
+      "icon": {
+        "name": "list",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Remark",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "def": {
+      "type": "def",
+      "color": "162, 193, 123",
+      "icon": {
+        "type": "obsidian",
+        "name": "HardHat"
+      },
+      "command": false,
+      "title": "Definition",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "expl": {
+      "type": "expl",
+      "color": "221, 176, 227",
+      "icon": {
+        "type": "obsidian",
+        "name": "Expand"
+      },
+      "command": false,
+      "title": "Example",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "prop": {
+      "type": "prop",
+      "color": "153, 184, 245",
+      "icon": {
+        "type": "obsidian",
+        "name": "PlusSquare"
+      },
+      "command": false,
+      "title": "Proposition",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": false,
+  "version": "9.0.3",
+  "autoCollapse": false,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": true
+  },
+  "icons": [],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": true,
+  "snippetPath": "custom-admonitions.4958b3"
+}

@@ -1,5 +1,5 @@
 
-So far we have discussed [[closed string]]s. The alternative choice is open boundary conditions which leads to some interesting new objects in string theory.
+So far we have discussed [[../closed string]]s. The alternative choice is open boundary conditions which leads to some interesting new objects in string theory.
 
 For [[open string]]s we conventionally choose the range of the spatial coordinate $\sigma$ as $0 \leq \sigma \leq$ $\pi$, and we should discuss the boundaries at $\sigma=0, \pi$. We start again in conformal gauge
 
@@ -22,26 +22,26 @@ $$
 X^{\prime} \cdot \delta X=\partial_{\sigma} X^{\mu} \delta X_{\mu}=0 \quad \text { at } \sigma=0, \pi
 $$
 There are two different types of boundary conditions that we can impose to satisfy this:
-- [[Neumann boundary conditions]]
+- [[../Neumann boundary conditions]]
 - [[Dirichlet boundary conditions]]
 
-We can, as we did for the [[closed string spectrum|closed string]] compute the [[open string spectrum]] imposing [[Neumann boundary conditions|Neumann conditions]].
+We can, as we did for the [[../4 String Quantisation/closed string spectrum|closed string]] compute the [[../open string spectrum]] imposing [[../Neumann boundary conditions|Neumann conditions]].
 
 
-![[string interactions]]
+![[../string interactions]]
 
 
-# [[Dp-branes|D-Branes]]. 
+# [[../Dp-branes|D-Branes]]. 
 Now we take the [[Dirichlet boundary conditions|Dirichlet condition]] seriously. At each string boundary we can choose
 
-- [[Neumann boundary conditions|Neumann condition]] $X^{\prime \mu}=0$ or
+- [[../Neumann boundary conditions|Neumann condition]] $X^{\prime \mu}=0$ or
 
 - [[Dirichlet boundary conditions|Dirichlet condition]] $X^{\mu}=$ fixed.
 
 We can make this choice for each direction $\mu$ individually.
 
-Geometrical picture: String ends are confined to so-called " [[Dp-branes]]".
+Geometrical picture: String ends are confined to so-called " [[../Dp-branes]]".
 
 
 
-![[multiple branes]]
+![[../multiple branes]]

@@ -6,7 +6,7 @@ tags:
 - qftII
 - string theory
 ---
--The leading deviation $2 m_{2}(a, b)$ from linearity in [[multiplication in lie algebra#^69185d]] is called the Lie bracket $[\![ a, b ]\!]$.
+-The leading deviation $2 m_{2}(a, b)$ from linearity in [[../QFTII/multiplication in lie algebra#^69185d]] is called the Lie bracket $[\![ a, b ]\!]$.
 
 We can thus compute it as the limit of a commutator of Lie group elements
 $$

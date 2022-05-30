@@ -7,7 +7,7 @@ tag: hypothesis highlights
 
 
 ## Metadata
-- Author: [reddit.com]()
+- Author: [[|reddit.com]]
 - Title: r/ObsidianMD - PhD workflow: Obsidian, Zettelkasten, Zotero, Pandoc, and more
 - Reference: https://www.reddit.com/r/ObsidianMD/comments/m5ou2h/phd_workflow_obsidian_zettelkasten_zotero_pandoc/
 - Category: #article

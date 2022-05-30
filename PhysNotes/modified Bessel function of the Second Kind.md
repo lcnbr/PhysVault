@@ -6,7 +6,7 @@ tags:
 date created: Tuesday, May 10th 2022, 5:45:41 pm
 date modified: Wednesday, May 11th 2022, 10:54:05 am
 ---
-The [[modified Bessel function of the Second Kind]] is the second standard solution to the [[modified Bessel's equation]]. The defining property of the second standard solution $K_{v}(z)$  is
+The [[.md|modified Bessel function of the Second Kind]] is the second standard solution to the [[modified Bessel's equation]]. The defining property of the second standard solution $K_{v}(z)$  is
 
 $$
 K_{v}(z) \sim \sqrt{\pi /(2 z)} \mathrm{e}^{-z},
@@ -52,4 +52,4 @@ For $|\operatorname{ph} z|<\frac{1}{4} \pi$
 
 
 
-[^1]: the [[modified Bessel Function of the First Kind]]
+[[modified Bessel Function of the First Kind|^1]]

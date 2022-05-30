@@ -5,7 +5,7 @@ alias:
 tag: ST 
 ---
 
-Under shifts $(\delta z, \delta \bar{z})=(\epsilon, \bar{\epsilon})$, all [[local operator|local operators]] transform as
+Under shifts $(\delta z, \delta \bar{z})=(\epsilon, \bar{\epsilon})$, all [[.md|local operators]] transform as
 
 $$
 \begin{aligned}
@@ -13,9 +13,9 @@ $$
 \delta \mathcal{O} &=\epsilon \partial \mathcal{O}+\bar{\epsilon} \bar{\partial}\overline{\mathcal{O}} .
 \end{aligned}
 $$
-Thus shifting, we obtain the [[descendants]] $\partial^n\bar{\partial}^\bar{n}\mathcal{O}$.
+Thus shifting, we obtain the [[../math/descendants]] $\partial^n\bar{\partial}^\bar{n}\mathcal{O}$.
 
-Let’s first describe what we mean by a [[local operator]] in a [[conformal field theory|CFT]]. We will also refer to these objects as [[Field|fields]]. There is a slight difference in terminology between [[conformal field theory|CFTs]] and more general quantum field theories. Usually in quantum field theory, one reserves the term "field" for the objects $\phi$ which sit in the [[Action]] and are integrated over in the [[path integral]]. In contrast, in [[conformal field theory|CFT]] the term "[[local operator|field]]" refers to any local expression that we can write down. This includes $\phi$, but also includes derivatives $\partial^{n} \phi$ or composite operators such as $e^{i \phi}$. All of these are thought of as different fields in a [[conformal field theory|CFT]]. It should be clear from this that the set of all "fields" in a CFT is always infinite even though, if you were used to working with quantum field theory, you would talk about only a finite number of fundamental objects $\phi$. Obviously, this is nothing to be scared about. It's just a change of language: it doesn't mean that our theory got harder.
+Let’s first describe what we mean by a [[.md|local operator]] in a [[7 CFT/conformal field theory|CFT]]. We will also refer to these objects as [[../AnalyticalMech/Field|fields]]. There is a slight difference in terminology between [[7 CFT/conformal field theory|CFTs]] and more general quantum field theories. Usually in quantum field theory, one reserves the term "field" for the objects $\phi$ which sit in the [[../AnalyticalMech/Action]] and are integrated over in the [[path integral]]. In contrast, in [[7 CFT/conformal field theory|CFT]] the term "[[.md|field]]" refers to any local expression that we can write down. This includes $\phi$, but also includes derivatives $\partial^{n} \phi$ or composite operators such as $e^{i \phi}$. All of these are thought of as different fields in a [[7 CFT/conformal field theory|CFT]]. It should be clear from this that the set of all "fields" in a CFT is always infinite even though, if you were used to working with quantum field theory, you would talk about only a finite number of fundamental objects $\phi$. Obviously, this is nothing to be scared about. It's just a change of language: it doesn't mean that our theory got harder.
 
 $\mathcal{O}_{i}(z, \bar{z})$, which are built from products of fields $X$ and their derivatives $\partial^{n} \partial^{n} X$, all of them evaluated at the same point $(z, \bar{z})$ on the [[Wick rotation#In conformal field theory CFT|worldsheet]]. The [[normal ordering]] $\mathcal{O}_{i}=\therefore \ldots$ is implicit for [[Local Operators]], thus there are no self-correlations. 
 Typical examples are:
@@ -32,7 +32,7 @@ Supposing we can write a general (and suggestive of poles) form of the [[stress-
 
 $$\epsilon \partial \mathcal{O}=\delta \mathcal{O} = \mathrm{Res}[\epsilon T(z)\mathcal{O}]=\epsilon \mathcal{O}_{1}$$
 
-Thus any local operator has the following  [[descendants|descendent]] simple pole:
+Thus any local operator has the following  [[../math/descendants|descendent]] simple pole:
 
 $$
 T(z) \mathcal{O}(w, \bar{w})=\ldots+\frac{\partial \mathcal{O}(w, \bar{w})}{z-w}+\ldots

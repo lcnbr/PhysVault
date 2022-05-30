@@ -16,7 +16,7 @@ Here $\Psi_\text{i,f}$ are the spatial fields at the initial
 and final time slices,
 whereas $\Psi$ is a field in spacetime which
 interpolates between the fields $\Psi_\text{i}=\Psi(t_\text{i})$ and $\Psi_\text{f}=\Psi(t_\text{f})$.
-The [[Action]] can be written as an integral over the [[Lagrangian Density|Lagrangian (density)]]
+The [[../AnalyticalMech/Action]] can be written as an integral over the [[density)](../AnalyticalMech/Lagrangian Density.md|Lagrangian (density)]]
 $$
 S_\text{f,i}[\Psi]:=
 \int_{t_\text{i}}^{t_\text{f}} \mathcal{D}{t} ~L\bqty{\Psi(t),\dot\Psi(t)}
@@ -51,8 +51,8 @@ $$
 \int \mathcal{D}{\Psi}\exp\pqty{\iunit  S[\Psi]}
 }.
 $$
-Here the path integrals integrate over [[Field|fields]] $\Psi$ defined for all of [[spacetime]],
-and the [[Action]] is the integral of the [[Lagrangian Density]] over all
+Here the path integrals integrate over [[../AnalyticalMech/Field|fields]] $\Psi$ defined for all of [[spacetime]],
+and the [[../AnalyticalMech/Action]] is the integral of the [[../AnalyticalMech/Lagrangian Density]] over all
 of [[spacetime]]
 $$
 S[\Psi]=\int \dd[D]{x}\mathcal{L}\pqty{\Psi(x),\partial_\mu\Psi(x)}.

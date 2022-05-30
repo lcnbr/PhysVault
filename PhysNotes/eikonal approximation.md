@@ -2,7 +2,7 @@
 ---
 
 6.5 EIKONAL APPROXIMATION
-This approximation covers a situation in which $V(\mathbf{x})$ varies very little over a distance of order of wavelength $\bar{\lambda}$ (which can be regarded as "small"). Note that $V$ itself need not be weak as long as $E \gg|V|$; hence the domain of validity here is different from the Born approximation. Under these conditions, the semiclassical^[![[@sakuraiModernQuantumMechanics2011]]]
+This approximation covers a situation in which $V(\mathbf{x})$ varies very little over a distance of order of wavelength $\bar{\lambda}$ (which can be regarded as "small"). Note that $V$ itself need not be weak as long as $E \gg|V|$; hence the domain of validity here is different from the Born approximation. Under these conditions, the semiclassical^[[../Zotero/@sakuraiModernQuantumMechanics2011|![@sakuraiModernQuantumMechanics2011]]]
 
 As is standard in the discussion of the eikonal approximation, we introduce an auxiliary $(D-2)$-dimensional vector $q$ such that $\mathbf{q}^{2}=-t$ and then take the Fourier transform to rewrite the result in terms of the conjugate variable $b$ (the impact parameter). We can now define the corresponding amplitudes in impact parameter space which are defined via,
 $$
@@ -14,4 +14,4 @@ We can generally write the gravitational S-matrix in impact parameter space as 1
 $$
 S\left(s, m_{i}, \mathbf{b}\right)=1+i \sum_{n=1}^{\infty} \tilde{\mathcal{A}}_{n}\left(s, m_{i}, \mathbf{b}\right)
 $$
-where $\tilde{\mathcal{A}}_{n}\left(s, m_{i}, \mathbf{b}\right)$ is the full amplitude with $n$ graviton exchanges in impact parameter space including the appropriate normalisation as defined in (2.74).^[![[@colladoEikonalApproximationGravitational2020]]]
+where $\tilde{\mathcal{A}}_{n}\left(s, m_{i}, \mathbf{b}\right)$ is the full amplitude with $n$ graviton exchanges in impact parameter space including the appropriate normalisation as defined in (2.74).^[[../Zotero/@colladoEikonalApproximationGravitational2020|![@colladoEikonalApproximationGravitational2020]]]

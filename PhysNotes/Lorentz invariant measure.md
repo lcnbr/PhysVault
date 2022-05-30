@@ -1,7 +1,7 @@
 ---
 ---
 
-$\dd[4]p$ is [[Lorentz group|Lorentz invariant]] but we usually only want positive energy and thus restrict to the hyperboloid $p^{2}=\left(p^{0}\right)^{2}-|\mathbf{p}|^{2}=\mu^{2}, p^{0}>0$. To restrict it to the hyperboloid, multiply it by the Lorentz invariant factor $\delta\left(p^{2}-\mu^{2}\right) \theta\left(p^{0}\right)$. That yields our relativistic measure on the hyperboloid
+$\dd[[math/Lorentz group|4]] but we [[math/delta function]]usually only want positive energy and thus restrict to the hyperboloid $p^{2}=\left(p^{0}\right)^{2}-|\mathbf{p}|^{2}=\mu^{2}, p^{0}>0$. To restrict it to the hyperboloid, multiply it by the Lorentz invariant factor $\delta\left(p^{2}-\mu^{2}\right) \theta\left(p^{0}\right)$. That yields our relativistic measure on the hyperboloid
 $$
 \int_{p^{0}=-\infty}^{\infty} d p^{0}\left\{d^{3} \mathbf{p} \delta\left(p^{2}-\mu^{2}\right) \Theta\left(p^{0}\right)\right\}=\frac{d^{3} \mathbf{p}}{2 \omega_{\mathbf{p}}}
 $$
@@ -17,7 +17,7 @@ The $\Theta\left(p^{0}\right)$ factor kills the second delta function, and integ
 
 # Different forms
 
-In keeping with fourier convention as in [[@colemanQUANTUMFIELDTHEORY2018|Sidney Coleman's QFT lecture]] we usually divide through by $2 \pi$ per dimension, which is only three in this case.
+In keeping with fourier convention as in [[../Zotero/@colemanQUANTUMFIELDTHEORY2018|Sidney Coleman's QFT lecture]] we usually divide through by $2 \pi$ per dimension, which is only three in this case.
 
 #definition In general we denote the function that imposes positive energies by:
 

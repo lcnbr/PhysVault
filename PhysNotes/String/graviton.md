@@ -4,7 +4,7 @@ alias:
 - spin-2 2-form
 ---
 massless spin- 2 2-form field
-Particle appearing from the [[closed string spectrum]] as symmetric part of (antisym is [[Kalb-Ramond 2-form]])
+Particle appearing from the [[4 String Quantisation/closed string spectrum]] as symmetric part of (antisym is [[Kalb-Ramond 2-form]])
 
 $$
 |a b ; q\rangle=\alpha_{-1}^{\mathrm{L}, a} \alpha_{-1}^{\mathrm{R}, b}|0 ; q\rangle .

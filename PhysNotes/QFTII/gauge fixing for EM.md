@@ -11,11 +11,11 @@ tags:
 ---
 ---
 # [[gauge fixing action for EM|Gauge fixing]] functional
-Ideally, we should count each physical configuration only once. To this end we introduce a gauge-fixing condition $G[A](x)= 0$ where $G$ is some functional that is assumed to vanish for exactly one point in each gauge orbit. For example, we could use the functional map $G[A](x)=\partial^{\mu} A_{\mu}(x)$ which enforces the Lorenz gauge. ^[This condition almost fixes the gauge up to some residual gauge transformations. This particular deviation from the assumptions turns out to be okay.] In fact, we will use a slightly more general gauge condition ^[Other gauges are acceptable as well, but the following discussion may have to be adapted.] 
+Ideally, we should count each physical configuration only once. To this end we introduce a gauge-fixing condition $G[[x|A]]= 0$ where $G$ is some functional that is assumed to vanish for exactly one point in each gauge orbit. For example, we could use the functional map $G[[x|A]]=\partial^{\mu} A_{\mu}(x)$ which enforces the Lorenz gauge. ^[This condition almost fixes the gauge up to some residual gauge transformations. This particular deviation from the assumptions turns out to be okay.] In fact, we will use a slightly more general gauge condition ^[Other gauges are acceptable as well, but the following discussion may have to be adapted.] 
 
 
 $$
-G[A, \Omega](x)=\partial^{\mu} A_{\mu}(x)-\Omega(x) .
+G[[x|A, \Omega]]=\partial^{\mu} A_{\mu}(x)-\Omega(x) .
 $$
 
 ^946f67
@@ -32,20 +32,20 @@ $$
 ^20dd2a
 
 
-However, this insertion has the undesirable feature that it is not evidently related to the original [[graph generating functional|formulation]] of $Z[J]$. Furthermore, the result clearly depends on the functional derivative of $G$ at $G=0$^[This is the analog of the reparametrisation rule for [[delta function#Composition with a function]] $\delta(f(x))=\delta\left(x-x_{0}\right) /\left|f^{\prime}\left(x_{0}\right)\right|$ where $f\left(x_{0}\right)=0$.]
+However, this insertion has the undesirable feature that it is not evidently related to the original [[graph generating functional|formulation]] of $Z[[../math/delta function#Composition with a function]] $\delta(f(x))=\delta\left(x-x_{0}\right) /\left|f^{\prime}\left(x_{0}\right)\right|$ where $f\left(x_{0}\right)=0$.]
 Instead, we use the assumption that the functional $G\left[A^{\prime}, \Omega\right]$ vanishes precisely at one point of the gauge orbit, where $A^{\prime}$ is the gauge potential $A$ transformed by the field $\alpha$
 $$
 A_{\mu}^{\prime}=A_{\mu}+\left(\partial_{\mu} \alpha\right) .
 $$
 This implies the delta-functional identity^[The functional determinant Det is approximated by an ordinary determinant when the coordinates $x$ and $y$ are discretised.]
 $$
-1=\int \operatorname{D} \alpha \Delta\left[G\left[A^{\prime}, \Omega\right]\right] \operatorname{Det}_{x, y}\left(\frac{\delta G\left[A^{\prime}, \Omega\right](x)}{\delta \alpha(y)}\right) \text {, }
+1=\int \operatorname{D} \alpha \Delta\left[[\frac{\delta G\left[A^{\prime}, \Omega\right](x|G\left[A^{\prime}, \Omega\right]]}{\delta \alpha(y)}\right) \text {, }
 $$
 where the 1 on the l.h.s. represents the number of solutions of $G\left[A^{\prime}, \Omega\right]= 0$ over a gauge orbit.
 
 A convenient feature of the above gauge-fixing functional map $G$ is that its functional derivative in the determinant is independent of $A, \Omega$ and $\alpha$. It simply reads
 $$
-\frac{\delta G\left[A^{\prime}, \Omega\right](x)}{\delta \alpha(y)}=\partial^{2} \delta(x-y) \text {. }
+\frac{\delta G\left[[x|A^{\prime}, \Omega\right]]}{\delta \alpha(y)}=\partial^{2} \delta(x-y) \text {. }
 $$
 Hence we can write the identity as
 $$

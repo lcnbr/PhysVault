@@ -91,7 +91,7 @@ $$
 
 ^HarmCoorCondsqrt
 
-(You can compare it to [[coordinate conditions#^lorenzGauge]] .) 
+(You can compare it to [[.md#^lorenzGauge]] .) 
 
 We now have to show that it is possible to satisfy the harmonic coordinate condition. Suppose that we find a solution of [[Einstein's field equations#^EinsteinEqWithoutR|Einstein's equations]] for the metric $g_{\mu \nu}(x)$ with $\Gamma^{\lambda} \equiv \Gamma^\lambda{}_{\mu \nu} g^{\mu \nu}$ which do not satisfy the harmonic coordinate condition $\Gamma^{\lambda}=0$. All it takes to construct a solution which does satisfy the condition is a coordinate transformation. Indeed, under a transform $x^{\mu} \rightarrow x^{\prime \mu}=x^{\prime \mu}(x)$, we have, using [[transformation of the affine connection#^altTrans]]
 $$
@@ -105,7 +105,7 @@ To get to $\Gamma^{\prime \lambda}=0$, our coordinate transformation needs to sa
 $$
 \frac{\partial^{2} x^{\prime \lambda}}{\partial x^{\rho} \partial x^{\sigma}} g^{\rho \sigma}-\frac{\partial x^{\prime \lambda}}{\partial x^{\alpha}} \Gamma^{\alpha}=0 .
 $$
-(compare to [[coordinate conditions#^lorenzGaugeTrans]]). This can be rewritten in terms of the [[D'Alambert operator in GR|D'Alembert operator]] as:
+(compare to [[.md#^lorenzGaugeTrans]]). This can be rewritten in terms of the [[D'Alambert operator in GR|D'Alembert operator]] as:
 
 $$
 \square^2 x^{\prime \lambda}(x)=0,

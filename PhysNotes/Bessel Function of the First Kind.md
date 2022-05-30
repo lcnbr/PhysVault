@@ -11,4 +11,4 @@ This solution of [[Bessel's equation]] is an analytic function of $z \in \mathbb
 When $v=n\in \mathbb{Z}$, $J_{v}(z)$ is entire in $z$.
 For fixed $z\neq 0$ each branch of $J_{v}(z)$ is entire in $v$.
 
-[^1]: see [[powers of complex numbers]]
+[[powers of complex numbers|^1]]

@@ -2,10 +2,10 @@ Finite-dimensional irreps of the unitary algebras $\mathfrak{s u}(N)$ have been 
 ] and Dynkin labels. ^[This topic is far beyond the scope of this course, but a very nice topic of group theory and combinatorics, so let us give a flavour.
 ]
 # Young diagrams
-Young diagrams are heaps of boxes. They describe certain symmetrisation classes or equivalently representations of the symmetric group $S_{N}$. A single box corresponds to the [[defining representation of su(n)|defining representation]]. The conjugate [[defining representation of su(n)|fundamental representation]] corresponds to a vertical stack of $N-1$ boxes. The adjoint representation adds a single box to the right of the topmost box. The trivial representation has no box which we denote by a dot. For example, for $N=5$
-![[Pasted image 20220126211352.png|500]]
+Young diagrams are heaps of boxes. They describe certain symmetrisation classes or equivalently representations of the symmetric group $S_{N}$. A single box corresponds to the [[../math/defining representation of su(n|defining representation]].md). The conjugate [[../math/defining representation of su(n|fundamental representation]].md) corresponds to a vertical stack of $N-1$ boxes. The adjoint representation adds a single box to the right of the topmost box. The trivial representation has no box which we denote by a dot. For example, for $N=5$
+![[../math/Pasted image 20220126211352.png|500]]
 Horizontal stacks of boxes correspond to symmetrisation; vertical stacks correspond to anti-symmetrisation. For example, the above decomposition of the tensor products of two defining representations can be expressed as follows
-![[Pasted image 20220126211411.png|200]]
+![[../math/Pasted image 20220126211411.png|200]]
 Young diagrams are useful tools to work with representations of $\mathfrak{s u}(N)$. For instance, there are rules for computing the dimension of irreps and rules for the decomposition of tensor products.
 
 

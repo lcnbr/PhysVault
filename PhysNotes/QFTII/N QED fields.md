@@ -18,7 +18,7 @@ where $U$ is an $N \times N$ matrix which must be unitary $U^{\dagger}=U^{-1}$ s
 $$
 \bar{\psi}^{\prime} \psi^{\prime}=\bar{\psi} U^{\dagger} U \psi=\bar{\psi} U^{-1} U \psi=\bar{\psi} \psi
 $$
-The unitary matrices form the [[Lie group]] called $\mathrm{U}(N)$.
+The unitary matrices form the [[../math/Lie group]] called $\mathrm{U}(N)$.
 
 # Non-Abelian Gauge Potential. 
 

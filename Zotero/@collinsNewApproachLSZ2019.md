@@ -9,7 +9,7 @@ DOI:
 url: 
 
 ---
-# [A new approach to the LSZ reduction formula](zotero://select/items/@collinsNewApproachLSZ2019)
+# [[zotero://select/items/@collinsNewApproachLSZ2019|A new approach to the LSZ reduction formula]]
 
 
 # Main ideas

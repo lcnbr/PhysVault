@@ -3,7 +3,7 @@ alias:
 tag: GR SR
 ---
 
-The quantities that are are of interest in [[special relativity]] all transform in [[Representations|representations]] of the [[Lorentz group]]:
+The quantities that are are of interest in [[special relativity]] all transform in [[../math/Representations|representations]] of the [[../math/Lorentz group]]:
 
 - [[contravariant vectors in SR|contravariant vectors]] are the 'physical' quantities
 - [[covariant vectors in SR]]
@@ -27,7 +27,7 @@ Analogously we can construct a [[contravariant vectors in SR|contravariant vecto
 
 
 # Scalars
-There are quantities which do not transform under [[Lorentz transformation|Lorentz transformations]]. These quantities are called [[scalars in SR|scalars]].
+There are quantities which do not transform under [[../String/Lorentz transformation|Lorentz transformations]]. These quantities are called [[scalars in SR|scalars]].
 # Tensors:
 The most general object is a [[tensor in SR|tensors]]:
 

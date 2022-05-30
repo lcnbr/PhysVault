@@ -4,127 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "cd2e88d87fa3774e",
+        "id": "f6d021cce7e20761",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "PhysNotes/KMOC in SQED.md",
+            "mode": "preview",
+            "source": true
+          }
+        }
+      },
+      {
+        "id": "7c31a939dfe6a329",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "PhysNotes/KMOC framework.md",
             "mode": "preview",
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "4b2388985fc0aa90",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/example wavefunction in KMOC.md",
-            "mode": "source",
-            "source": true
-          }
-        },
-        "group": "fd5d7f905bb3eaf0"
-      },
-      {
-        "id": "8b8ac2ddefafb5e8",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/example wavefunction in KMOC.md",
-            "mode": "preview",
-            "source": true
-          }
-        },
-        "group": "fd5d7f905bb3eaf0"
-      },
-      {
-        "id": "8403e56862dbdeaf",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/modified Bessel function of the Second Kind.md",
-            "mode": "preview",
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "9bb320b31ab76c8c",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/powers of complex numbers.md",
-            "mode": "source",
-            "source": true
-          }
-        },
-        "group": "063e60d114b9c549"
-      },
-      {
-        "id": "9f8741a7233eda45",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/powers of complex numbers.md",
-            "mode": "preview",
-            "source": true
-          }
-        },
-        "group": "063e60d114b9c549"
-      },
-      {
-        "id": "7eb8efef77172020",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/hyperbolic parametrisation.md",
-            "mode": "source",
-            "source": true
-          }
-        },
-        "group": "9861f1528e6851f4"
-      },
-      {
-        "id": "4d40d6c446d089f7",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/hyperbolic parametrisation.md",
-            "mode": "preview",
-            "source": true
-          }
-        },
-        "group": "9861f1528e6851f4"
-      },
-      {
-        "id": "1de77bc9c2cdf22f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/Lorentz invariant measure.md",
-            "mode": "source",
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "fc8db466f7000d4f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "PhysNotes/relativistically natural units.md",
-            "mode": "source",
             "source": true
           }
         }
@@ -167,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240
+    "width": 240,
+    "collapsed": true
   },
   "right": {
     "id": "87f65332409687cb",
@@ -183,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhysNotes/example wavefunction in KMOC.md",
+                "file": "PhysNotes/KMOC framework.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhysNotes/example wavefunction in KMOC.md",
+                "file": "PhysNotes/KMOC framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhysNotes/example wavefunction in KMOC.md"
+                "file": "PhysNotes/KMOC framework.md"
               }
             }
           },
@@ -234,32 +133,25 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "d5a542dfa6d16f19",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
-  "active": "4b2388985fc0aa90",
+  "active": "7c31a939dfe6a329",
   "lastOpenFiles": [
-    "PhysNotes/example wavefunction in KMOC.md",
-    "PhysNotes/hyperbolic parametrisation.md",
-    "PhysNotes/classical limit of wavefuctions in KMOC.md",
-    "PhysNotes/modified Bessel function of the Second Kind.md",
-    "PhysNotes/modified Bessel's equation.md",
-    "PhysNotes/Bessel's equation.md",
-    "PhysNotes/Bessel function of the Second Kind.md",
-    "PhysNotes/modified Bessel Function of the First Kind.md",
-    "PhysNotes/Bessel function of the Third Kind.md",
-    "PhysNotes/Bessel Function of the First Kind.md"
+    "PhysNotes/KMOC framework.md",
+    "PhysNotes/KMOC in SQED.md",
+    "PhysNotes/LaTeX.md",
+    "Zotero/@kosowerAmplitudesObservablesClassical2019.md",
+    "PhysNotes/Méthode de Newton.md",
+    "PhysNotes/recherche de racine.md",
+    "PhysNotes/Méthodes de déflation.md",
+    "PhysNotes/algorithme de Hörner.md",
+    "PhysNotes/resolution d'equation.md",
+    "PhysNotes/Méthode de dichotomie.md"
   ]
 }

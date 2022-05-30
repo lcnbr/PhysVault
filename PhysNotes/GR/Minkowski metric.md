@@ -3,7 +3,7 @@ alias:
 - Minkowskian
 tag: SR GR ST qftII physics math
 ---
-In [[Minkowski signature#In GR]]$$\eta_{\mu \nu}=\operatorname{diag}(1,-1,-1,-1)$$
+In [[../String/Minkowski signature#In GR]]$$\eta_{\mu \nu}=\operatorname{diag}(1,-1,-1,-1)$$
 # Inverse
 It is infact the same in terms of values, and we write:
 

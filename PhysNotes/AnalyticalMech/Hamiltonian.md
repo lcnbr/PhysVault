@@ -3,8 +3,8 @@ alias:
 tags:
 - qftII
 ---
-# For [[Classical Particle Mechanics]]
-The [[Hamiltonian]] is the [[Legendre transform]] of the [[Lagrangian]]:
+# For [[../String/Classical Particle Mechanics]]
+The [[.md|Hamiltonian]] is the [[../math/Legendre transform]] of the [[Lagrangian]]:
 
 $$
 H(q, p)= p_a \dot{q}^a-L(q, \dot{q})
@@ -12,11 +12,11 @@ $$
 
 Where $p_a$ are [[Conjugate momenta]] to $q^a$
 
-The [[equations of motion|eoms]] are then given by [[Legendre transform#^56190e]] i.e:
+The [[equations of motion|eoms]] are then given by [[../math/Legendre transform#^56190e]] i.e:
 
 $$\frac{\partial H}{\partial p_a}=\dot{q}^a$$
 
-And using [[Legendre transform#^e320f3]]
+And using [[../math/Legendre transform#^e320f3]]
 
 $$
 \begin{aligned}
@@ -31,7 +31,7 @@ $$
 
 ^db7790
 
-Where  we used [[Einstein summation]] everywhere  and the [[Euler-Lagrange equations]] in the fourth line. Altogether we have
+Where  we used [[../GR/Einstein summation]] everywhere  and the [[Euler-Lagrange equations]] in the fourth line. Altogether we have
 ## Hamilton's equations
 $$
 \boxed{
@@ -41,14 +41,14 @@ $$
 \end{align}}
 $$
 
-# For [[Classical Field Theory]]
+# For [[../FT/Classical Field Theory]]
 
 We define the [[Hamiltonian Density]].
 
 ![[Hamiltonian Density]]
 
 
-# Common [[Hamiltonian]]s
+# Common [[.md|Hamiltonian]]s
 
 ## Quadratic momentum
 

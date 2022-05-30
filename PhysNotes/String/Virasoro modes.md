@@ -1,4 +1,4 @@
-When imposing the [[Virasoro constraints]] in the [[closed string]], [[Fourier decomposition]] solution to the [[Polyakov action]] [[equations of motion|e.o.m.]] we obtain the [[Virasoro modes]]:
+When imposing the [[Virasoro constraints]] in the [[closed string]], [[../Fourier decomposition]] solution to the [[3 Classical Bosonic String/Polyakov action]] [[../AnalyticalMech/equations of motion|e.o.m.]] we obtain the [[.md|Virasoro modes]]:
 The Virasoro modes are defined via (dropping the $\mathrm{L} / \mathrm{R}$ index)
 $$
 L_{n}:=\frac{1}{2} \sum_{m} \alpha_{n-m} \cdot \alpha_{m}

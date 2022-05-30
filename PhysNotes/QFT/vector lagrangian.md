@@ -5,13 +5,13 @@ tag:
 - qft
 ---
 # Free real vector field
-Consider a real [[vector fields in QFT|vector field]], since the complex case is a trivial extension. [[Field]]
+Consider a real [[vector fields in QFT|vector field]], since the complex case is a trivial extension. [[../AnalyticalMech/Field]]
 
-The most general quadratic (s.t the [[equations of motion|e.o.m.s]] are that of a free particle) [[Lagrangian Density|lagrangian]] with no more than two derivatives is given by   ^[see ![[@colemanQUANTUMFIELDTHEORY2018#26 1 The free real vector field zotero open-pdf 0_4E7XKTS3 598]]]
+The most general quadratic (s.t the [[../AnalyticalMech/equations of motion|e.o.m.s]] are that of a free particle) [[../AnalyticalMech/Lagrangian Density|lagrangian]] with no more than two derivatives is given by   ^[[../../Zotero/@colemanQUANTUMFIELDTHEORY2018#26 1 The free real vector field zotero open-pdf 0_4E7XKTS3 598]]]
 
 $$\mathcal{L}=\pm \frac{1}{2}\left[\left(\partial_{\mu} A_{\nu}\right)\left(\partial^{\mu} A^{\nu}\right)+a\left(\partial_{\mu} A^{\mu}\right)\left(\partial_{\nu} A^{\nu}\right)+b A_{\nu} A^{\nu}\right]$$
 
-The [[equations of motion|e.o.m.s]] are :
+The [[../AnalyticalMech/equations of motion|e.o.m.s]] are :
 $$-\partial^{\mu} \partial_{\mu} A_{\nu}-a \partial_{\nu} \partial_{\mu} A^{\mu}+b A_{\nu}=0$$
 
 For a plane wave ansatz ($A_{\nu}=\varepsilon_{\nu} e^{-i k \cdot x}$) this is:
@@ -41,5 +41,5 @@ $$
 
 ^freeVectLag
 
-The [[equations of motion|e.o.m.]] then obtained is the [[Proca equation]]
+The [[../AnalyticalMech/equations of motion|e.o.m.]] then obtained is the [[../Proca equation]]
 To have massless scalars we can now take $\mu^2\rightarrow0$. This will be problematic when quantising in QED.

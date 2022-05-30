@@ -67,10 +67,10 @@ yields the sum of all connected and disconnected graphs with
 precisely the right symmetry factors.
 In terms of graphs we can write $Z[J]$ in terms of $W[J]$ as
  
-![|500](file:///C:/Users/Lucien/Documents/UNI/images/image12.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image12.png||500]]
 
 # For the free action
 ## In [[Feynman graphical notation]]
 
 Using the [[Free Scalar Field]] as an example, we use [[Free Scalar Field#^c25ae2]] and write it using the [[Feynman graphical notation#Feynman Propagator|Feynman propagator]] and [[Feynman graphical notation#Source|source integral]]: 
-![|200](file:///C:/Users/Lucien/Documents/UNI/images/image139.png)
+![[file:///C:/Users/Lucien/Documents/UNI/images/image139.png||200]]

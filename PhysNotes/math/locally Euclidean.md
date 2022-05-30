@@ -1,2 +1,2 @@
-[[locally Euclidean]] of dimension $n$:
+[[.md|locally Euclidean]] of dimension $n$:
 $\forall x \in E, \exists U$ open nhood of $x$ and a homeomorphism $\varphi: U \longrightarrow \varphi(U) \subseteq \mathbb{R}^{n}$, where $\varphi(U)$ is an open ball.

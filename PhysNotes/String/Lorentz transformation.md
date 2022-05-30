@@ -5,13 +5,13 @@ alias:
 - spacetime interval
 tag: GR SR
 ---
-The [[Lorentz transformation]] are the group of transformations that leave the [[infinitesimal proper time interval in SR]] invariant:
+The [[.md|Lorentz transformation]] are the group of transformations that leave the [[../GR/infinitesimal proper time interval in SR]] invariant:
 
-![[infinitesimal proper time interval in SR#^BoostInvariance]]
+![[../GR/infinitesimal proper time interval in SR#^BoostInvariance]]
 
-They form a [[group]], the [[Lorentz group]], which when supplemented by translations $x'^\mu=x^\mu+\alpha^\mu$ becomes the [[Poincaré group]].
-# The [[Lorentz transformation]]s are [[linear transformation]]s
-[[infinitesimal proper time interval in SR#^BoostInvariance|Proper time invariance]] implies that the ([[Lorentz transformation|Lorentz]]) transformations $x \rightarrow x^{\prime}$ are [[linear transformation]]s. To show this, we take the derivative of the [[infinitesimal proper time interval in SR#^metricInvar|metric transformation rule]]:
+They form a [[../math/group]], the [[../math/Lorentz group]], which when supplemented by translations $x'^\mu=x^\mu+\alpha^\mu$ becomes the [[Poincaré group]].
+# The [[.md|Lorentz transformation]]s are [[../math/linear transformation]]s
+[[../GR/infinitesimal proper time interval in SR#^BoostInvariance|Proper time invariance]] implies that the ([[.md|Lorentz]]) transformations $x \rightarrow x^{\prime}$ are [[../math/linear transformation]]s. To show this, we take the derivative of the [[../GR/infinitesimal proper time interval in SR#^metricInvar|metric transformation rule]]:
 $$
 \begin{aligned}
 0 &=\pdv{x^\alpha}\eta_{\rho \sigma}=\pdv{x^\alpha}\pqty{\eta_{\mu \nu}\pdv{x'^\mu}{x^\rho}\pdv{x'^\nu}{x^\sigma}}\\
@@ -31,7 +31,7 @@ gives that
 $$
 \ip{\alpha \sigma}{\rho}=\eta_{\mu \nu}\pdv{x'^\mu}{x^\rho}\pdv{x'^\nu}{x^\sigma}{x^\alpha}=0
 $$
-We can get rid of the metric by multiplying with the inverse metric from the left and of the [[Jacobian]] of the transformation by multiplying its inverse $\frac{\partial x}{\partial x^{\prime}}$ from the right. The inverse exists, because physically the [[Lorentz group|Lorentz transformation]] must have an inverse. Thus, the second order derivative of the transformation must vanish
+We can get rid of the metric by multiplying with the inverse metric from the left and of the [[../math/Jacobian]] of the transformation by multiplying its inverse $\frac{\partial x}{\partial x^{\prime}}$ from the right. The inverse exists, because physically the [[../math/Lorentz group|Lorentz transformation]] must have an inverse. Thus, the second order derivative of the transformation must vanish
 $$
 \boxed{\frac{\partial^{2} x^{\prime \mu}}{\partial x^{\rho} \partial x^{\sigma}}=0}
 $$
@@ -40,19 +40,19 @@ or, in other words, the transformation must be linear
 $$
 x^{\prime \mu}=\Lambda^{\mu}{ }_{\nu} x^{\nu}+\rho^{\mu} .
 $$
-It is called the [[Poincaré transformation]] or [[Poincaré transformation|inhomogeneous Lorentz transformation]].
+It is called the [[../math/Poincaré transformation]] or [[../math/Poincaré transformation|inhomogeneous Lorentz transformation]].
 
 
 # Matrix Properties
 
-We can now rewrite the [[infinitesimal proper time interval in SR#^metricInvar|metric transformation rule]] as
+We can now rewrite the [[../GR/infinitesimal proper time interval in SR#^metricInvar|metric transformation rule]] as
 $$
 \Lambda^\nu{}_\sigma \Lambda^\mu{}_\rho \eta_{\mu \nu}=\eta_{\rho \sigma} .
 $$
 
 ^definingProp
 
-Where $\eta_{\mu \nu}$ is the [[Minkowski metric]]. Now consider the above equation in a [[matrix form from index notation|matrix form]] ($\Lambda^\mu{}_\rho \eta_{\mu \nu} \Lambda^\nu{}_\sigma= (\Lambda^\top)_\rho{}^\mu \eta_{\mu \nu}\Lambda^\nu{}_\sigma$)
+Where $\eta_{\mu \nu}$ is the [[../GR/Minkowski metric]]. Now consider the above equation in a [[../GR/matrix form from index notation|matrix form]] ($\Lambda^\mu{}_\rho \eta_{\mu \nu} \Lambda^\nu{}_\sigma= (\Lambda^\top)_\rho{}^\mu \eta_{\mu \nu}\Lambda^\nu{}_\sigma$)
 $$
 \begin{aligned}
 \Lambda^{T} \eta \Lambda=\eta \Rightarrow \operatorname{det}\left(\Lambda^{T} \eta \Lambda\right) &=\operatorname{det}(\eta) \\
@@ -71,11 +71,11 @@ Thus, from the [[#^definingProp]]  we find that
 - $\operatorname{det} \Lambda=\pm 1$,
 - $\Lambda_{0}^{0} \geq+1$ or $\Lambda_{0}^{0} \leq-1 .$
 
-This defines the [[Lorentz group]].
+This defines the [[../math/Lorentz group]].
 
 # Components from frame transformation
 Let us assume that an observer $\mathcal{O}$ sees a particle at rest and that another inertial observer $\mathcal{O}'$ sees the same particle moving with the velocity $\vec{v}$. The two frames are related by a coordinate transformation: $$\qty(x^\mu)'=\Lambda^\mu{}_\nu x^{\nu}+a^{\mu}$$
-![[Pasted image 20220131213217.png|400]]
+![[../GR/Pasted image 20220131213217.png|400]]
 
 
 and thus the **spacetime interval** $\dd{x}^\mu$ transforms as:
@@ -83,7 +83,7 @@ $$\dd{\qty(x^\mu)'}=\Lambda^\mu{}_\nu \dd{x^{\nu}}$$
 
 ^spacetimeIntTrans
 
-Let us observe the particle (at rest) in the frame $\mathcal{O}$ in two spacetime points $x^{\mu}$ and $\vec{x}^{\mu}+\mathrm{d} x^{\mu}$. We have $\dd{x^i}=0$ since the particle is at rest, and $\dd{x^0}=\dd{t}\neq0$ since we can never stop the advancement of time with a [[Lorentz group|Lorentz transformation]] ($\Lambda^0{}_0\neq0$)
+Let us observe the particle (at rest) in the frame $\mathcal{O}$ in two spacetime points $x^{\mu}$ and $\vec{x}^{\mu}+\mathrm{d} x^{\mu}$. We have $\dd{x^i}=0$ since the particle is at rest, and $\dd{x^0}=\dd{t}\neq0$ since we can never stop the advancement of time with a [[../math/Lorentz group|Lorentz transformation]] ($\Lambda^0{}_0\neq0$)
 Now, in the frame $\mathcal{O}'$, we have
 $$
 \begin{aligned}
@@ -98,7 +98,7 @@ $$
 
 ^velocity
 
-where $\vec{v}$ is the velocity of the particle. The [[infinitesimal proper time interval in SR|proper time]] intervals in the two frames are the same (c.f. [[infinitesimal proper time interval in SR#^BoostInvariance|defining property]] of [[infinitesimal proper time interval in SR#with Minkowski metric|proper time]])
+where $\vec{v}$ is the velocity of the particle. The [[../GR/infinitesimal proper time interval in SR|proper time]] intervals in the two frames are the same (c.f. [[../GR/infinitesimal proper time interval in SR#^BoostInvariance|defining property]] of [[../GR/infinitesimal proper time interval in SR#with Minkowski metric|proper time]])
 $$
 
 \begin{aligned}
@@ -123,7 +123,7 @@ Returning back to [[#^velocity]] yields
 $$
 \Lambda^i{}_0=\gamma v_{i}=\frac{v_{i}}{\sqrt{1-\vec{v}^{2}}}
 $$
-The remaining elements fo $\Lambda^\mu{}_{\nu}$ cannot be determined uniquely. The [[Lorentz group|proper orthochronous Lorentz group]] contains the subgroup of [[special orthogonal group|rotations]] 
+The remaining elements fo $\Lambda^\mu{}_{\nu}$ cannot be determined uniquely. The [[../math/Lorentz group|proper orthochronous Lorentz group]] contains the subgroup of [[../math/special orthogonal group|rotations]] 
 
 $$
 \Lambda^{\mu}{}_{\nu}=\left\{\begin{array}{lc}
@@ -147,9 +147,9 @@ This is called a "boost" transformation, it includes relative velocities but no 
 Exercise: Check that $\Lambda(\vec{v})$ satisfies [[#^definingProp]].
 
 # Inverse
-From [[#^definingProp]] we can multipy by $\eta^{\sigma \alpha}$ the [[Minkowski metric#Inverse]]
-$$\Lambda^\nu{}_\sigma \Lambda^\mu{}_\rho \eta_{\mu \nu}\eta^{\sigma \alpha}=\eta_{\rho \sigma}\eta^{\sigma \alpha} .$$Permuting terms and simultaneously raising and lowering $\rho$ and $\sigma$ and using [[Minkowski metric#^3bcf5d|inverse relation]] we obtain
+From [[#^definingProp]] we can multipy by $\eta^{\sigma \alpha}$ the [[../GR/Minkowski metric#Inverse]]
+$$\Lambda^\nu{}_\sigma \Lambda^\mu{}_\rho \eta_{\mu \nu}\eta^{\sigma \alpha}=\eta_{\rho \sigma}\eta^{\sigma \alpha} .$$Permuting terms and simultaneously raising and lowering $\rho$ and $\sigma$ and using [[../GR/Minkowski metric#^3bcf5d|inverse relation]] we obtain
 $$\Lambda_\mu{}^\alpha \Lambda^\mu{}_\rho =\delta_{\rho }^{ \alpha} .$$
 
-Thus we identify $\Lambda_\mu{}^\alpha=(\Lambda^{-1})^\alpha{}_\mu$ and in fact from [[matrix form from index notation|matrix form]] we also have that $(\Lambda^{-1})^\alpha{}_\mu=(\Lambda^{\top})^\alpha{}_\mu$.  Note that this does not mean $\bcancel{\cancel{\Lambda^{-1}=\Lambda^\top}}$ it in fact means:$$\Lambda^{-1}=\eta \Lambda^{T} \eta
+Thus we identify $\Lambda_\mu{}^\alpha=(\Lambda^{-1})^\alpha{}_\mu$ and in fact from [[../GR/matrix form from index notation|matrix form]] we also have that $(\Lambda^{-1})^\alpha{}_\mu=(\Lambda^{\top})^\alpha{}_\mu$.  Note that this does not mean $\bcancel{\cancel{\Lambda^{-1}=\Lambda^\top}}$ it in fact means:$$\Lambda^{-1}=\eta \Lambda^{T} \eta
 $$

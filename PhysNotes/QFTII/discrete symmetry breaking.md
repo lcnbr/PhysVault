@@ -6,7 +6,7 @@ $$
 $$
 We have dropped a potential cubic term in order to have a minimal amount of symmetry, namely the **global discrete $\mathbb{Z}_{2}$ symmetry $\phi \rightarrow$ $-\phi$.**
 
-So far we have always assumed the mass squared $m^{2}$ to be either zero or positive in order to have a physical interpretation for the field excitations. **However, it is perfectly permissible to assume a negative value for $m^{2}$**. The point is that the potential is dominated by the quartic interaction $\phi^{4}$ for large $\phi$. Consequently, it is bounded from below (for positive $\lambda$ ) irrespectively of the magnitude or sign of the mass term. The [[Lagrangian|potential]] has one of the following shapes
+So far we have always assumed the mass squared $m^{2}$ to be either zero or positive in order to have a physical interpretation for the field excitations. **However, it is perfectly permissible to assume a negative value for $m^{2}$**. The point is that the potential is dominated by the quartic interaction $\phi^{4}$ for large $\phi$. Consequently, it is bounded from below (for positive $\lambda$ ) irrespectively of the magnitude or sign of the mass term. The [[../AnalyticalMech/Lagrangian|potential]] has one of the following shapes
 
 ![[Pasted image 20220126143541.png|500]]
 

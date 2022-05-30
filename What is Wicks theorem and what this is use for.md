@@ -7,7 +7,7 @@ tag: hypothesis highlights
 
 
 ## Metadata
-- Author: [physics.stackexchange.com]()
+- Author: [[|physics.stackexchange.com]]
 - Title: What is Wick's theorem and what this is use for?
 - Reference: https://physics.stackexchange.com/questions/477450/what-is-wicks-theorem-and-what-this-is-use-for
 - Category: #article

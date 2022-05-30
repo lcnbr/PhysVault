@@ -1,6 +1,6 @@
-In [[Hamiltonian mechanics]], a '''canonical transformation''' is a change of [[canonical coordinates]] {{math|('''q''', '''p''', ''t'') → ('''Q''', '''P''', ''t'')}} that preserves the form of [[Hamilton's equations]]. This is sometimes known as '''form invariance'''. It need not preserve the form of the [[Hamiltonian mechanics|Hamiltonian]] itself. Canonical transformations are useful in their own right, and also form the basis for the [[Hamilton–Jacobi equation]]s (a useful method for calculating [[constant of motion|conserved quantities]]) and [[Liouville's theorem (Hamiltonian)|Liouville's theorem]] (itself the basis for classical [[statistical mechanics]]).
+In [[Hamiltonian mechanics]], a '''canonical transformation''' is a change of [[canonical coordinates]] {{math|('''q''', '''p''', ''t'') → ('''Q''', '''P''', ''t'')}} that preserves the form of [[Hamilton's equations]]. This is sometimes known as '''form invariance'''. It need not preserve the form of the [[Hamiltonian mechanics|Hamiltonian]] itself. Canonical transformations are useful in their own right, and also form the basis for the [[Hamilton–Jacobi equation]]s (a useful method for calculating [[constant of motion|conserved quantities]]) and [[Liouville's theorem (Hamiltonian|Liouville's theorem]]) (itself the basis for classical [[statistical mechanics]]).
 
-Since [[Lagrangian mechanics]] is based on [[generalized coordinates]], transformations of the coordinates {{math|'''q''' → '''Q'''}} do not affect the form of [[Lagrangian mechanics|Lagrange's equations]] and, hence, do not affect the form of [[Hamilton's equations]] if we simultaneously change the momentum by a [[Legendre transform|Legendre transformation]] into
+Since [[Lagrangian mechanics]] is based on [[../String/generalized coordinates]], transformations of the coordinates {{math|'''q''' → '''Q'''}} do not affect the form of [[Lagrangian mechanics|Lagrange's equations]] and, hence, do not affect the form of [[Hamilton's equations]] if we simultaneously change the momentum by a [[../math/Legendre transform|Legendre transformation]] into
 
 $$P_i=\frac{\partial L}{\partial \dot{Q}_i}.$$
 
@@ -9,7 +9,7 @@ Therefore, coordinate transformations (also called '''point transformations''') 
 For clarity, we restrict the presentation here to [[calculus]] and [[classical mechanics]].  Readers familiar with more advanced mathematics such as [[cotangent bundle]]s, [[exterior derivative]]s and [[symplectic manifold]]s should read the related [[symplectomorphism]] article.  (Canonical transformations are a special case of a symplectomorphism.)  However, a brief introduction to the modern mathematical description is included at the end of this article.
 
 # Notation# 
-Boldface variables such as {{math|'''q'''}} represent a list of {{mvar|N}} [[generalized coordinates]] that need not transform like a [[Vector (geometric)|vector]] under [[rotation]], e.g.,
+Boldface variables such as {{math|'''q'''}} represent a list of {{mvar|N}} [[../String/generalized coordinates]] that need not transform like a [[Vector (geometric|vector]]) under [[rotation]], e.g.,
 
 $$\mathbf{q} \equiv \left (q_{1}, q_{2}, \ldots, q_{N-1}, q_{N} \right ).$$
 
@@ -21,7 +21,7 @@ The [[dot product]] notation between two lists of the same number of coordinates
 
 $$\mathbf{p} \cdot \mathbf{q} \equiv \sum_{k=1}^{N} p_{k} q_{k}.$$
 
-The dot product (also known as an "[[inner product]]") maps the two coordinate lists into one variable representing a single numerical value.
+The dot product (also known as an "[[../math/inner product]]") maps the two coordinate lists into one variable representing a single numerical value.
 
 # Direct approach# 
 The functional form of [[Hamilton's equations]] is
@@ -71,7 +71,7 @@ $$\begin{align}
 These are the '''direct conditions''' to check whether a given transformation is canonical.
 
 # Liouville's theorem# 
-The direct conditions allow us to prove [[Liouville's theorem (Hamiltonian)|Liouville's theorem]], which states that the ''volume'' in  phase space is conserved under canonical transformations, i.e.,
+The direct conditions allow us to prove [[Liouville's theorem (Hamiltonian|Liouville's theorem]]), which states that the ''volume'' in  phase space is conserved under canonical transformations, i.e.,
 
 $$ \int \mathrm{d}\mathbf{q}\, \mathrm{d}\mathbf{p} = \int \mathrm{d}\mathbf{Q}\, \mathrm{d}\mathbf{P}$$
 
@@ -79,7 +79,7 @@ By [[Integration by substitution#Substitution for multiple variables|calculus]],
 
 $$\int \mathrm{d}\mathbf{Q}\, \mathrm{d}\mathbf{P} = \int J\, \mathrm{d}\mathbf{q}\, \mathrm{d}\mathbf{p}$$
 
-where the [[Jacobian]] is the [[determinant]] of the [[matrix (mathematics)|matrix]] of [[partial derivative]]s, which we write as
+where the [[../math/Jacobian]] is the [[determinant]] of the [[matrix (mathematics|matrix]]) of [[partial derivative]]s, which we write as
 
 $$J \equiv \frac{\partial (\mathbf{Q}, \mathbf{P})}{\partial (\mathbf{q}, \mathbf{p})}$$
 
@@ -95,7 +95,7 @@ Application of the '''direct conditions''' above yields {{math|''J'' {{=}} 1}}.
 
 # Generating function approach# 
 {{main|Generating function (physics)}}
-To ''guarantee'' a valid transformation between {{math|('''q''', '''p''', ''H'')}} and {{math|('''Q''', '''P''', ''K'')}}, we may resort to an indirect '''generating function''' approach. Both sets of variables must obey [[action (physics)|Hamilton's principle]]. That is the [[Action Integral]] over the [[Lagrangian mechanics|Lagrangian]] <math>\mathcal{L}_{qp}=\mathbf{p} \cdot \dot{\mathbf{q}}  - H(\mathbf{q}, \mathbf{p}, t)$$ and <math>\mathcal{L}_{QP}=\mathbf{P} \cdot \dot{\mathbf{Q}} - K(\mathbf{Q}, \mathbf{P}, t)$$ respectively, obtained by the Hamiltonian via ("inverse") [[Legendre transformation]], both must be stationary (so that one can use the [[Euler–Lagrange equations]] to arrive at equations of the above-mentioned and designated form; as it is shown for example [[Hamilton equations#Deriving Hamilton's equations|here]]):
+To ''guarantee'' a valid transformation between {{math|('''q''', '''p''', ''H'')}} and {{math|('''Q''', '''P''', ''K'')}}, we may resort to an indirect '''generating function''' approach. Both sets of variables must obey [[action (physics|Hamilton's principle]]). That is the [[Action Integral]] over the [[Lagrangian mechanics|Lagrangian]] <math>\mathcal{L}_{qp}=\mathbf{p} \cdot \dot{\mathbf{q}}  - H(\mathbf{q}, \mathbf{p}, t)$$ and <math>\mathcal{L}_{QP}=\mathbf{P} \cdot \dot{\mathbf{Q}} - K(\mathbf{Q}, \mathbf{P}, t)$$ respectively, obtained by the Hamiltonian via ("inverse") [[Legendre transformation]], both must be stationary (so that one can use the [[Euler–Lagrange equations]] to arrive at equations of the above-mentioned and designated form; as it is shown for example [[Hamilton equations#Deriving Hamilton's equations|here]]):
 
 $$\begin{align}
 \delta \int_{t_{1}}^{t_{2}} \left[ \mathbf{p} \cdot \dot{\mathbf{q}} - H(\mathbf{q}, \mathbf{p}, t) \right] dt &= 0 \\
@@ -110,7 +110,7 @@ Lagrangians are not unique: one can always multiply by a constant {{mvar|λ}} an
 
 In general, the scaling factor {{mvar|λ}} is set equal to one; canonical transformations for which {{math|''λ'' ≠ 1}} are called '''extended canonical transformations'''. {{math|{{sfrac|''dG''|''dt''}}}} is kept, otherwise the problem would be rendered trivial and there would be not much freedom for the new canonical variables to differ from the old ones.
 
-Here {{mvar|G}} is a [[generating function (physics)|generating function]] of one old [[canonical coordinates|canonical coordinate]] ({{math|'''q'''}} or {{math|'''p'''}}), one new [[canonical coordinates|canonical coordinate]] ({{math|'''Q'''}} or {{math|'''P'''}}) and (possibly) the time {{mvar|t}}.  Thus, there are four basic types of generating functions (although mixtures of these four types can exist), depending on the choice of variables. As will be shown below, the generating function will define a transformation from old to new [[canonical coordinates]], and any such transformation {{math|('''q''', '''p''') → ('''Q''', '''P''')}} is guaranteed to be canonical.
+Here {{mvar|G}} is a [[generating function (physics|generating function]]) of one old [[canonical coordinates|canonical coordinate]] ({{math|'''q'''}} or {{math|'''p'''}}), one new [[canonical coordinates|canonical coordinate]] ({{math|'''Q'''}} or {{math|'''P'''}}) and (possibly) the time {{mvar|t}}.  Thus, there are four basic types of generating functions (although mixtures of these four types can exist), depending on the choice of variables. As will be shown below, the generating function will define a transformation from old to new [[canonical coordinates]], and any such transformation {{math|('''q''', '''p''') → ('''Q''', '''P''')}} is guaranteed to be canonical.
 
 # =Type 1 generating function# =
 The type 1 generating function {{math|''G''<sub>1</sub>}} depends only on the old and new generalized coordinates
@@ -131,7 +131,7 @@ These equations define the transformation {{math|('''q''', '''p''') → ('''Q'''
 
 $$\mathbf{p} =\frac{\partial G_{1}}{\partial \mathbf{q}}$$
 
-define relations between the new [[generalized coordinates]] {{math|'''Q'''}} and the old [[canonical coordinates]] {{math|('''q''', '''p''')}}. Ideally, one can invert these relations to obtain formulae for each {{math|''Q<sub>k</sub>''}} as a function of the old [[canonical coordinates]].  Substitution of these formulae for the {{math|'''Q'''}} coordinates into the ''second'' set of {{mvar|N}} equations
+define relations between the new [[../String/generalized coordinates]] {{math|'''Q'''}} and the old [[canonical coordinates]] {{math|('''q''', '''p''')}}. Ideally, one can invert these relations to obtain formulae for each {{math|''Q<sub>k</sub>''}} as a function of the old [[canonical coordinates]].  Substitution of these formulae for the {{math|'''Q'''}} coordinates into the ''second'' set of {{mvar|N}} equations
 
 $$\mathbf{P} = -\frac{\partial G_{1}}{\partial \mathbf{Q}}$$
 
@@ -151,7 +151,7 @@ $$\begin{align}
 and {{math|''K'' {{=}} ''H''}}.  This example illustrates how independent the coordinates and momenta are in the Hamiltonian formulation; they are equivalent variables.
 
 # =Type 2 generating function# =
-The type 2 generating function {{math|''G''<sub>2</sub>}} depends only on the old [[generalized coordinates]] and the new generalized momenta
+The type 2 generating function {{math|''G''<sub>2</sub>}} depends only on the old [[../String/generalized coordinates]] and the new generalized momenta
 $$G \equiv -\mathbf{Q} \cdot \mathbf{P} + G_{2}(\mathbf{q}, \mathbf{P}, t)$$
 where the <math>-\mathbf{Q} \cdot \mathbf{P}$$ terms represent a [[Legendre transformation]] to change the right-hand side of the equation below.  To derive the implicit transformation, we expand the defining equation above
 
@@ -203,7 +203,7 @@ These equations define the transformation {{math|('''q''', '''p''') → ('''Q'''
 
 $$ \mathbf{q} = -\frac{\partial G_{3}}{\partial \mathbf{p}}$$
 
-define relations between the new [[generalized coordinates]] {{math|'''Q'''}} and the old [[canonical coordinates]] {{math|('''q''', '''p''')}}.  Ideally, one can invert these relations to obtain formulae for each {{math|''Q<sub>k</sub>''}} as a function of the old [[canonical coordinates]].  Substitution of these formulae for the {{math|'''Q'''}} coordinates into the ''second'' set of {{mvar|N}} equations
+define relations between the new [[../String/generalized coordinates]] {{math|'''Q'''}} and the old [[canonical coordinates]] {{math|('''q''', '''p''')}}.  Ideally, one can invert these relations to obtain formulae for each {{math|''Q<sub>k</sub>''}} as a function of the old [[canonical coordinates]].  Substitution of these formulae for the {{math|'''Q'''}} coordinates into the ''second'' set of {{mvar|N}} equations
 
 $$\mathbf{P} = -\frac{\partial G_{3}}{\partial \mathbf{Q}}$$
 
@@ -249,11 +249,11 @@ $$
 yields a formula for {{mvar|K}} as a function of the new [[canonical coordinates]] {{math|('''Q''', '''P''')}}.
 
 # Motion as a canonical transformation# 
-Motion itself (or, equivalently, a shift in the time origin) is a canonical transformation. If <math>\mathbf{Q}(t) \equiv \mathbf{q}(t+\tau)$$ and <math>\mathbf{P}(t) \equiv \mathbf{p}(t+\tau)$$, then [[action (physics)|Hamilton's principle]] is automatically satisfied
+Motion itself (or, equivalently, a shift in the time origin) is a canonical transformation. If <math>\mathbf{Q}(t) \equiv \mathbf{q}(t+\tau)$$ and <math>\mathbf{P}(t) \equiv \mathbf{p}(t+\tau)$$, then [[action (physics|Hamilton's principle]]) is automatically satisfied
 
 $$ \delta \int_{t_{1}}^{t_{2}} \left[ \mathbf{P} \cdot \dot{\mathbf{Q}} - K(\mathbf{Q}, \mathbf{P}, t) \right] dt = \delta \int_{t_{1}+\tau}^{t_{2}+\tau}  \left[ \mathbf{p} \cdot \dot{\mathbf{q}} - H(\mathbf{q}, \mathbf{p}, t+\tau) \right] dt = 0 $$
 
-since a valid trajectory <math>(\mathbf{q}(t), \mathbf{p}(t))$$ should always satisfy [[action (physics)|Hamilton's principle]], regardless of the endpoints.
+since a valid trajectory <math>(\mathbf{q}(t), \mathbf{p}(t))$$ should always satisfy [[action (physics|Hamilton's principle]]), regardless of the endpoints.
 
 #  Examples # 
 * The translation <math>\mathbf{Q}(\mathbf{q}, \mathbf{p})= \mathbf{q} + \mathbf{a}, \mathbf{P}(\mathbf{q}, \mathbf{p})= \mathbf{p} + \mathbf{b}$$ where <math>\mathbf{a}, \mathbf{b}$$ are two constant vectors is a canonical transformation. Indeed, the Jacobian matrix is the identity, which is symplectic: <math>I^\text{T}JI=J$$.

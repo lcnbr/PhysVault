@@ -3,7 +3,7 @@ alias:
 tags:
 - qftII
 ---
-The [[Unitary algebras]] have infinitely many finite-dimensional [[lie algebra representation]]. They can be constructed from the above elementary representations by iteratively taking tensor products and decomposing them into [[decomposition of representations|irreps]]. Let us consider [[tensor product of representations|tensor products]] of the [[defining representation of su(n)|defining representation]]s.
+The [[Unitary algebras]] have infinitely many finite-dimensional [[lie algebra representation]]. They can be constructed from the above elementary representations by iteratively taking tensor products and decomposing them into [[decomposition of representations|irreps]]. Let us consider [[tensor product of representations|tensor products]] of the [[defining representation of su(n|defining representation]].md)s.
 
 We have already seen that [[tensor product of representations|tensor products]] of identical representations are decomposable into various symmetric components. The tensor product of two original defining representations can thus be written as
 $$

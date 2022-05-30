@@ -17,7 +17,7 @@ I_{n}^{\mu v}(X) &=\frac{\eta^{\mu v}}{D} \eta_{\rho \sigma} I_{n}^{\rho \sigma}
 &=\frac{\Gamma(n-1-D / 2)}{2(4 \pi)^{D / 2} \Gamma(n)} \frac{\eta^{\mu v}}{(X-i \epsilon)^{n-1-D / 2}} .
 \end{aligned}
 $$
-Note that one has to pay attention to the dimensionality of vectors and matrices. For consistency all vectors should be defined in $D=$ $4-2 \epsilon$ dimensions. Likewise the [[Minkowski metric]] must be defined in $D=4-2 \epsilon$ dimensions, which implies that its trace equals $D,$
+Note that one has to pay attention to the dimensionality of vectors and matrices. For consistency all vectors should be defined in $D=$ $4-2 \epsilon$ dimensions. Likewise the [[../GR/Minkowski metric]] must be defined in $D=4-2 \epsilon$ dimensions, which implies that its trace equals $D,$
 $$
 \delta_{\mu}^{\mu}=\eta_{\mu \nu} \eta^{\mu \nu}=D=4-2 \epsilon
 $$

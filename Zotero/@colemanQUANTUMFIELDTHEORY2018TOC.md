@@ -1,335 +1,335 @@
 **Contents**
 
--   [Contents](zotero://open-pdf/0_4E7XKTS3/8)
--   [Foreword](zotero://open-pdf/0_4E7XKTS3/18)
--   [Preface](zotero://open-pdf/0_4E7XKTS3/30)
--   [Frequently cited references](zotero://open-pdf/0_4E7XKTS3/34)
--   [Index of useful formulae](zotero://open-pdf/0_4E7XKTS3/36)
--   [A note on the problems](zotero://open-pdf/0_4E7XKTS3/38)
--   [1 Adding special relativity to quantum mechanics](zotero://open-pdf/0_4E7XKTS3/44)
-    -   [1.1 Introductory remarks](zotero://open-pdf/0_4E7XKTS3/44)
-    -   [1.2 Theory of a single free, spinless particle of mass μ](zotero://open-pdf/0_4E7XKTS3/49)
-    -   [1.3 Determination of the position operator X](zotero://open-pdf/0_4E7XKTS3/53)
--   [2 The simplest many-particle theory](zotero://open-pdf/0_4E7XKTS3/60)
-    -   [2.1 First steps in describing a many-particle state](zotero://open-pdf/0_4E7XKTS3/60)
-    -   [2.2 Occupation number representation](zotero://open-pdf/0_4E7XKTS3/63)
-    -   [2.3 Operator formalism and the harmonic oscillator](zotero://open-pdf/0_4E7XKTS3/65)
-    -   [2.4 The operator formalism applied to Fock space](zotero://open-pdf/0_4E7XKTS3/68)
--   [3 Constructing a scalar quantum field](zotero://open-pdf/0_4E7XKTS3/74)
-    -   [3.1 Ensuring relativistic causality](zotero://open-pdf/0_4E7XKTS3/74)
-    -   [3.2 Conditions to be satisfied by a scalar quantum field](zotero://open-pdf/0_4E7XKTS3/77)
-    -   [3.3 The explicit form of the scalar quantum field](zotero://open-pdf/0_4E7XKTS3/80)
-    -   [3.4 Turning the argument around: the free scalar field as the fundamental object](zotero://open-pdf/0_4E7XKTS3/85)
-    -   [3.5 A hint of things to come](zotero://open-pdf/0_4E7XKTS3/89)
--   [Problems 1](zotero://open-pdf/0_4E7XKTS3/92)
--   [Solutions 1](zotero://open-pdf/0_4E7XKTS3/94)
--   [4 The method of the missing box](zotero://open-pdf/0_4E7XKTS3/100)
-    -   [4.1 Classical particle mechanics](zotero://open-pdf/0_4E7XKTS3/101)
-    -   [4.2 Quantum particle mechanics](zotero://open-pdf/0_4E7XKTS3/104)
-    -   [4.3 Classical field theory](zotero://open-pdf/0_4E7XKTS3/106)
-    -   [4.4 Quantum field theory](zotero://open-pdf/0_4E7XKTS3/112)
-    -   [4.5 Normal ordering](zotero://open-pdf/0_4E7XKTS3/114)
--   [5 Symmetries and conservation laws I. Spacetime symmetries](zotero://open-pdf/0_4E7XKTS3/120)
-    -   [5.1 Symmetries and conservation laws in classical particle mechanics](zotero://open-pdf/0_4E7XKTS3/120)
-    -   [5.2 Extension to quantum particle mechanics](zotero://open-pdf/0_4E7XKTS3/124)
-    -   [5.3 Extension to field theory](zotero://open-pdf/0_4E7XKTS3/125)
-    -   [5.4 Conserved currents are not uniquely defined](zotero://open-pdf/0_4E7XKTS3/129)
-    -   [5.5 Calculation of currents from spacetime translations](zotero://open-pdf/0_4E7XKTS3/130)
-    -   [5.6 Lorentz transformations, angular momentum and something else](zotero://open-pdf/0_4E7XKTS3/134)
--   [Problems 2](zotero://open-pdf/0_4E7XKTS3/142)
--   [Solutions 2](zotero://open-pdf/0_4E7XKTS3/144)
--   [6 Symmetries and conservation laws II. Internal symmetries](zotero://open-pdf/0_4E7XKTS3/148)
-    -   [6.1 Continuous symmetries](zotero://open-pdf/0_4E7XKTS3/148)
-    -   [6.2 Lorentz transformation properties of the charges](zotero://open-pdf/0_4E7XKTS3/158)
-    -   [6.3 Discrete symmetries](zotero://open-pdf/0_4E7XKTS3/161)
--   [7 Introduction to perturbation theory and scattering](zotero://open-pdf/0_4E7XKTS3/174)
-    -   [7.1 The Schrödinger and Heisenberg pictures](zotero://open-pdf/0_4E7XKTS3/174)
-    -   [7.2 The interaction picture](zotero://open-pdf/0_4E7XKTS3/176)
-    -   [7.3 Dyson's formula](zotero://open-pdf/0_4E7XKTS3/178)
-    -   [7.4 Scattering and the S-matrix](zotero://open-pdf/0_4E7XKTS3/180)
--   [Problems 3](zotero://open-pdf/0_4E7XKTS3/188)
--   [Solutions 3](zotero://open-pdf/0_4E7XKTS3/190)
--   [8 Perturbation theory I. Wick diagrams](zotero://open-pdf/0_4E7XKTS3/196)
-    -   [8.1 Three model field theories](zotero://open-pdf/0_4E7XKTS3/196)
-    -   [8.2 Wick's theorem](zotero://open-pdf/0_4E7XKTS3/198)
-    -   [8.3 Dyson's formula expressed in Wick diagrams](zotero://open-pdf/0_4E7XKTS3/201)
-    -   [8.4 Connected and disconnected Wick diagrams](zotero://open-pdf/0_4E7XKTS3/206)
-    -   [8.5 The exact solution of Model 1](zotero://open-pdf/0_4E7XKTS3/210)
--   [Problems 4](zotero://open-pdf/0_4E7XKTS3/218)
--   [Solutions 4](zotero://open-pdf/0_4E7XKTS3/220)
--   [9 Perturbation theory II. Divergences and counterterms](zotero://open-pdf/0_4E7XKTS3/226)
-    -   [9.1 The need for a counterterm in Model 2](zotero://open-pdf/0_4E7XKTS3/227)
-    -   [9.2 Evaluating the S matrix in Model 2](zotero://open-pdf/0_4E7XKTS3/230)
-    -   [9.3 Computing the Model 2 ground state energy](zotero://open-pdf/0_4E7XKTS3/233)
-    -   [9.4 The ground state wave function in Model 2](zotero://open-pdf/0_4E7XKTS3/237)
-    -   [9.5 An infrared divergence](zotero://open-pdf/0_4E7XKTS3/239)
--   [Problem 5](zotero://open-pdf/0_4E7XKTS3/242)
--   [Solution 5](zotero://open-pdf/0_4E7XKTS3/244)
--   [10 Mass renormalization and Feynman diagrams](zotero://open-pdf/0_4E7XKTS3/248)
-    -   [10.1 Mass renormalization in Model 3](zotero://open-pdf/0_4E7XKTS3/248)
-    -   [10.2 Feynman rules in Model 3](zotero://open-pdf/0_4E7XKTS3/253)
-    -   [10.3 Feynman diagrams in Model 3 to order g2](zotero://open-pdf/0_4E7XKTS3/261)
-    -   [10.4 O(g2) nucleon–nucleon scattering in Model 3](zotero://open-pdf/0_4E7XKTS3/264)
--   [11 Scattering I. Mandelstam variables, CPT and phase space](zotero://open-pdf/0_4E7XKTS3/268)
-    -   [11.1 Nucleon–antinucleon scattering](zotero://open-pdf/0_4E7XKTS3/268)
-    -   [11.2 Nucleon–meson scattering and meson pair creation](zotero://open-pdf/0_4E7XKTS3/271)
-    -   [11.3 Crossing symmetry and CPT invariance](zotero://open-pdf/0_4E7XKTS3/274)
-    -   [11.4 Phase space and the S matrix](zotero://open-pdf/0_4E7XKTS3/283)
--   [12 Scattering II. Applications](zotero://open-pdf/0_4E7XKTS3/288)
-    -   [12.1 Decay processes](zotero://open-pdf/0_4E7XKTS3/288)
-    -   [12.2 Differential cross-section for a two-particle initial state](zotero://open-pdf/0_4E7XKTS3/289)
-    -   [12.3 The density of final states for two particles](zotero://open-pdf/0_4E7XKTS3/292)
-    -   [12.4 The Optical Theorem](zotero://open-pdf/0_4E7XKTS3/295)
-    -   [12.5 The density of final states for three particles](zotero://open-pdf/0_4E7XKTS3/297)
-    -   [12.6 A question and a preview](zotero://open-pdf/0_4E7XKTS3/300)
--   [Problems 6](zotero://open-pdf/0_4E7XKTS3/304)
--   [Solutions 6](zotero://open-pdf/0_4E7XKTS3/306)
--   [13 Green's functions and Heisenberg fields](zotero://open-pdf/0_4E7XKTS3/310)
-    -   [13.1 The graphical definition of G(n)(ki)](zotero://open-pdf/0_4E7XKTS3/310)
-    -   [13.2 The generating functional Z\[ρ\] for G(n)(xi)](zotero://open-pdf/0_4E7XKTS3/313)
-    -   [13.3 Scattering without an adiabatic function](zotero://open-pdf/0_4E7XKTS3/315)
-    -   [13.4 Green's functions in the Heisenberg picture](zotero://open-pdf/0_4E7XKTS3/317)
-    -   [13.5 Constructing in and out states](zotero://open-pdf/0_4E7XKTS3/321)
--   [Problems 7](zotero://open-pdf/0_4E7XKTS3/328)
--   [Solutions 7](zotero://open-pdf/0_4E7XKTS3/330)
--   [14 The LSZ formalism](zotero://open-pdf/0_4E7XKTS3/334)
-    -   [14.1 Two-particle states](zotero://open-pdf/0_4E7XKTS3/335)
-    -   [14.2 The proof of the LSZ formula](zotero://open-pdf/0_4E7XKTS3/337)
-    -   [14.3 Model 3 revisited](zotero://open-pdf/0_4E7XKTS3/343)
-    -   [14.4 Guessing the Feynman rules for a derivative interaction](zotero://open-pdf/0_4E7XKTS3/346)
--   [Problem 8](zotero://open-pdf/0_4E7XKTS3/352)
--   [Solution 8](zotero://open-pdf/0_4E7XKTS3/354)
--   [15 Renormalization I. Determination of counterterms](zotero://open-pdf/0_4E7XKTS3/356)
-    -   [15.1 The perturbative determination of A](zotero://open-pdf/0_4E7XKTS3/356)
-    -   [15.2 The Källén-Lehmann spectral representation](zotero://open-pdf/0_4E7XKTS3/358)
-    -   [15.3 The renormalized meson propagator D′](zotero://open-pdf/0_4E7XKTS3/362)
-    -   [15.4 The meson self-energy to O(g2)](zotero://open-pdf/0_4E7XKTS3/367)
-    -   [15.5 A table of integrals for one loop](zotero://open-pdf/0_4E7XKTS3/370)
--   [16 Renormalization II. Generalization and extension](zotero://open-pdf/0_4E7XKTS3/374)
-    -   [16.1 The meson self-energy to O(g2), completed](zotero://open-pdf/0_4E7XKTS3/374)
-    -   [16.2 Feynman parametrization for multiloop graphs](zotero://open-pdf/0_4E7XKTS3/377)
-    -   [16.3 Coupling constant renormalization](zotero://open-pdf/0_4E7XKTS3/381)
-    -   [16.4 Are all quantum field theories renormalizable?](zotero://open-pdf/0_4E7XKTS3/386)
--   [Problems 9](zotero://open-pdf/0_4E7XKTS3/390)
--   [Solutions 9](zotero://open-pdf/0_4E7XKTS3/392)
--   [17 Unstable particles](zotero://open-pdf/0_4E7XKTS3/398)
-    -   [17.1 Calculating the propagator D′ for μ &gt; 2m](zotero://open-pdf/0_4E7XKTS3/399)
-    -   [17.2 The Breit–Wigner formula](zotero://open-pdf/0_4E7XKTS3/403)
-    -   [17.3 A first look at the exponential decay law](zotero://open-pdf/0_4E7XKTS3/405)
-    -   [17.4 Obtaining the decay law by stationary phase approximation](zotero://open-pdf/0_4E7XKTS3/408)
--   [18 Representations of the Lorentz Group](zotero://open-pdf/0_4E7XKTS3/412)
-    -   [18.1 Defining the problem: Lorentz transformations in general](zotero://open-pdf/0_4E7XKTS3/412)
-    -   [18.2 Irreducible representations of the rotation group](zotero://open-pdf/0_4E7XKTS3/416)
-    -   [18.3 Irreducible representations of the Lorentz group](zotero://open-pdf/0_4E7XKTS3/419)
-    -   [18.4 Properties of the SO(3) representations D(s)](zotero://open-pdf/0_4E7XKTS3/422)
-    -   [18.5 Properties of the SO(3,1) representations D(s+,s−)](zotero://open-pdf/0_4E7XKTS3/424)
--   [Problems 10](zotero://open-pdf/0_4E7XKTS3/430)
--   [Solutions 10](zotero://open-pdf/0_4E7XKTS3/432)
--   [19 The Dirac Equation I. Constructing a Lagrangian](zotero://open-pdf/0_4E7XKTS3/436)
-    -   [19.1 Building vectors out of spinors](zotero://open-pdf/0_4E7XKTS3/436)
-    -   [19.2 A Lagrangian for Weyl spinors](zotero://open-pdf/0_4E7XKTS3/440)
-    -   [19.3 The Weyl equation](zotero://open-pdf/0_4E7XKTS3/442)
-    -   [19.4 The Dirac equation](zotero://open-pdf/0_4E7XKTS3/445)
--   [20 The Dirac Equation II. Solutions](zotero://open-pdf/0_4E7XKTS3/450)
-    -   [20.1 The Dirac basis](zotero://open-pdf/0_4E7XKTS3/450)
-    -   [20.2 Plane wave solutions](zotero://open-pdf/0_4E7XKTS3/452)
-    -   [20.3 Pauli's theorem](zotero://open-pdf/0_4E7XKTS3/456)
-    -   [20.4 The γ matrices](zotero://open-pdf/0_4E7XKTS3/459)
-    -   [20.5 Bilinear spinor products](zotero://open-pdf/0_4E7XKTS3/461)
-    -   [20.6 Orthogonality and completeness](zotero://open-pdf/0_4E7XKTS3/464)
--   [Problems 11](zotero://open-pdf/0_4E7XKTS3/468)
--   [Solutions 11](zotero://open-pdf/0_4E7XKTS3/470)
--   [21 The Dirac Equation III. Quantization and Feynman Rules](zotero://open-pdf/0_4E7XKTS3/472)
-    -   [21.1 Canonical quantization of the Dirac field](zotero://open-pdf/0_4E7XKTS3/472)
-    -   [21.2 Wick's theorem for Fermi fields](zotero://open-pdf/0_4E7XKTS3/477)
-    -   [21.3 Calculating the Dirac propagator](zotero://open-pdf/0_4E7XKTS3/480)
-    -   [21.4 An example: Nucleon–meson scattering](zotero://open-pdf/0_4E7XKTS3/483)
-    -   [21.5 The Feynman rules for theories involving fermions](zotero://open-pdf/0_4E7XKTS3/486)
-    -   [21.6 Summing and averaging over spin states](zotero://open-pdf/0_4E7XKTS3/491)
--   [Problems 12](zotero://open-pdf/0_4E7XKTS3/494)
--   [Solutions 12](zotero://open-pdf/0_4E7XKTS3/496)
--   [22 CPT and Fermi fields](zotero://open-pdf/0_4E7XKTS3/502)
-    -   [22.1 Parity and Fermi fields](zotero://open-pdf/0_4E7XKTS3/502)
-    -   [22.2 The Majorana representation](zotero://open-pdf/0_4E7XKTS3/506)
-    -   [22.3 Charge conjugation and Fermi fields](zotero://open-pdf/0_4E7XKTS3/508)
-    -   [22.4 PT invariance and Fermi fields](zotero://open-pdf/0_4E7XKTS3/515)
-    -   [22.5 The CPT theorem and Fermi fields](zotero://open-pdf/0_4E7XKTS3/519)
--   [23 Renormalization of spin-1⁄2 theories](zotero://open-pdf/0_4E7XKTS3/524)
-    -   [23.1 Lessons from Model 3](zotero://open-pdf/0_4E7XKTS3/524)
-    -   [23.2 The renormalized Dirac propagator S′](zotero://open-pdf/0_4E7XKTS3/531)
-    -   [23.3 The spectral representation of S′](zotero://open-pdf/0_4E7XKTS3/532)
-    -   [23.4 The nucleon self-energy ∑′](zotero://open-pdf/0_4E7XKTS3/534)
-    -   [23.5 The renormalized coupling constant](zotero://open-pdf/0_4E7XKTS3/539)
--   [Problems 13](zotero://open-pdf/0_4E7XKTS3/544)
--   [Solutions 13](zotero://open-pdf/0_4E7XKTS3/546)
--   [24 Isospin](zotero://open-pdf/0_4E7XKTS3/550)
-    -   [24.1 Field theoretic constraints on coupling constants](zotero://open-pdf/0_4E7XKTS3/550)
-    -   [24.2 The nucleon and pion as isospin multiplets](zotero://open-pdf/0_4E7XKTS3/555)
-    -   [24.3 Experimental consequences of isospin conservation](zotero://open-pdf/0_4E7XKTS3/559)
-    -   [24.4 Hypercharge and G-parity](zotero://open-pdf/0_4E7XKTS3/563)
--   [25 Coping with infinities: regularization and renormalization](zotero://open-pdf/0_4E7XKTS3/568)
-    -   [25.1 Regularization](zotero://open-pdf/0_4E7XKTS3/569)
-    -   [25.2 The BPHZ algorithm](zotero://open-pdf/0_4E7XKTS3/574)
-    -   [25.3 Applying the algorithm](zotero://open-pdf/0_4E7XKTS3/576)
-    -   [25.4 Survey of renormalizable theories for spin 0 and spin 1⁄2](zotero://open-pdf/0_4E7XKTS3/581)
--   [Problems 14](zotero://open-pdf/0_4E7XKTS3/588)
--   [Solutions 14](zotero://open-pdf/0_4E7XKTS3/592)
--   [26 Vector fields](zotero://open-pdf/0_4E7XKTS3/598)
-    -   [26.1 The free real vector field](zotero://open-pdf/0_4E7XKTS3/598)
-    -   [26.2 The Proca equation and its solutions](zotero://open-pdf/0_4E7XKTS3/601)
-    -   [26.3 Canonical quantization of the Proca field](zotero://open-pdf/0_4E7XKTS3/604)
-    -   [26.4 The limit μ → 0: a simple physical consequence](zotero://open-pdf/0_4E7XKTS3/609)
-    -   [26.5 Feynman rules for a real massive vector field](zotero://open-pdf/0_4E7XKTS3/611)
--   [27 Electromagnetic interactions and minimal coupling](zotero://open-pdf/0_4E7XKTS3/618)
-    -   [27.1 Gauge invariance and conserved currents](zotero://open-pdf/0_4E7XKTS3/618)
-    -   [27.2 The minimal coupling prescription](zotero://open-pdf/0_4E7XKTS3/625)
-    -   [27.3 Technical problems](zotero://open-pdf/0_4E7XKTS3/629)
--   [Problems 15](zotero://open-pdf/0_4E7XKTS3/634)
--   [Solutions 15](zotero://open-pdf/0_4E7XKTS3/636)
--   [28 Functional integration and Feynman rules](zotero://open-pdf/0_4E7XKTS3/642)
-    -   [28.1 First steps with functional integrals](zotero://open-pdf/0_4E7XKTS3/642)
-    -   [28.2 Functional integrals in field theory](zotero://open-pdf/0_4E7XKTS3/647)
-    -   [28.3 The Euclidean Z0\[J\] for a free theory](zotero://open-pdf/0_4E7XKTS3/649)
-    -   [28.4 The Euclidean Z\[J\] for an interacting field theory](zotero://open-pdf/0_4E7XKTS3/652)
-    -   [28.5 Feynman rules from functional integrals](zotero://open-pdf/0_4E7XKTS3/654)
-    -   [28.6 The functional integral for massive vector mesons](zotero://open-pdf/0_4E7XKTS3/656)
--   [29 Extending the methods of functional integrals](zotero://open-pdf/0_4E7XKTS3/660)
-    -   [29.1 Functional integration for Fermi fields](zotero://open-pdf/0_4E7XKTS3/660)
-    -   [29.2 Derivative interactions via functional integrals](zotero://open-pdf/0_4E7XKTS3/665)
-    -   [29.3 Ghost fields](zotero://open-pdf/0_4E7XKTS3/668)
-    -   [29.4 The Hamiltonian form of the generating functional](zotero://open-pdf/0_4E7XKTS3/671)
-    -   [29.5 How to eliminate constrained variables](zotero://open-pdf/0_4E7XKTS3/674)
-    -   [29.6 Functional integrals for QED with massive photons](zotero://open-pdf/0_4E7XKTS3/675)
--   [Problems 16](zotero://open-pdf/0_4E7XKTS3/678)
--   [Solutions 16](zotero://open-pdf/0_4E7XKTS3/680)
--   [30 Electrodynamics with a massive photon](zotero://open-pdf/0_4E7XKTS3/684)
-    -   [30.1 Obtaining the Feynman rules for scalar electrodynamics](zotero://open-pdf/0_4E7XKTS3/684)
-    -   [30.2 The Feynman rules for massive photon electrodynamics](zotero://open-pdf/0_4E7XKTS3/686)
-    -   [30.3 Some low order computations in spinor electrodynamics](zotero://open-pdf/0_4E7XKTS3/689)
-    -   [30.4 Quantizing massless electrodynamics with functional integrals](zotero://open-pdf/0_4E7XKTS3/697)
--   [31 The Faddeev Popov prescription](zotero://open-pdf/0_4E7XKTS3/702)
-    -   [31.1 The prescription in a finite number of dimensions](zotero://open-pdf/0_4E7XKTS3/702)
-    -   [31.2 Extending the prescription to a gauge field theory](zotero://open-pdf/0_4E7XKTS3/704)
-    -   [31.3 Applying the prescription to QED](zotero://open-pdf/0_4E7XKTS3/708)
-    -   [31.4 Equivalence of the Faddeev–Popov prescription and canonical quantization](zotero://open-pdf/0_4E7XKTS3/711)
-    -   [31.5 Revisiting the massive vector theory](zotero://open-pdf/0_4E7XKTS3/714)
-    -   [31.6 A first look at renormalization in QED](zotero://open-pdf/0_4E7XKTS3/716)
--   [Problems 17](zotero://open-pdf/0_4E7XKTS3/722)
--   [Solutions 17](zotero://open-pdf/0_4E7XKTS3/724)
--   [32 Generating functionals and Green's functions](zotero://open-pdf/0_4E7XKTS3/730)
-    -   [32.1 The loop expansion](zotero://open-pdf/0_4E7XKTS3/730)
-    -   [32.2 The generating functional for 1PI Green's functions](zotero://open-pdf/0_4E7XKTS3/733)
-    -   [32.3 Connecting statistical mechanics with quantum field theory](zotero://open-pdf/0_4E7XKTS3/738)
-    -   [32.4 Quantum electrodynamics in a covariant gauge](zotero://open-pdf/0_4E7XKTS3/739)
--   [33 The renormalization of QED](zotero://open-pdf/0_4E7XKTS3/744)
-    -   [33.1 Counterterms and gauge invariance](zotero://open-pdf/0_4E7XKTS3/745)
-    -   [33.2 Counterterms in QED with a massive photon](zotero://open-pdf/0_4E7XKTS3/746)
-    -   [33.3 Gauge-invariant cutoffs](zotero://open-pdf/0_4E7XKTS3/752)
-    -   [33.4 The Ward identity and Green's functions](zotero://open-pdf/0_4E7XKTS3/758)
-    -   [33.5 The Ward identity and counterterms](zotero://open-pdf/0_4E7XKTS3/765)
--   [Problems 18](zotero://open-pdf/0_4E7XKTS3/768)
--   [Solutions 18](zotero://open-pdf/0_4E7XKTS3/770)
--   [34 Two famous results in QED](zotero://open-pdf/0_4E7XKTS3/776)
-    -   [34.1 Coulomb's Law](zotero://open-pdf/0_4E7XKTS3/776)
-    -   [34.2 The electron's anomalous magnetic moment in quantum mechanics](zotero://open-pdf/0_4E7XKTS3/779)
-    -   [34.3 The electron's anomalous magnetic moment in QED](zotero://open-pdf/0_4E7XKTS3/786)
--   [35 Confronting experiment with QED](zotero://open-pdf/0_4E7XKTS3/794)
-    -   [35.1 Higher order contributions to the electron's magnetic moment](zotero://open-pdf/0_4E7XKTS3/794)
-    -   [35.2 The anomalous magnetic moment of the muon](zotero://open-pdf/0_4E7XKTS3/795)
-    -   [35.3 A low-energy theorem](zotero://open-pdf/0_4E7XKTS3/801)
-    -   [35.4 Photon-induced corrections to strong interaction processes (via symmetries)](zotero://open-pdf/0_4E7XKTS3/806)
--   [Problems 19](zotero://open-pdf/0_4E7XKTS3/814)
--   [Solutions 19](zotero://open-pdf/0_4E7XKTS3/816)
--   [36 Introducing SU(3)](zotero://open-pdf/0_4E7XKTS3/820)
-    -   [36.1 Decays of the η](zotero://open-pdf/0_4E7XKTS3/820)
-    -   [36.2 An informal historical introduction to SU(3)](zotero://open-pdf/0_4E7XKTS3/824)
-    -   [36.3 Tensor methods for SU(n)](zotero://open-pdf/0_4E7XKTS3/830)
-    -   [36.4 Applying tensor methods in SU(2)](zotero://open-pdf/0_4E7XKTS3/835)
-    -   [36.5 Tensor representations of SU(3)](zotero://open-pdf/0_4E7XKTS3/839)
--   [37 Irreducible multiplets in SU(3)](zotero://open-pdf/0_4E7XKTS3/840)
-    -   [37.1 The irreducible representations q and q](zotero://open-pdf/0_4E7XKTS3/841)
-    -   [37.2 Matrix tricks with SU(3)](zotero://open-pdf/0_4E7XKTS3/847)
-    -   [37.3 Isospin and hypercharge decomposition](zotero://open-pdf/0_4E7XKTS3/850)
-    -   [37.4 Direct products in SU(3)](zotero://open-pdf/0_4E7XKTS3/853)
-    -   [37.5 Symmetry and antisymmetry in the Clebsch–Gordan coefficients](zotero://open-pdf/0_4E7XKTS3/858)
--   [Problems 20](zotero://open-pdf/0_4E7XKTS3/860)
--   [Solutions 20](zotero://open-pdf/0_4E7XKTS3/862)
--   [38 SU(3): Proofs and applications](zotero://open-pdf/0_4E7XKTS3/866)
-    -   [38.1 Irreducibility, inequivalence, and completeness of the IR's](zotero://open-pdf/0_4E7XKTS3/866)
-    -   [38.2 The operators I, Y and Q in SU(3)](zotero://open-pdf/0_4E7XKTS3/872)
-    -   [38.3 Electromagnetic form factors of the baryon octet](zotero://open-pdf/0_4E7XKTS3/878)
-    -   [38.4 Electromagnetic mass splittings of the baryon octet](zotero://open-pdf/0_4E7XKTS3/882)
--   [39 Broken SU(3) and the naive quark model](zotero://open-pdf/0_4E7XKTS3/888)
-    -   [39.1 The Gell-Mann–Okubo mass formula derived](zotero://open-pdf/0_4E7XKTS3/888)
-    -   [39.2 The GMO formula applied](zotero://open-pdf/0_4E7XKTS3/892)
-    -   [39.3 The GMO formula challenged](zotero://open-pdf/0_4E7XKTS3/896)
-    -   [39.4 The naive quark model (and how it grew)](zotero://open-pdf/0_4E7XKTS3/901)
-    -   [39.5 What can you build out of three quarks?](zotero://open-pdf/0_4E7XKTS3/904)
-    -   [39.6 A sketch of quantum chromodynamics](zotero://open-pdf/0_4E7XKTS3/909)
--   [Problems 21](zotero://open-pdf/0_4E7XKTS3/914)
--   [Solutions 21](zotero://open-pdf/0_4E7XKTS3/916)
--   [40 Weak interactions and their currents](zotero://open-pdf/0_4E7XKTS3/920)
-    -   [40.1 The weak interactions circa 1965](zotero://open-pdf/0_4E7XKTS3/920)
-    -   [40.2 The conserved vector current hypothesis](zotero://open-pdf/0_4E7XKTS3/923)
-    -   [40.3 The Cabibbo angle](zotero://open-pdf/0_4E7XKTS3/925)
-    -   [40.4 The Goldberger–Treiman relation](zotero://open-pdf/0_4E7XKTS3/927)
--   [41 Current algebra and PCAC](zotero://open-pdf/0_4E7XKTS3/932)
-    -   [41.1 The PCAC hypothesis and its interpretation](zotero://open-pdf/0_4E7XKTS3/933)
-    -   [41.2 Two isotriplet currents](zotero://open-pdf/0_4E7XKTS3/936)
-    -   [41.3 The gradient-coupling model](zotero://open-pdf/0_4E7XKTS3/938)
-    -   [41.4 Adler's Rule for the emission of a soft pion](zotero://open-pdf/0_4E7XKTS3/942)
-    -   [41.5 Equal-time current commutators](zotero://open-pdf/0_4E7XKTS3/945)
--   [Problems 22](zotero://open-pdf/0_4E7XKTS3/954)
--   [Solutions 22](zotero://open-pdf/0_4E7XKTS3/956)
--   [42 Current algebra and pion scattering](zotero://open-pdf/0_4E7XKTS3/960)
-    -   [42.1 Pion–hadron scattering without current algebra](zotero://open-pdf/0_4E7XKTS3/960)
-    -   [42.2 Pion–hadron scattering and current algebra](zotero://open-pdf/0_4E7XKTS3/965)
-    -   [42.3 Pion–pion scattering](zotero://open-pdf/0_4E7XKTS3/969)
-    -   [42.4 Some operators and their eigenvalues](zotero://open-pdf/0_4E7XKTS3/974)
--   [43 A first look at spontaneous symmetry breaking](zotero://open-pdf/0_4E7XKTS3/978)
-    -   [43.1 The man in a ferromagnet](zotero://open-pdf/0_4E7XKTS3/978)
-    -   [43.2 Spontaneous symmetry breaking in field theory: Examples](zotero://open-pdf/0_4E7XKTS3/981)
-    -   [43.3 Spontaneous symmetry breaking in field theory: The general case](zotero://open-pdf/0_4E7XKTS3/989)
-    -   [43.4 Goldstone's Theorem](zotero://open-pdf/0_4E7XKTS3/992)
--   [Problems 23](zotero://open-pdf/0_4E7XKTS3/1002)
--   [Solutions 23](zotero://open-pdf/0_4E7XKTS3/1004)
--   [44 Perturbative spontaneous symmetry breaking](zotero://open-pdf/0_4E7XKTS3/1006)
-    -   [44.1 One vacuum or many?](zotero://open-pdf/0_4E7XKTS3/1006)
-    -   [44.2 Perturbative spontaneous symmetry breaking in the general case](zotero://open-pdf/0_4E7XKTS3/1010)
-    -   [44.3 Calculating the effective potential](zotero://open-pdf/0_4E7XKTS3/1016)
-    -   [44.4 The physical meaning of the effective potential](zotero://open-pdf/0_4E7XKTS3/1021)
--   [45 Topics in spontaneous symmetry breaking](zotero://open-pdf/0_4E7XKTS3/1026)
-    -   [45.1 Three heuristic aspects of the effective potential](zotero://open-pdf/0_4E7XKTS3/1026)
-    -   [45.2 Fermions and the effective potential](zotero://open-pdf/0_4E7XKTS3/1031)
-    -   [45.3 Spontaneous symmetry breaking and soft pions: the sigma model](zotero://open-pdf/0_4E7XKTS3/1036)
-    -   [45.4 The physics of the sigma model](zotero://open-pdf/0_4E7XKTS3/1040)
--   [Problems 24](zotero://open-pdf/0_4E7XKTS3/1046)
--   [Solutions 24](zotero://open-pdf/0_4E7XKTS3/1048)
--   [46 The Higgs mechanism and non-Abelian gauge fields](zotero://open-pdf/0_4E7XKTS3/1054)
-    -   [46.1 The Abelian Higgs model](zotero://open-pdf/0_4E7XKTS3/1055)
-    -   [46.2 Non-Abelian gauge field theories](zotero://open-pdf/0_4E7XKTS3/1059)
-    -   [46.3 Yang–Mills fields and spontaneous symmetry breaking](zotero://open-pdf/0_4E7XKTS3/1067)
--   [47 Quantizing non-Abelian gauge fields](zotero://open-pdf/0_4E7XKTS3/1074)
-    -   [47.1 Quantization of gauge fields by the Faddeev–Popov method](zotero://open-pdf/0_4E7XKTS3/1074)
-    -   [47.2 Feynman rules for a non-Abelian gauge theory](zotero://open-pdf/0_4E7XKTS3/1078)
-    -   [47.3 Renormalization of pure gauge field theories](zotero://open-pdf/0_4E7XKTS3/1084)
-    -   [47.4 The effective potential for a gauge theory](zotero://open-pdf/0_4E7XKTS3/1088)
--   [Problems 25](zotero://open-pdf/0_4E7XKTS3/1092)
--   [Solutions 25](zotero://open-pdf/0_4E7XKTS3/1096)
--   [48 The Glashow–Salam–Weinberg Model I. A theory of leptons](zotero://open-pdf/0_4E7XKTS3/1102)
-    -   [48.1 Putting the pieces together](zotero://open-pdf/0_4E7XKTS3/1102)
-    -   [48.2 The electron-neutrino weak interactions](zotero://open-pdf/0_4E7XKTS3/1110)
-    -   [48.3 Electromagnetic interactions of the electron and neutrino](zotero://open-pdf/0_4E7XKTS3/1112)
-    -   [48.4 Adding the other leptons](zotero://open-pdf/0_4E7XKTS3/1115)
-    -   [48.5 Summary and outlook](zotero://open-pdf/0_4E7XKTS3/1117)
--   [49 The Glashow–Salam–Weinberg Model II. Adding quarks](zotero://open-pdf/0_4E7XKTS3/1120)
-    -   [49.1 A simplified quark model](zotero://open-pdf/0_4E7XKTS3/1120)
-    -   [49.2 Charm and the GIM mechanism](zotero://open-pdf/0_4E7XKTS3/1122)
-    -   [49.3 Lower bounds on scalar boson masses](zotero://open-pdf/0_4E7XKTS3/1127)
--   [50 The Renormalization Group](zotero://open-pdf/0_4E7XKTS3/1134)
-    -   [50.1 The renormalization group for ϕ4 theory](zotero://open-pdf/0_4E7XKTS3/1134)
-    -   [50.2 The renormalization group equation](zotero://open-pdf/0_4E7XKTS3/1142)
-    -   [50.3 The solution to the renormalization group equation](zotero://open-pdf/0_4E7XKTS3/1146)
-    -   [50.4 Applications of the renormalization group equation](zotero://open-pdf/0_4E7XKTS3/1149)
--   [Concordance of videos and chapters](zotero://open-pdf/0_4E7XKTS3/1160)
--   [Index](zotero://open-pdf/0_4E7XKTS3/1162)
+-   [[zotero://open-pdf/0_4E7XKTS3/8|Contents]]
+-   [[zotero://open-pdf/0_4E7XKTS3/18|Foreword]]
+-   [[zotero://open-pdf/0_4E7XKTS3/30|Preface]]
+-   [[zotero://open-pdf/0_4E7XKTS3/34|Frequently cited references]]
+-   [[zotero://open-pdf/0_4E7XKTS3/36|Index of useful formulae]]
+-   [[zotero://open-pdf/0_4E7XKTS3/38|A note on the problems]]
+-   [[zotero://open-pdf/0_4E7XKTS3/44|1 Adding special relativity to quantum mechanics]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/44|1.1 Introductory remarks]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/49|1.2 Theory of a single free, spinless particle of mass μ]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/53|1.3 Determination of the position operator X]]
+-   [[zotero://open-pdf/0_4E7XKTS3/60|2 The simplest many-particle theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/60|2.1 First steps in describing a many-particle state]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/63|2.2 Occupation number representation]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/65|2.3 Operator formalism and the harmonic oscillator]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/68|2.4 The operator formalism applied to Fock space]]
+-   [[zotero://open-pdf/0_4E7XKTS3/74|3 Constructing a scalar quantum field]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/74|3.1 Ensuring relativistic causality]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/77|3.2 Conditions to be satisfied by a scalar quantum field]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/80|3.3 The explicit form of the scalar quantum field]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/85|3.4 Turning the argument around: the free scalar field as the fundamental object]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/89|3.5 A hint of things to come]]
+-   [[zotero://open-pdf/0_4E7XKTS3/92|Problems 1]]
+-   [[zotero://open-pdf/0_4E7XKTS3/94|Solutions 1]]
+-   [[zotero://open-pdf/0_4E7XKTS3/100|4 The method of the missing box]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/101|4.1 Classical particle mechanics]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/104|4.2 Quantum particle mechanics]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/106|4.3 Classical field theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/112|4.4 Quantum field theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/114|4.5 Normal ordering]]
+-   [[zotero://open-pdf/0_4E7XKTS3/120|5 Symmetries and conservation laws I. Spacetime symmetries]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/120|5.1 Symmetries and conservation laws in classical particle mechanics]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/124|5.2 Extension to quantum particle mechanics]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/125|5.3 Extension to field theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/129|5.4 Conserved currents are not uniquely defined]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/130|5.5 Calculation of currents from spacetime translations]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/134|5.6 Lorentz transformations, angular momentum and something else]]
+-   [[zotero://open-pdf/0_4E7XKTS3/142|Problems 2]]
+-   [[zotero://open-pdf/0_4E7XKTS3/144|Solutions 2]]
+-   [[zotero://open-pdf/0_4E7XKTS3/148|6 Symmetries and conservation laws II. Internal symmetries]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/148|6.1 Continuous symmetries]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/158|6.2 Lorentz transformation properties of the charges]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/161|6.3 Discrete symmetries]]
+-   [[zotero://open-pdf/0_4E7XKTS3/174|7 Introduction to perturbation theory and scattering]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/174|7.1 The Schrödinger and Heisenberg pictures]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/176|7.2 The interaction picture]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/178|7.3 Dyson's formula]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/180|7.4 Scattering and the S-matrix]]
+-   [[zotero://open-pdf/0_4E7XKTS3/188|Problems 3]]
+-   [[zotero://open-pdf/0_4E7XKTS3/190|Solutions 3]]
+-   [[zotero://open-pdf/0_4E7XKTS3/196|8 Perturbation theory I. Wick diagrams]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/196|8.1 Three model field theories]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/198|8.2 Wick's theorem]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/201|8.3 Dyson's formula expressed in Wick diagrams]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/206|8.4 Connected and disconnected Wick diagrams]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/210|8.5 The exact solution of Model 1]]
+-   [[zotero://open-pdf/0_4E7XKTS3/218|Problems 4]]
+-   [[zotero://open-pdf/0_4E7XKTS3/220|Solutions 4]]
+-   [[zotero://open-pdf/0_4E7XKTS3/226|9 Perturbation theory II. Divergences and counterterms]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/227|9.1 The need for a counterterm in Model 2]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/230|9.2 Evaluating the S matrix in Model 2]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/233|9.3 Computing the Model 2 ground state energy]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/237|9.4 The ground state wave function in Model 2]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/239|9.5 An infrared divergence]]
+-   [[zotero://open-pdf/0_4E7XKTS3/242|Problem 5]]
+-   [[zotero://open-pdf/0_4E7XKTS3/244|Solution 5]]
+-   [[zotero://open-pdf/0_4E7XKTS3/248|10 Mass renormalization and Feynman diagrams]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/248|10.1 Mass renormalization in Model 3]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/253|10.2 Feynman rules in Model 3]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/261|10.3 Feynman diagrams in Model 3 to order g2]]
+    -   [[g2) nucleon–nucleon scattering in Model 3](zotero://open-pdf/0_4E7XKTS3/264|10.4 O(g2) nucleon–nucleon scattering in Model 3]]
+-   [[zotero://open-pdf/0_4E7XKTS3/268|11 Scattering I. Mandelstam variables, CPT and phase space]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/268|11.1 Nucleon–antinucleon scattering]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/271|11.2 Nucleon–meson scattering and meson pair creation]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/274|11.3 Crossing symmetry and CPT invariance]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/283|11.4 Phase space and the S matrix]]
+-   [[zotero://open-pdf/0_4E7XKTS3/288|12 Scattering II. Applications]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/288|12.1 Decay processes]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/289|12.2 Differential cross-section for a two-particle initial state]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/292|12.3 The density of final states for two particles]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/295|12.4 The Optical Theorem]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/297|12.5 The density of final states for three particles]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/300|12.6 A question and a preview]]
+-   [[zotero://open-pdf/0_4E7XKTS3/304|Problems 6]]
+-   [[zotero://open-pdf/0_4E7XKTS3/306|Solutions 6]]
+-   [[zotero://open-pdf/0_4E7XKTS3/310|13 Green's functions and Heisenberg fields]]
+    -   [[n)(ki)](zotero://open-pdf/0_4E7XKTS3/310|13.1 The graphical definition of G(n)(ki)]]
+    -   [[n)(xi)](zotero://open-pdf/0_4E7XKTS3/313|13.2 The generating functional Z\[ρ\]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/315|13.3 Scattering without an adiabatic function]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/317|13.4 Green's functions in the Heisenberg picture]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/321|13.5 Constructing in and out states]]
+-   [[zotero://open-pdf/0_4E7XKTS3/328|Problems 7]]
+-   [[zotero://open-pdf/0_4E7XKTS3/330|Solutions 7]]
+-   [[zotero://open-pdf/0_4E7XKTS3/334|14 The LSZ formalism]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/335|14.1 Two-particle states]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/337|14.2 The proof of the LSZ formula]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/343|14.3 Model 3 revisited]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/346|14.4 Guessing the Feynman rules for a derivative interaction]]
+-   [[zotero://open-pdf/0_4E7XKTS3/352|Problem 8]]
+-   [[zotero://open-pdf/0_4E7XKTS3/354|Solution 8]]
+-   [[zotero://open-pdf/0_4E7XKTS3/356|15 Renormalization I. Determination of counterterms]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/356|15.1 The perturbative determination of A]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/358|15.2 The Källén-Lehmann spectral representation]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/362|15.3 The renormalized meson propagator D′]]
+    -   [[g2)](zotero://open-pdf/0_4E7XKTS3/367|15.4 The meson self-energy to O(g2)]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/370|15.5 A table of integrals for one loop]]
+-   [[zotero://open-pdf/0_4E7XKTS3/374|16 Renormalization II. Generalization and extension]]
+    -   [[g2), completed](zotero://open-pdf/0_4E7XKTS3/374|16.1 The meson self-energy to O(g2), completed]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/377|16.2 Feynman parametrization for multiloop graphs]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/381|16.3 Coupling constant renormalization]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/386|16.4 Are all quantum field theories renormalizable?]]
+-   [[zotero://open-pdf/0_4E7XKTS3/390|Problems 9]]
+-   [[zotero://open-pdf/0_4E7XKTS3/392|Solutions 9]]
+-   [[zotero://open-pdf/0_4E7XKTS3/398|17 Unstable particles]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/399|17.1 Calculating the propagator D′ for μ &gt; 2m]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/403|17.2 The Breit–Wigner formula]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/405|17.3 A first look at the exponential decay law]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/408|17.4 Obtaining the decay law by stationary phase approximation]]
+-   [[zotero://open-pdf/0_4E7XKTS3/412|18 Representations of the Lorentz Group]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/412|18.1 Defining the problem: Lorentz transformations in general]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/416|18.2 Irreducible representations of the rotation group]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/419|18.3 Irreducible representations of the Lorentz group]]
+    -   [[3) representations D(s)](zotero://open-pdf/0_4E7XKTS3/422|18.4 Properties of the SO(3) representations D(s)]]
+    -   [[3,1) representations D(s+,s−)](zotero://open-pdf/0_4E7XKTS3/424|18.5 Properties of the SO(3,1) representations D(s+,s−)]]
+-   [[zotero://open-pdf/0_4E7XKTS3/430|Problems 10]]
+-   [[zotero://open-pdf/0_4E7XKTS3/432|Solutions 10]]
+-   [[zotero://open-pdf/0_4E7XKTS3/436|19 The Dirac Equation I. Constructing a Lagrangian]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/436|19.1 Building vectors out of spinors]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/440|19.2 A Lagrangian for Weyl spinors]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/442|19.3 The Weyl equation]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/445|19.4 The Dirac equation]]
+-   [[zotero://open-pdf/0_4E7XKTS3/450|20 The Dirac Equation II. Solutions]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/450|20.1 The Dirac basis]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/452|20.2 Plane wave solutions]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/456|20.3 Pauli's theorem]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/459|20.4 The γ matrices]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/461|20.5 Bilinear spinor products]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/464|20.6 Orthogonality and completeness]]
+-   [[zotero://open-pdf/0_4E7XKTS3/468|Problems 11]]
+-   [[zotero://open-pdf/0_4E7XKTS3/470|Solutions 11]]
+-   [[zotero://open-pdf/0_4E7XKTS3/472|21 The Dirac Equation III. Quantization and Feynman Rules]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/472|21.1 Canonical quantization of the Dirac field]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/477|21.2 Wick's theorem for Fermi fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/480|21.3 Calculating the Dirac propagator]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/483|21.4 An example: Nucleon–meson scattering]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/486|21.5 The Feynman rules for theories involving fermions]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/491|21.6 Summing and averaging over spin states]]
+-   [[zotero://open-pdf/0_4E7XKTS3/494|Problems 12]]
+-   [[zotero://open-pdf/0_4E7XKTS3/496|Solutions 12]]
+-   [[zotero://open-pdf/0_4E7XKTS3/502|22 CPT and Fermi fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/502|22.1 Parity and Fermi fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/506|22.2 The Majorana representation]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/508|22.3 Charge conjugation and Fermi fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/515|22.4 PT invariance and Fermi fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/519|22.5 The CPT theorem and Fermi fields]]
+-   [[zotero://open-pdf/0_4E7XKTS3/524|23 Renormalization of spin-1⁄2 theories]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/524|23.1 Lessons from Model 3]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/531|23.2 The renormalized Dirac propagator S′]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/532|23.3 The spectral representation of S′]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/534|23.4 The nucleon self-energy ∑′]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/539|23.5 The renormalized coupling constant]]
+-   [[zotero://open-pdf/0_4E7XKTS3/544|Problems 13]]
+-   [[zotero://open-pdf/0_4E7XKTS3/546|Solutions 13]]
+-   [[zotero://open-pdf/0_4E7XKTS3/550|24 Isospin]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/550|24.1 Field theoretic constraints on coupling constants]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/555|24.2 The nucleon and pion as isospin multiplets]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/559|24.3 Experimental consequences of isospin conservation]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/563|24.4 Hypercharge and G-parity]]
+-   [[zotero://open-pdf/0_4E7XKTS3/568|25 Coping with infinities: regularization and renormalization]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/569|25.1 Regularization]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/574|25.2 The BPHZ algorithm]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/576|25.3 Applying the algorithm]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/581|25.4 Survey of renormalizable theories for spin 0 and spin 1⁄2]]
+-   [[zotero://open-pdf/0_4E7XKTS3/588|Problems 14]]
+-   [[zotero://open-pdf/0_4E7XKTS3/592|Solutions 14]]
+-   [[zotero://open-pdf/0_4E7XKTS3/598|26 Vector fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/598|26.1 The free real vector field]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/601|26.2 The Proca equation and its solutions]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/604|26.3 Canonical quantization of the Proca field]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/609|26.4 The limit μ → 0: a simple physical consequence]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/611|26.5 Feynman rules for a real massive vector field]]
+-   [[zotero://open-pdf/0_4E7XKTS3/618|27 Electromagnetic interactions and minimal coupling]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/618|27.1 Gauge invariance and conserved currents]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/625|27.2 The minimal coupling prescription]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/629|27.3 Technical problems]]
+-   [[zotero://open-pdf/0_4E7XKTS3/634|Problems 15]]
+-   [[zotero://open-pdf/0_4E7XKTS3/636|Solutions 15]]
+-   [[zotero://open-pdf/0_4E7XKTS3/642|28 Functional integration and Feynman rules]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/642|28.1 First steps with functional integrals]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/647|28.2 Functional integrals in field theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/649|28.3 The Euclidean Z0\[J\]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/652|28.4 The Euclidean Z\[J\]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/654|28.5 Feynman rules from functional integrals]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/656|28.6 The functional integral for massive vector mesons]]
+-   [[zotero://open-pdf/0_4E7XKTS3/660|29 Extending the methods of functional integrals]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/660|29.1 Functional integration for Fermi fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/665|29.2 Derivative interactions via functional integrals]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/668|29.3 Ghost fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/671|29.4 The Hamiltonian form of the generating functional]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/674|29.5 How to eliminate constrained variables]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/675|29.6 Functional integrals for QED with massive photons]]
+-   [[zotero://open-pdf/0_4E7XKTS3/678|Problems 16]]
+-   [[zotero://open-pdf/0_4E7XKTS3/680|Solutions 16]]
+-   [[zotero://open-pdf/0_4E7XKTS3/684|30 Electrodynamics with a massive photon]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/684|30.1 Obtaining the Feynman rules for scalar electrodynamics]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/686|30.2 The Feynman rules for massive photon electrodynamics]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/689|30.3 Some low order computations in spinor electrodynamics]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/697|30.4 Quantizing massless electrodynamics with functional integrals]]
+-   [[zotero://open-pdf/0_4E7XKTS3/702|31 The Faddeev Popov prescription]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/702|31.1 The prescription in a finite number of dimensions]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/704|31.2 Extending the prescription to a gauge field theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/708|31.3 Applying the prescription to QED]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/711|31.4 Equivalence of the Faddeev–Popov prescription and canonical quantization]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/714|31.5 Revisiting the massive vector theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/716|31.6 A first look at renormalization in QED]]
+-   [[zotero://open-pdf/0_4E7XKTS3/722|Problems 17]]
+-   [[zotero://open-pdf/0_4E7XKTS3/724|Solutions 17]]
+-   [[zotero://open-pdf/0_4E7XKTS3/730|32 Generating functionals and Green's functions]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/730|32.1 The loop expansion]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/733|32.2 The generating functional for 1PI Green's functions]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/738|32.3 Connecting statistical mechanics with quantum field theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/739|32.4 Quantum electrodynamics in a covariant gauge]]
+-   [[zotero://open-pdf/0_4E7XKTS3/744|33 The renormalization of QED]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/745|33.1 Counterterms and gauge invariance]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/746|33.2 Counterterms in QED with a massive photon]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/752|33.3 Gauge-invariant cutoffs]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/758|33.4 The Ward identity and Green's functions]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/765|33.5 The Ward identity and counterterms]]
+-   [[zotero://open-pdf/0_4E7XKTS3/768|Problems 18]]
+-   [[zotero://open-pdf/0_4E7XKTS3/770|Solutions 18]]
+-   [[zotero://open-pdf/0_4E7XKTS3/776|34 Two famous results in QED]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/776|34.1 Coulomb's Law]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/779|34.2 The electron's anomalous magnetic moment in quantum mechanics]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/786|34.3 The electron's anomalous magnetic moment in QED]]
+-   [[zotero://open-pdf/0_4E7XKTS3/794|35 Confronting experiment with QED]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/794|35.1 Higher order contributions to the electron's magnetic moment]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/795|35.2 The anomalous magnetic moment of the muon]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/801|35.3 A low-energy theorem]]
+    -   [[via symmetries)](zotero://open-pdf/0_4E7XKTS3/806|35.4 Photon-induced corrections to strong interaction processes (via symmetries)]]
+-   [[zotero://open-pdf/0_4E7XKTS3/814|Problems 19]]
+-   [[zotero://open-pdf/0_4E7XKTS3/816|Solutions 19]]
+-   [[3)](zotero://open-pdf/0_4E7XKTS3/820|36 Introducing SU(3)]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/820|36.1 Decays of the η]]
+    -   [[3)](zotero://open-pdf/0_4E7XKTS3/824|36.2 An informal historical introduction to SU(3)]]
+    -   [[n)](zotero://open-pdf/0_4E7XKTS3/830|36.3 Tensor methods for SU(n)]]
+    -   [[2)](zotero://open-pdf/0_4E7XKTS3/835|36.4 Applying tensor methods in SU(2)]]
+    -   [[3)](zotero://open-pdf/0_4E7XKTS3/839|36.5 Tensor representations of SU(3)]]
+-   [[3)](zotero://open-pdf/0_4E7XKTS3/840|37 Irreducible multiplets in SU(3)]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/841|37.1 The irreducible representations q and q]]
+    -   [[3)](zotero://open-pdf/0_4E7XKTS3/847|37.2 Matrix tricks with SU(3)]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/850|37.3 Isospin and hypercharge decomposition]]
+    -   [[3)](zotero://open-pdf/0_4E7XKTS3/853|37.4 Direct products in SU(3)]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/858|37.5 Symmetry and antisymmetry in the Clebsch–Gordan coefficients]]
+-   [[zotero://open-pdf/0_4E7XKTS3/860|Problems 20]]
+-   [[zotero://open-pdf/0_4E7XKTS3/862|Solutions 20]]
+-   [[3): Proofs and applications](zotero://open-pdf/0_4E7XKTS3/866|38 SU(3): Proofs and applications]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/866|38.1 Irreducibility, inequivalence, and completeness of the IR's]]
+    -   [[3)](zotero://open-pdf/0_4E7XKTS3/872|38.2 The operators I, Y and Q in SU(3)]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/878|38.3 Electromagnetic form factors of the baryon octet]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/882|38.4 Electromagnetic mass splittings of the baryon octet]]
+-   [[3) and the naive quark model](zotero://open-pdf/0_4E7XKTS3/888|39 Broken SU(3) and the naive quark model]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/888|39.1 The Gell-Mann–Okubo mass formula derived]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/892|39.2 The GMO formula applied]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/896|39.3 The GMO formula challenged]]
+    -   [[and how it grew)](zotero://open-pdf/0_4E7XKTS3/901|39.4 The naive quark model (and how it grew)]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/904|39.5 What can you build out of three quarks?]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/909|39.6 A sketch of quantum chromodynamics]]
+-   [[zotero://open-pdf/0_4E7XKTS3/914|Problems 21]]
+-   [[zotero://open-pdf/0_4E7XKTS3/916|Solutions 21]]
+-   [[zotero://open-pdf/0_4E7XKTS3/920|40 Weak interactions and their currents]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/920|40.1 The weak interactions circa 1965]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/923|40.2 The conserved vector current hypothesis]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/925|40.3 The Cabibbo angle]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/927|40.4 The Goldberger–Treiman relation]]
+-   [[zotero://open-pdf/0_4E7XKTS3/932|41 Current algebra and PCAC]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/933|41.1 The PCAC hypothesis and its interpretation]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/936|41.2 Two isotriplet currents]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/938|41.3 The gradient-coupling model]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/942|41.4 Adler's Rule for the emission of a soft pion]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/945|41.5 Equal-time current commutators]]
+-   [[zotero://open-pdf/0_4E7XKTS3/954|Problems 22]]
+-   [[zotero://open-pdf/0_4E7XKTS3/956|Solutions 22]]
+-   [[zotero://open-pdf/0_4E7XKTS3/960|42 Current algebra and pion scattering]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/960|42.1 Pion–hadron scattering without current algebra]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/965|42.2 Pion–hadron scattering and current algebra]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/969|42.3 Pion–pion scattering]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/974|42.4 Some operators and their eigenvalues]]
+-   [[zotero://open-pdf/0_4E7XKTS3/978|43 A first look at spontaneous symmetry breaking]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/978|43.1 The man in a ferromagnet]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/981|43.2 Spontaneous symmetry breaking in field theory: Examples]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/989|43.3 Spontaneous symmetry breaking in field theory: The general case]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/992|43.4 Goldstone's Theorem]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1002|Problems 23]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1004|Solutions 23]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1006|44 Perturbative spontaneous symmetry breaking]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1006|44.1 One vacuum or many?]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1010|44.2 Perturbative spontaneous symmetry breaking in the general case]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1016|44.3 Calculating the effective potential]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1021|44.4 The physical meaning of the effective potential]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1026|45 Topics in spontaneous symmetry breaking]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1026|45.1 Three heuristic aspects of the effective potential]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1031|45.2 Fermions and the effective potential]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1036|45.3 Spontaneous symmetry breaking and soft pions: the sigma model]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1040|45.4 The physics of the sigma model]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1046|Problems 24]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1048|Solutions 24]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1054|46 The Higgs mechanism and non-Abelian gauge fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1055|46.1 The Abelian Higgs model]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1059|46.2 Non-Abelian gauge field theories]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1067|46.3 Yang–Mills fields and spontaneous symmetry breaking]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1074|47 Quantizing non-Abelian gauge fields]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1074|47.1 Quantization of gauge fields by the Faddeev–Popov method]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1078|47.2 Feynman rules for a non-Abelian gauge theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1084|47.3 Renormalization of pure gauge field theories]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1088|47.4 The effective potential for a gauge theory]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1092|Problems 25]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1096|Solutions 25]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1102|48 The Glashow–Salam–Weinberg Model I. A theory of leptons]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1102|48.1 Putting the pieces together]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1110|48.2 The electron-neutrino weak interactions]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1112|48.3 Electromagnetic interactions of the electron and neutrino]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1115|48.4 Adding the other leptons]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1117|48.5 Summary and outlook]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1120|49 The Glashow–Salam–Weinberg Model II. Adding quarks]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1120|49.1 A simplified quark model]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1122|49.2 Charm and the GIM mechanism]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1127|49.3 Lower bounds on scalar boson masses]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1134|50 The Renormalization Group]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1134|50.1 The renormalization group for ϕ4 theory]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1142|50.2 The renormalization group equation]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1146|50.3 The solution to the renormalization group equation]]
+    -   [[zotero://open-pdf/0_4E7XKTS3/1149|50.4 Applications of the renormalization group equation]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1160|Concordance of videos and chapters]]
+-   [[zotero://open-pdf/0_4E7XKTS3/1162|Index]]

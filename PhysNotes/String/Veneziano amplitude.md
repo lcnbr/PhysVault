@@ -37,7 +37,7 @@ This is the Virasoro-Shapiro amplitude for closed strings.
 Repeating the four-point calculation for the open string, this time using the vertex operator
 
 $$
-V[q]=g_{\mathrm{s}}^{\mathrm{open}} \int \mathrm{d} z \mathcal{O}[q](z) .
+V[[z|q]] .
 $$
 
 The four-point amplitude for open-string tachyons reads then
@@ -50,11 +50,11 @@ It was proposed (not calculated) earlier by Veneziano demanding crossing symmetr
 
 The open and closed four-point scattering amplitudes have many desirable features:
 
-- Poles at $s, t, u=4(N-1) / \kappa^{2}$ or $s, t=(N-1) / \kappa^{2}$ correspond to an infinite tower of virtual particles exchanged. The mass spectrum coincides with [[closed string spectrum|closed]] and [[open string spectrum|open]] strings.
+- Poles at $s, t, u=4(N-1) / \kappa^{2}$ or $s, t=(N-1) / \kappa^{2}$ correspond to an infinite tower of virtual particles exchanged. The mass spectrum coincides with [[4 String Quantisation/closed string spectrum|closed]] and [[open string spectrum|open]] strings.
 
 ![](https://cdn.mathpix.com/cropped/2022_01_21_c033a2aa489843817853g-4.jpg?height=137&width=260&top_left_y=1060&top_left_x=526)
 
-- Residues indicate spin $J=2 N$ or $J=N$ : behaviour follows [[closed string spectrum#Regge Trajectories|regge trajectories]]
+- Residues indicate spin $J=2 N$ or $J=N$ : behaviour follows [[4 String Quantisation/closed string spectrum#Regge Trajectories|regge trajectories]]
 - Soft behaviour at $s \rightarrow \infty$. Even for [[graviton|gravitons]]!
 - Manifest crossing symmetry $s \leftrightarrow t \leftrightarrow u$ or $s \leftrightarrow t .$ Amazing!
 

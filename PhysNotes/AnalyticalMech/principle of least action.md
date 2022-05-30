@@ -11,7 +11,7 @@ Varying the action and using the [[chain rule]]^[[[zotero-843-Annotations#^b26c5
 &= \int\limits_{t_{1}}^{t_{2}}\! \frac{\partial L}{\partial q_{i}}\delta q_{i}+\frac{\partial L}{\partial \dot{q_{i}}}\frac{d(\delta (q_{i}))}{d t}~ \mathrm{d}t
 \end{align*}$$](zotero-843-Annotations#^8311af)
 
-Here [[Einstein summation]] is used. Integrating by parts yields^[[zotero-843-Annotations#^5b3394]]:
+Here [[../GR/Einstein summation]] is used. Integrating by parts yields^[[../../Zotero/zotero-843-Annotations#^5b3394]]:
 
 [$$\delta S=   \int\limits_{t_{1}}^{t_{2}}\! 
 \frac{\partial L}{\partial q_{i}}\delta q_{i}~\mathrm{d}t+
@@ -24,21 +24,21 @@ $q_i(t_1)$ and $q_i (t_2)$ are fixed means that $\delta q_i = 0$ at the limits o
 $$\delta S =  \int\limits_{t_{1}}^{t_{2}}\! 
 \left[\frac{\partial L}{\partial q_{i}}-\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{q_{i}}}\right)\right] \delta q_{i}~\mathrm{d}t=0 \quad \forall \delta q_{i}\implies\boxed{\frac{\partial L}{\partial q_{i}}-\frac{d}{d t}\left(\frac{\partial L}{\partial \dot{q_{i}}}\right)=0}$$
 
-The boxed part are the [[Euler-Lagrange equations]] for [[Classical Particle Mechanics]].
+The boxed part are the [[Euler-Lagrange equations]] for [[../String/Classical Particle Mechanics]].
 
-If instead we were using a [[Lagrangian Density]] then [[principle of least action#^bb3857|this equation]] would become:
+If instead we were using a [[Lagrangian Density]] then [[.md#^bb3857|this equation]] would become:
 [$$\delta S  = \int\limits_{\Omega}\! 
 \left[\frac{\partial \mathcal{L}}{\partial \phi}-\frac{\partial}{\partial q^\mu}\left(\frac{\partial \mathcal{L}}{\partial \phi_{,\mu}}\right)\right] \delta \phi~\mathrm{d^4}q+\int\limits_{\Omega}\! 
-\frac{\partial}{\partial q^\mu}\left[\frac{\partial \mathcal{L}}{\partial \phi_{,\mu}}\delta \phi \right]~\mathrm{d^4}q=0 $$](zotero-843-Annotations#^d3367a)
+\frac{\partial}{\partial q^\mu}\left[[../../Zotero/zotero-843-Annotations#^d3367a]]
 
 The last term is the integral of a 4-d divergence over a 4-d volume, which becomes a surface integral (gauss' thm) over a vanishing boundary, thus once again we obtain:
 
 
 [$$\delta S  =  \int\limits_{\Omega}\! 
-\left[\frac{\partial \mathcal{L}}{\partial \phi}-\frac{\partial}{\partial q^\mu}\left(\frac{\partial \mathcal{L}}{\partial \phi_{,\mu}}\right)\right] \delta \phi~\mathrm{d^4}q =0\quad \forall \delta q_{i}\implies\boxed{\frac{\partial \mathcal{L}}{\partial \phi}-\frac{\partial}{\partial q^\mu}\left(\frac{\partial \mathcal{L}}{\partial \phi_{,\mu}}\right)=0}$$](zotero-843-Annotations#^caea84)
+\left[[../../Zotero/zotero-843-Annotations#^caea84]]
 
-The boxed part are the [[Euler-Lagrange equations]] for [[Classical Field Theory]].
+The boxed part are the [[Euler-Lagrange equations]] for [[../FT/Classical Field Theory]].
 # Further to the [[Hamiltonian]] formalism
-By defining [[Conjugate momenta]] and performing a [[Legendre transform]] we obtain
+By defining [[Conjugate momenta]] and performing a [[../math/Legendre transform]] we obtain
 
  

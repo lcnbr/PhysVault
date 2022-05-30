@@ -37,4 +37,4 @@ $$
 
 ^e4faa1
 
-The local symmetries in quantum electrodynamics are described by the abelian [[Lie group]] $U(1)$. This is the group of complex phase rotations $\psi \mapsto \exp (i q \alpha) \psi$.
+The local symmetries in quantum electrodynamics are described by the abelian [[../math/Lie group]] $U(1)$. This is the group of complex phase rotations $\psi \mapsto \exp (i q \alpha) \psi$.
